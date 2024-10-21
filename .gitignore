@@ -1,0 +1,31 @@
+# Built application files
+*.apk
+*.ap_
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+build/
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Mac OS files
+.DS_Store
+
+# Android Studio files
+.idea/
+*.iml
+
+# Other files
+*.log

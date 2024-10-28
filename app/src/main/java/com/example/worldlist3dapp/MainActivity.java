@@ -15,6 +15,9 @@ public class MainActivity extends FragmentActivity {
 
     private Spinner countrySpinner;
     private TextView countryInfoText;
+    private TextView countryCaptial;
+    private TextView countryPopulation;
+    private TextView countryLanguage;
     private ImageView countryImage;
 
     private List<CountryInfo> countries;
@@ -26,6 +29,9 @@ public class MainActivity extends FragmentActivity {
 
         countrySpinner = findViewById(R.id.spinner_country);
         countryInfoText = findViewById(R.id.textView_country_info);
+        countryCaptial = findViewById(R.id.textView_capital);
+        countryPopulation = findViewById(R.id.textView_population);
+        countryLanguage = findViewById(R.id.textView_languages);
         countryImage = findViewById(R.id.map_container);
 
         // Get the list of CountryInfo objects from CountryData
@@ -45,7 +51,11 @@ public class MainActivity extends FragmentActivity {
 
                 // Set the country image and description
                 countryImage.setImageResource(selectedCountry.getImageResId());
+                countryCaptial.setText(selectedCountry.getCapital());
+                countryPopulation.setText(selectedCountry.getPopulation());
+                countryLanguage.setText(selectedCountry.getLanguage());
                 countryInfoText.setText(selectedCountry.getDescription());
+
             }
 
             @Override

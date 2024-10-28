@@ -38,21 +38,15 @@
         android:layout_marginTop="20dp"
         android:scaleType="centerCrop" />
 
-    <!-- Divider -->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="16dp" />
-
     <LinearLayout
         android:id="@+id/country_info_section"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/info_background"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp">
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <!-- Capital City with Icon -->
         <LinearLayout
@@ -72,8 +66,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:text=""
-                android:textSize="16sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <!-- Population with Icon -->
@@ -94,8 +88,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:text=""
-                android:textSize="16sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <!-- Languages with Icon -->
@@ -117,23 +111,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:text=""
-                android:textSize="16sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="16sp" />
         </LinearLayout>
-
-        <!-- Divider -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp" />
 
         <!-- TextView to Display Country Info -->
         <TextView
             android:id="@+id/textView_country_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             android:background="@drawable/info_background"
             android:paddingTop="16dp"
             android:paddingBottom="16dp"

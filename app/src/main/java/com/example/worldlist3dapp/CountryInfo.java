@@ -2,6 +2,7 @@ package com.example.worldlist3dapp;
 
 public class CountryInfo {
     private String name;
+    private int flagResId;
     private int imageResId;
     private String capital;
     private String population;
@@ -9,8 +10,9 @@ public class CountryInfo {
     private String description;
 
     // Constructor
-    public CountryInfo(String name, int imageResId, String capital, String population, String language, String description) {
+    public CountryInfo(String name, int flagResId, int imageResId, String capital, String population, String language, String description) {
         this.name = name;
+        this.flagResId = flagResId;
         this.imageResId = imageResId;
         this.capital = capital;
         this.population = population;
@@ -21,6 +23,10 @@ public class CountryInfo {
     // Getters
     public String getName() {
         return name;
+    }
+
+    public int getFlagResId() {
+        return flagResId;
     }
 
     public int getImageResId() {

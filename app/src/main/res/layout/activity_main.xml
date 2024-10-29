@@ -1,131 +1,16 @@
+<!-- res/layout/activity_main.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/list_background_colour"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:background="@drawable/gradient_backgrounds">
+    android:padding="16dp">
 
-    <!-- Container for "Select Country" Text and Spinner -->
-    <LinearLayout
+    <ListView
+        android:id="@+id/country_list_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="16dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Select Country"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:layout_gravity="center_vertical"
-            android:paddingEnd="8dp" />
-
-        <Spinner
-            android:id="@+id/spinner_country"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:spinnerMode="dropdown"
-            android:background="@drawable/spinner_background" />
-    </LinearLayout>
-
-    <!-- 3D Image Display -->
-    <ImageView
-        android:id="@+id/map_container"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginTop="20dp"
-        android:scaleType="centerCrop" />
-
-    <LinearLayout
-        android:id="@+id/country_info_section"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/info_background"
-        android:orientation="vertical"
-        android:padding="16dp">
-
-        <!-- Capital City with Icon -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingTop="8dp">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_capital" />
-
-            <TextView
-                android:id="@+id/textView_capital"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text=""
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <!-- Population with Icon -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingTop="8dp">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_population" />
-
-            <TextView
-                android:id="@+id/textView_population"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text=""
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <!-- Languages with Icon -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_language" />
-
-            <TextView
-                android:id="@+id/textView_languages"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text=""
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <!-- TextView to Display Country Info -->
-        <TextView
-            android:id="@+id/textView_country_info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/info_background"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
-    </LinearLayout>
-
+        android:layout_height="match_parent"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:background="@color/list_background_colour"/>
 </LinearLayout>

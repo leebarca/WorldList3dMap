@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base App Theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/list_background_colour</item>
+        <item name="colorPrimaryDark">@color/list_background_colour</item>
+        <item name="colorAccent">@color/list_background_colour</item>
+    </style>
+
+    <!-- NoActionBar Theme for specific activity -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="sea_colour">#ADB7EF</color>
     <color name="app_background_color">#e0f7fa</color>
+    <color name="list_background_colour">#E9EDED</color>
 </resources>

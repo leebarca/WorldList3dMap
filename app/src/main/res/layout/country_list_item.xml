@@ -1,0 +1,24 @@
+<!-- res/layout/country_list_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/list_background_colour"
+    android:padding="8dp">
+
+    <!-- Flag ImageView on the left -->
+    <ImageView
+        android:id="@+id/flag_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Country Flag" />
+
+    <!-- Country Name TextView on the right -->
+    <TextView
+        android:id="@+id/country_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+</LinearLayout>

@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WorldList3dApp"
         tools:targetApi="31">
+        <activity android:name=".CountryDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

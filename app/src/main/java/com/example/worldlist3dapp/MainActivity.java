@@ -1,25 +1,14 @@
 package com.example.worldlist3dapp;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
-import android.widget.Spinner;
-import android.widget.TextView;
-
-import androidx.fragment.app.FragmentActivity;
-
+import android.widget.ListView;
+import androidx.appcompat.app.AppCompatActivity;
 import java.util.List;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends AppCompatActivity {
 
-    private Spinner countrySpinner;
-    private TextView countryInfoText;
-    private TextView countryCaptial;
-    private TextView countryPopulation;
-    private TextView countryLanguage;
-    private ImageView countryImage;
-
+    private ListView countryListView;
     private List<CountryInfo> countries;
 
     @Override
@@ -27,50 +16,25 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        countrySpinner = findViewById(R.id.spinner_country);
-        countryInfoText = findViewById(R.id.textView_country_info);
-        countryCaptial = findViewById(R.id.textView_capital);
-        countryPopulation = findViewById(R.id.textView_population);
-        countryLanguage = findViewById(R.id.textView_languages);
-        countryImage = findViewById(R.id.map_container);
+        countryListView = findViewById(R.id.country_list_view);
 
-        // Get the list of CountryInfo objects from CountryData
         countries = CountryData.getCountriesInfo();
+        CountryAdapter adapter = new CountryAdapter(this, countries);
+        countryListView.setAdapter(adapter);
 
-        // Set up Spinner with country names
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_spinner_item, getCountryNames());
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        countrySpinner.setAdapter(adapter);
+        // Set up item click listener to open CountryDetailActivity
+        countryListView.setOnItemClickListener((parent, view, position, id) -> {
+            CountryInfo selectedCountry = countries.get(position);
 
-        // Handle country selection
-        countrySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, android.view.View view, int position, long id) {
-                CountryInfo selectedCountry = countries.get(position);
+            Intent intent = new Intent(MainActivity.this, CountryDetailActivity.class);
+            intent.putExtra("countryImageResId", selectedCountry.getImageResId());
+            intent.putExtra("countryName", selectedCountry.getName());
+            intent.putExtra("countryCapital", selectedCountry.getCapital());
+            intent.putExtra("countryPopulation", selectedCountry.getPopulation());
+            intent.putExtra("countryLanguage", selectedCountry.getLanguage());
+            intent.putExtra("countryDescription", selectedCountry.getDescription());
 
-                // Set the country image and description
-                countryImage.setImageResource(selectedCountry.getImageResId());
-                countryCaptial.setText(selectedCountry.getCapital());
-                countryPopulation.setText(selectedCountry.getPopulation());
-                countryLanguage.setText(selectedCountry.getLanguage());
-                countryInfoText.setText(selectedCountry.getDescription());
-
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-                // Do nothing
-            }
+            startActivity(intent);
         });
-    }
-
-    // Helper method to get country names for the Spinner
-    private String[] getCountryNames() {
-        String[] names = new String[countries.size()];
-        for (int i = 0; i < countries.size(); i++) {
-            names[i] = countries.get(i).getName();
-        }
-        return names;
     }
 }

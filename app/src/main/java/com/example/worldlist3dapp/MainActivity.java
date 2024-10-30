@@ -33,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("countryPopulation", selectedCountry.getPopulation());
             intent.putExtra("countryLanguage", selectedCountry.getLanguage());
             intent.putExtra("countryDescription", selectedCountry.getDescription());
+            intent.putExtra("firstAttractionName", selectedCountry.getFirstAttractionName());
+            intent.putExtra("firstAttractionDetails", selectedCountry.getFirstAttractionDetails());
+            intent.putExtra("secondAttractionName", selectedCountry.getSecondAttractionName());
+            intent.putExtra("secondAttractionDetails", selectedCountry.getSecondAttractionDetails());
+            intent.putExtra("thirdAttractionName", selectedCountry.getThirdAttractionName());
+            intent.putExtra("thirdAttractionDetails", selectedCountry.getThirdAttractionDetails());
 
             startActivity(intent);
         });

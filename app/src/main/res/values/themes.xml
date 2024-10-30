@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.WorldList3dApp" parent="Theme.MaterialComponents.Light">
+    <style name="Theme.WorldList3dApp" parent="Theme.AppCompat.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/list_background_colour</item>
         <item name="colorPrimaryVariant">@color/list_background_colour</item>

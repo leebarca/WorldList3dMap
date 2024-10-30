@@ -1,0 +1,29 @@
+<!-- res/layout/item_attraction.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/list_background_colour"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Title of the Attraction -->
+    <TextView
+        android:id="@+id/attraction_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+    <!-- Expandable Details about the Attraction -->
+    <!-- THINK ABOUT ADDING IMAGE OF EACH ATTRACTION NEXT TO DESCRIPTION IN DROP DOWN -->
+    <TextView
+        android:id="@+id/attraction_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:padding="8dp"
+        android:visibility="gone" />
+</LinearLayout>

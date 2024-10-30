@@ -8,9 +8,15 @@ public class CountryInfo {
     private String population;
     private String language;
     private String description;
+    private String firstAttractionName;
+    private String firstAttractionDetails;
+    private String secondAttractionName;
+    private String secondAttractionDetails;
+    private String thirdAttractionName;
+    private String thirdAttractionDetails;
 
     // Constructor
-    public CountryInfo(String name, int flagResId, int imageResId, String capital, String population, String language, String description) {
+    public CountryInfo(String name, int flagResId, int imageResId, String capital, String population, String language, String description, String firstAttractionName, String firstAttractionDetails, String secondAttractionName, String secondAttractionDetails, String thirdAttractionName, String thirdAttractionDetails) {
         this.name = name;
         this.flagResId = flagResId;
         this.imageResId = imageResId;
@@ -18,6 +24,12 @@ public class CountryInfo {
         this.population = population;
         this.language = language;
         this.description = description;
+        this.firstAttractionName = firstAttractionName;
+        this.firstAttractionDetails = firstAttractionDetails;
+        this.secondAttractionName = secondAttractionName;
+        this.secondAttractionDetails = secondAttractionDetails;
+        this.thirdAttractionName = thirdAttractionName;
+        this.thirdAttractionDetails = thirdAttractionDetails;
     }
 
     // Getters
@@ -47,5 +59,29 @@ public class CountryInfo {
 
     public String getDescription() {
         return description;
+    }
+
+    public String getFirstAttractionName() {
+        return firstAttractionName;
+    }
+
+    public String getFirstAttractionDetails() {
+        return firstAttractionDetails;
+    }
+
+    public String getSecondAttractionName() {
+        return secondAttractionName;
+    }
+
+    public String getSecondAttractionDetails() {
+        return secondAttractionDetails;
+    }
+
+    public String getThirdAttractionName() {
+        return thirdAttractionName;
+    }
+
+    public String getThirdAttractionDetails() {
+        return thirdAttractionDetails;
     }
 }

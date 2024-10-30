@@ -121,4 +121,20 @@
         android:textSize="16sp"
         android:lineSpacingExtra="4dp" />
 
+    <TextView
+        android:id="@+id/top_attractions_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top 3 attractions:"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:id="@+id/attractions_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
 </LinearLayout>

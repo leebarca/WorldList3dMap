@@ -26,7 +26,7 @@
             android:id="@+id/countryName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Country Name"
+            android:text=""
             android:textColor="@android:color/black"
             android:textSize="24sp" />
 
@@ -51,7 +51,7 @@
             android:id="@+id/textView_capital"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Capital"
+            android:text=""
             android:gravity="start"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
@@ -76,7 +76,7 @@
             android:id="@+id/textView_population"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Population"
+            android:text=""
             android:gravity="start"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
@@ -101,7 +101,7 @@
             android:id="@+id/textView_languages"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Language"
+            android:text=""
             android:gravity="start"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
@@ -115,7 +115,7 @@
         android:layout_marginTop="16dp"
         android:padding="12dp"
         android:background="@drawable/info_background"
-        android:text="Country description goes here."
+        android:text=""
         android:gravity="start"
         android:textColor="@android:color/black"
         android:textSize="16sp"

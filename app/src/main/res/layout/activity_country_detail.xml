@@ -1,11 +1,18 @@
 <!-- res/layout/activity_country_detail.xml -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
     android:gravity="start"
     android:background="@color/list_background_colour">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:gravity="start">
 
     <!-- Country Image -->
 
@@ -121,20 +128,23 @@
         android:textSize="16sp"
         android:lineSpacingExtra="4dp" />
 
-    <TextView
-        android:id="@+id/top_attractions_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Top 3 attractions:"
-        android:textSize="18sp"
-        android:paddingTop="16dp"
-        android:paddingBottom="8dp"
-        android:textColor="@android:color/black" />
+        <!-- Top Attractions Header -->
+        <TextView
+            android:id="@+id/top_attractions_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top 3 attractions:"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="16dp" />
 
-    <LinearLayout
-        android:id="@+id/attractions_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" />
+        <!-- Container for the expandable attractions -->
+        <LinearLayout
+            android:id="@+id/attractions_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
 
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

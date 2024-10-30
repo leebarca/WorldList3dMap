@@ -12,6 +12,7 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.Theme_WorldList3dApp);
         setContentView(R.layout.activity_splash);
 
         // Start MainActivity after the delay

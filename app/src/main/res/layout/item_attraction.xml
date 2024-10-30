@@ -4,26 +4,44 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="8dp"
-    android:background="@color/list_background_colour"
-    android:clickable="true"
-    android:focusable="true">
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true">
 
-    <!-- Title of the Attraction -->
-    <TextView
-        android:id="@+id/attraction_name"
+    <!-- Row with name and arrow icon -->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="16sp"
-        android:padding="8dp" />
+        android:layout_height="wrap_content">
 
-    <!-- Expandable Details about the Attraction -->
-    <!-- THINK ABOUT ADDING IMAGE OF EACH ATTRACTION NEXT TO DESCRIPTION IN DROP DOWN -->
+        <!-- Attraction name -->
+        <!-- Dropdown arrow icon -->
+        <TextView
+            android:id="@+id/attraction_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="8dp"
+            android:text="ghgh"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/arrow_icon"
+            android:layout_width="64dp"
+            android:layout_height="37dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_action_name" /> <!-- Use a down arrow drawable here -->
+    </RelativeLayout>
+
+    <!-- Hidden details section that expands -->
     <TextView
         android:id="@+id/attraction_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="Attraction details go here."
         android:padding="8dp"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"/>
+
 </LinearLayout>

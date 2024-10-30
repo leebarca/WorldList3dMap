@@ -1,0 +1,12 @@
+<!-- res/drawable/launch_screen_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color layer -->
+    <item android:drawable="@color/list_background_colour" />
+
+    <!-- Centered logo layer -->
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/applogo" /> <!-- Replace "your_logo" with the actual logo drawable name -->
+    </item>
+</layer-list>

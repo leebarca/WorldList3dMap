@@ -10,8 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class CountryDetailActivity extends AppCompatActivity {
 
-    private ImageView countryImage;
-    private TextView countryName, countryCapital, countryPopulation, countryLanguage, countryInfoText;
     private LinearLayout attractionsContainer;
 
     @Override
@@ -19,16 +17,17 @@ public class CountryDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_country_detail);
 
-        // Bind views
-        countryImage = findViewById(R.id.map_container);
-        countryName = findViewById(R.id.countryName);
-        countryCapital = findViewById(R.id.textView_capital);
-        countryPopulation = findViewById(R.id.textView_population);
-        countryLanguage = findViewById(R.id.textView_languages);
-        countryInfoText = findViewById(R.id.textView_country_info);
+        // Other setup for country details omitted for brevity
+
+        ImageView countryImage = findViewById(R.id.map_container);
+        TextView countryName = findViewById(R.id.countryName);
+        TextView countryCapital = findViewById(R.id.textView_capital);
+        TextView countryPopulation = findViewById(R.id.textView_population);
+        TextView countryLanguage = findViewById(R.id.textView_languages);
+        TextView countryInfoText = findViewById(R.id.textView_country_info);
         attractionsContainer = findViewById(R.id.attractions_container);
 
-        // Get country info from Intent
+        // Retrieve values from Intent
         countryImage.setImageResource(getIntent().getIntExtra("countryImageResId", 0));
         countryName.setText(getIntent().getStringExtra("countryName"));
         countryCapital.setText(getIntent().getStringExtra("countryCapital"));
@@ -36,50 +35,56 @@ public class CountryDetailActivity extends AppCompatActivity {
         countryLanguage.setText(getIntent().getStringExtra("countryLanguage"));
         countryInfoText.setText(getIntent().getStringExtra("countryDescription"));
 
-        // Get attraction info from Intent
+        // Example attraction data (could be retrieved dynamically)
         String[] attractionNames = {
                 getIntent().getStringExtra("firstAttractionName"),
                 getIntent().getStringExtra("secondAttractionName"),
                 getIntent().getStringExtra("thirdAttractionName")
         };
-
         String[] attractionDetails = {
                 getIntent().getStringExtra("firstAttractionDetails"),
                 getIntent().getStringExtra("secondAttractionDetails"),
                 getIntent().getStringExtra("thirdAttractionDetails")
         };
+        int[] attractionImages = {
+                getIntent().getIntExtra("firstAttractionImage", 0),
+                getIntent().getIntExtra("secondAttractionImage", 0),
+                getIntent().getIntExtra("thirdAttractionImage", 0)
+        };
 
-        // Add attractions to the container
-        addAttractions(attractionNames, attractionDetails);
+        // Add attractions with expand/collapse functionality
+        addAttractions(attractionNames, attractionDetails, attractionImages);
     }
 
-    private void addAttractions(String[] names, String[] details) {
+    private void addAttractions(String[] names, String[] details, int[] images) {
         LayoutInflater inflater = LayoutInflater.from(this);
 
         for (int i = 0; i < names.length; i++) {
-            if (names[i] == null || names[i].isEmpty()) {
-                continue; // Skip if attraction name is empty
-            }
+            if (names[i] == null || names[i].isEmpty()) continue;
 
             View attractionView = inflater.inflate(R.layout.item_attraction, attractionsContainer, false);
-
             TextView attractionName = attractionView.findViewById(R.id.attraction_name);
             TextView attractionDetails = attractionView.findViewById(R.id.attraction_details);
+            ImageView attractionImage = attractionView.findViewById(R.id.attraction_image);
+            ImageView arrowIcon = attractionView.findViewById(R.id.arrow_icon);
+            LinearLayout detailsContainer = attractionView.findViewById(R.id.attraction_details_container);
 
-            // Set the name and details for each attraction
+            // Set data for each attraction
             attractionName.setText(names[i]);
             attractionDetails.setText(details[i]);
+            attractionImage.setImageResource(images[i]);
 
-            // Set up click listener to toggle visibility of details
+            // Set up click listener to expand/collapse details and rotate arrow
             attractionView.setOnClickListener(v -> {
-                if (attractionDetails.getVisibility() == View.GONE) {
-                    attractionDetails.setVisibility(View.VISIBLE);
+                if (detailsContainer.getVisibility() == View.GONE) {
+                    detailsContainer.setVisibility(View.VISIBLE);
+                    arrowIcon.setRotation(90); // Rotate arrow downwards
                 } else {
-                    attractionDetails.setVisibility(View.GONE);
+                    detailsContainer.setVisibility(View.GONE);
+                    arrowIcon.setRotation(0); // Rotate arrow back to initial position
                 }
             });
 
-            // Add the view to the container
             attractionsContainer.addView(attractionView);
         }
     }

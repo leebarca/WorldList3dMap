@@ -26,6 +26,7 @@ public class CountryDetailActivity extends AppCompatActivity {
         TextView countryLanguage = findViewById(R.id.textView_languages);
         TextView countryInfoText = findViewById(R.id.textView_country_info);
         attractionsContainer = findViewById(R.id.attractions_container);
+        ImageView countryFlag = findViewById(R.id.country_flag);
 
         // Retrieve values from Intent
         countryImage.setImageResource(getIntent().getIntExtra("countryImageResId", 0));
@@ -34,6 +35,7 @@ public class CountryDetailActivity extends AppCompatActivity {
         countryPopulation.setText(getIntent().getStringExtra("countryPopulation"));
         countryLanguage.setText(getIntent().getStringExtra("countryLanguage"));
         countryInfoText.setText(getIntent().getStringExtra("countryDescription"));
+        countryFlag.setImageResource(getIntent().getIntExtra("countryFlag", 0));
 
         // Example attraction data (could be retrieved dynamically)
         String[] attractionNames = {

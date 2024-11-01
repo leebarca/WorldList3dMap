@@ -78,10 +78,13 @@ public class CountryDetailActivity extends AppCompatActivity {
             attractionView.setOnClickListener(v -> {
                 if (detailsContainer.getVisibility() == View.GONE) {
                     detailsContainer.setVisibility(View.VISIBLE);
+                    detailsContainer.setBackgroundResource(R.drawable.attraction_dropdown_item_background);
+                    attractionView.setBackgroundResource(R.drawable.attraction_dropdown_item_background);
                     arrowIcon.setRotation(90); // Rotate arrow downwards
                 } else {
                     detailsContainer.setVisibility(View.GONE);
                     arrowIcon.setRotation(0); // Rotate arrow back to initial position
+                    attractionView.setBackgroundResource(R.drawable.attraction_item_background);
                 }
             });
 

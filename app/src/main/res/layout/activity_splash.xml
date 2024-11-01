@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/list_background_colour">
+    android:background="@color/app_background_color">
 
     <ImageView
         android:id="@+id/logo_image"

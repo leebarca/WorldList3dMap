@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/list_background_colour">
+    android:background="@color/app_background_color">
 
     <!-- List of countries below the logo -->
     <ListView

@@ -2,18 +2,18 @@
     <!-- Base application theme. -->
     <style name="Theme.WorldList3dApp" parent="Theme.AppCompat.NoActionBar">
         <!-- Primary brand color -->
-        <item name="colorPrimary">@color/list_background_colour</item>
-        <item name="colorPrimaryVariant">@color/list_background_colour</item>
-        <item name="colorOnPrimary">@color/list_background_colour</item>
+        <item name="colorPrimary">@color/app_background_color</item>
+        <item name="colorPrimaryVariant">@color/app_background_color</item>
+        <item name="colorOnPrimary">@color/app_background_color</item>
 
         <!-- Secondary brand color -->
-        <item name="colorSecondary">@color/list_background_colour</item>
-        <item name="colorSecondaryVariant">@color/list_background_colour</item>
-        <item name="colorOnSecondary">@color/list_background_colour</item>
+        <item name="colorSecondary">@color/app_background_color</item>
+        <item name="colorSecondaryVariant">@color/app_background_color</item>
+        <item name="colorOnSecondary">@color/app_background_color</item>
 
         <!-- Status bar color -->
-        <item name="android:statusBarColor">@color/list_background_colour</item>
-        <item name="android:windowBackground">@color/list_background_colour</item>
+        <item name="android:statusBarColor">@color/app_background_color</item>
+        <item name="android:windowBackground">@color/app_background_color</item>
         <item name="android:windowLightStatusBar">true</item>
     </style>
 

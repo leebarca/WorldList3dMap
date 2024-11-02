@@ -3,13 +3,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/app_background_color">
+    android:background="@color/app_background_color"
+    android:padding="16dp">
 
-    <!-- List of countries below the logo -->
+    <!-- Search bar -->
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:background="@drawable/search_bar_background"
+        android:drawableStart="@drawable/search_icon"
+        android:drawablePadding="8dp"
+        android:inputType="text" />
+
+    <!-- List of countries below the search bar -->
     <ListView
         android:id="@+id/country_list_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="1dp" />
+
+    <!-- "No countries found" TextView -->
+    <TextView
+        android:id="@+id/no_countries_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:text="No countries found"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:textSize="18sp" />
 </LinearLayout>

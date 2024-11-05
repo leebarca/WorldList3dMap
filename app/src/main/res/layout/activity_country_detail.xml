@@ -61,7 +61,7 @@
                         android:layout_height="24dp"
                         android:layout_marginEnd="8dp"
                         android:contentDescription="Capital Icon"
-                        android:src="@drawable/ic_capital" />
+                        android:src="@drawable/capital" />
                     <TextView
                         android:id="@+id/textView_capital"
                         android:layout_width="wrap_content"
@@ -85,7 +85,7 @@
                         android:layout_height="24dp"
                         android:layout_marginEnd="8dp"
                         android:contentDescription="Population Icon"
-                        android:src="@drawable/ic_population" />
+                        android:src="@drawable/population" />
                     <TextView
                         android:id="@+id/textView_population"
                         android:layout_width="wrap_content"
@@ -109,7 +109,7 @@
                         android:layout_height="24dp"
                         android:layout_marginEnd="8dp"
                         android:contentDescription="Language Icon"
-                        android:src="@drawable/ic_language" />
+                        android:src="@drawable/languages" />
                     <TextView
                         android:id="@+id/textView_languages"
                         android:layout_width="wrap_content"
@@ -120,15 +120,102 @@
                         android:textColor="@android:color/black"
                         android:textSize="16sp" />
                 </LinearLayout>
+
+                <!-- Country Religion -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="8dp"
+                        android:contentDescription="Religion Icon"
+                        android:src="@drawable/religion" />
+                    <TextView
+                        android:id="@+id/textView_religion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="start"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!-- Country Continent -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="8dp"
+                        android:contentDescription="Continent Icon"
+                        android:src="@drawable/continent" />
+                    <TextView
+                        android:id="@+id/textView_continent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="start"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!-- Country Area -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="8dp"
+                        android:contentDescription="Area Icon"
+                        android:src="@drawable/area" />
+                    <TextView
+                        android:id="@+id/textView_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="start"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
             </LinearLayout>
 
-            <!-- Flag ImageView on the Right -->
-            <ImageView
-                android:id="@+id/country_flag"
+            <RelativeLayout
                 android:layout_width="180dp"
-                android:layout_height="64dp"
-                android:layout_gravity="center_vertical"
-                android:contentDescription="Country Flag" /> <!-- Replace with actual flag drawable -->
+                android:layout_height="match_parent">
+
+                <!-- Country Flag ImageView -->
+                <ImageView
+                    android:id="@+id/country_flag"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="Country Flag" />
+
+                <!-- Country Outline ImageView -->
+                <ImageView
+                    android:id="@+id/country_outline"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_below="@id/country_flag"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="Country Outline" />
+
+            </RelativeLayout>
         </LinearLayout>
 
         <!-- Additional content (e.g., country info, attractions) -->

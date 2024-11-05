@@ -24,6 +24,9 @@ public class CountryDetailActivity extends AppCompatActivity {
         TextView countryCapital = findViewById(R.id.textView_capital);
         TextView countryPopulation = findViewById(R.id.textView_population);
         TextView countryLanguage = findViewById(R.id.textView_languages);
+        TextView countryReligion = findViewById(R.id.textView_religion);
+        TextView countryContinent = findViewById(R.id.textView_continent);
+        TextView countryArea = findViewById(R.id.textView_area);
         TextView countryInfoText = findViewById(R.id.textView_country_info);
         attractionsContainer = findViewById(R.id.attractions_container);
         ImageView countryFlag = findViewById(R.id.country_flag);
@@ -34,6 +37,9 @@ public class CountryDetailActivity extends AppCompatActivity {
         countryCapital.setText(getIntent().getStringExtra("countryCapital"));
         countryPopulation.setText(getIntent().getStringExtra("countryPopulation"));
         countryLanguage.setText(getIntent().getStringExtra("countryLanguage"));
+        countryReligion.setText(getIntent().getStringExtra("countryReligion"));
+        countryContinent.setText(getIntent().getStringExtra("countryContinent"));
+        countryArea.setText(getIntent().getStringExtra("countryArea"));
         countryInfoText.setText(getIntent().getStringExtra("countryDescription"));
         countryFlag.setImageResource(getIntent().getIntExtra("countryFlag", 0));
 

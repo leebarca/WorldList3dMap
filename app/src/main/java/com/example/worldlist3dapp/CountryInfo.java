@@ -7,6 +7,9 @@ public class CountryInfo {
     private String capital;
     private String population;
     private String language;
+    private String religion;
+    private String continent;
+    private String area;
     private String description;
     private String firstAttractionName;
     private String firstAttractionDetails;
@@ -19,7 +22,7 @@ public class CountryInfo {
     private int thirdAttractionImage;
 
     // Constructor
-    public CountryInfo(String name, int flagResId, int imageResId, String capital, String population, String language, String description, String firstAttractionName, String firstAttractionDetails, int firstAttractionImage, String secondAttractionName, String secondAttractionDetails, int secondAttractionImage, String thirdAttractionName, String thirdAttractionDetails, int thirdAttractionImage) {
+    public CountryInfo(String name, int flagResId, int imageResId, String capital, String population, String language, String religion, String continent, String area, String description, String firstAttractionName, String firstAttractionDetails, int firstAttractionImage, String secondAttractionName, String secondAttractionDetails, int secondAttractionImage, String thirdAttractionName, String thirdAttractionDetails, int thirdAttractionImage) {
         this.name = name;
         this.flagResId = flagResId;
         this.imageResId = imageResId;
@@ -27,6 +30,9 @@ public class CountryInfo {
         this.population = population;
         this.language = language;
         this.description = description;
+        this.religion = religion;
+        this.continent = continent;
+        this.area = area;
         this.firstAttractionName = firstAttractionName;
         this.firstAttractionDetails = firstAttractionDetails;
         this.firstAttractionImage = firstAttractionImage;
@@ -65,6 +71,18 @@ public class CountryInfo {
 
     public String getDescription() {
         return description;
+    }
+
+    public String getReligion() {
+        return religion;
+    }
+
+    public String getContinent() {
+        return continent;
+    }
+
+    public String getArea() {
+        return area;
     }
 
     public String getFirstAttractionName() {

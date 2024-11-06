@@ -28,7 +28,6 @@ public class CountryDetailActivity extends AppCompatActivity {
         TextView countryContinent = findViewById(R.id.textView_continent);
         TextView countryArea = findViewById(R.id.textView_area);
         ImageView countryFlag = findViewById(R.id.country_flag);
-        ImageView countryOutline = findViewById(R.id.country_outline);
         TextView countryInfoText = findViewById(R.id.textView_country_info);
         attractionsContainer = findViewById(R.id.attractions_container);
 
@@ -42,7 +41,6 @@ public class CountryDetailActivity extends AppCompatActivity {
         countryContinent.setText(getIntent().getStringExtra("countryContinent"));
         countryArea.setText(getIntent().getStringExtra("countryArea"));
         countryFlag.setImageResource(getIntent().getIntExtra("countryFlag", 0));
-        countryOutline.setImageResource(getIntent().getIntExtra("countryOutline", 0));
         countryInfoText.setText(getIntent().getStringExtra("countryDescription"));
 
         // Example attraction data (could be retrieved dynamically)

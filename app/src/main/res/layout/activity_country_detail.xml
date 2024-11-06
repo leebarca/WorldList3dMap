@@ -213,7 +213,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/open_sans"
-            android:text="Top 3 attractions:"
+            android:text="Notable Attractions"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
 

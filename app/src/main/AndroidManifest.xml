@@ -26,6 +26,9 @@
 
         <activity android:name=".CountryDetailActivity" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".CountryDetailsAttractions" />
+        <activity android:name=".CountryDetailsInfo" />
+        <activity android:name=".CountryDetailsOffers" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -273,39 +273,5 @@
             </LinearLayout>
 
         </GridLayout>
-
-        <!-- Additional content (e.g., country info, attractions) -->
-        <TextView
-            android:id="@+id/textView_country_info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/info_background"
-            android:fontFamily="@font/open_sans"
-            android:padding="12dp"
-            android:text=""
-            android:textColor="@android:color/black"
-            android:textSize="16sp" />
-
-
-
-        <!-- Top Attractions Header -->
-        <TextView
-            android:id="@+id/top_attractions_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/open_sans"
-            android:text="Notable Attractions"
-            android:textColor="@android:color/black"
-            android:textSize="18sp" />
-
-        <!-- Container for the expandable attractions -->
-        <LinearLayout
-            android:id="@+id/attractions_container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-
     </LinearLayout>
 </ScrollView>

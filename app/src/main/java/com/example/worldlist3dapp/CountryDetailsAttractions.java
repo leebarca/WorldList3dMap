@@ -1,5 +1,7 @@
 package com.example.worldlist3dapp;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import android.animation.ObjectAnimator;
+import android.view.animation.DecelerateInterpolator;
 
 public class CountryDetailsAttractions extends AppCompatActivity {
 
@@ -48,6 +52,7 @@ public class CountryDetailsAttractions extends AppCompatActivity {
         for (int i = 0; i < names.length; i++) {
             if (names[i] == null || names[i].isEmpty()) continue;
 
+            // Inflate the attraction view
             View attractionView = inflater.inflate(R.layout.item_attraction, attractionsContainer, false);
             TextView attractionName = attractionView.findViewById(R.id.attraction_name);
             TextView attractionDetails = attractionView.findViewById(R.id.attraction_details);
@@ -71,6 +76,7 @@ public class CountryDetailsAttractions extends AppCompatActivity {
                 }
             });
 
+            // Add the attraction view to the container
             attractionsContainer.addView(attractionView);
         }
     }

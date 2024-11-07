@@ -10,17 +10,6 @@
         android:orientation="vertical"
         android:paddingBottom="16dp">
 
-        <!-- Header for the Attractions Page -->
-        <TextView
-            android:id="@+id/attractions_header"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Top Attractions"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"
-            android:paddingBottom="16dp"
-            android:fontFamily="@font/open_sans" />
-
         <!-- Container for the expandable attractions -->
         <LinearLayout
             android:id="@+id/attractions_container"

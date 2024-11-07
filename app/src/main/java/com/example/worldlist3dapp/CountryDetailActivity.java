@@ -1,5 +1,7 @@
 package com.example.worldlist3dapp;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +13,11 @@ import androidx.appcompat.app.AppCompatActivity;
 public class CountryDetailActivity extends AppCompatActivity {
 
     private LinearLayout attractionsContainer;
+    private LinearLayout infoIcon;
+    private LinearLayout attractionsIcon;
+    private LinearLayout offersIcon;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,14 +27,17 @@ public class CountryDetailActivity extends AppCompatActivity {
 
         ImageView countryImage = findViewById(R.id.map_container);
         TextView countryName = findViewById(R.id.countryName);
+        ImageView countryFlag = findViewById(R.id.country_flag);
         TextView countryCapital = findViewById(R.id.textView_capital);
         TextView countryPopulation = findViewById(R.id.textView_population);
         TextView countryLanguage = findViewById(R.id.textView_languages);
         TextView countryReligion = findViewById(R.id.textView_religion);
         TextView countryContinent = findViewById(R.id.textView_continent);
         TextView countryArea = findViewById(R.id.textView_area);
-        ImageView countryFlag = findViewById(R.id.country_flag);
-        TextView countryInfoText = findViewById(R.id.textView_country_info);
+        TextView countryInfo = findViewById(R.id.textView_country_info);
+        infoIcon = findViewById(R.id.open_info_element);
+        attractionsIcon = findViewById(R.id.open_attractions_element);
+        offersIcon = findViewById(R.id.open_offers_element);
         attractionsContainer = findViewById(R.id.attractions_container);
 
         // Retrieve values from Intent
@@ -40,8 +49,47 @@ public class CountryDetailActivity extends AppCompatActivity {
         countryReligion.setText(getIntent().getStringExtra("countryReligion"));
         countryContinent.setText(getIntent().getStringExtra("countryContinent"));
         countryArea.setText(getIntent().getStringExtra("countryArea"));
+        countryInfo.setText(getIntent().getStringExtra("countryDescription"));
         countryFlag.setImageResource(getIntent().getIntExtra("countryFlag", 0));
-        countryInfoText.setText(getIntent().getStringExtra("countryDescription"));
+
+        // Get Info to pass onto other classes
+        String country_info = getIntent().getStringExtra("countryDescription");
+        String country_offers = getIntent().getStringExtra("countryDescription");
+        String firstAttractionName = getIntent().getStringExtra("firstAttractionName");
+        String secondAttractionName = getIntent().getStringExtra("secondAttractionName");
+        String thirdAttractionName = getIntent().getStringExtra("thirdAttractionName");
+        String firstAttractionDetails = getIntent().getStringExtra("firstAttractionDetails");
+        String secondAttractionDetails = getIntent().getStringExtra("secondAttractionDetails");
+        String thirdAttractionDetails = getIntent().getStringExtra("thirdAttractionDetails");
+        int firstAttractionImage = getIntent().getIntExtra("firstAttractionImage", 0);
+        int secondAttractionImage = getIntent().getIntExtra("secondAttractionImage", 0);
+        int thirdAttractionImage = getIntent().getIntExtra("thirdAttractionImage", 0);
+
+        infoIcon.setOnClickListener(v -> {
+            // Handle click event
+            Intent intent = new Intent(CountryDetailActivity.this, CountryDetailsInfo.class);
+            intent.putExtra("countryImageResId", country_info);
+        });
+
+        attractionsIcon.setOnClickListener(v -> {
+            // Handle click event
+            Intent intent = new Intent(CountryDetailActivity.this, CountryDetailsAttractions.class);
+            intent.putExtra("firstAttractionName", firstAttractionName);
+            intent.putExtra("secondAttractionName", secondAttractionName);
+            intent.putExtra("thirdAttractionName", thirdAttractionName);
+            intent.putExtra("firstAttractionDetails", firstAttractionDetails);
+            intent.putExtra("secondAttractionDetails", secondAttractionDetails);
+            intent.putExtra("thirdAttractionDetails", thirdAttractionDetails);
+            intent.putExtra("firstAttractionImage", firstAttractionImage);
+            intent.putExtra("secondAttractionImage", secondAttractionImage);
+            intent.putExtra("thirdAttractionImage", thirdAttractionImage);
+        });
+
+        offersIcon.setOnClickListener(v -> {
+            // Handle click event
+            Intent intent = new Intent(CountryDetailActivity.this, CountryDetailsOffers.class);
+            intent.putExtra("countryImageResId", country_offers);
+        });
 
         // Example attraction data (could be retrieved dynamically)
         String[] attractionNames = {

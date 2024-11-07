@@ -61,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("countryContinent", selectedCountry.getContinent());
             intent.putExtra("countryArea", selectedCountry.getArea());
             intent.putExtra("countryFlag", selectedCountry.getFlagResId());
-            intent.putExtra("countryOutline", selectedCountry.getFlagResId());
             intent.putExtra("countryDescription", selectedCountry.getDescription());
             intent.putExtra("firstAttractionName", selectedCountry.getFirstAttractionName());
             intent.putExtra("firstAttractionDetails", selectedCountry.getFirstAttractionDetails());

@@ -191,6 +191,87 @@
                     android:gravity="center" />
             </LinearLayout>
 
+            <!-- Clickable Info Icon -->
+            <LinearLayout
+                android:id="@+id/open_info_element"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Clickable Info Icon"
+                    android:src="@drawable/info" />
+                <TextView
+                    android:id="@+id/textView_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Info"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Clickable Attractions Icon -->
+            <LinearLayout
+                android:id="@+id/open_attractions_element"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Clickable Attractions Icon"
+                    android:src="@drawable/attractions" />
+                <TextView
+                    android:id="@+id/textView_attractions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Attractions"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Clickable Offers Icon -->
+            <LinearLayout
+                android:id="@+id/open_offers_element"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Clickable Offers Icon"
+                    android:src="@drawable/offers" />
+                <TextView
+                    android:id="@+id/textView_offers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offers"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center" />
+            </LinearLayout>
+
         </GridLayout>
 
         <!-- Additional content (e.g., country info, attractions) -->
@@ -205,6 +286,8 @@
             android:text=""
             android:textColor="@android:color/black"
             android:textSize="16sp" />
+
+
 
         <!-- Top Attractions Header -->
         <TextView

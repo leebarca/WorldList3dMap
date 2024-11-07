@@ -201,15 +201,19 @@
                 android:orientation="vertical"
                 android:gravity="center"
                 android:layout_columnWeight="1"
-                android:padding="8dp">
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground"
+                android:backgroundTint="@color/list_background_colour"
+                android:backgroundTintMode="src_over"
+                android:elevation="4dp">
 
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:contentDescription="Clickable Info Icon"
+                    android:contentDescription="Info Icon"
                     android:src="@drawable/info" />
+
                 <TextView
-                    android:id="@+id/textView_info"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Info"
@@ -228,15 +232,19 @@
                 android:orientation="vertical"
                 android:gravity="center"
                 android:layout_columnWeight="1"
-                android:padding="8dp">
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground"
+                android:backgroundTint="@color/list_background_colour"
+                android:backgroundTintMode="src_over"
+                android:elevation="4dp">
 
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:contentDescription="Clickable Attractions Icon"
+                    android:contentDescription="Attractions Icon"
                     android:src="@drawable/attractions" />
+
                 <TextView
-                    android:id="@+id/textView_attractions"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Attractions"
@@ -255,15 +263,19 @@
                 android:orientation="vertical"
                 android:gravity="center"
                 android:layout_columnWeight="1"
-                android:padding="8dp">
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground"
+                android:backgroundTint="@color/list_background_colour"
+                android:backgroundTintMode="src_over"
+                android:elevation="4dp">
 
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:contentDescription="Clickable Offers Icon"
+                    android:contentDescription="Offers Icon"
                     android:src="@drawable/offers" />
+
                 <TextView
-                    android:id="@+id/textView_offers"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Offers"
@@ -271,6 +283,7 @@
                     android:textColor="@android:color/black"
                     android:gravity="center" />
             </LinearLayout>
+
 
         </GridLayout>
     </LinearLayout>

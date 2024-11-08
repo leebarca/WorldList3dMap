@@ -1,7 +1,5 @@
 package com.example.worldlist3dapp;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,8 +8,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-import android.animation.ObjectAnimator;
-import android.view.animation.DecelerateInterpolator;
 
 public class CountryDetailsAttractions extends AppCompatActivity {
 

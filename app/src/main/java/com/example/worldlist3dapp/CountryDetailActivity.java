@@ -3,8 +3,7 @@ package com.example.worldlist3dapp;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -21,8 +20,6 @@ public class CountryDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_country_detail);
-
-        // Other setup for country details omitted for brevity
 
         ImageView countryImage = findViewById(R.id.map_container);
         TextView countryName = findViewById(R.id.countryName);

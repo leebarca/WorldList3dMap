@@ -52,23 +52,23 @@
         android:visibility="gone">
 
     <!-- Attraction image (centered) -->
-        <ImageView
-            android:id="@+id/attraction_image"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:layout_gravity="center"/>
+    <ImageView
+        android:id="@+id/attraction_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:contentDescription="Attraction Image" />
 
-        <!-- Attraction description -->
+    <!-- Attraction description -->
         <TextView
             android:id="@+id/attraction_details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/open_sans"
             android:paddingTop="8dp"
-            android:lineSpacingExtra="4dp"
             android:text="Attraction details go here."
             android:textColor="@android:color/black"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 </LinearLayout>
     </LinearLayout>

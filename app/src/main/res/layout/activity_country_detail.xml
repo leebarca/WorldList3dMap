@@ -202,8 +202,7 @@
                 android:gravity="center"
                 android:layout_columnWeight="1"
                 android:padding="8dp"
-                android:background="?attr/selectableItemBackground"
-                android:backgroundTint="@color/list_background_colour"
+                android:background="@drawable/button_background"
                 android:backgroundTintMode="src_over"
                 android:elevation="4dp">
 
@@ -233,8 +232,7 @@
                 android:gravity="center"
                 android:layout_columnWeight="1"
                 android:padding="8dp"
-                android:background="?attr/selectableItemBackground"
-                android:backgroundTint="@color/list_background_colour"
+                android:background="@drawable/button_background"
                 android:backgroundTintMode="src_over"
                 android:elevation="4dp">
 
@@ -264,8 +262,7 @@
                 android:gravity="center"
                 android:layout_columnWeight="1"
                 android:padding="8dp"
-                android:background="?attr/selectableItemBackground"
-                android:backgroundTint="@color/list_background_colour"
+                android:background="@drawable/button_background"
                 android:backgroundTintMode="src_over"
                 android:elevation="4dp">
 

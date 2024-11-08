@@ -12,4 +12,7 @@
     <color name="app_background_color">#EFF4f3</color>
     <color name="list_background_colour">#E7E5E5</color>
     <color name="button_border_colour">#C0BDBD</color>
+    <color name="best_time_color">#4CAF50</color> <!-- Green for best months -->
+    <color name="average_time_color">#FFC107</color> <!-- Amber for average months -->
+    <color name="worst_time_color">#F44336</color> <!-- Red for worst months -->
 </resources>

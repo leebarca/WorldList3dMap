@@ -198,8 +198,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:columnCount="12"
-            android:layout_marginTop="8dp"
-            android:padding="8dp">
+            android:layout_marginTop="8dp">
 
             <!-- Month Cells for January to December -->
             <TextView
@@ -208,10 +207,11 @@
                 android:layout_height="40dp"
                 android:layout_columnWeight="1"
                 android:gravity="center"
+                android:fontFamily="@font/open_sans"
                 android:text="Jan"
                 android:textSize="10sp"
                 android:textColor="@android:color/white"
-                android:background="@color/button_border_colour" />
+                android:background="@drawable/rounded_background" />
 
             <TextView
                 android:id="@+id/feb"
@@ -219,10 +219,11 @@
                 android:layout_height="40dp"
                 android:layout_columnWeight="1"
                 android:gravity="center"
+                android:fontFamily="@font/open_sans"
                 android:text="Feb"
                 android:textSize="10sp"
                 android:textColor="@android:color/white"
-                android:background="@color/button_border_colour" />
+                android:background="@drawable/rounded_background" />
 
             <TextView
                 android:id="@+id/mar"
@@ -230,10 +231,11 @@
                 android:layout_height="40dp"
                 android:layout_columnWeight="1"
                 android:gravity="center"
+                android:fontFamily="@font/open_sans"
                 android:text="Mar"
                 android:textSize="10sp"
                 android:textColor="@android:color/white"
-                android:background="@color/button_border_colour" />
+                android:background="@drawable/rounded_background" />
 
             <TextView
                 android:id="@+id/apr"
@@ -241,10 +243,11 @@
                 android:layout_height="40dp"
                 android:layout_columnWeight="1"
                 android:gravity="center"
+                android:fontFamily="@font/open_sans"
                 android:text="Apr"
                 android:textSize="10sp"
                 android:textColor="@android:color/white"
-                android:background="@color/button_border_colour" />
+                android:background="@drawable/rounded_background" />
 
             <TextView
                 android:id="@+id/may"
@@ -252,10 +255,11 @@
                 android:layout_height="40dp"
                 android:layout_columnWeight="1"
                 android:gravity="center"
+                android:fontFamily="@font/open_sans"
                 android:text="May"
                 android:textSize="10sp"
                 android:textColor="@android:color/white"
-                android:background="@color/button_border_colour" />
+                android:background="@drawable/rounded_background" />
 
             <TextView
                 android:id="@+id/jun"
@@ -263,10 +267,11 @@
                 android:layout_height="40dp"
                 android:layout_columnWeight="1"
                 android:gravity="center"
+                android:fontFamily="@font/open_sans"
                 android:text="Jun"
                 android:textSize="10sp"
                 android:textColor="@android:color/white"
-                android:background="@color/button_border_colour" />
+                android:background="@drawable/rounded_background" />
 
             <TextView
                 android:id="@+id/jul"
@@ -274,10 +279,11 @@
                 android:layout_height="40dp"
                 android:layout_columnWeight="1"
                 android:gravity="center"
+                android:fontFamily="@font/open_sans"
                 android:text="Jul"
                 android:textSize="10sp"
                 android:textColor="@android:color/white"
-                android:background="@color/button_border_colour" />
+                android:background="@drawable/rounded_background" />
 
             <TextView
                 android:id="@+id/aug"
@@ -285,10 +291,11 @@
                 android:layout_height="40dp"
                 android:layout_columnWeight="1"
                 android:gravity="center"
+                android:fontFamily="@font/open_sans"
                 android:text="Aug"
                 android:textSize="10sp"
                 android:textColor="@android:color/white"
-                android:background="@color/button_border_colour" />
+                android:background="@drawable/rounded_background" />
 
             <TextView
                 android:id="@+id/sep"
@@ -296,10 +303,11 @@
                 android:layout_height="40dp"
                 android:layout_columnWeight="1"
                 android:gravity="center"
+                android:fontFamily="@font/open_sans"
                 android:text="Sep"
                 android:textSize="10sp"
                 android:textColor="@android:color/white"
-                android:background="@color/button_border_colour" />
+                android:background="@drawable/rounded_background" />
 
             <TextView
                 android:id="@+id/oct"
@@ -307,10 +315,11 @@
                 android:layout_height="40dp"
                 android:layout_columnWeight="1"
                 android:gravity="center"
+                android:fontFamily="@font/open_sans"
                 android:text="Oct"
                 android:textSize="10sp"
                 android:textColor="@android:color/white"
-                android:background="@color/button_border_colour" />
+                android:background="@drawable/rounded_background" />
 
             <TextView
                 android:id="@+id/nov"
@@ -318,10 +327,11 @@
                 android:layout_height="40dp"
                 android:layout_columnWeight="1"
                 android:gravity="center"
+                android:fontFamily="@font/open_sans"
                 android:text="Nov"
                 android:textSize="10sp"
                 android:textColor="@android:color/white"
-                android:background="@color/button_border_colour" />
+                android:background="@drawable/rounded_background" />
 
             <TextView
                 android:id="@+id/dec"
@@ -329,20 +339,75 @@
                 android:layout_height="40dp"
                 android:layout_columnWeight="1"
                 android:gravity="center"
+                android:fontFamily="@font/open_sans"
                 android:text="Dec"
                 android:textSize="10sp"
                 android:textColor="@android:color/white"
-                android:background="@color/button_border_colour" />
+                android:background="@drawable/rounded_background" />
 
-            <!-- Repeat the TextView for each month up to December -->
-            <!-- Use IDs as feb, mar, apr, etc. for each month -->
         </GridLayout>
-        
+
+        <!-- Color Legend Key placed below the month bar -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal">
+
+            <!-- Best Time Indicator -->
+            <TextView
+                android:id="@+id/best_time_key"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Best"
+                android:fontFamily="@font/open_sans"
+                android:textSize="10sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_background"
+                android:padding="4dp"
+                android:layout_margin="4dp"/>
+
+            <!-- Average Time Indicator -->
+            <TextView
+                android:id="@+id/avg_time_key"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Average"
+                android:fontFamily="@font/open_sans"
+                android:textSize="10sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_background"
+                android:padding="4dp"
+                android:layout_margin="4dp"/>
+
+            <!-- Worst Time Indicator -->
+            <TextView
+                android:id="@+id/worst_time_key"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Worst"
+                android:fontFamily="@font/open_sans"
+                android:textSize="10sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_background"
+                android:padding="4dp"
+                android:layout_margin="4dp"/>
+        </LinearLayout>
+
+
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:columnCount="3"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="10dp">
 
         <!-- Clickable Info Icon -->
         <LinearLayout

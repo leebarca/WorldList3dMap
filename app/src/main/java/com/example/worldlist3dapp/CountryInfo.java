@@ -1,5 +1,8 @@
 package com.example.worldlist3dapp;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CountryInfo {
     private String name;
     private int flagResId;
@@ -20,9 +23,10 @@ public class CountryInfo {
     private String thirdAttractionName;
     private String thirdAttractionDetails;
     private int thirdAttractionImage;
+    private int[] bestTimeVisit;
 
     // Constructor
-    public CountryInfo(String name, int flagResId, int imageResId, String capital, String population, String language, String religion, String continent, String area, String description, String firstAttractionName, String firstAttractionDetails, int firstAttractionImage, String secondAttractionName, String secondAttractionDetails, int secondAttractionImage, String thirdAttractionName, String thirdAttractionDetails, int thirdAttractionImage) {
+    public CountryInfo(String name, int flagResId, int imageResId, String capital, String population, String language, String religion, String continent, String area, String description, String firstAttractionName, String firstAttractionDetails, int firstAttractionImage, String secondAttractionName, String secondAttractionDetails, int secondAttractionImage, String thirdAttractionName, String thirdAttractionDetails, int thirdAttractionImage, int[] bestTimeVisit) {
         this.name = name;
         this.flagResId = flagResId;
         this.imageResId = imageResId;
@@ -42,6 +46,7 @@ public class CountryInfo {
         this.thirdAttractionName = thirdAttractionName;
         this.thirdAttractionDetails = thirdAttractionDetails;
         this.thirdAttractionImage = thirdAttractionImage;
+        this.bestTimeVisit = bestTimeVisit;
     }
 
     // Getters
@@ -119,5 +124,9 @@ public class CountryInfo {
 
     public int getThirdAttractionImage() {
         return thirdAttractionImage;
+    }
+
+    public int[] getBestTimeVisit() {
+        return bestTimeVisit;
     }
 }

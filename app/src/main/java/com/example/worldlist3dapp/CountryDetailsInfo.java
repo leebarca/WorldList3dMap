@@ -1,5 +1,6 @@
 package com.example.worldlist3dapp;
 
+import android.annotation.SuppressLint;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -14,7 +15,7 @@ public class CountryDetailsInfo extends AppCompatActivity {
         setContentView(R.layout.activity_country_details_info);
 
         // Find the TextView to display country info
-        TextView countryInfoTextView = findViewById(R.id.textView_country_info);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) TextView countryInfoTextView = findViewById(R.id.textView_country_info);
         TextView jan = findViewById(R.id.jan);
         TextView feb = findViewById(R.id.feb);
         TextView mar = findViewById(R.id.mar);
@@ -27,9 +28,6 @@ public class CountryDetailsInfo extends AppCompatActivity {
         TextView oct = findViewById(R.id.oct);
         TextView nov = findViewById(R.id.nov);
         TextView dec = findViewById(R.id.dec);
-        TextView best_time_key = findViewById(R.id.best_time_key);
-        TextView avg_time_key = findViewById(R.id.avg_time_key);
-        TextView worst_time_key = findViewById(R.id.worst_time_key);
 
         int[] bestTimesToVisit = getIntent().getIntArrayExtra("bestTimesToVisit");
 
@@ -40,10 +38,6 @@ public class CountryDetailsInfo extends AppCompatActivity {
         int colorBestTime = ContextCompat.getColor(this, R.color.best_time_color);
         int colorAverageTime = ContextCompat.getColor(this, R.color.average_time_color);
         int colorWorstTime = ContextCompat.getColor(this, R.color.worst_time_color);
-
-        best_time_key.setBackgroundTintList(ColorStateList.valueOf(colorBestTime));
-        avg_time_key.setBackgroundTintList(ColorStateList.valueOf(colorAverageTime));
-        worst_time_key.setBackgroundTintList(ColorStateList.valueOf(colorWorstTime));
 
         // Loop through each month and set the background color based on the value
         for (int i = 0; i < bestTimesToVisit.length; i++) {

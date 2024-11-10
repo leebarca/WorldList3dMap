@@ -11,225 +11,137 @@
         android:orientation="vertical"
         android:background="@drawable/button_background">
 
-        <!-- Country Info Text -->
+        <!-- Country Summary Section -->
         <TextView
-            android:id="@+id/textView_country_info"
+            android:id="@+id/textView_country_summary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@drawable/info_background"
             android:fontFamily="@font/open_sans"
             android:padding="12dp"
+            android:gravity="center"
+            android:text="Country Summary"
             android:textColor="@android:color/black"
-            android:textSize="16sp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_country_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <!-- Best Time to Visit Section -->
+        <TextView
+            android:id="@+id/textView_best_time_to_visit_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Best Time to Visit"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/open_sans"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
 
         <GridLayout
             android:id="@+id/best_time_to_visit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:columnCount="12"
+            android:padding="8dp"
             android:layout_marginTop="8dp">
 
-            <!-- Month Cells for January to December -->
-            <TextView
-                android:id="@+id/jan"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:fontFamily="@font/open_sans"
-                android:text="Jan"
-                android:textSize="10sp"
-                android:textColor="@android:color/white"
-                android:background="@drawable/rounded_background" />
-
-            <TextView
-                android:id="@+id/feb"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:fontFamily="@font/open_sans"
-                android:text="Feb"
-                android:textSize="10sp"
-                android:textColor="@android:color/white"
-                android:background="@drawable/rounded_background" />
-
-            <TextView
-                android:id="@+id/mar"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:fontFamily="@font/open_sans"
-                android:text="Mar"
-                android:textSize="10sp"
-                android:textColor="@android:color/white"
-                android:background="@drawable/rounded_background" />
-
-            <TextView
-                android:id="@+id/apr"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:fontFamily="@font/open_sans"
-                android:text="Apr"
-                android:textSize="10sp"
-                android:textColor="@android:color/white"
-                android:background="@drawable/rounded_background" />
-
-            <TextView
-                android:id="@+id/may"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:fontFamily="@font/open_sans"
-                android:text="May"
-                android:textSize="10sp"
-                android:textColor="@android:color/white"
-                android:background="@drawable/rounded_background" />
-
-            <TextView
-                android:id="@+id/jun"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:fontFamily="@font/open_sans"
-                android:text="Jun"
-                android:textSize="10sp"
-                android:textColor="@android:color/white"
-                android:background="@drawable/rounded_background" />
-
-            <TextView
-                android:id="@+id/jul"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:fontFamily="@font/open_sans"
-                android:text="Jul"
-                android:textSize="10sp"
-                android:textColor="@android:color/white"
-                android:background="@drawable/rounded_background" />
-
-            <TextView
-                android:id="@+id/aug"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:fontFamily="@font/open_sans"
-                android:text="Aug"
-                android:textSize="10sp"
-                android:textColor="@android:color/white"
-                android:background="@drawable/rounded_background" />
-
-            <TextView
-                android:id="@+id/sep"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:fontFamily="@font/open_sans"
-                android:text="Sep"
-                android:textSize="10sp"
-                android:textColor="@android:color/white"
-                android:background="@drawable/rounded_background" />
-
-            <TextView
-                android:id="@+id/oct"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:fontFamily="@font/open_sans"
-                android:text="Oct"
-                android:textSize="10sp"
-                android:textColor="@android:color/white"
-                android:background="@drawable/rounded_background" />
-
-            <TextView
-                android:id="@+id/nov"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:fontFamily="@font/open_sans"
-                android:text="Nov"
-                android:textSize="10sp"
-                android:textColor="@android:color/white"
-                android:background="@drawable/rounded_background" />
-
-            <TextView
-                android:id="@+id/dec"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_columnWeight="1"
-                android:gravity="center"
-                android:fontFamily="@font/open_sans"
-                android:text="Dec"
-                android:textSize="10sp"
-                android:textColor="@android:color/white"
-                android:background="@drawable/rounded_background" />
+            <!-- Placeholder months for Best Time to Visit -->
+            <TextView android:id="@+id/jan" android:text="Jan" android:background="android:background=@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
+            <TextView android:id="@+id/feb" android:text="Feb" android:background="android:background=@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
+            <TextView android:id="@+id/mar" android:text="Mar" android:background="android:background=@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
+            <TextView android:id="@+id/apr" android:text="Apr" android:background="android:background=@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
+            <TextView android:id="@+id/may" android:text="May" android:background="android:background=@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
+            <TextView android:id="@+id/jun" android:text="Jun" android:background="android:background=@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
+            <TextView android:id="@+id/jul" android:text="Jul" android:background="android:background=@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
+            <TextView android:id="@+id/aug" android:text="Aug" android:background="android:background=@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
+            <TextView android:id="@+id/sep" android:text="Sep" android:background="android:background=@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
+            <TextView android:id="@+id/oct" android:text="Oct" android:background="android:background=@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
+            <TextView android:id="@+id/nov" android:text="Nov" android:background="android:background=@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
+            <TextView android:id="@+id/dec" android:text="Dec" android:background="android:background=@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
 
         </GridLayout>
 
-        <!-- Color Legend Key placed below the month bar -->
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <!-- Weather Section -->
+        <TextView
+            android:id="@+id/textView_weather_label"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
             android:gravity="center"
-            android:layout_marginTop="8dp"
-            android:layout_gravity="center_horizontal">
+            android:text="Weather"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/open_sans"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
 
-            <!-- Best Time Indicator -->
-            <TextView
-                android:id="@+id/best_time_key"
-                android:layout_width="60dp"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Best"
-                android:fontFamily="@font/open_sans"
-                android:textSize="10sp"
-                android:textColor="@android:color/white"
-                android:background="@drawable/rounded_background"
-                android:padding="4dp"
-                android:layout_margin="4dp"/>
+        <TextView
+            android:id="@+id/textView_weather_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
 
-            <!-- Average Time Indicator -->
-            <TextView
-                android:id="@+id/avg_time_key"
-                android:layout_width="60dp"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Average"
-                android:fontFamily="@font/open_sans"
-                android:textSize="10sp"
-                android:textColor="@android:color/white"
-                android:background="@drawable/rounded_background"
-                android:padding="4dp"
-                android:layout_margin="4dp"/>
+        <!-- Interesting Fact Section -->
+        <TextView
+            android:id="@+id/textView_fact_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:text="Interesting Fact"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/open_sans"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
 
-            <!-- Worst Time Indicator -->
-            <TextView
-                android:id="@+id/worst_time_key"
-                android:layout_width="60dp"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Worst"
-                android:fontFamily="@font/open_sans"
-                android:textSize="10sp"
-                android:textColor="@android:color/white"
-                android:background="@drawable/rounded_background"
-                android:padding="4dp"
-                android:layout_margin="4dp"/>
-        </LinearLayout>
+        <TextView
+            android:id="@+id/textView_fact_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <!-- Official Tourism Website Link -->
+        <TextView
+            android:id="@+id/textView_website_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:text="Official Tourism Website"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/open_sans"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView_website_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:fontFamily="@font/open_sans"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp"
+            android:autoLink="web" />
     </LinearLayout>
 </ScrollView>

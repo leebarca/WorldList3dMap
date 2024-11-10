@@ -5,6 +5,10 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.Button;
+import android.widget.GridLayout;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -12,7 +16,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
     private List<CountryInfo> countries;
     private CountryAdapter adapter; // Class-level adapter declaration
     private EditText searchBar;
+    private ImageView filter;
+    private LinearLayout filterContainer;
+    private Set<String> selectedLanguages = new HashSet<>();
+    private Set<String> selectedContinents = new HashSet<>();
+    private Set<String> selectedReligions = new HashSet<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +39,20 @@ public class MainActivity extends AppCompatActivity {
 
         countryListView = findViewById(R.id.country_list_view);
         searchBar = findViewById(R.id.search_bar);
+        filter = findViewById(R.id.filter_icon);
+        filterContainer = findViewById(R.id.filter_container);
+
+        GridLayout languageGrid = findViewById(R.id.language_filter_grid);
+        GridLayout continentGrid = findViewById(R.id.continent_filter_grid);
+        GridLayout religionGrid = findViewById(R.id.religion_filter_grid);
+
+        String[] languages = {"English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Arabic", "Russian", "Chinese", "Malay", "Hindi", "Korean"};
+        String[] continents = {"North America", "South America", "Europe", "Africa", "Asia", "Australasia"};
+        String[] religions = {"Christianity", "Islam", "Buddhism", "Hinduism", "Judaism"};
+
+        addFilterButtons(languageGrid, languages, (Set<String>) selectedLanguages);
+        addFilterButtons(continentGrid, continents, (Set<String>) selectedContinents);
+        addFilterButtons(continentGrid, religions, (Set<String>) selectedReligions);
 
         countries = CountryData.getCountriesInfo();
         adapter = new CountryAdapter(this, countries); // Initialize the class-level adapter
@@ -36,15 +61,28 @@ public class MainActivity extends AppCompatActivity {
         // Search bar filtering
         searchBar.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int start, int count, int after) {}
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int start, int before, int count) {
-                filterCountries(charSequence.toString());
+            public void beforeTextChanged(CharSequence charSequence, int start, int count, int after) {
             }
 
             @Override
-            public void afterTextChanged(Editable editable) {}
+            public void onTextChanged(CharSequence charSequence, int start, int before, int count) {
+                filterCountries();
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+            }
+        });
+
+        filter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (filterContainer.getVisibility() == View.GONE) {
+                    filterContainer.setVisibility(View.VISIBLE);
+                } else {
+                    filterContainer.setVisibility(View.GONE);
+                }
+            }
         });
 
         // Set up item click listener to open CountryDetailActivity
@@ -77,17 +115,22 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void filterCountries(String query) {
+    private void filterCountries() {
+        String query = searchBar.getText().toString().toLowerCase();
         List<CountryInfo> filteredCountries = new ArrayList<>();
         for (CountryInfo country : countries) {
-            if (country.getName().toLowerCase().contains(query.toLowerCase())) {
+            boolean matchesSearch = query.isEmpty() || country.getName().toLowerCase().contains(query);
+            boolean matchesLanguage = selectedLanguages.isEmpty() || selectedLanguages.contains(country.getLanguage());
+            boolean matchesContinent = selectedContinents.isEmpty() || selectedContinents.contains(country.getContinent());
+            boolean matchesReligion = selectedReligions.isEmpty() || selectedReligions.contains(country.getReligion());
+
+            if (matchesSearch && matchesLanguage && matchesContinent && matchesReligion) {
                 filteredCountries.add(country);
             }
         }
-        // Update the adapter with the filtered list]
+
         adapter.updateCountries(filteredCountries);
 
-        // Display the "No countries found" message if the filtered list is empty
         TextView noCountriesFoundTextView = findViewById(R.id.no_countries_found);
         if (filteredCountries.isEmpty()) {
             noCountriesFoundTextView.setVisibility(View.VISIBLE);
@@ -95,6 +138,35 @@ public class MainActivity extends AppCompatActivity {
         } else {
             noCountriesFoundTextView.setVisibility(View.GONE);
             countryListView.setVisibility(View.VISIBLE);
+        }
+    }
+
+    private void addFilterButtons(GridLayout gridLayout, String[] values, Set<String> selectedValues) {
+        for (String value : values) {
+            Button button = new Button(this);
+            button.setText(value);
+            button.setBackgroundResource(R.drawable.button_background);
+            button.setTextColor(getResources().getColor(R.color.black));
+            button.setPadding(8, 8, 8, 8);
+
+            // Set button style and size
+            GridLayout.LayoutParams params = new GridLayout.LayoutParams();
+            params.width = GridLayout.LayoutParams.WRAP_CONTENT;
+            params.height = GridLayout.LayoutParams.WRAP_CONTENT;
+            params.setMargins(8, 8, 8, 8);
+            button.setLayoutParams(params);
+
+            button.setOnClickListener(v -> {
+                if (selectedValues.contains(value)) {
+                    selectedValues.remove(value);
+                    button.setBackgroundResource(R.drawable.button_background); // Unselected color
+                } else {
+                    selectedValues.add(value);
+                    button.setBackgroundResource(R.drawable.button_background_unselected); // Selected color
+                }
+                filterCountries(); // Update the country list based on selected filters
+            });
+            gridLayout.addView(button);
         }
     }
 }

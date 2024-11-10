@@ -6,19 +6,130 @@
     android:background="@color/app_background_color"
     android:padding="16dp">
 
-    <!-- Search bar -->
-    <EditText
-        android:id="@+id/search_bar"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:textColorHint="@color/black"
+        android:layout_marginBottom="16dp">
+
+        <!-- Search EditText -->
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:background="@drawable/search_bar_background"
+            android:drawableStart="@drawable/search_icon"
+            android:drawablePadding="8dp"
+            android:inputType="text" />
+
+        <!-- Filter Icon as Separate Element -->
+        <ImageView
+            android:id="@+id/filter_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end|center_vertical"
+            android:src="@drawable/filter"
+            android:contentDescription="Filter Button"
+            android:clickable="true"
+            android:focusable="true" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/filter_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_columnWeight="1"
+        android:visibility="gone"
+        android:padding="8dp"
+        android:background="@drawable/button_background"
+        android:backgroundTintMode="src_over"
+        android:elevation="4dp">
+
+    <!-- Language Filter -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Language"
+        android:textSize="16sp"
+        android:gravity="center"
         android:textColor="@color/black"
-        android:padding="12dp"
-        android:background="@drawable/search_bar_background"
-        android:drawableStart="@drawable/search_icon"
-        android:drawablePadding="8dp"
-        android:inputType="text" />
+        android:fontFamily="@font/open_sans"
+        android:layout_marginTop="8dp" />
+
+    <GridLayout
+        android:id="@+id/language_filter_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_marginBottom="8dp">
+        <!-- Language buttons added dynamically in Java code -->
+    </GridLayout>
+
+    <!-- Continent Filter -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continent"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginTop="8dp" />
+
+    <GridLayout
+        android:id="@+id/continent_filter_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_marginBottom="8dp">
+        <!-- Continent buttons added dynamically in Java code -->
+    </GridLayout>
+
+    <!-- Religion Filter -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Religion"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginTop="8dp" />
+
+    <GridLayout
+        android:id="@+id/religion_filter_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_marginBottom="8dp">
+        <!-- Continent buttons added dynamically in Java code -->
+    </GridLayout>
+
+    <!-- Area Filter -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Area"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/open_sans"
+        android:layout_marginTop="8dp" />
+
+    <GridLayout
+        android:id="@+id/area_filter_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_marginBottom="8dp">
+        <!-- Continent buttons added dynamically in Java code -->
+    </GridLayout>
+    </LinearLayout>
 
     <!-- List of countries below the search bar -->
     <ListView

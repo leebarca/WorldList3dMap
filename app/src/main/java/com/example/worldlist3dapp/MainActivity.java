@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.EditText;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,9 +25,10 @@ public class MainActivity extends AppCompatActivity {
 
     private ListView countryListView;
     private List<CountryInfo> countries;
-    private CountryAdapter adapter; // Class-level adapter declaration
+    private CountryAdapter adapter;
     private EditText searchBar;
     private ImageView filter;
+    private ScrollView filterScrollContainer; // Updated to ScrollView
     private LinearLayout filterContainer;
     private Set<String> selectedLanguages = new HashSet<>();
     private Set<String> selectedContinents = new HashSet<>();
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         countryListView = findViewById(R.id.country_list_view);
         searchBar = findViewById(R.id.search_bar);
         filter = findViewById(R.id.filter_icon);
+        filterScrollContainer = findViewById(R.id.filter_scroll_container); // Reference to ScrollView
         filterContainer = findViewById(R.id.filter_container);
 
         GridLayout languageGrid = findViewById(R.id.language_filter_grid);
@@ -50,19 +53,18 @@ public class MainActivity extends AppCompatActivity {
         String[] continents = {"North America", "South America", "Europe", "Africa", "Asia", "Australasia"};
         String[] religions = {"Christianity", "Islam", "Buddhism", "Hinduism", "Judaism"};
 
-        addFilterButtons(languageGrid, languages, (Set<String>) selectedLanguages);
-        addFilterButtons(continentGrid, continents, (Set<String>) selectedContinents);
-        addFilterButtons(continentGrid, religions, (Set<String>) selectedReligions);
+        addFilterButtons(languageGrid, languages, selectedLanguages);
+        addFilterButtons(continentGrid, continents, selectedContinents);
+        addFilterButtons(religionGrid, religions, selectedReligions);
 
         countries = CountryData.getCountriesInfo();
-        adapter = new CountryAdapter(this, countries); // Initialize the class-level adapter
+        adapter = new CountryAdapter(this, countries);
         countryListView.setAdapter(adapter);
 
         // Search bar filtering
         searchBar.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int start, int count, int after) {
-            }
+            public void beforeTextChanged(CharSequence charSequence, int start, int count, int after) {}
 
             @Override
             public void onTextChanged(CharSequence charSequence, int start, int before, int count) {
@@ -70,24 +72,24 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void afterTextChanged(Editable editable) {
-            }
+            public void afterTextChanged(Editable editable) {}
         });
 
+        // Toggle filter ScrollView visibility
         filter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (filterContainer.getVisibility() == View.GONE) {
-                    filterContainer.setVisibility(View.VISIBLE);
+                if (filterScrollContainer.getVisibility() == View.GONE) {
+                    filterScrollContainer.setVisibility(View.VISIBLE);
                 } else {
-                    filterContainer.setVisibility(View.GONE);
+                    filterScrollContainer.setVisibility(View.GONE);
                 }
             }
         });
 
         // Set up item click listener to open CountryDetailActivity
         countryListView.setOnItemClickListener((parent, view, position, id) -> {
-            CountryInfo selectedCountry = adapter.getItem(position); // Using adapter instead of countries
+            CountryInfo selectedCountry = adapter.getItem(position);
 
             Intent intent = new Intent(MainActivity.this, CountryDetailActivity.class);
             intent.putExtra("countryImageResId", selectedCountry.getImageResId());
@@ -142,6 +144,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addFilterButtons(GridLayout gridLayout, String[] values, Set<String> selectedValues) {
+        int columnCount = gridLayout.getColumnCount(); // Get the number of columns
+
         for (String value : values) {
             Button button = new Button(this);
             button.setText(value);
@@ -151,8 +155,9 @@ public class MainActivity extends AppCompatActivity {
 
             // Set button style and size
             GridLayout.LayoutParams params = new GridLayout.LayoutParams();
-            params.width = GridLayout.LayoutParams.WRAP_CONTENT;
+            params.width = 0; // Width of 0dp to enable column weight
             params.height = GridLayout.LayoutParams.WRAP_CONTENT;
+            params.columnSpec = GridLayout.spec(GridLayout.UNDEFINED, 1f); // Set equal weight for each button
             params.setMargins(8, 8, 8, 8);
             button.setLayoutParams(params);
 
@@ -166,7 +171,9 @@ public class MainActivity extends AppCompatActivity {
                 }
                 filterCountries(); // Update the country list based on selected filters
             });
+
             gridLayout.addView(button);
         }
     }
+
 }

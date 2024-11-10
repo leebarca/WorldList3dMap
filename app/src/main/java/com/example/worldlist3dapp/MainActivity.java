@@ -122,7 +122,9 @@ public class MainActivity extends AppCompatActivity {
         List<CountryInfo> filteredCountries = new ArrayList<>();
         for (CountryInfo country : countries) {
             boolean matchesSearch = query.isEmpty() || country.getName().toLowerCase().contains(query);
-            boolean matchesLanguage = selectedLanguages.isEmpty() || selectedLanguages.contains(country.getLanguage());
+            boolean matchesLanguage = selectedLanguages.isEmpty() ||
+                    selectedLanguages.stream().anyMatch(language ->
+                            country.getLanguage().toLowerCase().contains(language.toLowerCase()));
             boolean matchesContinent = selectedContinents.isEmpty() || selectedContinents.contains(country.getContinent());
             boolean matchesReligion = selectedReligions.isEmpty() || selectedReligions.contains(country.getReligion());
 

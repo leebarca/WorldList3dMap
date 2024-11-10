@@ -114,26 +114,6 @@
                 android:layout_marginBottom="8dp">
                 <!-- Religion buttons added dynamically in Java code -->
             </GridLayout>
-
-            <!-- Area Filter -->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Area"
-                android:textSize="16sp"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:fontFamily="@font/open_sans"
-                android:layout_marginTop="8dp" />
-
-            <GridLayout
-                android:id="@+id/area_filter_grid"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:columnCount="2"
-                android:layout_marginBottom="8dp">
-                <!-- Area buttons added dynamically in Java code -->
-            </GridLayout>
         </LinearLayout>
     </ScrollView>
 

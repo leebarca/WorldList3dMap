@@ -112,6 +112,8 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("thirdAttractionDetails", selectedCountry.getThirdAttractionDetails());
             intent.putExtra("thirdAttractionImage", selectedCountry.getThirdAttractionImage());
             intent.putExtra("bestTimeVisitArray", selectedCountry.getBestTimeVisit());
+            intent.putExtra("factInfo", selectedCountry.getFact());
+            intent.putExtra("websiteInfo", selectedCountry.getWebsite());
 
             startActivity(intent);
         });

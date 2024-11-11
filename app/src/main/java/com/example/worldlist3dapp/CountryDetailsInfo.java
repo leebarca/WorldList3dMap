@@ -28,8 +28,12 @@ public class CountryDetailsInfo extends AppCompatActivity {
         TextView oct = findViewById(R.id.oct);
         TextView nov = findViewById(R.id.nov);
         TextView dec = findViewById(R.id.dec);
+        TextView facts = findViewById(R.id.textView_fact_content);
+        TextView website = findViewById(R.id.textView_website_link);
 
         int[] bestTimesToVisit = getIntent().getIntArrayExtra("bestTimesToVisit");
+        String fact_info = getIntent().getStringExtra("fact_info");
+        String website_info = getIntent().getStringExtra("website_info");
 
         // Define your TextView references
         TextView[] monthTextViews = {jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec};
@@ -59,5 +63,7 @@ public class CountryDetailsInfo extends AppCompatActivity {
 
         // Set the country information in the TextView
         countryInfoTextView.setText(countryInfo);
+        facts.setText(fact_info);
+        website.setText(website_info);
     }
 }

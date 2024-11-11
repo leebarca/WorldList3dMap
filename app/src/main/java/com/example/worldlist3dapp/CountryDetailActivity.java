@@ -60,12 +60,16 @@ public class CountryDetailActivity extends AppCompatActivity {
         int secondAttractionImage = getIntent().getIntExtra("secondAttractionImage", 0);
         int thirdAttractionImage = getIntent().getIntExtra("thirdAttractionImage", 0);
         String country_offers = getIntent().getStringExtra("countryDescription");
+        String facts = getIntent().getStringExtra("factInfo");
+        String websites = getIntent().getStringExtra("websiteInfo");
 
         infoIcon.setOnClickListener(v -> {
             // Handle click event
             Intent intent = new Intent(CountryDetailActivity.this, CountryDetailsInfo.class);
             intent.putExtra("countryDescription", country_info);
             intent.putExtra("bestTimesToVisit", bestTimesToVisit);
+            intent.putExtra("fact_info", facts);
+            intent.putExtra("website_info", websites);
             startActivity(intent);
         });
 

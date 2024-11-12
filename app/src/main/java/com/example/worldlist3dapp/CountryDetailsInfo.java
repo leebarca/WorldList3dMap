@@ -30,10 +30,16 @@ public class CountryDetailsInfo extends AppCompatActivity {
         TextView dec = findViewById(R.id.dec);
         TextView facts = findViewById(R.id.textView_fact_content);
         TextView website = findViewById(R.id.textView_website_link);
+        TextView spring = findViewById(R.id.spring_text);
+        TextView summer = findViewById(R.id.summer_text);
+        TextView autumn = findViewById(R.id.autumn_text);
+        TextView winter = findViewById(R.id.winter_text);
 
         int[] bestTimesToVisit = getIntent().getIntArrayExtra("bestTimesToVisit");
         String fact_info = getIntent().getStringExtra("fact_info");
         String website_info = getIntent().getStringExtra("website_info");
+        String countryInfo = getIntent().getStringExtra("countryDescription");
+        String[] weather = getIntent().getStringArrayExtra("weather_info");
 
         // Define your TextView references
         TextView[] monthTextViews = {jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec};
@@ -58,8 +64,19 @@ public class CountryDetailsInfo extends AppCompatActivity {
             }
         }
 
-        // Retrieve the country information from the Intent
-        String countryInfo = getIntent().getStringExtra("countryDescription");
+        for (int i = 0; i < weather.length; i++) {
+
+            // Apply text for each of the TextView elements
+            if (i == 0) {
+                spring.setText(weather[i]);
+            } else if (i == 1) {
+                summer.setText(weather[i]);
+            } else if (i == 2) {
+                summer.setText(weather[i]);
+            } else if (i == 3) {
+                summer.setText(weather[i]);
+            }
+        }
 
         // Set the country information in the TextView
         countryInfoTextView.setText(countryInfo);

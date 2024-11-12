@@ -44,7 +44,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Afghanistan is home to the famous ancient Buddhas of Bamiyan, which were carved into cliffs in the 6th century",
-                                      "https://tourism.gov.af/"));
+                                      "https://tourism.gov.af/",
+                                      new String[]{"15°C - 25°C (Sunny, occasional rain)",
+                                              "25°C - 35°C (Dry and hot)",
+                                              "15°C - 25°C (Cool, sunny)",
+                                              "0°C - 10°C (Snowy in mountains, cold and cloudy)"}));
         countries.add(new CountryInfo("Albania",
                                       R.drawable.flagalbania,
                                       R.drawable.albania,
@@ -77,7 +81,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Albania has one of the most beautiful coastlines in Europe, often referred to as the \"Albanian Riviera\"",
-                                      "https://albania.al/"));
+                                      "https://albania.al/",
+                                      new String[]{"12°C - 22°C, mostly sunny, occasional rain showers",
+                                              "24°C - 32°C, hot and dry, mostly sunny",
+                                              "14°C - 24°C, mild, partly cloudy with light rain",
+                                              "4°C - 12°C, cold and rainy, occasional snowfall in mountainous regions"}));
         countries.add(new CountryInfo("Algeria",
                                       R.drawable.flagalgeria,
                                       R.drawable.algeria,
@@ -110,7 +118,11 @@ public class CountryData {
                                               1,
                                               3},
                                       "Algeria is home to the Sahara Desert, the largest hot desert in the world, covering a vast part of its territory",
-                                      "https://www.algeria.com/"));
+                                      "https://www.algeria.com/",
+                                      new String[]{"18°C - 28°C, mostly sunny with light showers in coastal areas",
+                                              "25°C - 40°C, very hot and dry, sunny",
+                                              "20°C - 30°C, mild, occasional rain in the north",
+                                              "10°C - 18°C, cool and rainy in the north, dry in the south"}));
         countries.add(new CountryInfo("Andorra",
                                       R.drawable.flagandorra,
                                       R.drawable.andorra,
@@ -143,7 +155,11 @@ public class CountryData {
                                               3,
                                               1},
                                       "Andorra, a tiny country in the Pyrenees, has no army of its own and relies on France and Spain for defense",
-                                      "https://visitandorra.com/"));
+                                      "https://visitandorra.com/",
+                                      new String[]{"8°C - 18°C, mild with occasional rain showers",
+                                              "15°C - 25°C, warm and sunny",
+                                              "10°C - 18°C, partly cloudy, occasional rain",
+                                              "-2°C - 8°C, cold with regular snowfall"}));
         countries.add(new CountryInfo("Angola",
                                       R.drawable.flagangola,
                                       R.drawable.angola,
@@ -176,7 +192,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Angola is known for its impressive waterfalls, including the 105-meter-high Kalandula Falls",
-                                      "https://angola-tourism.com/"));
+                                      "https://angola-tourism.com/",
+                                      new String[]{"24°C - 30°C, hot and sunny",
+                                              "25°C - 32°C, hot, rainy season with thunderstorms",
+                                              "20°C - 28°C, warm with occasional rain",
+                                              "15°C - 25°C, cooler, mostly dry and sunny"}));
         countries.add(new CountryInfo("Antigua and Barbuda",
                                       R.drawable.flagantiguaandbarbuda,
                                       R.drawable.antiguaandbarbuda,
@@ -209,7 +229,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Antigua and Barbuda boast 365 beaches – one for every day of the year",
-                                      "https://www.visitantiguabarbuda.com/"));
+                                      "https://www.visitantiguabarbuda.com/",
+                                      new String[]{"26°C - 29°C, warm and humid, brief rain showers",
+                                              "27°C - 31°C, hot and humid, frequent thunderstorms",
+                                              "27°C - 30°C, warm, high humidity, potential hurricanes",
+                                              "24°C - 28°C, mild, occasional light showers"}));
         countries.add(new CountryInfo("Argentina",
                                       R.drawable.flagargentina,
                                       R.drawable.argentina,
@@ -242,7 +266,11 @@ public class CountryData {
                                               1,
                                               2},
                                       "Argentina is home to Iguazu Falls, one of the largest and most powerful waterfall systems in the world",
-                                      "https://www.argentina.travel/"));
+                                      "https://www.argentina.travel/",
+                                      new String[]{"15°C - 25°C, mild and sunny",
+                                              "25°C - 35°C, hot, occasional thunderstorms in the north",
+                                              "15°C - 25°C, cooler, partly cloudy with rain",
+                                              "5°C - 15°C, cold in the south, mild in the north, occasional snowfall"}));
         countries.add(new CountryInfo("Armenia",
                                       R.drawable.flagarmenia,
                                       R.drawable.armenia,
@@ -275,7 +303,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Armenia was the first nation to adopt Christianity as its official religion in 301 AD",
-                                      "https://armenia.travel/"));
+                                      "https://armenia.travel/",
+                                      new String[]{"10°C - 20°C, mild, partly cloudy with rain",
+                                              "20°C - 30°C, warm and dry, mostly sunny",
+                                              "10°C - 20°C, mild with rain showers",
+                                              "-5°C - 5°C, cold, snowfall common"}));
         countries.add(new CountryInfo("Australia",
                                       R.drawable.flagaustralia,
                                       R.drawable.australia,
@@ -308,7 +340,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Australia is the only continent that is also a country",
-                                      "https://www.australia.com/"));
+                                      "https://www.australia.com/",
+                                      new String[]{"18°C - 26°C, mild, sunny with occasional showers",
+                                              "25°C - 35°C, hot, dry in south, tropical thunderstorms in north",
+                                              "18°C - 28°C, mild and clear, rain in some regions",
+                                              "10°C - 20°C, mild in north, cooler in south with rain"}));
         countries.add(new CountryInfo("Austria",
                                       R.drawable.flagaustria,
                                       R.drawable.austria,
@@ -341,7 +377,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Austria is famous for being the birthplace of classical music composers like Mozart and Schubert",
-                                      "https://www.austria.info/"));
+                                      "https://www.austria.info/",
+                                      new String[]{"10°C - 20°C, mild, rain showers common",
+                                              "20°C - 30°C, warm, occasional thunderstorms",
+                                              "10°C - 18°C, mild, rain showers",
+                                              "-5°C - 5°C, cold, frequent snow"}));
         countries.add(new CountryInfo("Azerbaijan",
                                       R.drawable.flagazerbaijan,
                                       R.drawable.azerbaijan,
@@ -374,7 +414,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Azerbaijan is known as the \"Land of Fire\" due to its natural gas reserves that cause flames to spontaneously erupt from the ground",
-                                      "https://azerbaijan.travel/"));
+                                      "https://azerbaijan.travel/",
+                                      new String[]{"10°C - 20°C, mild with occasional rain",
+                                              "20°C - 35°C, hot and dry, mostly sunny",
+                                              "15°C - 25°C, mild with occasional showers",
+                                              "0°C - 10°C, cold, snowfall in higher altitudes"}));
         countries.add(new CountryInfo("Bahamas",
                                       R.drawable.flagbahamas,
                                       R.drawable.bahamas,
@@ -407,7 +451,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "The Bahamas has the clearest waters in the world, with visibility of over 200 feet",
-                                      "https://www.bahamas.com/"));
+                                      "https://www.bahamas.com/",
+                                      new String[]{"21°C - 26°C, mild and sunny, occasional showers",
+                                              "27°C - 32°C, hot and humid, frequent thunderstorms",
+                                              "26°C - 31°C, warm with tropical storms possible",
+                                              "19°C - 25°C, mild, mostly dry with brief showers"}));
         countries.add(new CountryInfo("Bahrain",
                                       R.drawable.flagbahrain,
                                       R.drawable.bahrain,
@@ -440,7 +488,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Bahrain has a long history with pearls, and its pearls are renowned worldwide",
-                                      "https://www.btea.bh/"));
+                                      "https://www.btea.bh/",
+                                      new String[]{"20°C - 30°C, warm, occasional rain",
+                                              "30°C - 40°C, very hot, dry and sunny",
+                                              "25°C - 35°C, hot, mostly sunny",
+                                              "15°C - 25°C, mild and dry"}));
         countries.add(new CountryInfo("Bangladesh",
                                       R.drawable.flagbangladesh,
                                       R.drawable.bangladesh,
@@ -473,7 +525,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Bangladesh is home to the Sundarbans, the largest mangrove forest in the world and a UNESCO World Heritage site",
-                                      "https://beautifulbangladesh.gov.bd/"));
+                                      "https://beautifulbangladesh.gov.bd/",
+                                      new String[]{"25°C - 35°C, warm with rain showers",
+                                              "30°C - 40°C, hot and humid, frequent thunderstorms",
+                                              "25°C - 35°C, warm, high humidity with rain",
+                                              "10°C - 25°C, cooler, fog in some areas"}));
         countries.add(new CountryInfo("Barbados",
                                       R.drawable.flagbarbados,
                                       R.drawable.barbados,
@@ -506,7 +562,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Barbados is known as the birthplace of rum, with production dating back to the 17th century",
-                                      "https://www.visitbarbados.org/"));
+                                      "https://www.visitbarbados.org/",
+                                      new String[]{"25°C - 29°C, warm and humid, light rain",
+                                              "28°C - 32°C, hot and humid, frequent tropical showers",
+                                              "27°C - 30°C, warm, potential hurricanes",
+                                              "24°C - 28°C, mild, occasional showers"}));
         countries.add(new CountryInfo("Belarus",
                                       R.drawable.flagbelarus,
                                       R.drawable.belarus,
@@ -539,7 +599,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Belarus has more than 11,000 lakes, often called the \"Land of Lakes\"",
-                                      "https://www.belarus.by/"));
+                                      "https://www.belarus.by/",
+                                      new String[]{"10°C - 18°C, mild, frequent rain",
+                                              "20°C - 28°C, warm, sunny with occasional showers",
+                                              "10°C - 20°C, mild, frequent rain",
+                                              "-5°C - 3°C, cold with snow"}));
         countries.add(new CountryInfo("Belgium",
                                       R.drawable.flagbelgium,
                                       R.drawable.belgium,
@@ -572,7 +636,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Belgium produces over 800 different kinds of beer and has a long-standing beer culture",
-                                      "https://visitbelgium.com/"));
+                                      "https://visitbelgium.com/",
+                                      new String[]{"8°C - 18°C, mild, frequent rain",
+                                              "15°C - 25°C, warm, sunny with rain showers",
+                                              "10°C - 18°C, cool with regular rain",
+                                              "0°C - 10°C, cold, cloudy with occasional snow"}));
         countries.add(new CountryInfo("Belize",
                                       R.drawable.flagbelize,
                                       R.drawable.belize,
@@ -605,7 +673,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Belize has the second-largest barrier reef in the world, making it a paradise for divers",
-                                      "https://www.travelbelize.org/"));
+                                      "https://www.travelbelize.org/",
+                                      new String[]{"20°C - 30°C, warm and humid, light showers",
+                                              "25°C - 35°C, hot and humid, thunderstorms common",
+                                              "24°C - 32°C, warm, hurricane season",
+                                              "20°C - 28°C, mild with brief rain showers"}));
         countries.add(new CountryInfo("Benin",
                                       R.drawable.flagbenin,
                                       R.drawable.benin,
@@ -638,7 +710,12 @@ public class CountryData {
                                               1,
                                               1},
                                       "Benin is the birthplace of the voodoo religion, which is still practiced by many in the country",
-                                      "https://visitbeninrepublic.com/"));
+                                      "https://visitbeninrepublic.com/",
+                                      new String[]{"25°C - 30°C, warm, start of rainy season",
+                                              "25°C - 35°C, hot and humid, heavy rain",
+                                              "25°C - 32°C, warm with thunderstorms",
+                                              "22°C - 30°C, warm and dry"
+                                      }));
         countries.add(new CountryInfo("Bhutan",
                                       R.drawable.flagbhutan,
                                       R.drawable.bhutan,
@@ -671,7 +748,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Bhutan measures its success by Gross National Happiness instead of GDP",
-                                      "https://bhutan.travel/"));
+                                      "https://bhutan.travel/",
+                                      new String[]{"10°C - 20°C, mild, occasional rain",
+                                              "15°C - 30°C, warm, monsoon season",
+                                              "10°C - 20°C, cooler with rain",
+                                              "0°C - 10°C, cold, snowfall in mountains"}));
         countries.add(new CountryInfo("Bolivia",
                                       R.drawable.flagbolivia,
                                       R.drawable.bolivia,
@@ -704,7 +785,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Bolivia is home to Salar de Uyuni, the largest salt flat in the world, which creates a mirror effect when it rains",
-                                      "https://boliviatravelsite.com/"));
+                                      "https://boliviatravelsite.com/",
+                                      new String[]{"15°C - 25°C, mild with rain in lowlands",
+                                              "20°C - 30°C, hot, rainy season in lowlands",
+                                              "10°C - 20°C, cool and dry",
+                                              "5°C - 15°C, cooler, dry with frost in highlands"}));
         countries.add(new CountryInfo("Bosnia and Herzegovina",
                                       R.drawable.flagbosniaandherzegovina,
                                       R.drawable.bosniaherzegovina,
@@ -737,7 +822,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Bosnia and Herzegovina has one of the last remaining jungles in Europe, called Perućica",
-                                      "https://www.tourismbih.com/"));
+                                      "https://www.tourismbih.com/",
+                                      new String[]{"10°C - 20°C, mild with rain showers",
+                                              "20°C - 30°C, warm, sunny with occasional thunderstorms",
+                                              "10°C - 20°C, mild, partly cloudy",
+                                              "0°C - 10°C, cold, snowfall common"}));
         countries.add(new CountryInfo("Botswana",
                                       R.drawable.flagbotswana,
                                       R.drawable.botswana,
@@ -770,7 +859,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Botswana is famous for its vast wilderness and is one of the best places to see African wildlife, especially in the Okavango Delta",
-                                      "https://www.botswanatourism.co.bw/"));
+                                      "https://www.botswanatourism.co.bw/",
+                                      new String[]{"15°C - 25°C, warm and dry",
+                                              "20°C - 35°C, hot with occasional thunderstorms",
+                                              "18°C - 28°C, warm, partly cloudy",
+                                              "10°C - 20°C, cooler, dry and clear"}));
         countries.add(new CountryInfo("Brazil",
                                       R.drawable.flagbrazil,
                                       R.drawable.brazil,
@@ -803,7 +896,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Brazil is home to the Amazon Rainforest, which is often called the \"lungs of the Earth\"",
-                                      "https://visitbrasil.com/"));
+                                      "https://visitbrasil.com/",
+                                      new String[]{"20°C - 30°C, warm and humid, rain in north",
+                                              "25°C - 35°C, hot and humid, rain in Amazon",
+                                              "20°C - 30°C, mild, rain in north",
+                                              "15°C - 25°C, mild, drier in south"}));
         countries.add(new CountryInfo("Brunei",
                                       R.drawable.flagbrunei,
                                       R.drawable.brunei,
@@ -836,7 +933,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Brunei has one of the oldest rainforests in the world, Ulu Temburong National Park",
-                                      "https://www.bruneitourism.com/"));
+                                      "https://www.bruneitourism.com/",
+                                      new String[]{"26°C - 32°C, warm, high humidity with rain",
+                                              "28°C - 34°C, hot, frequent thunderstorms",
+                                              "26°C - 32°C, warm, rainy season",
+                                              "24°C - 30°C, mild with high humidity"}));
         countries.add(new CountryInfo("Bulgaria",
                                       R.drawable.flagbulgaria,
                                       R.drawable.bulgaria,
@@ -869,7 +970,12 @@ public class CountryData {
                                               2,
                                               3},
                                       "Bulgaria is home to the oldest gold treasure ever discovered, dating back over 6,000 years",
-                                      "https://bulgariatravel.org/"));
+                                      "https://bulgariatravel.org/",
+                                      new String[]{"10°C - 20°C, mild, rain showers common",
+                                              "20°C - 30°C, warm, occasional thunderstorms",
+                                              "10°C - 20°C, cooler with rain",
+                                              "0°C - 10°C, cold with snowfall"
+                                      }));
         countries.add(new CountryInfo("Burkina Faso",
                                       R.drawable.flagburkinafaso,
                                       R.drawable.burkinafaso,
@@ -902,7 +1008,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Burkina Faso is known for its rich musical heritage, especially for traditional drumming",
-                                      "https://burkinatourism.com/"));
+                                      "https://burkinatourism.com/",
+                                      new String[]{"25°C - 35°C, hot, dry and sunny",
+                                              "30°C - 40°C, very hot, dry",
+                                              "25°C - 35°C, warm, rainy season",
+                                              "20°C - 30°C, cooler and dry"}));
         countries.add(new CountryInfo("Burundi",
                                       R.drawable.flagburundi,
                                       R.drawable.burundi,
@@ -935,7 +1045,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Burundi is one of the smallest countries in Africa but is known for its vibrant drumming culture",
-                                      "https://burunditravel.bi/"));
+                                      "https://burunditravel.bi/",
+                                      new String[]{"15°C - 25°C, mild with rain",
+                                              "20°C - 30°C, warm, rainy season",
+                                              "18°C - 28°C, mild with thunderstorms",
+                                              "12°C - 22°C, cooler, dry and clear"}));
         countries.add(new CountryInfo("Cabo Verde",
                                       R.drawable.flagcaboverde,
                                       R.drawable.caboverde,
@@ -968,7 +1082,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Cape Verde is an archipelago with some of the best beaches in the world, popular for water sports like windsurfing and kite surfing",
-                                      "https://www.visit-caboverde.com/"));
+                                      "https://www.visit-caboverde.com/",
+                                      new String[]{"22°C - 28°C, mild, light rain showers",
+                                              "24°C - 32°C, warm and sunny",
+                                              "24°C - 30°C, warm with light rain",
+                                              "20°C - 26°C, mild, dry with clear skies"}));
         countries.add(new CountryInfo("Cambodia",
                                       R.drawable.flagcambodia,
                                       R.drawable.cambodia,
@@ -1001,7 +1119,11 @@ public class CountryData {
                                               2,
                                               1},
                                       "Cambodia is home to Angkor Wat, the largest religious monument in the world",
-                                      "https://www.tourismcambodia.com/"));
+                                      "https://www.tourismcambodia.com/",
+                                      new String[]{"25°C - 35°C, hot with occasional rain",
+                                              "30°C - 40°C, very hot, high humidity, frequent rain showers",
+                                              "25°C - 35°C, warm, heavy rainfall",
+                                              "20°C - 30°C, mild, dry with clear skies"}));
         countries.add(new CountryInfo("Cameroon",
                                       R.drawable.flagcameroon,
                                       R.drawable.cameroon,
@@ -1034,7 +1156,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Cameroon is often referred to as \"Africa in miniature\" because it has a wide variety of landscapes, from beaches to deserts to rainforests",
-                                      "https://discover-cameroon.com/"));
+                                      "https://discover-cameroon.com/",
+                                      new String[]{"22°C - 30°C, warm with rain in south",
+                                              "25°C - 35°C, hot and humid, thunderstorms common",
+                                              "23°C - 32°C, warm, heavy rain",
+                                              "20°C - 30°C, mild, drier in north"}));
         countries.add(new CountryInfo("Canada",
                                       R.drawable.flagcanada,
                                       R.drawable.canada,
@@ -1067,7 +1193,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Canada has more lakes than the rest of the world's lakes combined, making it a paradise for nature lovers",
-                                      "https://www.destinationcanada.com/"));
+                                      "https://www.destinationcanada.com/",
+                                      new String[]{"5°C - 20°C, mild, rain in coastal regions",
+                                              "15°C - 30°C, warm with occasional rain",
+                                              "5°C - 20°C, mild, rain and cooler temperatures",
+                                              "-20°C - 5°C, very cold, heavy snowfall"}));
         countries.add(new CountryInfo("Central African Republic",
                                       R.drawable.flagcentralafricanrepublic,
                                       R.drawable.centralafricanrepublic,
@@ -1100,7 +1230,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "The Central African Republic has one of Africa's largest populations of forest elephants and lowland gorillas",
-                                      "https://www.centralafricanrepublictours.com/"));
+                                      "https://www.centralafricanrepublictours.com/",
+                                      new String[]{"25°C - 35°C, hot, dry with brief showers",
+                                              "25°C - 35°C, very hot, thunderstorms common",
+                                              "24°C - 32°C, warm, heavy rainfall",
+                                              "20°C - 30°C, mild with occasional rain"}));
         countries.add(new CountryInfo("Chad",
                                       R.drawable.flagchad,
                                       R.drawable.chad,
@@ -1133,7 +1267,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Chad is home to the Sahara’s Lake Chad, which was once one of the largest lakes in the world but has been shrinking over the years",
-                                      "https://chadtravelandtours.com/"));
+                                      "https://chadtravelandtours.com/",
+                                      new String[]{"20°C - 35°C, hot, dry with dusty winds",
+                                              "25°C - 40°C, extremely hot, dry",
+                                              "20°C - 35°C, hot, rainy season",
+                                              "15°C - 30°C, mild and dry"}));
         countries.add(new CountryInfo("Chile",
                                       R.drawable.flagchile,
                                       R.drawable.chile,
@@ -1166,7 +1304,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Chile has the driest desert in the world, the Atacama Desert, where some areas have never recorded any rainfall",
-                                      "https://chile.travel/"));
+                                      "https://chile.travel/",
+                                      new String[]{"10°C - 20°C, cool in south, dry in north",
+                                              "20°C - 30°C, warm, dry in north",
+                                              "10°C - 20°C, cool with rain in south",
+                                              "5°C - 15°C, very cold in south, dry in north"}));
         countries.add(new CountryInfo("China",
                                       R.drawable.flagchina,
                                       R.drawable.china,
@@ -1199,7 +1341,12 @@ public class CountryData {
                                               2,
                                               2},
                                       "The Great Wall of China, one of the world's most famous landmarks, stretches over 13,000 miles",
-                                      "http://www.china.org.cn/travel/index.html"));
+                                      "http://www.china.org.cn/travel/index.html",
+                                      new String[]{"10°C - 25°C, mild, rain in east",
+                                              "25°C - 35°C, hot, humid in south",
+                                              "10°C - 25°C, mild, occasional showers",
+                                              "-10°C - 15°C, very cold in north, milder in south"
+                                      }));
         countries.add(new CountryInfo("Colombia",
                                       R.drawable.flagcolombia,
                                       R.drawable.colombia,
@@ -1232,7 +1379,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Colombia is the most biodiverse country in the world per square meter, with unique ecosystems ranging from rainforests to mountains",
-                                      "https://colombia.travel/"));
+                                      "https://colombia.travel/",
+                                      new String[]{"20°C - 30°C, warm and humid, rain showers",
+                                              "25°C - 35°C, hot, thunderstorms frequent",
+                                              "22°C - 30°C, warm, rain in coastal areas",
+                                              "15°C - 25°C, mild with light rain"}));
         countries.add(new CountryInfo("Comoros",
                                       R.drawable.flagcomoros,
                                       R.drawable.comoros,
@@ -1265,7 +1416,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "The Comoros Islands are known for their production of ylang-ylang, an essential oil used in perfumes",
-                                      "https://www.comorosmayottetours.com/"));
+                                      "https://www.comorosmayottetours.com/",
+                                      new String[]{"25°C - 30°C, warm with light showers",
+                                              "26°C - 32°C, hot, humid with rain",
+                                              "25°C - 30°C, warm with rain showers",
+                                              "24°C - 28°C, mild, drier"}));
         countries.add(new CountryInfo("Congo",
                                       R.drawable.flagcongo,
                                       R.drawable.congo,
@@ -1298,7 +1453,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "The Republic of the Congo is home to the Odzala-Kokoua National Park, one of Africa's oldest national parks, known for its dense rainforests, unique wildlife, and large population of western lowland gorillas",
-                                      "https://republic-congo.com/"));
+                                      "https://republic-congo.com/",
+                                      new String[]{"23°C - 30°C, warm, occasional rain",
+                                              "25°C - 33°C, hot, high humidity, thunderstorms",
+                                              "23°C - 30°C, warm, heavy rain",
+                                              "22°C - 28°C, mild, drier season"}));
         countries.add(new CountryInfo("Costa Rica",
                                       R.drawable.flagcostarica,
                                       R.drawable.costarica,
@@ -1331,7 +1490,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Costa Rica has no army and is known for its dedication to peace, as well as its rich biodiversity",
-                                      "https://www.visitcostarica.com/"));
+                                      "https://www.visitcostarica.com/",
+                                      new String[]{"20°C - 30°C, warm with rain showers",
+                                              "25°C - 35°C, hot, heavy rainfall",
+                                              "20°C - 30°C, mild with tropical storms",
+                                              "15°C - 25°C, mild and dry"}));
         countries.add(new CountryInfo("Croatia",
                                       R.drawable.flagcroatia,
                                       R.drawable.croatia,
@@ -1364,7 +1527,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Croatia’s Plitvice Lakes National Park is famous for its cascading lakes and waterfalls, drawing millions of visitors each year",
-                                      "https://croatia.hr/"));
+                                      "https://croatia.hr/",
+                                      new String[]{"15°C - 25°C, mild with rain",
+                                              "20°C - 30°C, warm, mostly sunny",
+                                              "10°C - 20°C, cooler with showers",
+                                              "0°C - 10°C, cold with snowfall inland"}));
         countries.add(new CountryInfo("Cuba",
                                       R.drawable.flagcuba,
                                       R.drawable.cuba,
@@ -1397,7 +1564,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Cuba is known for its unique blend of vintage American cars, primarily from the 1950s, which are still commonly seen on the roads due to trade restrictions and resourcefulness in repairs",
-                                      "https://www.cubatravel.cu/"));
+                                      "https://www.cubatravel.cu/",
+                                      new String[]{"23°C - 30°C, warm, light rain",
+                                              "26°C - 33°C, hot, thunderstorms common",
+                                              "25°C - 30°C, warm, rainy season",
+                                              "20°C - 25°C, mild with showers"}));
         countries.add(new CountryInfo("Cyprus",
                                       R.drawable.flagcyprus,
                                       R.drawable.cyprus,
@@ -1430,7 +1601,12 @@ public class CountryData {
                                               2,
                                               2},
                                       "Cyprus is famous for being the legendary birthplace of Aphrodite, the Greek goddess of love and beauty",
-                                      "https://www.visitcyprus.com/"));
+                                      "https://www.visitcyprus.com/",
+                                      new String[]{"15°C - 25°C, mild, occasional rain",
+                                              "25°C - 35°C, hot, dry and sunny",
+                                              "20°C - 30°C, warm with rain showers",
+                                              "10°C - 20°C, mild, clear skies"
+                                      }));
         countries.add(new CountryInfo("Czech Republic",
                                       R.drawable.flagczechrepublic,
                                       R.drawable.czechrepublic,
@@ -1463,7 +1639,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "The Czech Republic has the highest beer consumption per capita in the world, with beer deeply embedded in its culture and history",
-                                      "https://www.visitczechia.com/"));
+                                      "https://www.visitczechia.com/",
+                                      new String[]{"10°C - 20°C, mild, rain showers",
+                                              "20°C - 30°C, warm, sunny with occasional rain",
+                                              "10°C - 20°C, mild with rain",
+                                              "-5°C - 5°C, cold with snow"}));
         countries.add(new CountryInfo("DRC Congo",
                                       R.drawable.flagdemocraticrepubliccongo,
                                       R.drawable.democraticrepubliccongo,
@@ -1496,7 +1676,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "The DRC is home to the Congo Rainforest, the second-largest rainforest in the world after the Amazon, covering a significant portion of Central Africa and housing a wealth of biodiversity",
-                                      "https://visit.virunga.org/"));
+                                      "https://visit.virunga.org/",
+                                      new String[]{"24°C - 31°C, warm, frequent rain showers",
+                                              "26°C - 34°C, hot, high humidity, thunderstorms",
+                                              "24°C - 31°C, warm, heavy rain",
+                                              "22°C - 28°C, mild, drier season"}));
         countries.add(new CountryInfo("Denmark",
                                       R.drawable.flagdenmark,
                                       R.drawable.denmark,
@@ -1529,7 +1713,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Denmark is home to the world-famous Tivoli Gardens in Copenhagen, which inspired Walt Disney’s creation of Disneyland",
-                                      "https://www.visitdenmark.com/"));
+                                      "https://www.visitdenmark.com/",
+                                      new String[]{"8°C - 18°C, mild, frequent rain",
+                                              "15°C - 25°C, warm, partly cloudy",
+                                              "10°C - 18°C, cool, rain showers",
+                                              "-5°C - 5°C, cold with snow"}));
         countries.add(new CountryInfo("Djibouti",
                                       R.drawable.flagdjibouti,
                                       R.drawable.djibouti,
@@ -1562,7 +1750,12 @@ public class CountryData {
                                               2,
                                               2},
                                       "Djibouti is home to Lake Assal, one of the saltiest bodies of water in the world and the lowest point on land in Africa, sitting 155 meters below sea level",
-                                      "https://guide.visitdjibouti.dj/"));
+                                      "https://guide.visitdjibouti.dj/",
+                                      new String[]{"25°C - 35°C, hot, dry with occasional rain",
+                                              "30°C - 40°C, very hot and dry",
+                                              "28°C - 38°C, hot with light rain",
+                                              "22°C - 30°C, warm and dry"
+                                      }));
         countries.add(new CountryInfo("Dominica",
                                       R.drawable.flagdominica,
                                       R.drawable.dominica,
@@ -1595,7 +1788,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Known as the \"Nature Island of the Caribbean,\" Dominica boasts 365 rivers, one for each day of the year",
-                                      "https://discoverdominica.com/"));
+                                      "https://discoverdominica.com/",
+                                      new String[]{"24°C - 30°C, warm, light rain",
+                                              "25°C - 32°C, hot and humid, rain",
+                                              "24°C - 30°C, warm, hurricane season",
+                                              "22°C - 28°C, mild, occasional showers"}));
         countries.add(new CountryInfo("Dominican Republic",
                                       R.drawable.flagdominicanrepublic,
                                       R.drawable.dominicanrepublic,
@@ -1628,7 +1825,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "The Dominican Republic is the only country in the world to feature the Bible on its national flag",
-                                      "https://www.godominicanrepublic.com/"));
+                                      "https://www.godominicanrepublic.com/",
+                                      new String[]{"23°C - 30°C, warm, light showers",
+                                              "25°C - 33°C, hot, tropical showers",
+                                              "24°C - 32°C, warm, hurricane season",
+                                              "20°C - 26°C, mild, partly cloudy"}));
         countries.add(new CountryInfo("East Timor",
                                       R.drawable.flageasttimor,
                                       R.drawable.easttimor,
@@ -1661,7 +1862,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "East Timor is one of only two predominantly Catholic countries in Southeast Asia, the other being the Philippines, due to centuries of Portuguese influence",
-                                      "https://www.timorleste.tl/"));
+                                      "https://www.timorleste.tl/",
+                                      new String[]{"23°C - 32°C, warm, humid, frequent showers",
+                                              "25°C - 34°C, hot, dry, sunny",
+                                              "24°C - 32°C, warm, humid with thunderstorms",
+                                              "22°C - 29°C, mild, dry season"}));
         countries.add(new CountryInfo("Ecuador",
                                       R.drawable.flagecuador,
                                       R.drawable.ecuador,
@@ -1694,7 +1899,13 @@ public class CountryData {
                                               1,
                                               1},
                                       "Ecuador is named after the equator, which passes through the country and offers a unique location where visitors can straddle both hemispheres at the Mitad del Mundo monument",
-                                      "https://ecuador.travel/"));
+                                      "https://ecuador.travel/",
+                                      new String[]{"20°C - 26°C, mild, rainy in lowlands, cool in highlands",
+                                              "22°C - 30°C, warm, occasional rain in lowlands",
+                                              "20°C - 26°C, mild with rain, cooler in highlands",
+                                              "18°C - 24°C, mild, mostly dry season"
+
+                                      }));
         countries.add(new CountryInfo("Egypt",
                                       R.drawable.flagegypt,
                                       R.drawable.egypt,
@@ -1727,7 +1938,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Egypt’s pyramids are one of the Seven Wonders of the Ancient World, with the Great Pyramid of Giza being the only one still largely intact",
-                                      "https://www.experienceegypt.eg/"));
+                                      "https://www.experienceegypt.eg/",
+                                      new String[]{"18°C - 25°C, warm, sunny, minimal rain",
+                                              "25°C - 35°C, hot, dry, very sunny",
+                                              "22°C - 30°C, warm, dry, occasional breeze",
+                                              "15°C - 23°C, cool, dry, mild temperatures"}));
         countries.add(new CountryInfo("El Salvador",
                                       R.drawable.flagelsalvador,
                                       R.drawable.elsalvador,
@@ -1760,7 +1975,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Known as the \"Land of Volcanoes,\" El Salvador has over 20 active volcanoes, making it a hotspot for volcanic activity",
-                                      "https://elsalvador.travel/"));
+                                      "https://elsalvador.travel/",
+                                      new String[]{"22°C - 32°C, warm, occasional thunderstorms",
+                                              "24°C - 34°C, hot, rainy season",
+                                              "22°C - 30°C, warm, frequent rain",
+                                              "20°C - 28°C, mild, drier season"}));
         countries.add(new CountryInfo("Equatorial Guinea",
                                       R.drawable.flagequatorialguinea,
                                       R.drawable.equatorialguinea,
@@ -1793,7 +2012,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Equatorial Guinea is one of the few African countries where Spanish is an official language, due to its history as a Spanish colony",
-                                      "https://equatorialguineatourism.com/"));
+                                      "https://equatorialguineatourism.com/",
+                                      new String[]{"25°C - 30°C, humid, frequent rain",
+                                              "26°C - 32°C, hot, very humid, thunderstorms",
+                                              "25°C - 30°C, warm, rainy season",
+                                              "24°C - 29°C, mild, drier season"}));
         countries.add(new CountryInfo("Eritrea",
                                       R.drawable.flageritrea,
                                       R.drawable.eritrea,
@@ -1826,7 +2049,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Eritrea’s capital, Asmara, is known for its Italian colonial architecture, earning it the nickname \"New Rome\"",
-                                      "http://www.eritrea.be/"));
+                                      "http://www.eritrea.be/",
+                                      new String[]{"18°C - 28°C, warm, dry season",
+                                              "26°C - 40°C, hot, dry with dusty winds",
+                                              "25°C - 35°C, warm, dry, occasional coastal humidity",
+                                              "20°C - 28°C, mild, dry season"}));
         countries.add(new CountryInfo("Estonia",
                                       R.drawable.flagestonia,
                                       R.drawable.estonia,
@@ -1859,7 +2086,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Estonia was the first country in the world to allow online voting in parliamentary elections in 2005",
-                                      "https://visitestonia.com/"));
+                                      "https://visitestonia.com/",
+                                      new String[]{"5°C - 15°C, cool, rainy",
+                                              "15°C - 25°C, mild, sunny with occasional rain",
+                                              "5°C - 15°C, cool, frequent rain",
+                                              "-5°C - 5°C, cold, snowy, icy conditions"}));
         countries.add(new CountryInfo("Eswatini",
                                       R.drawable.flageswatini,
                                       R.drawable.eswatini,
@@ -1892,7 +2123,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Eswatini is one of the last absolute monarchies in the world, ruled by King Mswati III",
-                                      "https://www.thekingdomofeswatini.com/"));
+                                      "https://www.thekingdomofeswatini.com/",
+                                      new String[]{"15°C - 25°C, mild, sunny with rain showers",
+                                              "20°C - 30°C, hot, thunderstorms",
+                                              "18°C - 28°C, warm, rainy season",
+                                              "10°C - 20°C, cool, dry season"}));
         countries.add(new CountryInfo("Ethiopia",
                                       R.drawable.flagethiopia,
                                       R.drawable.ethiopia,
@@ -1925,7 +2160,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Ethiopia follows its own calendar, which is roughly seven to eight years behind the Gregorian calendar",
-                                      "https://visitethiopia.travel/"));
+                                      "https://visitethiopia.travel/",
+                                      new String[]{"15°C - 25°C, mild, dry with occasional showers",
+                                              "20°C - 30°C, warm, sunny, dry",
+                                              "18°C - 26°C, mild with heavy rain",
+                                              "12°C - 22°C, cool, dry season"}));
         countries.add(new CountryInfo("Fiji",
                                       R.drawable.flagfiji,
                                       R.drawable.fiji,
@@ -1958,7 +2197,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Fiji is known for its soft coral reefs and is often referred to as the \"Soft Coral Capital of the World\"",
-                                      "https://www.fiji.travel/"));
+                                      "https://www.fiji.travel/",
+                                      new String[]{"22°C - 30°C, warm, frequent rain showers",
+                                              "25°C - 32°C, hot, humid with thunderstorms",
+                                              "24°C - 30°C, warm, rainy season",
+                                              "22°C - 28°C, mild, drier season"}));
         countries.add(new CountryInfo("Finland",
                                       R.drawable.flagfinland,
                                       R.drawable.finland,
@@ -1991,7 +2234,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Finland has approximately 188,000 lakes, earning it the nickname \"Land of a Thousand Lakes\"",
-                                      "https://www.visitfinland.com/"));
+                                      "https://www.visitfinland.com/",
+                                      new String[]{"0°C - 10°C, cool, rainy, beginning of thaw",
+                                              "15°C - 25°C, mild, mostly sunny",
+                                              "5°C - 15°C, cool, frequent rain",
+                                              "-10°C - 0°C, cold, snowy, icy"}));
         countries.add(new CountryInfo("France",
                                       R.drawable.flagfrance,
                                       R.drawable.france,
@@ -2024,7 +2271,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "France is the world’s most visited country, known for landmarks like the Eiffel Tower and its vast cultural heritage",
-                                      "https://www.france.fr/"));
+                                      "https://www.france.fr/",
+                                      new String[]{"8°C - 18°C, mild, rainy in parts",
+                                              "15°C - 30°C, warm, sunny, dry",
+                                              "10°C - 20°C, mild, rainy in northern regions",
+                                              "0°C - 10°C, cold, rainy, occasional snow in mountains"}));
         countries.add(new CountryInfo("Gabon",
                                       R.drawable.flaggabon,
                                       R.drawable.gabon,
@@ -2057,7 +2308,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Over 85% of Gabon is covered by rainforest, home to diverse wildlife and a commitment to conservation",
-                                      "https://www.ecotourisme-gabon.com/"));
+                                      "https://www.ecotourisme-gabon.com/",
+                                      new String[]{"23°C - 30°C, warm, humid, frequent rain",
+                                              "24°C - 32°C, hot, humid with thunderstorms",
+                                              "23°C - 30°C, warm, rainy season",
+                                              "22°C - 28°C, mild, drier season"}));
         countries.add(new CountryInfo("Georgia",
                                       R.drawable.flaggeorgia,
                                       R.drawable.georgia,
@@ -2090,7 +2345,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Georgia is one of the world’s oldest wine-producing regions, with a wine culture that dates back over 8,000 years",
-                                      "https://georgia.travel/"));
+                                      "https://georgia.travel/",
+                                      new String[]{"5°C - 15°C, mild, rainy",
+                                              "15°C - 30°C, warm, sunny",
+                                              "10°C - 20°C, mild, partly cloudy",
+                                              "0°C - 10°C, cold, snowy in mountains"}));
         countries.add(new CountryInfo("Germany",
                                       R.drawable.flaggermany,
                                       R.drawable.germany,
@@ -2123,7 +2382,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Germany is home to over 20,000 castles, with Neuschwanstein Castle being one of the most famous and serving as inspiration for Disney's castle",
-                                      "https://www.germany.travel/"));
+                                      "https://www.germany.travel/",
+                                      new String[]{"5°C - 15°C, mild, rainy",
+                                              "15°C - 25°C, warm, sunny",
+                                              "10°C - 20°C, mild, rainy",
+                                              "-5°C - 5°C, cold, snowy in higher altitudes"}));
         countries.add(new CountryInfo("Ghana",
                                       R.drawable.flagghana,
                                       R.drawable.ghana,
@@ -2156,7 +2419,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Ghana was the first African nation to gain independence from colonial rule, in 1957",
-                                      "https://visitghana.com/"));
+                                      "https://visitghana.com/",
+                                      new String[]{"24°C - 31°C, warm, dry with Harmattan winds",
+                                              "25°C - 33°C, hot, humid with thunderstorms",
+                                              "24°C - 31°C, warm, frequent rain",
+                                              "23°C - 29°C, mild, dry season"}));
         countries.add(new CountryInfo("Greece",
                                       R.drawable.flaggreece,
                                       R.drawable.greece,
@@ -2189,7 +2456,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Greece has more archaeological museums than any other country in the world",
-                                      "https://www.visitgreece.gr/"));
+                                      "https://www.visitgreece.gr/",
+                                      new String[]{"12°C - 22°C, mild, rainy",
+                                              "25°C - 35°C, hot, dry, sunny",
+                                              "18°C - 28°C, mild, partly cloudy",
+                                              "5°C - 15°C, cool, rainy in north"}));
         countries.add(new CountryInfo("Grenada",
                                       R.drawable.flaggrenada,
                                       R.drawable.grenada,
@@ -2222,7 +2493,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Known as the \"Island of Spice,\" Grenada is one of the world’s largest exporters of nutmeg",
-                                      "https://www.puregrenada.com/"));
+                                      "https://www.puregrenada.com/",
+                                      new String[]{"24°C - 30°C, warm, dry season",
+                                              "26°C - 32°C, hot, humid, brief rain showers",
+                                              "25°C - 31°C, warm, rainy season",
+                                              "24°C - 30°C, mild, drier season"}));
         countries.add(new CountryInfo("Guatemala",
                                       R.drawable.flagguatemala,
                                       R.drawable.guatemala,
@@ -2255,7 +2530,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Guatemala is home to the ancient Mayan city of Tikal, one of the largest and most important archaeological sites of the Mayan civilization",
-                                      "https://visitguatemala.gt/"));
+                                      "https://visitguatemala.gt/",
+                                      new String[]{"15°C - 25°C, mild, dry season",
+                                              "20°C - 30°C, warm, rainy with thunderstorms",
+                                              "18°C - 28°C, mild, frequent rain",
+                                              "15°C - 25°C, mild, drier season"}));
         countries.add(new CountryInfo("Guinea",
                                       R.drawable.flagguinea,
                                       R.drawable.guinea,
@@ -2288,7 +2567,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Guinea holds the Fouta Djallon highlands, a scenic area known for its rivers, waterfalls, and biodiversity",
-                                      "https://www.paf.gov.gn/"));
+                                      "https://www.paf.gov.gn/",
+                                      new String[]{"24°C - 30°C, warm, dry season with Harmattan winds",
+                                              "25°C - 35°C, hot, humid, thunderstorms",
+                                              "24°C - 30°C, warm, rainy season",
+                                              "23°C - 28°C, mild, drier season"}));
         countries.add(new CountryInfo("Guinea Bissau",
                                       R.drawable.flagguineabissau,
                                       R.drawable.guineabissau,
@@ -2321,7 +2604,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Guinea-Bissau is known for the Bijagós Archipelago, a group of islands with unique biodiversity and a strong matriarchal society",
-                                      "https://tourismgb.com/"));
+                                      "https://tourismgb.com/",
+                                      new String[]{"23°C - 31°C, warm, dry with Harmattan winds",
+                                              "25°C - 33°C, hot, humid, thunderstorms",
+                                              "24°C - 31°C, warm, rainy season",
+                                              "22°C - 28°C, mild, drier season"}));
         countries.add(new CountryInfo("Guyana",
                                       R.drawable.flagguyana,
                                       R.drawable.guyana,
@@ -2354,7 +2641,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "The Kaieteur Falls in Guyana is one of the world’s tallest and most powerful waterfalls",
-                                      "https://www.guyanatourism.com/"));
+                                      "https://www.guyanatourism.com/",
+                                      new String[]{"24°C - 30°C, warm, rainy season",
+                                              "25°C - 32°C, hot, humid, thunderstorms",
+                                              "24°C - 30°C, warm, rainy season",
+                                              "23°C - 29°C, mild, drier season"}));
         countries.add(new CountryInfo("Haiti",
                                       R.drawable.flaghaiti,
                                       R.drawable.haiti,
@@ -2387,7 +2678,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Haiti is the first independent Black republic in the world, having gained independence from France in 1804",
-                                      "https://visithaiti.com/"));
+                                      "https://visithaiti.com/",
+                                      new String[]{"22°C - 30°C, warm, dry season",
+                                              "25°C - 34°C, hot, humid, brief rain",
+                                              "24°C - 32°C, warm, rainy season",
+                                              "22°C - 28°C, mild, drier season"}));
         countries.add(new CountryInfo("Honduras",
                                       R.drawable.flaghonduras,
                                       R.drawable.honduras,
@@ -2420,7 +2715,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Honduras is home to the Copán Ruins, a significant site of the ancient Mayan civilization",
-                                      "https://www.honduras.travel/"));
+                                      "https://www.honduras.travel/",
+                                      new String[]{"20°C - 28°C, mild, dry season",
+                                              "24°C - 34°C, warm, rainy season",
+                                              "23°C - 30°C, mild with frequent rain",
+                                              "18°C - 26°C, mild, drier season"}));
         countries.add(new CountryInfo("Hungary",
                                       R.drawable.flaghungary,
                                       R.drawable.hungary,
@@ -2453,7 +2752,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Hungary’s capital, Budapest, has more thermal water springs than any other capital city in the world",
-                                      "https://visithungary.com/"));
+                                      "https://visithungary.com/",
+                                      new String[]{"5°C - 15°C, mild, rainy",
+                                              "15°C - 30°C, warm, sunny",
+                                              "10°C - 20°C, mild, rainy",
+                                              "-5°C - 5°C, cold, snow in northern regions"}));
         countries.add(new CountryInfo("Iceland",
                                       R.drawable.flagiceland,
                                       R.drawable.iceland,
@@ -2486,7 +2789,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Iceland has no mosquitoes, thanks to its cold climate and volcanic soil",
-                                      "https://www.visiticeland.com/"));
+                                      "https://www.visiticeland.com/",
+                                      new String[]{"0°C - 10°C, cool, rainy",
+                                              "10°C - 20°C, mild, partly cloudy",
+                                              "5°C - 15°C, cool, frequent rain",
+                                              "-10°C - 0°C, very cold, snowy"}));
         countries.add(new CountryInfo("India",
                                       R.drawable.flagindia,
                                       R.drawable.india,
@@ -2519,7 +2826,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "India is home to the only floating post office in the world, located in Dal Lake, Srinagar",
-                                      "https://www.incredibleindia.gov.in/"));
+                                      "https://www.incredibleindia.gov.in/",
+                                      new String[]{"20°C - 35°C, warm, dry",
+                                              "25°C - 40°C, hot, dry, sunny",
+                                              "25°C - 35°C, warm, monsoon season",
+                                              "15°C - 25°C, cool, dry"}));
         countries.add(new CountryInfo("Indonesia",
                                       R.drawable.flagindonesia,
                                       R.drawable.indonesia,
@@ -2552,7 +2863,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Indonesia is made up of over 17,000 islands, making it the world's largest archipelago",
-                                      "https://www.indonesia.travel/"));
+                                      "https://www.indonesia.travel/",
+                                      new String[]{"25°C - 30°C, warm, rainy season",
+                                              "26°C - 32°C, hot, humid, thunderstorms",
+                                              "24°C - 30°C, warm, rainy season",
+                                              "24°C - 30°C, mild, drier season"}));
         countries.add(new CountryInfo("Iran",
                                       R.drawable.flagiran,
                                       R.drawable.iran,
@@ -2585,7 +2900,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Iran is home to one of the world's oldest civilizations, with historical sites such as Persepolis",
-                                      "https://www.visitouriran.com/"));
+                                      "https://www.visitouriran.com/",
+                                      new String[]{"10°C - 20°C, mild, rainy in north",
+                                              "25°C - 40°C, hot, dry",
+                                              "20°C - 30°C, warm, rainy in north",
+                                              "5°C - 15°C, cool, snow in northern regions"}));
         countries.add(new CountryInfo("Iraq",
                                       R.drawable.flagiraq,
                                       R.drawable.iraq,
@@ -2618,7 +2937,11 @@ public class CountryData {
                                               1,
                                               2},
                                       "Iraq is where the ancient Mesopotamian civilizations thrived, considered one of the cradles of civilization",
-                                      "https://mofa.gov.iq/tourist-guide/"));
+                                      "https://mofa.gov.iq/tourist-guide/",
+                                      new String[]{"15°C - 30°C, warm, dry",
+                                              "30°C - 45°C, extremely hot, dry",
+                                              "25°C - 35°C, warm, dry",
+                                              "10°C - 20°C, mild, dry season"}));
         countries.add(new CountryInfo("Ireland",
                                       R.drawable.flagireland,
                                       R.drawable.ireland,
@@ -2651,7 +2974,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Ireland is known for its lush green landscapes, earning it the nickname \"The Emerald Isle\"",
-                                      "https://www.ireland.com/"));
+                                      "https://www.ireland.com/",
+                                      new String[]{"5°C - 15°C, mild, rainy",
+                                              "15°C - 25°C, warm, sunny with occasional rain",
+                                              "10°C - 20°C, mild, frequent rain",
+                                              "0°C - 10°C, cool, rainy"}));
         countries.add(new CountryInfo("Israel",
                                       R.drawable.flagisrael,
                                       R.drawable.israel,
@@ -2684,7 +3011,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "The Dead Sea in Israel is one of the saltiest bodies of water on earth, allowing people to float effortlessly",
-                                      "https://israel.travel/"));
+                                      "https://israel.travel/",
+                                      new String[]{"10°C - 20°C, mild, rainy",
+                                              "20°C - 35°C, hot, dry, sunny",
+                                              "15°C - 30°C, warm, sunny with occasional rain",
+                                              "10°C - 20°C, mild, rainy"}));
         countries.add(new CountryInfo("Italy",
                                       R.drawable.flagitaly,
                                       R.drawable.italy,
@@ -2717,7 +3048,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Italy has more UNESCO World Heritage sites than any other country, with over 50 listed",
-                                      "https://www.italia.it/"));
+                                      "https://www.italia.it/",
+                                      new String[]{"10°C - 20°C, mild, rainy",
+                                              "20°C - 35°C, hot, sunny",
+                                              "15°C - 25°C, mild, rainy in north",
+                                              "5°C - 15°C, cool, occasional snow in north"}));
         countries.add(new CountryInfo("Ivory Coast",
                                       R.drawable.flagivorycoast,
                                       R.drawable.ivorycoast,
@@ -2750,7 +3085,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Ivory Coast is the world's largest producer of cocoa beans, a key ingredient in chocolate, producing about 40% of the world’s supply",
-                                      "https://tourismecotedivoire.ci/"));
+                                      "https://tourismecotedivoire.ci/",
+                                      new String[]{"25°C - 30°C, warm, dry season",
+                                              "27°C - 32°C, hot, humid, frequent thunderstorms",
+                                              "25°C - 30°C, warm, rainy season",
+                                              "24°C - 28°C, mild, dry season"}));
         countries.add(new CountryInfo("Jamaica",
                                       R.drawable.flagjamaica,
                                       R.drawable.jamaica,
@@ -2783,7 +3122,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Jamaica was the first Caribbean nation to gain independence, achieving it in 1962",
-                                      "https://www.visitjamaica.com/"));
+                                      "https://www.visitjamaica.com/",
+                                      new String[]{"22°C - 30°C, warm, dry with occasional rain",
+                                              "24°C - 32°C, hot, humid with thunderstorms",
+                                              "24°C - 30°C, warm, rainy season",
+                                              "23°C - 28°C, mild, drier season"}));
         countries.add(new CountryInfo("Japan",
                                       R.drawable.flagjapan,
                                       R.drawable.japan,
@@ -2816,7 +3159,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Japan has more than 5 million vending machines across the country, offering everything from beverages and snacks to flowers and even fresh eggs",
-                                      "https://www.japan.travel/"));
+                                      "https://www.japan.travel/",
+                                      new String[]{"5°C - 15°C, mild, cherry blossom season",
+                                              "20°C - 30°C, warm, rainy season",
+                                              "15°C - 25°C, mild, typhoon season",
+                                              "0°C - 10°C, cold, snowy in northern areas"}));
         countries.add(new CountryInfo("Jordan",
                                       R.drawable.flagjordan,
                                       R.drawable.jordan,
@@ -2849,7 +3196,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Jordan is home to Petra, a UNESCO World Heritage Site and one of the New Seven Wonders of the World, famed for its rock-cut architecture",
-                                      "https://visitjordan.com/"));
+                                      "https://visitjordan.com/",
+                                      new String[]{"10°C - 20°C, mild, occasional rain",
+                                              "25°C - 40°C, hot, dry, sunny",
+                                              "20°C - 30°C, warm, dry",
+                                              "5°C - 15°C, cool, occasional rain"}));
         countries.add(new CountryInfo("Kazakhstan",
                                       R.drawable.flagkazakhstan,
                                       R.drawable.kazakhstan,
@@ -2882,7 +3233,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Kazakhstan is the ninth-largest country in the world by land area, yet has a relatively small population, giving it a very low population density",
-                                      "https://kazakhstan.travel/"));
+                                      "https://kazakhstan.travel/",
+                                      new String[]{"10°C - 20°C, mild, rainy",
+                                              "25°C - 35°C, hot, dry",
+                                              "15°C - 25°C, mild, dry",
+                                              "-10°C - 0°C, very cold, snowy"}));
         countries.add(new CountryInfo("Kenya",
                                       R.drawable.flagkenya,
                                       R.drawable.kenya,
@@ -2915,7 +3270,11 @@ public class CountryData {
                                               1,
                                               2},
                                       "Kenya is known for its annual Great Migration, where millions of wildebeests and zebras move across the Serengeti and Maasai Mara ecosystems",
-                                      "https://magicalkenya.com/"));
+                                      "https://magicalkenya.com/",
+                                      new String[]{"15°C - 25°C, warm, rainy season",
+                                              "20°C - 30°C, hot, dry season",
+                                              "15°C - 25°C, warm, short rains",
+                                              "10°C - 20°C, mild, dry"}));
         countries.add(new CountryInfo("Kiribati",
                                       R.drawable.flagkiribati,
                                       R.drawable.kiribati,
@@ -2948,7 +3307,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Kiribati is the only country in the world to fall in all four hemispheres, spanning both the equator and the 180th meridian",
-                                      "https://www.kiribatitourism.gov.ki/"));
+                                      "https://www.kiribatitourism.gov.ki/",
+                                      new String[]{"25°C - 30°C, warm, humid",
+                                              "26°C - 32°C, hot, rainy with thunderstorms",
+                                              "25°C - 30°C, warm, humid",
+                                              "24°C - 28°C, mild, drier season"}));
         countries.add(new CountryInfo("Kosovo",
                                       R.drawable.flagkosovo,
                                       R.drawable.kosovo,
@@ -2981,7 +3344,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Kosovo is one of the youngest countries in the world, having declared independence from Serbia in 2008",
-                                      "https://visitkosovo.rks-gov.net/"));
+                                      "https://visitkosovo.rks-gov.net/",
+                                      new String[]{"10°C - 20°C, mild, rainy",
+                                              "20°C - 30°C, warm, dry",
+                                              "10°C - 20°C, mild, rain",
+                                              "0°C - 10°C, cold, snowy"}));
         countries.add(new CountryInfo("Kuwait",
                                       R.drawable.flagkuwait,
                                       R.drawable.kuwait,
@@ -3014,7 +3381,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Kuwait has one of the highest GDP per capita rates in the world due to its vast oil reserves",
-                                      "https://e.gov.kw/sites/kgoenglish/Pages/Visitors/InfoSubPages/TourismInKuwait.aspx"));
+                                      "https://e.gov.kw/sites/kgoenglish/Pages/Visitors/InfoSubPages/TourismInKuwait.aspx",
+                                      new String[]{"15°C - 25°C, warm, dry",
+                                              "30°C - 50°C, extremely hot, dry",
+                                              "25°C - 35°C, warm, dry",
+                                              "10°C - 20°C, mild, dry"}));
         countries.add(new CountryInfo("Kyrgyzstan",
                                       R.drawable.flagkyrgyzstan,
                                       R.drawable.kyrgyzstan,
@@ -3047,7 +3418,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Over 90% of Kyrgyzstan is mountainous, with the Tian Shan mountain range covering most of the country",
-                                      "https://www.discoverkyrgyzstan.org/"));
+                                      "https://www.discoverkyrgyzstan.org/",
+                                      new String[]{"5°C - 20°C, mild, rainy",
+                                              "20°C - 35°C, warm, dry",
+                                              "15°C - 25°C, cool, rainy",
+                                              "-10°C - 5°C, very cold, snowy"}));
         countries.add(new CountryInfo("Laos",
                                       R.drawable.flaglaos,
                                       R.drawable.laos,
@@ -3080,7 +3455,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Laos is home to the Plain of Jars, an archaeological landscape with thousands of mysterious stone jars scattered across the countryside",
-                                      "https://www.tourismlaos.org/"));
+                                      "https://www.tourismlaos.org/",
+                                      new String[]{"20°C - 30°C, warm, dry season",
+                                              "25°C - 35°C, hot, humid",
+                                              "23°C - 30°C, warm, monsoon rains",
+                                              "15°C - 25°C, mild, drier season"}));
         countries.add(new CountryInfo("Latvia",
                                       R.drawable.flaglatvia,
                                       R.drawable.latvia,
@@ -3113,7 +3492,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Nearly half of Latvia is covered by forests, making it one of Europe’s greenest countries",
-                                      "https://www.latvia.travel"));
+                                      "https://www.latvia.travel",
+                                      new String[]{"5°C - 15°C, mild, rainy",
+                                              "15°C - 25°C, warm, sunny with rain",
+                                              "10°C - 20°C, mild, cloudy",
+                                              "-5°C - 5°C, cold, snowy"}));
         countries.add(new CountryInfo("Lebanon",
                                       R.drawable.flaglebanon,
                                       R.drawable.lebanon,
@@ -3146,7 +3529,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Lebanon has a history of wine production dating back over 5,000 years, making it one of the oldest wine-producing regions in the world",
-                                      "https://visit-lebanon.org/leisure/"));
+                                      "https://visit-lebanon.org/leisure/",
+                                      new String[]{"10°C - 20°C, mild, rainy",
+                                              "20°C - 30°C, hot, dry",
+                                              "15°C - 25°C, mild, rainy in north",
+                                              "5°C - 15°C, cool, rainy"}));
         countries.add(new CountryInfo("Lesotho",
                                       R.drawable.flaglesotho,
                                       R.drawable.lesotho,
@@ -3179,7 +3566,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Lesotho is the only country in the world where every inch of its territory is over 1,000 meters above sea level",
-                                      "https://seelesotho.com/"));
+                                      "https://seelesotho.com/",
+                                      new String[]{"10°C - 20°C, mild, dry season",
+                                              "15°C - 25°C, warm, dry",
+                                              "10°C - 20°C, mild, rainy season",
+                                              "0°C - 10°C, cold, snowy in highlands"}));
         countries.add(new CountryInfo("Liberia",
                                       R.drawable.flagliberia,
                                       R.drawable.liberia,
@@ -3212,7 +3603,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Liberia was founded by freed American slaves and is one of the few African countries that was never colonized",
-                                      "https://enjoyliberia.travel/"));
+                                      "https://enjoyliberia.travel/",
+                                      new String[]{"24°C - 30°C, warm, dry season",
+                                              "25°C - 33°C, hot, humid, thunderstorms",
+                                              "24°C - 30°C, warm, rainy season",
+                                              "23°C - 28°C, mild, drier season"}));
         countries.add(new CountryInfo("Libya",
                                       R.drawable.flaglibya,
                                       R.drawable.libya,
@@ -3245,7 +3640,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Libya has the largest proven oil reserves in Africa and is among the ten largest globally",
-                                      "https://libyan-tourism.org/"));
+                                      "https://libyan-tourism.org/",
+                                      new String[]{"15°C - 25°C, warm, dry season",
+                                              "25°C - 40°C, hot, dry, sunny",
+                                              "20°C - 30°C, warm, dry",
+                                              "10°C - 20°C, mild, dry"}));
         countries.add(new CountryInfo("Liechtenstein",
                                       R.drawable.flagliechtenstein,
                                       R.drawable.liechtenstein,
@@ -3278,7 +3677,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Liechtenstein is a doubly landlocked country (landlocked by other landlocked countries), one of only two in the world",
-                                      "https://tourismus.li/"));
+                                      "https://tourismus.li/",
+                                      new String[]{"5°C - 15°C, mild, rainy",
+                                              "15°C - 25°C, warm, sunny",
+                                              "10°C - 20°C, mild, rain",
+                                              "-5°C - 5°C, cold, snowy"}));
         countries.add(new CountryInfo("Lithuania",
                                       R.drawable.flaglithuania,
                                       R.drawable.lithuania,
@@ -3311,7 +3714,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Lithuania was the first country to declare independence from the Soviet Union in 1990",
-                                      "https://lithuania.travel/"));
+                                      "https://lithuania.travel/",
+                                      new String[]{"5°C - 15°C, mild, rainy",
+                                              "15°C - 25°C, warm, sunny",
+                                              "10°C - 20°C, mild, frequent rain",
+                                              "-5°C - 5°C, cold, snowy"}));
         countries.add(new CountryInfo("Luxembourg",
                                       R.drawable.flagluxembourg,
                                       R.drawable.luxembourg,
@@ -3344,7 +3751,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Luxembourg has one of the highest GDP per capita in the world, driven by its strong financial sector",
-                                      "https://www.visitluxembourg.com/"));
+                                      "https://www.visitluxembourg.com/",
+                                      new String[]{"5°C - 15°C, mild, rainy",
+                                              "15°C - 25°C, warm, sunny",
+                                              "10°C - 20°C, mild, rainy",
+                                              "0°C - 10°C, cool, occasional snow"}));
         countries.add(new CountryInfo("Madagascar",
                                       R.drawable.flagmadagascar,
                                       R.drawable.madagascar,
@@ -3377,7 +3788,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Madagascar is home to over 100 species of lemur, none of which are found naturally anywhere else in the world",
-                                      "https://madagascar-tourisme.com/"));
+                                      "https://madagascar-tourisme.com/",
+                                      new String[]{"20°C - 30°C, warm, rainy season",
+                                              "20°C - 30°C, warm, humid, rainy",
+                                              "18°C - 25°C, mild, dry",
+                                              "15°C - 25°C, mild, dry season"}));
         countries.add(new CountryInfo("Malawi",
                                       R.drawable.flagmalawi,
                                       R.drawable.malawi,
@@ -3410,7 +3825,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Lake Malawi, one of the largest and deepest lakes in the world, is home to more species of fish than any other lake",
-                                      "https://visitmalawi.mw/"));
+                                      "https://visitmalawi.mw/",
+                                      new String[]{"15°C - 25°C, warm, rainy season",
+                                              "20°C - 30°C, hot, dry season",
+                                              "15°C - 25°C, warm, short rains",
+                                              "10°C - 20°C, mild, dry season"}));
         countries.add(new CountryInfo("Malaysia",
                                       R.drawable.flagmalaysia,
                                       R.drawable.malaysia,
@@ -3443,7 +3862,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Malaysia is one of the world’s largest producers of palm oil, a significant agricultural export for the country",
-                                      "https://www.malaysia.travel"));
+                                      "https://www.malaysia.travel",
+                                      new String[]{"25°C - 33°C, hot, frequent thunderstorms",
+                                              "26°C - 34°C, hot, heavy rain",
+                                              "24°C - 32°C, warm, rainy",
+                                              "24°C - 31°C, warm, rainy"}));
         countries.add(new CountryInfo("Maldives",
                                       R.drawable.flagmaldives,
                                       R.drawable.maldives,
@@ -3476,7 +3899,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "The Maldives is the lowest-lying country in the world, with an average ground level of just 1.5 meters above sea level",
-                                      "https://visitmaldives.com/"));
+                                      "https://visitmaldives.com/",
+                                      new String[]{"25°C - 30°C, warm, mostly dry with some rain",
+                                              "26°C - 32°C, hot, humid, frequent showers",
+                                              "25°C - 31°C, warm, high humidity with rain",
+                                              "24°C - 30°C, warm, occasional rain showers"}));
         countries.add(new CountryInfo("Mali",
                                       R.drawable.flagmali,
                                       R.drawable.mali,
@@ -3509,7 +3936,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Mali is home to the ancient city of Timbuktu, once a thriving center of trade, Islamic culture, and learning",
-                                      "https://officetourismemali.com/"));
+                                      "https://officetourismemali.com/",
+                                      new String[]{"25°C - 35°C, warm, dry season",
+                                              "30°C - 40°C, very hot, mostly dry",
+                                              "25°C - 35°C, warm, some rain",
+                                              "20°C - 30°C, mild, dry season"}));
         countries.add(new CountryInfo("Malta",
                                       R.drawable.flagmalta,
                                       R.drawable.malta,
@@ -3542,7 +3973,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Malta has some of the oldest free-standing structures in the world, including the UNESCO-listed Megalithic Temples",
-                                      "https://www.visitmalta.com/"));
+                                      "https://www.visitmalta.com/",
+                                      new String[]{"12°C - 20°C, mild, occasional rain",
+                                              "20°C - 30°C, warm, sunny",
+                                              "15°C - 25°C, mild, some rain",
+                                              "10°C - 18°C, cool, rainy"}));
         countries.add(new CountryInfo("Marshall Islands",
                                       R.drawable.flagmarshallislands,
                                       R.drawable.marshallislands,
@@ -3575,7 +4010,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "The Marshall Islands cover over 1 million square miles of ocean but only 70 square miles of land",
-                                      "https://www.rmiocit.org/tourism"));
+                                      "https://www.rmiocit.org/tourism",
+                                      new String[]{"27°C - 30°C, warm, mostly sunny",
+                                              "28°C - 31°C, hot, occasional rain showers",
+                                              "27°C - 30°C, warm, rainy season with high humidity",
+                                              "26°C - 29°C, warm, occasional rain"}));
         countries.add(new CountryInfo("Mauritania",
                                       R.drawable.flagmauritania,
                                       R.drawable.mauritania,
@@ -3608,7 +4047,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Mauritania is known for the Richat Structure, also called the \"Eye of the Sahara,\" a large circular geological formation",
-                                      "https://visitmauritania.com/"));
+                                      "https://visitmauritania.com/",
+                                      new String[]{"20°C - 30°C, warm, mostly sunny and dry",
+                                              "25°C - 40°C, hot, very dry",
+                                              "23°C - 35°C, warm, dry with some humidity",
+                                              "15°C - 28°C, mild, dry and sunny"}));
         countries.add(new CountryInfo("Mauritius",
                                       R.drawable.flagmauritius,
                                       R.drawable.mauritius,
@@ -3641,7 +4084,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Mauritius was the only known habitat of the dodo bird, which became extinct in the 17th century",
-                                      "https://www.mymauritius.travel/"));
+                                      "https://www.mymauritius.travel/",
+                                      new String[]{"24°C - 30°C, warm, occasional tropical showers",
+                                              "26°C - 32°C, hot, humid with tropical showers",
+                                              "20°C - 28°C, mild, reduced humidity",
+                                              "18°C - 26°C, mild, dry with sunny spells"}));
         countries.add(new CountryInfo("Mexico",
                                       R.drawable.flagmexico,
                                       R.drawable.mexico,
@@ -3674,7 +4121,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Mexico is home to the largest pyramid in the world by volume, the Great Pyramid of Cholula",
-                                      "https://visitmexico.com/"));
+                                      "https://visitmexico.com/",
+                                      new String[]{"15°C - 25°C, mild, mostly sunny with some rain",
+                                              "20°C - 35°C, hot, dry in the north, rainy in the south",
+                                              "15°C - 25°C, mild, some rain in the south",
+                                              "10°C - 20°C, cool, mostly dry with clear skies"}));
         countries.add(new CountryInfo("Micronesia",
                                       R.drawable.flagmicronesia,
                                       R.drawable.micronesia,
@@ -3707,7 +4158,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "The ancient city of Nan Madol in Micronesia is often referred to as the \"Venice of the Pacific\"",
-                                      "https://visit-micronesia.fm/"));
+                                      "https://visit-micronesia.fm/",
+                                      new String[]{"26°C - 31°C, warm, frequent tropical rain showers",
+                                              "27°C - 32°C, hot, high humidity with rain",
+                                              "26°C - 31°C, warm, heavy rainfall",
+                                              "25°C - 30°C, warm, occasional showers and breezy"}));
         countries.add(new CountryInfo("Moldova",
                                       R.drawable.flagmoldova,
                                       R.drawable.moldova,
@@ -3740,7 +4195,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Moldova is known for its vast wine cellars, including Mileștii Mici, which holds the Guinness World Record for the largest wine collection",
-                                      "https://moldova.travel/"));
+                                      "https://moldova.travel/",
+                                      new String[]{"10°C - 20°C, mild, occasional rain showers",
+                                              "20°C - 30°C, warm, mostly sunny",
+                                              "15°C - 25°C, mild, some rain",
+                                              "0°C - 10°C, cold, cloudy with snow"}));
         countries.add(new CountryInfo("Monaco",
                                       R.drawable.flagmonaco,
                                       R.drawable.monaco,
@@ -3773,7 +4232,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Monaco is the second smallest country in the world but has one of the highest per capita GDPs",
-                                      "https://www.visitmonaco.com/"));
+                                      "https://www.visitmonaco.com/",
+                                      new String[]{"10°C - 20°C, mild, mostly sunny",
+                                              "20°C - 30°C, warm, dry and sunny",
+                                              "15°C - 25°C, mild, occasional rain showers",
+                                              "5°C - 15°C, cool, rainy with clear skies"}));
         countries.add(new CountryInfo("Mongolia",
                                       R.drawable.flagmongolia,
                                       R.drawable.mongolia,
@@ -3806,7 +4269,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Mongolia has one of the lowest population densities in the world, with vast stretches of untouched landscapes",
-                                      "https://www.mongolia.travel/"));
+                                      "https://www.mongolia.travel/",
+                                      new String[]{"0°C - 15°C, cool, occasional rain",
+                                              "15°C - 25°C, warm, sunny and dry",
+                                              "5°C - 20°C, cool, dry with some rain",
+                                              "-20°C - 0°C, extremely cold, dry with snow"}));
         countries.add(new CountryInfo("Montenegro",
                                       R.drawable.flagmontenegro,
                                       R.drawable.montenegro,
@@ -3839,7 +4306,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Montenegro’s Bay of Kotor is one of the deepest natural fjords in the Mediterranean Sea",
-                                      "https://www.montenegro.travel/"));
+                                      "https://www.montenegro.travel/",
+                                      new String[]{"10°C - 20°C, mild, occasional rain showers",
+                                              "20°C - 30°C, warm, mostly sunny",
+                                              "15°C - 25°C, mild, partly cloudy with rain",
+                                              "0°C - 10°C, cool, wet with occasional snow"}));
         countries.add(new CountryInfo("Morocco",
                                       R.drawable.flagmorocco,
                                       R.drawable.morocco,
@@ -3872,7 +4343,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "The city of Fes in Morocco is home to the world’s oldest existing university, the University of al-Qarawiyyin",
-                                      "https://www.visitmorocco.com/"));
+                                      "https://www.visitmorocco.com/",
+                                      new String[]{"15°C - 25°C, mild, sunny with light rain",
+                                              "20°C - 35°C, hot, dry with desert winds",
+                                              "15°C - 25°C, mild, mostly sunny",
+                                              "5°C - 15°C, cool, rainy with clear skies"}));
         countries.add(new CountryInfo("Mozambique",
                                       R.drawable.flagmozambique,
                                       R.drawable.mozambique,
@@ -3905,7 +4380,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Mozambique’s coastline is home to some of the most pristine coral reefs in the Indian Ocean",
-                                      "https://www.visitmozambique.net/"));
+                                      "https://www.visitmozambique.net/",
+                                      new String[]{"20°C - 30°C, warm, frequent rain showers",
+                                              "25°C - 35°C, hot, rainy with humidity",
+                                              "20°C - 30°C, mild, dry with sunny days",
+                                              "15°C - 25°C, cool, mostly dry and clear"}));
         countries.add(new CountryInfo("Myanmar",
                                       R.drawable.flagmyanmar,
                                       R.drawable.myanmar,
@@ -3938,7 +4417,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Myanmar has more than 2,000 temples and pagodas in the ancient city of Bagan",
-                                      "https://www.myanmar-tourism.com/"));
+                                      "https://www.myanmar-tourism.com/",
+                                      new String[]{"25°C - 30°C, warm, dry season",
+                                              "30°C - 40°C, very hot, humid with rain",
+                                              "25°C - 35°C, warm, heavy monsoon rains",
+                                              "20°C - 30°C, warm, drier with cool nights"}));
         countries.add(new CountryInfo("Namibia",
                                       R.drawable.flagnamibia,
                                       R.drawable.namibia,
@@ -3971,7 +4454,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Namibia’s Namib Desert is one of the oldest deserts in the world, with some sand dunes that reach over 300 meters high",
-                                      "https://visitnamibia.com.na/"));
+                                      "https://visitnamibia.com.na/",
+                                      new String[]{"15°C - 25°C, mild, dry with clear skies",
+                                              "20°C - 30°C, hot, dry and sunny",
+                                              "15°C - 25°C, mild, dry and windy",
+                                              "10°C - 20°C, cool, dry with sunny days"}));
         countries.add(new CountryInfo("Nauru",
                                       R.drawable.flagnauru,
                                       R.drawable.nauru,
@@ -4004,7 +4491,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Nauru is the smallest island nation in the world, covering just 21 square kilometers",
-                                      "https://naurutourism.com.nr/"));
+                                      "https://naurutourism.com.nr/",
+                                      new String[]{"25°C - 30°C, warm, occasional rain",
+                                              "25°C - 32°C, hot, humid with rain showers",
+                                              "25°C - 30°C, warm, frequent tropical showers",
+                                              "24°C - 30°C, mild, drier with breezy weather"}));
         countries.add(new CountryInfo("Nepal",
                                       R.drawable.flagnepal,
                                       R.drawable.nepal,
@@ -4037,7 +4528,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Nepal is home to eight of the world’s 14 tallest mountains, including Mount Everest",
-                                      "https://nepaltourism.org/"));
+                                      "https://nepaltourism.org/",
+                                      new String[]{"15°C - 25°C, mild, dry with sunny skies",
+                                              "20°C - 35°C, warm, monsoon rains",
+                                              "15°C - 25°C, mild, post-monsoon with clear skies",
+                                              "5°C - 15°C, cool, dry and sunny"}));
         countries.add(new CountryInfo("Netherlands",
                                       R.drawable.flagnetherlands,
                                       R.drawable.netherlands,
@@ -4070,7 +4565,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Around 26% of the Netherlands lies below sea level, with extensive dikes and canals protecting it from the sea",
-                                      "https://www.holland.com/global/tourism"));
+                                      "https://www.holland.com/global/tourism",
+                                      new String[]{"5°C - 15°C, cool, rainy with sunny spells",
+                                              "15°C - 25°C, warm, mostly sunny with some rain",
+                                              "10°C - 20°C, mild, partly cloudy",
+                                              "0°C - 10°C, cold, frequent rain and some snow"}));
         countries.add(new CountryInfo("New Zealand",
                                       R.drawable.flagnewzealand,
                                       R.drawable.newzealand,
@@ -4103,7 +4602,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "New Zealand is known for its diverse landscapes and was a filming location for \"The Lord of the Rings\" series",
-                                      "https://www.newzealand.com/"));
+                                      "https://www.newzealand.com/",
+                                      new String[]{"15°C - 25°C, mild, sunny with occasional rain",
+                                              "10°C - 20°C, cool, rainy with cloudy days",
+                                              "10°C - 20°C, mild, occasional rain",
+                                              "5°C - 15°C, cool, frequent rain and clear spells"}));
         countries.add(new CountryInfo("Nicaragua",
                                       R.drawable.flagnicaragua,
                                       R.drawable.nicaragua,
@@ -4136,7 +4639,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Nicaragua is known as the \"Land of Lakes and Volcanoes,\" with Lake Nicaragua being the largest lake in Central America",
-                                      "https://www.visitanicaragua.com/"));
+                                      "https://www.visitanicaragua.com/",
+                                      new String[]{"25°C - 30°C, warm, sunny with occasional rain",
+                                              "27°C - 32°C, hot, humid with thunderstorms",
+                                              "25°C - 30°C, warm, frequent rain",
+                                              "23°C - 28°C, mild, drier with breezy weather"}));
         countries.add(new CountryInfo("Niger",
                                       R.drawable.flagniger,
                                       R.drawable.niger,
@@ -4169,7 +4676,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Niger is home to the Sahara's largest protected area, the Air and Ténéré Natural Reserves, a UNESCO World Heritage site known for its unique desert landscapes",
-                                      "https://visit-niger.com/"));
+                                      "https://visit-niger.com/",
+                                      new String[]{"25°C - 35°C, hot, dry with sunny days",
+                                              "30°C - 40°C, very hot, dry and sunny",
+                                              "25°C - 35°C, warm, dry and dusty",
+                                              "20°C - 30°C, mild, dry with clear skies"}));
         countries.add(new CountryInfo("Nigeria",
                                       R.drawable.flagnigeria,
                                       R.drawable.nigeria,
@@ -4202,7 +4713,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Nigeria has the largest population in Africa and is known for its Nollywood film industry, which is one of the largest in the world",
-                                      "https://tournigeria.gov.ng/"));
+                                      "https://tournigeria.gov.ng/",
+                                      new String[]{"25°C - 30°C, warm, dry season",
+                                              "25°C - 35°C, hot, humid with rain",
+                                              "25°C - 30°C, warm, heavy rainfall",
+                                              "23°C - 28°C, mild, drier with sunny spells"}));
         countries.add(new CountryInfo("North Korea",
                                       R.drawable.flagnorthkorea,
                                       R.drawable.northkorea,
@@ -4235,7 +4750,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "North Korea operates its own calendar, the Juche calendar, which starts from the birth of its founding leader, Kim Il-sung, in 1912",
-                                      "https://koryogroup.com/"));
+                                      "https://koryogroup.com/",
+                                      new String[]{"5°C - 15°C, cool, mostly dry with clear skies",
+                                              "20°C - 30°C, warm, humid with frequent rain",
+                                              "10°C - 20°C, mild, occasional rain and cloudy",
+                                              "-10°C - 5°C, cold, dry with heavy snowfall in northern regions"}));
         countries.add(new CountryInfo("North Macedonia",
                                       R.drawable.flagnorthmacedonia,
                                       R.drawable.northmacedonia,
@@ -4268,7 +4787,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "North Macedonia's Ohrid Lake is one of Europe’s oldest and deepest lakes, hosting over 200 unique species",
-                                      "https://macedonia-timeless.com/"));
+                                      "https://macedonia-timeless.com/",
+                                      new String[]{"10°C - 20°C, mild, partly cloudy with rain",
+                                              "20°C - 30°C, warm, sunny and dry",
+                                              "15°C - 25°C, mild, occasional rain",
+                                              "0°C - 10°C, cool, wet with some snow"}));
         countries.add(new CountryInfo("Norway",
                                       R.drawable.flagnorway,
                                       R.drawable.norway,
@@ -4301,7 +4824,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Norway has some of the longest and most scenic fjords in the world, carved by glaciers over thousands of years",
-                                      "https://www.visitnorway.com/"));
+                                      "https://www.visitnorway.com/",
+                                      new String[]{"5°C - 15°C, mild, rainy with clear skies",
+                                              "10°C - 25°C, mild, sunny with occasional rain",
+                                              "5°C - 15°C, cool, partly cloudy",
+                                              "-10°C - 5°C, cold, snowy and windy"}));
         countries.add(new CountryInfo("Oman",
                                       R.drawable.flagoman,
                                       R.drawable.oman,
@@ -4334,7 +4861,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Oman’s ancient aflaj irrigation systems, which are over 2,000 years old, are recognized as a UNESCO World Heritage site",
-                                      "https://experienceoman.om/"));
+                                      "https://experienceoman.om/",
+                                      new String[]{"18°C - 28°C, mild, mostly sunny",
+                                              "30°C - 40°C, very hot and dry",
+                                              "25°C - 35°C, warm, occasional rain",
+                                              "15°C - 25°C, cool, dry and clear skies"}));
         countries.add(new CountryInfo("Pakistan",
                                       R.drawable.flagpakistan,
                                       R.drawable.pakistan,
@@ -4367,7 +4898,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Pakistan is home to the second-highest mountain in the world, K2, located in the Karakoram Range",
-                                      "https://tourism.gov.pk/"));
+                                      "https://tourism.gov.pk/",
+                                      new String[]{"10°C - 20°C, mild, dry and sunny",
+                                              "25°C - 35°C, hot, dry with occasional rain",
+                                              "15°C - 25°C, warm, rainy season with high humidity",
+                                              "5°C - 15°C, cool, dry with snowfall in northern regions"}));
         countries.add(new CountryInfo("Palau",
                                       R.drawable.flagpalau,
                                       R.drawable.palau,
@@ -4400,7 +4935,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Palau has a unique Jellyfish Lake where visitors can swim with millions of stingless jellyfish",
-                                      "https://pristineparadisepalau.com/"));
+                                      "https://pristineparadisepalau.com/",
+                                      new String[]{"25°C - 30°C, warm, mostly sunny",
+                                              "28°C - 32°C, hot, frequent rain and thunderstorms",
+                                              "25°C - 30°C, warm, high humidity and rainfall",
+                                              "24°C - 29°C, warm, moderate rainfall"}));
         countries.add(new CountryInfo("Panama",
                                       R.drawable.flagpanama,
                                       R.drawable.panama,
@@ -4433,7 +4972,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "The Panama Canal is one of the most important waterways in the world, connecting the Atlantic and Pacific Oceans",
-                                      "https://www.tourismpanama.com/"));
+                                      "https://www.tourismpanama.com/",
+                                      new String[]{"24°C - 30°C, warm, high humidity and rain",
+                                              "25°C - 32°C, hot, rainy season",
+                                              "23°C - 30°C, warm, high rainfall",
+                                              "23°C - 28°C, mild, drier season with sunny days"}));
         countries.add(new CountryInfo("Papua New Guinea",
                                       R.drawable.flagpapuanewguinea,
                                       R.drawable.papuanewguinea,
@@ -4466,7 +5009,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Papua New Guinea has over 800 languages, making it one of the most linguistically diverse countries in the world",
-                                      "https://papuanewguinea.travel/"));
+                                      "https://papuanewguinea.travel/",
+                                      new String[]{"22°C - 30°C, warm, frequent rain",
+                                              "24°C - 32°C, hot, high humidity and rainfall",
+                                              "22°C - 30°C, warm, frequent rain and thunderstorms",
+                                              "20°C - 28°C, warm, drier season"}));
         countries.add(new CountryInfo("Paraguay",
                                       R.drawable.flagparaguay,
                                       R.drawable.paraguay,
@@ -4499,7 +5046,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Paraguay has the largest hydroelectric dam in the world, Itaipu Dam, which it shares with Brazil",
-                                      "https://visitparaguay.travel/"));
+                                      "https://visitparaguay.travel/",
+                                      new String[]{"20°C - 30°C, warm, partly cloudy",
+                                              "25°C - 35°C, hot, dry with occasional rain",
+                                              "20°C - 30°C, mild, rainy season",
+                                              "15°C - 25°C, cool, dry and clear skies"}));
         countries.add(new CountryInfo("Peru",
                                       R.drawable.flagperu,
                                       R.drawable.peru,
@@ -4532,7 +5083,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Peru is home to the ancient Incan city of Machu Picchu, one of the New Seven Wonders of the World",
-                                      "https://www.peru.travel/"));
+                                      "https://www.peru.travel/",
+                                      new String[]{"10°C - 20°C, mild, mostly sunny",
+                                              "20°C - 30°C, warm, high humidity",
+                                              "15°C - 25°C, mild with rain",
+                                              "5°C - 15°C, cool, dry in highlands, rainy in the Amazon"}));
         countries.add(new CountryInfo("Philippines",
                                       R.drawable.flagphilippines,
                                       R.drawable.philippines,
@@ -4565,7 +5120,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "The Philippines is made up of more than 7,000 islands, with pristine beaches and vibrant marine biodiversity",
-                                      "https://philippines.travel/"));
+                                      "https://philippines.travel/",
+                                      new String[]{"22°C - 32°C, warm, dry season with sunny days",
+                                              "25°C - 35°C, hot, high humidity",
+                                              "23°C - 30°C, warm, rainy season with typhoons",
+                                              "20°C - 28°C, mild, occasional rain and cooler"}));
         countries.add(new CountryInfo("Poland",
                                       R.drawable.flagpoland,
                                       R.drawable.poland,
@@ -4598,7 +5157,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Poland’s Wieliczka Salt Mine, operational since the 13th century, is a UNESCO site with vast underground chapels carved from salt",
-                                      "https://www.poland.travel/"));
+                                      "https://www.poland.travel/",
+                                      new String[]{"-5°C - 5°C, cold, snow in some areas",
+                                              "10°C - 20°C, mild, partly cloudy",
+                                              "15°C - 25°C, warm, mostly sunny",
+                                              "0°C - 10°C, cool, cloudy with rain"}));
         countries.add(new CountryInfo("Portugal",
                                       R.drawable.flagportgual,
                                       R.drawable.portugal,
@@ -4631,7 +5194,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Portugal is one of the world’s oldest countries, with Lisbon as its capital since the 12th century",
-                                      "https://www.visitportugal.com/"));
+                                      "https://www.visitportugal.com/",
+                                      new String[]{"10°C - 20°C, mild, mostly sunny",
+                                              "20°C - 30°C, warm, dry and sunny",
+                                              "15°C - 25°C, mild, occasional rain",
+                                              "5°C - 15°C, cool, rainy and overcast"}));
         countries.add(new CountryInfo("Qatar",
                                       R.drawable.flagqatar,
                                       R.drawable.qatar,
@@ -4664,7 +5231,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Qatar is known for its modern architecture and hosts the Museum of Islamic Art, designed by architect I.M. Pei",
-                                      "https://visitqatar.com/"));
+                                      "https://visitqatar.com/",
+                                      new String[]{"15°C - 25°C, mild, sunny and dry",
+                                              "30°C - 45°C, extremely hot and dry",
+                                              "28°C - 38°C, hot, dry season",
+                                              "18°C - 25°C, mild, clear skies and dry"}));
         countries.add(new CountryInfo("Romania",
                                       R.drawable.flagromania,
                                       R.drawable.romania,
@@ -4697,7 +5268,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Romania is home to the legendary Bran Castle, associated with the Dracula legend and one of the country's top tourist attractions",
-                                      "https://www.romania.travel/"));
+                                      "https://www.romania.travel/",
+                                      new String[]{"-5°C - 5°C, cold, snowfall common",
+                                              "10°C - 20°C, mild, partly cloudy",
+                                              "15°C - 25°C, warm, mostly sunny",
+                                              "0°C - 10°C, cool, rain and cloudy"}));
         countries.add(new CountryInfo("Russia",
                                       R.drawable.flagrussia,
                                       R.drawable.russia,
@@ -4730,7 +5305,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Russia spans 11 time zones and is the largest country in the world by land area",
-                                      "https://russiatourism.ru/"));
+                                      "https://russiatourism.ru/",
+                                      new String[]{"-20°C - -5°C, extremely cold, heavy snow in north",
+                                              "5°C - 20°C, mild, clear skies in some areas",
+                                              "10°C - 25°C, warm, sunny in most regions",
+                                              "-15°C - 0°C, cold, snow in most areas"}));
         countries.add(new CountryInfo("Rwanda",
                                       R.drawable.flagrwanda,
                                       R.drawable.rwanda,
@@ -4763,7 +5342,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Rwanda is one of the few places in the world where mountain gorillas can be seen in their natural habitat",
-                                      "https://visitrwanda.com/"));
+                                      "https://visitrwanda.com/",
+                                      new String[]{"15°C - 25°C, mild, dry season with sunny days",
+                                              "20°C - 28°C, warm, high humidity with rain",
+                                              "18°C - 26°C, warm, rainy season",
+                                              "15°C - 25°C, mild, dry season"}));
         countries.add(new CountryInfo("Saint Kitts and Nevis",
                                       R.drawable.flagsaintkittsandnevis,
                                       R.drawable.saintkittsandnevis,
@@ -4796,7 +5379,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Saint Kitts and Nevis is the smallest country in the Western Hemisphere, both by area and population",
-                                      "https://www.visitstkitts.com/"));
+                                      "https://www.visitstkitts.com/",
+                                      new String[]{"25°C - 30°C, warm, mostly sunny",
+                                              "28°C - 32°C, hot, humid with rain",
+                                              "25°C - 30°C, warm, high humidity",
+                                              "24°C - 29°C, warm, dry season with clear skies"}));
         countries.add(new CountryInfo("Saint Lucia",
                                       R.drawable.flagsaintlucia,
                                       R.drawable.saintlucia,
@@ -4829,7 +5416,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Saint Lucia’s Pitons, two volcanic spires, are a UNESCO World Heritage site and a prominent natural landmark",
-                                      "https://www.stlucia.org/"));
+                                      "https://www.stlucia.org/",
+                                      new String[]{"25°C - 30°C, warm, mostly dry",
+                                              "28°C - 32°C, hot, humid and rainy",
+                                              "25°C - 30°C, warm, occasional rain",
+                                              "24°C - 28°C, mild, dry season with sunny skies"}));
         countries.add(new CountryInfo("Saint Vincent and the Grenadines",
                                       R.drawable.flagsaintvincentandthegrenadines,
                                       R.drawable.saintvincentandthegrenadines,
@@ -4862,7 +5453,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "The Tobago Cays in Saint Vincent and the Grenadines are famous for their pristine coral reefs, and they served as a filming location for scenes in the \"Pirates of the Caribbean\" movie series",
-                                      "https://discoversvg.com/"));
+                                      "https://discoversvg.com/",
+                                      new String[]{"25°C - 30°C, warm, mostly sunny",
+                                              "28°C - 32°C, hot, humid with rain",
+                                              "25°C - 30°C, warm, rainy season",
+                                              "24°C - 29°C, mild, dry with clear skies"}));
         countries.add(new CountryInfo("Samoa",
                                       R.drawable.flagsamoa,
                                       R.drawable.samoa,
@@ -4895,7 +5490,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Samoa shifted the International Date Line in 2011 to align its calendar more closely with its major trading partners, effectively skipping a day",
-                                      "https://www.samoa.travel/"));
+                                      "https://www.samoa.travel/",
+                                      new String[]{"25°C - 30°C, warm, sunny and dry",
+                                              "28°C - 32°C, hot, high humidity and rain",
+                                              "25°C - 30°C, warm, rainy season",
+                                              "24°C - 28°C, warm, mostly dry season"}));
         countries.add(new CountryInfo("San Marino",
                                       R.drawable.flagsanmarino,
                                       R.drawable.sanmarino,
@@ -4928,7 +5527,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Founded in A.D. 301, San Marino claims to be the world's oldest republic and has maintained independence for centuries despite surrounding conflicts",
-                                      "https://www.visitsanmarino.com/"));
+                                      "https://www.visitsanmarino.com/",
+                                      new String[]{"5°C - 15°C, cool, occasional rain",
+                                              "15°C - 25°C, warm, partly cloudy",
+                                              "20°C - 30°C, warm, sunny with occasional rain",
+                                              "0°C - 10°C, cool, cloudy with rain"}));
         countries.add(new CountryInfo("São Tomé and Principe",
                                       R.drawable.flagsaotomeandprincipe,
                                       R.drawable.saotomeandprincipe,
@@ -4961,7 +5564,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "São Tomé and Príncipe is known as the \"African Galápagos\" because of its unique biodiversity, with many endemic species of plants and animals found only on these islands",
-                                      "https://www.visitsaotomeprincipe.st/"));
+                                      "https://www.visitsaotomeprincipe.st/",
+                                      new String[]{"24°C - 30°C, warm, mostly sunny and dry",
+                                              "25°C - 31°C, hot, rainy season with thunderstorms",
+                                              "23°C - 29°C, warm, high humidity and rain",
+                                              "23°C - 28°C, mild, drier season with clear skies"}));
         countries.add(new CountryInfo("Saudi Arabia",
                                       R.drawable.flagsaudiarabia,
                                       R.drawable.saudiarabia,
@@ -4994,7 +5601,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Saudi Arabia opened its doors to tourism in 2019 with a new e-visa program, allowing visitors to explore the country’s heritage sites like Al-Ula and the Edge of the World",
-                                      "https://www.visitsaudi.com/"));
+                                      "https://www.visitsaudi.com/",
+                                      new String[]{"15°C - 25°C, mild, sunny and dry",
+                                              "30°C - 45°C, very hot, dry desert climate",
+                                              "28°C - 40°C, hot, dry season",
+                                              "20°C - 30°C, mild, dry and sunny"}));
         countries.add(new CountryInfo("Senegal",
                                       R.drawable.flagsenegal,
                                       R.drawable.senegal,
@@ -5027,7 +5638,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Senegal is home to the Dakar Rally, a famous off-road endurance race originally from Paris to Dakar but now held in different locations",
-                                      "https://www.discoversenegal.com/"));
+                                      "https://www.discoversenegal.com/",
+                                      new String[]{"18°C - 28°C, mild, mostly sunny and dry",
+                                              "25°C - 35°C, hot, dry with occasional rain",
+                                              "23°C - 32°C, warm, rainy season with high humidity",
+                                              "20°C - 28°C, mild, dry season with clear skies"}));
         countries.add(new CountryInfo("Serbia",
                                       R.drawable.flagserbia,
                                       R.drawable.serbia,
@@ -5060,7 +5675,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "The country boasts the world’s second-largest gorge, the Djerdap Gorge (Iron Gates), on the Danube River",
-                                      "https://www.serbia.travel/"));
+                                      "https://www.serbia.travel/",
+                                      new String[]{"-5°C - 5°C, cold, snow in higher altitudes",
+                                              "10°C - 20°C, mild, mostly sunny",
+                                              "15°C - 30°C, warm, sunny with occasional rain",
+                                              "0°C - 10°C, cool, cloudy with rain"}));
         countries.add(new CountryInfo("Seychelles",
                                       R.drawable.flagseychelles,
                                       R.drawable.seychelles,
@@ -5093,7 +5712,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Seychelles is known for its unique biodiversity, with endemic species like the Aldabra giant tortoise and the Coco de Mer, a palm tree with the largest seeds in the plant kingdom",
-                                      "https://seychelles.com/"));
+                                      "https://seychelles.com/",
+                                      new String[]{"25°C - 30°C, warm, sunny and dry season",
+                                              "27°C - 32°C, hot, humid with occasional rain",
+                                              "25°C - 30°C, warm, high humidity and rain",
+                                              "24°C - 29°C, mild, dry season with sunny skies"}));
         countries.add(new CountryInfo("Sierra Leone",
                                       R.drawable.flagsierraleone,
                                       R.drawable.sierraleone,
@@ -5126,7 +5749,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Sierra Leone’s Bunce Island was a significant site in the transatlantic slave trade and now serves as a historical landmark",
-                                      "https://ntb.gov.sl/"));
+                                      "https://ntb.gov.sl/",
+                                      new String[]{"25°C - 30°C, warm, mostly sunny",
+                                              "28°C - 33°C, hot, rainy season with thunderstorms",
+                                              "25°C - 30°C, warm, high humidity and rain",
+                                              "24°C - 29°C, mild, drier season with clear skies"}));
         countries.add(new CountryInfo("Singapore",
                                       R.drawable.flagsingapore,
                                       R.drawable.singapore,
@@ -5159,7 +5786,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Singapore has a “supertree” grove in Gardens by the Bay, featuring futuristic, tree-like vertical gardens up to 50 meters tall",
-                                      "https://www.visitsingapore.com/"));
+                                      "https://www.visitsingapore.com/",
+                                      new String[]{"25°C - 31°C, warm, high humidity with rain",
+                                              "26°C - 33°C, hot, frequent rain and thunderstorms",
+                                              "25°C - 31°C, warm, high rainfall and humidity",
+                                              "25°C - 31°C, warm, frequent rain and humid"}));
         countries.add(new CountryInfo("Slovakia",
                                       R.drawable.flagslovakia,
                                       R.drawable.slovakia,
@@ -5192,7 +5823,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Slovakia has the world’s highest number of castles and chateaux per capita, including the renowned Bratislava Castle and Spiš Castle",
-                                      "https://slovakia.travel/"));
+                                      "https://slovakia.travel/",
+                                      new String[]{"-5°C - 5°C, cold, snow in mountainous areas",
+                                              "10°C - 20°C, mild, mostly sunny",
+                                              "15°C - 25°C, warm, sunny with occasional rain",
+                                              "0°C - 10°C, cool, cloudy with rain"}));
         countries.add(new CountryInfo("Slovenia",
                                       R.drawable.flagslovenia,
                                       R.drawable.slovenia,
@@ -5225,7 +5860,11 @@ public class CountryData {
                                               2,
                                               3},
                                       "Lake Bled, with its picturesque island church, is one of Slovenia’s most iconic sites and attracts thousands of visitors annually",
-                                      "https://www.slovenia.info/"));
+                                      "https://www.slovenia.info/",
+                                      new String[]{"-5°C - 5°C, cold, snow in higher altitudes",
+                                              "10°C - 20°C, mild, partly cloudy",
+                                              "15°C - 25°C, warm, sunny with occasional rain",
+                                              "0°C - 10°C, cool, rain and cloudy"}));
         countries.add(new CountryInfo("Solomon Islands",
                                       R.drawable.flagsolomonislands,
                                       R.drawable.solomonislands,
@@ -5258,7 +5897,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "The Solomon Islands played a significant role in World War II, especially at the Battle of Guadalcanal, one of the first major Allied offensives",
-                                      "https://www.visitsolomons.com.sb/"));
+                                      "https://www.visitsolomons.com.sb/",
+                                      new String[]{"25°C - 30°C, warm, mostly sunny",
+                                              "28°C - 32°C, hot, rainy season with thunderstorms",
+                                              "25°C - 30°C, warm, high humidity and rain",
+                                              "24°C - 29°C, mild, drier season with clear skies"}));
         countries.add(new CountryInfo("Somalia",
                                       R.drawable.flagsomalia,
                                       R.drawable.somalia,
@@ -5291,7 +5934,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Somalia has Africa's longest coastline on the mainland, stretching over 3,300 kilometers along the Indian Ocean",
-                                      "https://tourism.gov.so/"));
+                                      "https://tourism.gov.so/",
+                                      new String[]{"25°C - 30°C, warm, mostly sunny and dry",
+                                              "30°C - 40°C, very hot, dry desert climate",
+                                              "28°C - 35°C, hot, dry season with little rain",
+                                              "25°C - 30°C, warm, clear skies"}));
         countries.add(new CountryInfo("South Africa",
                                       R.drawable.flagsouthafrica,
                                       R.drawable.southafrica,
@@ -5324,7 +5971,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "South Africa is known as the \"Rainbow Nation\" for its cultural diversity, with 11 official languages and a rich mix of ethnic groups",
-                                      "https://www.southafrica.net/"));
+                                      "https://www.southafrica.net/",
+                                      new String[]{"15°C - 25°C, mild, rainy in some areas",
+                                              "20°C - 30°C, warm, mostly sunny",
+                                              "15°C - 25°C, cool, dry season in parts",
+                                              "10°C - 20°C, mild, rainy in the south"}));
         countries.add(new CountryInfo("South Korea",
                                       R.drawable.flagsouthkorea,
                                       R.drawable.southkorea,
@@ -5357,7 +6008,11 @@ public class CountryData {
                                               1,
                                               3},
                                       "South Korea’s Jeju Island is home to the world’s longest lava tube system, Manjanggul Cave, stretching for over 7 kilometers",
-                                      "visitkorea.or.kr"));
+                                      "visitkorea.or.kr",
+                                      new String[]{"-5°C - 5°C, cold, snow in northern regions",
+                                              "10°C - 25°C, mild, partly cloudy",
+                                              "15°C - 30°C, warm, mostly sunny",
+                                              "0°C - 10°C, cool, rain and cloudy"}));
         countries.add(new CountryInfo("South Sudan",
                                       R.drawable.flagsouthsudan,
                                       R.drawable.southsudan,
@@ -5390,7 +6045,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "South Sudan is known for its vast Sudd wetlands, one of the largest freshwater ecosystems in the world",
-                                      "https://mofaic.gov.ss/tourism/"));
+                                      "https://mofaic.gov.ss/tourism/",
+                                      new String[]{"20°C - 30°C, warm, dry season with clear skies",
+                                              "25°C - 35°C, hot, high humidity with occasional rain",
+                                              "20°C - 30°C, warm, rainy season",
+                                              "18°C - 28°C, mild, drier season"}));
         countries.add(new CountryInfo("Spain",
                                       R.drawable.flagspain,
                                       R.drawable.spain,
@@ -5423,7 +6082,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Spain is home to the Caminito del Rey, a narrow and scenic cliffside walkway once considered one of the most dangerous paths in the world",
-                                      "https://www.spain.info/"));
+                                      "https://www.spain.info/",
+                                      new String[]{"10°C - 20°C, mild, mostly sunny",
+                                              "20°C - 35°C, hot, dry in most areas",
+                                              "15°C - 25°C, mild, occasional rain",
+                                              "5°C - 15°C, cool, rainy in some regions"}));
         countries.add(new CountryInfo("Sri Lanka",
                                       R.drawable.flagsrilanka,
                                       R.drawable.srilanka,
@@ -5456,7 +6119,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Sri Lanka is known for the ancient rock fortress of Sigiriya, a UNESCO World Heritage Site also called the \"Lion Rock\"",
-                                      "https://www.srilanka.travel/"));
+                                      "https://www.srilanka.travel/",
+                                      new String[]{"24°C - 30°C, warm, dry season with sunny days",
+                                              "25°C - 32°C, hot, high humidity and rain",
+                                              "24°C - 30°C, warm, frequent rain and thunderstorms",
+                                              "24°C - 29°C, warm, drier season"}));
         countries.add(new CountryInfo("Sudan",
                                       R.drawable.flagsudan,
                                       R.drawable.sudan,
@@ -5489,7 +6156,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Sudan has more ancient pyramids than Egypt, mainly in the region of Meroë, built by the Kingdom of Kush",
-                                      "https://www.realsudan.com/"));
+                                      "https://www.realsudan.com/",
+                                      new String[]{"20°C - 30°C, warm, mostly sunny and dry",
+                                              "30°C - 45°C, extremely hot, dry desert climate",
+                                              "28°C - 40°C, hot, dry with little rain",
+                                              "20°C - 30°C, warm, dry season"}));
         countries.add(new CountryInfo("Suriname",
                                       R.drawable.flagsuriname,
                                       R.drawable.suriname,
@@ -5522,7 +6193,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Suriname is the only country outside Europe where Dutch is the official language, owing to its colonial history",
-                                      "https://www.surinametourism.sr/"));
+                                      "https://www.surinametourism.sr/",
+                                      new String[]{"24°C - 30°C, warm, dry season",
+                                              "26°C - 33°C, hot, rainy season with high humidity",
+                                              "24°C - 30°C, warm, high rainfall and thunderstorms",
+                                              "23°C - 28°C, mild, drier season with clear skies"}));
         countries.add(new CountryInfo("Sweden",
                                       R.drawable.flagsweden,
                                       R.drawable.sweden,
@@ -5555,7 +6230,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Sweden has an extensive Right of Public Access law known as Allemansrätten, allowing anyone to roam freely on almost all land, including forests, mountains, and even some private property, promoting outdoor life and nature exploration",
-                                      "https://visitsweden.com/"));
+                                      "https://visitsweden.com/",
+                                      new String[]{"-10°C - 0°C, very cold, snow in most areas",
+                                              "5°C - 20°C, mild, sunny with long days",
+                                              "10°C - 25°C, warm, mostly sunny",
+                                              "-5°C - 5°C, cold, cloudy with snow"}));
         countries.add(new CountryInfo("Switzerland",
                                       R.drawable.flagswitzerland,
                                       R.drawable.switzerland,
@@ -5588,7 +6267,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Switzerland is home to CERN, the European Organization for Nuclear Research, which houses the world’s largest particle physics laboratory",
-                                      "https://www.myswitzerland.com/"));
+                                      "https://www.myswitzerland.com/",
+                                      new String[]{"-5°C - 5°C, cold, snow in mountainous regions",
+                                              "10°C - 20°C, mild, mostly sunny with occasional rain",
+                                              "15°C - 25°C, warm, sunny with light rain",
+                                              "0°C - 10°C, cool, cloudy with rain"}));
         countries.add(new CountryInfo("Syria",
                                       R.drawable.flagsyria,
                                       R.drawable.syria,
@@ -5621,7 +6304,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Syria’s ancient city of Aleppo is one of the oldest continuously inhabited cities in the world, with a history stretching back over 4,000 years",
-                                      "https://www.cometosyria.com/"));
+                                      "https://www.cometosyria.com/",
+                                      new String[]{"5°C - 15°C, cool, rainy in coastal areas",
+                                              "20°C - 30°C, warm, dry and sunny",
+                                              "15°C - 25°C, mild, occasional rain",
+                                              "5°C - 15°C, cool, mostly dry and clear"}));
         countries.add(new CountryInfo("Taiwan",
                                       R.drawable.flagtaiwan,
                                       R.drawable.taiwan,
@@ -5654,7 +6341,11 @@ public class CountryData {
                                               1,
                                               2},
                                       "Taiwan is one of the world’s leading producers of high-tech goods, including semiconductors and electronics, making it a vital player in global technology supply chains",
-                                      "https://eng.taiwan.net.tw/"));
+                                      "https://eng.taiwan.net.tw/",
+                                      new String[]{"15°C - 20°C, cool, mild and dry with occasional rain",
+                                              "25°C - 30°C, hot and humid, frequent thunderstorms",
+                                              "20°C - 27°C, warm, high humidity with typhoon season",
+                                              "15°C - 22°C, mild, drier season with occasional rain"}));
         countries.add(new CountryInfo("Tajikistan",
                                       R.drawable.flagtajikistan,
                                       R.drawable.tajikistan,
@@ -5687,7 +6378,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Tajikistan is home to over 900 rivers and has some of the tallest mountains in the world, including Ismoil Somoni Peak, which stands at 7,495 meters",
-                                      "https://traveltajikistan.tj/"));
+                                      "https://traveltajikistan.tj/",
+                                      new String[]{"-5°C - 10°C, cold, snow in higher elevations",
+                                              "15°C - 30°C, warm, mostly sunny",
+                                              "10°C - 20°C, mild, occasional rain",
+                                              "0°C - 10°C, cool, dry season"}));
         countries.add(new CountryInfo("Tanzania",
                                       R.drawable.flagtanzania,
                                       R.drawable.tanzania,
@@ -5720,7 +6415,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Tanzania is home to Mount Kilimanjaro, the highest peak in Africa, standing at 5,895 meters, and a major draw for trekkers worldwide",
-                                      "https://www.tanzaniatourism.go.tz/"));
+                                      "https://www.tanzaniatourism.go.tz/",
+                                      new String[]{"20°C - 30°C, warm, mostly dry with clear skies",
+                                              "25°C - 35°C, hot, rainy season",
+                                              "20°C - 30°C, warm, high humidity and rain",
+                                              "18°C - 28°C, mild, dry season"}));
         countries.add(new CountryInfo("Thailand",
                                       R.drawable.flagthailand,
                                       R.drawable.thailand,
@@ -5753,7 +6452,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Thailand is known for its vibrant festivals, including the Songkran Water Festival, which marks the traditional Thai New Year and features water fights across the country",
-                                      "https://www.tourismthailand.org/home"));
+                                      "https://www.tourismthailand.org/home",
+                                      new String[]{"24°C - 30°C, warm, dry season with sunny days",
+                                              "26°C - 34°C, hot, humid with occasional rain",
+                                              "25°C - 31°C, warm, frequent rain and thunderstorms",
+                                              "24°C - 29°C, warm, drier season"}));
         countries.add(new CountryInfo("The Gambia",
                                       R.drawable.flagthegambia,
                                       R.drawable.thegambia,
@@ -5786,7 +6489,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "The Gambia is the smallest country on mainland Africa and follows the path of the Gambia River, which flows through its entire length. Known as \"The Smiling Coast of Africa,\" it attracts visitors with its beautiful beaches and vibrant culture",
-                                      "https://visitthegambia.com/"));
+                                      "https://visitthegambia.com/",
+                                      new String[]{"18°C - 26°C, cool, dry season with sunny days",
+                                              "25°C - 35°C, hot, dry, and mostly sunny",
+                                              "26°C - 32°C, warm, rainy season with thunderstorms",
+                                              "22°C - 30°C, mild, some rainfall at the start and end of the season"}));
         countries.add(new CountryInfo("Togo",
                                       R.drawable.flagtogo,
                                       R.drawable.togo,
@@ -5819,7 +6526,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Togo is known for its traditional voodoo practices, and the country has one of the largest voodoo markets in the world, known as the Akodessewa Fetish Market",
-                                      "https://voyage.gouv.tg/"));
+                                      "https://voyage.gouv.tg/",
+                                      new String[]{"25°C - 30°C, warm, mostly sunny and dry",
+                                              "26°C - 33°C, hot, rainy season with thunderstorms",
+                                              "25°C - 30°C, warm, high humidity and rain",
+                                              "24°C - 29°C, mild, dry season"}));
         countries.add(new CountryInfo("Tonga",
                                       R.drawable.flagtonga,
                                       R.drawable.tonga,
@@ -5852,7 +6563,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Tonga is one of the few places where visitors can swim with humpback whales as they migrate from Antarctica during the breeding season",
-                                      "https://tongatourism.travel/"));
+                                      "https://tongatourism.travel/",
+                                      new String[]{"24°C - 30°C, warm, mostly sunny",
+                                              "25°C - 32°C, hot, rainy season with high humidity",
+                                              "24°C - 30°C, warm, high rainfall and humidity",
+                                              "23°C - 28°C, mild, dry season"}));
         countries.add(new CountryInfo("Trinidad and Tobago",
                                       R.drawable.flagtrinidadandtobago,
                                       R.drawable.trinidadandtobago,
@@ -5885,7 +6600,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Trinidad and Tobago is the birthplace of the steelpan, the only acoustic musical instrument invented in the 20th century",
-                                      "https://visittrinidad.tt/"));
+                                      "https://visittrinidad.tt/",
+                                      new String[]{"25°C - 30°C, warm, dry season with clear skies",
+                                              "26°C - 33°C, hot, high humidity with rain",
+                                              "25°C - 30°C, warm, frequent rain and thunderstorms",
+                                              "24°C - 29°C, warm, drier season"}));
         countries.add(new CountryInfo("Tunisia",
                                       R.drawable.flagtunisia,
                                       R.drawable.tunisia,
@@ -5918,7 +6637,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Tunisia’s ancient city of Carthage was one of the most powerful civilizations of the ancient world, rivaling Rome before it was ultimately defeated",
-                                      "https://www.discovertunisia.com/"));
+                                      "https://www.discovertunisia.com/",
+                                      new String[]{"10°C - 20°C, mild, rainy in some regions",
+                                              "20°C - 35°C, hot, dry season",
+                                              "15°C - 25°C, mild, occasional rain",
+                                              "5°C - 15°C, cool, rainy season"}));
         countries.add(new CountryInfo("Turkey",
                                       R.drawable.flagturkey,
                                       R.drawable.turkey,
@@ -5951,7 +6674,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Turkey straddles two continents—Europe and Asia—and Istanbul is the only major city in the world that spans two continents",
-                                      "https://goturkiye.com/"));
+                                      "https://goturkiye.com/",
+                                      new String[]{"5°C - 15°C, cool, snow in northern areas",
+                                              "15°C - 30°C, warm, sunny with occasional rain",
+                                              "10°C - 25°C, mild, partly cloudy",
+                                              "0°C - 10°C, cool, rain in coastal areas"}));
         countries.add(new CountryInfo("Turkmenistan",
                                       R.drawable.flagturkmenistan,
                                       R.drawable.turkmenistan,
@@ -5984,7 +6711,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Turkmenistan is home to the Darvaza Gas Crater, also known as the \"Door to Hell,\" a natural gas field that has been burning continuously since it was accidentally set on fire in 1971",
-                                      "https://turkmentravels.com/"));
+                                      "https://turkmentravels.com/",
+                                      new String[]{"5°C - 15°C, mild, dry and sunny",
+                                              "25°C - 40°C, very hot, dry desert climate",
+                                              "15°C - 30°C, warm, dry season",
+                                              "0°C - 10°C, cool, mostly dry"}));
         countries.add(new CountryInfo("Tuvalu",
                                       R.drawable.flagtuvalu,
                                       R.drawable.tuvalu,
@@ -6017,7 +6748,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Tuvalu is one of the world’s smallest and least visited countries, largely due to its remote location in the South Pacific and vulnerability to rising sea levels",
-                                      "https://www.timelesstuvalu.com/"));
+                                      "https://www.timelesstuvalu.com/",
+                                      new String[]{"25°C - 30°C, warm, dry season with sunny skies",
+                                              "26°C - 32°C, hot, humid with rain",
+                                              "25°C - 30°C, warm, high humidity and frequent rain",
+                                              "24°C - 29°C, mild, drier season"}));
         countries.add(new CountryInfo("Uganda",
                                       R.drawable.flaguganda,
                                       R.drawable.uganda,
@@ -6050,7 +6785,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Uganda is known as the \"Pearl of Africa\" and is one of the few places where visitors can see mountain gorillas in their natural habitat",
-                                      "https://www.exploreuganda.com/"));
+                                      "https://www.exploreuganda.com/",
+                                      new String[]{"20°C - 30°C, warm, dry season with sunny days",
+                                              "25°C - 35°C, hot, rainy season with thunderstorms",
+                                              "20°C - 30°C, warm, high humidity and rain",
+                                              "18°C - 28°C, mild, dry season"}));
         countries.add(new CountryInfo("Ukraine",
                                       R.drawable.flagukraine,
                                       R.drawable.ukraine,
@@ -6083,7 +6822,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Ukraine has the world's largest sunflower field areas, making it one of the top producers of sunflower oil globally",
-                                      "https://visitukraine.today/"));
+                                      "https://visitukraine.today/",
+                                      new String[]{"-5°C - 5°C, cold, snow in most areas",
+                                              "10°C - 25°C, mild, sunny with occasional rain",
+                                              "15°C - 30°C, warm, mostly sunny",
+                                              "0°C - 10°C, cool, cloudy with rain"}));
         countries.add(new CountryInfo("United Arab Emirates",
                                       R.drawable.flagunitedarabemirates,
                                       R.drawable.unitedarabemirates,
@@ -6116,7 +6859,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "The UAE is home to the world’s tallest building, the Burj Khalifa, standing at 828 meters in Dubai",
-                                      "https://u.ae/information-and-services/visiting-and-exploring-the-uae"));
+                                      "https://u.ae/information-and-services/visiting-and-exploring-the-uae",
+                                      new String[]{"15°C - 25°C, mild, sunny and dry",
+                                              "30°C - 45°C, extremely hot, dry desert climate",
+                                              "28°C - 40°C, hot, dry season",
+                                              "20°C - 30°C, mild, dry and sunny"}));
         countries.add(new CountryInfo("United Kingdom",
                                       R.drawable.flagunitedkingdom,
                                       R.drawable.unitedkingdom,
@@ -6149,7 +6896,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "The United Kingdom has the oldest continuously operating parliament in the world, established in 1215",
-                                      "https://www.visitbritain.com/"));
+                                      "https://www.visitbritain.com/",
+                                      new String[]{"5°C - 10°C, cool, rainy and cloudy",
+                                              "15°C - 25°C, mild, partly sunny with rain",
+                                              "10°C - 20°C, mild, mostly cloudy",
+                                              "0°C - 10°C, cool, frequent rain"}));
         countries.add(new CountryInfo("United States",
                                       R.drawable.flagunitedstates,
                                       R.drawable.unitedstates,
@@ -6182,7 +6933,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "The United States is home to the world’s first national park, Yellowstone, established in 1872",
-                                      "https://www.visittheusa.com/"));
+                                      "https://www.visittheusa.com/",
+                                      new String[]{"-10°C - 10°C, varies widely, snow in the north",
+                                              "15°C - 35°C, warm to hot, mostly sunny",
+                                              "10°C - 30°C, varies by region, partly cloudy",
+                                              "0°C - 20°C, cool, rain in some areas"}));
         countries.add(new CountryInfo("Uruguay",
                                       R.drawable.flaguruguay,
                                       R.drawable.uruguay,
@@ -6215,7 +6970,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Uruguay was the first country to legalize cannabis entirely, with government-regulated sales",
-                                      "https://uruguaynatural.com/"));
+                                      "https://uruguaynatural.com/",
+                                      new String[]{"15°C - 20°C, mild, sunny with rain showers",
+                                              "20°C - 30°C, warm, mostly sunny",
+                                              "15°C - 25°C, mild, partly cloudy with rain",
+                                              "10°C - 20°C, cool, mostly dry"}));
         countries.add(new CountryInfo("Uzbekistan",
                                       R.drawable.flaguzbekistan,
                                       R.drawable.uzbekistan,
@@ -6248,7 +7007,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Uzbekistan is home to several key cities on the ancient Silk Road, including Samarkand, Bukhara, and Khiva, known for their stunning Islamic architecture and history. The Registan in Samarkand, with its intricately tiled madrassahs, is one of the most iconic sites in Central Asia.",
-                                      "https://uzbekistan.travel/"));
+                                      "https://uzbekistan.travel/",
+                                      new String[]{"0°C - 10°C, cold, dry with snow in some areas",
+                                              "20°C - 35°C, hot, dry and sunny",
+                                              "15°C - 25°C, mild, occasional rain",
+                                              "5°C - 15°C, cool, mostly dry"}));
         countries.add(new CountryInfo("Vanuatu",
                                       R.drawable.flagvanuatu,
                                       R.drawable.vanuatu,
@@ -6281,7 +7044,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Vanuatu is known for the island of Pentecost, where locals practice \"land diving,\" a traditional ritual that inspired modern-day bungee jumping",
-                                      "https://www.vanuatu.travel/"));
+                                      "https://www.vanuatu.travel/",
+                                      new String[]{"25°C - 30°C, warm, dry season with sunny skies",
+                                              "26°C - 32°C, hot, rainy season with thunderstorms",
+                                              "25°C - 30°C, warm, high humidity and rain",
+                                              "24°C - 29°C, mild, drier season"}));
         countries.add(new CountryInfo("Vatican City",
                                       R.drawable.flagvaticancity,
                                       R.drawable.vaticancity,
@@ -6314,7 +7081,11 @@ public class CountryData {
                                               3,
                                               3},
                                       "Vatican City, the smallest country in the world, is home to St. Peter's Basilica, the Sistine Chapel, and the Vatican Museums, which house some of the most renowned art and historical artifacts, including Michelangelo's ceiling in the Sistine Chapel",
-                                      "https://www.museivaticani.va/"));
+                                      "https://www.museivaticani.va/",
+                                      new String[]{"5°C - 10°C, cold, rainy and overcast",
+                                              "15°C - 25°C, warm, mostly sunny with occasional showers",
+                                              "20°C - 30°C, hot, dry and sunny",
+                                              "10°C - 15°C, cool, mild with some rain"}));
         countries.add(new CountryInfo("Venezuela",
                                       R.drawable.flagvenezuela,
                                       R.drawable.venezuela,
@@ -6347,7 +7118,11 @@ public class CountryData {
                                               1,
                                               1},
                                       "Venezuela is home to Angel Falls, the world’s highest uninterrupted waterfall, dropping 3,212 feet (979 meters) from the Auyán-Tepui plateau",
-                                      "https://venezuelatuya.com/"));
+                                      "https://venezuelatuya.com/",
+                                      new String[]{"25°C - 30°C, warm, dry season with clear skies",
+                                              "26°C - 35°C, hot, humid with frequent rain",
+                                              "25°C - 30°C, warm, high humidity and thunderstorms",
+                                              "24°C - 29°C, mild, drier season"}));
         countries.add(new CountryInfo("Vietnam",
                                       R.drawable.flagvietnam,
                                       R.drawable.vietnam,
@@ -6380,7 +7155,11 @@ public class CountryData {
                                               1,
                                               2},
                                       "Ha Long Bay in Vietnam, with its emerald waters and towering limestone islands, is a UNESCO World Heritage Site and one of the country's top tourist attractions",
-                                      "https://vietnam.travel/"));
+                                      "https://vietnam.travel/",
+                                      new String[]{"18°C - 25°C, mild, dry season with sunny days",
+                                              "25°C - 35°C, hot, humid with frequent rain",
+                                              "24°C - 32°C, warm, high rainfall and humidity",
+                                              "20°C - 28°C, mild, mostly dry with some rain"}));
         countries.add(new CountryInfo("Yemen",
                                       R.drawable.flagyemen,
                                       R.drawable.yemen,
@@ -6413,7 +7192,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Socotra, an island of Yemen, is famous for its unique biodiversity and the striking dragon blood trees that look like giant mushrooms",
-                                      "https://www.yementourism.com/"));
+                                      "https://www.yementourism.com/",
+                                      new String[]{"15°C - 25°C, mild, dry season",
+                                              "25°C - 35°C, hot, dry and sunny",
+                                              "20°C - 30°C, warm, dry with occasional rain",
+                                              "15°C - 25°C, mild, mostly clear skies"}));
         countries.add(new CountryInfo("Zambia",
                                       R.drawable.flagzambia,
                                       R.drawable.zambia,
@@ -6446,7 +7229,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Zambia shares Victoria Falls, one of the Seven Natural Wonders of the World, with Zimbabwe. It’s locally known as \"Mosi-oa-Tunya,\" meaning \"The Smoke that Thunders\"",
-                                      "https://www.zambiatourism.com/"));
+                                      "https://www.zambiatourism.com/",
+                                      new String[]{"15°C - 25°C, mild, dry season with sunny skies",
+                                              "20°C - 30°C, warm, rainy season with high humidity",
+                                              "18°C - 28°C, warm, high humidity with thunderstorms",
+                                              "15°C - 25°C, mild, mostly dry with clear skies"}));
         countries.add(new CountryInfo("Zimbabwe",
                                       R.drawable.flagzimbabwe,
                                       R.drawable.zimbabwe,
@@ -6479,7 +7266,11 @@ public class CountryData {
                                               2,
                                               2},
                                       "Zimbabwe is home to Great Zimbabwe, a massive stone city dating back to the 11th century, which was once the capital of a powerful kingdom",
-                                      "https://zimbabwetourism.net/"));
+                                      "https://zimbabwetourism.net/",
+                                      new String[]{"15°C - 25°C, mild, dry season with sunny days",
+                                              "20°C - 30°C, warm, rainy season with thunderstorms",
+                                              "15°C - 25°C, mild, high humidity with occasional rain",
+                                              "10°C - 20°C, mild, mostly dry season"}));
 
         return countries;
     }

@@ -26,9 +26,10 @@ public class CountryInfo {
     private int[] bestTimeVisit;
     private String fact;
     private String website;
+    private String[] weather;
 
     // Constructor
-    public CountryInfo(String name, int flagResId, int imageResId, String capital, String population, String language, String religion, String continent, String area, String description, String firstAttractionName, String firstAttractionDetails, int firstAttractionImage, String secondAttractionName, String secondAttractionDetails, int secondAttractionImage, String thirdAttractionName, String thirdAttractionDetails, int thirdAttractionImage, int[] bestTimeVisit, String fact, String website) {
+    public CountryInfo(String name, int flagResId, int imageResId, String capital, String population, String language, String religion, String continent, String area, String description, String firstAttractionName, String firstAttractionDetails, int firstAttractionImage, String secondAttractionName, String secondAttractionDetails, int secondAttractionImage, String thirdAttractionName, String thirdAttractionDetails, int thirdAttractionImage, int[] bestTimeVisit, String fact, String website, String[] weather) {
         this.name = name;
         this.flagResId = flagResId;
         this.imageResId = imageResId;
@@ -51,6 +52,7 @@ public class CountryInfo {
         this.bestTimeVisit = bestTimeVisit;
         this.fact = fact;
         this.website = website;
+        this.weather = weather;
     }
 
     // Getters
@@ -140,5 +142,9 @@ public class CountryInfo {
 
     public String getWebsite() {
         return website;
+    }
+
+    public String[] getWeather() {
+        return weather;
     }
 }

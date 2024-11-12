@@ -16,7 +16,7 @@
             android:id="@+id/textView_country_summary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/info_background"
             android:fontFamily="@font/open_sans"
             android:padding="12dp"
@@ -34,14 +34,21 @@
             android:fontFamily="@font/open_sans"
             android:gravity="center"
             android:textColor="@android:color/black"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/darker_gray" />
 
         <!-- Best Time to Visit Section -->
         <TextView
             android:id="@+id/textView_best_time_to_visit_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:gravity="center"
             android:padding="12dp"
             android:text="Best Time to Visit"
@@ -60,20 +67,27 @@
             android:layout_marginTop="8dp">
 
             <!-- Placeholder months for Best Time to Visit -->
-            <TextView android:id="@+id/jan" android:text="Jan" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
-            <TextView android:id="@+id/feb" android:text="Feb" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
-            <TextView android:id="@+id/mar" android:text="Mar" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
-            <TextView android:id="@+id/apr" android:text="Apr" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
-            <TextView android:id="@+id/may" android:text="May" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
-            <TextView android:id="@+id/jun" android:text="Jun" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
-            <TextView android:id="@+id/jul" android:text="Jul" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
-            <TextView android:id="@+id/aug" android:text="Aug" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
-            <TextView android:id="@+id/sep" android:text="Sep" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
-            <TextView android:id="@+id/oct" android:text="Oct" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
-            <TextView android:id="@+id/nov" android:text="Nov" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
-            <TextView android:id="@+id/dec" android:text="Dec" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1"/>
+            <TextView android:id="@+id/jan" android:text="Jan" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1" android:textSize="14sp"/>
+            <TextView android:id="@+id/feb" android:text="Feb" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1" android:textSize="14sp"/>
+            <TextView android:id="@+id/mar" android:text="Mar" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1" android:textSize="14sp"/>
+            <TextView android:id="@+id/apr" android:text="Apr" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1" android:textSize="14sp"/>
+            <TextView android:id="@+id/may" android:text="May" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1" android:textSize="14sp"/>
+            <TextView android:id="@+id/jun" android:text="Jun" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1" android:textSize="14sp"/>
+            <TextView android:id="@+id/jul" android:text="Jul" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1" android:textSize="14sp"/>
+            <TextView android:id="@+id/aug" android:text="Aug" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1" android:textSize="14sp"/>
+            <TextView android:id="@+id/sep" android:text="Sep" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1" android:textSize="14sp"/>
+            <TextView android:id="@+id/oct" android:text="Oct" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1" android:textSize="14sp"/>
+            <TextView android:id="@+id/nov" android:text="Nov" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1" android:textSize="14sp"/>
+            <TextView android:id="@+id/dec" android:text="Dec" android:background="@drawable/rounded_background" android:gravity="center" android:textColor="@android:color/white" android:layout_columnWeight="1" android:textSize="14sp"/>
 
         </GridLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/darker_gray" />
 
         <!-- Weather Section -->
         <TextView
@@ -94,102 +108,194 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:columnCount="2"
+            android:columnCount="1"
             android:padding="8dp"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="8dp"
+            android:layout_margin="16dp">
 
-            <!-- Spring Icon and Text -->
+            <!-- Spring Section -->
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
 
                 <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_spring"
                     android:contentDescription="Spring Icon"
-                    android:src="@drawable/arrow_up" />
+                    android:layout_marginEnd="12dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="20°C, Mild" />
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/spring_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Spring (March - May)"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/open_sans"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/spring_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/open_sans"
+                        android:textSize="14sp" />
+                </LinearLayout>
             </LinearLayout>
 
-            <!-- Summer Icon and Text -->
+            <!-- Repeat similar blocks for Summer, Autumn, and Winter -->
+
+            <!-- Summer Section -->
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
 
                 <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/arrow_up"
-                    android:contentDescription="Summer Icon" />
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_summer"
+                    android:contentDescription="Summer Icon"
+                    android:layout_marginEnd="12dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="30°C, Warm" />
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/summer_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Summer (June - August)"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/open_sans"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/summer_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/open_sans"
+                        android:textSize="14sp" />
+                </LinearLayout>
             </LinearLayout>
 
-            <!-- Autumn Icon and Text -->
+            <!-- Autumn Section -->
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
 
                 <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/arrow_up"
-                    android:contentDescription="Autumn Icon" />
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_autumn"
+                    android:contentDescription="Autumn Icon"
+                    android:layout_marginEnd="12dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="18°C, Cool" />
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/autumn_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Autumn (September - November)"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/open_sans"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/autumn_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/open_sans"
+                        android:textSize="14sp" />
+                </LinearLayout>
             </LinearLayout>
 
-            <!-- Winter Icon and Text -->
+            <!-- Winter Section -->
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
 
                 <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/arrow_up"
-                    android:contentDescription="Winter Icon" />
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon_winter"
+                    android:contentDescription="Winter Icon"
+                    android:layout_marginEnd="12dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="5°C, Cold" />
-            </LinearLayout>
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
+                    <TextView
+                        android:id="@+id/winter_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Winter (December - February)"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/open_sans"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/winter_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/open_sans"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
         </GridLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/darker_gray" />
 
         <!-- Interesting Fact Section -->
         <TextView
             android:id="@+id/textView_fact_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:padding="12dp"
             android:text="Interesting Fact"
             android:gravity="center"
@@ -206,14 +312,21 @@
             android:fontFamily="@font/open_sans"
             android:gravity="center"
             android:textColor="@android:color/black"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/darker_gray" />
 
         <!-- Official Tourism Website Link -->
         <TextView
             android:id="@+id/textView_website_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:padding="12dp"
             android:text="Official Tourism Website"
             android:gravity="center"
@@ -230,7 +343,7 @@
             android:fontFamily="@font/open_sans"
             android:gravity="center"
             android:textColor="@android:color/holo_blue_dark"
-            android:textSize="14sp"
+            android:textSize="16sp"
             android:autoLink="web" />
     </LinearLayout>
 </ScrollView>

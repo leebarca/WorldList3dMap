@@ -62,6 +62,7 @@ public class CountryDetailActivity extends AppCompatActivity {
         String country_offers = getIntent().getStringExtra("countryDescription");
         String facts = getIntent().getStringExtra("factInfo");
         String websites = getIntent().getStringExtra("websiteInfo");
+        String[] weather = getIntent().getStringArrayExtra("weatherInfo");
 
         infoIcon.setOnClickListener(v -> {
             // Handle click event
@@ -70,6 +71,7 @@ public class CountryDetailActivity extends AppCompatActivity {
             intent.putExtra("bestTimesToVisit", bestTimesToVisit);
             intent.putExtra("fact_info", facts);
             intent.putExtra("website_info", websites);
+            intent.putExtra("weather_info", weather);
             startActivity(intent);
         });
 

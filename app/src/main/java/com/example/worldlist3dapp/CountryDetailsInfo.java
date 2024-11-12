@@ -72,9 +72,9 @@ public class CountryDetailsInfo extends AppCompatActivity {
             } else if (i == 1) {
                 summer.setText(weather[i]);
             } else if (i == 2) {
-                summer.setText(weather[i]);
+                autumn.setText(weather[i]);
             } else if (i == 3) {
-                summer.setText(weather[i]);
+                winter.setText(weather[i]);
             }
         }
 

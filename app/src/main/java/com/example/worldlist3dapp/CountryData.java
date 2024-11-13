@@ -5364,7 +5364,7 @@ public class CountryData {
                                       new String[]{"OK", "Peru is generally safe, though petty crime is common in tourist areas like Lima and Cusco. Visitors should remain cautious with personal belongings. High-altitude regions like Cusco can cause altitude sickness, and healthcare facilities vary in quality. Visitors should be respectful of indigenous customs and traditions."}));
         countries.add(new CountryInfo("Philippines",
                                       R.drawable.flagphilippines,
-                                      R.drawable.philippines,
+                                      R.drawable.phillippines,
                                       "Manila",
                                       "114 Million",
                                       "Filipino, English",

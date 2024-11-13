@@ -20,6 +20,7 @@
             android:background="@drawable/info_background"
             android:fontFamily="@font/open_sans"
             android:padding="12dp"
+            android:gravity="center"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
     </LinearLayout>

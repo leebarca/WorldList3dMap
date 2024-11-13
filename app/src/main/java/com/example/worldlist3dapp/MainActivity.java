@@ -115,6 +115,8 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("factInfo", selectedCountry.getFact());
             intent.putExtra("websiteInfo", selectedCountry.getWebsite());
             intent.putExtra("weatherInfo", selectedCountry.getWeather());
+            intent.putExtra("cuisineArray", selectedCountry.getCuisine());
+            intent.putExtra("safetyArray", selectedCountry.getSafety());
 
             startActivity(intent);
         });

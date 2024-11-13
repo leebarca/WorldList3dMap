@@ -3,9 +3,12 @@ package com.example.worldlist3dapp;
 import android.annotation.SuppressLint;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+
+import java.util.Objects;
 
 public class CountryDetailsInfo extends AppCompatActivity {
 
@@ -34,12 +37,18 @@ public class CountryDetailsInfo extends AppCompatActivity {
         TextView summer = findViewById(R.id.summer_text);
         TextView autumn = findViewById(R.id.autumn_text);
         TextView winter = findViewById(R.id.winter_text);
+        TextView food = findViewById(R.id.food_text);
+        TextView drink = findViewById(R.id.drink_text);
+        ImageView safety_value = findViewById(R.id.safety_icon);
+        TextView safety_text = findViewById(R.id.safety_and_security);
 
         int[] bestTimesToVisit = getIntent().getIntArrayExtra("bestTimesToVisit");
         String fact_info = getIntent().getStringExtra("fact_info");
         String website_info = getIntent().getStringExtra("website_info");
         String countryInfo = getIntent().getStringExtra("countryDescription");
         String[] weather = getIntent().getStringArrayExtra("weather_info");
+        String[] cuisine = getIntent().getStringArrayExtra("cuisine_info");
+        String[] safety = getIntent().getStringArrayExtra("safety_info");
 
         // Define your TextView references
         TextView[] monthTextViews = {jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec};
@@ -75,6 +84,37 @@ public class CountryDetailsInfo extends AppCompatActivity {
                 autumn.setText(weather[i]);
             } else if (i == 3) {
                 winter.setText(weather[i]);
+            }
+        }
+
+        for (int i = 0; i < cuisine.length; i++) {
+
+            // Apply text for each of the TextView elements
+            if (i == 0) {
+                food.setText(cuisine[i]);
+            } else if (i == 1) {
+                drink.setText(cuisine[i]);
+            }
+        }
+
+        for (int i = 0; i < safety.length; i++) {
+
+            // Apply text for each of the TextView elements
+            if (i == 0) {
+                if (Objects.equals(safety[i],
+                                   "Safe")){
+                    safety_value.setBackgroundResource(R.drawable.safe);
+                }
+                else if (Objects.equals(safety[i],
+                                        "OK")){
+                    safety_value.setBackgroundResource(R.drawable.ok);
+                }
+                else if (Objects.equals(safety[i],
+                                        "Dangerous")){
+                    safety_value.setBackgroundResource(R.drawable.dangerous);
+                }
+            } else if (i == 1) {
+                safety_text.setText(safety[i]);
             }
         }
 

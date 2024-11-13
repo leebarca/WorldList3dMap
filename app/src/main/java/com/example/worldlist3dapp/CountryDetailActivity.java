@@ -63,6 +63,8 @@ public class CountryDetailActivity extends AppCompatActivity {
         String facts = getIntent().getStringExtra("factInfo");
         String websites = getIntent().getStringExtra("websiteInfo");
         String[] weather = getIntent().getStringArrayExtra("weatherInfo");
+        String[] cuisine = getIntent().getStringArrayExtra("cuisineArray");
+        String[] safety = getIntent().getStringArrayExtra("safetyArray");
 
         infoIcon.setOnClickListener(v -> {
             // Handle click event
@@ -72,6 +74,8 @@ public class CountryDetailActivity extends AppCompatActivity {
             intent.putExtra("fact_info", facts);
             intent.putExtra("website_info", websites);
             intent.putExtra("weather_info", weather);
+            intent.putExtra("cuisine_info", cuisine);
+            intent.putExtra("safety_info", safety);
             startActivity(intent);
         });
 

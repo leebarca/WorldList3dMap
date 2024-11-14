@@ -95,6 +95,26 @@
                 <!-- Continent buttons added dynamically in Java code -->
             </GridLayout>
 
+            <!-- Best Months To Visit Filter -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Best Months To Visit"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/open_sans"
+                android:layout_marginTop="8dp" />
+
+            <GridLayout
+                android:id="@+id/month_filter_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:layout_marginBottom="8dp">
+                <!-- Best Months To Visit buttons added dynamically in Java code -->
+            </GridLayout>
+
             <!-- Religion Filter -->
             <TextView
                 android:layout_width="match_parent"

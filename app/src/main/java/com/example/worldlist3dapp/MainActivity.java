@@ -1,5 +1,6 @@
 package com.example.worldlist3dapp;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -17,8 +18,10 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private Set<String> selectedLanguages = new HashSet<>();
     private Set<String> selectedContinents = new HashSet<>();
     private Set<String> selectedReligions = new HashSet<>();
+    private Set<String> selectedMonths = new HashSet<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,14 +52,18 @@ public class MainActivity extends AppCompatActivity {
         GridLayout languageGrid = findViewById(R.id.language_filter_grid);
         GridLayout continentGrid = findViewById(R.id.continent_filter_grid);
         GridLayout religionGrid = findViewById(R.id.religion_filter_grid);
+        @SuppressLint({"MissingInflatedId",
+                "LocalSuppress"}) GridLayout bestMonthsToVisitGrid = findViewById(R.id.month_filter_grid);
 
         String[] languages = {"English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Arabic", "Russian", "Chinese", "Malay", "Hindi", "Korean"};
         String[] continents = {"North America", "South America", "Europe", "Africa", "Asia", "Australasia"};
         String[] religions = {"Christianity", "Islam", "Buddhism", "Hinduism", "Judaism"};
+        String[] months = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 
         addFilterButtons(languageGrid, languages, selectedLanguages);
         addFilterButtons(continentGrid, continents, selectedContinents);
         addFilterButtons(religionGrid, religions, selectedReligions);
+        addFilterButtons(bestMonthsToVisitGrid, months, selectedMonths);
 
         countries = CountryData.getCountriesInfo();
         adapter = new CountryAdapter(this, countries);
@@ -125,6 +133,21 @@ public class MainActivity extends AppCompatActivity {
     private void filterCountries() {
         String query = searchBar.getText().toString().toLowerCase();
         List<CountryInfo> filteredCountries = new ArrayList<>();
+
+        Map<String, Integer> monthToIndexMap = new HashMap<>();
+        monthToIndexMap.put("January", 0);
+        monthToIndexMap.put("February", 1);
+        monthToIndexMap.put("March", 2);
+        monthToIndexMap.put("April", 3);
+        monthToIndexMap.put("May", 4);
+        monthToIndexMap.put("June", 5);
+        monthToIndexMap.put("July", 6);
+        monthToIndexMap.put("August", 7);
+        monthToIndexMap.put("September", 8);
+        monthToIndexMap.put("October", 9);
+        monthToIndexMap.put("November", 10);
+        monthToIndexMap.put("December", 11);
+
         for (CountryInfo country : countries) {
             boolean matchesSearch = query.isEmpty() || country.getName().toLowerCase().contains(query);
             boolean matchesLanguage = selectedLanguages.isEmpty() ||
@@ -132,8 +155,22 @@ public class MainActivity extends AppCompatActivity {
                             country.getLanguage().toLowerCase().contains(language.toLowerCase()));
             boolean matchesContinent = selectedContinents.isEmpty() || selectedContinents.contains(country.getContinent());
             boolean matchesReligion = selectedReligions.isEmpty() || selectedReligions.contains(country.getReligion());
+            boolean matchesMonth = true;
+            if (!selectedMonths.isEmpty()) {
+                matchesMonth = false; // Initialize to false, will set to true if we find a match
 
-            if (matchesSearch && matchesLanguage && matchesContinent && matchesReligion) {
+                for (String month : selectedMonths) {
+                    int monthIndex = monthToIndexMap.get(month);
+
+                    // Check if the best time to visit this month is marked as "1" (ideal)
+                    if (country.getBestTimeVisit()[monthIndex] == 1) {
+                        matchesMonth = true;
+                        break;
+                    }
+                }
+            }
+
+            if (matchesSearch && matchesLanguage && matchesContinent && matchesReligion && matchesMonth) {
                 filteredCountries.add(country);
             }
         }

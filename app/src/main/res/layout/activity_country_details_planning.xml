@@ -1,0 +1,47 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/app_background_color"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Country Summary Section -->
+        <TextView
+            android:id="@+id/textView_country_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/info_background"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Planning Your Trip"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- TabLayout for Navigation -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/app_background_color"
+            android:elevation="4dp" />
+
+        <!-- ViewPager2 for Swipeable Tabs -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+</ScrollView>

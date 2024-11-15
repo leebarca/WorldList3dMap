@@ -9,8 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button_background"
-        android:orientation="vertical"
-        android:padding="8dp">
+        android:orientation="vertical">
 
         <!-- Country Summary Section -->
         <TextView
@@ -28,20 +27,166 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <!-- TabLayout for Navigation -->
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tab_layout"
+        <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:background="@color/app_background_color"
-            android:elevation="4dp" />
+            android:columnCount="4"
+            android:layout_marginTop="10dp">
 
-        <!-- ViewPager2 for Swipeable Tabs -->
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/view_pager"
+            <!-- Clickable Info Icon -->
+            <LinearLayout
+                android:id="@+id/flights_element"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:background="@drawable/button_background"
+                android:backgroundTintMode="src_over"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Flights Icon"
+                    android:src="@drawable/info" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flights"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Clickable Info Icon -->
+            <LinearLayout
+                android:id="@+id/hotels_element"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:background="@drawable/button_background"
+                android:backgroundTintMode="src_over"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Hotels Icon"
+                    android:src="@drawable/info" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hotels"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Clickable Attractions Icon -->
+            <LinearLayout
+                android:id="@+id/packages_element"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:background="@drawable/button_background"
+                android:backgroundTintMode="src_over"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Packages Icon"
+                    android:src="@drawable/info" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Packages"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Clickable Offers Icon -->
+            <LinearLayout
+                android:id="@+id/activities_element"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_columnWeight="1"
+                android:padding="8dp"
+                android:background="@drawable/button_background"
+                android:backgroundTintMode="src_over"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Activities Icon"
+                    android:src="@drawable/info" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Activities"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center" />
+            </LinearLayout>
+        </GridLayout>
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_marginBottom="16dp" />
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <!-- Search EditText -->
+                <EditText
+                    android:id="@+id/search_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="40dp"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:padding="12dp"
+                    android:background="@drawable/search_bar_background"
+                    android:drawableStart="@drawable/search_icon"
+                    android:drawablePadding="8dp"
+                    android:inputType="text" />
+
+                <!-- Filter Icon as Separate Element -->
+                <ImageView
+                    android:id="@+id/filter_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:src="@drawable/filter"
+                    android:contentDescription="Filter Button"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </FrameLayout>
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

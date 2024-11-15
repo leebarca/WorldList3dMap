@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -41,6 +42,8 @@ public class CountryDetailsInfo extends AppCompatActivity {
         TextView drink = findViewById(R.id.drink_text);
         ImageView safety_value = findViewById(R.id.safety_icon);
         TextView safety_text = findViewById(R.id.safety_and_security);
+        TextView summary_expand = findViewById(R.id.button_expand_summary);
+        LinearLayout summary_expand_layout = findViewById(R.id.summary_expand_layout);
 
         int[] bestTimesToVisit = getIntent().getIntArrayExtra("bestTimesToVisit");
         String fact_info = getIntent().getStringExtra("fact_info");
@@ -117,6 +120,16 @@ public class CountryDetailsInfo extends AppCompatActivity {
                 safety_text.setText(safety[i]);
             }
         }
+
+        summary_expand_layout.setOnClickListener(v -> {
+            if (countryInfoTextView.getMaxLines() == 4) {
+                countryInfoTextView.setMaxLines(Integer.MAX_VALUE);
+                summary_expand.setText("Read Less");// Expand
+            } else {
+                countryInfoTextView.setMaxLines(4); // Collapse
+                summary_expand.setText("Read More");
+            }
+        });
 
         // Set the country information in the TextView
         countryInfoTextView.setText(countryInfo);

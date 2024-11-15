@@ -49,8 +49,11 @@ public class CountryData {
                                               "25°C - 35°C (Dry and hot)",
                                               "15°C - 25°C (Cool, sunny)",
                                               "0°C - 10°C (Snowy in mountains, cold and cloudy)"},
-                                      new String[]{"Kabuli Pulao", "Green Tea"},
-                                      new String[]{"Dangerous", "Afghanistan faces ongoing security concerns due to political instability, terrorist threats, and armed conflicts. Take care in all areas due to a high risk of violence."}));
+                                      new String[]{"Kabuli Pulao",
+                                              "Green Tea"},
+                                      new String[]{"Dangerous",
+                                              "Afghanistan faces ongoing security concerns due to political instability, terrorist threats, and armed conflicts. Take care in all areas due to a high risk of violence."},
+                                      "Afghan Afghani"));
         countries.add(new CountryInfo("Albania",
                                       R.drawable.flagalbania,
                                       R.drawable.albania,
@@ -88,8 +91,11 @@ public class CountryData {
                                               "24°C - 32°C, hot and dry, mostly sunny",
                                               "14°C - 24°C, mild, partly cloudy with light rain",
                                               "4°C - 12°C, cold and rainy, occasional snowfall in mountainous regions"},
-                                      new String[]{"Byrek", "Raki"},
-                                      new String[]{"Safe", "Albania is generally safe for tourists, though petty theft can occur in crowded areas. Visitors are advised to respect local customs and traditions."}));
+                                      new String[]{"Byrek",
+                                              "Raki"},
+                                      new String[]{"Safe",
+                                              "Albania is generally safe for tourists, though petty theft can occur in crowded areas. Visitors are advised to respect local customs and traditions."},
+                                      "Albanian Lek"));
         countries.add(new CountryInfo("Algeria",
                                       R.drawable.flagalgeria,
                                       R.drawable.algeria,
@@ -127,8 +133,11 @@ public class CountryData {
                                               "25°C - 40°C, very hot and dry, sunny",
                                               "20°C - 30°C, mild, occasional rain in the north",
                                               "10°C - 18°C, cool and rainy in the north, dry in the south"},
-                                      new String[]{"Couscous", "Mint Tea"},
-                                      new String[]{"OK", "Algeria is relatively stable but has sporadic security issues in certain areas, particularly near borders. Be aware of local customs and potential risks in rural regions."}));
+                                      new String[]{"Couscous",
+                                              "Mint Tea"},
+                                      new String[]{"OK",
+                                              "Algeria is relatively stable but has sporadic security issues in certain areas, particularly near borders. Be aware of local customs and potential risks in rural regions."},
+                                      "Algerian Dinar"));
         countries.add(new CountryInfo("Andorra",
                                       R.drawable.flagandorra,
                                       R.drawable.andorra,
@@ -166,8 +175,11 @@ public class CountryData {
                                               "15°C - 25°C, warm and sunny",
                                               "10°C - 18°C, partly cloudy, occasional rain",
                                               "-2°C - 8°C, cold with regular snowfall"},
-                                      new String[]{"Trinxat", "Vi Bullit (boiled wine)"},
-                                      new String[]{"Safe", "Andorra is very safe for visitors, with low crime rates. There are few safety concerns aside from typical safeguards for winter sports if visiting during the ski season."}));
+                                      new String[]{"Trinxat",
+                                              "Vi Bullit (boiled wine)"},
+                                      new String[]{"Safe",
+                                              "Andorra is very safe for visitors, with low crime rates. There are few safety concerns aside from typical safeguards for winter sports if visiting during the ski season."},
+                                      "Euro"));
         countries.add(new CountryInfo("Angola",
                                       R.drawable.flagangola,
                                       R.drawable.angola,
@@ -205,8 +217,11 @@ public class CountryData {
                                               "25°C - 32°C, hot, rainy season with thunderstorms",
                                               "20°C - 28°C, warm with occasional rain",
                                               "15°C - 25°C, cooler, mostly dry and sunny"},
-                                      new String[]{"Fufu", "Palm Wine"},
-                                      new String[]{"OK", "Angola has a mix of safe and unstable regions, with potential health risks and occasional civil unrest. Visitors should be cautious in rural areas and stay updated on local advisories."}));
+                                      new String[]{"Fufu",
+                                              "Palm Wine"},
+                                      new String[]{"OK",
+                                              "Angola has a mix of safe and unstable regions, with potential health risks and occasional civil unrest. Visitors should be cautious in rural areas and stay updated on local advisories."},
+                                      "Angolan Kwanza"));
         countries.add(new CountryInfo("Antigua and Barbuda",
                                       R.drawable.flagantiguaandbarbuda,
                                       R.drawable.antiguaandbarbuda,
@@ -244,8 +259,11 @@ public class CountryData {
                                               "27°C - 31°C, hot and humid, frequent thunderstorms",
                                               "27°C - 30°C, warm, high humidity, potential hurricanes",
                                               "24°C - 28°C, mild, occasional light showers"},
-                                      new String[]{"Fungi and Pepperpot", "Rum Punch"},
-                                      new String[]{"Safe", "Antigua and Barbuda is generally very safe for tourists, with low crime rates. Visitors should exercise normal safeguards and be aware of local customs."}));
+                                      new String[]{"Fungi and Pepperpot",
+                                              "Rum Punch"},
+                                      new String[]{"Safe",
+                                              "Antigua and Barbuda is generally very safe for tourists, with low crime rates. Visitors should exercise normal safeguards and be aware of local customs."},
+                                      "Eastern Caribbean Dollar"));
         countries.add(new CountryInfo("Argentina",
                                       R.drawable.flagargentina,
                                       R.drawable.argentina,
@@ -283,8 +301,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, occasional thunderstorms in the north",
                                               "15°C - 25°C, cooler, partly cloudy with rain",
                                               "5°C - 15°C, cold in the south, mild in the north, occasional snowfall"},
-                                      new String[]{"Asado", "Malbec Wine"},
-                                      new String[]{"Safe", "Argentina is mostly safe in tourist areas, though visitors should be cautious of pickpocketing in crowded places and avoid isolated areas at night."}));
+                                      new String[]{"Asado",
+                                              "Malbec Wine"},
+                                      new String[]{"Safe",
+                                              "Argentina is mostly safe in tourist areas, though visitors should be cautious of pickpocketing in crowded places and avoid isolated areas at night."},
+                                      "Argentine Peso"));
         countries.add(new CountryInfo("Armenia",
                                       R.drawable.flagarmenia,
                                       R.drawable.armenia,
@@ -322,8 +343,11 @@ public class CountryData {
                                               "20°C - 30°C, warm and dry, mostly sunny",
                                               "10°C - 20°C, mild with rain showers",
                                               "-5°C - 5°C, cold, snowfall common"},
-                                      new String[]{"Dolma", "Armenian Brandy"},
-                                      new String[]{"Safe", "Armenia is a safe destination, with friendly locals and low crime. Visitors should still be mindful of cultural etiquette, particularly in religious sites."}));
+                                      new String[]{"Dolma",
+                                              "Armenian Brandy"},
+                                      new String[]{"Safe",
+                                              "Armenia is a safe destination, with friendly locals and low crime. Visitors should still be mindful of cultural etiquette, particularly in religious sites."},
+                                      "Armenian Dram"));
         countries.add(new CountryInfo("Australia",
                                       R.drawable.flagaustralia,
                                       R.drawable.australia,
@@ -361,8 +385,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, dry in south, tropical thunderstorms in north",
                                               "18°C - 28°C, mild and clear, rain in some regions",
                                               "10°C - 20°C, mild in north, cooler in south with rain"},
-                                      new String[]{"Vegemite on Toast", "Flat White Coffee"},
-                                      new String[]{"Safe", "Australia is very safe for travelers, though natural hazards like wildfires and dangerous wildlife exist. Visitors should stay updated on local advisories."}));
+                                      new String[]{"Vegemite on Toast",
+                                              "Flat White Coffee"},
+                                      new String[]{"Safe",
+                                              "Australia is very safe for travelers, though natural hazards like wildfires and dangerous wildlife exist. Visitors should stay updated on local advisories."},
+                                      "Australian Dollar"));
         countries.add(new CountryInfo("Austria",
                                       R.drawable.flagaustria,
                                       R.drawable.austria,
@@ -400,8 +427,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, occasional thunderstorms",
                                               "10°C - 18°C, mild, rain showers",
                                               "-5°C - 5°C, cold, frequent snow"},
-                                      new String[]{"Wiener Schnitzel", "Austrian Wine"},
-                                      new String[]{"Safe", "Austria is a safe country with low crime rates. Visitors should follow local rules and respect the customs, particularly in more rural areas."}));
+                                      new String[]{"Wiener Schnitzel",
+                                              "Austrian Wine"},
+                                      new String[]{"Safe",
+                                              "Austria is a safe country with low crime rates. Visitors should follow local rules and respect the customs, particularly in more rural areas."},
+                                      "Euro"));
         countries.add(new CountryInfo("Azerbaijan",
                                       R.drawable.flagazerbaijan,
                                       R.drawable.azerbaijan,
@@ -439,8 +469,11 @@ public class CountryData {
                                               "20°C - 35°C, hot and dry, mostly sunny",
                                               "15°C - 25°C, mild with occasional showers",
                                               "0°C - 10°C, cold, snowfall in higher altitudes"},
-                                      new String[]{"Plov", "Black Tea"},
-                                      new String[]{"OK", "Azerbaijan is generally safe for travelers, though it is recommended to avoid areas near the Armenia border due to ongoing tensions."}));
+                                      new String[]{"Plov",
+                                              "Black Tea"},
+                                      new String[]{"OK",
+                                              "Azerbaijan is generally safe for travelers, though it is recommended to avoid areas near the Armenia border due to ongoing tensions."},
+                                      "Azerbaijani Manat"));
         countries.add(new CountryInfo("Bahamas",
                                       R.drawable.flagbahamas,
                                       R.drawable.bahamas,
@@ -478,8 +511,11 @@ public class CountryData {
                                               "27°C - 32°C, hot and humid, frequent thunderstorms",
                                               "26°C - 31°C, warm with tropical storms possible",
                                               "19°C - 25°C, mild, mostly dry with brief showers"},
-                                      new String[]{"Conch Salad", "Rum Punch"},
-                                      new String[]{"Safe", "The Bahamas is largely safe for tourists, though it's advised to stay alert in Nassau and avoid secluded areas at night."}));
+                                      new String[]{"Conch Salad",
+                                              "Rum Punch"},
+                                      new String[]{"Safe",
+                                              "The Bahamas is largely safe for tourists, though it's advised to stay alert in Nassau and avoid secluded areas at night."},
+                                      "Bahamian Dollar"));
         countries.add(new CountryInfo("Bahrain",
                                       R.drawable.flagbahrain,
                                       R.drawable.bahrain,
@@ -517,8 +553,11 @@ public class CountryData {
                                               "30°C - 40°C, very hot, dry and sunny",
                                               "25°C - 35°C, hot, mostly sunny",
                                               "15°C - 25°C, mild and dry"},
-                                      new String[]{"Machboos", "Arabic Coffee"},
-                                      new String[]{"Safe", "Bahrain is considered a safe destination, though visitors should respect local customs and avoid discussing sensitive political topics."}));
+                                      new String[]{"Machboos",
+                                              "Arabic Coffee"},
+                                      new String[]{"Safe",
+                                              "Bahrain is considered a safe destination, though visitors should respect local customs and avoid discussing sensitive political topics."},
+                                      "Bahraini Dinar"));
         countries.add(new CountryInfo("Bangladesh",
                                       R.drawable.flagbangladesh,
                                       R.drawable.bangladesh,
@@ -556,8 +595,11 @@ public class CountryData {
                                               "30°C - 40°C, hot and humid, frequent thunderstorms",
                                               "25°C - 35°C, warm, high humidity with rain",
                                               "10°C - 25°C, cooler, fog in some areas"},
-                                      new String[]{"Hilsa Fish Curry", "Tea"},
-                                      new String[]{"OK", "While major cities are generally safe, travelers should be cautious in rural areas and avoid political demonstrations due to occasional unrest."}));
+                                      new String[]{"Hilsa Fish Curry",
+                                              "Tea"},
+                                      new String[]{"OK",
+                                              "While major cities are generally safe, travelers should be cautious in rural areas and avoid political demonstrations due to occasional unrest."},
+                                      "Bangladeshi Taka"));
         countries.add(new CountryInfo("Barbados",
                                       R.drawable.flagbarbados,
                                       R.drawable.barbados,
@@ -595,8 +637,11 @@ public class CountryData {
                                               "28°C - 32°C, hot and humid, frequent tropical showers",
                                               "27°C - 30°C, warm, potential hurricanes",
                                               "24°C - 28°C, mild, occasional showers"},
-                                      new String[]{"Cou Cou & Flying Fish", "Rum"},
-                                      new String[]{"Safe", "Barbados is safe for visitors, though it is advised to remain vigilant in popular tourist areas to avoid petty theft."}));
+                                      new String[]{"Cou Cou & Flying Fish",
+                                              "Rum"},
+                                      new String[]{"Safe",
+                                              "Barbados is safe for visitors, though it is advised to remain vigilant in popular tourist areas to avoid petty theft."},
+                                      "Barbadian Dollar"));
         countries.add(new CountryInfo("Belarus",
                                       R.drawable.flagbelarus,
                                       R.drawable.belarus,
@@ -634,8 +679,11 @@ public class CountryData {
                                               "20°C - 28°C, warm, sunny with occasional showers",
                                               "10°C - 20°C, mild, frequent rain",
                                               "-5°C - 3°C, cold with snow"},
-                                      new String[]{"Draniki", "Kvass"},
-                                      new String[]{"OK", "Belarus is generally safe, but travelers should be aware of potential political protests and avoid large gatherings."}));
+                                      new String[]{"Draniki",
+                                              "Kvass"},
+                                      new String[]{"OK",
+                                              "Belarus is generally safe, but travelers should be aware of potential political protests and avoid large gatherings."},
+                                      "Belarusian Ruble"));
         countries.add(new CountryInfo("Belgium",
                                       R.drawable.flagbelgium,
                                       R.drawable.belgium,
@@ -673,8 +721,11 @@ public class CountryData {
                                               "15°C - 25°C, warm, sunny with rain showers",
                                               "10°C - 18°C, cool with regular rain",
                                               "0°C - 10°C, cold, cloudy with occasional snow"},
-                                      new String[]{"Moules-frites", "Beer"},
-                                      new String[]{"Safe", "Belgium is a safe country, though travelers should remain alert in crowded areas, especially in Brussels, to prevent pickpocketing."}));
+                                      new String[]{"Moules-frites",
+                                              "Beer"},
+                                      new String[]{"Safe",
+                                              "Belgium is a safe country, though travelers should remain alert in crowded areas, especially in Brussels, to prevent pickpocketing."},
+                                      "Euro"));
         countries.add(new CountryInfo("Belize",
                                       R.drawable.flagbelize,
                                       R.drawable.belize,
@@ -712,8 +763,11 @@ public class CountryData {
                                               "25°C - 35°C, hot and humid, thunderstorms common",
                                               "24°C - 32°C, warm, hurricane season",
                                               "20°C - 28°C, mild with brief rain showers"},
-                                      new String[]{"Rice and Beans with Stewed Chicken", "Belikin Beer"},
-                                      new String[]{"OK", "Belize is safe for tourists, especially in tourist zones, but take care in remote areas due to petty crime."}));
+                                      new String[]{"Rice and Beans with Stewed Chicken",
+                                              "Belikin Beer"},
+                                      new String[]{"OK",
+                                              "Belize is safe for tourists, especially in tourist zones, but take care in remote areas due to petty crime."},
+                                      "Belize Dollar"));
         countries.add(new CountryInfo("Benin",
                                       R.drawable.flagbenin,
                                       R.drawable.benin,
@@ -752,8 +806,11 @@ public class CountryData {
                                               "25°C - 32°C, warm with thunderstorms",
                                               "22°C - 30°C, warm and dry"
                                       },
-                                      new String[]{"Amiwo (corn-based dish)", "Sodabi (palm wine)"},
-                                      new String[]{"OK", "Benin is relatively safe, though it is recommended to stay vigilant, especially in northern regions where security incidents may occur."}));
+                                      new String[]{"Amiwo (corn-based dish)",
+                                              "Sodabi (palm wine)"},
+                                      new String[]{"OK",
+                                              "Benin is relatively safe, though it is recommended to stay vigilant, especially in northern regions where security incidents may occur."},
+                                      "West African CFA Franc"));
         countries.add(new CountryInfo("Bhutan",
                                       R.drawable.flagbhutan,
                                       R.drawable.bhutan,
@@ -791,8 +848,11 @@ public class CountryData {
                                               "15°C - 30°C, warm, monsoon season",
                                               "10°C - 20°C, cooler with rain",
                                               "0°C - 10°C, cold, snowfall in mountains"},
-                                      new String[]{"Ema Datshi (chili cheese)", "Butter Tea"},
-                                      new String[]{"Safe", "Bhutan is a safe destination with low crime rates, but visitors should respect local customs and avoid restricted areas."}));
+                                      new String[]{"Ema Datshi (chili cheese)",
+                                              "Butter Tea"},
+                                      new String[]{"Safe",
+                                              "Bhutan is a safe destination with low crime rates, but visitors should respect local customs and avoid restricted areas."},
+                                      "Bhutanese Ngultrum"));
         countries.add(new CountryInfo("Bolivia",
                                       R.drawable.flagbolivia,
                                       R.drawable.bolivia,
@@ -830,8 +890,11 @@ public class CountryData {
                                               "20°C - 30°C, hot, rainy season in lowlands",
                                               "10°C - 20°C, cool and dry",
                                               "5°C - 15°C, cooler, dry with frost in highlands"},
-                                      new String[]{"Salteñas", "Chicha (fermented corn drink)"},
-                                      new String[]{"OK", "Bolivia is safe for travelers, though tourists should take care in La Paz and avoid isolated areas at night."}));
+                                      new String[]{"Salteñas",
+                                              "Chicha (fermented corn drink)"},
+                                      new String[]{"OK",
+                                              "Bolivia is safe for travelers, though tourists should take care in La Paz and avoid isolated areas at night."},
+                                      " Bolivian Boliviano"));
         countries.add(new CountryInfo("Bosnia and Herzegovina",
                                       R.drawable.flagbosniaandherzegovina,
                                       R.drawable.bosniaherzegovina,
@@ -869,8 +932,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, sunny with occasional thunderstorms",
                                               "10°C - 20°C, mild, partly cloudy",
                                               "0°C - 10°C, cold, snowfall common"},
-                                      new String[]{"Ćevapi", "Bosnian Coffee"},
-                                      new String[]{"Safe", "Bosnia and Herzegovina is generally safe, though travelers should avoid unmarked landmine areas in rural regions."}));
+                                      new String[]{"Ćevapi",
+                                              "Bosnian Coffee"},
+                                      new String[]{"Safe",
+                                              "Bosnia and Herzegovina is generally safe, though travelers should avoid unmarked landmine areas in rural regions."},
+                                      "Bosnia and Herzegovina Convertible Mark"));
         countries.add(new CountryInfo("Botswana",
                                       R.drawable.flagbotswana,
                                       R.drawable.botswana,
@@ -908,8 +974,11 @@ public class CountryData {
                                               "20°C - 35°C, hot with occasional thunderstorms",
                                               "18°C - 28°C, warm, partly cloudy",
                                               "10°C - 20°C, cooler, dry and clear"},
-                                      new String[]{"Seswaa (meat stew)", "Bush Tea"},
-                                      new String[]{"Safe", "Botswana is safe for visitors, especially in tourist areas, though it is advised to avoid wandering at night alone in cities."}));
+                                      new String[]{"Seswaa (meat stew)",
+                                              "Bush Tea"},
+                                      new String[]{"Safe",
+                                              "Botswana is safe for visitors, especially in tourist areas, though it is advised to avoid wandering at night alone in cities."},
+                                      "Botswana Pula"));
         countries.add(new CountryInfo("Brazil",
                                       R.drawable.flagbrazil,
                                       R.drawable.brazil,
@@ -947,8 +1016,11 @@ public class CountryData {
                                               "25°C - 35°C, hot and humid, rain in Amazon",
                                               "20°C - 30°C, mild, rain in north",
                                               "15°C - 25°C, mild, drier in south"},
-                                      new String[]{"Feijoada", "Caipirinha"},
-                                      new String[]{"OK", "Brazil has a moderate crime rate in some cities, so tourists should avoid dangerous areas and be cautious, particularly in Rio de Janeiro."}));
+                                      new String[]{"Feijoada",
+                                              "Caipirinha"},
+                                      new String[]{"OK",
+                                              "Brazil has a moderate crime rate in some cities, so tourists should avoid dangerous areas and be cautious, particularly in Rio de Janeiro."},
+                                      " Brazilian Real"));
         countries.add(new CountryInfo("Brunei",
                                       R.drawable.flagbrunei,
                                       R.drawable.brunei,
@@ -986,8 +1058,11 @@ public class CountryData {
                                               "28°C - 34°C, hot, frequent thunderstorms",
                                               "26°C - 32°C, warm, rainy season",
                                               "24°C - 30°C, mild with high humidity"},
-                                      new String[]{"Ambuyat", "Coconut Water"},
-                                      new String[]{"Safe", "Brunei is a safe destination with low crime rates, though visitors should respect local Islamic customs."}));
+                                      new String[]{"Ambuyat",
+                                              "Coconut Water"},
+                                      new String[]{"Safe",
+                                              "Brunei is a safe destination with low crime rates, though visitors should respect local Islamic customs."},
+                                      "Brunei Dollar"));
         countries.add(new CountryInfo("Bulgaria",
                                       R.drawable.flagbulgaria,
                                       R.drawable.bulgaria,
@@ -1026,8 +1101,11 @@ public class CountryData {
                                               "10°C - 20°C, cooler with rain",
                                               "0°C - 10°C, cold with snowfall"
                                       },
-                                      new String[]{"Banitsa", "Rakia"},
-                                      new String[]{"Safe", "Bulgaria is generally safe, but travelers should be cautious of petty theft in crowded tourist areas."}));
+                                      new String[]{"Banitsa",
+                                              "Rakia"},
+                                      new String[]{"Safe",
+                                              "Bulgaria is generally safe, but travelers should be cautious of petty theft in crowded tourist areas."},
+                                      "Bulgarian Lev"));
         countries.add(new CountryInfo("Burkina Faso",
                                       R.drawable.flagburkinafaso,
                                       R.drawable.burkinafaso,
@@ -1065,8 +1143,11 @@ public class CountryData {
                                               "30°C - 40°C, very hot, dry",
                                               "25°C - 35°C, warm, rainy season",
                                               "20°C - 30°C, cooler and dry"},
-                                      new String[]{"Tô (millet dish)", "Dolo (sorghum beer)"},
-                                      new String[]{"Dangerous", "Travel to Burkina Faso is not advised due to high levels of terrorism and armed conflict, especially in northern and eastern regions."}));
+                                      new String[]{"Tô (millet dish)",
+                                              "Dolo (sorghum beer)"},
+                                      new String[]{"Dangerous",
+                                              "Travel to Burkina Faso is not advised due to high levels of terrorism and armed conflict, especially in northern and eastern regions."},
+                                      "West African CFA Franc"));
         countries.add(new CountryInfo("Burundi",
                                       R.drawable.flagburundi,
                                       R.drawable.burundi,
@@ -1104,8 +1185,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, rainy season",
                                               "18°C - 28°C, mild with thunderstorms",
                                               "12°C - 22°C, cooler, dry and clear"},
-                                      new String[]{"Boko Boko (goat stew)", "Banana Beer"},
-                                      new String[]{"Dangerous", "Burundi has ongoing security concerns, with frequent unrest and a high risk of violence in some areas."}));
+                                      new String[]{"Boko Boko (goat stew)",
+                                              "Banana Beer"},
+                                      new String[]{"Dangerous",
+                                              "Burundi has ongoing security concerns, with frequent unrest and a high risk of violence in some areas."},
+                                      "Burundi Franc"));
         countries.add(new CountryInfo("Cabo Verde",
                                       R.drawable.flagcaboverde,
                                       R.drawable.caboverde,
@@ -1143,8 +1227,11 @@ public class CountryData {
                                               "24°C - 32°C, warm and sunny",
                                               "24°C - 30°C, warm with light rain",
                                               "20°C - 26°C, mild, dry with clear skies"},
-                                      new String[]{"Cachupa", "Grogue (sugarcane liquor)"},
-                                      new String[]{"Safe", "Cape Verde is safe, with low crime rates; however, tourists should avoid isolated beaches at night."}));
+                                      new String[]{"Cachupa",
+                                              "Grogue (sugarcane liquor)"},
+                                      new String[]{"Safe",
+                                              "Cape Verde is safe, with low crime rates; however, tourists should avoid isolated beaches at night."},
+                                      "Cape Verdean Escudo"));
         countries.add(new CountryInfo("Cambodia",
                                       R.drawable.flagcambodia,
                                       R.drawable.cambodia,
@@ -1182,8 +1269,11 @@ public class CountryData {
                                               "30°C - 40°C, very hot, high humidity, frequent rain showers",
                                               "25°C - 35°C, warm, heavy rainfall",
                                               "20°C - 30°C, mild, dry with clear skies"},
-                                      new String[]{"Fish Amok", "Cambodian Beer"},
-                                      new String[]{"OK", "Cambodia is safe for tourists, though take care in remote areas and near the border with Thailand."}));
+                                      new String[]{"Fish Amok",
+                                              "Cambodian Beer"},
+                                      new String[]{"OK",
+                                              "Cambodia is safe for tourists, though take care in remote areas and near the border with Thailand."},
+                                      "Cambodian Riel"));
         countries.add(new CountryInfo("Cameroon",
                                       R.drawable.flagcameroon,
                                       R.drawable.cameroon,
@@ -1221,8 +1311,11 @@ public class CountryData {
                                               "25°C - 35°C, hot and humid, thunderstorms common",
                                               "23°C - 32°C, warm, heavy rain",
                                               "20°C - 30°C, mild, drier in north"},
-                                      new String[]{"Ndolé (bitterleaf stew)", "Palm Wine"},
-                                      new String[]{"OK", "Cameroon is generally safe, but travelers should avoid the far north and southwestern regions due to security issues."}));
+                                      new String[]{"Ndolé (bitterleaf stew)",
+                                              "Palm Wine"},
+                                      new String[]{"OK",
+                                              "Cameroon is generally safe, but travelers should avoid the far north and southwestern regions due to security issues."},
+                                      "Central African CFA Franc"));
         countries.add(new CountryInfo("Canada",
                                       R.drawable.flagcanada,
                                       R.drawable.canada,
@@ -1260,8 +1353,11 @@ public class CountryData {
                                               "15°C - 30°C, warm with occasional rain",
                                               "5°C - 20°C, mild, rain and cooler temperatures",
                                               "-20°C - 5°C, very cold, heavy snowfall"},
-                                      new String[]{"Poutine", "Maple Syrup"},
-                                      new String[]{"Safe", "Canada is very safe for tourists, though visitors should take regular safeguards in crowded urban areas."}));
+                                      new String[]{"Poutine",
+                                              "Maple Syrup"},
+                                      new String[]{"Safe",
+                                              "Canada is very safe for tourists, though visitors should take regular safeguards in crowded urban areas."},
+                                      "Canadian Dollar"));
         countries.add(new CountryInfo("Central African Republic",
                                       R.drawable.flagcentralafricanrepublic,
                                       R.drawable.centralafricanrepublic,
@@ -1299,8 +1395,11 @@ public class CountryData {
                                               "25°C - 35°C, very hot, thunderstorms common",
                                               "24°C - 32°C, warm, heavy rainfall",
                                               "20°C - 30°C, mild with occasional rain"},
-                                      new String[]{"Cassava-based Dishes", "Palm Wine"},
-                                      new String[]{"Dangerous", "Travel is not recommended due to severe insecurity and ongoing armed conflicts across the country."}));
+                                      new String[]{"Cassava-based Dishes",
+                                              "Palm Wine"},
+                                      new String[]{"Dangerous",
+                                              "Travel is not recommended due to severe insecurity and ongoing armed conflicts across the country."},
+                                      "Central African CFA Franc"));
         countries.add(new CountryInfo("Chad",
                                       R.drawable.flagchad,
                                       R.drawable.chad,
@@ -1338,8 +1437,11 @@ public class CountryData {
                                               "25°C - 40°C, extremely hot, dry",
                                               "20°C - 35°C, hot, rainy season",
                                               "15°C - 30°C, mild and dry"},
-                                      new String[]{"Jarret de Boeuf (beef stew)", "Millet Beer"},
-                                      new String[]{"Dangerous", "Chad has a high risk of violence and terrorism, especially in the Lake Chad region."}));
+                                      new String[]{"Jarret de Boeuf (beef stew)",
+                                              "Millet Beer"},
+                                      new String[]{"Dangerous",
+                                              "Chad has a high risk of violence and terrorism, especially in the Lake Chad region."},
+                                      "Central African CFA Franc"));
         countries.add(new CountryInfo("Chile",
                                       R.drawable.flagchile,
                                       R.drawable.chile,
@@ -1377,8 +1479,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, dry in north",
                                               "10°C - 20°C, cool with rain in south",
                                               "5°C - 15°C, very cold in south, dry in north"},
-                                      new String[]{"Empanadas", "Pisco Sour"},
-                                      new String[]{"Safe", "Chile is generally safe, though take care during protests in urban areas, particularly in Santiago."}));
+                                      new String[]{"Empanadas",
+                                              "Pisco Sour"},
+                                      new String[]{"Safe",
+                                              "Chile is generally safe, though take care during protests in urban areas, particularly in Santiago."},
+                                      "Chilean Peso"));
         countries.add(new CountryInfo("China",
                                       R.drawable.flagchina,
                                       R.drawable.china,
@@ -1417,8 +1522,11 @@ public class CountryData {
                                               "10°C - 25°C, mild, occasional showers",
                                               "-10°C - 15°C, very cold in north, milder in south"
                                       },
-                                      new String[]{"Peking Duck", "Green Tea"},
-                                      new String[]{"Safe", "China is safe for travelers, though visitors should avoid discussing political topics and comply with local regulations."}));
+                                      new String[]{"Peking Duck",
+                                              "Green Tea"},
+                                      new String[]{"Safe",
+                                              "China is safe for travelers, though visitors should avoid discussing political topics and comply with local regulations."},
+                                      "Renminbi"));
         countries.add(new CountryInfo("Colombia",
                                       R.drawable.flagcolombia,
                                       R.drawable.colombia,
@@ -1456,8 +1564,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, thunderstorms frequent",
                                               "22°C - 30°C, warm, rain in coastal areas",
                                               "15°C - 25°C, mild with light rain"},
-                                      new String[]{"Arepas", "Aguardiente"},
-                                      new String[]{"OK", "Colombia is safe in major tourist areas, though take care in rural regions due to potential security risks."}));
+                                      new String[]{"Arepas",
+                                              "Aguardiente"},
+                                      new String[]{"OK",
+                                              "Colombia is safe in major tourist areas, though take care in rural regions due to potential security risks."},
+                                      "Colombian Peso"));
         countries.add(new CountryInfo("Comoros",
                                       R.drawable.flagcomoros,
                                       R.drawable.comoros,
@@ -1495,8 +1606,11 @@ public class CountryData {
                                               "26°C - 32°C, hot, humid with rain",
                                               "25°C - 30°C, warm with rain showers",
                                               "24°C - 28°C, mild, drier"},
-                                      new String[]{"Langouste (lobster)", "Coconut Water"},
-                                      new String[]{"OK", "Comoros is safe, though travelers should avoid swimming in areas with strong currents and take safeguards against petty crime."}));
+                                      new String[]{"Langouste (lobster)",
+                                              "Coconut Water"},
+                                      new String[]{"OK",
+                                              "Comoros is safe, though travelers should avoid swimming in areas with strong currents and take safeguards against petty crime."},
+                                      "Comorian Franc"));
         countries.add(new CountryInfo("Congo",
                                       R.drawable.flagcongo,
                                       R.drawable.congo,
@@ -1534,8 +1648,11 @@ public class CountryData {
                                               "25°C - 33°C, hot, high humidity, thunderstorms",
                                               "23°C - 30°C, warm, heavy rain",
                                               "22°C - 28°C, mild, drier season"},
-                                      new String[]{"Poulet Moambé", "Palm Wine"},
-                                      new String[]{"OK", "The Republic of Congo is relatively safe, but travelers should remain vigilant, especially in urban areas, due to some political tensions."}));
+                                      new String[]{"Poulet Moambé",
+                                              "Palm Wine"},
+                                      new String[]{"OK",
+                                              "The Republic of Congo is relatively safe, but travelers should remain vigilant, especially in urban areas, due to some political tensions."},
+                                      "Central African CFA Franc"));
         countries.add(new CountryInfo("Costa Rica",
                                       R.drawable.flagcostarica,
                                       R.drawable.costarica,
@@ -1573,8 +1690,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, heavy rainfall",
                                               "20°C - 30°C, mild with tropical storms",
                                               "15°C - 25°C, mild and dry"},
-                                      new String[]{"Gallo Pinto", "Coffee"},
-                                      new String[]{"Safe", "Costa Rica is safe for travelers, though visitors should be cautious of petty theft in tourist areas."}));
+                                      new String[]{"Gallo Pinto",
+                                              "Coffee"},
+                                      new String[]{"Safe",
+                                              "Costa Rica is safe for travelers, though visitors should be cautious of petty theft in tourist areas."},
+                                      "Costa Rican Colón"));
         countries.add(new CountryInfo("Croatia",
                                       R.drawable.flagcroatia,
                                       R.drawable.croatia,
@@ -1612,8 +1732,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, mostly sunny",
                                               "10°C - 20°C, cooler with showers",
                                               "0°C - 10°C, cold with snowfall inland"},
-                                      new String[]{"Pašticada", "Rakija"},
-                                      new String[]{"Safe", "Croatia is very safe, though take care in crowded tourist destinations to avoid pickpocketing."}));
+                                      new String[]{"Pašticada",
+                                              "Rakija"},
+                                      new String[]{"Safe",
+                                              "Croatia is very safe, though take care in crowded tourist destinations to avoid pickpocketing."},
+                                      "Euro"));
         countries.add(new CountryInfo("Cuba",
                                       R.drawable.flagcuba,
                                       R.drawable.cuba,
@@ -1651,8 +1774,11 @@ public class CountryData {
                                               "26°C - 33°C, hot, thunderstorms common",
                                               "25°C - 30°C, warm, rainy season",
                                               "20°C - 25°C, mild with showers"},
-                                      new String[]{"Ropa Vieja", "Mojito"},
-                                      new String[]{"Safe", "Cuba is generally safe, though travelers should avoid political discussions and be aware of occasional shortages of supplies."}));
+                                      new String[]{"Ropa Vieja",
+                                              "Mojito"},
+                                      new String[]{"Safe",
+                                              "Cuba is generally safe, though travelers should avoid political discussions and be aware of occasional shortages of supplies."},
+                                      "Cuban Peso"));
         countries.add(new CountryInfo("Cyprus",
                                       R.drawable.flagcyprus,
                                       R.drawable.cyprus,
@@ -1691,8 +1817,11 @@ public class CountryData {
                                               "20°C - 30°C, warm with rain showers",
                                               "10°C - 20°C, mild, clear skies"
                                       },
-                                      new String[]{"Halloumi Cheese", "Commandaria Wine"},
-                                      new String[]{"Safe", "Cyprus is a safe destination, but travelers should avoid military zones and border areas in Nicosia."}));
+                                      new String[]{"Halloumi Cheese",
+                                              "Commandaria Wine"},
+                                      new String[]{"Safe",
+                                              "Cyprus is a safe destination, but travelers should avoid military zones and border areas in Nicosia."},
+                                      "Euro"));
         countries.add(new CountryInfo("Czech Republic",
                                       R.drawable.flagczechrepublic,
                                       R.drawable.czechrepublic,
@@ -1730,8 +1859,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, sunny with occasional rain",
                                               "10°C - 20°C, mild with rain",
                                               "-5°C - 5°C, cold with snow"},
-                                      new String[]{"Svíčková", "Pilsner Beer"},
-                                      new String[]{"Safe", "Czech Republic is safe for tourists, though visitors should watch out for pickpockets in popular spots like Prague."}));
+                                      new String[]{"Svíčková",
+                                              "Pilsner Beer"},
+                                      new String[]{"Safe",
+                                              "Czech Republic is safe for tourists, though visitors should watch out for pickpockets in popular spots like Prague."},
+                                      "Czech Koruna"));
         countries.add(new CountryInfo("DRC Congo",
                                       R.drawable.flagdemocraticrepubliccongo,
                                       R.drawable.democraticrepubliccongo,
@@ -1769,8 +1901,11 @@ public class CountryData {
                                               "26°C - 34°C, hot, high humidity, thunderstorms",
                                               "24°C - 31°C, warm, heavy rain",
                                               "22°C - 28°C, mild, drier season"},
-                                      new String[]{"Saka Saka (cassava leaves)", "Palm Wine"},
-                                      new String[]{"Dangerous", "The DRC has high levels of political instability and violence, especially in eastern regions."}));
+                                      new String[]{"Saka Saka (cassava leaves)",
+                                              "Palm Wine"},
+                                      new String[]{"Dangerous",
+                                              "The DRC has high levels of political instability and violence, especially in eastern regions."},
+                                      "Congolese Franc"));
         countries.add(new CountryInfo("Denmark",
                                       R.drawable.flagdenmark,
                                       R.drawable.denmark,
@@ -1808,8 +1943,11 @@ public class CountryData {
                                               "15°C - 25°C, warm, partly cloudy",
                                               "10°C - 18°C, cool, rain showers",
                                               "-5°C - 5°C, cold with snow"},
-                                      new String[]{"Smørrebrød", "Carlsberg Beer"},
-                                      new String[]{"Safe", "Denmark is one of the safest countries in the world, with low crime rates and a welcoming atmosphere for tourists."}));
+                                      new String[]{"Smørrebrød",
+                                              "Carlsberg Beer"},
+                                      new String[]{"Safe",
+                                              "Denmark is one of the safest countries in the world, with low crime rates and a welcoming atmosphere for tourists."},
+                                      "Euro"));
         countries.add(new CountryInfo("Djibouti",
                                       R.drawable.flagdjibouti,
                                       R.drawable.djibouti,
@@ -1848,8 +1986,11 @@ public class CountryData {
                                               "28°C - 38°C, hot with light rain",
                                               "22°C - 30°C, warm and dry"
                                       },
-                                      new String[]{"Skudahkharis (spiced lamb stew)", "Chai Tea"},
-                                      new String[]{"OK", "Djibouti is relatively safe, but travelers should be cautious in remote areas and avoid travel to border regions with Eritrea and Somalia."}));
+                                      new String[]{"Skudahkharis (spiced lamb stew)",
+                                              "Chai Tea"},
+                                      new String[]{"OK",
+                                              "Djibouti is relatively safe, but travelers should be cautious in remote areas and avoid travel to border regions with Eritrea and Somalia."},
+                                      "Djiboutian Franc"));
         countries.add(new CountryInfo("Dominica",
                                       R.drawable.flagdominica,
                                       R.drawable.dominica,
@@ -1887,8 +2028,11 @@ public class CountryData {
                                               "25°C - 32°C, hot and humid, rain",
                                               "24°C - 30°C, warm, hurricane season",
                                               "22°C - 28°C, mild, occasional showers"},
-                                      new String[]{"Mountain Chicken (frog legs)", "Rum Punch"},
-                                      new String[]{"Safe", "Dominica is safe, with low crime rates; however, visitors should avoid isolated areas at night and be cautious during hurricane season."}));
+                                      new String[]{"Mountain Chicken (frog legs)",
+                                              "Rum Punch"},
+                                      new String[]{"Safe",
+                                              "Dominica is safe, with low crime rates; however, visitors should avoid isolated areas at night and be cautious during hurricane season."},
+                                      "Eastern Caribbean Dollar"));
         countries.add(new CountryInfo("Dominican Republic",
                                       R.drawable.flagdominicanrepublic,
                                       R.drawable.dominicanrepublic,
@@ -1926,8 +2070,11 @@ public class CountryData {
                                               "25°C - 33°C, hot, tropical showers",
                                               "24°C - 32°C, warm, hurricane season",
                                               "20°C - 26°C, mild, partly cloudy"},
-                                      new String[]{"Mangú (mashed plantains)", "Mamajuana"},
-                                      new String[]{"OK", "The Dominican Republic is generally safe, though petty crime is common in tourist areas. Travelers should also take care during hurricane season."}));
+                                      new String[]{"Mangú (mashed plantains)",
+                                              "Mamajuana"},
+                                      new String[]{"OK",
+                                              "The Dominican Republic is generally safe, though petty crime is common in tourist areas. Travelers should also take care during hurricane season."},
+                                      "Dominican Peso"));
         countries.add(new CountryInfo("East Timor",
                                       R.drawable.flageasttimor,
                                       R.drawable.easttimor,
@@ -1965,8 +2112,11 @@ public class CountryData {
                                               "25°C - 34°C, hot, dry, sunny",
                                               "24°C - 32°C, warm, humid with thunderstorms",
                                               "22°C - 29°C, mild, dry season"},
-                                      new String[]{"Ikan Pepes (grilled fish)", "Coffee"},
-                                      new String[]{"OK", "East Timor is generally safe for tourists, though visitors should be cautious in rural areas and avoid isolated regions at night. The political situation is stable, but occasional demonstrations may occur in Dili. The country’s infrastructure is still developing, so travelers should prepare for limited facilities in remote areas."}));
+                                      new String[]{"Ikan Pepes (grilled fish)",
+                                              "Coffee"},
+                                      new String[]{"OK",
+                                              "East Timor is generally safe for tourists, though visitors should be cautious in rural areas and avoid isolated regions at night. The political situation is stable, but occasional demonstrations may occur in Dili. The country’s infrastructure is still developing, so travelers should prepare for limited facilities in remote areas."},
+                                      "United States Dollar"));
         countries.add(new CountryInfo("Ecuador",
                                       R.drawable.flagecuador,
                                       R.drawable.ecuador,
@@ -2006,8 +2156,11 @@ public class CountryData {
                                               "18°C - 24°C, mild, mostly dry season"
 
                                       },
-                                      new String[]{"Ceviche", "Chicha de Jora"},
-                                      new String[]{"OK", "Ecuador is relatively safe, particularly in tourist areas, though visitors should remain vigilant against petty theft and take care in the Amazon region."}));
+                                      new String[]{"Ceviche",
+                                              "Chicha de Jora"},
+                                      new String[]{"OK",
+                                              "Ecuador is relatively safe, particularly in tourist areas, though visitors should remain vigilant against petty theft and take care in the Amazon region."},
+                                      "United States Dollar"));
         countries.add(new CountryInfo("Egypt",
                                       R.drawable.flagegypt,
                                       R.drawable.egypt,
@@ -2045,8 +2198,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, dry, very sunny",
                                               "22°C - 30°C, warm, dry, occasional breeze",
                                               "15°C - 23°C, cool, dry, mild temperatures"},
-                                      new String[]{"Koshari", "Hibiscus Tea"},
-                                      new String[]{"OK", "Egypt is generally safe for tourists in popular locations, though take care in border regions and during public gatherings."}));
+                                      new String[]{"Koshari",
+                                              "Hibiscus Tea"},
+                                      new String[]{"OK",
+                                              "Egypt is generally safe for tourists in popular locations, though take care in border regions and during public gatherings."},
+                                      "Egyptian Pound"));
         countries.add(new CountryInfo("El Salvador",
                                       R.drawable.flagelsalvador,
                                       R.drawable.elsalvador,
@@ -2084,8 +2240,11 @@ public class CountryData {
                                               "24°C - 34°C, hot, rainy season",
                                               "22°C - 30°C, warm, frequent rain",
                                               "20°C - 28°C, mild, drier season"},
-                                      new String[]{"Pupusas", "Tamarind Juice"},
-                                      new String[]{"OK", "El Salvador has a moderate crime rate, so tourists should take care, especially in non-tourist areas and avoid displaying valuables."}));
+                                      new String[]{"Pupusas",
+                                              "Tamarind Juice"},
+                                      new String[]{"OK",
+                                              "El Salvador has a moderate crime rate, so tourists should take care, especially in non-tourist areas and avoid displaying valuables."},
+                                      "United States Dollar"));
         countries.add(new CountryInfo("Equatorial Guinea",
                                       R.drawable.flagequatorialguinea,
                                       R.drawable.equatorialguinea,
@@ -2123,8 +2282,11 @@ public class CountryData {
                                               "26°C - 32°C, hot, very humid, thunderstorms",
                                               "25°C - 30°C, warm, rainy season",
                                               "24°C - 29°C, mild, drier season"},
-                                      new String[]{"Succotash (vegetable stew)", "Malamba (sugarcane liquor)"},
-                                      new String[]{"OK", "Equatorial Guinea is mostly safe, but it is advised to avoid isolated areas and respect local customs and regulations."}));
+                                      new String[]{"Succotash (vegetable stew)",
+                                              "Malamba (sugarcane liquor)"},
+                                      new String[]{"OK",
+                                              "Equatorial Guinea is mostly safe, but it is advised to avoid isolated areas and respect local customs and regulations."},
+                                      "Central African CFA Franc"));
         countries.add(new CountryInfo("Eritrea",
                                       R.drawable.flageritrea,
                                       R.drawable.eritrea,
@@ -2162,8 +2324,11 @@ public class CountryData {
                                               "26°C - 40°C, hot, dry with dusty winds",
                                               "25°C - 35°C, warm, dry, occasional coastal humidity",
                                               "20°C - 28°C, mild, dry season"},
-                                      new String[]{"Zigni (spicy stew)", "Swa (home-brewed beer)"},
-                                      new String[]{"OK", "Eritrea is generally safe, though certain border areas are restricted, and visitors should follow local guidelines carefully."}));
+                                      new String[]{"Zigni (spicy stew)",
+                                              "Swa (home-brewed beer)"},
+                                      new String[]{"OK",
+                                              "Eritrea is generally safe, though certain border areas are restricted, and visitors should follow local guidelines carefully."},
+                                      "Eritrean Nakfa"));
         countries.add(new CountryInfo("Estonia",
                                       R.drawable.flagestonia,
                                       R.drawable.estonia,
@@ -2201,8 +2366,11 @@ public class CountryData {
                                               "15°C - 25°C, mild, sunny with occasional rain",
                                               "5°C - 15°C, cool, frequent rain",
                                               "-5°C - 5°C, cold, snowy, icy conditions"},
-                                      new String[]{"Kilu (sprat sandwich)", "Kali (fermented bread drink)"},
-                                      new String[]{"Safe", "Estonia is very safe for tourists, with low crime rates and welcoming locals."}));
+                                      new String[]{"Kilu (sprat sandwich)",
+                                              "Kali (fermented bread drink)"},
+                                      new String[]{"Safe",
+                                              "Estonia is very safe for tourists, with low crime rates and welcoming locals."},
+                                      "Euro"));
         countries.add(new CountryInfo("Eswatini",
                                       R.drawable.flageswatini,
                                       R.drawable.eswatini,
@@ -2240,8 +2408,11 @@ public class CountryData {
                                               "20°C - 30°C, hot, thunderstorms",
                                               "18°C - 28°C, warm, rainy season",
                                               "10°C - 20°C, cool, dry season"},
-                                      new String[]{"Sishwala (cornmeal porridge)", "Mahewu (fermented drink)"},
-                                      new String[]{"Safe", "Eswatini is safe for travelers, though tourists should avoid walking alone in rural areas after dark."}));
+                                      new String[]{"Sishwala (cornmeal porridge)",
+                                              "Mahewu (fermented drink)"},
+                                      new String[]{"Safe",
+                                              "Eswatini is safe for travelers, though tourists should avoid walking alone in rural areas after dark."},
+                                      "Swazi Lilangeni"));
         countries.add(new CountryInfo("Ethiopia",
                                       R.drawable.flagethiopia,
                                       R.drawable.ethiopia,
@@ -2279,8 +2450,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, sunny, dry",
                                               "18°C - 26°C, mild with heavy rain",
                                               "12°C - 22°C, cool, dry season"},
-                                      new String[]{"Injera with Doro Wat", "Talla (traditional beer)"},
-                                      new String[]{"OK", "Ethiopia is generally safe, but travelers should avoid the border regions and be aware of potential political demonstrations."}));
+                                      new String[]{"Injera with Doro Wat",
+                                              "Talla (traditional beer)"},
+                                      new String[]{"OK",
+                                              "Ethiopia is generally safe, but travelers should avoid the border regions and be aware of potential political demonstrations."},
+                                      "Ethiopian Birr"));
         countries.add(new CountryInfo("Fiji",
                                       R.drawable.flagfiji,
                                       R.drawable.fiji,
@@ -2318,8 +2492,11 @@ public class CountryData {
                                               "25°C - 32°C, hot, humid with thunderstorms",
                                               "24°C - 30°C, warm, rainy season",
                                               "22°C - 28°C, mild, drier season"},
-                                      new String[]{"Kokoda (Fijian ceviche)", "Kava"},
-                                      new String[]{"Safe", "Fiji is safe for tourists, with a low crime rate, though visitors should avoid swimming in isolated areas alone."}));
+                                      new String[]{"Kokoda (Fijian ceviche)",
+                                              "Kava"},
+                                      new String[]{"Safe",
+                                              "Fiji is safe for tourists, with a low crime rate, though visitors should avoid swimming in isolated areas alone."},
+                                      "Fijan Dollar"));
         countries.add(new CountryInfo("Finland",
                                       R.drawable.flagfinland,
                                       R.drawable.finland,
@@ -2357,8 +2534,11 @@ public class CountryData {
                                               "15°C - 25°C, mild, mostly sunny",
                                               "5°C - 15°C, cool, frequent rain",
                                               "-10°C - 0°C, cold, snowy, icy"},
-                                      new String[]{"Karjalanpiirakka (Karelian pie)", "Sahti (traditional beer)"},
-                                      new String[]{"Safe", "Finland is very safe, with low crime rates and a high level of public security."}));
+                                      new String[]{"Karjalanpiirakka (Karelian pie)",
+                                              "Sahti (traditional beer)"},
+                                      new String[]{"Safe",
+                                              "Finland is very safe, with low crime rates and a high level of public security."},
+                                      "Euro"));
         countries.add(new CountryInfo("France",
                                       R.drawable.flagfrance,
                                       R.drawable.france,
@@ -2396,8 +2576,11 @@ public class CountryData {
                                               "15°C - 30°C, warm, sunny, dry",
                                               "10°C - 20°C, mild, rainy in northern regions",
                                               "0°C - 10°C, cold, rainy, occasional snow in mountains"},
-                                      new String[]{"Coq au Vin", "Wine"},
-                                      new String[]{"Safe", "France is generally safe, though take care in tourist areas to avoid pickpockets. Travelers should also be mindful during protests."}));
+                                      new String[]{"Coq au Vin",
+                                              "Wine"},
+                                      new String[]{"Safe",
+                                              "France is generally safe, though take care in tourist areas to avoid pickpockets. Travelers should also be mindful during protests."},
+                                      "Euro"));
         countries.add(new CountryInfo("Gabon",
                                       R.drawable.flaggabon,
                                       R.drawable.gabon,
@@ -2435,8 +2618,11 @@ public class CountryData {
                                               "24°C - 32°C, hot, humid with thunderstorms",
                                               "23°C - 30°C, warm, rainy season",
                                               "22°C - 28°C, mild, drier season"},
-                                      new String[]{"Poulet Nyembwe (palm butter chicken)", "Palm Wine"},
-                                      new String[]{"OK", "Gabon is safe in major cities, though take care in rural and forested areas due to limited infrastructure."}));
+                                      new String[]{"Poulet Nyembwe (palm butter chicken)",
+                                              "Palm Wine"},
+                                      new String[]{"OK",
+                                              "Gabon is safe in major cities, though take care in rural and forested areas due to limited infrastructure."},
+                                      "Central African CFA Franc"));
         countries.add(new CountryInfo("Georgia",
                                       R.drawable.flaggeorgia,
                                       R.drawable.georgia,
@@ -2474,8 +2660,11 @@ public class CountryData {
                                               "15°C - 30°C, warm, sunny",
                                               "10°C - 20°C, mild, partly cloudy",
                                               "0°C - 10°C, cold, snowy in mountains"},
-                                      new String[]{"Khachapuri", "Wine"},
-                                      new String[]{"Safe", "Georgia is safe for tourists, though visitors should avoid areas near the borders of South Ossetia and Abkhazia."}));
+                                      new String[]{"Khachapuri",
+                                              "Wine"},
+                                      new String[]{"Safe",
+                                              "Georgia is safe for tourists, though visitors should avoid areas near the borders of South Ossetia and Abkhazia."},
+                                      "Georgian Lari"));
         countries.add(new CountryInfo("Germany",
                                       R.drawable.flaggermany,
                                       R.drawable.germany,
@@ -2513,8 +2702,11 @@ public class CountryData {
                                               "15°C - 25°C, warm, sunny",
                                               "10°C - 20°C, mild, rainy",
                                               "-5°C - 5°C, cold, snowy in higher altitudes"},
-                                      new String[]{"Sauerbraten", "Beer"},
-                                      new String[]{"Safe", "Germany is very safe, though travelers should be cautious in crowded areas to avoid petty crime such as pickpocketing."}));
+                                      new String[]{"Sauerbraten",
+                                              "Beer"},
+                                      new String[]{"Safe",
+                                              "Germany is very safe, though travelers should be cautious in crowded areas to avoid petty crime such as pickpocketing."},
+                                      "Euro"));
         countries.add(new CountryInfo("Ghana",
                                       R.drawable.flagghana,
                                       R.drawable.ghana,
@@ -2552,8 +2744,11 @@ public class CountryData {
                                               "25°C - 33°C, hot, humid with thunderstorms",
                                               "24°C - 31°C, warm, frequent rain",
                                               "23°C - 29°C, mild, dry season"},
-                                      new String[]{"Jollof Rice", "Sobolo (hibiscus drink)"},
-                                      new String[]{"Safe", "Ghana is generally safe for tourists, though travelers should avoid isolated areas and take care at night."}));
+                                      new String[]{"Jollof Rice",
+                                              "Sobolo (hibiscus drink)"},
+                                      new String[]{"Safe",
+                                              "Ghana is generally safe for tourists, though travelers should avoid isolated areas and take care at night."},
+                                      "Ghanian Cedi"));
         countries.add(new CountryInfo("Greece",
                                       R.drawable.flaggreece,
                                       R.drawable.greece,
@@ -2591,8 +2786,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, dry, sunny",
                                               "18°C - 28°C, mild, partly cloudy",
                                               "5°C - 15°C, cool, rainy in north"},
-                                      new String[]{"Moussaka", "Ouzo"},
-                                      new String[]{"Safe", "Greece is safe for tourists, though travelers should take safeguards against pickpocketing in busy areas and avoid political protests."}));
+                                      new String[]{"Moussaka",
+                                              "Ouzo"},
+                                      new String[]{"Safe",
+                                              "Greece is safe for tourists, though travelers should take safeguards against pickpocketing in busy areas and avoid political protests."},
+                                      "Euro"));
         countries.add(new CountryInfo("Grenada",
                                       R.drawable.flaggrenada,
                                       R.drawable.grenada,
@@ -2630,8 +2828,11 @@ public class CountryData {
                                               "26°C - 32°C, hot, humid, brief rain showers",
                                               "25°C - 31°C, warm, rainy season",
                                               "24°C - 30°C, mild, drier season"},
-                                      new String[]{"Oil Down", "Rum Punch"},
-                                      new String[]{"Safe", "Grenada is a safe destination, though travelers should avoid deserted areas at night."}));
+                                      new String[]{"Oil Down",
+                                              "Rum Punch"},
+                                      new String[]{"Safe",
+                                              "Grenada is a safe destination, though travelers should avoid deserted areas at night."},
+                                      "Eastern Carribean Dollar"));
         countries.add(new CountryInfo("Guatemala",
                                       R.drawable.flagguatemala,
                                       R.drawable.guatemala,
@@ -2669,8 +2870,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, rainy with thunderstorms",
                                               "18°C - 28°C, mild, frequent rain",
                                               "15°C - 25°C, mild, drier season"},
-                                      new String[]{"Pepian (chicken stew)", "Horchata"},
-                                      new String[]{"OK", "Guatemala has moderate safety risks, especially in certain rural areas; visitors should avoid isolated areas and stay vigilant in crowded places."}));
+                                      new String[]{"Pepian (chicken stew)",
+                                              "Horchata"},
+                                      new String[]{"OK",
+                                              "Guatemala has moderate safety risks, especially in certain rural areas; visitors should avoid isolated areas and stay vigilant in crowded places."},
+                                      "Guatemalan Qeutzal"));
         countries.add(new CountryInfo("Guinea",
                                       R.drawable.flagguinea,
                                       R.drawable.guinea,
@@ -2708,8 +2912,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, humid, thunderstorms",
                                               "24°C - 30°C, warm, rainy season",
                                               "23°C - 28°C, mild, drier season"},
-                                      new String[]{"Fufu with Groundnut Soup", "Ginger Beer"},
-                                      new String[]{"OK", "Guinea is relatively safe in urban areas, though travelers should avoid the southeastern region and take care in rural areas."}));
+                                      new String[]{"Fufu with Groundnut Soup",
+                                              "Ginger Beer"},
+                                      new String[]{"OK",
+                                              "Guinea is relatively safe in urban areas, though travelers should avoid the southeastern region and take care in rural areas."},
+                                      "Guinean Franc"));
         countries.add(new CountryInfo("Guinea Bissau",
                                       R.drawable.flagguineabissau,
                                       R.drawable.guineabissau,
@@ -2747,8 +2954,11 @@ public class CountryData {
                                               "25°C - 33°C, hot, humid, thunderstorms",
                                               "24°C - 31°C, warm, rainy season",
                                               "22°C - 28°C, mild, drier season"},
-                                      new String[]{"Jollof Rice", "Palm Wine"},
-                                      new String[]{"Dangerous", "Due to political instability and high crime rates, it is advised to avoid non-essential travel to Guinea-Bissau."}));
+                                      new String[]{"Jollof Rice",
+                                              "Palm Wine"},
+                                      new String[]{"Dangerous",
+                                              "Due to political instability and high crime rates, it is advised to avoid non-essential travel to Guinea-Bissau."},
+                                      "West African CFA Franc"));
         countries.add(new CountryInfo("Guyana",
                                       R.drawable.flagguyana,
                                       R.drawable.guyana,
@@ -2786,8 +2996,11 @@ public class CountryData {
                                               "25°C - 32°C, hot, humid, thunderstorms",
                                               "24°C - 30°C, warm, rainy season",
                                               "23°C - 29°C, mild, drier season"},
-                                      new String[]{"Pepperpot", "Mauby"},
-                                      new String[]{"OK", "Guyana is generally safe in popular areas, though visitors should avoid isolated places, especially at night, due to crime."}));
+                                      new String[]{"Pepperpot",
+                                              "Mauby"},
+                                      new String[]{"OK",
+                                              "Guyana is generally safe in popular areas, though visitors should avoid isolated places, especially at night, due to crime."},
+                                      "Guyanese Dollar"));
         countries.add(new CountryInfo("Haiti",
                                       R.drawable.flaghaiti,
                                       R.drawable.haiti,
@@ -2825,8 +3038,11 @@ public class CountryData {
                                               "25°C - 34°C, hot, humid, brief rain",
                                               "24°C - 32°C, warm, rainy season",
                                               "22°C - 28°C, mild, drier season"},
-                                      new String[]{"Griot (fried pork)", "Rhum Barbancourt"},
-                                      new String[]{"OK", "Haiti has safety risks due to political unrest; it is advised to stay in tourist areas and avoid protests or large gatherings."}));
+                                      new String[]{"Griot (fried pork)",
+                                              "Rhum Barbancourt"},
+                                      new String[]{"OK",
+                                              "Haiti has safety risks due to political unrest; it is advised to stay in tourist areas and avoid protests or large gatherings."},
+                                      "Haitian Gourde"));
         countries.add(new CountryInfo("Honduras",
                                       R.drawable.flaghonduras,
                                       R.drawable.honduras,
@@ -2864,8 +3080,11 @@ public class CountryData {
                                               "24°C - 34°C, warm, rainy season",
                                               "23°C - 30°C, mild with frequent rain",
                                               "18°C - 26°C, mild, drier season"},
-                                      new String[]{"Baleadas", "Horchata"},
-                                      new String[]{"OK", "Honduras has moderate safety risks; travelers should avoid isolated areas and stay cautious in major cities due to crime."}));
+                                      new String[]{"Baleadas",
+                                              "Horchata"},
+                                      new String[]{"OK",
+                                              "Honduras has moderate safety risks; travelers should avoid isolated areas and stay cautious in major cities due to crime."},
+                                      "Honduran Lempira"));
         countries.add(new CountryInfo("Hungary",
                                       R.drawable.flaghungary,
                                       R.drawable.hungary,
@@ -2903,8 +3122,11 @@ public class CountryData {
                                               "15°C - 30°C, warm, sunny",
                                               "10°C - 20°C, mild, rainy",
                                               "-5°C - 5°C, cold, snow in northern regions"},
-                                      new String[]{"Gulyás (Goulash)", "Pálinka"},
-                                      new String[]{"Safe", "Hungary is generally safe, with low crime rates. Tourists should be cautious of petty theft in crowded areas like Budapest."}));
+                                      new String[]{"Gulyás (Goulash)",
+                                              "Pálinka"},
+                                      new String[]{"Safe",
+                                              "Hungary is generally safe, with low crime rates. Tourists should be cautious of petty theft in crowded areas like Budapest."},
+                                      "Hungarian Forint"));
         countries.add(new CountryInfo("Iceland",
                                       R.drawable.flagiceland,
                                       R.drawable.iceland,
@@ -2942,8 +3164,11 @@ public class CountryData {
                                               "10°C - 20°C, mild, partly cloudy",
                                               "5°C - 15°C, cool, frequent rain",
                                               "-10°C - 0°C, very cold, snowy"},
-                                      new String[]{"Hákarl (fermented shark)", "Brennivín"},
-                                      new String[]{"Safe", "Iceland is one of the safest countries, with very low crime rates. Tourists should, however, be cautious of changing weather conditions when exploring outdoors."}));
+                                      new String[]{"Hákarl (fermented shark)",
+                                              "Brennivín"},
+                                      new String[]{"Safe",
+                                              "Iceland is one of the safest countries, with very low crime rates. Tourists should, however, be cautious of changing weather conditions when exploring outdoors."},
+                                      "Icelandic Króna"));
         countries.add(new CountryInfo("India",
                                       R.drawable.flagindia,
                                       R.drawable.india,
@@ -2981,8 +3206,11 @@ public class CountryData {
                                               "25°C - 40°C, hot, dry, sunny",
                                               "25°C - 35°C, warm, monsoon season",
                                               "15°C - 25°C, cool, dry"},
-                                      new String[]{"Biryani", "Masala Chai"},
-                                      new String[]{"OK", "India is safe in tourist areas, though travelers should avoid remote regions and be aware of scams in crowded places."}));
+                                      new String[]{"Biryani",
+                                              "Masala Chai"},
+                                      new String[]{"OK",
+                                              "India is safe in tourist areas, though travelers should avoid remote regions and be aware of scams in crowded places."},
+                                      "Indian Rupee"));
         countries.add(new CountryInfo("Indonesia",
                                       R.drawable.flagindonesia,
                                       R.drawable.indonesia,
@@ -3020,8 +3248,11 @@ public class CountryData {
                                               "26°C - 32°C, hot, humid, thunderstorms",
                                               "24°C - 30°C, warm, rainy season",
                                               "24°C - 30°C, mild, drier season"},
-                                      new String[]{"Nasi Goreng", "Teh Botol (bottled tea)"},
-                                      new String[]{"OK", "Indonesia is generally safe, though take care in remote areas and during natural disasters such as earthquakes and volcanic eruptions."}));
+                                      new String[]{"Nasi Goreng",
+                                              "Teh Botol (bottled tea)"},
+                                      new String[]{"OK",
+                                              "Indonesia is generally safe, though take care in remote areas and during natural disasters such as earthquakes and volcanic eruptions."},
+                                      "Indonesian Rupiah"));
         countries.add(new CountryInfo("Iran",
                                       R.drawable.flagiran,
                                       R.drawable.iran,
@@ -3059,8 +3290,11 @@ public class CountryData {
                                               "25°C - 40°C, hot, dry",
                                               "20°C - 30°C, warm, rainy in north",
                                               "5°C - 15°C, cool, snow in northern regions"},
-                                      new String[]{"Kebab", "Doogh (yogurt drink)"},
-                                      new String[]{"OK", "Iran is safe in major cities, but travelers should respect local customs and avoid border areas due to political tensions."}));
+                                      new String[]{"Kebab",
+                                              "Doogh (yogurt drink)"},
+                                      new String[]{"OK",
+                                              "Iran is safe in major cities, but travelers should respect local customs and avoid border areas due to political tensions."},
+                                      "Iranian Rial"));
         countries.add(new CountryInfo("Iraq",
                                       R.drawable.flagiraq,
                                       R.drawable.iraq,
@@ -3098,8 +3332,11 @@ public class CountryData {
                                               "30°C - 45°C, extremely hot, dry",
                                               "25°C - 35°C, warm, dry",
                                               "10°C - 20°C, mild, dry season"},
-                                      new String[]{"Masgouf (grilled fish)", "Tea"},
-                                      new String[]{"Dangerous", "Due to ongoing security risks, travel to Iraq is not recommended except for essential purposes."}));
+                                      new String[]{"Masgouf (grilled fish)",
+                                              "Tea"},
+                                      new String[]{"Dangerous",
+                                              "Due to ongoing security risks, travel to Iraq is not recommended except for essential purposes."},
+                                      "Iraqi Dinar"));
         countries.add(new CountryInfo("Ireland",
                                       R.drawable.flagireland,
                                       R.drawable.ireland,
@@ -3137,8 +3374,11 @@ public class CountryData {
                                               "15°C - 25°C, warm, sunny with occasional rain",
                                               "10°C - 20°C, mild, frequent rain",
                                               "0°C - 10°C, cool, rainy"},
-                                      new String[]{"Irish Stew", "Guinness"},
-                                      new String[]{"Safe", "Ireland is a safe destination with low crime rates, though travelers should exercise standard safeguards in urban areas."}));
+                                      new String[]{"Irish Stew",
+                                              "Guinness"},
+                                      new String[]{"Safe",
+                                              "Ireland is a safe destination with low crime rates, though travelers should exercise standard safeguards in urban areas."},
+                                      "Euro"));
         countries.add(new CountryInfo("Israel",
                                       R.drawable.flagisrael,
                                       R.drawable.israel,
@@ -3176,8 +3416,11 @@ public class CountryData {
                                               "20°C - 35°C, hot, dry, sunny",
                                               "15°C - 30°C, warm, sunny with occasional rain",
                                               "10°C - 20°C, mild, rainy"},
-                                      new String[]{"Falafel", "Limonana (mint lemonade)"},
-                                      new String[]{"Safe", "Israel is safe for tourists, though travelers should avoid border areas and be cautious during times of regional tension."}));
+                                      new String[]{"Falafel",
+                                              "Limonana (mint lemonade)"},
+                                      new String[]{"Safe",
+                                              "Israel is safe for tourists, though travelers should avoid border areas and be cautious during times of regional tension."},
+                                      "Israeli New Shekel"));
         countries.add(new CountryInfo("Italy",
                                       R.drawable.flagitaly,
                                       R.drawable.italy,
@@ -3215,8 +3458,11 @@ public class CountryData {
                                               "20°C - 35°C, hot, sunny",
                                               "15°C - 25°C, mild, rainy in north",
                                               "5°C - 15°C, cool, occasional snow in north"},
-                                      new String[]{"Pasta", "Wine"},
-                                      new String[]{"Safe", "Italy is safe for tourists, though visitors should be mindful of pickpockets in crowded cities like Rome and Venice."}));
+                                      new String[]{"Pasta",
+                                              "Wine"},
+                                      new String[]{"Safe",
+                                              "Italy is safe for tourists, though visitors should be mindful of pickpockets in crowded cities like Rome and Venice."},
+                                      "Euro"));
         countries.add(new CountryInfo("Ivory Coast",
                                       R.drawable.flagivorycoast,
                                       R.drawable.ivorycoast,
@@ -3254,8 +3500,11 @@ public class CountryData {
                                               "27°C - 32°C, hot, humid, frequent thunderstorms",
                                               "25°C - 30°C, warm, rainy season",
                                               "24°C - 28°C, mild, dry season"},
-                                      new String[]{"Attiéké (cassava couscous)", "Bissap (hibiscus drink)"},
-                                      new String[]{"OK", "Ivory Coast has largely stabilized after past political tensions, but visitors should take care in certain areas, particularly near the borders. Petty crime can be an issue in urban areas, so it's advisable to stay vigilant. Natural hazards include occasional flooding during the rainy season."}));
+                                      new String[]{"Attiéké (cassava couscous)",
+                                              "Bissap (hibiscus drink)"},
+                                      new String[]{"OK",
+                                              "Ivory Coast has largely stabilized after past political tensions, but visitors should take care in certain areas, particularly near the borders. Petty crime can be an issue in urban areas, so it's advisable to stay vigilant. Natural hazards include occasional flooding during the rainy season."},
+                                      "West African CFA Franc"));
         countries.add(new CountryInfo("Jamaica",
                                       R.drawable.flagjamaica,
                                       R.drawable.jamaica,
@@ -3293,8 +3542,11 @@ public class CountryData {
                                               "24°C - 32°C, hot, humid with thunderstorms",
                                               "24°C - 30°C, warm, rainy season",
                                               "23°C - 28°C, mild, drier season"},
-                                      new String[]{"Jerk Chicken", "Rum"},
-                                      new String[]{"OK", "Jamaica has moderate safety risks, especially in non-tourist areas. Travelers should avoid isolated areas and stay vigilant in urban centers."}));
+                                      new String[]{"Jerk Chicken",
+                                              "Rum"},
+                                      new String[]{"OK",
+                                              "Jamaica has moderate safety risks, especially in non-tourist areas. Travelers should avoid isolated areas and stay vigilant in urban centers."},
+                                      "Jamaican Dollar"));
         countries.add(new CountryInfo("Japan",
                                       R.drawable.flagjapan,
                                       R.drawable.japan,
@@ -3332,8 +3584,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, rainy season",
                                               "15°C - 25°C, mild, typhoon season",
                                               "0°C - 10°C, cold, snowy in northern areas"},
-                                      new String[]{"Sushi", "Sake"},
-                                      new String[]{"Safe", "Japan is known for its high level of safety and low crime rate. While natural disasters like earthquakes and typhoons can occur, Japan has robust infrastructure and systems in place for handling them. Visitors are advised to stay informed about emergency procedures and respect local customs."}));
+                                      new String[]{"Sushi",
+                                              "Sake"},
+                                      new String[]{"Safe",
+                                              "Japan is known for its high level of safety and low crime rate. While natural disasters like earthquakes and typhoons can occur, Japan has robust infrastructure and systems in place for handling them. Visitors are advised to stay informed about emergency procedures and respect local customs."},
+                                      "Japanese Yen"));
         countries.add(new CountryInfo("Jordan",
                                       R.drawable.flagjordan,
                                       R.drawable.jordan,
@@ -3371,8 +3626,11 @@ public class CountryData {
                                               "25°C - 40°C, hot, dry, sunny",
                                               "20°C - 30°C, warm, dry",
                                               "5°C - 15°C, cool, occasional rain"},
-                                      new String[]{"Mansaf", "Mint Tea"},
-                                      new String[]{"OK", "Jordan is generally safe, but travelers should avoid border areas due to regional instability. Petty crime is relatively low, though visitors should be cautious of scams in tourist areas. The country has strict social customs, so dressing modestly and respecting local practices is recommended."}));
+                                      new String[]{"Mansaf",
+                                              "Mint Tea"},
+                                      new String[]{"OK",
+                                              "Jordan is generally safe, but travelers should avoid border areas due to regional instability. Petty crime is relatively low, though visitors should be cautious of scams in tourist areas. The country has strict social customs, so dressing modestly and respecting local practices is recommended."},
+                                      "Jordanian Dinar"));
         countries.add(new CountryInfo("Kazakhstan",
                                       R.drawable.flagkazakhstan,
                                       R.drawable.kazakhstan,
@@ -3410,8 +3668,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, dry",
                                               "15°C - 25°C, mild, dry",
                                               "-10°C - 0°C, very cold, snowy"},
-                                      new String[]{"Beshbarmak", "Kumis (fermented mare's milk)"},
-                                      new String[]{"Safe", "Kazakhstan is mostly safe for visitors, with low crime levels. While the country is politically stable, take care in remote areas due to natural hazards like landslides and avalanches in mountainous regions. Customs and traditions are highly respected, especially outside urban areas."}));
+                                      new String[]{"Beshbarmak",
+                                              "Kumis (fermented mare's milk)"},
+                                      new String[]{"Safe",
+                                              "Kazakhstan is mostly safe for visitors, with low crime levels. While the country is politically stable, take care in remote areas due to natural hazards like landslides and avalanches in mountainous regions. Customs and traditions are highly respected, especially outside urban areas."},
+                                      "Kazakhstani Tenge"));
         countries.add(new CountryInfo("Kenya",
                                       R.drawable.flagkenya,
                                       R.drawable.kenya,
@@ -3449,8 +3710,11 @@ public class CountryData {
                                               "20°C - 30°C, hot, dry season",
                                               "15°C - 25°C, warm, short rains",
                                               "10°C - 20°C, mild, dry"},
-                                      new String[]{"Ugali", "Chai (tea)"},
-                                      new String[]{"OK", "Kenya is generally safe, but there are heightened risks in some regions due to political unrest and occasional terrorist activity. Travelers should stay informed and avoid high-risk areas, especially near the borders. Wildlife encounters can pose hazards in rural areas, so following safety guidelines is essential."}));
+                                      new String[]{"Ugali",
+                                              "Chai (tea)"},
+                                      new String[]{"OK",
+                                              "Kenya is generally safe, but there are heightened risks in some regions due to political unrest and occasional terrorist activity. Travelers should stay informed and avoid high-risk areas, especially near the borders. Wildlife encounters can pose hazards in rural areas, so following safety guidelines is essential."},
+                                      "Kenyan Shilling"));
         countries.add(new CountryInfo("Kiribati",
                                       R.drawable.flagkiribati,
                                       R.drawable.kiribati,
@@ -3488,8 +3752,11 @@ public class CountryData {
                                               "26°C - 32°C, hot, rainy with thunderstorms",
                                               "25°C - 30°C, warm, humid",
                                               "24°C - 28°C, mild, drier season"},
-                                      new String[]{"Te Bua Toro Ni Baukin (palm heart salad)", "Toddy (fermented coconut drink)"},
-                                      new String[]{"Safe", "Kiribati is generally safe, with a low crime rate. The main concerns are natural hazards, particularly the effects of rising sea levels and seasonal storms. Health facilities are limited, and travelers should take safeguards against mosquito-borne illnesses. Visitors are advised to respect local customs and traditions, as Kiribati culture is conservative, especially in rural areas."}));
+                                      new String[]{"Te Bua Toro Ni Baukin (palm heart salad)",
+                                              "Toddy (fermented coconut drink)"},
+                                      new String[]{"Safe",
+                                              "Kiribati is generally safe, with a low crime rate. The main concerns are natural hazards, particularly the effects of rising sea levels and seasonal storms. Health facilities are limited, and travelers should take safeguards against mosquito-borne illnesses. Visitors are advised to respect local customs and traditions, as Kiribati culture is conservative, especially in rural areas."},
+                                      "Kiribati Dollar"));
         countries.add(new CountryInfo("Kosovo",
                                       R.drawable.flagkosovo,
                                       R.drawable.kosovo,
@@ -3527,8 +3794,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, dry",
                                               "10°C - 20°C, mild, rain",
                                               "0°C - 10°C, cold, snowy"},
-                                      new String[]{"Flija (layered pastry)", "Rakija (fruit brandy)"},
-                                      new String[]{"Safe", "Kosovo is relatively safe for travelers, though it's recommended to stay informed about political developments, especially in the north. The crime rate is low, but pickpocketing can occur in crowded areas. Health services are accessible, though medical facilities outside the capital may be limited. Visitors should be mindful of recent history, showing respect for local customs and cultures."}));
+                                      new String[]{"Flija (layered pastry)",
+                                              "Rakija (fruit brandy)"},
+                                      new String[]{"Safe",
+                                              "Kosovo is relatively safe for travelers, though it's recommended to stay informed about political developments, especially in the north. The crime rate is low, but pickpocketing can occur in crowded areas. Health services are accessible, though medical facilities outside the capital may be limited. Visitors should be mindful of recent history, showing respect for local customs and cultures."},
+                                      "Euro"));
         countries.add(new CountryInfo("Kuwait",
                                       R.drawable.flagkuwait,
                                       R.drawable.kuwait,
@@ -3566,8 +3836,11 @@ public class CountryData {
                                               "30°C - 50°C, extremely hot, dry",
                                               "25°C - 35°C, warm, dry",
                                               "10°C - 20°C, mild, dry"},
-                                      new String[]{"Machboos (spiced rice with meat)", "Karak (spiced tea)"},
-                                      new String[]{"Safe", "Kuwait is generally safe for travelers, with low crime rates. However, travelers should stay updated on regional tensions and take care in areas close to the Iraq border. Respecting local laws, particularly those related to dress and behavior, is important due to Kuwait's conservative culture. Medical facilities are well-equipped, but health insurance is recommended."}));
+                                      new String[]{"Machboos (spiced rice with meat)",
+                                              "Karak (spiced tea)"},
+                                      new String[]{"Safe",
+                                              "Kuwait is generally safe for travelers, with low crime rates. However, travelers should stay updated on regional tensions and take care in areas close to the Iraq border. Respecting local laws, particularly those related to dress and behavior, is important due to Kuwait's conservative culture. Medical facilities are well-equipped, but health insurance is recommended."},
+                                      "Kuwaiti Dinar"));
         countries.add(new CountryInfo("Kyrgyzstan",
                                       R.drawable.flagkyrgyzstan,
                                       R.drawable.kyrgyzstan,
@@ -3605,8 +3878,11 @@ public class CountryData {
                                               "20°C - 35°C, warm, dry",
                                               "15°C - 25°C, cool, rainy",
                                               "-10°C - 5°C, very cold, snowy"},
-                                      new String[]{"Laghman", "Kumis"},
-                                      new String[]{"OK", "Kyrgyzstan is mostly safe, though some remote areas can present safety challenges due to rugged terrain and limited infrastructure. Crime rates are low, but travelers should be cautious of scams in tourist spots. Cultural respect is important, and visitors should dress modestly, especially in rural areas."}));
+                                      new String[]{"Laghman",
+                                              "Kumis"},
+                                      new String[]{"OK",
+                                              "Kyrgyzstan is mostly safe, though some remote areas can present safety challenges due to rugged terrain and limited infrastructure. Crime rates are low, but travelers should be cautious of scams in tourist spots. Cultural respect is important, and visitors should dress modestly, especially in rural areas."},
+                                      "Kyrgyz Som"));
         countries.add(new CountryInfo("Laos",
                                       R.drawable.flaglaos,
                                       R.drawable.laos,
@@ -3644,8 +3920,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, humid",
                                               "23°C - 30°C, warm, monsoon rains",
                                               "15°C - 25°C, mild, drier season"},
-                                      new String[]{"Laap (meat salad)", "Beerlao"},
-                                      new String[]{"OK", "Laos is generally safe, but unexploded ordnance remains a hazard in rural areas. Petty crime is low, but travelers should stay vigilant in tourist areas. Natural hazards include flooding during the rainy season. Respect for Buddhist culture is essential, so dressing modestly and being respectful is encouraged."}));
+                                      new String[]{"Laap (meat salad)",
+                                              "Beerlao"},
+                                      new String[]{"OK",
+                                              "Laos is generally safe, but unexploded ordnance remains a hazard in rural areas. Petty crime is low, but travelers should stay vigilant in tourist areas. Natural hazards include flooding during the rainy season. Respect for Buddhist culture is essential, so dressing modestly and being respectful is encouraged."},
+                                      "Lao Kip"));
         countries.add(new CountryInfo("Latvia",
                                       R.drawable.flaglatvia,
                                       R.drawable.latvia,
@@ -3683,8 +3962,11 @@ public class CountryData {
                                               "15°C - 25°C, warm, sunny with rain",
                                               "10°C - 20°C, mild, cloudy",
                                               "-5°C - 5°C, cold, snowy"},
-                                      new String[]{"Grey Peas and Bacon", "Riga Black Balsam"},
-                                      new String[]{"Safe", "Latvia is a safe destination with low crime rates. Petty crime such as pickpocketing can occur in crowded areas, especially in Riga. Winters can be severe, so preparation for cold weather is advised. Visitors are expected to respect local customs and the Baltic culture."}));
+                                      new String[]{"Grey Peas and Bacon",
+                                              "Riga Black Balsam"},
+                                      new String[]{"Safe",
+                                              "Latvia is a safe destination with low crime rates. Petty crime such as pickpocketing can occur in crowded areas, especially in Riga. Winters can be severe, so preparation for cold weather is advised. Visitors are expected to respect local customs and the Baltic culture."},
+                                      "Euro"));
         countries.add(new CountryInfo("Lebanon",
                                       R.drawable.flaglebanon,
                                       R.drawable.lebanon,
@@ -3722,8 +4004,11 @@ public class CountryData {
                                               "20°C - 30°C, hot, dry",
                                               "15°C - 25°C, mild, rainy in north",
                                               "5°C - 15°C, cool, rainy"},
-                                      new String[]{"Tabbouleh", "Arak"},
-                                      new String[]{"OK", "Lebanon faces regional instability, and certain areas are considered high-risk, particularly near the Syrian border. Petty crime and protests can occur, so travelers should stay updated on current events. Lebanon’s rich cultural heritage is celebrated, and visitors should respect customs and traditions."}));
+                                      new String[]{"Tabbouleh",
+                                              "Arak"},
+                                      new String[]{"OK",
+                                              "Lebanon faces regional instability, and certain areas are considered high-risk, particularly near the Syrian border. Petty crime and protests can occur, so travelers should stay updated on current events. Lebanon’s rich cultural heritage is celebrated, and visitors should respect customs and traditions."},
+                                      "Lebanese Pound"));
         countries.add(new CountryInfo("Lesotho",
                                       R.drawable.flaglesotho,
                                       R.drawable.lesotho,
@@ -3761,8 +4046,11 @@ public class CountryData {
                                               "15°C - 25°C, warm, dry",
                                               "10°C - 20°C, mild, rainy season",
                                               "0°C - 10°C, cold, snowy in highlands"},
-                                      new String[]{"Papa (maize porridge)", "Traditional beer"},
-                                      new String[]{"OK", "Lesotho is generally safe, though crime rates are higher in urban areas, particularly in Maseru. Mountainous terrain and cold winters can be challenging, especially in remote areas. Visitors are advised to be cautious and stay informed about local safety concerns."}));
+                                      new String[]{"Papa (maize porridge)",
+                                              "Traditional beer"},
+                                      new String[]{"OK",
+                                              "Lesotho is generally safe, though crime rates are higher in urban areas, particularly in Maseru. Mountainous terrain and cold winters can be challenging, especially in remote areas. Visitors are advised to be cautious and stay informed about local safety concerns."},
+                                      "Lesotho Loti"));
         countries.add(new CountryInfo("Liberia",
                                       R.drawable.flagliberia,
                                       R.drawable.liberia,
@@ -3800,8 +4088,11 @@ public class CountryData {
                                               "25°C - 33°C, hot, humid, thunderstorms",
                                               "24°C - 30°C, warm, rainy season",
                                               "23°C - 28°C, mild, drier season"},
-                                      new String[]{"Dumboy (fufu)", "Palm Wine"},
-                                      new String[]{"OK", "Liberia has made progress since its civil wars but still faces challenges. Crime, particularly in Monrovia, can be an issue, and healthcare facilities are limited. Travelers should take standard safeguards and stay updated on local advisories. Malaria prevention is recommended."}));
+                                      new String[]{"Dumboy (fufu)",
+                                              "Palm Wine"},
+                                      new String[]{"OK",
+                                              "Liberia has made progress since its civil wars but still faces challenges. Crime, particularly in Monrovia, can be an issue, and healthcare facilities are limited. Travelers should take standard safeguards and stay updated on local advisories. Malaria prevention is recommended."},
+                                      "Liberian Dollar"));
         countries.add(new CountryInfo("Libya",
                                       R.drawable.flaglibya,
                                       R.drawable.libya,
@@ -3839,8 +4130,11 @@ public class CountryData {
                                               "25°C - 40°C, hot, dry, sunny",
                                               "20°C - 30°C, warm, dry",
                                               "10°C - 20°C, mild, dry"},
-                                      new String[]{"Bazeen", "Libyan Tea"},
-                                      new String[]{"Dangerous", "Due to ongoing conflict and political instability, Libya is considered a high-risk destination. Violent crime, terrorism, and kidnappings are prevalent, especially in remote areas. Travel is discouraged, and those who do visit should take care."}));
+                                      new String[]{"Bazeen",
+                                              "Libyan Tea"},
+                                      new String[]{"Dangerous",
+                                              "Due to ongoing conflict and political instability, Libya is considered a high-risk destination. Violent crime, terrorism, and kidnappings are prevalent, especially in remote areas. Travel is discouraged, and those who do visit should take care."},
+                                      "Libyan Dinar"));
         countries.add(new CountryInfo("Liechtenstein",
                                       R.drawable.flagliechtenstein,
                                       R.drawable.liechtenstein,
@@ -3878,8 +4172,11 @@ public class CountryData {
                                               "15°C - 25°C, warm, sunny",
                                               "10°C - 20°C, mild, rain",
                                               "-5°C - 5°C, cold, snowy"},
-                                      new String[]{"Käsknöpfle (cheese pasta)", "Wine"},
-                                      new String[]{"Safe", "Liechtenstein is a peaceful and secure country with very low crime rates. Travelers should take standard safeguards, though the risk of crime is minimal. The mountainous terrain can be challenging in winter, so travelers should prepare accordingly if visiting remote areas."}));
+                                      new String[]{"Käsknöpfle (cheese pasta)",
+                                              "Wine"},
+                                      new String[]{"Safe",
+                                              "Liechtenstein is a peaceful and secure country with very low crime rates. Travelers should take standard safeguards, though the risk of crime is minimal. The mountainous terrain can be challenging in winter, so travelers should prepare accordingly if visiting remote areas."},
+                                      "Swiss Franc"));
         countries.add(new CountryInfo("Lithuania",
                                       R.drawable.flaglithuania,
                                       R.drawable.lithuania,
@@ -3917,8 +4214,11 @@ public class CountryData {
                                               "15°C - 25°C, warm, sunny",
                                               "10°C - 20°C, mild, frequent rain",
                                               "-5°C - 5°C, cold, snowy"},
-                                      new String[]{"Cepelinai (potato dumplings)", "Kvass"},
-                                      new String[]{"Safe", "Lithuania is a safe and welcoming country. Crime rates are low, though petty theft can occur in crowded places, especially in Vilnius. Winters are cold, so visitors should be prepared for the weather. Local customs and traditions are highly respected, and travelers are encouraged to be polite and courteous."}));
+                                      new String[]{"Cepelinai (potato dumplings)",
+                                              "Kvass"},
+                                      new String[]{"Safe",
+                                              "Lithuania is a safe and welcoming country. Crime rates are low, though petty theft can occur in crowded places, especially in Vilnius. Winters are cold, so visitors should be prepared for the weather. Local customs and traditions are highly respected, and travelers are encouraged to be polite and courteous."},
+                                      "Euro"));
         countries.add(new CountryInfo("Luxembourg",
                                       R.drawable.flagluxembourg,
                                       R.drawable.luxembourg,
@@ -3956,8 +4256,11 @@ public class CountryData {
                                               "15°C - 25°C, warm, sunny",
                                               "10°C - 20°C, mild, rainy",
                                               "0°C - 10°C, cool, occasional snow"},
-                                      new String[]{"Judd mat Gaardebounen (smoked pork)", "Wine"},
-                                      new String[]{"Safe", "Luxembourg is one of the safest countries in Europe with low crime rates. Travelers can enjoy a secure environment, though standard travel safeguards are advised. The country has a high standard of living and respects diversity. Travelers are advised to respect local customs and regulations."}));
+                                      new String[]{"Judd mat Gaardebounen (smoked pork)",
+                                              "Wine"},
+                                      new String[]{"Safe",
+                                              "Luxembourg is one of the safest countries in Europe with low crime rates. Travelers can enjoy a secure environment, though standard travel safeguards are advised. The country has a high standard of living and respects diversity. Travelers are advised to respect local customs and regulations."},
+                                      "Euro"));
         countries.add(new CountryInfo("Madagascar",
                                       R.drawable.flagmadagascar,
                                       R.drawable.madagascar,
@@ -3995,8 +4298,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, humid, rainy",
                                               "18°C - 25°C, mild, dry",
                                               "15°C - 25°C, mild, dry season"},
-                                      new String[]{"Romazava (meat stew)", "Ranon'apango (rice water)"},
-                                      new String[]{"OK", "Madagascar has unique natural hazards, including cyclones during the wet season. Crime can be an issue in urban areas, so travelers should be vigilant, especially in Antananarivo. Health risks such as malaria are present, so preventive measures are recommended."}));
+                                      new String[]{"Romazava (meat stew)",
+                                              "Ranon'apango (rice water)"},
+                                      new String[]{"OK",
+                                              "Madagascar has unique natural hazards, including cyclones during the wet season. Crime can be an issue in urban areas, so travelers should be vigilant, especially in Antananarivo. Health risks such as malaria are present, so preventive measures are recommended."},
+                                      "Malagasy Ariary"));
         countries.add(new CountryInfo("Malawi",
                                       R.drawable.flagmalawi,
                                       R.drawable.malawi,
@@ -4034,8 +4340,11 @@ public class CountryData {
                                               "20°C - 30°C, hot, dry season",
                                               "15°C - 25°C, warm, short rains",
                                               "10°C - 20°C, mild, dry season"},
-                                      new String[]{"Nsima (maize porridge)", "Chibuku (traditional beer)"},
-                                      new String[]{"OK", "Malawi is generally safe, though petty crime can occur, especially in Lilongwe and Blantyre. Travelers should take care in crowded areas and follow local advisories. Health risks, including malaria, exist, and medical facilities are limited outside main cities."}));
+                                      new String[]{"Nsima (maize porridge)",
+                                              "Chibuku (traditional beer)"},
+                                      new String[]{"OK",
+                                              "Malawi is generally safe, though petty crime can occur, especially in Lilongwe and Blantyre. Travelers should take care in crowded areas and follow local advisories. Health risks, including malaria, exist, and medical facilities are limited outside main cities."},
+                                      "Malawian Kwacha"));
         countries.add(new CountryInfo("Malaysia",
                                       R.drawable.flagmalaysia,
                                       R.drawable.malaysia,
@@ -4073,8 +4382,11 @@ public class CountryData {
                                               "26°C - 34°C, hot, heavy rain",
                                               "24°C - 32°C, warm, rainy",
                                               "24°C - 31°C, warm, rainy"},
-                                      new String[]{"Nasi Lemak", "Teh Tarik"},
-                                      new String[]{"Safe", "Malaysia is generally safe, though some border regions in the eastern part of Sabah may present risks. Petty crime such as pickpocketing can occur in busy areas. Natural hazards include monsoon rains and landslides. Visitors should respect local customs, especially in rural areas and near religious sites."}));
+                                      new String[]{"Nasi Lemak",
+                                              "Teh Tarik"},
+                                      new String[]{"Safe",
+                                              "Malaysia is generally safe, though some border regions in the eastern part of Sabah may present risks. Petty crime such as pickpocketing can occur in busy areas. Natural hazards include monsoon rains and landslides. Visitors should respect local customs, especially in rural areas and near religious sites."},
+                                      "Malaysian Ringgit"));
         countries.add(new CountryInfo("Maldives",
                                       R.drawable.flagmaldives,
                                       R.drawable.maldives,
@@ -4112,8 +4424,11 @@ public class CountryData {
                                               "26°C - 32°C, hot, humid, frequent showers",
                                               "25°C - 31°C, warm, high humidity with rain",
                                               "24°C - 30°C, warm, occasional rain showers"},
-                                      new String[]{"Mas Huni (tuna salad)", "Coconut Water"},
-                                      new String[]{"Safe", "The Maldives is known for its safety and luxury tourism. Petty crime is rare, but travelers should secure valuables. Weather-related risks, such as monsoon rains, can affect certain times of the year. Respect for local customs is important, particularly on non-resort islands."}));
+                                      new String[]{"Mas Huni (tuna salad)",
+                                              "Coconut Water"},
+                                      new String[]{"Safe",
+                                              "The Maldives is known for its safety and luxury tourism. Petty crime is rare, but travelers should secure valuables. Weather-related risks, such as monsoon rains, can affect certain times of the year. Respect for local customs is important, particularly on non-resort islands."},
+                                      "Maldivian Rufiyaa"));
         countries.add(new CountryInfo("Mali",
                                       R.drawable.flagmali,
                                       R.drawable.mali,
@@ -4151,8 +4466,11 @@ public class CountryData {
                                               "30°C - 40°C, very hot, mostly dry",
                                               "25°C - 35°C, warm, some rain",
                                               "20°C - 30°C, mild, dry season"},
-                                      new String[]{"Tiguadege Na (peanut butter stew)", "Ginger Juice"},
-                                      new String[]{"Dangerous", "Mali faces significant security challenges, particularly in the northern and central regions due to terrorist activity and armed conflict. Travelers are advised to avoid these areas and take care throughout the country. Additionally, limited medical facilities make travel insurance and preventive health measures essential."}));
+                                      new String[]{"Tiguadege Na (peanut butter stew)",
+                                              "Ginger Juice"},
+                                      new String[]{"Dangerous",
+                                              "Mali faces significant security challenges, particularly in the northern and central regions due to terrorist activity and armed conflict. Travelers are advised to avoid these areas and take care throughout the country. Additionally, limited medical facilities make travel insurance and preventive health measures essential."},
+                                      "West African CFA Franc"));
         countries.add(new CountryInfo("Malta",
                                       R.drawable.flagmalta,
                                       R.drawable.malta,
@@ -4190,8 +4508,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, sunny",
                                               "15°C - 25°C, mild, some rain",
                                               "10°C - 18°C, cool, rainy"},
-                                      new String[]{"Stuffat tal-Fenek (rabbit stew)", "Kinnie (local bittersweet soda)"},
-                                      new String[]{"Safe", "Malta is generally a very safe destination with low crime rates. Petty theft can occasionally occur in tourist areas, so standard safeguards are advised. The health infrastructure is modern, and the country is politically stable. Visitors should also respect local customs and regulations regarding historic sites."}));
+                                      new String[]{"Stuffat tal-Fenek (rabbit stew)",
+                                              "Kinnie (local bittersweet soda)"},
+                                      new String[]{"Safe",
+                                              "Malta is generally a very safe destination with low crime rates. Petty theft can occasionally occur in tourist areas, so standard safeguards are advised. The health infrastructure is modern, and the country is politically stable. Visitors should also respect local customs and regulations regarding historic sites."},
+                                      "Euro"));
         countries.add(new CountryInfo("Marshall Islands",
                                       R.drawable.flagmarshallislands,
                                       R.drawable.marshallislands,
@@ -4229,8 +4550,11 @@ public class CountryData {
                                               "28°C - 31°C, hot, occasional rain showers",
                                               "27°C - 30°C, warm, rainy season with high humidity",
                                               "26°C - 29°C, warm, occasional rain"},
-                                      new String[]{"Pele (taro leaves in coconut milk)", "Green Coconut Water"},
-                                      new String[]{"Safe", "While generally safe, the Marshall Islands face natural hazards like typhoons and rising sea levels. Healthcare facilities are limited, especially outside the capital, so visitors are advised to have comprehensive health insurance. The local culture is welcoming, but visitors should be mindful of traditional customs."}));
+                                      new String[]{"Pele (taro leaves in coconut milk)",
+                                              "Green Coconut Water"},
+                                      new String[]{"Safe",
+                                              "While generally safe, the Marshall Islands face natural hazards like typhoons and rising sea levels. Healthcare facilities are limited, especially outside the capital, so visitors are advised to have comprehensive health insurance. The local culture is welcoming, but visitors should be mindful of traditional customs."},
+                                      "United States Dollar"));
         countries.add(new CountryInfo("Mauritania",
                                       R.drawable.flagmauritania,
                                       R.drawable.mauritania,
@@ -4268,8 +4592,11 @@ public class CountryData {
                                               "25°C - 40°C, hot, very dry",
                                               "23°C - 35°C, warm, dry with some humidity",
                                               "15°C - 28°C, mild, dry and sunny"},
-                                      new String[]{"Thieboudienne (fish and rice dish)", "Mint Tea"},
-                                      new String[]{"Dangerous", "Mauritania has a high level of danger due to security concerns, particularly terrorism and crime in remote areas. Travelers should avoid areas near the Mali border and remain vigilant throughout the country. Healthcare facilities are limited, and respectful dress, especially for women, is recommended in this conservative society."}));
+                                      new String[]{"Thieboudienne (fish and rice dish)",
+                                              "Mint Tea"},
+                                      new String[]{"Dangerous",
+                                              "Mauritania has a high level of danger due to security concerns, particularly terrorism and crime in remote areas. Travelers should avoid areas near the Mali border and remain vigilant throughout the country. Healthcare facilities are limited, and respectful dress, especially for women, is recommended in this conservative society."},
+                                      "Mauritanian Ouguiya"));
         countries.add(new CountryInfo("Mauritius",
                                       R.drawable.flagmauritius,
                                       R.drawable.mauritius,
@@ -4307,8 +4634,11 @@ public class CountryData {
                                               "26°C - 32°C, hot, humid with tropical showers",
                                               "20°C - 28°C, mild, reduced humidity",
                                               "18°C - 26°C, mild, dry with sunny spells"},
-                                      new String[]{"Dholl Puri (flatbread with split peas)", "Alouda (sweet milk drink)"},
-                                      new String[]{"Safe", "Mauritius is generally safe and known for its low crime rates, although petty crime can occasionally occur in tourist areas. The country is stable with reliable healthcare facilities. Travelers should still be cautious of natural hazards like tropical cyclones during certain months."}));
+                                      new String[]{"Dholl Puri (flatbread with split peas)",
+                                              "Alouda (sweet milk drink)"},
+                                      new String[]{"Safe",
+                                              "Mauritius is generally safe and known for its low crime rates, although petty crime can occasionally occur in tourist areas. The country is stable with reliable healthcare facilities. Travelers should still be cautious of natural hazards like tropical cyclones during certain months."},
+                                      "Mauritian Rupee"));
         countries.add(new CountryInfo("Mexico",
                                       R.drawable.flagmexico,
                                       R.drawable.mexico,
@@ -4346,8 +4676,11 @@ public class CountryData {
                                               "20°C - 35°C, hot, dry in the north, rainy in the south",
                                               "15°C - 25°C, mild, some rain in the south",
                                               "10°C - 20°C, cool, mostly dry with clear skies"},
-                                      new String[]{"Tacos", "Tequila"},
-                                      new String[]{"OK", "Mexico has diverse regions, some with higher crime rates, particularly in the northern border areas and certain tourist hotspots. Travelers should stay aware of local advisories and take care in urban areas. Health infrastructure is generally good in larger cities and tourist areas, but take care with food and water is recommended to avoid illness."}));
+                                      new String[]{"Tacos",
+                                              "Tequila"},
+                                      new String[]{"OK",
+                                              "Mexico has diverse regions, some with higher crime rates, particularly in the northern border areas and certain tourist hotspots. Travelers should stay aware of local advisories and take care in urban areas. Health infrastructure is generally good in larger cities and tourist areas, but take care with food and water is recommended to avoid illness."},
+                                      "Mexican Peso"));
         countries.add(new CountryInfo("Micronesia",
                                       R.drawable.flagmicronesia,
                                       R.drawable.micronesia,
@@ -4385,8 +4718,11 @@ public class CountryData {
                                               "27°C - 32°C, hot, high humidity with rain",
                                               "26°C - 31°C, warm, heavy rainfall",
                                               "25°C - 30°C, warm, occasional showers and breezy"},
-                                      new String[]{"Taro and Coconut Dishes", "Coconut Water"},
-                                      new String[]{"OK", "Micronesia is relatively safe but faces natural hazards like typhoons. Travelers should be aware of limited medical facilities, especially on smaller islands. Local customs are conservative, so respect is important. Crime rates are low, but standard travel safeguards are advised."}));
+                                      new String[]{"Taro and Coconut Dishes",
+                                              "Coconut Water"},
+                                      new String[]{"OK",
+                                              "Micronesia is relatively safe but faces natural hazards like typhoons. Travelers should be aware of limited medical facilities, especially on smaller islands. Local customs are conservative, so respect is important. Crime rates are low, but standard travel safeguards are advised."},
+                                      "United States Dollar"));
         countries.add(new CountryInfo("Moldova",
                                       R.drawable.flagmoldova,
                                       R.drawable.moldova,
@@ -4424,8 +4760,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, mostly sunny",
                                               "15°C - 25°C, mild, some rain",
                                               "0°C - 10°C, cold, cloudy with snow"},
-                                      new String[]{"Mamaliga (cornmeal porridge)", "Rachiu (fruit brandy)"},
-                                      new String[]{"OK", "Moldova is generally safe for tourists, though some political tensions exist in the Transnistria region. Petty theft can occur in urban areas, so travelers should be cautious. Healthcare is available but limited in rural areas, so comprehensive travel insurance is recommended."}));
+                                      new String[]{"Mamaliga (cornmeal porridge)",
+                                              "Rachiu (fruit brandy)"},
+                                      new String[]{"OK",
+                                              "Moldova is generally safe for tourists, though some political tensions exist in the Transnistria region. Petty theft can occur in urban areas, so travelers should be cautious. Healthcare is available but limited in rural areas, so comprehensive travel insurance is recommended."},
+                                      "Moldovan Leu"));
         countries.add(new CountryInfo("Monaco",
                                       R.drawable.flagmonaco,
                                       R.drawable.monaco,
@@ -4463,8 +4802,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, dry and sunny",
                                               "15°C - 25°C, mild, occasional rain showers",
                                               "5°C - 15°C, cool, rainy with clear skies"},
-                                      new String[]{"Barbajuan (stuffed pastry)", "Champagne"},
-                                      new String[]{"Safe", "Monaco is a very safe destination with extremely low crime rates. The city-state has excellent healthcare facilities and is politically stable. Basic travel safeguards are recommended to avoid petty theft in crowded tourist areas."}));
+                                      new String[]{"Barbajuan (stuffed pastry)",
+                                              "Champagne"},
+                                      new String[]{"Safe",
+                                              "Monaco is a very safe destination with extremely low crime rates. The city-state has excellent healthcare facilities and is politically stable. Basic travel safeguards are recommended to avoid petty theft in crowded tourist areas."},
+                                      "Euro"));
         countries.add(new CountryInfo("Mongolia",
                                       R.drawable.flagmongolia,
                                       R.drawable.mongolia,
@@ -4502,8 +4844,11 @@ public class CountryData {
                                               "15°C - 25°C, warm, sunny and dry",
                                               "5°C - 20°C, cool, dry with some rain",
                                               "-20°C - 0°C, extremely cold, dry with snow"},
-                                      new String[]{"Buuz (steamed dumplings)", "Airag (fermented mare's milk)"},
-                                      new String[]{"OK", "Mongolia is generally safe, though travelers should be aware of harsh weather conditions and vast distances between urban centers. Crime rates are low, but petty theft can occur. Medical facilities are limited outside of Ulaanbaatar, so health insurance is advised."}));
+                                      new String[]{"Buuz (steamed dumplings)",
+                                              "Airag (fermented mare's milk)"},
+                                      new String[]{"OK",
+                                              "Mongolia is generally safe, though travelers should be aware of harsh weather conditions and vast distances between urban centers. Crime rates are low, but petty theft can occur. Medical facilities are limited outside of Ulaanbaatar, so health insurance is advised."},
+                                      "Mongolian Tögrög"));
         countries.add(new CountryInfo("Montenegro",
                                       R.drawable.flagmontenegro,
                                       R.drawable.montenegro,
@@ -4541,8 +4886,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, mostly sunny",
                                               "15°C - 25°C, mild, partly cloudy with rain",
                                               "0°C - 10°C, cool, wet with occasional snow"},
-                                      new String[]{"Cevapi (grilled meat)", "Rakija (fruit brandy)"},
-                                      new String[]{"Safe", "Montenegro is safe with low crime rates, although travelers should take standard safeguards in tourist areas. The healthcare system is adequate in larger towns. Political stability and beautiful natural scenery make it a popular travel destination."}));
+                                      new String[]{"Cevapi (grilled meat)",
+                                              "Rakija (fruit brandy)"},
+                                      new String[]{"Safe",
+                                              "Montenegro is safe with low crime rates, although travelers should take standard safeguards in tourist areas. The healthcare system is adequate in larger towns. Political stability and beautiful natural scenery make it a popular travel destination."},
+                                      "Euro"));
         countries.add(new CountryInfo("Morocco",
                                       R.drawable.flagmorocco,
                                       R.drawable.morocco,
@@ -4580,8 +4928,11 @@ public class CountryData {
                                               "20°C - 35°C, hot, dry with desert winds",
                                               "15°C - 25°C, mild, mostly sunny",
                                               "5°C - 15°C, cool, rainy with clear skies"},
-                                      new String[]{"Tagine", "Mint Tea"},
-                                      new String[]{"OK", "Morocco is generally safe, though some areas, particularly Western Sahara, take care. Petty crime can occur in crowded areas, so travelers should keep valuables secure. Healthcare is available in larger cities, and visitors should respect local customs, especially in rural and conservative areas."}));
+                                      new String[]{"Tagine",
+                                              "Mint Tea"},
+                                      new String[]{"OK",
+                                              "Morocco is generally safe, though some areas, particularly Western Sahara, take care. Petty crime can occur in crowded areas, so travelers should keep valuables secure. Healthcare is available in larger cities, and visitors should respect local customs, especially in rural and conservative areas."},
+                                      "Moroccan Dirham"));
         countries.add(new CountryInfo("Mozambique",
                                       R.drawable.flagmozambique,
                                       R.drawable.mozambique,
@@ -4619,8 +4970,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, rainy with humidity",
                                               "20°C - 30°C, mild, dry with sunny days",
                                               "15°C - 25°C, cool, mostly dry and clear"},
-                                      new String[]{"Piri Piri Chicken", "Maheu (fermented corn drink)"},
-                                      new String[]{"Dangerous", "Mozambique faces security issues in certain northern regions due to insurgent activity. Travelers are advised to avoid these areas and exercise caution throughout the country. Health risks, including malaria, are present, and comprehensive travel insurance is recommended."}));
+                                      new String[]{"Piri Piri Chicken",
+                                              "Maheu (fermented corn drink)"},
+                                      new String[]{"Dangerous",
+                                              "Mozambique faces security issues in certain northern regions due to insurgent activity. Travelers are advised to avoid these areas and exercise caution throughout the country. Health risks, including malaria, are present, and comprehensive travel insurance is recommended."},
+                                      "Mozambican Metical"));
         countries.add(new CountryInfo("Myanmar",
                                       R.drawable.flagmyanmar,
                                       R.drawable.myanmar,
@@ -4658,8 +5012,11 @@ public class CountryData {
                                               "30°C - 40°C, very hot, humid with rain",
                                               "25°C - 35°C, warm, heavy monsoon rains",
                                               "20°C - 30°C, warm, drier with cool nights"},
-                                      new String[]{"Mohinga (fish noodle soup)", "Tea Leaf Salad"},
-                                      new String[]{"Dangerous", "Myanmar has significant security concerns due to political instability and civil unrest. Certain regions, especially near the borders, are unsafe. Travelers should stay informed on local advisories and take care. Healthcare is limited, especially in rural areas."}));
+                                      new String[]{"Mohinga (fish noodle soup)",
+                                              "Tea Leaf Salad"},
+                                      new String[]{"Dangerous",
+                                              "Myanmar has significant security concerns due to political instability and civil unrest. Certain regions, especially near the borders, are unsafe. Travelers should stay informed on local advisories and take care. Healthcare is limited, especially in rural areas."},
+                                      "Burmese Kyat"));
         countries.add(new CountryInfo("Namibia",
                                       R.drawable.flagnamibia,
                                       R.drawable.namibia,
@@ -4697,8 +5054,11 @@ public class CountryData {
                                               "20°C - 30°C, hot, dry and sunny",
                                               "15°C - 25°C, mild, dry and windy",
                                               "10°C - 20°C, cool, dry with sunny days"},
-                                      new String[]{"Biltong", "Windhoek Lager"},
-                                      new String[]{"Safe", "Namibia is generally safe with low crime rates, though petty theft can occur in urban areas. Travelers should take care in the desert regions due to extreme temperatures. The healthcare system is good in cities but limited in rural areas."}));
+                                      new String[]{"Biltong",
+                                              "Windhoek Lager"},
+                                      new String[]{"Safe",
+                                              "Namibia is generally safe with low crime rates, though petty theft can occur in urban areas. Travelers should take care in the desert regions due to extreme temperatures. The healthcare system is good in cities but limited in rural areas."},
+                                      "Namibian Dollar"));
         countries.add(new CountryInfo("Nauru",
                                       R.drawable.flagnauru,
                                       R.drawable.nauru,
@@ -4736,8 +5096,11 @@ public class CountryData {
                                               "25°C - 32°C, hot, humid with rain showers",
                                               "25°C - 30°C, warm, frequent tropical showers",
                                               "24°C - 30°C, mild, drier with breezy weather"},
-                                      new String[]{"Coconut Fish", "Coconut Water"},
-                                      new String[]{"OK", "Nauru is safe for travelers, though healthcare facilities are limited. Basic travel safeguards are advised, as natural hazards like droughts can impact the island. Respect for local customs is encouraged, and visitors should plan for limited tourist infrastructure."}));
+                                      new String[]{"Coconut Fish",
+                                              "Coconut Water"},
+                                      new String[]{"OK",
+                                              "Nauru is safe for travelers, though healthcare facilities are limited. Basic travel safeguards are advised, as natural hazards like droughts can impact the island. Respect for local customs is encouraged, and visitors should plan for limited tourist infrastructure."},
+                                      "Australian Dollar"));
         countries.add(new CountryInfo("Nepal",
                                       R.drawable.flagnepal,
                                       R.drawable.nepal,
@@ -4775,8 +5138,11 @@ public class CountryData {
                                               "20°C - 35°C, warm, monsoon rains",
                                               "15°C - 25°C, mild, post-monsoon with clear skies",
                                               "5°C - 15°C, cool, dry and sunny"},
-                                      new String[]{"Dal Bhat (lentils and rice)", "Chiya (Nepali tea)"},
-                                      new String[]{"OK", "Nepal is generally safe, though travelers should be prepared for potential natural hazards like earthquakes and avalanches. Crime is low, but caution is advised in crowded areas. Healthcare is limited in rural regions, so travel insurance is recommended."}));
+                                      new String[]{"Dal Bhat (lentils and rice)",
+                                              "Chiya (Nepali tea)"},
+                                      new String[]{"OK",
+                                              "Nepal is generally safe, though travelers should be prepared for potential natural hazards like earthquakes and avalanches. Crime is low, but caution is advised in crowded areas. Healthcare is limited in rural regions, so travel insurance is recommended."},
+                                      "Nepalese Rupee"));
         countries.add(new CountryInfo("Netherlands",
                                       R.drawable.flagnetherlands,
                                       R.drawable.netherlands,
@@ -4814,8 +5180,11 @@ public class CountryData {
                                               "15°C - 25°C, warm, mostly sunny with some rain",
                                               "10°C - 20°C, mild, partly cloudy",
                                               "0°C - 10°C, cold, frequent rain and some snow"},
-                                      new String[]{"Stroopwafel", "Heineken Beer"},
-                                      new String[]{"Safe", "The Netherlands is a very safe country, though petty theft can occur in crowded areas. The healthcare system is excellent, and the country is politically stable. Travelers should still practice basic safety measures in busy tourist spots."}));
+                                      new String[]{"Stroopwafel",
+                                              "Heineken Beer"},
+                                      new String[]{"Safe",
+                                              "The Netherlands is a very safe country, though petty theft can occur in crowded areas. The healthcare system is excellent, and the country is politically stable. Travelers should still practice basic safety measures in busy tourist spots."},
+                                      "Euro"));
         countries.add(new CountryInfo("New Zealand",
                                       R.drawable.flagnewzealand,
                                       R.drawable.newzealand,
@@ -4853,8 +5222,11 @@ public class CountryData {
                                               "10°C - 20°C, cool, rainy with cloudy days",
                                               "10°C - 20°C, mild, occasional rain",
                                               "5°C - 15°C, cool, frequent rain and clear spells"},
-                                      new String[]{"Hangi (Maori feast)", "Flat White (coffee)"},
-                                      new String[]{"Safe", "New Zealand is a safe destination with low crime rates and excellent healthcare facilities. However, travelers should be cautious in natural areas due to volcanic and seismic activity. Respect for local Maori customs is appreciated, and outdoor safety is emphasized."}));
+                                      new String[]{"Hangi (Maori feast)",
+                                              "Flat White (coffee)"},
+                                      new String[]{"Safe",
+                                              "New Zealand is a safe destination with low crime rates and excellent healthcare facilities. However, travelers should be cautious in natural areas due to volcanic and seismic activity. Respect for local Maori customs is appreciated, and outdoor safety is emphasized."},
+                                      "New Zealand Dollar"));
         countries.add(new CountryInfo("Nicaragua",
                                       R.drawable.flagnicaragua,
                                       R.drawable.nicaragua,
@@ -4892,8 +5264,11 @@ public class CountryData {
                                               "27°C - 32°C, hot, humid with thunderstorms",
                                               "25°C - 30°C, warm, frequent rain",
                                               "23°C - 28°C, mild, drier with breezy weather"},
-                                      new String[]{"Gallo Pinto (rice and beans)", "Pinolillo (corn and cocoa drink)"},
-                                      new String[]{"OK", "Nicaragua is generally safe for travelers, though some political unrest can occur. Petty crime is common in urban areas, so travelers should keep valuables secure. The healthcare system is basic outside the main cities, so travel insurance is recommended. Natural hazards like hurricanes are also a consideration, especially on the Caribbean coast."}));
+                                      new String[]{"Gallo Pinto (rice and beans)",
+                                              "Pinolillo (corn and cocoa drink)"},
+                                      new String[]{"OK",
+                                              "Nicaragua is generally safe for travelers, though some political unrest can occur. Petty crime is common in urban areas, so travelers should keep valuables secure. The healthcare system is basic outside the main cities, so travel insurance is recommended. Natural hazards like hurricanes are also a consideration, especially on the Caribbean coast."},
+                                      "Nicaraguan Córdoba"));
         countries.add(new CountryInfo("Niger",
                                       R.drawable.flagniger,
                                       R.drawable.niger,
@@ -4931,8 +5306,11 @@ public class CountryData {
                                               "30°C - 40°C, very hot, dry and sunny",
                                               "25°C - 35°C, warm, dry and dusty",
                                               "20°C - 30°C, mild, dry with clear skies"},
-                                      new String[]{"Djerma Millet Stew", "Ginger Drink"},
-                                      new String[]{"OK", "Niger has a moderate security risk, primarily due to terrorism in some areas and political unrest. Visitors should take care, especially in border areas. Petty crime is a concern in urban areas, and healthcare facilities are limited outside major cities. Extreme heat is common, so staying hydrated and cautious of the climate is recommended."}));
+                                      new String[]{"Djerma Millet Stew",
+                                              "Ginger Drink"},
+                                      new String[]{"OK",
+                                              "Niger has a moderate security risk, primarily due to terrorism in some areas and political unrest. Visitors should take care, especially in border areas. Petty crime is a concern in urban areas, and healthcare facilities are limited outside major cities. Extreme heat is common, so staying hydrated and cautious of the climate is recommended."},
+                                      "West African CFA Franc"));
         countries.add(new CountryInfo("Nigeria",
                                       R.drawable.flagnigeria,
                                       R.drawable.nigeria,
@@ -4970,8 +5348,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, humid with rain",
                                               "25°C - 30°C, warm, heavy rainfall",
                                               "23°C - 28°C, mild, drier with sunny spells"},
-                                      new String[]{"Jollof Rice", "Palm Wine"},
-                                      new String[]{"Dangerous", "Nigeria faces security challenges due to terrorism, kidnappings, and armed robberies, particularly in the northeastern and central regions. Urban crime is prevalent in major cities like Lagos and Abuja. Political tensions and ethnic disputes can also pose risks. Visitors are advised to stay vigilant and avoid high-risk areas."}));
+                                      new String[]{"Jollof Rice",
+                                              "Palm Wine"},
+                                      new String[]{"Dangerous",
+                                              "Nigeria faces security challenges due to terrorism, kidnappings, and armed robberies, particularly in the northeastern and central regions. Urban crime is prevalent in major cities like Lagos and Abuja. Political tensions and ethnic disputes can also pose risks. Visitors are advised to stay vigilant and avoid high-risk areas."},
+                                      "Nigerian Naira"));
         countries.add(new CountryInfo("North Korea",
                                       R.drawable.flagnorthkorea,
                                       R.drawable.northkorea,
@@ -5009,8 +5390,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, humid with frequent rain",
                                               "10°C - 20°C, mild, occasional rain and cloudy",
                                               "-10°C - 5°C, cold, dry with heavy snowfall in northern regions"},
-                                      new String[]{"Naengmyeon (cold noodles)", "Soju"},
-                                      new String[]{"Dangerous", "North Korea is a highly restricted and controlled environment for foreign visitors. Movement is strictly limited, and tourists are constantly monitored. Political tensions with other countries and strict adherence to local laws and customs are paramount; even minor infractions can lead to serious consequences. Healthcare facilities are limited, and natural disasters like floods occasionally affect the region."}));
+                                      new String[]{"Naengmyeon (cold noodles)",
+                                              "Soju"},
+                                      new String[]{"Dangerous",
+                                              "North Korea is a highly restricted and controlled environment for foreign visitors. Movement is strictly limited, and tourists are constantly monitored. Political tensions with other countries and strict adherence to local laws and customs are paramount; even minor infractions can lead to serious consequences. Healthcare facilities are limited, and natural disasters like floods occasionally affect the region."},
+                                      "North Korean Won"));
         countries.add(new CountryInfo("North Macedonia",
                                       R.drawable.flagnorthmacedonia,
                                       R.drawable.northmacedonia,
@@ -5048,8 +5432,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, sunny and dry",
                                               "15°C - 25°C, mild, occasional rain",
                                               "0°C - 10°C, cool, wet with some snow"},
-                                      new String[]{"Tavče Gravče (bean stew)", "Rakija (fruit brandy)"},
-                                      new String[]{"Safe", "North Macedonia is generally safe for tourists, with low crime rates. Petty theft can occur, especially in crowded places, so visitors should secure their belongings. Political protests are generally peaceful but best avoided. Natural hazards like earthquakes are rare but possible."}));
+                                      new String[]{"Tavče Gravče (bean stew)",
+                                              "Rakija (fruit brandy)"},
+                                      new String[]{"Safe",
+                                              "North Macedonia is generally safe for tourists, with low crime rates. Petty theft can occur, especially in crowded places, so visitors should secure their belongings. Political protests are generally peaceful but best avoided. Natural hazards like earthquakes are rare but possible."},
+                                      "Macedonian Denar"));
         countries.add(new CountryInfo("Norway",
                                       R.drawable.flagnorway,
                                       R.drawable.norway,
@@ -5087,8 +5474,11 @@ public class CountryData {
                                               "10°C - 25°C, mild, sunny with occasional rain",
                                               "5°C - 15°C, cool, partly cloudy",
                                               "-10°C - 5°C, cold, snowy and windy"},
-                                      new String[]{"Lutefisk", "Aquavit"},
-                                      new String[]{"Safe", "Norway is one of the safest countries globally, with low crime rates and an efficient public security system. Visitors can generally travel freely, though weather-related challenges in winter may affect some areas. Norwegian customs are relaxed, and healthcare facilities are widely accessible and advanced."}));
+                                      new String[]{"Lutefisk",
+                                              "Aquavit"},
+                                      new String[]{"Safe",
+                                              "Norway is one of the safest countries globally, with low crime rates and an efficient public security system. Visitors can generally travel freely, though weather-related challenges in winter may affect some areas. Norwegian customs are relaxed, and healthcare facilities are widely accessible and advanced."},
+                                      "Norwegian Krone"));
         countries.add(new CountryInfo("Oman",
                                       R.drawable.flagoman,
                                       R.drawable.oman,
@@ -5126,8 +5516,11 @@ public class CountryData {
                                               "30°C - 40°C, very hot and dry",
                                               "25°C - 35°C, warm, occasional rain",
                                               "15°C - 25°C, cool, dry and clear skies"},
-                                      new String[]{"Shuwa (slow-cooked lamb)", "Qahwa (Omani coffee)"},
-                                      new String[]{"Safe", "Oman is a safe and welcoming country with low crime rates. The country values respect for its customs and culture, so modest dress is advised. Healthcare is of a high standard, especially in cities. Tourists are generally well received, and hospitality is integral to Omani culture."}));
+                                      new String[]{"Shuwa (slow-cooked lamb)",
+                                              "Qahwa (Omani coffee)"},
+                                      new String[]{"Safe",
+                                              "Oman is a safe and welcoming country with low crime rates. The country values respect for its customs and culture, so modest dress is advised. Healthcare is of a high standard, especially in cities. Tourists are generally well received, and hospitality is integral to Omani culture."},
+                                      "Omani Rial"));
         countries.add(new CountryInfo("Pakistan",
                                       R.drawable.flagpakistan,
                                       R.drawable.pakistan,
@@ -5165,8 +5558,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, dry with occasional rain",
                                               "15°C - 25°C, warm, rainy season with high humidity",
                                               "5°C - 15°C, cool, dry with snowfall in northern regions"},
-                                      new String[]{"Biryani", "Lassi"},
-                                      new String[]{"OK", "Pakistan has areas of varying security risks. While major cities like Islamabad and Lahore are generally safe, regions near the Afghan border have heightened risks. Visitors should be cautious and stay updated on local advisories. Healthcare facilities vary in quality, and travelers should be aware of customs and conservative social norms."}));
+                                      new String[]{"Biryani",
+                                              "Lassi"},
+                                      new String[]{"OK",
+                                              "Pakistan has areas of varying security risks. While major cities like Islamabad and Lahore are generally safe, regions near the Afghan border have heightened risks. Visitors should be cautious and stay updated on local advisories. Healthcare facilities vary in quality, and travelers should be aware of customs and conservative social norms."},
+                                      "Pakistani Rupee"));
         countries.add(new CountryInfo("Palau",
                                       R.drawable.flagpalau,
                                       R.drawable.palau,
@@ -5204,8 +5600,11 @@ public class CountryData {
                                               "28°C - 32°C, hot, frequent rain and thunderstorms",
                                               "25°C - 30°C, warm, high humidity and rainfall",
                                               "24°C - 29°C, warm, moderate rainfall"},
-                                      new String[]{"Taro", "Coconut Milk"},
-                                      new String[]{"Safe", "Palau is very safe for visitors, with low crime rates and a friendly environment. As an island nation, natural hazards like tropical storms can occasionally occur. Healthcare facilities are limited, so travel insurance is recommended. Customs and local laws are relaxed but respectful of traditions."}));
+                                      new String[]{"Taro",
+                                              "Coconut Milk"},
+                                      new String[]{"Safe",
+                                              "Palau is very safe for visitors, with low crime rates and a friendly environment. As an island nation, natural hazards like tropical storms can occasionally occur. Healthcare facilities are limited, so travel insurance is recommended. Customs and local laws are relaxed but respectful of traditions."},
+                                      "United States Dollar"));
         countries.add(new CountryInfo("Panama",
                                       R.drawable.flagpanama,
                                       R.drawable.panama,
@@ -5243,8 +5642,11 @@ public class CountryData {
                                               "25°C - 32°C, hot, rainy season",
                                               "23°C - 30°C, warm, high rainfall",
                                               "23°C - 28°C, mild, drier season with sunny days"},
-                                      new String[]{"Sancocho (chicken soup)", "Seco (sugarcane spirit)"},
-                                      new String[]{"Safe", "Panama is generally safe, especially in tourist areas. Petty theft can be a concern, so tourists should remain vigilant with valuables. Health facilities are accessible in urban areas, though travel insurance is recommended. The local climate is tropical, and visitors should be mindful of seasonal rains."}));
+                                      new String[]{"Sancocho (chicken soup)",
+                                              "Seco (sugarcane spirit)"},
+                                      new String[]{"Safe",
+                                              "Panama is generally safe, especially in tourist areas. Petty theft can be a concern, so tourists should remain vigilant with valuables. Health facilities are accessible in urban areas, though travel insurance is recommended. The local climate is tropical, and visitors should be mindful of seasonal rains."},
+                                      "Panamanian Balboa"));
         countries.add(new CountryInfo("Papua New Guinea",
                                       R.drawable.flagpapuanewguinea,
                                       R.drawable.papuanewguinea,
@@ -5282,8 +5684,11 @@ public class CountryData {
                                               "24°C - 32°C, hot, high humidity and rainfall",
                                               "22°C - 30°C, warm, frequent rain and thunderstorms",
                                               "20°C - 28°C, warm, drier season"},
-                                      new String[]{"Mumu (roasted meat and vegetables)", "Coconut Milk"},
-                                      new String[]{"OK", "Papua New Guinea has areas with elevated crime rates, especially in Port Moresby. Cultural diversity is significant, and visitors should respect local customs. Natural hazards include earthquakes and tropical storms. Travelers are advised to take care and take health safeguards."}));
+                                      new String[]{"Mumu (roasted meat and vegetables)",
+                                              "Coconut Milk"},
+                                      new String[]{"OK",
+                                              "Papua New Guinea has areas with elevated crime rates, especially in Port Moresby. Cultural diversity is significant, and visitors should respect local customs. Natural hazards include earthquakes and tropical storms. Travelers are advised to take care and take health safeguards."},
+                                      "Papua New Guinean Kina"));
         countries.add(new CountryInfo("Paraguay",
                                       R.drawable.flagparaguay,
                                       R.drawable.paraguay,
@@ -5321,8 +5726,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, dry with occasional rain",
                                               "20°C - 30°C, mild, rainy season",
                                               "15°C - 25°C, cool, dry and clear skies"},
-                                      new String[]{"Asado (barbecue)", "Tereré (cold yerba mate)"},
-                                      new String[]{"OK", "Paraguay is relatively safe, though petty crime like pickpocketing is common in urban areas. Political stability is generally high, though occasional protests may occur. Healthcare is basic outside Asunción, so travelers should have insurance. The climate varies, with hot summers and mild winters."}));
+                                      new String[]{"Asado (barbecue)",
+                                              "Tereré (cold yerba mate)"},
+                                      new String[]{"OK",
+                                              "Paraguay is relatively safe, though petty crime like pickpocketing is common in urban areas. Political stability is generally high, though occasional protests may occur. Healthcare is basic outside Asunción, so travelers should have insurance. The climate varies, with hot summers and mild winters."},
+                                      "Paraguayan Guaraní"));
         countries.add(new CountryInfo("Peru",
                                       R.drawable.flagperu,
                                       R.drawable.peru,
@@ -5360,8 +5768,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, high humidity",
                                               "15°C - 25°C, mild with rain",
                                               "5°C - 15°C, cool, dry in highlands, rainy in the Amazon"},
-                                      new String[]{"Ceviche", "Pisco Sour"},
-                                      new String[]{"OK", "Peru is generally safe, though petty crime is common in tourist areas like Lima and Cusco. Visitors should remain cautious with personal belongings. High-altitude regions like Cusco can cause altitude sickness, and healthcare facilities vary in quality. Visitors should be respectful of indigenous customs and traditions."}));
+                                      new String[]{"Ceviche",
+                                              "Pisco Sour"},
+                                      new String[]{"OK",
+                                              "Peru is generally safe, though petty crime is common in tourist areas like Lima and Cusco. Visitors should remain cautious with personal belongings. High-altitude regions like Cusco can cause altitude sickness, and healthcare facilities vary in quality. Visitors should be respectful of indigenous customs and traditions."},
+                                      "Peruvian Sol"));
         countries.add(new CountryInfo("Philippines",
                                       R.drawable.flagphilippines,
                                       R.drawable.phillippines,
@@ -5399,8 +5810,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, high humidity",
                                               "23°C - 30°C, warm, rainy season with typhoons",
                                               "20°C - 28°C, mild, occasional rain and cooler"},
-                                      new String[]{"Adobo", "Buko (coconut water)"},
-                                      new String[]{"OK", "The Philippines is generally safe for tourists, though certain regions in Mindanao have security risks due to insurgencies. Petty crime is common in cities, so vigilance is recommended. Healthcare is accessible in urban centers, and travelers should be aware of tropical storms during the rainy season."}));
+                                      new String[]{"Adobo",
+                                              "Buko (coconut water)"},
+                                      new String[]{"OK",
+                                              "The Philippines is generally safe for tourists, though certain regions in Mindanao have security risks due to insurgencies. Petty crime is common in cities, so vigilance is recommended. Healthcare is accessible in urban centers, and travelers should be aware of tropical storms during the rainy season."},
+                                      "Phiippine Peso"));
         countries.add(new CountryInfo("Poland",
                                       R.drawable.flagpoland,
                                       R.drawable.poland,
@@ -5438,8 +5852,11 @@ public class CountryData {
                                               "10°C - 20°C, mild, partly cloudy",
                                               "15°C - 25°C, warm, mostly sunny",
                                               "0°C - 10°C, cool, cloudy with rain"},
-                                      new String[]{"Pierogi", "Żubrówka (bison grass vodka)"},
-                                      new String[]{"Safe", "Poland is a safe country with low crime rates. Petty theft can occur in crowded places, so securing valuables is advisable. Political gatherings are generally peaceful. Healthcare is widely available, and the cultural landscape is welcoming to tourists."}));
+                                      new String[]{"Pierogi",
+                                              "Żubrówka (bison grass vodka)"},
+                                      new String[]{"Safe",
+                                              "Poland is a safe country with low crime rates. Petty theft can occur in crowded places, so securing valuables is advisable. Political gatherings are generally peaceful. Healthcare is widely available, and the cultural landscape is welcoming to tourists."},
+                                      "Polish Złoty"));
         countries.add(new CountryInfo("Portugal",
                                       R.drawable.flagportgual,
                                       R.drawable.portugal,
@@ -5477,8 +5894,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, dry and sunny",
                                               "15°C - 25°C, mild, occasional rain",
                                               "5°C - 15°C, cool, rainy and overcast"},
-                                      new String[]{"Bacalhau (codfish)", "Port Wine"},
-                                      new String[]{"Safe", "Portugal is very safe for travelers, with a low crime rate. Petty crime like pickpocketing can happen in tourist spots, so caution is advised. Healthcare is reliable, especially in urban areas, and the climate is mild, making it an ideal travel destination."}));
+                                      new String[]{"Bacalhau (codfish)",
+                                              "Port Wine"},
+                                      new String[]{"Safe",
+                                              "Portugal is very safe for travelers, with a low crime rate. Petty crime like pickpocketing can happen in tourist spots, so caution is advised. Healthcare is reliable, especially in urban areas, and the climate is mild, making it an ideal travel destination."},
+                                      "Euro"));
         countries.add(new CountryInfo("Qatar",
                                       R.drawable.flagqatar,
                                       R.drawable.qatar,
@@ -5516,8 +5936,11 @@ public class CountryData {
                                               "30°C - 45°C, extremely hot and dry",
                                               "28°C - 38°C, hot, dry season",
                                               "18°C - 25°C, mild, clear skies and dry"},
-                                      new String[]{"Machboos (spiced rice and meat)", "Karak Tea"},
-                                      new String[]{"Safe", "Qatar is a safe country with low crime rates, though visitors should respect local customs, particularly around dress and public behavior. Healthcare facilities are excellent, especially in Doha. Tourists are generally welcomed, though take care during hot summers."}));
+                                      new String[]{"Machboos (spiced rice and meat)",
+                                              "Karak Tea"},
+                                      new String[]{"Safe",
+                                              "Qatar is a safe country with low crime rates, though visitors should respect local customs, particularly around dress and public behavior. Healthcare facilities are excellent, especially in Doha. Tourists are generally welcomed, though take care during hot summers."},
+                                      "Qatari Riyal"));
         countries.add(new CountryInfo("Romania",
                                       R.drawable.flagromania,
                                       R.drawable.romania,
@@ -5555,8 +5978,11 @@ public class CountryData {
                                               "10°C - 20°C, mild, partly cloudy",
                                               "15°C - 25°C, warm, mostly sunny",
                                               "0°C - 10°C, cool, rain and cloudy"},
-                                      new String[]{"Sarmale (stuffed cabbage rolls)", "Țuică (plum brandy)"},
-                                      new String[]{"Safe", "Romania is safe, with low crime rates in most areas. Visitors should be cautious of petty crime in busy tourist spots. Healthcare is widely accessible, though rural areas may have fewer facilities. Romanian culture is warm and welcoming to tourists."}));
+                                      new String[]{"Sarmale (stuffed cabbage rolls)",
+                                              "Țuică (plum brandy)"},
+                                      new String[]{"Safe",
+                                              "Romania is safe, with low crime rates in most areas. Visitors should be cautious of petty crime in busy tourist spots. Healthcare is widely accessible, though rural areas may have fewer facilities. Romanian culture is warm and welcoming to tourists."},
+                                      "Romanian Leu"));
         countries.add(new CountryInfo("Russia",
                                       R.drawable.flagrussia,
                                       R.drawable.russia,
@@ -5594,8 +6020,11 @@ public class CountryData {
                                               "5°C - 20°C, mild, clear skies in some areas",
                                               "10°C - 25°C, warm, sunny in most regions",
                                               "-15°C - 0°C, cold, snow in most areas"},
-                                      new String[]{"Borscht", "Vodka"},
-                                      new String[]{"OK", "Russia has regions with varying security levels, though major cities like Moscow and St. Petersburg are relatively safe. Political tensions and natural hazards like extreme winters can pose risks. Healthcare is available in cities, but travelers should take care and respect local laws."}));
+                                      new String[]{"Borscht",
+                                              "Vodka"},
+                                      new String[]{"OK",
+                                              "Russia has regions with varying security levels, though major cities like Moscow and St. Petersburg are relatively safe. Political tensions and natural hazards like extreme winters can pose risks. Healthcare is available in cities, but travelers should take care and respect local laws."},
+                                      "Russian Ruble"));
         countries.add(new CountryInfo("Rwanda",
                                       R.drawable.flagrwanda,
                                       R.drawable.rwanda,
@@ -5633,8 +6062,11 @@ public class CountryData {
                                               "20°C - 28°C, warm, high humidity with rain",
                                               "18°C - 26°C, warm, rainy season",
                                               "15°C - 25°C, mild, dry season"},
-                                      new String[]{"Brochettes (meat skewers)", "Urwagwa (banana beer)"},
-                                      new String[]{"Safe", "Rwanda is known for its safety and cleanliness. Crime rates are low, though travelers should be cautious of petty theft. Healthcare is limited outside Kigali, so travel insurance is recommended. The country is politically stable and highly welcoming to visitors."}));
+                                      new String[]{"Brochettes (meat skewers)",
+                                              "Urwagwa (banana beer)"},
+                                      new String[]{"Safe",
+                                              "Rwanda is known for its safety and cleanliness. Crime rates are low, though travelers should be cautious of petty theft. Healthcare is limited outside Kigali, so travel insurance is recommended. The country is politically stable and highly welcoming to visitors."},
+                                      "Rwandan Franc"));
         countries.add(new CountryInfo("Saint Kitts and Nevis",
                                       R.drawable.flagsaintkittsandnevis,
                                       R.drawable.saintkittsandnevis,
@@ -5672,8 +6104,11 @@ public class CountryData {
                                               "28°C - 32°C, hot, humid with rain",
                                               "25°C - 30°C, warm, high humidity",
                                               "24°C - 29°C, warm, dry season with clear skies"},
-                                      new String[]{"Goat Water (stew)", "Rum Punch"},
-                                      new String[]{"Safe", "Saint Kitts and Nevis is safe with low crime rates. The island nation is prone to hurricanes, especially from June to November. Healthcare facilities are basic, so travel insurance is recommended. Visitors are welcomed, and the atmosphere is laid-back and friendly."}));
+                                      new String[]{"Goat Water (stew)",
+                                              "Rum Punch"},
+                                      new String[]{"Safe",
+                                              "Saint Kitts and Nevis is safe with low crime rates. The island nation is prone to hurricanes, especially from June to November. Healthcare facilities are basic, so travel insurance is recommended. Visitors are welcomed, and the atmosphere is laid-back and friendly."},
+                                      "Eastern Caribbean Dollar"));
         countries.add(new CountryInfo("Saint Lucia",
                                       R.drawable.flagsaintlucia,
                                       R.drawable.saintlucia,
@@ -5711,8 +6146,11 @@ public class CountryData {
                                               "28°C - 32°C, hot, humid and rainy",
                                               "25°C - 30°C, warm, occasional rain",
                                               "24°C - 28°C, mild, dry season with sunny skies"},
-                                      new String[]{"Green Fig and Saltfish", "Rum"},
-                                      new String[]{"Safe", "Saint Lucia is generally safe for tourists, with warm hospitality and a low crime rate in tourist areas. Some petty crime like theft can occur, especially in crowded places. The island experiences hurricane season from June to November, so travelers should be mindful of weather updates during these months."}));
+                                      new String[]{"Green Fig and Saltfish",
+                                              "Rum"},
+                                      new String[]{"Safe",
+                                              "Saint Lucia is generally safe for tourists, with warm hospitality and a low crime rate in tourist areas. Some petty crime like theft can occur, especially in crowded places. The island experiences hurricane season from June to November, so travelers should be mindful of weather updates during these months."},
+                                      "Eastern Caribbean Dollar"));
         countries.add(new CountryInfo("Saint Vincent and the Grenadines",
                                       R.drawable.flagsaintvincentandthegrenadines,
                                       R.drawable.saintvincentandthegrenadines,
@@ -5750,8 +6188,11 @@ public class CountryData {
                                               "28°C - 32°C, hot, humid with rain",
                                               "25°C - 30°C, warm, rainy season",
                                               "24°C - 29°C, mild, dry with clear skies"},
-                                      new String[]{"Roasted Breadfruit and Fried Jackfish", "Rum Punch"},
-                                      new String[]{"Safe", "Saint Vincent and the Grenadines is considered safe, though petty crime, such as pickpocketing, can occur in crowded places. The country is in a hurricane zone, so visitors should monitor weather forecasts, especially during hurricane season. Respect for local customs and safety safeguards in remote areas are advised."}));
+                                      new String[]{"Roasted Breadfruit and Fried Jackfish",
+                                              "Rum Punch"},
+                                      new String[]{"Safe",
+                                              "Saint Vincent and the Grenadines is considered safe, though petty crime, such as pickpocketing, can occur in crowded places. The country is in a hurricane zone, so visitors should monitor weather forecasts, especially during hurricane season. Respect for local customs and safety safeguards in remote areas are advised."},
+                                      "Eastern Caribbean Dollar"));
         countries.add(new CountryInfo("Samoa",
                                       R.drawable.flagsamoa,
                                       R.drawable.samoa,
@@ -5789,8 +6230,11 @@ public class CountryData {
                                               "28°C - 32°C, hot, high humidity and rain",
                                               "25°C - 30°C, warm, rainy season",
                                               "24°C - 28°C, warm, mostly dry season"},
-                                      new String[]{"Palusami (taro leaves with coconut cream)", "Kava"},
-                                      new String[]{"Safe", "Samoa is generally safe, with a strong emphasis on hospitality and community. Crime rates are low, though minor theft can occur in tourist areas. The islands are subject to natural hazards, including tropical cyclones during the wet season. Travelers are advised to follow safety guidelines in remote areas and respect Samoan customs."}));
+                                      new String[]{"Palusami (taro leaves with coconut cream)",
+                                              "Kava"},
+                                      new String[]{"Safe",
+                                              "Samoa is generally safe, with a strong emphasis on hospitality and community. Crime rates are low, though minor theft can occur in tourist areas. The islands are subject to natural hazards, including tropical cyclones during the wet season. Travelers are advised to follow safety guidelines in remote areas and respect Samoan customs."},
+                                      "Samoan Tālā"));
         countries.add(new CountryInfo("San Marino",
                                       R.drawable.flagsanmarino,
                                       R.drawable.sanmarino,
@@ -5828,8 +6272,11 @@ public class CountryData {
                                               "15°C - 25°C, warm, partly cloudy",
                                               "20°C - 30°C, warm, sunny with occasional rain",
                                               "0°C - 10°C, cool, cloudy with rain"},
-                                      new String[]{"Piadina (flatbread with various fillings)", "San Marino Wine"},
-                                      new String[]{"Safe", "San Marino is one of the safest countries in Europe, with a low crime rate and stable political environment. The mountainous terrain can pose risks for hikers, so travelers should take care when exploring. Respect for local customs and adherence to Italian and San Marino laws are expected."}));
+                                      new String[]{"Piadina (flatbread with various fillings)",
+                                              "San Marino Wine"},
+                                      new String[]{"Safe",
+                                              "San Marino is one of the safest countries in Europe, with a low crime rate and stable political environment. The mountainous terrain can pose risks for hikers, so travelers should take care when exploring. Respect for local customs and adherence to Italian and San Marino laws are expected."},
+                                      "Euro"));
         countries.add(new CountryInfo("São Tomé and Principe",
                                       R.drawable.flagsaotomeandprincipe,
                                       R.drawable.saotomeandprincipe,
@@ -5867,8 +6314,11 @@ public class CountryData {
                                               "25°C - 31°C, hot, rainy season with thunderstorms",
                                               "23°C - 29°C, warm, high humidity and rain",
                                               "23°C - 28°C, mild, drier season with clear skies"},
-                                      new String[]{"Calulu (fish stew with vegetables)", "Palm Wine"},
-                                      new String[]{"Safe", "São Tomé and Príncipe is generally safe, with a low crime rate and a relaxed atmosphere. Petty crime, such as theft, can occur occasionally in crowded areas. The islands are vulnerable to seasonal rains, which may cause minor flooding in some regions. Political stability is strong, and the people are welcoming to tourists."}));
+                                      new String[]{"Calulu (fish stew with vegetables)",
+                                              "Palm Wine"},
+                                      new String[]{"Safe",
+                                              "São Tomé and Príncipe is generally safe, with a low crime rate and a relaxed atmosphere. Petty crime, such as theft, can occur occasionally in crowded areas. The islands are vulnerable to seasonal rains, which may cause minor flooding in some regions. Political stability is strong, and the people are welcoming to tourists."},
+                                      "São Tomé and Príncipe Dobra"));
         countries.add(new CountryInfo("Saudi Arabia",
                                       R.drawable.flagsaudiarabia,
                                       R.drawable.saudiarabia,
@@ -5906,8 +6356,11 @@ public class CountryData {
                                               "30°C - 45°C, very hot, dry desert climate",
                                               "28°C - 40°C, hot, dry season",
                                               "20°C - 30°C, mild, dry and sunny"},
-                                      new String[]{"Kabsa (rice with meat)", "Arabic Coffee"},
-                                      new String[]{"OK", "Saudi Arabia is generally safe, but strict cultural and legal codes apply. Non-Muslims must adhere to Islamic customs, and certain behaviors, such as public displays of affection or photography of certain locations, can lead to legal issues. Some areas, particularly near Yemen, are advised against due to potential conflict."}));
+                                      new String[]{"Kabsa (rice with meat)",
+                                              "Arabic Coffee"},
+                                      new String[]{"OK",
+                                              "Saudi Arabia is generally safe, but strict cultural and legal codes apply. Non-Muslims must adhere to Islamic customs, and certain behaviors, such as public displays of affection or photography of certain locations, can lead to legal issues. Some areas, particularly near Yemen, are advised against due to potential conflict."},
+                                      "Saudi Riyal"));
         countries.add(new CountryInfo("Senegal",
                                       R.drawable.flagsenegal,
                                       R.drawable.senegal,
@@ -5945,8 +6398,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, dry with occasional rain",
                                               "23°C - 32°C, warm, rainy season with high humidity",
                                               "20°C - 28°C, mild, dry season with clear skies"},
-                                      new String[]{"Thieboudienne (fish and rice)", "Bissap (hibiscus tea)"},
-                                      new String[]{"OK", "Senegal is considered relatively safe for travelers, especially in Dakar and tourist areas. Petty crime, such as pickpocketing, can occur. Natural hazards include occasional flooding during the rainy season. Political stability is generally maintained, though protests do occur. Travelers should avoid remote border regions."}));
+                                      new String[]{"Thieboudienne (fish and rice)",
+                                              "Bissap (hibiscus tea)"},
+                                      new String[]{"OK",
+                                              "Senegal is considered relatively safe for travelers, especially in Dakar and tourist areas. Petty crime, such as pickpocketing, can occur. Natural hazards include occasional flooding during the rainy season. Political stability is generally maintained, though protests do occur. Travelers should avoid remote border regions."},
+                                      "West African CFA Franc"));
         countries.add(new CountryInfo("Serbia",
                                       R.drawable.flagserbia,
                                       R.drawable.serbia,
@@ -5984,8 +6440,11 @@ public class CountryData {
                                               "10°C - 20°C, mild, mostly sunny",
                                               "15°C - 30°C, warm, sunny with occasional rain",
                                               "0°C - 10°C, cool, cloudy with rain"},
-                                      new String[]{"Ćevapi (grilled meat)", "Rakija (fruit brandy)"},
-                                      new String[]{"OK", "Serbia is relatively safe, with vibrant cities and a welcoming atmosphere. Petty crime exists in urban areas, so tourists should stay vigilant. Political tensions may arise occasionally, particularly regarding Kosovo. In rural areas, unexploded landmines from past conflicts may be present."}));
+                                      new String[]{"Ćevapi (grilled meat)",
+                                              "Rakija (fruit brandy)"},
+                                      new String[]{"OK",
+                                              "Serbia is relatively safe, with vibrant cities and a welcoming atmosphere. Petty crime exists in urban areas, so tourists should stay vigilant. Political tensions may arise occasionally, particularly regarding Kosovo. In rural areas, unexploded landmines from past conflicts may be present."},
+                                      "Serbian Dinar"));
         countries.add(new CountryInfo("Seychelles",
                                       R.drawable.flagseychelles,
                                       R.drawable.seychelles,
@@ -6023,8 +6482,11 @@ public class CountryData {
                                               "27°C - 32°C, hot, humid with occasional rain",
                                               "25°C - 30°C, warm, high humidity and rain",
                                               "24°C - 29°C, mild, dry season with sunny skies"},
-                                      new String[]{"Grilled Fish with Creole Sauce", "Coconut Water"},
-                                      new String[]{"Safe", "Seychelles is generally safe, with low crime rates and a strong focus on eco-tourism. Some petty theft can occur in crowded areas, and visitors should be cautious on isolated beaches at night. The islands experience occasional cyclones and heavy rains. Respect for local customs and environmental preservation efforts is encouraged."}));
+                                      new String[]{"Grilled Fish with Creole Sauce",
+                                              "Coconut Water"},
+                                      new String[]{"Safe",
+                                              "Seychelles is generally safe, with low crime rates and a strong focus on eco-tourism. Some petty theft can occur in crowded areas, and visitors should be cautious on isolated beaches at night. The islands experience occasional cyclones and heavy rains. Respect for local customs and environmental preservation efforts is encouraged."},
+                                      "Seychellois Rupee"));
         countries.add(new CountryInfo("Sierra Leone",
                                       R.drawable.flagsierraleone,
                                       R.drawable.sierraleone,
@@ -6062,8 +6524,11 @@ public class CountryData {
                                               "28°C - 33°C, hot, rainy season with thunderstorms",
                                               "25°C - 30°C, warm, high humidity and rain",
                                               "24°C - 29°C, mild, drier season with clear skies"},
-                                      new String[]{"Cassava Leaves Stew", "Ginger Beer"},
-                                      new String[]{"OK", "Sierra Leone is recovering from past conflicts and is generally safe in major cities. Crime, such as theft, can occur, especially in Freetown. Health risks include malaria, and healthcare is limited in rural areas. The rainy season can bring heavy rains and flooding."}));
+                                      new String[]{"Cassava Leaves Stew",
+                                              "Ginger Beer"},
+                                      new String[]{"OK",
+                                              "Sierra Leone is recovering from past conflicts and is generally safe in major cities. Crime, such as theft, can occur, especially in Freetown. Health risks include malaria, and healthcare is limited in rural areas. The rainy season can bring heavy rains and flooding."},
+                                      "Sierra Leonean Leone"));
         countries.add(new CountryInfo("Singapore",
                                       R.drawable.flagsingapore,
                                       R.drawable.singapore,
@@ -6101,8 +6566,11 @@ public class CountryData {
                                               "26°C - 33°C, hot, frequent rain and thunderstorms",
                                               "25°C - 31°C, warm, high rainfall and humidity",
                                               "25°C - 31°C, warm, frequent rain and humid"},
-                                      new String[]{"Hainanese Chicken Rice", "Kopi (local coffee)"},
-                                      new String[]{"Safe", "Singapore is one of the safest countries, known for strict laws and a clean environment. Crime rates are low, and there are high levels of security. Visitors should respect local laws, especially regarding littering, smoking, and public behavior. Weather is generally stable, though occasional thunderstorms can occur."}));
+                                      new String[]{"Hainanese Chicken Rice",
+                                              "Kopi (local coffee)"},
+                                      new String[]{"Safe",
+                                              "Singapore is one of the safest countries, known for strict laws and a clean environment. Crime rates are low, and there are high levels of security. Visitors should respect local laws, especially regarding littering, smoking, and public behavior. Weather is generally stable, though occasional thunderstorms can occur."},
+                                      "Singapore Dollar"));
         countries.add(new CountryInfo("Slovakia",
                                       R.drawable.flagslovakia,
                                       R.drawable.slovakia,
@@ -6140,8 +6608,11 @@ public class CountryData {
                                               "10°C - 20°C, mild, mostly sunny",
                                               "15°C - 25°C, warm, sunny with occasional rain",
                                               "0°C - 10°C, cool, cloudy with rain"},
-                                      new String[]{"Bryndzové Halušky (potato dumplings with sheep cheese)", "Kofola (local soft drink)"},
-                                      new String[]{"Safe", "Slovakia is a safe destination with a stable political environment. Minor crime, like pickpocketing, may occur in busy tourist areas. Travelers should be cautious in mountainous regions, especially during winter. Respect for Slovak customs and nature conservation areas is expected."}));
+                                      new String[]{"Bryndzové Halušky (potato dumplings with sheep cheese)",
+                                              "Kofola (local soft drink)"},
+                                      new String[]{"Safe",
+                                              "Slovakia is a safe destination with a stable political environment. Minor crime, like pickpocketing, may occur in busy tourist areas. Travelers should be cautious in mountainous regions, especially during winter. Respect for Slovak customs and nature conservation areas is expected."},
+                                      "Euro"));
         countries.add(new CountryInfo("Slovenia",
                                       R.drawable.flagslovenia,
                                       R.drawable.slovenia,
@@ -6179,8 +6650,11 @@ public class CountryData {
                                               "10°C - 20°C, mild, partly cloudy",
                                               "15°C - 25°C, warm, sunny with occasional rain",
                                               "0°C - 10°C, cool, rain and cloudy"},
-                                      new String[]{"Potica (walnut roll cake)", "Rebula Wine"},
-                                      new String[]{"Safe", "Slovenia is very safe, with low crime rates and beautiful natural landscapes. Tourists should take care in mountainous areas, especially in winter. The political environment is stable, and respect for local customs and nature preservation is important."}));
+                                      new String[]{"Potica (walnut roll cake)",
+                                              "Rebula Wine"},
+                                      new String[]{"Safe",
+                                              "Slovenia is very safe, with low crime rates and beautiful natural landscapes. Tourists should take care in mountainous areas, especially in winter. The political environment is stable, and respect for local customs and nature preservation is important."},
+                                      "Euro"));
         countries.add(new CountryInfo("Solomon Islands",
                                       R.drawable.flagsolomonislands,
                                       R.drawable.solomonislands,
@@ -6218,8 +6692,11 @@ public class CountryData {
                                               "28°C - 32°C, hot, rainy season with thunderstorms",
                                               "25°C - 30°C, warm, high humidity and rain",
                                               "24°C - 29°C, mild, drier season with clear skies"},
-                                        new String[]{"Ulu Breadfruit", "Coconut Milk"},
-                                        new String[]{"OK", "The Solomon Islands are generally safe, but crime, such as pickpocketing, can occur in urban areas. There are occasional natural hazards, including cyclones and earthquakes. Healthcare is limited in rural areas, so travelers are advised to prepare accordingly and respect local customs."}));
+                                      new String[]{"Ulu Breadfruit",
+                                              "Coconut Milk"},
+                                      new String[]{"OK",
+                                              "The Solomon Islands are generally safe, but crime, such as pickpocketing, can occur in urban areas. There are occasional natural hazards, including cyclones and earthquakes. Healthcare is limited in rural areas, so travelers are advised to prepare accordingly and respect local customs."},
+                                      "Solomon Islands Dollar"));
         countries.add(new CountryInfo("Somalia",
                                       R.drawable.flagsomalia,
                                       R.drawable.somalia,
@@ -6257,8 +6734,11 @@ public class CountryData {
                                               "30°C - 40°C, very hot, dry desert climate",
                                               "28°C - 35°C, hot, dry season with little rain",
                                               "25°C - 30°C, warm, clear skies"},
-                                      new String[]{"Canjeero (flatbread)", "Shaah (spiced tea)"},
-                                      new String[]{"Dangerous", "Somalia is considered highly dangerous due to ongoing armed conflict, political instability, and the threat of terrorism. Travel is not recommended in most regions, as security risks are significant. Healthcare and infrastructure are extremely limited."}));
+                                      new String[]{"Canjeero (flatbread)",
+                                              "Shaah (spiced tea)"},
+                                      new String[]{"Dangerous",
+                                              "Somalia is considered highly dangerous due to ongoing armed conflict, political instability, and the threat of terrorism. Travel is not recommended in most regions, as security risks are significant. Healthcare and infrastructure are extremely limited."},
+                                      "Somali Shilling"));
         countries.add(new CountryInfo("South Africa",
                                       R.drawable.flagsouthafrica,
                                       R.drawable.southafrica,
@@ -6296,8 +6776,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, mostly sunny",
                                               "15°C - 25°C, cool, dry season in parts",
                                               "10°C - 20°C, mild, rainy in the south"},
-                                      new String[]{"Braai (barbecue)", "Rooibos Tea"},
-                                      new String[]{"OK", "South Africa has vibrant cities and rich cultural attractions, but high crime rates in certain urban areas, including robbery and carjacking, are concerns. Visitors are advised to avoid isolated areas and stay vigilant. Health risks include malaria in certain regions, and political demonstrations can occasionally disrupt travel."}));
+                                      new String[]{"Braai (barbecue)",
+                                              "Rooibos Tea"},
+                                      new String[]{"OK",
+                                              "South Africa has vibrant cities and rich cultural attractions, but high crime rates in certain urban areas, including robbery and carjacking, are concerns. Visitors are advised to avoid isolated areas and stay vigilant. Health risks include malaria in certain regions, and political demonstrations can occasionally disrupt travel."},
+                                      "South African Rand"));
         countries.add(new CountryInfo("South Korea",
                                       R.drawable.flagsouthkorea,
                                       R.drawable.southkorea,
@@ -6335,8 +6818,11 @@ public class CountryData {
                                               "10°C - 25°C, mild, partly cloudy",
                                               "15°C - 30°C, warm, mostly sunny",
                                               "0°C - 10°C, cool, rain and cloudy"},
-                                      new String[]{"Kimchi", "Soju"},
-                                      new String[]{"Safe", "South Korea is very safe, with low crime rates and modern infrastructure. Petty crime is rare, though crowded tourist areas may have minor theft. Natural hazards include typhoons in late summer. Political tensions with North Korea exist, but are typically well-managed."}));
+                                      new String[]{"Kimchi",
+                                              "Soju"},
+                                      new String[]{"Safe",
+                                              "South Korea is very safe, with low crime rates and modern infrastructure. Petty crime is rare, though crowded tourist areas may have minor theft. Natural hazards include typhoons in late summer. Political tensions with North Korea exist, but are typically well-managed."},
+                                      "South Korean Won"));
         countries.add(new CountryInfo("South Sudan",
                                       R.drawable.flagsouthsudan,
                                       R.drawable.southsudan,
@@ -6374,8 +6860,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, high humidity with occasional rain",
                                               "20°C - 30°C, warm, rainy season",
                                               "18°C - 28°C, mild, drier season"},
-                                      new String[]{"Kisra (sorghum flatbread)", "Coffee"},
-                                      new String[]{"Dangerous", "South Sudan faces significant security concerns, including armed conflicts, political instability, and poor infrastructure. Travel is highly discouraged except for essential purposes. Healthcare is extremely limited, and natural hazards, such as seasonal flooding, can affect travel."}));
+                                      new String[]{"Kisra (sorghum flatbread)",
+                                              "Coffee"},
+                                      new String[]{"Dangerous",
+                                              "South Sudan faces significant security concerns, including armed conflicts, political instability, and poor infrastructure. Travel is highly discouraged except for essential purposes. Healthcare is extremely limited, and natural hazards, such as seasonal flooding, can affect travel."},
+                                      "South Sudanese Pound"));
         countries.add(new CountryInfo("Spain",
                                       R.drawable.flagspain,
                                       R.drawable.spain,
@@ -6413,8 +6902,11 @@ public class CountryData {
                                               "20°C - 35°C, hot, dry in most areas",
                                               "15°C - 25°C, mild, occasional rain",
                                               "5°C - 15°C, cool, rainy in some regions"},
-                                      new String[]{"Paella", "Sangria"},
-                                      new String[]{"Safe", "Spain is a popular and generally safe tourist destination with low crime rates. Petty theft, particularly in major cities like Barcelona, is the most common issue. The country has stable political conditions, though occasional regional protests occur. Natural hazards include forest fires during summer in certain areas."}));
+                                      new String[]{"Paella",
+                                              "Sangria"},
+                                      new String[]{"Safe",
+                                              "Spain is a popular and generally safe tourist destination with low crime rates. Petty theft, particularly in major cities like Barcelona, is the most common issue. The country has stable political conditions, though occasional regional protests occur. Natural hazards include forest fires during summer in certain areas."},
+                                      "Euro"));
         countries.add(new CountryInfo("Sri Lanka",
                                       R.drawable.flagsrilanka,
                                       R.drawable.srilanka,
@@ -6452,8 +6944,11 @@ public class CountryData {
                                               "25°C - 32°C, hot, high humidity and rain",
                                               "24°C - 30°C, warm, frequent rain and thunderstorms",
                                               "24°C - 29°C, warm, drier season"},
-                                      new String[]{"Rice and Curry", "King Coconut Water"},
-                                      new String[]{"OK", "Sri Lanka is generally safe, though political unrest has occurred in recent years. Crime against tourists is low, though petty theft can happen. The country is prone to natural disasters like monsoons and occasional floods. Visitors are advised to respect local customs and stay informed about regional situations."}));
+                                      new String[]{"Rice and Curry",
+                                              "King Coconut Water"},
+                                      new String[]{"OK",
+                                              "Sri Lanka is generally safe, though political unrest has occurred in recent years. Crime against tourists is low, though petty theft can happen. The country is prone to natural disasters like monsoons and occasional floods. Visitors are advised to respect local customs and stay informed about regional situations."},
+                                      "Sri Lankan Rupee"));
         countries.add(new CountryInfo("Sudan",
                                       R.drawable.flagsudan,
                                       R.drawable.sudan,
@@ -6491,8 +6986,11 @@ public class CountryData {
                                               "30°C - 45°C, extremely hot, dry desert climate",
                                               "28°C - 40°C, hot, dry with little rain",
                                               "20°C - 30°C, warm, dry season"},
-                                      new String[]{"Ful Medames (stewed fava beans)", "Mint Tea"},
-                                      new String[]{"Dangerous", "Sudan has regions affected by armed conflicts, particularly in areas such as Darfur, Blue Nile, and South Kordofan. Political unrest and protests are common, and there are ongoing tensions with rebel groups. Travelers should take care and avoid regions with known conflicts. Health facilities are limited, and natural hazards include flash floods during the rainy season."}));
+                                      new String[]{"Ful Medames (stewed fava beans)",
+                                              "Mint Tea"},
+                                      new String[]{"Dangerous",
+                                              "Sudan has regions affected by armed conflicts, particularly in areas such as Darfur, Blue Nile, and South Kordofan. Political unrest and protests are common, and there are ongoing tensions with rebel groups. Travelers should take care and avoid regions with known conflicts. Health facilities are limited, and natural hazards include flash floods during the rainy season."},
+                                      "Sudanese Pound"));
         countries.add(new CountryInfo("Suriname",
                                       R.drawable.flagsuriname,
                                       R.drawable.suriname,
@@ -6530,8 +7028,11 @@ public class CountryData {
                                               "26°C - 33°C, hot, rainy season with high humidity",
                                               "24°C - 30°C, warm, high rainfall and thunderstorms",
                                               "23°C - 28°C, mild, drier season with clear skies"},
-                                      new String[]{"Pom (chicken and root vegetable casserole)", "Parbo Beer"},
-                                      new String[]{"OK", "Suriname is generally safe, but petty crime such as pickpocketing can occur in urban areas, especially in Paramaribo. The country has political stability but also faces natural hazards like flooding during the rainy season. Wildlife areas have minimal risks, but visitors should be aware of jungle environments, including snakes and insects."}));
+                                      new String[]{"Pom (chicken and root vegetable casserole)",
+                                              "Parbo Beer"},
+                                      new String[]{"OK",
+                                              "Suriname is generally safe, but petty crime such as pickpocketing can occur in urban areas, especially in Paramaribo. The country has political stability but also faces natural hazards like flooding during the rainy season. Wildlife areas have minimal risks, but visitors should be aware of jungle environments, including snakes and insects."},
+                                      "Surinamese Dollar"));
         countries.add(new CountryInfo("Sweden",
                                       R.drawable.flagsweden,
                                       R.drawable.sweden,
@@ -6569,8 +7070,11 @@ public class CountryData {
                                               "5°C - 20°C, mild, sunny with long days",
                                               "10°C - 25°C, warm, mostly sunny",
                                               "-5°C - 5°C, cold, cloudy with snow"},
-                                      new String[]{"Swedish Meatballs", "Coffee"},
-                                      new String[]{"Safe", "Sweden is very safe with low crime rates, although petty theft can occur in tourist areas. The country has a stable political climate, and natural hazards are minimal, with well-maintained infrastructure. Winter weather can be harsh in the north, so visitors should prepare accordingly. The healthcare system is excellent, and Sweden is well-known for its welcoming and inclusive society."}));
+                                      new String[]{"Swedish Meatballs",
+                                              "Coffee"},
+                                      new String[]{"Safe",
+                                              "Sweden is very safe with low crime rates, although petty theft can occur in tourist areas. The country has a stable political climate, and natural hazards are minimal, with well-maintained infrastructure. Winter weather can be harsh in the north, so visitors should prepare accordingly. The healthcare system is excellent, and Sweden is well-known for its welcoming and inclusive society."},
+                                      "Swedish Krona"));
         countries.add(new CountryInfo("Switzerland",
                                       R.drawable.flagswitzerland,
                                       R.drawable.switzerland,
@@ -6608,8 +7112,11 @@ public class CountryData {
                                               "10°C - 20°C, mild, mostly sunny with occasional rain",
                                               "15°C - 25°C, warm, sunny with light rain",
                                               "0°C - 10°C, cool, cloudy with rain"},
-                                      new String[]{"Fondue", "Swiss Wine"},
-                                      new String[]{"Safe", "Switzerland is one of the safest countries, with very low crime rates and political neutrality. Natural hazards include avalanches in mountainous regions and heavy snowfall in winter. Travelers can enjoy a high standard of healthcare and infrastructure, and the population is friendly and multilingual. Basic safety practices are advised, especially in busy tourist areas."}));
+                                      new String[]{"Fondue",
+                                              "Swiss Wine"},
+                                      new String[]{"Safe",
+                                              "Switzerland is one of the safest countries, with very low crime rates and political neutrality. Natural hazards include avalanches in mountainous regions and heavy snowfall in winter. Travelers can enjoy a high standard of healthcare and infrastructure, and the population is friendly and multilingual. Basic safety practices are advised, especially in busy tourist areas."},
+                                      "Swiss Franc"));
         countries.add(new CountryInfo("Syria",
                                       R.drawable.flagsyria,
                                       R.drawable.syria,
@@ -6647,8 +7154,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, dry and sunny",
                                               "15°C - 25°C, mild, occasional rain",
                                               "5°C - 15°C, cool, mostly dry and clear"},
-                                      new String[]{"Kibbeh (bulgur and minced meat)", "Arak"},
-                                      new String[]{"Dangerous", "Syria faces severe security issues due to ongoing conflicts, terrorism, and political instability. Travel is strongly discouraged in most areas, as violent clashes, kidnappings, and bombings remain prevalent. Access to healthcare and other facilities is limited. Travelers should avoid all non-essential visits and be aware of the volatile conditions."}));
+                                      new String[]{"Kibbeh (bulgur and minced meat)",
+                                              "Arak"},
+                                      new String[]{"Dangerous",
+                                              "Syria faces severe security issues due to ongoing conflicts, terrorism, and political instability. Travel is strongly discouraged in most areas, as violent clashes, kidnappings, and bombings remain prevalent. Access to healthcare and other facilities is limited. Travelers should avoid all non-essential visits and be aware of the volatile conditions."},
+                                      "Syrian Pound"));
         countries.add(new CountryInfo("Taiwan",
                                       R.drawable.flagtaiwan,
                                       R.drawable.taiwan,
@@ -6686,8 +7196,11 @@ public class CountryData {
                                               "25°C - 30°C, hot and humid, frequent thunderstorms",
                                               "20°C - 27°C, warm, high humidity with typhoon season",
                                               "15°C - 22°C, mild, drier season with occasional rain"},
-                                      new String[]{"Beef Noodle Soup", "Bubble Tea"},
-                                      new String[]{"Safe", "Taiwan is a safe country with low crime rates. Petty theft may occur in crowded places, but violent crime is rare. Taiwan is prone to earthquakes and typhoons, especially during the rainy season. Health facilities are modern and accessible, and the country has a stable political environment. Taiwan’s population is friendly, and tourists are well-received."}));
+                                      new String[]{"Beef Noodle Soup",
+                                              "Bubble Tea"},
+                                      new String[]{"Safe",
+                                              "Taiwan is a safe country with low crime rates. Petty theft may occur in crowded places, but violent crime is rare. Taiwan is prone to earthquakes and typhoons, especially during the rainy season. Health facilities are modern and accessible, and the country has a stable political environment. Taiwan’s population is friendly, and tourists are well-received."},
+                                      "New Taiwan Dollar"));
         countries.add(new CountryInfo("Tajikistan",
                                       R.drawable.flagtajikistan,
                                       R.drawable.tajikistan,
@@ -6725,8 +7238,11 @@ public class CountryData {
                                               "15°C - 30°C, warm, mostly sunny",
                                               "10°C - 20°C, mild, occasional rain",
                                               "0°C - 10°C, cool, dry season"},
-                                      new String[]{"Plov (rice with meat)", "Green Tea"},
-                                      new String[]{"OK", "Tajikistan has a generally peaceful atmosphere, though the border areas with Afghanistan can be dangerous due to regional conflicts. The country has limited healthcare facilities and mountainous terrain that may pose challenges for travelers. Earthquakes are a natural hazard in this region. Political stability is fair, but travelers should take care in remote areas."}));
+                                      new String[]{"Plov (rice with meat)",
+                                              "Green Tea"},
+                                      new String[]{"OK",
+                                              "Tajikistan has a generally peaceful atmosphere, though the border areas with Afghanistan can be dangerous due to regional conflicts. The country has limited healthcare facilities and mountainous terrain that may pose challenges for travelers. Earthquakes are a natural hazard in this region. Political stability is fair, but travelers should take care in remote areas."},
+                                      "Tajikistani Somoni"));
         countries.add(new CountryInfo("Tanzania",
                                       R.drawable.flagtanzania,
                                       R.drawable.tanzania,
@@ -6764,8 +7280,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, rainy season",
                                               "20°C - 30°C, warm, high humidity and rain",
                                               "18°C - 28°C, mild, dry season"},
-                                      new String[]{"Ugali (maize porridge)", "Chai (Spiced Tea)"},
-                                      new String[]{"OK", "Tanzania is generally safe, but petty crimes such as theft and scams can occur in urban areas and popular tourist spots. The country has political stability, though visitors should be cautious when traveling to remote areas. Health risks include malaria and other tropical diseases, especially in rural regions. Tanzania’s national parks are widely visited, and most places are safe for tourists with basic precautions."}));
+                                      new String[]{"Ugali (maize porridge)",
+                                              "Chai (Spiced Tea)"},
+                                      new String[]{"OK",
+                                              "Tanzania is generally safe, but petty crimes such as theft and scams can occur in urban areas and popular tourist spots. The country has political stability, though visitors should be cautious when traveling to remote areas. Health risks include malaria and other tropical diseases, especially in rural regions. Tanzania’s national parks are widely visited, and most places are safe for tourists with basic precautions."},
+                                      "Tanzanian Shilling"));
         countries.add(new CountryInfo("Thailand",
                                       R.drawable.flagthailand,
                                       R.drawable.thailand,
@@ -6803,8 +7322,11 @@ public class CountryData {
                                               "26°C - 34°C, hot, humid with occasional rain",
                                               "25°C - 31°C, warm, frequent rain and thunderstorms",
                                               "24°C - 29°C, warm, drier season"},
-                                      new String[]{"Pad Thai", "Thai Iced Tea"},
-                                      new String[]{"Safe", "Thailand is generally safe for tourists, but petty theft, scams, and pickpocketing can occur in crowded areas. The country is politically stable, although demonstrations may occur sporadically. Natural hazards include flooding during monsoon season and occasional earthquakes. Health facilities are well-developed, especially in major cities, and Thailand’s culture is warm and tourist-friendly."}));
+                                      new String[]{"Pad Thai",
+                                              "Thai Iced Tea"},
+                                      new String[]{"Safe",
+                                              "Thailand is generally safe for tourists, but petty theft, scams, and pickpocketing can occur in crowded areas. The country is politically stable, although demonstrations may occur sporadically. Natural hazards include flooding during monsoon season and occasional earthquakes. Health facilities are well-developed, especially in major cities, and Thailand’s culture is warm and tourist-friendly."},
+                                      "Thai Baht"));
         countries.add(new CountryInfo("The Gambia",
                                       R.drawable.flagthegambia,
                                       R.drawable.thegambia,
@@ -6842,8 +7364,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, dry, and mostly sunny",
                                               "26°C - 32°C, warm, rainy season with thunderstorms",
                                               "22°C - 30°C, mild, some rainfall at the start and end of the season"},
-                                      new String[]{"Domoda (peanut stew)", "Ataya (green tea)"},
-                                      new String[]{"Safe", "Gambia is relatively safe for tourists, though visitors should avoid political discussions and take care in isolated areas."}));
+                                      new String[]{"Domoda (peanut stew)",
+                                              "Ataya (green tea)"},
+                                      new String[]{"Safe",
+                                              "Gambia is relatively safe for tourists, though visitors should avoid political discussions and take care in isolated areas."},
+                                      "Gambian Dalasi"));
         countries.add(new CountryInfo("Togo",
                                       R.drawable.flagtogo,
                                       R.drawable.togo,
@@ -6881,8 +7406,11 @@ public class CountryData {
                                               "26°C - 33°C, hot, rainy season with thunderstorms",
                                               "25°C - 30°C, warm, high humidity and rain",
                                               "24°C - 29°C, mild, dry season"},
-                                      new String[]{"Fufu (yam or cassava dish)", "Sodabi (local palm wine)"},
-                                      new String[]{"OK", "Togo is generally safe for travelers, though petty crime such as pickpocketing can occur in urban areas. Political demonstrations are common and can turn unpredictable, so caution is advised. Health risks include malaria and other mosquito-borne illnesses. Visitors are encouraged to stay updated on the political climate and to be cautious in crowded places."}));
+                                      new String[]{"Fufu (yam or cassava dish)",
+                                              "Sodabi (local palm wine)"},
+                                      new String[]{"OK",
+                                              "Togo is generally safe for travelers, though petty crime such as pickpocketing can occur in urban areas. Political demonstrations are common and can turn unpredictable, so caution is advised. Health risks include malaria and other mosquito-borne illnesses. Visitors are encouraged to stay updated on the political climate and to be cautious in crowded places."},
+                                      "West African CFA Franc"));
         countries.add(new CountryInfo("Tonga",
                                       R.drawable.flagtonga,
                                       R.drawable.tonga,
@@ -6920,8 +7448,11 @@ public class CountryData {
                                               "25°C - 32°C, hot, rainy season with high humidity",
                                               "24°C - 30°C, warm, high rainfall and humidity",
                                               "23°C - 28°C, mild, dry season"},
-                                      new String[]{"Lupulu (corned beef with coconut milk)", "Kava (traditional drink)"},
-                                      new String[]{"Safe", "Tonga is considered a safe destination with a low crime rate. However, the islands are prone to natural hazards like cyclones and earthquakes. Cultural respect is important, as Tonga is conservative with strong Christian values. Health facilities are limited on the smaller islands, so travel insurance is recommended. Take care during cyclone season from November to April."}));
+                                      new String[]{"Lupulu (corned beef with coconut milk)",
+                                              "Kava (traditional drink)"},
+                                      new String[]{"Safe",
+                                              "Tonga is considered a safe destination with a low crime rate. However, the islands are prone to natural hazards like cyclones and earthquakes. Cultural respect is important, as Tonga is conservative with strong Christian values. Health facilities are limited on the smaller islands, so travel insurance is recommended. Take care during cyclone season from November to April."},
+                                      "Tongan Paʻanga"));
         countries.add(new CountryInfo("Trinidad and Tobago",
                                       R.drawable.flagtrinidadandtobago,
                                       R.drawable.trinidadandtobago,
@@ -6959,8 +7490,11 @@ public class CountryData {
                                               "26°C - 33°C, hot, high humidity with rain",
                                               "25°C - 30°C, warm, frequent rain and thunderstorms",
                                               "24°C - 29°C, warm, drier season"},
-                                      new String[]{"Doubles (curried chickpeas in fried bread)", "Rum Punch"},
-                                      new String[]{"OK", "Trinidad and Tobago has higher crime rates compared to other Caribbean nations, particularly in Trinidad. Petty crime and some violent crime occur, especially in urban areas. Political stability is generally good, but visitors should remain cautious in crowded areas and avoid displaying valuables. Natural hazards include hurricanes and heavy rainfall."}));
+                                      new String[]{"Doubles (curried chickpeas in fried bread)",
+                                              "Rum Punch"},
+                                      new String[]{"OK",
+                                              "Trinidad and Tobago has higher crime rates compared to other Caribbean nations, particularly in Trinidad. Petty crime and some violent crime occur, especially in urban areas. Political stability is generally good, but visitors should remain cautious in crowded areas and avoid displaying valuables. Natural hazards include hurricanes and heavy rainfall."},
+                                      "Trinidad and Tobago Dollar"));
         countries.add(new CountryInfo("Tunisia",
                                       R.drawable.flagtunisia,
                                       R.drawable.tunisia,
@@ -6998,8 +7532,11 @@ public class CountryData {
                                               "20°C - 35°C, hot, dry season",
                                               "15°C - 25°C, mild, occasional rain",
                                               "5°C - 15°C, cool, rainy season"},
-                                      new String[]{"Couscous", "Mint Tea"},
-                                      new String[]{"OK", "Tunisia is generally safe, though there is a risk of terrorism, particularly in certain regions and near the Libyan border. Political protests can occur and may disrupt travel. Petty crime, such as pickpocketing, is also present, particularly in crowded tourist areas. It's advisable to avoid isolated areas and stay informed about current events."}));
+                                      new String[]{"Couscous",
+                                              "Mint Tea"},
+                                      new String[]{"OK",
+                                              "Tunisia is generally safe, though there is a risk of terrorism, particularly in certain regions and near the Libyan border. Political protests can occur and may disrupt travel. Petty crime, such as pickpocketing, is also present, particularly in crowded tourist areas. It's advisable to avoid isolated areas and stay informed about current events."},
+                                      "Tunisian Dinar"));
         countries.add(new CountryInfo("Turkey",
                                       R.drawable.flagturkey,
                                       R.drawable.turkey,
@@ -7037,8 +7574,11 @@ public class CountryData {
                                               "15°C - 30°C, warm, sunny with occasional rain",
                                               "10°C - 25°C, mild, partly cloudy",
                                               "0°C - 10°C, cool, rain in coastal areas"},
-                                      new String[]{"Kebabs", "Ayran (yogurt drink)"},
-                                      new String[]{"OK", "Turkey is a popular tourist destination, though there are regions near the Syrian border that should be avoided due to safety concerns. Major cities may experience occasional protests, and travelers should be aware of the potential risk of terrorism. Pickpocketing and scams can occur in tourist-heavy areas. Political tensions occasionally lead to demonstrations."}));
+                                      new String[]{"Kebabs",
+                                              "Ayran (yogurt drink)"},
+                                      new String[]{"OK",
+                                              "Turkey is a popular tourist destination, though there are regions near the Syrian border that should be avoided due to safety concerns. Major cities may experience occasional protests, and travelers should be aware of the potential risk of terrorism. Pickpocketing and scams can occur in tourist-heavy areas. Political tensions occasionally lead to demonstrations."},
+                                      "Turkish Lira"));
         countries.add(new CountryInfo("Turkmenistan",
                                       R.drawable.flagturkmenistan,
                                       R.drawable.turkmenistan,
@@ -7076,8 +7616,11 @@ public class CountryData {
                                               "25°C - 40°C, very hot, dry desert climate",
                                               "15°C - 30°C, warm, dry season",
                                               "0°C - 10°C, cool, mostly dry"},
-                                      new String[]{"Plov (rice dish with meat)", "Chal (fermented camel milk)"},
-                                      new String[]{"OK", "Turkmenistan is known for its strict government policies and closed nature, which can create a tense atmosphere for travelers. While the country is generally safe, interactions with locals and photographing government buildings are restricted. Visitors should take care and respect local laws and customs."}));
+                                      new String[]{"Plov (rice dish with meat)",
+                                              "Chal (fermented camel milk)"},
+                                      new String[]{"OK",
+                                              "Turkmenistan is known for its strict government policies and closed nature, which can create a tense atmosphere for travelers. While the country is generally safe, interactions with locals and photographing government buildings are restricted. Visitors should take care and respect local laws and customs."},
+                                      "Turkmenistani Manat"));
         countries.add(new CountryInfo("Tuvalu",
                                       R.drawable.flagtuvalu,
                                       R.drawable.tuvalu,
@@ -7115,8 +7658,11 @@ public class CountryData {
                                               "26°C - 32°C, hot, humid with rain",
                                               "25°C - 30°C, warm, high humidity and frequent rain",
                                               "24°C - 29°C, mild, drier season"},
-                                      new String[]{"Pulaka (root vegetable dish)", "Coconut Water"},
-                                      new String[]{"Safe", "Tuvalu is a peaceful and safe country with a very low crime rate. Due to its isolation and limited resources, the country is vulnerable to natural hazards such as tropical storms and rising sea levels. Medical facilities are basic, so travel insurance and medical evacuation coverage are recommended for emergencies."}));
+                                      new String[]{"Pulaka (root vegetable dish)",
+                                              "Coconut Water"},
+                                      new String[]{"Safe",
+                                              "Tuvalu is a peaceful and safe country with a very low crime rate. Due to its isolation and limited resources, the country is vulnerable to natural hazards such as tropical storms and rising sea levels. Medical facilities are basic, so travel insurance and medical evacuation coverage are recommended for emergencies."},
+                                      "Tuvaluan Dollar"));
         countries.add(new CountryInfo("Uganda",
                                       R.drawable.flaguganda,
                                       R.drawable.uganda,
@@ -7154,8 +7700,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, rainy season with thunderstorms",
                                               "20°C - 30°C, warm, high humidity and rain",
                                               "18°C - 28°C, mild, dry season"},
-                                      new String[]{"Matoke (steamed plantains)", "Waragi (banana gin)"},
-                                      new String[]{"OK", "Uganda is generally safe for tourists, though petty crime and occasional civil unrest can occur, particularly in urban areas. The country is also home to natural hazards, such as volcanic activity near the Rwenzori Mountains. Health precautions for malaria and yellow fever are recommended, as well as awareness of local customs, especially in rural areas."}));
+                                      new String[]{"Matoke (steamed plantains)",
+                                              "Waragi (banana gin)"},
+                                      new String[]{"OK",
+                                              "Uganda is generally safe for tourists, though petty crime and occasional civil unrest can occur, particularly in urban areas. The country is also home to natural hazards, such as volcanic activity near the Rwenzori Mountains. Health precautions for malaria and yellow fever are recommended, as well as awareness of local customs, especially in rural areas."},
+                                      "Ugandan Shilling"));
         countries.add(new CountryInfo("Ukraine",
                                       R.drawable.flagukraine,
                                       R.drawable.ukraine,
@@ -7193,8 +7742,11 @@ public class CountryData {
                                               "10°C - 25°C, mild, sunny with occasional rain",
                                               "15°C - 30°C, warm, mostly sunny",
                                               "0°C - 10°C, cool, cloudy with rain"},
-                                      new String[]{"Borscht (beet soup)", "Horilka (vodka)"},
-                                      new String[]{"Dangerous", "Due to the ongoing conflict in eastern Ukraine and the political tensions, certain regions are considered unsafe, particularly the Donetsk and Luhansk regions. While Western Ukraine remains relatively safe, travelers should stay updated on current events and avoid large gatherings. Petty crime is a concern in major cities, so take care."}));
+                                      new String[]{"Borscht (beet soup)",
+                                              "Horilka (vodka)"},
+                                      new String[]{"Dangerous",
+                                              "Due to the ongoing conflict in eastern Ukraine and the political tensions, certain regions are considered unsafe, particularly the Donetsk and Luhansk regions. While Western Ukraine remains relatively safe, travelers should stay updated on current events and avoid large gatherings. Petty crime is a concern in major cities, so take care."},
+                                      "Ukrainian Hryvnia"));
         countries.add(new CountryInfo("United Arab Emirates",
                                       R.drawable.flagunitedarabemirates,
                                       R.drawable.unitedarabemirates,
@@ -7232,8 +7784,11 @@ public class CountryData {
                                               "30°C - 45°C, extremely hot, dry desert climate",
                                               "28°C - 40°C, hot, dry season",
                                               "20°C - 30°C, mild, dry and sunny"},
-                                      new String[]{"Shawarma", "Qahwa (Arabic coffee)"},
-                                      new String[]{"Safe", "The UAE is generally safe with low crime rates, though travelers should respect local laws and customs, as violations can lead to severe penalties. The country is politically stable, but visitors should be aware of conservative laws regarding public behavior, alcohol consumption, and dress code. Desert activities carry natural risks, so take care."}));
+                                      new String[]{"Shawarma",
+                                              "Qahwa (Arabic coffee)"},
+                                      new String[]{"Safe",
+                                              "The UAE is generally safe with low crime rates, though travelers should respect local laws and customs, as violations can lead to severe penalties. The country is politically stable, but visitors should be aware of conservative laws regarding public behavior, alcohol consumption, and dress code. Desert activities carry natural risks, so take care."},
+                                      "United Arab Emirates Dirham"));
         countries.add(new CountryInfo("United Kingdom",
                                       R.drawable.flagunitedkingdom,
                                       R.drawable.unitedkingdom,
@@ -7271,8 +7826,11 @@ public class CountryData {
                                               "15°C - 25°C, mild, partly sunny with rain",
                                               "10°C - 20°C, mild, mostly cloudy",
                                               "0°C - 10°C, cool, frequent rain"},
-                                      new String[]{"Fish and Chips", "Tea"},
-                                      new String[]{"Safe", "The United Kingdom is a safe country with a well-developed infrastructure. While petty crime such as pickpocketing is common in crowded areas, violent crime is rare. Political protests and demonstrations can occur, particularly in London. Travelers are advised to remain cautious in busy tourist areas and to be respectful of local customs."}));
+                                      new String[]{"Fish and Chips",
+                                              "Tea"},
+                                      new String[]{"Safe",
+                                              "The United Kingdom is a safe country with a well-developed infrastructure. While petty crime such as pickpocketing is common in crowded areas, violent crime is rare. Political protests and demonstrations can occur, particularly in London. Travelers are advised to remain cautious in busy tourist areas and to be respectful of local customs."},
+                                      "Sterling"));
         countries.add(new CountryInfo("United States",
                                       R.drawable.flagunitedstates,
                                       R.drawable.unitedstates,
@@ -7310,8 +7868,11 @@ public class CountryData {
                                               "15°C - 35°C, warm to hot, mostly sunny",
                                               "10°C - 30°C, varies by region, partly cloudy",
                                               "0°C - 20°C, cool, rain in some areas"},
-                                      new String[]{"Hamburgers", "Coca-Cola"},
-                                      new String[]{"Safe", "The United States is generally safe, though crime rates vary widely between urban and rural areas. Petty crime is common in tourist areas, and travelers should be cautious in certain neighborhoods of large cities. Natural hazards include hurricanes, tornadoes, and wildfires depending on the region. Gun violence is a concern, so visitors should be cautious."}));
+                                      new String[]{"Hamburgers",
+                                              "Coca-Cola"},
+                                      new String[]{"Safe",
+                                              "The United States is generally safe, though crime rates vary widely between urban and rural areas. Petty crime is common in tourist areas, and travelers should be cautious in certain neighborhoods of large cities. Natural hazards include hurricanes, tornadoes, and wildfires depending on the region. Gun violence is a concern, so visitors should be cautious."},
+                                      "United States Dollar"));
         countries.add(new CountryInfo("Uruguay",
                                       R.drawable.flaguruguay,
                                       R.drawable.uruguay,
@@ -7349,8 +7910,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, mostly sunny",
                                               "15°C - 25°C, mild, partly cloudy with rain",
                                               "10°C - 20°C, cool, mostly dry"},
-                                      new String[]{"Asado (grilled meat)", "Yerba Mate"},
-                                      new String[]{"Safe", "Uruguay is a safe and stable country in South America with low crime rates. Petty crime can occur in urban areas, but violent crime is rare. The political situation is stable, and natural hazards are minimal. Health facilities are well-developed, particularly in Montevideo."}));
+                                      new String[]{"Asado (grilled meat)",
+                                              "Yerba Mate"},
+                                      new String[]{"Safe",
+                                              "Uruguay is a safe and stable country in South America with low crime rates. Petty crime can occur in urban areas, but violent crime is rare. The political situation is stable, and natural hazards are minimal. Health facilities are well-developed, particularly in Montevideo."},
+                                      " Uruguayan Peso"));
         countries.add(new CountryInfo("Uzbekistan",
                                       R.drawable.flaguzbekistan,
                                       R.drawable.uzbekistan,
@@ -7388,8 +7952,11 @@ public class CountryData {
                                               "20°C - 35°C, hot, dry and sunny",
                                               "15°C - 25°C, mild, occasional rain",
                                               "5°C - 15°C, cool, mostly dry"},
-                                      new String[]{"Plov (rice with lamb)", "Green Tea"},
-                                      new String[]{"OK", "Uzbekistan is generally safe, though there is occasional petty crime, especially in busy markets and tourist areas. Political stability is strong, but some restrictions on freedom of speech and assembly apply. Natural hazards include earthquakes. Travelers should respect local customs and avoid photographing government buildings."}));
+                                      new String[]{"Plov (rice with lamb)",
+                                              "Green Tea"},
+                                      new String[]{"OK",
+                                              "Uzbekistan is generally safe, though there is occasional petty crime, especially in busy markets and tourist areas. Political stability is strong, but some restrictions on freedom of speech and assembly apply. Natural hazards include earthquakes. Travelers should respect local customs and avoid photographing government buildings."},
+                                      "Uzbekistani Sum"));
         countries.add(new CountryInfo("Vanuatu",
                                       R.drawable.flagvanuatu,
                                       R.drawable.vanuatu,
@@ -7427,8 +7994,11 @@ public class CountryData {
                                               "26°C - 32°C, hot, rainy season with thunderstorms",
                                               "25°C - 30°C, warm, high humidity and rain",
                                               "24°C - 29°C, mild, drier season"},
-                                      new String[]{"Laplap (root vegetable with coconut milk)", "Kava"},
-                                      new String[]{"Safe", "Vanuatu is generally safe, though it is prone to natural hazards like cyclones, earthquakes, and volcanic activity. Crime rates are low, but petty crime can occur. Health facilities are limited outside major towns, so travel insurance with medical evacuation is recommended."}));
+                                      new String[]{"Laplap (root vegetable with coconut milk)",
+                                              "Kava"},
+                                      new String[]{"Safe",
+                                              "Vanuatu is generally safe, though it is prone to natural hazards like cyclones, earthquakes, and volcanic activity. Crime rates are low, but petty crime can occur. Health facilities are limited outside major towns, so travel insurance with medical evacuation is recommended."},
+                                      "Vanuatu Vatu"));
         countries.add(new CountryInfo("Vatican City",
                                       R.drawable.flagvaticancity,
                                       R.drawable.vaticancity,
@@ -7466,8 +8036,11 @@ public class CountryData {
                                               "15°C - 25°C, warm, mostly sunny with occasional showers",
                                               "20°C - 30°C, hot, dry and sunny",
                                               "10°C - 15°C, cool, mild with some rain"},
-                                      new String[]{"Pasta Carbonara", "Red Wine"},
-                                      new String[]{"Safe", "Vatican City is one of the safest destinations in the world, with low crime rates and a strong security presence due to its significance as the center of the Roman Catholic Church. Petty crime, like pickpocketing, can occur in surrounding tourist areas, particularly in St. Peter's Square. Political protests occasionally take place in Rome, but the Vatican itself remains very secure. Travelers are advised to stay vigilant in crowded areas and respect local customs and religious practices."}));
+                                      new String[]{"Pasta Carbonara",
+                                              "Red Wine"},
+                                      new String[]{"Safe",
+                                              "Vatican City is one of the safest destinations in the world, with low crime rates and a strong security presence due to its significance as the center of the Roman Catholic Church. Petty crime, like pickpocketing, can occur in surrounding tourist areas, particularly in St. Peter's Square. Political protests occasionally take place in Rome, but the Vatican itself remains very secure. Travelers are advised to stay vigilant in crowded areas and respect local customs and religious practices."},
+                                      "Euro"));
         countries.add(new CountryInfo("Venezuela",
                                       R.drawable.flagvenezuela,
                                       R.drawable.venezuela,
@@ -7505,8 +8078,11 @@ public class CountryData {
                                               "26°C - 35°C, hot, humid with frequent rain",
                                               "25°C - 30°C, warm, high humidity and thunderstorms",
                                               "24°C - 29°C, mild, drier season"},
-                                      new String[]{"Arepas (corn flatbread)", "Guarapita (fruit alcohol)"},
-                                      new String[]{"Dangerous", "Venezuela faces high levels of violent crime, political instability, and shortages of essential goods. The risk of kidnapping and robbery is high in urban areas. Political tensions often lead to protests that can turn violent. Travelers are advised to avoid unnecessary travel to the country."}));
+                                      new String[]{"Arepas (corn flatbread)",
+                                              "Guarapita (fruit alcohol)"},
+                                      new String[]{"Dangerous",
+                                              "Venezuela faces high levels of violent crime, political instability, and shortages of essential goods. The risk of kidnapping and robbery is high in urban areas. Political tensions often lead to protests that can turn violent. Travelers are advised to avoid unnecessary travel to the country."},
+                                      "Venezuelan Bolívar"));
         countries.add(new CountryInfo("Vietnam",
                                       R.drawable.flagvietnam,
                                       R.drawable.vietnam,
@@ -7544,8 +8120,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, humid with frequent rain",
                                               "24°C - 32°C, warm, high rainfall and humidity",
                                               "20°C - 28°C, mild, mostly dry with some rain"},
-                                      new String[]{"Pho (noodle soup)", "Iced Coffee"},
-                                      new String[]{"OK", "Vietnam is generally safe, with low violent crime rates, though petty crime like pickpocketing is common in tourist areas. Political protests are rare, but natural hazards such as typhoons can affect the coastal regions. Health risks include foodborne illnesses and mosquito-borne diseases, so precautions are advised."}));
+                                      new String[]{"Pho (noodle soup)",
+                                              "Iced Coffee"},
+                                      new String[]{"OK",
+                                              "Vietnam is generally safe, with low violent crime rates, though petty crime like pickpocketing is common in tourist areas. Political protests are rare, but natural hazards such as typhoons can affect the coastal regions. Health risks include foodborne illnesses and mosquito-borne diseases, so precautions are advised."},
+                                      "Vietnamese Đồng"));
         countries.add(new CountryInfo("Yemen",
                                       R.drawable.flagyemen,
                                       R.drawable.yemen,
@@ -7583,8 +8162,11 @@ public class CountryData {
                                               "25°C - 35°C, hot, dry and sunny",
                                               "20°C - 30°C, warm, dry with occasional rain",
                                               "15°C - 25°C, mild, mostly clear skies"},
-                                      new String[]{"Saltah (meat stew)", "Shai Adeni (spiced tea)"},
-                                      new String[]{"Dangerous", "Due to ongoing armed conflict, Yemen is considered very dangerous for travelers. The country experiences high levels of violence, terrorism, and instability. Kidnappings and attacks are common, especially in conflict zones. Travelers are strongly advised against all travel to Yemen."}));
+                                      new String[]{"Saltah (meat stew)",
+                                              "Shai Adeni (spiced tea)"},
+                                      new String[]{"Dangerous",
+                                              "Due to ongoing armed conflict, Yemen is considered very dangerous for travelers. The country experiences high levels of violence, terrorism, and instability. Kidnappings and attacks are common, especially in conflict zones. Travelers are strongly advised against all travel to Yemen."},
+                                      "Yemeni Rial"));
         countries.add(new CountryInfo("Zambia",
                                       R.drawable.flagzambia,
                                       R.drawable.zambia,
@@ -7622,8 +8204,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, rainy season with high humidity",
                                               "18°C - 28°C, warm, high humidity with thunderstorms",
                                               "15°C - 25°C, mild, mostly dry with clear skies"},
-                                      new String[]{"Nshima (maize porridge)", "Mosi (local beer)"},
-                                      new String[]{"OK", "Zambia is generally safe for travelers, though petty crime such as pickpocketing can occur. Health risks include malaria and other mosquito-borne diseases. The country has good political stability, and the people are friendly and welcoming. Visitors should take health precautions and avoid isolated areas after dark."}));
+                                      new String[]{"Nshima (maize porridge)",
+                                              "Mosi (local beer)"},
+                                      new String[]{"OK",
+                                              "Zambia is generally safe for travelers, though petty crime such as pickpocketing can occur. Health risks include malaria and other mosquito-borne diseases. The country has good political stability, and the people are friendly and welcoming. Visitors should take health precautions and avoid isolated areas after dark."},
+                                      "Zambian Kwacha"));
         countries.add(new CountryInfo("Zimbabwe",
                                       R.drawable.flagzimbabwe,
                                       R.drawable.zimbabwe,
@@ -7661,8 +8246,11 @@ public class CountryData {
                                               "20°C - 30°C, warm, rainy season with thunderstorms",
                                               "15°C - 25°C, mild, high humidity with occasional rain",
                                               "10°C - 20°C, mild, mostly dry season"},
-                                      new String[]{"Sadza (maize meal)", "Maheu (fermented drink)"},
-                                      new String[]{"OK", "Zimbabwe is generally safe for tourists, though petty crime is common in urban areas. The country is politically stable, though protests can occur. Natural hazards include wildlife encounters in rural areas and occasional malaria. Health facilities are available but can be limited outside of major cities."}));
+                                      new String[]{"Sadza (maize meal)",
+                                              "Maheu (fermented drink)"},
+                                      new String[]{"OK",
+                                              "Zimbabwe is generally safe for tourists, though petty crime is common in urban areas. The country is politically stable, though protests can occur. Natural hazards include wildlife encounters in rural areas and occasional malaria. Health facilities are available but can be limited outside of major cities."},
+                                      "Zimbabwean Dollar"));
 
         return countries;
     }

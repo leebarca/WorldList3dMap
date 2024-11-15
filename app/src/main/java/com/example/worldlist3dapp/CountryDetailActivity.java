@@ -65,6 +65,7 @@ public class CountryDetailActivity extends AppCompatActivity {
         String[] weather = getIntent().getStringArrayExtra("weatherInfo");
         String[] cuisine = getIntent().getStringArrayExtra("cuisineArray");
         String[] safety = getIntent().getStringArrayExtra("safetyArray");
+        String currency = getIntent().getStringExtra("currency");
 
         infoIcon.setOnClickListener(v -> {
             // Handle click event
@@ -76,6 +77,7 @@ public class CountryDetailActivity extends AppCompatActivity {
             intent.putExtra("weather_info", weather);
             intent.putExtra("cuisine_info", cuisine);
             intent.putExtra("safety_info", safety);
+            intent.putExtra("currency", currency);
             startActivity(intent);
         });
 

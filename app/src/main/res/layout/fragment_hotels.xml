@@ -1,0 +1,169 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/app_background_color">
+
+        <!-- Label and EditText for Destination Airport -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Destination"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/toAirport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Adults -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Adults"
+                    android:textSize="18sp"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/adultsMinus"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:background="@drawable/button_background" />
+
+                <TextView
+                    android:id="@+id/adultsCount"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/adultsPlus"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:background="@drawable/button_background" />
+            </LinearLayout>
+
+            <!-- Children -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Children"
+                    android:textSize="18sp"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/childrenMinus"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:background="@drawable/button_background" />
+
+                <TextView
+                    android:id="@+id/childrenCount"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/childrenPlus"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:background="@drawable/button_background" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/departureDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Departure Date"
+            android:padding="10dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:drawableEnd="@drawable/icon_calendar" />
+
+        <TextView
+            android:id="@+id/returnDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Return Date"
+            android:padding="10dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:drawableEnd="@drawable/icon_calendar" />
+
+        <!-- Search Hotels Button -->
+        <LinearLayout
+            android:id="@+id/search_hotels_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp">
+
+            <TextView
+                android:id="@+id/search_hotels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Search"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

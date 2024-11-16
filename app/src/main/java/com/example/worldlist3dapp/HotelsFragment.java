@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,15 +20,24 @@ public class HotelsFragment extends Fragment {
         // Inflate the fragment layout
         View view = inflater.inflate(R.layout.fragment_hotels, container, false);
 
+        EditText destination_string = view.findViewById(R.id.destination);
+        EditText departure_date = view.findViewById(R.id.edit_departure_date);
+        EditText return_date = view.findViewById(R.id.edit_return_date);
+        Button button_adults_minus = view.findViewById(R.id.button_adults_minus);
+        Button button_adults_plus = view.findViewById(R.id.button_adults_plus);
+        TextView text_adults_count = view.findViewById(R.id.text_adults_count);
+        Button button_children_minus = view.findViewById(R.id.button_children_minus);
+        Button button_children_plus = view.findViewById(R.id.button_children_plus);
+        TextView text_children_count = view.findViewById(R.id.text_children_count);
+        Button button_search = view.findViewById(R.id.button_search);
+
         // Retrieve the arguments passed to the fragment
         Bundle args = getArguments();
         if (args != null) {
             String country = args.getString("country");
 
             // Use the country value (e.g., set it as default text)
-            @SuppressLint({"MissingInflatedId",
-                    "LocalSuppress"}) EditText destinationEditText = view.findViewById(R.id.destination);
-            destinationEditText.setText(country);
+            destination_string.setText(country);
         }
 
         return view;

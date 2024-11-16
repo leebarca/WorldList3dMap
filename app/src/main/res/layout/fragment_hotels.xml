@@ -1,5 +1,4 @@
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
@@ -11,159 +10,165 @@
         android:padding="16dp"
         android:background="@color/app_background_color">
 
-        <!-- Label and EditText for Destination Airport -->
+        <!-- Destination Spinner -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Destination"
-            android:textSize="16sp"
-            android:textColor="@color/black"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="4dp" />
+            android:layout_marginBottom="4dp"
+            android:text="Destination"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/toAirport"
+            android:id="@+id/destination"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
             android:background="@drawable/button_background"
+            android:padding="10dp"
             android:textColor="@color/black" />
 
+        <!-- Departure Date -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:text="Departure Date"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_departure_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:hint="DD/MM/YYYY"
+            android:textColorHint="@color/black"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+        <!-- Return Date -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:text="Return Date"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_return_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:hint="DD/MM/YYYY"
+            android:textColorHint="@color/black"
+            android:padding="10dp"
+            android:textColor="@color/black" />
+
+        <!-- Passengers Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
 
             <!-- Adults -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:layout_marginBottom="16dp">
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Adults"
-                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/button_adults_minus"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/button_background"
+                    android:text="-"
                     android:textColor="@color/black" />
 
-                <Button
-                    android:id="@+id/adultsMinus"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:text="-"
-                    android:textColor="@color/black"
-                    android:background="@drawable/button_background" />
-
                 <TextView
-                    android:id="@+id/adultsCount"
+                    android:id="@+id/text_adults_count"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="1"
-                    android:textSize="18sp"
                     android:textColor="@color/black"
-                    android:gravity="center" />
+                    android:textSize="16sp" />
 
                 <Button
-                    android:id="@+id/adultsPlus"
+                    android:id="@+id/button_adults_plus"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
+                    android:background="@drawable/button_background"
                     android:text="+"
-                    android:textColor="@color/black"
-                    android:background="@drawable/button_background" />
+                    android:textColor="@color/black" />
             </LinearLayout>
 
             <!-- Children -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Children"
-                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/button_children_minus"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/button_background"
+                    android:text="-"
                     android:textColor="@color/black" />
 
-                <Button
-                    android:id="@+id/childrenMinus"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:text="-"
-                    android:textColor="@color/black"
-                    android:background="@drawable/button_background" />
-
                 <TextView
-                    android:id="@+id/childrenCount"
+                    android:id="@+id/text_children_count"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="0"
-                    android:textSize="18sp"
                     android:textColor="@color/black"
-                    android:gravity="center" />
+                    android:textSize="16sp" />
 
                 <Button
-                    android:id="@+id/childrenPlus"
+                    android:id="@+id/button_children_plus"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
+                    android:background="@drawable/button_background"
                     android:text="+"
-                    android:textColor="@color/black"
-                    android:background="@drawable/button_background" />
+                    android:textColor="@color/black" />
             </LinearLayout>
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/departureDate"
+        <!-- Search Button -->
+        <Button
+            android:id="@+id/button_search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Select Departure Date"
-            android:padding="10dp"
+            android:layout_marginTop="24dp"
             android:background="@drawable/button_background"
+            android:text="Search"
             android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:drawableEnd="@drawable/icon_calendar" />
+            android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/returnDate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Select Return Date"
-            android:padding="10dp"
-            android:background="@drawable/button_background"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:drawableEnd="@drawable/icon_calendar" />
-
-        <!-- Search Hotels Button -->
-        <LinearLayout
-            android:id="@+id/search_hotels_button"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/button_background"
-            android:clickable="true"
-            android:focusable="true"
-            android:fontFamily="@font/open_sans"
-            android:gravity="center"
-            android:padding="4dp"
-            android:textColor="@android:color/black"
-            android:textSize="16sp">
-
-            <TextView
-                android:id="@+id/search_hotels"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Search"
-                android:textColor="@android:color/black"
-                android:textSize="18sp" />
-        </LinearLayout>
     </LinearLayout>
 </ScrollView>

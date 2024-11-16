@@ -1,9 +1,11 @@
 package com.example.worldlist3dapp;
 
 import android.annotation.SuppressLint;
-import android.graphics.Color;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
@@ -29,17 +31,26 @@ public class CountryDetailsPlanning extends AppCompatActivity {
         packagesButton = findViewById(R.id.packages_element);
         activitiesButton = findViewById(R.id.activities_element);
 
+        String country_name = getIntent().getStringExtra("country_name");
+
         // Load the Flights fragment by default
-        replaceFragment(new FlightFragment(), R.id.flights_element);
+        replaceFragment(new FlightFragment(), R.id.flights_element, country_name);
 
         // Set up button click listeners for GridLayout buttons
-        findViewById(R.id.flights_element).setOnClickListener(v -> replaceFragment(new FlightFragment(), R.id.flights_element));
-        findViewById(R.id.hotels_element).setOnClickListener(v -> replaceFragment(new HotelsFragment(), R.id.hotels_element));
-        findViewById(R.id.packages_element).setOnClickListener(v -> replaceFragment(new PackagesFragment(), R.id.packages_element));
-        findViewById(R.id.activities_element).setOnClickListener(v -> replaceFragment(new ActivitiesFragment(), R.id.activities_element));
+        findViewById(R.id.flights_element).setOnClickListener(v -> replaceFragment(new FlightFragment(), R.id.flights_element, country_name));
+        findViewById(R.id.hotels_element).setOnClickListener(v -> replaceFragment(new HotelsFragment(), R.id.hotels_element, country_name));
+        findViewById(R.id.packages_element).setOnClickListener(v -> replaceFragment(new PackagesFragment(), R.id.packages_element, country_name));
+        findViewById(R.id.activities_element).setOnClickListener(v -> replaceFragment(new ActivitiesFragment(), R.id.activities_element, country_name));
     }
 
-    private void replaceFragment(Fragment fragment, int activeButtonId) {
+    private void replaceFragment(Fragment fragment, int activeButtonId, String country) {
+        // Create a Bundle to pass the data
+        Bundle args = new Bundle();
+        args.putString("country", country);
+
+        // Set the arguments to the fragment
+        fragment.setArguments(args);
+
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.frame_layout,

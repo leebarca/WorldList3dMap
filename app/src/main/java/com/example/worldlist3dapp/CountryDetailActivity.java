@@ -59,13 +59,13 @@ public class CountryDetailActivity extends AppCompatActivity {
         int firstAttractionImage = getIntent().getIntExtra("firstAttractionImage", 0);
         int secondAttractionImage = getIntent().getIntExtra("secondAttractionImage", 0);
         int thirdAttractionImage = getIntent().getIntExtra("thirdAttractionImage", 0);
-        String country_offers = getIntent().getStringExtra("countryDescription");
         String facts = getIntent().getStringExtra("factInfo");
         String websites = getIntent().getStringExtra("websiteInfo");
         String[] weather = getIntent().getStringArrayExtra("weatherInfo");
         String[] cuisine = getIntent().getStringArrayExtra("cuisineArray");
         String[] safety = getIntent().getStringArrayExtra("safetyArray");
         String currency = getIntent().getStringExtra("currency");
+        String country_name = getIntent().getStringExtra("countryName");
 
         infoIcon.setOnClickListener(v -> {
             // Handle click event
@@ -99,7 +99,7 @@ public class CountryDetailActivity extends AppCompatActivity {
         planningIcon.setOnClickListener(v -> {
             // Handle click event
             Intent intent = new Intent(CountryDetailActivity.this, CountryDetailsPlanning.class);
-            intent.putExtra("countryOffers", country_offers);
+            intent.putExtra("country_name", country_name);
             startActivity(intent);
         });
     }

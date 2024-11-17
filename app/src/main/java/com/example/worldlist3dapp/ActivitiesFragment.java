@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,11 +20,10 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Random;
 
 public class ActivitiesFragment extends Fragment {
 
-    private int adultsCount = 1;
-    private int childrenCount = 0;
     private long departureDateInMillis = -1; // Track the selected departure date
 
     @Nullable
@@ -33,20 +31,10 @@ public class ActivitiesFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_activities, container, false);
 
-        EditText departure_string = view.findViewById(R.id.origin);
         EditText destination_string = view.findViewById(R.id.destination);
         EditText departure_date = view.findViewById(R.id.edit_departure_date);
         EditText return_date = view.findViewById(R.id.edit_return_date);
-        Button button_adults_minus = view.findViewById(R.id.button_adults_minus);
-        Button button_adults_plus = view.findViewById(R.id.button_adults_plus);
-        TextView text_adults_count = view.findViewById(R.id.text_adults_count);
-        Button button_children_minus = view.findViewById(R.id.button_children_minus);
-        Button button_children_plus = view.findViewById(R.id.button_children_plus);
-        TextView text_children_count = view.findViewById(R.id.text_children_count);
         Button button_search = view.findViewById(R.id.button_search);
-
-        text_adults_count.setText(String.valueOf(adultsCount));
-        text_children_count.setText(String.valueOf(childrenCount));
 
         // Departure Date Picker
         departure_date.setOnClickListener(v -> {
@@ -62,43 +50,13 @@ public class ActivitiesFragment extends Fragment {
             showDatePicker(return_date, minDate, null);
         });
 
-        // Adults and children count handlers
-        button_adults_plus.setOnClickListener(v -> {
-            if (adultsCount < 10) {
-                adultsCount++;
-                text_adults_count.setText(String.valueOf(adultsCount));
-            }
-        });
-
-        button_adults_minus.setOnClickListener(v -> {
-            if (adultsCount > 1) {
-                adultsCount--;
-                text_adults_count.setText(String.valueOf(adultsCount));
-            }
-        });
-
-        button_children_plus.setOnClickListener(v -> {
-            if (childrenCount < 10) {
-                childrenCount++;
-                text_children_count.setText(String.valueOf(childrenCount));
-            }
-        });
-
-        button_children_minus.setOnClickListener(v -> {
-            if (childrenCount > 0) {
-                childrenCount--;
-                text_children_count.setText(String.valueOf(childrenCount));
-            }
-        });
-
         // Search button with validation
         button_search.setOnClickListener(v -> {
             try {
-                if (validateFields(departure_string, destination_string, departure_date, return_date)) {
-                    String departure = departure_string.getText().toString().trim();
+                if (validateFields(destination_string, departure_date, return_date)) {
                     String destination = destination_string.getText().toString().trim();
                     SimpleDateFormat inputFormat = new SimpleDateFormat("dd/MM/yyyy");
-                    SimpleDateFormat outputFormat = new SimpleDateFormat("MM/dd/yyyy");
+                    SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy/MM/dd");
                     String departureDate = departure_date.getText().toString().trim();
                     String returnDate = return_date.getText().toString().trim();
                     try {
@@ -113,10 +71,11 @@ public class ActivitiesFragment extends Fragment {
                     } catch (ParseException e) {
                         e.printStackTrace();
                     }
-                    int adults = Integer.parseInt(text_adults_count.getText().toString());
-                    int children = Integer.parseInt(text_children_count.getText().toString());
 
-                    String url = constructUrl(departure, destination, departureDate, returnDate, adults, children);
+                    Random random = new Random();
+                    int session = random.nextInt(1000000);
+
+                    String url = constructUrl(destination, departureDate, returnDate, session);
                     openUrl(url);
                 }
             } catch (ParseException e) {
@@ -158,14 +117,9 @@ public class ActivitiesFragment extends Fragment {
         datePickerDialog.show();
     }
 
-    private boolean validateFields(EditText departureField, EditText destinationField, EditText departureDateField, EditText returnDateField) throws ParseException {
+    private boolean validateFields(EditText destinationField, EditText departureDateField, EditText returnDateField) throws ParseException {
         boolean isValid = true;
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
-
-        if (departureField.getText().toString().trim().isEmpty()) {
-            departureField.setError("Please enter the origin.");
-            isValid = false;
-        }
 
         if (destinationField.getText().toString().trim().isEmpty()) {
             destinationField.setError("Please enter the destination.");
@@ -194,18 +148,13 @@ public class ActivitiesFragment extends Fragment {
         return isValid;
     }
 
-    private String constructUrl(String origin, String destination, String departureDate, String returnDate, int adults, int children) {
+    private String constructUrl(String destination, String departureDate, String returnDate, int session) {
         return
-                "https://www.expedia.com/Flights-Search?flight-type=on&mode=search&trip=roundtrip" +
-                        "&leg1=from:" + origin +
-                        ",to:" + destination +
-                        ",departure:" + departureDate +
-                        "TANYT,fromType:U,toType:U&leg2=from:" + destination +
-                        ",to:" + origin +
-                        ",departure:" + returnDate +
-                        "TANYT,fromType:U,toType:U&options=cabinclass:economy&passengers=adults:" + adults +
-                        ",children:" + children +
-                        ",infantinlap:N";
+                "https://www.expedia.com/things-to-do/search" +
+                        "?location=" + destination +
+                        "&d1=" + departureDate +
+                        "&d2=" + returnDate +
+                        "&sort=RECOMMENDED&swp=on&session=" + session;
     }
 
     private void openUrl(String url) {

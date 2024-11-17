@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,11 +20,11 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Random;
 
 public class PackagesFragment extends Fragment {
 
     private int adultsCount = 1;
-    private int childrenCount = 0;
     private long departureDateInMillis = -1; // Track the selected departure date
 
     @Nullable
@@ -40,13 +39,9 @@ public class PackagesFragment extends Fragment {
         Button button_adults_minus = view.findViewById(R.id.button_adults_minus);
         Button button_adults_plus = view.findViewById(R.id.button_adults_plus);
         TextView text_adults_count = view.findViewById(R.id.text_adults_count);
-        Button button_children_minus = view.findViewById(R.id.button_children_minus);
-        Button button_children_plus = view.findViewById(R.id.button_children_plus);
-        TextView text_children_count = view.findViewById(R.id.text_children_count);
         Button button_search = view.findViewById(R.id.button_search);
 
         text_adults_count.setText(String.valueOf(adultsCount));
-        text_children_count.setText(String.valueOf(childrenCount));
 
         // Departure Date Picker
         departure_date.setOnClickListener(v -> {
@@ -77,20 +72,6 @@ public class PackagesFragment extends Fragment {
             }
         });
 
-        button_children_plus.setOnClickListener(v -> {
-            if (childrenCount < 10) {
-                childrenCount++;
-                text_children_count.setText(String.valueOf(childrenCount));
-            }
-        });
-
-        button_children_minus.setOnClickListener(v -> {
-            if (childrenCount > 0) {
-                childrenCount--;
-                text_children_count.setText(String.valueOf(childrenCount));
-            }
-        });
-
         // Search button with validation
         button_search.setOnClickListener(v -> {
             try {
@@ -98,7 +79,7 @@ public class PackagesFragment extends Fragment {
                     String departure = departure_string.getText().toString().trim();
                     String destination = destination_string.getText().toString().trim();
                     SimpleDateFormat inputFormat = new SimpleDateFormat("dd/MM/yyyy");
-                    SimpleDateFormat outputFormat = new SimpleDateFormat("MM/dd/yyyy");
+                    SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy/MM/dd");
                     String departureDate = departure_date.getText().toString().trim();
                     String returnDate = return_date.getText().toString().trim();
                     try {
@@ -114,9 +95,11 @@ public class PackagesFragment extends Fragment {
                         e.printStackTrace();
                     }
                     int adults = Integer.parseInt(text_adults_count.getText().toString());
-                    int children = Integer.parseInt(text_children_count.getText().toString());
 
-                    String url = constructUrl(departure, destination, departureDate, returnDate, adults, children);
+                    Random random = new Random();
+                    int session = random.nextInt(1000000);
+
+                    String url = constructUrl(departure, destination, departureDate, returnDate, adults, session);
                     openUrl(url);
                 }
             } catch (ParseException e) {
@@ -194,18 +177,18 @@ public class PackagesFragment extends Fragment {
         return isValid;
     }
 
-    private String constructUrl(String origin, String destination, String departureDate, String returnDate, int adults, int children) {
+    private String constructUrl(String origin, String destination, String departureDate, String returnDate, int adults, int session) {
         return
-                "https://www.expedia.com/Flights-Search?flight-type=on&mode=search&trip=roundtrip" +
-                        "&leg1=from:" + origin +
-                        ",to:" + destination +
-                        ",departure:" + departureDate +
-                        "TANYT,fromType:U,toType:U&leg2=from:" + destination +
-                        ",to:" + origin +
-                        ",departure:" + returnDate +
-                        "TANYT,fromType:U,toType:U&options=cabinclass:economy&passengers=adults:" + adults +
-                        ",children:" + children +
-                        ",infantinlap:N";
+                "https://www.expedia.com/Hotel-Search?packageType=fh&searchProduct=hotel" +
+                "&adults=" + adults +
+                "&origin=" + origin +
+                "&sort=recommended" +
+                "&tripType=ROUND_TRIP" +
+                "&cabinClass=COACH" +
+                "&startDate=" + departureDate +
+                "&endDate=" + returnDate +
+                "&destination=" + destination +
+                "&session=" + session;
     }
 
     private void openUrl(String url) {

@@ -140,47 +140,6 @@
                     android:text="+"
                     android:textColor="@color/black" />
             </LinearLayout>
-
-            <!-- Children -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Children"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
-
-                <Button
-                    android:id="@+id/button_children_minus"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:background="@drawable/button_background"
-                    android:text="-"
-                    android:textColor="@color/black" />
-
-                <TextView
-                    android:id="@+id/text_children_count"
-                    android:layout_width="48dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="0"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
-
-                <Button
-                    android:id="@+id/button_children_plus"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:background="@drawable/button_background"
-                    android:text="+"
-                    android:textColor="@color/black" />
-            </LinearLayout>
         </LinearLayout>
 
         <!-- Search Button -->

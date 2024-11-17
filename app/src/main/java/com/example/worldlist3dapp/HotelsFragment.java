@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,11 +20,11 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Random;
 
 public class HotelsFragment extends Fragment {
 
     private int adultsCount = 1;
-    private int childrenCount = 0;
     private long departureDateInMillis = -1; // Track the selected departure date
 
     @Nullable
@@ -39,13 +38,9 @@ public class HotelsFragment extends Fragment {
         Button button_adults_minus = view.findViewById(R.id.button_adults_minus);
         Button button_adults_plus = view.findViewById(R.id.button_adults_plus);
         TextView text_adults_count = view.findViewById(R.id.text_adults_count);
-        Button button_children_minus = view.findViewById(R.id.button_children_minus);
-        Button button_children_plus = view.findViewById(R.id.button_children_plus);
-        TextView text_children_count = view.findViewById(R.id.text_children_count);
         Button button_search = view.findViewById(R.id.button_search);
 
         text_adults_count.setText(String.valueOf(adultsCount));
-        text_children_count.setText(String.valueOf(childrenCount));
 
         // Departure Date Picker
         departure_date.setOnClickListener(v -> {
@@ -76,20 +71,6 @@ public class HotelsFragment extends Fragment {
             }
         });
 
-        button_children_plus.setOnClickListener(v -> {
-            if (childrenCount < 10) {
-                childrenCount++;
-                text_children_count.setText(String.valueOf(childrenCount));
-            }
-        });
-
-        button_children_minus.setOnClickListener(v -> {
-            if (childrenCount > 0) {
-                childrenCount--;
-                text_children_count.setText(String.valueOf(childrenCount));
-            }
-        });
-
         // Search button with validation
         button_search.setOnClickListener(v -> {
             try {
@@ -112,9 +93,11 @@ public class HotelsFragment extends Fragment {
                         e.printStackTrace();
                     }
                     int adults = Integer.parseInt(text_adults_count.getText().toString());
-                    int children = Integer.parseInt(text_children_count.getText().toString());
 
-                    String url = constructUrl(destination, departureDate, returnDate, adults, children);
+                    Random random = new Random();
+                    int session = random.nextInt(1000000);
+
+                    String url = constructUrl(destination, departureDate, returnDate, adults, session);
                     openUrl(url);
                 }
             } catch (ParseException e) {
@@ -187,17 +170,16 @@ public class HotelsFragment extends Fragment {
         return isValid;
     }
 
-    private String constructUrl(String origin, String destination, String departureDate, String returnDate, int adults, int children) {
-        return  //https://www.expedia.com/Hotel-Search?destination=Seychelles&flexibility=0_DAY&d1=2024-11-18&startDate=2024-11-18&d2=2024-11-21&endDate=2024-11-21&adults=2&rooms=1&regionId=159&theme=&userIntent=&semdtl=&useRewards=false&sort=RECOMMENDED
+    private String constructUrl(String destination, String departureDate, String returnDate, int adults, int session) {
+        return
                 "https://www.expedia.com/Hotel-Search" +
                         "?destination=" + destination +
-                        ",departure:" + departureDate +
-                        "TANYT,fromType:U,toType:U&leg2=from:" + destination +
-                        ",to:" + origin +
-                        ",departure:" + returnDate +
-                        "TANYT,fromType:U,toType:U&options=cabinclass:economy&passengers=adults:" + adults +
-                        ",children:" + children +
-                        ",infantinlap:N";
+                        "&flexibility=0_DAY&d1=" + departureDate +
+                        "&startDate=" + departureDate +
+                        "&d2=" + returnDate +
+                        "&endDate=" + returnDate +
+                        "&adults=" + adults +
+                        "&rooms=1&theme=&sort=RECOMMENDED&session=" + session;
     }
 
     private void openUrl(String url) {

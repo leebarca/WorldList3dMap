@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -96,8 +97,22 @@ public class FlightFragment extends Fragment {
                 if (validateFields(departure_string, destination_string, departure_date, return_date)) {
                     String departure = departure_string.getText().toString().trim();
                     String destination = destination_string.getText().toString().trim();
+                    SimpleDateFormat inputFormat = new SimpleDateFormat("dd/MM/yyyy");
+                    SimpleDateFormat outputFormat = new SimpleDateFormat("MM/dd/yyyy");
                     String departureDate = departure_date.getText().toString().trim();
                     String returnDate = return_date.getText().toString().trim();
+                    try {
+                        // Parse and format the departure date
+                        Date parsedDepartureDate = inputFormat.parse(departureDate);
+                        departureDate = outputFormat.format(parsedDepartureDate);
+
+                        // Parse and format the return date
+                        Date parsedReturnDate = inputFormat.parse(returnDate);
+                        returnDate = outputFormat.format(parsedReturnDate);
+
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                    }
                     int adults = Integer.parseInt(text_adults_count.getText().toString());
                     int children = Integer.parseInt(text_children_count.getText().toString());
 
@@ -180,13 +195,17 @@ public class FlightFragment extends Fragment {
     }
 
     private String constructUrl(String origin, String destination, String departureDate, String returnDate, int adults, int children) {
-        return "https://google.com/travel/flights" +
-                "#flt=" + origin +
-                "." + destination +
-                "." + departureDate +
-                "*" + returnDate +
-                ";a=" + adults +
-                ";c=" + children;
+        return
+                "https://www.expedia.com/Flights-Search?flight-type=on&mode=search&trip=roundtrip" +
+                "&leg1=from:" + origin +
+                ",to:" + destination +
+                ",departure:" + departureDate +
+                "TANYT,fromType:U,toType:U&leg2=from:" + destination +
+                ",to:" + origin +
+                ",departure:" + returnDate +
+                "TANYT,fromType:U,toType:U&options=cabinclass:economy&passengers=adults:" + adults +
+                ",children:" + children +
+                ",infantinlap:N";
     }
 
     private void openUrl(String url) {

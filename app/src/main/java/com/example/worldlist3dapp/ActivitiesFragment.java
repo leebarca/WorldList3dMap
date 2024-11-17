@@ -53,6 +53,8 @@ public class ActivitiesFragment extends Fragment {
                 departure_date.setText(formattedDate);
             }, year, month, day);
 
+            datePickerDialog.getDatePicker().setMinDate(calendar.getTimeInMillis());
+
             datePickerDialog.show();
         });
 
@@ -67,6 +69,8 @@ public class ActivitiesFragment extends Fragment {
                 String formattedDate = String.format(Locale.getDefault(), "%02d/%02d/%04d", selectedDay, selectedMonth + 1, selectedYear);
                 return_date.setText(formattedDate);
             }, year, month, day);
+
+            datePickerDialog.getDatePicker().setMinDate(calendar.getTimeInMillis());
 
             datePickerDialog.show();
         });

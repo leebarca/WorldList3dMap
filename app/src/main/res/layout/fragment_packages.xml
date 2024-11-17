@@ -64,6 +64,9 @@
             android:hint="DD/MM/YYYY"
             android:textColorHint="@color/black"
             android:padding="10dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="none"
             android:textColor="@color/black" />
 
         <!-- Return Date -->
@@ -84,6 +87,9 @@
             android:hint="DD/MM/YYYY"
             android:textColorHint="@color/black"
             android:padding="10dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="none"
             android:textColor="@color/black" />
 
         <!-- Passengers Section -->

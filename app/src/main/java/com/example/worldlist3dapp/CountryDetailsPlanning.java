@@ -31,19 +31,26 @@ public class CountryDetailsPlanning extends AppCompatActivity {
         packagesButton = findViewById(R.id.packages_element);
         activitiesButton = findViewById(R.id.activities_element);
 
+        flightsButton.setBackground(ContextCompat.getDrawable(this, R.drawable.button_background));
+        hotelsButton.setBackground(ContextCompat.getDrawable(this, R.drawable.button_background));
+        packagesButton.setBackground(ContextCompat.getDrawable(this, R.drawable.button_background));
+        activitiesButton.setBackground(ContextCompat.getDrawable(this, R.drawable.button_background));
+
+        highlightActiveButton(flightsButton);
+
         String country_name = getIntent().getStringExtra("country_name");
 
         // Load the Flights fragment by default
-        replaceFragment(new FlightFragment(), R.id.flights_element, country_name);
+        replaceFragment(new FlightFragment(), flightsButton, country_name);
 
         // Set up button click listeners for GridLayout buttons
-        findViewById(R.id.flights_element).setOnClickListener(v -> replaceFragment(new FlightFragment(), R.id.flights_element, country_name));
-        findViewById(R.id.hotels_element).setOnClickListener(v -> replaceFragment(new HotelsFragment(), R.id.hotels_element, country_name));
-        findViewById(R.id.packages_element).setOnClickListener(v -> replaceFragment(new PackagesFragment(), R.id.packages_element, country_name));
-        findViewById(R.id.activities_element).setOnClickListener(v -> replaceFragment(new ActivitiesFragment(), R.id.activities_element, country_name));
+        findViewById(R.id.flights_element).setOnClickListener(v -> replaceFragment(new FlightFragment(), flightsButton, country_name));
+        findViewById(R.id.hotels_element).setOnClickListener(v -> replaceFragment(new HotelsFragment(), hotelsButton, country_name));
+        findViewById(R.id.packages_element).setOnClickListener(v -> replaceFragment(new PackagesFragment(), packagesButton, country_name));
+        findViewById(R.id.activities_element).setOnClickListener(v -> replaceFragment(new ActivitiesFragment(), activitiesButton, country_name));
     }
 
-    private void replaceFragment(Fragment fragment, int activeButtonId, String country) {
+    private void replaceFragment(Fragment fragment, View activeButton, String country) {
         // Create a Bundle to pass the data
         Bundle args = new Bundle();
         args.putString("country", country);
@@ -59,21 +66,20 @@ public class CountryDetailsPlanning extends AppCompatActivity {
 
         // Highlight the active button and reset others
         resetButtonColors();
-        highlightActiveButton(activeButtonId);
+        highlightActiveButton(activeButton);
     }
 
     private void resetButtonColors() {
         // Reset all buttons to default background color
-        int defaultColour = ContextCompat.getColor(this, R.color.app_background_color);
-        flightsButton.setBackgroundColor(defaultColour);
-        hotelsButton.setBackgroundColor(defaultColour);
-        packagesButton.setBackgroundColor(defaultColour);
-        activitiesButton.setBackgroundColor(defaultColour);
+        flightsButton.setSelected(false);
+        hotelsButton.setSelected(false);
+        packagesButton.setSelected(false);
+        activitiesButton.setSelected(false);
     }
 
-    private void highlightActiveButton(int buttonId) {
+    private void highlightActiveButton(View button) {
         // Set the active button to a dark gray background
-        int activeColour = ContextCompat.getColor(this, R.color.list_background_colour);
-        findViewById(buttonId).setBackgroundColor(activeColour);
+        resetButtonColors(); // Ensure only one button is highlighted
+        button.setSelected(true);
     }
 }

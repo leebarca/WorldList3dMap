@@ -15,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
-            android:text="Origin"
+            android:text="@string/origin"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="4dp"
-            android:text="Destination"
+            android:text="@string/destination"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="4dp"
-            android:text="Departure Date"
+            android:text="@string/departure_date"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
@@ -75,7 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="4dp"
-            android:text="Return Date"
+            android:text="@string/return_date"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
@@ -111,7 +111,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Adults"
+                    android:text="@string/people"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
@@ -149,7 +149,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:background="@drawable/button_background"
-            android:text="Search"
+            android:text="@string/search"
             android:textColor="@color/black"
             android:textSize="16sp" />
 

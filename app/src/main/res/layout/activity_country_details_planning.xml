@@ -22,7 +22,7 @@
             android:fontFamily="@font/open_sans"
             android:gravity="center"
             android:padding="8dp"
-            android:text="Planning Your Trip"
+            android:text="@string/planning_your_trip"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -54,13 +54,13 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:contentDescription="Flights Icon"
+                    android:contentDescription="@string/flights_icon"
                     android:src="@drawable/flight" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Flights"
+                    android:text="@string/flights"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
                     android:gravity="center" />
@@ -84,13 +84,13 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:contentDescription="Hotels Icon"
+                    android:contentDescription="@string/hotels_icon"
                     android:src="@drawable/hotel" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hotels"
+                    android:text="@string/hotels"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
                     android:gravity="center" />
@@ -114,13 +114,13 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:contentDescription="Packages Icon"
+                    android:contentDescription="@string/packages_icon"
                     android:src="@drawable/packages" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Packages"
+                    android:text="@string/packages"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
                     android:gravity="center" />
@@ -144,13 +144,13 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:contentDescription="Activities Icon"
+                    android:contentDescription="@string/activities_icon"
                     android:src="@drawable/activities" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Activities"
+                    android:text="@string/activities"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
                     android:gravity="center" />

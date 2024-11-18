@@ -146,22 +146,22 @@ public class PackagesFragment extends Fragment {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
 
         if (departureField.getText().toString().trim().isEmpty()) {
-            departureField.setError("Please enter the origin.");
+            departureField.setError(getString(R.string.please_enter_the_origin));
             isValid = false;
         }
 
         if (destinationField.getText().toString().trim().isEmpty()) {
-            destinationField.setError("Please enter the destination.");
+            destinationField.setError(getString(R.string.please_enter_the_destination));
             isValid = false;
         }
 
         if (departureDateField.getText().toString().trim().isEmpty()) {
-            departureDateField.setError("Please select a departure date.");
+            departureDateField.setError(getString(R.string.please_select_a_departure_date));
             isValid = false;
         }
 
         if (returnDateField.getText().toString().trim().isEmpty()) {
-            returnDateField.setError("Please select a return date.");
+            returnDateField.setError(getString(R.string.please_select_a_return_date));
             isValid = false;
         }
         else if (!departureDateField.getText().toString().trim().isEmpty()) {
@@ -169,7 +169,7 @@ public class PackagesFragment extends Fragment {
             Date returnDate = dateFormat.parse(returnDateField.getText().toString());
 
             if (returnDate.before(departureDate)) {
-                returnDateField.setError("Return date must be after departure date.");
+                returnDateField.setError(getString(R.string.return_date_must_be_after_departure_date));
                 isValid = false;
             }
         }

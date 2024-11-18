@@ -21,7 +21,7 @@
             android:fontFamily="@font/open_sans"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Country Summary"
+            android:text="@string/country_summary"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -57,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Read More"
+                android:text="@string/read_more"
                 android:textColor="@android:color/black"
                 android:textSize="14sp" />
         </LinearLayout>
@@ -78,7 +78,7 @@
             android:fontFamily="@font/open_sans"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Best Time to Visit"
+            android:text="@string/best_time_to_visit"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -117,7 +117,7 @@
                         android:background="@drawable/rounded_background"
                         android:gravity="center"
                         android:layout_height="40dp"
-                        android:text="Jan"
+                        android:text="@string/jan"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:layout_margin="4dp" />
@@ -128,7 +128,7 @@
                         android:background="@drawable/rounded_background"
                         android:gravity="center"
                         android:layout_height="40dp"
-                        android:text="Feb"
+                        android:text="@string/feb"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:layout_margin="4dp" />
@@ -139,7 +139,7 @@
                         android:background="@drawable/rounded_background"
                         android:gravity="center"
                         android:layout_height="40dp"
-                        android:text="Mar"
+                        android:text="@string/mar"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:layout_margin="4dp" />
@@ -150,7 +150,7 @@
                         android:background="@drawable/rounded_background"
                         android:gravity="center"
                         android:layout_height="40dp"
-                        android:text="Apr"
+                        android:text="@string/apr"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:layout_margin="4dp" />
@@ -161,7 +161,7 @@
                         android:background="@drawable/rounded_background"
                         android:gravity="center"
                         android:layout_height="40dp"
-                        android:text="May"
+                        android:text="@string/may"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:layout_margin="4dp" />
@@ -172,7 +172,7 @@
                         android:background="@drawable/rounded_background"
                         android:gravity="center"
                         android:layout_height="40dp"
-                        android:text="Jun"
+                        android:text="@string/jun"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:layout_margin="4dp" />
@@ -183,7 +183,7 @@
                         android:background="@drawable/rounded_background"
                         android:gravity="center"
                         android:layout_height="40dp"
-                        android:text="Jul"
+                        android:text="@string/jul"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:layout_margin="4dp" />
@@ -194,7 +194,7 @@
                         android:background="@drawable/rounded_background"
                         android:gravity="center"
                         android:layout_height="40dp"
-                        android:text="Aug"
+                        android:text="@string/aug"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:layout_margin="4dp" />
@@ -205,7 +205,7 @@
                         android:background="@drawable/rounded_background"
                         android:gravity="center"
                         android:layout_height="40dp"
-                        android:text="Sep"
+                        android:text="@string/sep"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:layout_margin="4dp" />
@@ -216,7 +216,7 @@
                         android:background="@drawable/rounded_background"
                         android:gravity="center"
                         android:layout_height="40dp"
-                        android:text="Oct"
+                        android:text="@string/oct"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:layout_margin="4dp" />
@@ -227,7 +227,7 @@
                         android:background="@drawable/rounded_background"
                         android:gravity="center"
                         android:layout_height="40dp"
-                        android:text="Nov"
+                        android:text="@string/nov"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:layout_margin="4dp" />
@@ -238,7 +238,7 @@
                         android:background="@drawable/rounded_background"
                         android:gravity="center"
                         android:layout_height="40dp"
-                        android:text="Dec"
+                        android:text="@string/dec"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
                         android:layout_margin="4dp" />
@@ -262,7 +262,7 @@
             android:fontFamily="@font/open_sans"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Safety and Security"
+            android:text="@string/safety_and_security"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -280,7 +280,7 @@
                 android:id="@+id/safety_icon"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:contentDescription="Safety Icon" />
+                android:contentDescription="@string/safety_icon" />
 
             <TextView
                 android:id="@+id/safety_and_security"
@@ -309,7 +309,7 @@
             android:fontFamily="@font/open_sans"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Weather"
+            android:text="@string/weather"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -337,7 +337,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginEnd="12dp"
-                    android:contentDescription="Spring Icon"
+                    android:contentDescription="@string/spring_icon"
                     android:src="@drawable/icon_spring" />
 
                 <LinearLayout
@@ -351,7 +351,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/open_sans"
-                        android:text="Spring (March - May)"
+                        android:text="@string/spring_march_may"
                         android:textColor="@android:color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -381,7 +381,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginEnd="12dp"
-                    android:contentDescription="Summer Icon"
+                    android:contentDescription="@string/summer_icon"
                     android:src="@drawable/icon_summer" />
 
                 <LinearLayout
@@ -395,7 +395,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/open_sans"
-                        android:text="Summer (June - August)"
+                        android:text="@string/summer_june_august"
                         android:textColor="@android:color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -425,7 +425,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginEnd="12dp"
-                    android:contentDescription="Autumn Icon"
+                    android:contentDescription="@string/autumn_icon"
                     android:src="@drawable/icon_autumn" />
 
                 <LinearLayout
@@ -439,7 +439,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/open_sans"
-                        android:text="Autumn (September - November)"
+                        android:text="@string/autumn_september_november"
                         android:textColor="@android:color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -468,7 +468,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginEnd="12dp"
-                    android:contentDescription="Winter Icon"
+                    android:contentDescription="@string/winter_icon"
                     android:src="@drawable/icon_winter" />
 
                 <LinearLayout
@@ -482,7 +482,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/open_sans"
-                        android:text="Winter (December - February)"
+                        android:text="@string/winter_december_february"
                         android:textColor="@android:color/black"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -514,7 +514,7 @@
             android:fontFamily="@font/open_sans"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Cuisine"
+            android:text="@string/cuisine"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -540,7 +540,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
-                    android:contentDescription="Winter Icon"
+                    android:contentDescription="@string/food_icon"
                     android:src="@drawable/food" />
 
                 <TextView
@@ -548,7 +548,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
-                    android:text="Popular Food"
+                    android:text="@string/popular_food"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -572,7 +572,7 @@
                 <ImageView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:contentDescription="Winter Icon"
+                    android:contentDescription="@string/drink_icon"
                     android:src="@drawable/drink" />
 
                 <TextView
@@ -580,7 +580,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
-                    android:text="Popular Drink"
+                    android:text="@string/popular_drink"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -611,7 +611,7 @@
             android:fontFamily="@font/open_sans"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Currency"
+            android:text="@string/currency"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -626,7 +626,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:contentDescription="Currency Icon"
+                android:contentDescription="@string/currency_icon"
                 android:src="@drawable/currency" />
 
             <TextView
@@ -656,7 +656,7 @@
             android:fontFamily="@font/open_sans"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Interesting Fact"
+            android:text="@string/interesting_fact"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -671,7 +671,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:contentDescription="Interesting Fact Icon"
+                android:contentDescription="@string/interesting_fact_icon"
                 android:src="@drawable/info" />
 
             <TextView
@@ -702,7 +702,7 @@
             android:fontFamily="@font/open_sans"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Official Tourism Website"
+            android:text="@string/official_tourism_website"
             android:textColor="@android:color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -717,7 +717,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:contentDescription="Website Icon"
+                android:contentDescription="@string/website_icon"
                 android:src="@drawable/website" />
 
             <TextView
@@ -729,6 +729,7 @@
                 android:gravity="center"
                 android:padding="4dp"
                 android:textColor="@android:color/black"
+                android:textColorLink="@android:color/holo_blue_dark"
                 android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>

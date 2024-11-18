@@ -31,7 +31,7 @@
             android:layout_height="30dp"
             android:layout_gravity="end|center_vertical"
             android:src="@drawable/filter"
-            android:contentDescription="Filter Button"
+            android:contentDescription="@string/filter_button"
             android:clickable="true"
             android:focusable="true" />
     </FrameLayout>
@@ -57,7 +57,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Language"
+                android:text="@string/language"
                 android:textSize="16sp"
                 android:gravity="center"
                 android:textColor="@color/black"
@@ -79,7 +79,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Continent"
+                android:text="@string/continent"
                 android:textSize="16sp"
                 android:gravity="center"
                 android:textColor="@color/black"
@@ -99,7 +99,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Best Months To Visit"
+                android:text="@string/best_months_to_visit"
                 android:textSize="16sp"
                 android:gravity="center"
                 android:textColor="@color/black"
@@ -119,7 +119,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Religion"
+                android:text="@string/religion"
                 android:textSize="16sp"
                 android:gravity="center"
                 android:textColor="@color/black"
@@ -154,7 +154,7 @@
         android:fontFamily="@font/open_sans"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="No countries found"
+        android:text="@string/no_countries_found"
         android:textColor="@color/black"
         android:visibility="gone"
         android:textSize="18sp" />

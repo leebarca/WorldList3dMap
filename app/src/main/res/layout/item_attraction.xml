@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:layout_gravity="center_horizontal"
-        android:contentDescription="Swipe down hint"
+        android:contentDescription="@string/swipe_down_hint"
         android:src="@drawable/arrow_up" />
 
     <!-- Content Container with Border -->
@@ -31,7 +31,7 @@
             android:id="@+id/attraction_image"
             android:layout_width="match_parent"
             android:layout_height="340dp"
-            android:contentDescription="Attraction Image"
+            android:contentDescription="@string/attraction_image"
             android:scaleType="centerCrop" />
 
         <!-- Attraction name -->
@@ -41,7 +41,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:paddingBottom="8dp"
-            android:text="Attraction Name"
             android:textAlignment="center"
             android:fontFamily="@font/open_sans"
             android:textColor="@android:color/black"
@@ -56,7 +55,6 @@
             android:fontFamily="@font/open_sans"
             android:paddingTop="8dp"
             android:gravity="center"
-            android:text="Attraction details go here."
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
@@ -68,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:layout_gravity="center_horizontal"
-        android:contentDescription="Swipe up hint"
+        android:contentDescription="@string/swipe_up_hint"
         android:src="@drawable/arrow_down" />
 
 </LinearLayout>

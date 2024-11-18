@@ -55,10 +55,10 @@ public class MainActivity extends AppCompatActivity {
         @SuppressLint({"MissingInflatedId",
                 "LocalSuppress"}) GridLayout bestMonthsToVisitGrid = findViewById(R.id.month_filter_grid);
 
-        String[] languages = {"English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Arabic", "Russian", "Chinese", "Malay", "Hindi", "Korean"};
-        String[] continents = {"North America", "South America", "Europe", "Africa", "Asia", "Australasia"};
-        String[] religions = {"Christianity", "Islam", "Buddhism", "Hinduism", "Judaism"};
-        String[] months = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+        String[] languages = {getString(R.string.english), getString(R.string.spanish), getString(R.string.french), getString(R.string.german), getString(R.string.italian), getString(R.string.portuguese), getString(R.string.dutch), getString(R.string.arabic), getString(R.string.russian), getString(R.string.chinese), getString(R.string.malay), getString(R.string.hindi), getString(R.string.korean)};
+        String[] continents = {getString(R.string.north_america), getString(R.string.south_america), getString(R.string.europe), getString(R.string.africa), getString(R.string.asia), getString(R.string.australasia)};
+        String[] religions = {getString(R.string.christianity), getString(R.string.islam), getString(R.string.buddhism), getString(R.string.hinduism), getString(R.string.judaism)};
+        String[] months = {getString(R.string.january), getString(R.string.february), getString(R.string.march), getString(R.string.april), getString(R.string.may), getString(R.string.june), getString(R.string.july), getString(R.string.august), getString(R.string.september), getString(R.string.october), getString(R.string.november), getString(R.string.december)};
 
         addFilterButtons(languageGrid, languages, selectedLanguages);
         addFilterButtons(continentGrid, continents, selectedContinents);
@@ -136,18 +136,18 @@ public class MainActivity extends AppCompatActivity {
         List<CountryInfo> filteredCountries = new ArrayList<>();
 
         Map<String, Integer> monthToIndexMap = new HashMap<>();
-        monthToIndexMap.put("January", 0);
-        monthToIndexMap.put("February", 1);
-        monthToIndexMap.put("March", 2);
-        monthToIndexMap.put("April", 3);
-        monthToIndexMap.put("May", 4);
-        monthToIndexMap.put("June", 5);
-        monthToIndexMap.put("July", 6);
-        monthToIndexMap.put("August", 7);
-        monthToIndexMap.put("September", 8);
-        monthToIndexMap.put("October", 9);
-        monthToIndexMap.put("November", 10);
-        monthToIndexMap.put("December", 11);
+        monthToIndexMap.put(getString(R.string.january), 0);
+        monthToIndexMap.put(getString(R.string.february), 1);
+        monthToIndexMap.put(getString(R.string.march), 2);
+        monthToIndexMap.put(getString(R.string.april), 3);
+        monthToIndexMap.put(getString(R.string.may), 4);
+        monthToIndexMap.put(getString(R.string.june), 5);
+        monthToIndexMap.put(getString(R.string.july), 6);
+        monthToIndexMap.put(getString(R.string.august), 7);
+        monthToIndexMap.put(getString(R.string.september), 8);
+        monthToIndexMap.put(getString(R.string.october), 9);
+        monthToIndexMap.put(getString(R.string.november), 10);
+        monthToIndexMap.put(getString(R.string.december), 11);
 
         for (CountryInfo country : countries) {
             boolean matchesSearch = query.isEmpty() || country.getName().toLowerCase().contains(query);

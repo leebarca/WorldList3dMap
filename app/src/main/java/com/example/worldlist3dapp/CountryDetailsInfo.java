@@ -107,15 +107,15 @@ public class CountryDetailsInfo extends AppCompatActivity {
             // Apply text for each of the TextView elements
             if (i == 0) {
                 if (Objects.equals(safety[i],
-                                   "Safe")){
+                                   getString(R.string.safe))){
                     safety_value.setBackgroundResource(R.drawable.safe);
                 }
                 else if (Objects.equals(safety[i],
-                                        "OK")){
+                                        getString(R.string.ok))){
                     safety_value.setBackgroundResource(R.drawable.ok);
                 }
                 else if (Objects.equals(safety[i],
-                                        "Dangerous")){
+                                        getString(R.string.dangerous))){
                     safety_value.setBackgroundResource(R.drawable.dangerous);
                 }
             } else if (i == 1) {
@@ -126,10 +126,10 @@ public class CountryDetailsInfo extends AppCompatActivity {
         summary_expand_layout.setOnClickListener(v -> {
             if (countryInfoTextView.getMaxLines() == 4) {
                 countryInfoTextView.setMaxLines(Integer.MAX_VALUE);
-                summary_expand.setText("Read Less");// Expand
+                summary_expand.setText(R.string.read_less);// Expand
             } else {
                 countryInfoTextView.setMaxLines(4); // Collapse
-                summary_expand.setText("Read More");
+                summary_expand.setText(R.string.read_more);
             }
         });
 

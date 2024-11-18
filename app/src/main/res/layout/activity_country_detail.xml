@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="340dp"
             android:layout_marginBottom="16dp"
-            android:contentDescription="Country 3D Image"
+            android:contentDescription="@string/country_3d_image"
             android:scaleType="centerCrop" />
 
         <!-- Country Name -->
@@ -38,7 +38,7 @@
             android:layout_width="120dp"
             android:layout_height="60dp"
             android:layout_marginTop="8dp"
-            android:contentDescription="Country Flag"
+            android:contentDescription="@string/country_flag"
             android:layout_gravity="center_horizontal" />
 
         <!-- Details Grid -->
@@ -60,7 +60,7 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:contentDescription="Capital Icon"
+                    android:contentDescription="@string/capital_icon"
                     android:src="@drawable/capital" />
                 <TextView
                     android:id="@+id/textView_capital"
@@ -84,7 +84,7 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:contentDescription="Population Icon"
+                    android:contentDescription="@string/population_icon"
                     android:src="@drawable/population" />
                 <TextView
                     android:id="@+id/textView_population"
@@ -108,7 +108,7 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:contentDescription="Language Icon"
+                    android:contentDescription="@string/language_icon"
                     android:src="@drawable/languages" />
                 <TextView
                     android:id="@+id/textView_languages"
@@ -132,7 +132,7 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:contentDescription="Religion Icon"
+                    android:contentDescription="@string/religion_icon"
                     android:src="@drawable/religion" />
                 <TextView
                     android:id="@+id/textView_religion"
@@ -156,7 +156,7 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:contentDescription="Continent Icon"
+                    android:contentDescription="@string/continent_icon"
                     android:src="@drawable/continent" />
                 <TextView
                     android:id="@+id/textView_continent"
@@ -180,7 +180,7 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:contentDescription="Area Icon"
+                    android:contentDescription="@string/area_icon"
                     android:src="@drawable/area" />
                 <TextView
                     android:id="@+id/textView_area"
@@ -217,13 +217,13 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:contentDescription="Info Icon"
+                android:contentDescription="@string/info_icon"
                 android:src="@drawable/info" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Info"
+                android:text="@string/info"
                 android:textSize="14sp"
                 android:textColor="@android:color/black"
                 android:gravity="center" />
@@ -247,13 +247,13 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:contentDescription="Attractions Icon"
+                android:contentDescription="@string/attractions_icon"
                 android:src="@drawable/attractions" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Attractions"
+                android:text="@string/attractions"
                 android:textSize="14sp"
                 android:textColor="@android:color/black"
                 android:gravity="center" />
@@ -277,13 +277,13 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:contentDescription="Offers Icon"
+                android:contentDescription="@string/offers_icon"
                 android:src="@drawable/offers" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Plan Your Trip"
+                android:text="@string/plan_your_trip"
                 android:textSize="14sp"
                 android:textColor="@android:color/black"
                 android:gravity="center" />

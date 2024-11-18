@@ -319,7 +319,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="16dp"
             android:columnCount="1"
             android:padding="4dp">
 

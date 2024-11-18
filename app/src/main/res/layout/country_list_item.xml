@@ -4,7 +4,8 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:background="@color/app_background_color"
-    android:padding="8dp">
+    android:padding="8dp"
+    android:gravity="center_vertical">
 
     <!-- Flag ImageView on the left -->
     <ImageView

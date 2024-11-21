@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">WorldTravel3D</string>
+    <string name="app_name">WorldTravel3D</string>
     <string name="swipe_down_hint">Swipe down hint</string>
     <string name="attraction_image">Attraction Image</string>
     <string name="swipe_up_hint">Swipe up hint</string>

@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         addFilterButtons(religionGrid, religions, selectedReligions);
         addFilterButtons(bestMonthsToVisitGrid, months, selectedMonths);
 
-        countries = CountryData.getCountriesInfo();
+        countries = CountryData.getCountriesInfo(this);
         adapter = new CountryAdapter(this, countries);
         countryListView.setAdapter(adapter);
 

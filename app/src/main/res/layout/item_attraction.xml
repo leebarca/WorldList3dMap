@@ -2,71 +2,78 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/app_background_color"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:padding="2dp">
 
-    <!-- Top Swipe Hint Icon -->
+    <!-- Left Swipe Hint Icon -->
     <ImageView
-        android:id="@+id/swipe_hint_top"
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:layout_gravity="center_horizontal"
-        android:contentDescription="@string/swipe_down_hint"
-        android:src="@drawable/arrow_up" />
+        android:id="@+id/swipe_hint_left"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/swipe_left_hint"
+        android:src="@drawable/arrow_left" />
 
-    <!-- Content Container with Border -->
-    <LinearLayout
-        android:id="@+id/content_layout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+    <!-- Scrollable Content Container with Border -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:layout_weight="1"
-        android:background="@drawable/button_background"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:fillViewport="true">
 
-        <!-- Attraction image -->
-        <ImageView
-            android:id="@+id/attraction_image"
-            android:layout_width="match_parent"
-            android:layout_height="340dp"
-            android:contentDescription="@string/attraction_image"
-            android:scaleType="centerCrop" />
-
-        <!-- Attraction name -->
-        <TextView
-            android:id="@+id/attraction_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingBottom="8dp"
-            android:textAlignment="center"
-            android:fontFamily="@font/open_sans"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <!-- Attraction details -->
-        <TextView
-            android:id="@+id/attraction_details"
+        <LinearLayout
+            android:id="@+id/content_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/open_sans"
-            android:paddingTop="8dp"
-            android:gravity="center"
-            android:textColor="@android:color/black"
-            android:textSize="16sp" />
+            android:orientation="vertical"
+            android:background="@drawable/button_background"
+            android:padding="16dp">
 
-    </LinearLayout>
+            <!-- Attraction Image -->
+            <ImageView
+                android:id="@+id/attraction_image"
+                android:layout_width="match_parent"
+                android:layout_height="340dp"
+                android:contentDescription="@string/attraction_image"
+                android:scaleType="centerCrop" />
 
-    <!-- Bottom Swipe Hint Icon -->
+            <!-- Attraction Name -->
+            <TextView
+                android:id="@+id/attraction_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="8dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Attraction Details -->
+            <TextView
+                android:id="@+id/attraction_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:paddingTop="8dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Right Swipe Hint Icon -->
     <ImageView
-        android:id="@+id/swipe_hint_bottom"
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:layout_gravity="center_horizontal"
-        android:contentDescription="@string/swipe_up_hint"
-        android:src="@drawable/arrow_down" />
+        android:id="@+id/swipe_hint_right"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/swipe_right_hint"
+        android:src="@drawable/arrow_right" />
 
 </LinearLayout>

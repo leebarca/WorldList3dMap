@@ -35,6 +35,6 @@ public class CountryDetailsAttractions extends AppCompatActivity {
         // Set up the adapter for the ViewPager
         AttractionsPagerAdapter adapter = new AttractionsPagerAdapter(attractionNames, attractionDetails, attractionImages);
         attractionsViewPager.setAdapter(adapter);
-        attractionsViewPager.setOrientation(ViewPager2.ORIENTATION_VERTICAL);
+        attractionsViewPager.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
     }
 }

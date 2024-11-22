@@ -35,14 +35,14 @@ public class AttractionsPagerAdapter extends RecyclerView.Adapter<AttractionsPag
 
         // Control the visibility of swipe hints
         if (position == 0) {
-            holder.swipeHintTop.setVisibility(View.GONE);  // No hint at the top on the first page
-            holder.swipeHintBottom.setVisibility(View.VISIBLE); // Show hint at the bottom to swipe up
+            holder.swipeHintLeft.setVisibility(View.GONE);  // No hint at the top on the first page
+            holder.swipeHintRight.setVisibility(View.VISIBLE); // Show hint at the bottom to swipe up
         } else if (position == names.length - 1) {
-            holder.swipeHintTop.setVisibility(View.VISIBLE);  // Show hint to swipe down
-            holder.swipeHintBottom.setVisibility(View.GONE);  // No hint at the bottom on the last page
+            holder.swipeHintLeft.setVisibility(View.VISIBLE);  // Show hint to swipe down
+            holder.swipeHintRight.setVisibility(View.GONE);  // No hint at the bottom on the last page
         } else {
-            holder.swipeHintTop.setVisibility(View.VISIBLE);  // Show hint to swipe down
-            holder.swipeHintBottom.setVisibility(View.VISIBLE); // Show hint to swipe up
+            holder.swipeHintLeft.setVisibility(View.VISIBLE);  // Show hint to swipe down
+            holder.swipeHintRight.setVisibility(View.VISIBLE); // Show hint to swipe up
         }
     }
 
@@ -53,15 +53,15 @@ public class AttractionsPagerAdapter extends RecyclerView.Adapter<AttractionsPag
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         TextView attractionName, attractionDetails;
-        ImageView attractionImage, swipeHintTop, swipeHintBottom;
+        ImageView attractionImage, swipeHintLeft, swipeHintRight;
 
         ViewHolder(@NonNull View itemView) {
             super(itemView);
             attractionName = itemView.findViewById(R.id.attraction_name);
             attractionDetails = itemView.findViewById(R.id.attraction_details);
             attractionImage = itemView.findViewById(R.id.attraction_image);
-            swipeHintTop = itemView.findViewById(R.id.swipe_hint_top);
-            swipeHintBottom = itemView.findViewById(R.id.swipe_hint_bottom);
+            swipeHintLeft = itemView.findViewById(R.id.swipe_hint_left);
+            swipeHintRight = itemView.findViewById(R.id.swipe_hint_right);
         }
     }
 }

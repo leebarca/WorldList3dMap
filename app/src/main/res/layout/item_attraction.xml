@@ -8,8 +8,8 @@
     <!-- Left Swipe Hint Icon -->
     <ImageView
         android:id="@+id/swipe_hint_left"
-        android:layout_width="20dp"
-        android:layout_height="wrap_content"
+        android:layout_width="10dp"
+        android:layout_height="100dp"
         android:layout_gravity="center_vertical"
         android:contentDescription="@string/swipe_left_hint"
         android:src="@drawable/arrow_left" />
@@ -71,8 +71,8 @@
     <!-- Right Swipe Hint Icon -->
     <ImageView
         android:id="@+id/swipe_hint_right"
-        android:layout_width="20dp"
-        android:layout_height="wrap_content"
+        android:layout_width="10dp"
+        android:layout_height="100dp"
         android:layout_gravity="center_vertical"
         android:contentDescription="@string/swipe_right_hint"
         android:src="@drawable/arrow_right" />

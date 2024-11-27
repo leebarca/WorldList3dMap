@@ -38,10 +38,10 @@ public class CountryData {
                 context.getString(R.string.afghanistan_fact),
                 "https://tourism.gov.af",
                 new String[]{
-                        context.getString(R.string.afghanistan_spring_weather),
-                        context.getString(R.string.afghanistan_summer_weather),
-                        context.getString(R.string.afghanistan_autumn_weather),
-                        context.getString(R.string.afghanistan_winter_weather)
+                        context.getString(R.string.afghanistan_march_may_weather),
+                        context.getString(R.string.afghanistan_june_august_weather),
+                        context.getString(R.string.afghanistan_september_november_weather),
+                        context.getString(R.string.afghanistan_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.afghanistan_kabuli_pulao),
@@ -77,10 +77,10 @@ public class CountryData {
                 context.getString(R.string.albania_fact),
                 "https://albania.al",
                 new String[]{
-                        context.getString(R.string.albania_spring_weather),
-                        context.getString(R.string.albania_summer_weather),
-                        context.getString(R.string.albania_autumn_weather),
-                        context.getString(R.string.albania_winter_weather)
+                        context.getString(R.string.albania_march_may_weather),
+                        context.getString(R.string.albania_june_august_weather),
+                        context.getString(R.string.albania_september_november_weather),
+                        context.getString(R.string.albania_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.albania_byrek),
@@ -116,10 +116,10 @@ public class CountryData {
                 context.getString(R.string.algeria_fact),
                 "https://www.algeria.com",
                 new String[]{
-                        context.getString(R.string.algeria_spring_weather),
-                        context.getString(R.string.algeria_summer_weather),
-                        context.getString(R.string.algeria_autumn_weather),
-                        context.getString(R.string.algeria_winter_weather)
+                        context.getString(R.string.algeria_march_may_weather),
+                        context.getString(R.string.algeria_june_august_weather),
+                        context.getString(R.string.algeria_september_november_weather),
+                        context.getString(R.string.algeria_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.algeria_couscous),
@@ -155,10 +155,10 @@ public class CountryData {
                 context.getString(R.string.andorra_fact),
                 "https://visitandorra.com",
                 new String[]{
-                        context.getString(R.string.andorra_spring_weather),
-                        context.getString(R.string.andorra_summer_weather),
-                        context.getString(R.string.andorra_autumn_weather),
-                        context.getString(R.string.andorra_winter_weather)
+                        context.getString(R.string.andorra_march_may_weather),
+                        context.getString(R.string.andorra_june_august_weather),
+                        context.getString(R.string.andorra_september_november_weather),
+                        context.getString(R.string.andorra_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.andorra_trinxat),
@@ -194,10 +194,10 @@ public class CountryData {
                 context.getString(R.string.angola_fact),
                 "https://angola-tourism.com",
                 new String[]{
-                        context.getString(R.string.angola_spring_weather),
-                        context.getString(R.string.angola_summer_weather),
-                        context.getString(R.string.angola_autumn_weather),
-                        context.getString(R.string.angola_winter_weather)
+                        context.getString(R.string.angola_march_may_weather),
+                        context.getString(R.string.angola_june_august_weather),
+                        context.getString(R.string.angola_september_november_weather),
+                        context.getString(R.string.angola_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.angola_fufu),
@@ -233,10 +233,10 @@ public class CountryData {
                 context.getString(R.string.antigua_fact),
                 "https://www.visitantiguabarbuda.com",
                 new String[]{
-                        context.getString(R.string.antigua_spring_weather),
-                        context.getString(R.string.antigua_summer_weather),
-                        context.getString(R.string.antigua_autumn_weather),
-                        context.getString(R.string.antigua_winter_weather)
+                        context.getString(R.string.antigua_march_may_weather),
+                        context.getString(R.string.antigua_june_august_weather),
+                        context.getString(R.string.antigua_september_november_weather),
+                        context.getString(R.string.antigua_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.antigua_fungi_and_pepperpot),
@@ -272,10 +272,10 @@ public class CountryData {
                 context.getString(R.string.argentina_fact),
                 "https://www.argentina.travel",
                 new String[]{
-                        context.getString(R.string.argentina_spring_weather),
-                        context.getString(R.string.argentina_summer_weather),
-                        context.getString(R.string.argentina_autumn_weather),
-                        context.getString(R.string.argentina_winter_weather)
+                        context.getString(R.string.argentina_march_may_weather),
+                        context.getString(R.string.argentina_june_august_weather),
+                        context.getString(R.string.argentina_september_november_weather),
+                        context.getString(R.string.argentina_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.argentina_asado),
@@ -311,10 +311,10 @@ public class CountryData {
                 context.getString(R.string.armenia_fact),
                 "https://armenia.travel",
                 new String[]{
-                        context.getString(R.string.armenia_spring_weather),
-                        context.getString(R.string.armenia_summer_weather),
-                        context.getString(R.string.armenia_autumn_weather),
-                        context.getString(R.string.armenia_winter_weather)
+                        context.getString(R.string.armenia_march_may_weather),
+                        context.getString(R.string.armenia_june_august_weather),
+                        context.getString(R.string.armenia_september_november_weather),
+                        context.getString(R.string.armenia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.armenia_dolma),
@@ -350,10 +350,10 @@ public class CountryData {
                 context.getString(R.string.australia_fact),
                 "https://www.australia.com",
                 new String[]{
-                        context.getString(R.string.australia_spring_weather),
-                        context.getString(R.string.australia_summer_weather),
-                        context.getString(R.string.australia_autumn_weather),
-                        context.getString(R.string.australia_winter_weather)
+                        context.getString(R.string.australia_march_may_weather),
+                        context.getString(R.string.australia_june_august_weather),
+                        context.getString(R.string.australia_september_november_weather),
+                        context.getString(R.string.australia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.australia_vegemite),
@@ -389,10 +389,10 @@ public class CountryData {
                 context.getString(R.string.austria_fact),
                 "https://www.austria.info",
                 new String[]{
-                        context.getString(R.string.austria_spring_weather),
-                        context.getString(R.string.austria_summer_weather),
-                        context.getString(R.string.austria_autumn_weather),
-                        context.getString(R.string.austria_winter_weather)
+                        context.getString(R.string.austria_march_may_weather),
+                        context.getString(R.string.austria_june_august_weather),
+                        context.getString(R.string.austria_september_november_weather),
+                        context.getString(R.string.austria_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.austria_wiener_schnitzel),
@@ -428,10 +428,10 @@ public class CountryData {
                 context.getString(R.string.azerbaijan_fact),
                 "https://azerbaijan.travel",
                 new String[]{
-                        context.getString(R.string.azerbaijan_spring_weather),
-                        context.getString(R.string.azerbaijan_summer_weather),
-                        context.getString(R.string.azerbaijan_autumn_weather),
-                        context.getString(R.string.azerbaijan_winter_weather)
+                        context.getString(R.string.azerbaijan_march_may_weather),
+                        context.getString(R.string.azerbaijan_june_august_weather),
+                        context.getString(R.string.azerbaijan_september_november_weather),
+                        context.getString(R.string.azerbaijan_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.azerbaijan_plov),
@@ -467,10 +467,10 @@ public class CountryData {
                 context.getString(R.string.bahamas_fact),
                 "https://www.bahamas.com",
                 new String[]{
-                        context.getString(R.string.bahamas_spring_weather),
-                        context.getString(R.string.bahamas_summer_weather),
-                        context.getString(R.string.bahamas_autumn_weather),
-                        context.getString(R.string.bahamas_winter_weather)
+                        context.getString(R.string.bahamas_march_may_weather),
+                        context.getString(R.string.bahamas_june_august_weather),
+                        context.getString(R.string.bahamas_september_november_weather),
+                        context.getString(R.string.bahamas_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.bahamas_conch_salad),
@@ -506,10 +506,10 @@ public class CountryData {
                 context.getString(R.string.bahrain_fact),
                 "https://www.btea.bh",
                 new String[]{
-                        context.getString(R.string.bahrain_spring_weather),
-                        context.getString(R.string.bahrain_summer_weather),
-                        context.getString(R.string.bahrain_autumn_weather),
-                        context.getString(R.string.bahrain_winter_weather)
+                        context.getString(R.string.bahrain_march_may_weather),
+                        context.getString(R.string.bahrain_june_august_weather),
+                        context.getString(R.string.bahrain_september_november_weather),
+                        context.getString(R.string.bahrain_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.bahrain_machboos),
@@ -545,10 +545,10 @@ public class CountryData {
                 context.getString(R.string.bangladesh_fact),
                 "https://beautifulbangladesh.gov.bd",
                 new String[]{
-                        context.getString(R.string.bangladesh_spring_weather),
-                        context.getString(R.string.bangladesh_summer_weather),
-                        context.getString(R.string.bangladesh_autumn_weather),
-                        context.getString(R.string.bangladesh_winter_weather)
+                        context.getString(R.string.bangladesh_march_may_weather),
+                        context.getString(R.string.bangladesh_june_august_weather),
+                        context.getString(R.string.bangladesh_september_november_weather),
+                        context.getString(R.string.bangladesh_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.bangladesh_hilsa_fish_curry),
@@ -584,10 +584,10 @@ public class CountryData {
                 context.getString(R.string.barbados_fact),
                 "https://www.visitbarbados.org",
                 new String[]{
-                        context.getString(R.string.barbados_spring_weather),
-                        context.getString(R.string.barbados_summer_weather),
-                        context.getString(R.string.barbados_autumn_weather),
-                        context.getString(R.string.barbados_winter_weather)
+                        context.getString(R.string.barbados_march_may_weather),
+                        context.getString(R.string.barbados_june_august_weather),
+                        context.getString(R.string.barbados_september_november_weather),
+                        context.getString(R.string.barbados_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.barbados_cou_cou),
@@ -623,10 +623,10 @@ public class CountryData {
                 context.getString(R.string.belarus_fact),
                 "https://www.belarus.by",
                 new String[]{
-                        context.getString(R.string.belarus_spring_weather),
-                        context.getString(R.string.belarus_summer_weather),
-                        context.getString(R.string.belarus_autumn_weather),
-                        context.getString(R.string.belarus_winter_weather)
+                        context.getString(R.string.belarus_march_may_weather),
+                        context.getString(R.string.belarus_june_august_weather),
+                        context.getString(R.string.belarus_september_november_weather),
+                        context.getString(R.string.belarus_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.belarus_draniki),
@@ -662,10 +662,10 @@ public class CountryData {
                 context.getString(R.string.belgium_fact),
                 "https://visitbelgium.com",
                 new String[]{
-                        context.getString(R.string.belgium_spring_weather),
-                        context.getString(R.string.belgium_summer_weather),
-                        context.getString(R.string.belgium_autumn_weather),
-                        context.getString(R.string.belgium_winter_weather)
+                        context.getString(R.string.belgium_march_may_weather),
+                        context.getString(R.string.belgium_june_august_weather),
+                        context.getString(R.string.belgium_september_november_weather),
+                        context.getString(R.string.belgium_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.belgium_moules_frites),
@@ -701,10 +701,10 @@ public class CountryData {
                 context.getString(R.string.belize_fact),
                 "https://www.travelbelize.org",
                 new String[]{
-                        context.getString(R.string.belize_spring_weather),
-                        context.getString(R.string.belize_summer_weather),
-                        context.getString(R.string.belize_autumn_weather),
-                        context.getString(R.string.belize_winter_weather)
+                        context.getString(R.string.belize_march_may_weather),
+                        context.getString(R.string.belize_june_august_weather),
+                        context.getString(R.string.belize_september_november_weather),
+                        context.getString(R.string.belize_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.belize_rice_beans),
@@ -740,10 +740,10 @@ public class CountryData {
                 context.getString(R.string.benin_fact),
                 "https://visitbeninrepublic.com",
                 new String[]{
-                        context.getString(R.string.benin_spring_weather),
-                        context.getString(R.string.benin_summer_weather),
-                        context.getString(R.string.benin_autumn_weather),
-                        context.getString(R.string.benin_winter_weather)
+                        context.getString(R.string.benin_march_may_weather),
+                        context.getString(R.string.benin_june_august_weather),
+                        context.getString(R.string.benin_september_november_weather),
+                        context.getString(R.string.benin_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.benin_amiwo),
@@ -779,10 +779,10 @@ public class CountryData {
                 context.getString(R.string.bhutan_fact),
                 "https://bhutan.travel",
                 new String[]{
-                        context.getString(R.string.bhutan_spring_weather),
-                        context.getString(R.string.bhutan_summer_weather),
-                        context.getString(R.string.bhutan_autumn_weather),
-                        context.getString(R.string.bhutan_winter_weather)
+                        context.getString(R.string.bhutan_march_may_weather),
+                        context.getString(R.string.bhutan_june_august_weather),
+                        context.getString(R.string.bhutan_september_november_weather),
+                        context.getString(R.string.bhutan_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.bhutan_ema_datshi),
@@ -818,10 +818,10 @@ public class CountryData {
                 context.getString(R.string.bolivia_fact),
                 "https://boliviatravelsite.com",
                 new String[]{
-                        context.getString(R.string.bolivia_spring_weather),
-                        context.getString(R.string.bolivia_summer_weather),
-                        context.getString(R.string.bolivia_autumn_weather),
-                        context.getString(R.string.bolivia_winter_weather)
+                        context.getString(R.string.bolivia_march_may_weather),
+                        context.getString(R.string.bolivia_june_august_weather),
+                        context.getString(R.string.bolivia_september_november_weather),
+                        context.getString(R.string.bolivia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.bolivia_saltenas),
@@ -857,10 +857,10 @@ public class CountryData {
                 context.getString(R.string.bosnia_fact),
                 "https://www.tourismbih.com",
                 new String[]{
-                        context.getString(R.string.bosnia_spring_weather),
-                        context.getString(R.string.bosnia_summer_weather),
-                        context.getString(R.string.bosnia_autumn_weather),
-                        context.getString(R.string.bosnia_winter_weather)
+                        context.getString(R.string.bosnia_march_may_weather),
+                        context.getString(R.string.bosnia_june_august_weather),
+                        context.getString(R.string.bosnia_september_november_weather),
+                        context.getString(R.string.bosnia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.bosnia_cevapi),
@@ -896,10 +896,10 @@ public class CountryData {
                 context.getString(R.string.botswana_fact),
                 "https://www.botswanatourism.co.bw",
                 new String[]{
-                        context.getString(R.string.botswana_spring_weather),
-                        context.getString(R.string.botswana_summer_weather),
-                        context.getString(R.string.botswana_autumn_weather),
-                        context.getString(R.string.botswana_winter_weather)
+                        context.getString(R.string.botswana_march_may_weather),
+                        context.getString(R.string.botswana_june_august_weather),
+                        context.getString(R.string.botswana_september_november_weather),
+                        context.getString(R.string.botswana_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.botswana_seswaa),
@@ -935,10 +935,10 @@ public class CountryData {
                 context.getString(R.string.brazil_fact),
                 "https://visitbrasil.com",
                 new String[]{
-                        context.getString(R.string.brazil_spring_weather),
-                        context.getString(R.string.brazil_summer_weather),
-                        context.getString(R.string.brazil_autumn_weather),
-                        context.getString(R.string.brazil_winter_weather)
+                        context.getString(R.string.brazil_march_may_weather),
+                        context.getString(R.string.brazil_june_august_weather),
+                        context.getString(R.string.brazil_september_november_weather),
+                        context.getString(R.string.brazil_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.brazil_feijoada),
@@ -974,10 +974,10 @@ public class CountryData {
                 context.getString(R.string.brunei_fact),
                 "https://www.bruneitourism.com",
                 new String[]{
-                        context.getString(R.string.brunei_spring_weather),
-                        context.getString(R.string.brunei_summer_weather),
-                        context.getString(R.string.brunei_autumn_weather),
-                        context.getString(R.string.brunei_winter_weather)
+                        context.getString(R.string.brunei_march_may_weather),
+                        context.getString(R.string.brunei_june_august_weather),
+                        context.getString(R.string.brunei_september_november_weather),
+                        context.getString(R.string.brunei_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.brunei_ambuyat),
@@ -1013,10 +1013,10 @@ public class CountryData {
                 context.getString(R.string.bulgaria_fact),
                 "https://bulgariatravel.org",
                 new String[]{
-                        context.getString(R.string.bulgaria_spring_weather),
-                        context.getString(R.string.bulgaria_summer_weather),
-                        context.getString(R.string.bulgaria_autumn_weather),
-                        context.getString(R.string.bulgaria_winter_weather)
+                        context.getString(R.string.bulgaria_march_may_weather),
+                        context.getString(R.string.bulgaria_june_august_weather),
+                        context.getString(R.string.bulgaria_september_november_weather),
+                        context.getString(R.string.bulgaria_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.bulgaria_banitsa),
@@ -1052,10 +1052,10 @@ public class CountryData {
                 context.getString(R.string.burkina_faso_fact),
                 "https://burkinatourism.com",
                 new String[]{
-                        context.getString(R.string.burkina_faso_spring_weather),
-                        context.getString(R.string.burkina_faso_summer_weather),
-                        context.getString(R.string.burkina_faso_autumn_weather),
-                        context.getString(R.string.burkina_faso_winter_weather)
+                        context.getString(R.string.burkina_faso_march_may_weather),
+                        context.getString(R.string.burkina_faso_june_august_weather),
+                        context.getString(R.string.burkina_faso_september_november_weather),
+                        context.getString(R.string.burkina_faso_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.burkina_faso_to),
@@ -1091,10 +1091,10 @@ public class CountryData {
                 context.getString(R.string.burundi_fact),
                 "https://burunditravel.bi",
                 new String[]{
-                        context.getString(R.string.burundi_spring_weather),
-                        context.getString(R.string.burundi_summer_weather),
-                        context.getString(R.string.burundi_autumn_weather),
-                        context.getString(R.string.burundi_winter_weather)
+                        context.getString(R.string.burundi_march_may_weather),
+                        context.getString(R.string.burundi_june_august_weather),
+                        context.getString(R.string.burundi_september_november_weather),
+                        context.getString(R.string.burundi_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.burundi_boko_boko),
@@ -1130,10 +1130,10 @@ public class CountryData {
                 context.getString(R.string.cabo_verde_fact),
                 "https://www.visit-caboverde.com",
                 new String[]{
-                        context.getString(R.string.cabo_verde_spring_weather),
-                        context.getString(R.string.cabo_verde_summer_weather),
-                        context.getString(R.string.cabo_verde_autumn_weather),
-                        context.getString(R.string.cabo_verde_winter_weather)
+                        context.getString(R.string.cabo_verde_march_may_weather),
+                        context.getString(R.string.cabo_verde_june_august_weather),
+                        context.getString(R.string.cabo_verde_september_november_weather),
+                        context.getString(R.string.cabo_verde_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.cabo_verde_cachupa),
@@ -1169,10 +1169,10 @@ public class CountryData {
                 context.getString(R.string.cambodia_fact),
                 "https://www.tourismcambodia.com",
                 new String[]{
-                        context.getString(R.string.cambodia_spring_weather),
-                        context.getString(R.string.cambodia_summer_weather),
-                        context.getString(R.string.cambodia_autumn_weather),
-                        context.getString(R.string.cambodia_winter_weather)
+                        context.getString(R.string.cambodia_march_may_weather),
+                        context.getString(R.string.cambodia_june_august_weather),
+                        context.getString(R.string.cambodia_september_november_weather),
+                        context.getString(R.string.cambodia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.cambodia_fish_amok),
@@ -1208,10 +1208,10 @@ public class CountryData {
                 context.getString(R.string.cameroon_fact),
                 "https://discover-cameroon.com",
                 new String[]{
-                        context.getString(R.string.cameroon_spring_weather),
-                        context.getString(R.string.cameroon_summer_weather),
-                        context.getString(R.string.cameroon_autumn_weather),
-                        context.getString(R.string.cameroon_winter_weather)
+                        context.getString(R.string.cameroon_march_may_weather),
+                        context.getString(R.string.cameroon_june_august_weather),
+                        context.getString(R.string.cameroon_september_november_weather),
+                        context.getString(R.string.cameroon_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.cameroon_ndole),
@@ -1247,10 +1247,10 @@ public class CountryData {
                 context.getString(R.string.canada_fact),
                 "https://www.destinationcanada.com",
                 new String[]{
-                        context.getString(R.string.canada_spring_weather),
-                        context.getString(R.string.canada_summer_weather),
-                        context.getString(R.string.canada_autumn_weather),
-                        context.getString(R.string.canada_winter_weather)
+                        context.getString(R.string.canada_march_may_weather),
+                        context.getString(R.string.canada_june_august_weather),
+                        context.getString(R.string.canada_september_november_weather),
+                        context.getString(R.string.canada_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.canada_poutine),
@@ -1286,10 +1286,10 @@ public class CountryData {
                 context.getString(R.string.central_african_republic_fact),
                 "https://www.centralafricanrepublictours.com",
                 new String[]{
-                        context.getString(R.string.central_african_republic_spring_weather),
-                        context.getString(R.string.central_african_republic_summer_weather),
-                        context.getString(R.string.central_african_republic_autumn_weather),
-                        context.getString(R.string.central_african_republic_winter_weather)
+                        context.getString(R.string.central_african_republic_march_may_weather),
+                        context.getString(R.string.central_african_republic_june_august_weather),
+                        context.getString(R.string.central_african_republic_september_november_weather),
+                        context.getString(R.string.central_african_republic_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.central_african_republic_cassava_dishes),
@@ -1325,10 +1325,10 @@ public class CountryData {
                 context.getString(R.string.chad_fact),
                 "https://chadtravelandtours.com",
                 new String[]{
-                        context.getString(R.string.chad_spring_weather),
-                        context.getString(R.string.chad_summer_weather),
-                        context.getString(R.string.chad_autumn_weather),
-                        context.getString(R.string.chad_winter_weather)
+                        context.getString(R.string.chad_march_may_weather),
+                        context.getString(R.string.chad_june_august_weather),
+                        context.getString(R.string.chad_september_november_weather),
+                        context.getString(R.string.chad_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.chad_beef_stew),
@@ -1364,10 +1364,10 @@ public class CountryData {
                 context.getString(R.string.chile_fact),
                 "https://chile.travel",
                 new String[]{
-                        context.getString(R.string.chile_spring_weather),
-                        context.getString(R.string.chile_summer_weather),
-                        context.getString(R.string.chile_autumn_weather),
-                        context.getString(R.string.chile_winter_weather)
+                        context.getString(R.string.chile_march_may_weather),
+                        context.getString(R.string.chile_june_august_weather),
+                        context.getString(R.string.chile_september_november_weather),
+                        context.getString(R.string.chile_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.chile_empanadas),
@@ -1403,10 +1403,10 @@ public class CountryData {
                 context.getString(R.string.china_fact),
                 "http://www.china.org.cn/travel/index.html",
                 new String[]{
-                        context.getString(R.string.china_spring_weather),
-                        context.getString(R.string.china_summer_weather),
-                        context.getString(R.string.china_autumn_weather),
-                        context.getString(R.string.china_winter_weather)
+                        context.getString(R.string.china_march_may_weather),
+                        context.getString(R.string.china_june_august_weather),
+                        context.getString(R.string.china_september_november_weather),
+                        context.getString(R.string.china_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.china_peking_duck),
@@ -1442,10 +1442,10 @@ public class CountryData {
                 context.getString(R.string.colombia_fact),
                 "https://colombia.travel",
                 new String[]{
-                        context.getString(R.string.colombia_spring_weather),
-                        context.getString(R.string.colombia_summer_weather),
-                        context.getString(R.string.colombia_autumn_weather),
-                        context.getString(R.string.colombia_winter_weather)
+                        context.getString(R.string.colombia_march_may_weather),
+                        context.getString(R.string.colombia_june_august_weather),
+                        context.getString(R.string.colombia_september_november_weather),
+                        context.getString(R.string.colombia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.colombia_arepas),
@@ -1481,10 +1481,10 @@ public class CountryData {
                 context.getString(R.string.comoros_fact),
                 "https://www.comorosmayottetours.com",
                 new String[]{
-                        context.getString(R.string.comoros_spring_weather),
-                        context.getString(R.string.comoros_summer_weather),
-                        context.getString(R.string.comoros_autumn_weather),
-                        context.getString(R.string.comoros_winter_weather)
+                        context.getString(R.string.comoros_march_may_weather),
+                        context.getString(R.string.comoros_june_august_weather),
+                        context.getString(R.string.comoros_september_november_weather),
+                        context.getString(R.string.comoros_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.comoros_langouste),
@@ -1520,10 +1520,10 @@ public class CountryData {
                 context.getString(R.string.congo_fact),
                 "https://republic-congo.com",
                 new String[]{
-                        context.getString(R.string.congo_spring_weather),
-                        context.getString(R.string.congo_summer_weather),
-                        context.getString(R.string.congo_autumn_weather),
-                        context.getString(R.string.congo_winter_weather)
+                        context.getString(R.string.congo_march_may_weather),
+                        context.getString(R.string.congo_june_august_weather),
+                        context.getString(R.string.congo_september_november_weather),
+                        context.getString(R.string.congo_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.congo_poulet_moambe),
@@ -1559,10 +1559,10 @@ public class CountryData {
                 context.getString(R.string.costa_rica_fact),
                 "https://www.visitcostarica.com",
                 new String[]{
-                        context.getString(R.string.costa_rica_spring_weather),
-                        context.getString(R.string.costa_rica_summer_weather),
-                        context.getString(R.string.costa_rica_autumn_weather),
-                        context.getString(R.string.costa_rica_winter_weather)
+                        context.getString(R.string.costa_rica_march_may_weather),
+                        context.getString(R.string.costa_rica_june_august_weather),
+                        context.getString(R.string.costa_rica_september_november_weather),
+                        context.getString(R.string.costa_rica_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.costa_rica_gallo_pinto),
@@ -1598,10 +1598,10 @@ public class CountryData {
                 context.getString(R.string.croatia_fact),
                 "https://croatia.hr",
                 new String[]{
-                        context.getString(R.string.croatia_spring_weather),
-                        context.getString(R.string.croatia_summer_weather),
-                        context.getString(R.string.croatia_autumn_weather),
-                        context.getString(R.string.croatia_winter_weather)
+                        context.getString(R.string.croatia_march_may_weather),
+                        context.getString(R.string.croatia_june_august_weather),
+                        context.getString(R.string.croatia_september_november_weather),
+                        context.getString(R.string.croatia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.croatia_pasticada),
@@ -1637,10 +1637,10 @@ public class CountryData {
                 context.getString(R.string.cuba_fact),
                 "https://www.cubatravel.cu",
                 new String[]{
-                        context.getString(R.string.cuba_spring_weather),
-                        context.getString(R.string.cuba_summer_weather),
-                        context.getString(R.string.cuba_autumn_weather),
-                        context.getString(R.string.cuba_winter_weather)
+                        context.getString(R.string.cuba_march_may_weather),
+                        context.getString(R.string.cuba_june_august_weather),
+                        context.getString(R.string.cuba_september_november_weather),
+                        context.getString(R.string.cuba_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.cuba_ropa_vieja),
@@ -1676,10 +1676,10 @@ public class CountryData {
                 context.getString(R.string.cyprus_fact),
                 "https://www.visitcyprus.com",
                 new String[]{
-                        context.getString(R.string.cyprus_spring_weather),
-                        context.getString(R.string.cyprus_summer_weather),
-                        context.getString(R.string.cyprus_autumn_weather),
-                        context.getString(R.string.cyprus_winter_weather)
+                        context.getString(R.string.cyprus_march_may_weather),
+                        context.getString(R.string.cyprus_june_august_weather),
+                        context.getString(R.string.cyprus_september_november_weather),
+                        context.getString(R.string.cyprus_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.cyprus_halloumi_cheese),
@@ -1715,10 +1715,10 @@ public class CountryData {
                 context.getString(R.string.czech_republic_fact),
                 "https://www.visitczechia.com",
                 new String[]{
-                        context.getString(R.string.czech_republic_spring_weather),
-                        context.getString(R.string.czech_republic_summer_weather),
-                        context.getString(R.string.czech_republic_autumn_weather),
-                        context.getString(R.string.czech_republic_winter_weather)
+                        context.getString(R.string.czech_republic_march_may_weather),
+                        context.getString(R.string.czech_republic_june_august_weather),
+                        context.getString(R.string.czech_republic_september_november_weather),
+                        context.getString(R.string.czech_republic_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.czech_republic_svickova),
@@ -1754,10 +1754,10 @@ public class CountryData {
                 context.getString(R.string.drc_congo_fact),
                 "https://visit.virunga.org",
                 new String[]{
-                        context.getString(R.string.drc_congo_spring_weather),
-                        context.getString(R.string.drc_congo_summer_weather),
-                        context.getString(R.string.drc_congo_autumn_weather),
-                        context.getString(R.string.drc_congo_winter_weather)
+                        context.getString(R.string.drc_congo_march_may_weather),
+                        context.getString(R.string.drc_congo_june_august_weather),
+                        context.getString(R.string.drc_congo_september_november_weather),
+                        context.getString(R.string.drc_congo_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.drc_congo_saka_saka),
@@ -1793,10 +1793,10 @@ public class CountryData {
                 context.getString(R.string.denmark_fact),
                 "https://www.visitdenmark.com",
                 new String[]{
-                        context.getString(R.string.denmark_spring_weather),
-                        context.getString(R.string.denmark_summer_weather),
-                        context.getString(R.string.denmark_autumn_weather),
-                        context.getString(R.string.denmark_winter_weather)
+                        context.getString(R.string.denmark_march_may_weather),
+                        context.getString(R.string.denmark_june_august_weather),
+                        context.getString(R.string.denmark_september_november_weather),
+                        context.getString(R.string.denmark_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.denmark_smorrebrod),
@@ -1832,10 +1832,10 @@ public class CountryData {
                 context.getString(R.string.djibouti_fact),
                 "https://guide.visitdjibouti.dj",
                 new String[]{
-                        context.getString(R.string.djibouti_spring_weather),
-                        context.getString(R.string.djibouti_summer_weather),
-                        context.getString(R.string.djibouti_autumn_weather),
-                        context.getString(R.string.djibouti_winter_weather)
+                        context.getString(R.string.djibouti_march_may_weather),
+                        context.getString(R.string.djibouti_june_august_weather),
+                        context.getString(R.string.djibouti_september_november_weather),
+                        context.getString(R.string.djibouti_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.djibouti_skudahkharis),
@@ -1871,10 +1871,10 @@ public class CountryData {
                 context.getString(R.string.dominica_fact),
                 "https://discoverdominica.com",
                 new String[]{
-                        context.getString(R.string.dominica_spring_weather),
-                        context.getString(R.string.dominica_summer_weather),
-                        context.getString(R.string.dominica_autumn_weather),
-                        context.getString(R.string.dominica_winter_weather)
+                        context.getString(R.string.dominica_march_may_weather),
+                        context.getString(R.string.dominica_june_august_weather),
+                        context.getString(R.string.dominica_september_november_weather),
+                        context.getString(R.string.dominica_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.dominica_mountain_chicken),
@@ -1910,10 +1910,10 @@ public class CountryData {
                 context.getString(R.string.dominican_republic_fact),
                 "https://www.godominicanrepublic.com",
                 new String[]{
-                        context.getString(R.string.dominican_republic_spring_weather),
-                        context.getString(R.string.dominican_republic_summer_weather),
-                        context.getString(R.string.dominican_republic_autumn_weather),
-                        context.getString(R.string.dominican_republic_winter_weather)
+                        context.getString(R.string.dominican_republic_march_may_weather),
+                        context.getString(R.string.dominican_republic_june_august_weather),
+                        context.getString(R.string.dominican_republic_september_november_weather),
+                        context.getString(R.string.dominican_republic_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.dominican_republic_mangu),
@@ -1949,10 +1949,10 @@ public class CountryData {
                 context.getString(R.string.east_timor_fact),
                 "https://www.timorleste.tl",
                 new String[]{
-                        context.getString(R.string.east_timor_spring_weather),
-                        context.getString(R.string.east_timor_summer_weather),
-                        context.getString(R.string.east_timor_autumn_weather),
-                        context.getString(R.string.east_timor_winter_weather)
+                        context.getString(R.string.east_timor_march_may_weather),
+                        context.getString(R.string.east_timor_june_august_weather),
+                        context.getString(R.string.east_timor_september_november_weather),
+                        context.getString(R.string.east_timor_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.east_timor_ikan_pepes),
@@ -1988,10 +1988,10 @@ public class CountryData {
                 context.getString(R.string.ecuador_fact),
                 "https://ecuador.travel",
                 new String[]{
-                        context.getString(R.string.ecuador_spring_weather),
-                        context.getString(R.string.ecuador_summer_weather),
-                        context.getString(R.string.ecuador_autumn_weather),
-                        context.getString(R.string.ecuador_winter_weather)
+                        context.getString(R.string.ecuador_march_may_weather),
+                        context.getString(R.string.ecuador_june_august_weather),
+                        context.getString(R.string.ecuador_september_november_weather),
+                        context.getString(R.string.ecuador_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.ecuador_ceviche),
@@ -2027,10 +2027,10 @@ public class CountryData {
                 context.getString(R.string.egypt_fact),
                 "https://www.experienceegypt.eg",
                 new String[]{
-                        context.getString(R.string.egypt_spring_weather),
-                        context.getString(R.string.egypt_summer_weather),
-                        context.getString(R.string.egypt_autumn_weather),
-                        context.getString(R.string.egypt_winter_weather)
+                        context.getString(R.string.egypt_march_may_weather),
+                        context.getString(R.string.egypt_june_august_weather),
+                        context.getString(R.string.egypt_september_november_weather),
+                        context.getString(R.string.egypt_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.egypt_koshari),
@@ -2066,10 +2066,10 @@ public class CountryData {
                 context.getString(R.string.el_salvador_fact),
                 "https://elsalvador.travel",
                 new String[]{
-                        context.getString(R.string.el_salvador_spring_weather),
-                        context.getString(R.string.el_salvador_summer_weather),
-                        context.getString(R.string.el_salvador_autumn_weather),
-                        context.getString(R.string.el_salvador_winter_weather)
+                        context.getString(R.string.el_salvador_march_may_weather),
+                        context.getString(R.string.el_salvador_june_august_weather),
+                        context.getString(R.string.el_salvador_september_november_weather),
+                        context.getString(R.string.el_salvador_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.el_salvador_pupusas),
@@ -2105,10 +2105,10 @@ public class CountryData {
                 context.getString(R.string.equatorial_guinea_fact),
                 "https://equatorialguineatourism.com",
                 new String[]{
-                        context.getString(R.string.equatorial_guinea_spring_weather),
-                        context.getString(R.string.equatorial_guinea_summer_weather),
-                        context.getString(R.string.equatorial_guinea_autumn_weather),
-                        context.getString(R.string.equatorial_guinea_winter_weather)
+                        context.getString(R.string.equatorial_guinea_march_may_weather),
+                        context.getString(R.string.equatorial_guinea_june_august_weather),
+                        context.getString(R.string.equatorial_guinea_september_november_weather),
+                        context.getString(R.string.equatorial_guinea_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.equatorial_guinea_succotash),
@@ -2144,10 +2144,10 @@ public class CountryData {
                 context.getString(R.string.eritrea_fact),
                 "http://www.eritrea.be",
                 new String[]{
-                        context.getString(R.string.eritrea_spring_weather),
-                        context.getString(R.string.eritrea_summer_weather),
-                        context.getString(R.string.eritrea_autumn_weather),
-                        context.getString(R.string.eritrea_winter_weather)
+                        context.getString(R.string.eritrea_march_may_weather),
+                        context.getString(R.string.eritrea_june_august_weather),
+                        context.getString(R.string.eritrea_september_november_weather),
+                        context.getString(R.string.eritrea_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.eritrea_zigni),
@@ -2183,10 +2183,10 @@ public class CountryData {
                 context.getString(R.string.estonia_fact),
                 "https://visitestonia.com",
                 new String[]{
-                        context.getString(R.string.estonia_spring_weather),
-                        context.getString(R.string.estonia_summer_weather),
-                        context.getString(R.string.estonia_autumn_weather),
-                        context.getString(R.string.estonia_winter_weather)
+                        context.getString(R.string.estonia_march_may_weather),
+                        context.getString(R.string.estonia_june_august_weather),
+                        context.getString(R.string.estonia_september_november_weather),
+                        context.getString(R.string.estonia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.estonia_kilu),
@@ -2222,10 +2222,10 @@ public class CountryData {
                 context.getString(R.string.eswatini_fact),
                 "https://www.thekingdomofeswatini.com",
                 new String[]{
-                        context.getString(R.string.eswatini_spring_weather),
-                        context.getString(R.string.eswatini_summer_weather),
-                        context.getString(R.string.eswatini_autumn_weather),
-                        context.getString(R.string.eswatini_winter_weather)
+                        context.getString(R.string.eswatini_march_may_weather),
+                        context.getString(R.string.eswatini_june_august_weather),
+                        context.getString(R.string.eswatini_september_november_weather),
+                        context.getString(R.string.eswatini_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.eswatini_sishwala),
@@ -2261,10 +2261,10 @@ public class CountryData {
                 context.getString(R.string.ethiopia_fact),
                 "https://visitethiopia.travel",
                 new String[]{
-                        context.getString(R.string.ethiopia_spring_weather),
-                        context.getString(R.string.ethiopia_summer_weather),
-                        context.getString(R.string.ethiopia_autumn_weather),
-                        context.getString(R.string.ethiopia_winter_weather)
+                        context.getString(R.string.ethiopia_march_may_weather),
+                        context.getString(R.string.ethiopia_june_august_weather),
+                        context.getString(R.string.ethiopia_september_november_weather),
+                        context.getString(R.string.ethiopia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.ethiopia_injera_doro_wat),
@@ -2300,10 +2300,10 @@ public class CountryData {
                 context.getString(R.string.fiji_fact),
                 "https://www.fiji.travel",
                 new String[]{
-                        context.getString(R.string.fiji_spring_weather),
-                        context.getString(R.string.fiji_summer_weather),
-                        context.getString(R.string.fiji_autumn_weather),
-                        context.getString(R.string.fiji_winter_weather)
+                        context.getString(R.string.fiji_march_may_weather),
+                        context.getString(R.string.fiji_june_august_weather),
+                        context.getString(R.string.fiji_september_november_weather),
+                        context.getString(R.string.fiji_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.fiji_kokoda),
@@ -2339,10 +2339,10 @@ public class CountryData {
                 context.getString(R.string.finland_fact),
                 "https://www.visitfinland.com",
                 new String[]{
-                        context.getString(R.string.finland_spring_weather),
-                        context.getString(R.string.finland_summer_weather),
-                        context.getString(R.string.finland_autumn_weather),
-                        context.getString(R.string.finland_winter_weather)
+                        context.getString(R.string.finland_march_may_weather),
+                        context.getString(R.string.finland_june_august_weather),
+                        context.getString(R.string.finland_september_november_weather),
+                        context.getString(R.string.finland_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.finland_karjalanpiirakka),
@@ -2378,10 +2378,10 @@ public class CountryData {
                 context.getString(R.string.france_fact),
                 "https://www.france.fr",
                 new String[]{
-                        context.getString(R.string.france_spring_weather),
-                        context.getString(R.string.france_summer_weather),
-                        context.getString(R.string.france_autumn_weather),
-                        context.getString(R.string.france_winter_weather)
+                        context.getString(R.string.france_march_may_weather),
+                        context.getString(R.string.france_june_august_weather),
+                        context.getString(R.string.france_september_november_weather),
+                        context.getString(R.string.france_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.france_coq_au_vin),
@@ -2417,10 +2417,10 @@ public class CountryData {
                 context.getString(R.string.gabon_fact),
                 "https://www.ecotourisme-gabon.com",
                 new String[]{
-                        context.getString(R.string.gabon_spring_weather),
-                        context.getString(R.string.gabon_summer_weather),
-                        context.getString(R.string.gabon_autumn_weather),
-                        context.getString(R.string.gabon_winter_weather)
+                        context.getString(R.string.gabon_march_may_weather),
+                        context.getString(R.string.gabon_june_august_weather),
+                        context.getString(R.string.gabon_september_november_weather),
+                        context.getString(R.string.gabon_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.gabon_poulet_nyembwe),
@@ -2456,10 +2456,10 @@ public class CountryData {
                 context.getString(R.string.georgia_fact),
                 "https://georgia.travel",
                 new String[]{
-                        context.getString(R.string.georgia_spring_weather),
-                        context.getString(R.string.georgia_summer_weather),
-                        context.getString(R.string.georgia_autumn_weather),
-                        context.getString(R.string.georgia_winter_weather)
+                        context.getString(R.string.georgia_march_may_weather),
+                        context.getString(R.string.georgia_june_august_weather),
+                        context.getString(R.string.georgia_september_november_weather),
+                        context.getString(R.string.georgia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.georgia_khachapuri),
@@ -2495,10 +2495,10 @@ public class CountryData {
                 context.getString(R.string.germany_fact),
                 "https://www.germany.travel",
                 new String[]{
-                        context.getString(R.string.germany_spring_weather),
-                        context.getString(R.string.germany_summer_weather),
-                        context.getString(R.string.germany_autumn_weather),
-                        context.getString(R.string.germany_winter_weather)
+                        context.getString(R.string.germany_march_may_weather),
+                        context.getString(R.string.germany_june_august_weather),
+                        context.getString(R.string.germany_september_november_weather),
+                        context.getString(R.string.germany_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.germany_sauerbraten),
@@ -2534,10 +2534,10 @@ public class CountryData {
                 context.getString(R.string.ghana_fact),
                 "https://visitghana.com/",
                 new String[]{
-                        context.getString(R.string.ghana_spring_weather),
-                        context.getString(R.string.ghana_summer_weather),
-                        context.getString(R.string.ghana_autumn_weather),
-                        context.getString(R.string.ghana_winter_weather)
+                        context.getString(R.string.ghana_march_may_weather),
+                        context.getString(R.string.ghana_june_august_weather),
+                        context.getString(R.string.ghana_september_november_weather),
+                        context.getString(R.string.ghana_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.ghana_jollof_rice),
@@ -2573,10 +2573,10 @@ public class CountryData {
                 context.getString(R.string.greece_fact),
                 "https://www.visitgreece.gr",
                 new String[]{
-                        context.getString(R.string.greece_spring_weather),
-                        context.getString(R.string.greece_summer_weather),
-                        context.getString(R.string.greece_autumn_weather),
-                        context.getString(R.string.greece_winter_weather)
+                        context.getString(R.string.greece_march_may_weather),
+                        context.getString(R.string.greece_june_august_weather),
+                        context.getString(R.string.greece_september_november_weather),
+                        context.getString(R.string.greece_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.greece_moussaka),
@@ -2612,10 +2612,10 @@ public class CountryData {
                 context.getString(R.string.grenada_fact),
                 "https://www.puregrenada.com",
                 new String[]{
-                        context.getString(R.string.grenada_spring_weather),
-                        context.getString(R.string.grenada_summer_weather),
-                        context.getString(R.string.grenada_autumn_weather),
-                        context.getString(R.string.grenada_winter_weather)
+                        context.getString(R.string.grenada_march_may_weather),
+                        context.getString(R.string.grenada_june_august_weather),
+                        context.getString(R.string.grenada_september_november_weather),
+                        context.getString(R.string.grenada_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.grenada_oil_down),
@@ -2651,10 +2651,10 @@ public class CountryData {
                 context.getString(R.string.guatemala_fact),
                 "https://visitguatemala.gt",
                 new String[]{
-                        context.getString(R.string.guatemala_spring_weather),
-                        context.getString(R.string.guatemala_summer_weather),
-                        context.getString(R.string.guatemala_autumn_weather),
-                        context.getString(R.string.guatemala_winter_weather)
+                        context.getString(R.string.guatemala_march_may_weather),
+                        context.getString(R.string.guatemala_june_august_weather),
+                        context.getString(R.string.guatemala_september_november_weather),
+                        context.getString(R.string.guatemala_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.guatemala_pepian),
@@ -2690,10 +2690,10 @@ public class CountryData {
                 context.getString(R.string.guinea_fact),
                 "https://www.paf.gov.gn",
                 new String[]{
-                        context.getString(R.string.guinea_spring_weather),
-                        context.getString(R.string.guinea_summer_weather),
-                        context.getString(R.string.guinea_autumn_weather),
-                        context.getString(R.string.guinea_winter_weather)
+                        context.getString(R.string.guinea_march_may_weather),
+                        context.getString(R.string.guinea_june_august_weather),
+                        context.getString(R.string.guinea_september_november_weather),
+                        context.getString(R.string.guinea_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.guinea_fufu),
@@ -2729,10 +2729,10 @@ public class CountryData {
                 context.getString(R.string.guineabissau_fact),
                 "https://tourismgb.com",
                 new String[]{
-                        context.getString(R.string.guineabissau_spring_weather),
-                        context.getString(R.string.guineabissau_summer_weather),
-                        context.getString(R.string.guineabissau_autumn_weather),
-                        context.getString(R.string.guineabissau_winter_weather)
+                        context.getString(R.string.guineabissau_march_may_weather),
+                        context.getString(R.string.guineabissau_june_august_weather),
+                        context.getString(R.string.guineabissau_september_november_weather),
+                        context.getString(R.string.guineabissau_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.guineabissau_jollof_rice),
@@ -2768,10 +2768,10 @@ public class CountryData {
                 context.getString(R.string.guyana_fact),
                 "https://www.guyanatourism.com",
                 new String[]{
-                        context.getString(R.string.guyana_spring_weather),
-                        context.getString(R.string.guyana_summer_weather),
-                        context.getString(R.string.guyana_autumn_weather),
-                        context.getString(R.string.guyana_winter_weather)
+                        context.getString(R.string.guyana_march_may_weather),
+                        context.getString(R.string.guyana_june_august_weather),
+                        context.getString(R.string.guyana_september_november_weather),
+                        context.getString(R.string.guyana_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.guyana_pepperpot),
@@ -2807,10 +2807,10 @@ public class CountryData {
                 context.getString(R.string.haiti_fact),
                 "https://visithaiti.com",
                 new String[]{
-                        context.getString(R.string.haiti_spring_weather),
-                        context.getString(R.string.haiti_summer_weather),
-                        context.getString(R.string.haiti_autumn_weather),
-                        context.getString(R.string.haiti_winter_weather)
+                        context.getString(R.string.haiti_march_may_weather),
+                        context.getString(R.string.haiti_june_august_weather),
+                        context.getString(R.string.haiti_september_november_weather),
+                        context.getString(R.string.haiti_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.haiti_griot),
@@ -2846,10 +2846,10 @@ public class CountryData {
                 context.getString(R.string.honduras_fact),
                 "https://www.honduras.travel",
                 new String[]{
-                        context.getString(R.string.honduras_spring_weather),
-                        context.getString(R.string.honduras_summer_weather),
-                        context.getString(R.string.honduras_autumn_weather),
-                        context.getString(R.string.honduras_winter_weather)
+                        context.getString(R.string.honduras_march_may_weather),
+                        context.getString(R.string.honduras_june_august_weather),
+                        context.getString(R.string.honduras_september_november_weather),
+                        context.getString(R.string.honduras_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.honduras_baleadas),
@@ -2885,10 +2885,10 @@ public class CountryData {
                 context.getString(R.string.hungary_fact),
                 "https://visithungary.com",
                 new String[]{
-                        context.getString(R.string.hungary_spring_weather),
-                        context.getString(R.string.hungary_summer_weather),
-                        context.getString(R.string.hungary_autumn_weather),
-                        context.getString(R.string.hungary_winter_weather)
+                        context.getString(R.string.hungary_march_may_weather),
+                        context.getString(R.string.hungary_june_august_weather),
+                        context.getString(R.string.hungary_september_november_weather),
+                        context.getString(R.string.hungary_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.hungary_goulash),
@@ -2924,10 +2924,10 @@ public class CountryData {
                 context.getString(R.string.iceland_fact),
                 "https://www.visiticeland.com",
                 new String[]{
-                        context.getString(R.string.iceland_spring_weather),
-                        context.getString(R.string.iceland_summer_weather),
-                        context.getString(R.string.iceland_autumn_weather),
-                        context.getString(R.string.iceland_winter_weather)
+                        context.getString(R.string.iceland_march_may_weather),
+                        context.getString(R.string.iceland_june_august_weather),
+                        context.getString(R.string.iceland_september_november_weather),
+                        context.getString(R.string.iceland_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.iceland_hakarl),
@@ -2963,10 +2963,10 @@ public class CountryData {
                 context.getString(R.string.india_fact),
                 "https://www.incredibleindia.gov.in",
                 new String[]{
-                        context.getString(R.string.india_spring_weather),
-                        context.getString(R.string.india_summer_weather),
-                        context.getString(R.string.india_autumn_weather),
-                        context.getString(R.string.india_winter_weather)
+                        context.getString(R.string.india_march_may_weather),
+                        context.getString(R.string.india_june_august_weather),
+                        context.getString(R.string.india_september_november_weather),
+                        context.getString(R.string.india_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.india_biryani),
@@ -3002,10 +3002,10 @@ public class CountryData {
                 context.getString(R.string.indonesia_fact),
                 "https://www.indonesia.travel",
                 new String[]{
-                        context.getString(R.string.indonesia_spring_weather),
-                        context.getString(R.string.indonesia_summer_weather),
-                        context.getString(R.string.indonesia_autumn_weather),
-                        context.getString(R.string.indonesia_winter_weather)
+                        context.getString(R.string.indonesia_march_may_weather),
+                        context.getString(R.string.indonesia_june_august_weather),
+                        context.getString(R.string.indonesia_september_november_weather),
+                        context.getString(R.string.indonesia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.indonesia_nasi_goreng),
@@ -3041,10 +3041,10 @@ public class CountryData {
                 context.getString(R.string.iran_fact),
                 "https://www.visitouriran.com",
                 new String[]{
-                        context.getString(R.string.iran_spring_weather),
-                        context.getString(R.string.iran_summer_weather),
-                        context.getString(R.string.iran_autumn_weather),
-                        context.getString(R.string.iran_winter_weather)
+                        context.getString(R.string.iran_march_may_weather),
+                        context.getString(R.string.iran_june_august_weather),
+                        context.getString(R.string.iran_september_november_weather),
+                        context.getString(R.string.iran_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.iran_kebab),
@@ -3080,10 +3080,10 @@ public class CountryData {
                 context.getString(R.string.iraq_fact),
                 "https://mofa.gov.iq/tourist-guide",
                 new String[]{
-                        context.getString(R.string.iraq_spring_weather),
-                        context.getString(R.string.iraq_summer_weather),
-                        context.getString(R.string.iraq_autumn_weather),
-                        context.getString(R.string.iraq_winter_weather)
+                        context.getString(R.string.iraq_march_may_weather),
+                        context.getString(R.string.iraq_june_august_weather),
+                        context.getString(R.string.iraq_september_november_weather),
+                        context.getString(R.string.iraq_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.iraq_masgouf),
@@ -3119,10 +3119,10 @@ public class CountryData {
                 context.getString(R.string.ireland_fact),
                 "https://www.ireland.com",
                 new String[]{
-                        context.getString(R.string.ireland_spring_weather),
-                        context.getString(R.string.ireland_summer_weather),
-                        context.getString(R.string.ireland_autumn_weather),
-                        context.getString(R.string.ireland_winter_weather)
+                        context.getString(R.string.ireland_march_may_weather),
+                        context.getString(R.string.ireland_june_august_weather),
+                        context.getString(R.string.ireland_september_november_weather),
+                        context.getString(R.string.ireland_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.irish_stew),
@@ -3158,10 +3158,10 @@ public class CountryData {
                 context.getString(R.string.israel_fact),
                 "https://israel.travel",
                 new String[]{
-                        context.getString(R.string.israel_spring_weather),
-                        context.getString(R.string.israel_summer_weather),
-                        context.getString(R.string.israel_autumn_weather),
-                        context.getString(R.string.israel_winter_weather)
+                        context.getString(R.string.israel_march_may_weather),
+                        context.getString(R.string.israel_june_august_weather),
+                        context.getString(R.string.israel_september_november_weather),
+                        context.getString(R.string.israel_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.falafel),
@@ -3206,10 +3206,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.italy_fact),
                                       "https://www.italia.it",
-                                      new String[]{context.getString(R.string.italy_spring_weather),
-                                              context.getString(R.string.italy_summer_weather),
-                                              context.getString(R.string.italy_autumn_weather),
-                                              context.getString(R.string.italy_winter_weather)},
+                                      new String[]{context.getString(R.string.italy_march_may_weather),
+                                              context.getString(R.string.italy_june_august_weather),
+                                              context.getString(R.string.italy_september_november_weather),
+                                              context.getString(R.string.italy_december_february_weather)},
                                       new String[]{context.getString(R.string.italy_pasta),
                                               context.getString(R.string.italy_wine)},
                                       new String[]{context.getString(R.string.safe),
@@ -3248,10 +3248,10 @@ public class CountryData {
                                               1},
                                       context.getString(R.string.ivory_coast_fact),
                                       "https://tourismecotedivoire.ci",
-                                      new String[]{context.getString(R.string.ivory_coast_spring_weather),
-                                              context.getString(R.string.ivory_coast_summer_weather),
-                                              context.getString(R.string.ivory_coast_autumn_weather),
-                                              context.getString(R.string.ivory_coast_winter_weather)},
+                                      new String[]{context.getString(R.string.ivory_coast_march_may_weather),
+                                              context.getString(R.string.ivory_coast_june_august_weather),
+                                              context.getString(R.string.ivory_coast_september_november_weather),
+                                              context.getString(R.string.ivory_coast_december_february_weather)},
                                       new String[]{context.getString(R.string.ivory_coast_attieke),
                                               context.getString(R.string.ivory_coast_bissap)},
                                       new String[]{context.getString(R.string.ok),
@@ -3290,10 +3290,10 @@ public class CountryData {
                                               1},
                                       context.getString(R.string.jamaica_fact),
                                       "https://www.visitjamaica.com",
-                                      new String[]{context.getString(R.string.jamaica_spring_weather),
-                                              context.getString(R.string.jamaica_summer_weather),
-                                              context.getString(R.string.jamaica_autumn_weather),
-                                              context.getString(R.string.jamaica_winter_weather)},
+                                      new String[]{context.getString(R.string.jamaica_march_may_weather),
+                                              context.getString(R.string.jamaica_june_august_weather),
+                                              context.getString(R.string.jamaica_september_november_weather),
+                                              context.getString(R.string.jamaica_december_february_weather)},
                                       new String[]{context.getString(R.string.jamaica_jerk_chicken),
                                               context.getString(R.string.jamaica_rum)},
                                       new String[]{context.getString(R.string.ok),
@@ -3332,10 +3332,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.japan_fact),
                                       "https://www.japan.travel",
-                                      new String[]{context.getString(R.string.japan_spring_weather),
-                                              context.getString(R.string.japan_summer_weather),
-                                              context.getString(R.string.japan_autumn_weather),
-                                              context.getString(R.string.japan_winter_weather)},
+                                      new String[]{context.getString(R.string.japan_march_may_weather),
+                                              context.getString(R.string.japan_june_august_weather),
+                                              context.getString(R.string.japan_september_november_weather),
+                                              context.getString(R.string.japan_december_february_weather)},
                                       new String[]{context.getString(R.string.japan_sushi),
                                               context.getString(R.string.japan_sake)},
                                       new String[]{context.getString(R.string.safe),
@@ -3374,10 +3374,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.jordan_fact),
                                       "https://visitjordan.com",
-                                      new String[]{context.getString(R.string.jordan_spring_weather),
-                                              context.getString(R.string.jordan_summer_weather),
-                                              context.getString(R.string.jordan_autumn_weather),
-                                              context.getString(R.string.jordan_winter_weather)},
+                                      new String[]{context.getString(R.string.jordan_march_may_weather),
+                                              context.getString(R.string.jordan_june_august_weather),
+                                              context.getString(R.string.jordan_september_november_weather),
+                                              context.getString(R.string.jordan_december_february_weather)},
                                       new String[]{context.getString(R.string.jordan_mansaf),
                                               context.getString(R.string.jordan_mint_tea)},
                                       new String[]{context.getString(R.string.ok),
@@ -3416,10 +3416,10 @@ public class CountryData {
                                               3},
                                       context.getString(R.string.kazakhstan_fact),
                                       "https://kazakhstan.travel",
-                                      new String[]{context.getString(R.string.kazakhstan_spring_weather),
-                                              context.getString(R.string.kazakhstan_summer_weather),
-                                              context.getString(R.string.kazakhstan_autumn_weather),
-                                              context.getString(R.string.kazakhstan_winter_weather)},
+                                      new String[]{context.getString(R.string.kazakhstan_march_may_weather),
+                                              context.getString(R.string.kazakhstan_june_august_weather),
+                                              context.getString(R.string.kazakhstan_september_november_weather),
+                                              context.getString(R.string.kazakhstan_december_february_weather)},
                                       new String[]{context.getString(R.string.kazakhstan_beshbarmak),
                                               context.getString(R.string.kazakhstan_kumis)},
                                       new String[]{context.getString(R.string.safe),
@@ -3458,10 +3458,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.kenya_fact),
                                       "https://magicalkenya.com",
-                                      new String[]{context.getString(R.string.kenya_spring_weather),
-                                              context.getString(R.string.kenya_summer_weather),
-                                              context.getString(R.string.kenya_autumn_weather),
-                                              context.getString(R.string.kenya_winter_weather)},
+                                      new String[]{context.getString(R.string.kenya_march_may_weather),
+                                              context.getString(R.string.kenya_june_august_weather),
+                                              context.getString(R.string.kenya_september_november_weather),
+                                              context.getString(R.string.kenya_december_february_weather)},
                                       new String[]{context.getString(R.string.kenya_ugali),
                                               context.getString(R.string.kenya_chai)},
                                       new String[]{context.getString(R.string.ok),
@@ -3500,10 +3500,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.kiribati_fact),
                                       "https://www.kiribatitourism.gov.ki",
-                                      new String[]{context.getString(R.string.kiribati_spring_weather),
-                                              context.getString(R.string.kiribati_summer_weather),
-                                              context.getString(R.string.kiribati_autumn_weather),
-                                              context.getString(R.string.kiribati_winter_weather)},
+                                      new String[]{context.getString(R.string.kiribati_march_may_weather),
+                                              context.getString(R.string.kiribati_june_august_weather),
+                                              context.getString(R.string.kiribati_september_november_weather),
+                                              context.getString(R.string.kiribati_december_february_weather)},
                                       new String[]{context.getString(R.string.kiribati_food_1),
                                               context.getString(R.string.kiribati_food_2)},
                                       new String[]{context.getString(R.string.safe),
@@ -3542,10 +3542,10 @@ public class CountryData {
                                               3},
                                       context.getString(R.string.kosovo_fact),
                                       "https://visitkosovo.rks-gov.net",
-                                      new String[]{context.getString(R.string.kosovo_spring_weather),
-                                              context.getString(R.string.kosovo_summer_weather),
-                                              context.getString(R.string.kosovo_autumn_weather),
-                                              context.getString(R.string.kosovo_winter_weather)},
+                                      new String[]{context.getString(R.string.kosovo_march_may_weather),
+                                              context.getString(R.string.kosovo_june_august_weather),
+                                              context.getString(R.string.kosovo_september_november_weather),
+                                              context.getString(R.string.kosovo_december_february_weather)},
                                       new String[]{context.getString(R.string.kosovo_food_1),
                                               context.getString(R.string.kosovo_food_2)},
                                       new String[]{context.getString(R.string.safe),
@@ -3584,10 +3584,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.kuwait_fact),
                                       "https://e.gov.kw/sites/kgoenglish/Pages/Visitors/InfoSubPages/TourismInKuwait.aspx",
-                                      new String[]{context.getString(R.string.kuwait_spring_weather),
-                                              context.getString(R.string.kuwait_summer_weather),
-                                              context.getString(R.string.kuwait_autumn_weather),
-                                              context.getString(R.string.kuwait_winter_weather)},
+                                      new String[]{context.getString(R.string.kuwait_march_may_weather),
+                                              context.getString(R.string.kuwait_june_august_weather),
+                                              context.getString(R.string.kuwait_september_november_weather),
+                                              context.getString(R.string.kuwait_december_february_weather)},
                                       new String[]{context.getString(R.string.kuwait_food_1),
                                               context.getString(R.string.kuwait_food_2)},
                                       new String[]{context.getString(R.string.safe),
@@ -3615,10 +3615,10 @@ public class CountryData {
                                       new int[]{3, 3, 2, 2, 1, 1, 1, 1, 2, 2, 3, 3},
                                       context.getString(R.string.kyrgyzstan_fact),
                                       "https://www.discoverkyrgyzstan.org",
-                                      new String[]{context.getString(R.string.kyrgyzstan_spring_weather),
-                                              context.getString(R.string.kyrgyzstan_summer_weather),
-                                              context.getString(R.string.kyrgyzstan_autumn_weather),
-                                              context.getString(R.string.kyrgyzstan_winter_weather)},
+                                      new String[]{context.getString(R.string.kyrgyzstan_march_may_weather),
+                                              context.getString(R.string.kyrgyzstan_june_august_weather),
+                                              context.getString(R.string.kyrgyzstan_september_november_weather),
+                                              context.getString(R.string.kyrgyzstan_december_february_weather)},
                                       new String[]{context.getString(R.string.kyrgyzstan_food),
                                               context.getString(R.string.kyrgyzstan_drink)},
                                       new String[]{context.getString(R.string.ok),
@@ -3657,10 +3657,10 @@ public class CountryData {
                                               1},
                                       context.getString(R.string.laos_fact),
                                       "https://www.tourismlaos.org",
-                                      new String[]{context.getString(R.string.laos_spring_weather),
-                                              context.getString(R.string.laos_summer_weather),
-                                              context.getString(R.string.laos_autumn_weather),
-                                              context.getString(R.string.laos_winter_weather)},
+                                      new String[]{context.getString(R.string.laos_march_may_weather),
+                                              context.getString(R.string.laos_june_august_weather),
+                                              context.getString(R.string.laos_september_november_weather),
+                                              context.getString(R.string.laos_december_february_weather)},
                                       new String[]{context.getString(R.string.laos_food),
                                               context.getString(R.string.laos_drink)},
                                       new String[]{context.getString(R.string.ok),
@@ -3699,10 +3699,10 @@ public class CountryData {
                                               3},
                                       context.getString(R.string.latvia_fact),
                                       "https://www.latvia.travel",
-                                      new String[]{context.getString(R.string.latvia_spring_weather),
-                                              context.getString(R.string.latvia_summer_weather),
-                                              context.getString(R.string.latvia_autumn_weather),
-                                              context.getString(R.string.latvia_winter_weather)},
+                                      new String[]{context.getString(R.string.latvia_march_may_weather),
+                                              context.getString(R.string.latvia_june_august_weather),
+                                              context.getString(R.string.latvia_september_november_weather),
+                                              context.getString(R.string.latvia_december_february_weather)},
                                       new String[]{context.getString(R.string.latvia_food),
                                               context.getString(R.string.latvia_drink)},
                                       new String[]{context.getString(R.string.safe),
@@ -3741,10 +3741,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.lebanon_fact),
                                       "https://visit-lebanon.org/leisure",
-                                      new String[]{context.getString(R.string.lebanon_spring_weather),
-                                              context.getString(R.string.lebanon_summer_weather),
-                                              context.getString(R.string.lebanon_autumn_weather),
-                                              context.getString(R.string.lebanon_winter_weather)},
+                                      new String[]{context.getString(R.string.lebanon_march_may_weather),
+                                              context.getString(R.string.lebanon_june_august_weather),
+                                              context.getString(R.string.lebanon_september_november_weather),
+                                              context.getString(R.string.lebanon_december_february_weather)},
                                       new String[]{context.getString(R.string.lebanon_food),
                                               context.getString(R.string.lebanon_drink)},
                                       new String[]{context.getString(R.string.safe),
@@ -3783,10 +3783,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.lesotho_fact),
                                       "https://seelesotho.com",
-                                      new String[]{context.getString(R.string.lesotho_spring_weather),
-                                              context.getString(R.string.lesotho_summer_weather),
-                                              context.getString(R.string.lesotho_autumn_weather),
-                                              context.getString(R.string.lesotho_winter_weather)},
+                                      new String[]{context.getString(R.string.lesotho_march_may_weather),
+                                              context.getString(R.string.lesotho_june_august_weather),
+                                              context.getString(R.string.lesotho_september_november_weather),
+                                              context.getString(R.string.lesotho_december_february_weather)},
                                       new String[]{context.getString(R.string.lesotho_food),
                                               context.getString(R.string.lesotho_drink)},
                                       new String[]{context.getString(R.string.ok),
@@ -3825,10 +3825,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.liberia_fact),
                                       "https://enjoyliberia.travel",
-                                      new String[]{context.getString(R.string.liberia_spring_weather),
-                                              context.getString(R.string.liberia_summer_weather),
-                                              context.getString(R.string.liberia_autumn_weather),
-                                              context.getString(R.string.liberia_winter_weather)},
+                                      new String[]{context.getString(R.string.liberia_march_may_weather),
+                                              context.getString(R.string.liberia_june_august_weather),
+                                              context.getString(R.string.liberia_september_november_weather),
+                                              context.getString(R.string.liberia_december_february_weather)},
                                       new String[]{context.getString(R.string.liberia_food),
                                               context.getString(R.string.liberia_drink)},
                                       new String[]{context.getString(R.string.ok),
@@ -3867,10 +3867,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.libya_fact),
                                       "https://libyan-tourism.org",
-                                      new String[]{context.getString(R.string.libya_spring_weather),
-                                              context.getString(R.string.libya_summer_weather),
-                                              context.getString(R.string.libya_autumn_weather),
-                                              context.getString(R.string.libya_winter_weather)},
+                                      new String[]{context.getString(R.string.libya_march_may_weather),
+                                              context.getString(R.string.libya_june_august_weather),
+                                              context.getString(R.string.libya_september_november_weather),
+                                              context.getString(R.string.libya_december_february_weather)},
                                       new String[]{context.getString(R.string.libya_food),
                                               context.getString(R.string.libya_drink)},
                                       new String[]{context.getString(R.string.dangerous),
@@ -3909,10 +3909,10 @@ public class CountryData {
                                               3},
                                       context.getString(R.string.liechtenstein_fact),
                                       "https://tourismus.li",
-                                      new String[]{context.getString(R.string.liechtenstein_spring_weather),
-                                              context.getString(R.string.liechtenstein_summer_weather),
-                                              context.getString(R.string.liechtenstein_autumn_weather),
-                                              context.getString(R.string.liechtenstein_winter_weather)},
+                                      new String[]{context.getString(R.string.liechtenstein_march_may_weather),
+                                              context.getString(R.string.liechtenstein_june_august_weather),
+                                              context.getString(R.string.liechtenstein_september_november_weather),
+                                              context.getString(R.string.liechtenstein_december_february_weather)},
                                       new String[]{context.getString(R.string.liechtenstein_food),
                                               context.getString(R.string.liechtenstein_drink)},
                                       new String[]{context.getString(R.string.safe),
@@ -3951,10 +3951,10 @@ public class CountryData {
                                               3},
                                       context.getString(R.string.lithuania_fact),
                                       "https://lithuania.travel",
-                                      new String[]{context.getString(R.string.lithuania_spring_weather),
-                                              context.getString(R.string.lithuania_summer_weather),
-                                              context.getString(R.string.lithuania_autumn_weather),
-                                              context.getString(R.string.lithuania_winter_weather)},
+                                      new String[]{context.getString(R.string.lithuania_march_may_weather),
+                                              context.getString(R.string.lithuania_june_august_weather),
+                                              context.getString(R.string.lithuania_september_november_weather),
+                                              context.getString(R.string.lithuania_december_february_weather)},
                                       new String[]{context.getString(R.string.lithuania_food),
                                               context.getString(R.string.lithuania_drink)},
                                       new String[]{context.getString(R.string.safe),
@@ -3993,10 +3993,10 @@ public class CountryData {
                                               3},
                                       context.getString(R.string.luxembourg_fact),
                                       "https://www.visitluxembourg.com",
-                                      new String[]{context.getString(R.string.luxembourg_spring_weather),
-                                              context.getString(R.string.luxembourg_summer_weather),
-                                              context.getString(R.string.luxembourg_autumn_weather),
-                                              context.getString(R.string.luxembourg_winter_weather)},
+                                      new String[]{context.getString(R.string.luxembourg_march_may_weather),
+                                              context.getString(R.string.luxembourg_june_august_weather),
+                                              context.getString(R.string.luxembourg_september_november_weather),
+                                              context.getString(R.string.luxembourg_december_february_weather)},
                                       new String[]{context.getString(R.string.luxembourg_food),
                                               context.getString(R.string.luxembourg_drink)},
                                       new String[]{context.getString(R.string.safe),
@@ -4035,10 +4035,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.madagascar_fact),
                                       "https://madagascar-tourisme.com",
-                                      new String[]{context.getString(R.string.madagascar_spring_weather),
-                                              context.getString(R.string.madagascar_summer_weather),
-                                              context.getString(R.string.madagascar_autumn_weather),
-                                              context.getString(R.string.madagascar_winter_weather)},
+                                      new String[]{context.getString(R.string.madagascar_march_may_weather),
+                                              context.getString(R.string.madagascar_june_august_weather),
+                                              context.getString(R.string.madagascar_september_november_weather),
+                                              context.getString(R.string.madagascar_december_february_weather)},
                                       new String[]{context.getString(R.string.madagascar_food),
                                               context.getString(R.string.madagascar_drink)},
                                       new String[]{context.getString(R.string.ok),
@@ -4077,10 +4077,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.malawi_fact),
                                       "https://visitmalawi.mw",
-                                      new String[]{context.getString(R.string.malawi_spring_weather),
-                                              context.getString(R.string.malawi_summer_weather),
-                                              context.getString(R.string.malawi_autumn_weather),
-                                              context.getString(R.string.malawi_winter_weather)},
+                                      new String[]{context.getString(R.string.malawi_march_may_weather),
+                                              context.getString(R.string.malawi_june_august_weather),
+                                              context.getString(R.string.malawi_september_november_weather),
+                                              context.getString(R.string.malawi_december_february_weather)},
                                       new String[]{context.getString(R.string.malawi_food),
                                               context.getString(R.string.malawi_drink)},
                                       new String[]{context.getString(R.string.ok),
@@ -4119,10 +4119,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.malaysia_fact),
                                       "https://www.malaysia.travel",
-                                      new String[]{context.getString(R.string.malaysia_spring_weather),
-                                              context.getString(R.string.malaysia_summer_weather),
-                                              context.getString(R.string.malaysia_autumn_weather),
-                                              context.getString(R.string.malaysia_winter_weather)},
+                                      new String[]{context.getString(R.string.malaysia_march_may_weather),
+                                              context.getString(R.string.malaysia_june_august_weather),
+                                              context.getString(R.string.malaysia_september_november_weather),
+                                              context.getString(R.string.malaysia_december_february_weather)},
                                       new String[]{context.getString(R.string.malaysia_food),
                                               context.getString(R.string.malaysia_drink)},
                                       new String[]{context.getString(R.string.safe),
@@ -4161,10 +4161,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.maldives_fact),
                                       "https://visitmaldives.com",
-                                      new String[]{context.getString(R.string.maldives_spring_weather),
-                                              context.getString(R.string.maldives_summer_weather),
-                                              context.getString(R.string.maldives_autumn_weather),
-                                              context.getString(R.string.maldives_winter_weather)},
+                                      new String[]{context.getString(R.string.maldives_march_may_weather),
+                                              context.getString(R.string.maldives_june_august_weather),
+                                              context.getString(R.string.maldives_september_november_weather),
+                                              context.getString(R.string.maldives_december_february_weather)},
                                       new String[]{context.getString(R.string.maldives_food),
                                               context.getString(R.string.maldives_drink)},
                                       new String[]{context.getString(R.string.safe),
@@ -4203,10 +4203,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.mali_fact),
                                       "https://officetourismemali.com",
-                                      new String[]{context.getString(R.string.mali_spring_weather),
-                                              context.getString(R.string.mali_summer_weather),
-                                              context.getString(R.string.mali_autumn_weather),
-                                              context.getString(R.string.mali_winter_weather)},
+                                      new String[]{context.getString(R.string.mali_march_may_weather),
+                                              context.getString(R.string.mali_june_august_weather),
+                                              context.getString(R.string.mali_september_november_weather),
+                                              context.getString(R.string.mali_december_february_weather)},
                                       new String[]{context.getString(R.string.mali_food),
                                               context.getString(R.string.mali_drink)},
                                       new String[]{context.getString(R.string.dangerous),
@@ -4245,10 +4245,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.malta_fact),
                                       "https://www.visitmalta.com",
-                                      new String[]{context.getString(R.string.malta_spring_weather),
-                                              context.getString(R.string.malta_summer_weather),
-                                              context.getString(R.string.malta_autumn_weather),
-                                              context.getString(R.string.malta_winter_weather)},
+                                      new String[]{context.getString(R.string.malta_march_may_weather),
+                                              context.getString(R.string.malta_june_august_weather),
+                                              context.getString(R.string.malta_september_november_weather),
+                                              context.getString(R.string.malta_december_february_weather)},
                                       new String[]{context.getString(R.string.malta_food),
                                               context.getString(R.string.malta_drink)},
                                       new String[]{context.getString(R.string.safe),
@@ -4287,10 +4287,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.marshallislands_fact),
                                       "https://www.rmiocit.org/tourism",
-                                      new String[]{context.getString(R.string.marshallislands_spring_weather),
-                                              context.getString(R.string.marshallislands_summer_weather),
-                                              context.getString(R.string.marshallislands_autumn_weather),
-                                              context.getString(R.string.marshallislands_winter_weather)},
+                                      new String[]{context.getString(R.string.marshallislands_march_may_weather),
+                                              context.getString(R.string.marshallislands_june_august_weather),
+                                              context.getString(R.string.marshallislands_september_november_weather),
+                                              context.getString(R.string.marshallislands_december_february_weather)},
                                       new String[]{context.getString(R.string.marshallislands_food),
                                               context.getString(R.string.marshallislands_drink)},
                                       new String[]{context.getString(R.string.safe),
@@ -4329,10 +4329,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.mauritania_fact),
                                       "https://visitmauritania.com",
-                                      new String[]{context.getString(R.string.mauritania_spring_weather),
-                                              context.getString(R.string.mauritania_summer_weather),
-                                              context.getString(R.string.mauritania_autumn_weather),
-                                              context.getString(R.string.mauritania_winter_weather)},
+                                      new String[]{context.getString(R.string.mauritania_march_may_weather),
+                                              context.getString(R.string.mauritania_june_august_weather),
+                                              context.getString(R.string.mauritania_september_november_weather),
+                                              context.getString(R.string.mauritania_december_february_weather)},
                                       new String[]{context.getString(R.string.mauritania_food),
                                               context.getString(R.string.mauritania_drink)},
                                       new String[]{context.getString(R.string.dangerous),
@@ -4371,10 +4371,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.mauritius_fact),
                                       "https://www.mymauritius.travel",
-                                      new String[]{context.getString(R.string.mauritius_spring_weather),
-                                              context.getString(R.string.mauritius_summer_weather),
-                                              context.getString(R.string.mauritius_autumn_weather),
-                                              context.getString(R.string.mauritius_winter_weather)},
+                                      new String[]{context.getString(R.string.mauritius_march_may_weather),
+                                              context.getString(R.string.mauritius_june_august_weather),
+                                              context.getString(R.string.mauritius_september_november_weather),
+                                              context.getString(R.string.mauritius_december_february_weather)},
                                       new String[]{context.getString(R.string.mauritius_food),
                                               context.getString(R.string.mauritius_drink)},
                                       new String[]{context.getString(R.string.safe),
@@ -4413,10 +4413,10 @@ public class CountryData {
                                               1},
                                       context.getString(R.string.mexico_fact),
                                       "https://visitmexico.com",
-                                      new String[]{context.getString(R.string.mexico_spring_weather),
-                                              context.getString(R.string.mexico_summer_weather),
-                                              context.getString(R.string.mexico_autumn_weather),
-                                              context.getString(R.string.mexico_winter_weather)},
+                                      new String[]{context.getString(R.string.mexico_march_may_weather),
+                                              context.getString(R.string.mexico_june_august_weather),
+                                              context.getString(R.string.mexico_september_november_weather),
+                                              context.getString(R.string.mexico_december_february_weather)},
                                       new String[]{context.getString(R.string.mexico_food),
                                               context.getString(R.string.mexico_drink)},
                                       new String[]{context.getString(R.string.safe),
@@ -4455,10 +4455,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.micronesia_fact),
                                       "https://visit-micronesia.fm",
-                                      new String[]{context.getString(R.string.micronesia_spring_weather),
-                                              context.getString(R.string.micronesia_summer_weather),
-                                              context.getString(R.string.micronesia_autumn_weather),
-                                              context.getString(R.string.micronesia_winter_weather)},
+                                      new String[]{context.getString(R.string.micronesia_march_may_weather),
+                                              context.getString(R.string.micronesia_june_august_weather),
+                                              context.getString(R.string.micronesia_september_november_weather),
+                                              context.getString(R.string.micronesia_december_february_weather)},
                                       new String[]{context.getString(R.string.micronesia_food),
                                               context.getString(R.string.micronesia_drink)},
                                       new String[]{context.getString(R.string.ok),
@@ -4497,10 +4497,10 @@ public class CountryData {
                                               3},
                                       context.getString(R.string.moldova_fact),
                                       "https://moldova.travel",
-                                      new String[]{context.getString(R.string.moldova_spring_weather),
-                                              context.getString(R.string.moldova_summer_weather),
-                                              context.getString(R.string.moldova_autumn_weather),
-                                              context.getString(R.string.moldova_winter_weather)},
+                                      new String[]{context.getString(R.string.moldova_march_may_weather),
+                                              context.getString(R.string.moldova_june_august_weather),
+                                              context.getString(R.string.moldova_september_november_weather),
+                                              context.getString(R.string.moldova_december_february_weather)},
                                       new String[]{context.getString(R.string.moldova_food),
                                               context.getString(R.string.moldova_drink)},
                                       new String[]{context.getString(R.string.ok),
@@ -4539,10 +4539,10 @@ public class CountryData {
                                               3},
                                       context.getString(R.string.monaco_fact),
                                       "https://www.visitmonaco.com",
-                                      new String[]{context.getString(R.string.monaco_spring_weather),
-                                              context.getString(R.string.monaco_summer_weather),
-                                              context.getString(R.string.monaco_autumn_weather),
-                                              context.getString(R.string.monaco_winter_weather)},
+                                      new String[]{context.getString(R.string.monaco_march_may_weather),
+                                              context.getString(R.string.monaco_june_august_weather),
+                                              context.getString(R.string.monaco_september_november_weather),
+                                              context.getString(R.string.monaco_december_february_weather)},
                                       new String[]{context.getString(R.string.monaco_food),
                                               context.getString(R.string.monaco_drink)},
                                       new String[]{context.getString(R.string.safe),
@@ -4581,10 +4581,10 @@ public class CountryData {
                                               3},
                                       context.getString(R.string.mongolia_fact),
                                       "https://www.mongolia.travel",
-                                      new String[]{context.getString(R.string.mongolia_spring_weather),
-                                              context.getString(R.string.mongolia_summer_weather),
-                                              context.getString(R.string.mongolia_autumn_weather),
-                                              context.getString(R.string.mongolia_winter_weather)},
+                                      new String[]{context.getString(R.string.mongolia_march_may_weather),
+                                              context.getString(R.string.mongolia_june_august_weather),
+                                              context.getString(R.string.mongolia_september_november_weather),
+                                              context.getString(R.string.mongolia_december_february_weather)},
                                       new String[]{context.getString(R.string.mongolia_food),
                                               context.getString(R.string.mongolia_drink)},
                                       new String[]{context.getString(R.string.ok),
@@ -4623,10 +4623,10 @@ public class CountryData {
                                               3},
                                       context.getString(R.string.montenegro_fact),
                                       "https://www.montenegro.travel",
-                                      new String[]{context.getString(R.string.montenegro_spring_weather),
-                                              context.getString(R.string.montenegro_summer_weather),
-                                              context.getString(R.string.montenegro_autumn_weather),
-                                              context.getString(R.string.montenegro_winter_weather)},
+                                      new String[]{context.getString(R.string.montenegro_march_may_weather),
+                                              context.getString(R.string.montenegro_june_august_weather),
+                                              context.getString(R.string.montenegro_september_november_weather),
+                                              context.getString(R.string.montenegro_december_february_weather)},
                                       new String[]{context.getString(R.string.montenegro_food),
                                               context.getString(R.string.montenegro_drink)},
                                       new String[]{context.getString(R.string.safe),
@@ -4665,10 +4665,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.morocco_fact),
                                       "https://www.visitmorocco.com",
-                                      new String[]{context.getString(R.string.morocco_spring_weather),
-                                              context.getString(R.string.morocco_summer_weather),
-                                              context.getString(R.string.morocco_autumn_weather),
-                                              context.getString(R.string.morocco_winter_weather)},
+                                      new String[]{context.getString(R.string.morocco_march_may_weather),
+                                              context.getString(R.string.morocco_june_august_weather),
+                                              context.getString(R.string.morocco_september_november_weather),
+                                              context.getString(R.string.morocco_december_february_weather)},
                                       new String[]{context.getString(R.string.morocco_food),
                                               context.getString(R.string.morocco_drink)},
                                       new String[]{context.getString(R.string.ok),
@@ -4707,10 +4707,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.mozambique_fact),
                                       "https://www.visitmozambique.net",
-                                      new String[]{context.getString(R.string.mozambique_spring_weather),
-                                              context.getString(R.string.mozambique_summer_weather),
-                                              context.getString(R.string.mozambique_autumn_weather),
-                                              context.getString(R.string.mozambique_winter_weather)},
+                                      new String[]{context.getString(R.string.mozambique_march_may_weather),
+                                              context.getString(R.string.mozambique_june_august_weather),
+                                              context.getString(R.string.mozambique_september_november_weather),
+                                              context.getString(R.string.mozambique_december_february_weather)},
                                       new String[]{context.getString(R.string.mozambique_food),
                                               context.getString(R.string.mozambique_drink)},
                                       new String[]{context.getString(R.string.dangerous),
@@ -4749,10 +4749,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.myanmar_fact),
                                       "https://www.myanmar-tourism.com",
-                                      new String[]{context.getString(R.string.myanmar_spring_weather),
-                                              context.getString(R.string.myanmar_summer_weather),
-                                              context.getString(R.string.myanmar_autumn_weather),
-                                              context.getString(R.string.myanmar_winter_weather)},
+                                      new String[]{context.getString(R.string.myanmar_march_may_weather),
+                                              context.getString(R.string.myanmar_june_august_weather),
+                                              context.getString(R.string.myanmar_september_november_weather),
+                                              context.getString(R.string.myanmar_december_february_weather)},
                                       new String[]{context.getString(R.string.myanmar_food),
                                               context.getString(R.string.myanmar_drink)},
                                       new String[]{context.getString(R.string.dangerous),
@@ -4791,10 +4791,10 @@ public class CountryData {
                                               2},
                                       context.getString(R.string.namibia_fact),
                                       "https://visitnamibia.com.na",
-                                      new String[]{context.getString(R.string.namibia_spring_weather),
-                                              context.getString(R.string.namibia_summer_weather),
-                                              context.getString(R.string.namibia_autumn_weather),
-                                              context.getString(R.string.namibia_winter_weather)},
+                                      new String[]{context.getString(R.string.namibia_march_may_weather),
+                                              context.getString(R.string.namibia_june_august_weather),
+                                              context.getString(R.string.namibia_september_november_weather),
+                                              context.getString(R.string.namibia_december_february_weather)},
                                       new String[]{context.getString(R.string.namibia_food),
                                               context.getString(R.string.namibia_drink)},
                                       new String[]{context.getString(R.string.safe),
@@ -4823,10 +4823,10 @@ public class CountryData {
                                       context.getString(R.string.nauru_fact),
                                       "https://naurutourism.com.nr",
                                       new String[]{
-                                              context.getString(R.string.nauru_spring_weather),
-                                              context.getString(R.string.nauru_summer_weather),
-                                              context.getString(R.string.nauru_autumn_weather),
-                                              context.getString(R.string.nauru_winter_weather)
+                                              context.getString(R.string.nauru_march_may_weather),
+                                              context.getString(R.string.nauru_june_august_weather),
+                                              context.getString(R.string.nauru_september_november_weather),
+                                              context.getString(R.string.nauru_december_february_weather)
                                       },
                                       new String[]{
                                               context.getString(R.string.nauru_food),
@@ -4861,10 +4861,10 @@ public class CountryData {
                 context.getString(R.string.nepal_fact),
                 "https://nepaltourism.org",
                 new String[]{
-                        context.getString(R.string.nepal_spring_weather),
-                        context.getString(R.string.nepal_summer_weather),
-                        context.getString(R.string.nepal_autumn_weather),
-                        context.getString(R.string.nepal_winter_weather)
+                        context.getString(R.string.nepal_march_may_weather),
+                        context.getString(R.string.nepal_june_august_weather),
+                        context.getString(R.string.nepal_september_november_weather),
+                        context.getString(R.string.nepal_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.nepal_food),
@@ -4900,10 +4900,10 @@ public class CountryData {
                 context.getString(R.string.netherlands_fact),
                 "https://www.holland.com/global/tourism",
                 new String[]{
-                        context.getString(R.string.netherlands_spring_weather),
-                        context.getString(R.string.netherlands_summer_weather),
-                        context.getString(R.string.netherlands_autumn_weather),
-                        context.getString(R.string.netherlands_winter_weather)
+                        context.getString(R.string.netherlands_march_may_weather),
+                        context.getString(R.string.netherlands_june_august_weather),
+                        context.getString(R.string.netherlands_september_november_weather),
+                        context.getString(R.string.netherlands_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.netherlands_food),
@@ -4939,10 +4939,10 @@ public class CountryData {
                 context.getString(R.string.new_zealand_fact),
                 "https://www.newzealand.com",
                 new String[]{
-                        context.getString(R.string.new_zealand_spring_weather),
-                        context.getString(R.string.new_zealand_summer_weather),
-                        context.getString(R.string.new_zealand_autumn_weather),
-                        context.getString(R.string.new_zealand_winter_weather)
+                        context.getString(R.string.new_zealand_march_may_weather),
+                        context.getString(R.string.new_zealand_june_august_weather),
+                        context.getString(R.string.new_zealand_september_november_weather),
+                        context.getString(R.string.new_zealand_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.new_zealand_food),
@@ -4978,10 +4978,10 @@ public class CountryData {
                 context.getString(R.string.nicaragua_fact),
                 "https://www.visitanicaragua.com",
                 new String[]{
-                        context.getString(R.string.nicaragua_spring_weather),
-                        context.getString(R.string.nicaragua_summer_weather),
-                        context.getString(R.string.nicaragua_autumn_weather),
-                        context.getString(R.string.nicaragua_winter_weather)
+                        context.getString(R.string.nicaragua_march_may_weather),
+                        context.getString(R.string.nicaragua_june_august_weather),
+                        context.getString(R.string.nicaragua_september_november_weather),
+                        context.getString(R.string.nicaragua_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.nicaragua_food),
@@ -5017,10 +5017,10 @@ public class CountryData {
                 context.getString(R.string.niger_fact),
                 "https://visit-niger.com",
                 new String[]{
-                        context.getString(R.string.niger_spring_weather),
-                        context.getString(R.string.niger_summer_weather),
-                        context.getString(R.string.niger_autumn_weather),
-                        context.getString(R.string.niger_winter_weather)
+                        context.getString(R.string.niger_march_may_weather),
+                        context.getString(R.string.niger_june_august_weather),
+                        context.getString(R.string.niger_september_november_weather),
+                        context.getString(R.string.niger_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.niger_food),
@@ -5056,10 +5056,10 @@ public class CountryData {
                 context.getString(R.string.nigeria_fact),
                 "https://tournigeria.gov.ng",
                 new String[]{
-                        context.getString(R.string.nigeria_spring_weather),
-                        context.getString(R.string.nigeria_summer_weather),
-                        context.getString(R.string.nigeria_autumn_weather),
-                        context.getString(R.string.nigeria_winter_weather)
+                        context.getString(R.string.nigeria_march_may_weather),
+                        context.getString(R.string.nigeria_june_august_weather),
+                        context.getString(R.string.nigeria_september_november_weather),
+                        context.getString(R.string.nigeria_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.nigeria_food),
@@ -5095,10 +5095,10 @@ public class CountryData {
                 context.getString(R.string.north_korea_fact),
                 "https://koryogroup.com",
                 new String[]{
-                        context.getString(R.string.north_korea_spring_weather),
-                        context.getString(R.string.north_korea_summer_weather),
-                        context.getString(R.string.north_korea_autumn_weather),
-                        context.getString(R.string.north_korea_winter_weather)
+                        context.getString(R.string.north_korea_march_may_weather),
+                        context.getString(R.string.north_korea_june_august_weather),
+                        context.getString(R.string.north_korea_september_november_weather),
+                        context.getString(R.string.north_korea_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.north_korea_food),
@@ -5134,10 +5134,10 @@ public class CountryData {
                 context.getString(R.string.north_macedonia_fact),
                 "https://macedonia-timeless.com",
                 new String[]{
-                        context.getString(R.string.north_macedonia_spring_weather),
-                        context.getString(R.string.north_macedonia_summer_weather),
-                        context.getString(R.string.north_macedonia_autumn_weather),
-                        context.getString(R.string.north_macedonia_winter_weather)
+                        context.getString(R.string.north_macedonia_march_may_weather),
+                        context.getString(R.string.north_macedonia_june_august_weather),
+                        context.getString(R.string.north_macedonia_september_november_weather),
+                        context.getString(R.string.north_macedonia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.north_macedonia_food),
@@ -5173,10 +5173,10 @@ public class CountryData {
                 context.getString(R.string.norway_fact),
                 "https://www.visitnorway.com",
                 new String[]{
-                        context.getString(R.string.norway_spring_weather),
-                        context.getString(R.string.norway_summer_weather),
-                        context.getString(R.string.norway_autumn_weather),
-                        context.getString(R.string.norway_winter_weather)
+                        context.getString(R.string.norway_march_may_weather),
+                        context.getString(R.string.norway_june_august_weather),
+                        context.getString(R.string.norway_september_november_weather),
+                        context.getString(R.string.norway_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.norway_food),
@@ -5212,10 +5212,10 @@ public class CountryData {
                 context.getString(R.string.oman_fact),
                 "https://experienceoman.om",
                 new String[]{
-                        context.getString(R.string.oman_spring_weather),
-                        context.getString(R.string.oman_summer_weather),
-                        context.getString(R.string.oman_autumn_weather),
-                        context.getString(R.string.oman_winter_weather)
+                        context.getString(R.string.oman_march_may_weather),
+                        context.getString(R.string.oman_june_august_weather),
+                        context.getString(R.string.oman_september_november_weather),
+                        context.getString(R.string.oman_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.oman_food),
@@ -5251,10 +5251,10 @@ public class CountryData {
                 context.getString(R.string.pakistan_fact),
                 "https://tourism.gov.pk",
                 new String[]{
-                        context.getString(R.string.pakistan_spring_weather),
-                        context.getString(R.string.pakistan_summer_weather),
-                        context.getString(R.string.pakistan_autumn_weather),
-                        context.getString(R.string.pakistan_winter_weather)
+                        context.getString(R.string.pakistan_march_may_weather),
+                        context.getString(R.string.pakistan_june_august_weather),
+                        context.getString(R.string.pakistan_september_november_weather),
+                        context.getString(R.string.pakistan_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.pakistan_food),
@@ -5290,10 +5290,10 @@ public class CountryData {
                 context.getString(R.string.palau_fact),
                 "https://pristineparadisepalau.com",
                 new String[]{
-                        context.getString(R.string.palau_spring_weather),
-                        context.getString(R.string.palau_summer_weather),
-                        context.getString(R.string.palau_autumn_weather),
-                        context.getString(R.string.palau_winter_weather)
+                        context.getString(R.string.palau_march_may_weather),
+                        context.getString(R.string.palau_june_august_weather),
+                        context.getString(R.string.palau_september_november_weather),
+                        context.getString(R.string.palau_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.palau_food),
@@ -5329,10 +5329,10 @@ public class CountryData {
                 context.getString(R.string.panama_fact),
                 "https://www.tourismpanama.com",
                 new String[]{
-                        context.getString(R.string.panama_spring_weather),
-                        context.getString(R.string.panama_summer_weather),
-                        context.getString(R.string.panama_autumn_weather),
-                        context.getString(R.string.panama_winter_weather)
+                        context.getString(R.string.panama_march_may_weather),
+                        context.getString(R.string.panama_june_august_weather),
+                        context.getString(R.string.panama_september_november_weather),
+                        context.getString(R.string.panama_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.panama_food),
@@ -5368,10 +5368,10 @@ public class CountryData {
                 context.getString(R.string.papua_new_guinea_fact),
                 "https://papuanewguinea.travel",
                 new String[]{
-                        context.getString(R.string.papua_new_guinea_spring_weather),
-                        context.getString(R.string.papua_new_guinea_summer_weather),
-                        context.getString(R.string.papua_new_guinea_autumn_weather),
-                        context.getString(R.string.papua_new_guinea_winter_weather)
+                        context.getString(R.string.papua_new_guinea_march_may_weather),
+                        context.getString(R.string.papua_new_guinea_june_august_weather),
+                        context.getString(R.string.papua_new_guinea_september_november_weather),
+                        context.getString(R.string.papua_new_guinea_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.papua_new_guinea_food),
@@ -5407,10 +5407,10 @@ public class CountryData {
                 context.getString(R.string.paraguay_fact),
                 "https://visitparaguay.travel",
                 new String[]{
-                        context.getString(R.string.paraguay_spring_weather),
-                        context.getString(R.string.paraguay_summer_weather),
-                        context.getString(R.string.paraguay_autumn_weather),
-                        context.getString(R.string.paraguay_winter_weather)
+                        context.getString(R.string.paraguay_march_may_weather),
+                        context.getString(R.string.paraguay_june_august_weather),
+                        context.getString(R.string.paraguay_september_november_weather),
+                        context.getString(R.string.paraguay_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.paraguay_food),
@@ -5446,10 +5446,10 @@ public class CountryData {
                 context.getString(R.string.peru_fact),
                 "https://www.peru.travel",
                 new String[]{
-                        context.getString(R.string.peru_spring_weather),
-                        context.getString(R.string.peru_summer_weather),
-                        context.getString(R.string.peru_autumn_weather),
-                        context.getString(R.string.peru_winter_weather)
+                        context.getString(R.string.peru_march_may_weather),
+                        context.getString(R.string.peru_june_august_weather),
+                        context.getString(R.string.peru_september_november_weather),
+                        context.getString(R.string.peru_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.peru_food),
@@ -5485,10 +5485,10 @@ public class CountryData {
                 context.getString(R.string.philippines_fact),
                 "https://philippines.travel",
                 new String[]{
-                        context.getString(R.string.philippines_spring_weather),
-                        context.getString(R.string.philippines_summer_weather),
-                        context.getString(R.string.philippines_autumn_weather),
-                        context.getString(R.string.philippines_winter_weather)
+                        context.getString(R.string.philippines_march_may_weather),
+                        context.getString(R.string.philippines_june_august_weather),
+                        context.getString(R.string.philippines_september_november_weather),
+                        context.getString(R.string.philippines_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.philippines_food),
@@ -5524,10 +5524,10 @@ public class CountryData {
                 context.getString(R.string.poland_fact),
                 "https://www.poland.travel",
                 new String[]{
-                        context.getString(R.string.poland_spring_weather),
-                        context.getString(R.string.poland_summer_weather),
-                        context.getString(R.string.poland_autumn_weather),
-                        context.getString(R.string.poland_winter_weather)
+                        context.getString(R.string.poland_march_may_weather),
+                        context.getString(R.string.poland_june_august_weather),
+                        context.getString(R.string.poland_september_november_weather),
+                        context.getString(R.string.poland_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.poland_food),
@@ -5563,10 +5563,10 @@ public class CountryData {
                 context.getString(R.string.portugal_fact),
                 "https://www.visitportugal.com",
                 new String[]{
-                        context.getString(R.string.portugal_spring_weather),
-                        context.getString(R.string.portugal_summer_weather),
-                        context.getString(R.string.portugal_autumn_weather),
-                        context.getString(R.string.portugal_winter_weather)
+                        context.getString(R.string.portugal_march_may_weather),
+                        context.getString(R.string.portugal_june_august_weather),
+                        context.getString(R.string.portugal_september_november_weather),
+                        context.getString(R.string.portugal_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.portugal_food),
@@ -5602,10 +5602,10 @@ public class CountryData {
                 context.getString(R.string.qatar_fact),
                 "https://visitqatar.com",
                 new String[]{
-                        context.getString(R.string.qatar_spring_weather),
-                        context.getString(R.string.qatar_summer_weather),
-                        context.getString(R.string.qatar_autumn_weather),
-                        context.getString(R.string.qatar_winter_weather)
+                        context.getString(R.string.qatar_march_may_weather),
+                        context.getString(R.string.qatar_june_august_weather),
+                        context.getString(R.string.qatar_september_november_weather),
+                        context.getString(R.string.qatar_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.qatar_food),
@@ -5641,10 +5641,10 @@ public class CountryData {
                 context.getString(R.string.romania_fact),
                 "https://www.romania.travel",
                 new String[]{
-                        context.getString(R.string.romania_spring_weather),
-                        context.getString(R.string.romania_summer_weather),
-                        context.getString(R.string.romania_autumn_weather),
-                        context.getString(R.string.romania_winter_weather)
+                        context.getString(R.string.romania_march_may_weather),
+                        context.getString(R.string.romania_june_august_weather),
+                        context.getString(R.string.romania_september_november_weather),
+                        context.getString(R.string.romania_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.romania_food),
@@ -5680,10 +5680,10 @@ public class CountryData {
                 context.getString(R.string.russia_fact),
                 "https://russiatourism.ru",
                 new String[]{
-                        context.getString(R.string.russia_spring_weather),
-                        context.getString(R.string.russia_summer_weather),
-                        context.getString(R.string.russia_autumn_weather),
-                        context.getString(R.string.russia_winter_weather)
+                        context.getString(R.string.russia_march_may_weather),
+                        context.getString(R.string.russia_june_august_weather),
+                        context.getString(R.string.russia_september_november_weather),
+                        context.getString(R.string.russia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.russia_food),
@@ -5719,10 +5719,10 @@ public class CountryData {
                 context.getString(R.string.rwanda_fact),
                 "https://visitrwanda.com",
                 new String[]{
-                        context.getString(R.string.rwanda_spring_weather),
-                        context.getString(R.string.rwanda_summer_weather),
-                        context.getString(R.string.rwanda_autumn_weather),
-                        context.getString(R.string.rwanda_winter_weather)
+                        context.getString(R.string.rwanda_march_may_weather),
+                        context.getString(R.string.rwanda_june_august_weather),
+                        context.getString(R.string.rwanda_september_november_weather),
+                        context.getString(R.string.rwanda_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.rwanda_food),
@@ -5758,10 +5758,10 @@ public class CountryData {
                 context.getString(R.string.saint_kitts_and_nevis_fact),
                 "https://www.visitstkitts.com",
                 new String[]{
-                        context.getString(R.string.saint_kitts_and_nevis_spring_weather),
-                        context.getString(R.string.saint_kitts_and_nevis_summer_weather),
-                        context.getString(R.string.saint_kitts_and_nevis_autumn_weather),
-                        context.getString(R.string.saint_kitts_and_nevis_winter_weather)
+                        context.getString(R.string.saint_kitts_and_nevis_march_may_weather),
+                        context.getString(R.string.saint_kitts_and_nevis_june_august_weather),
+                        context.getString(R.string.saint_kitts_and_nevis_september_november_weather),
+                        context.getString(R.string.saint_kitts_and_nevis_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.saint_kitts_and_nevis_food),
@@ -5797,10 +5797,10 @@ public class CountryData {
                 context.getString(R.string.saint_lucia_fact),
                 "https://www.stlucia.org",
                 new String[]{
-                        context.getString(R.string.saint_lucia_spring_weather),
-                        context.getString(R.string.saint_lucia_summer_weather),
-                        context.getString(R.string.saint_lucia_autumn_weather),
-                        context.getString(R.string.saint_lucia_winter_weather)
+                        context.getString(R.string.saint_lucia_march_may_weather),
+                        context.getString(R.string.saint_lucia_june_august_weather),
+                        context.getString(R.string.saint_lucia_september_november_weather),
+                        context.getString(R.string.saint_lucia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.saint_lucia_food),
@@ -5836,10 +5836,10 @@ public class CountryData {
                 context.getString(R.string.saint_vincent_and_the_grenadines_fact),
                 "https://discoversvg.com",
                 new String[]{
-                        context.getString(R.string.saint_vincent_and_the_grenadines_spring_weather),
-                        context.getString(R.string.saint_vincent_and_the_grenadines_summer_weather),
-                        context.getString(R.string.saint_vincent_and_the_grenadines_autumn_weather),
-                        context.getString(R.string.saint_vincent_and_the_grenadines_winter_weather)
+                        context.getString(R.string.saint_vincent_and_the_grenadines_march_may_weather),
+                        context.getString(R.string.saint_vincent_and_the_grenadines_june_august_weather),
+                        context.getString(R.string.saint_vincent_and_the_grenadines_september_november_weather),
+                        context.getString(R.string.saint_vincent_and_the_grenadines_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.saint_vincent_and_the_grenadines_food),
@@ -5875,10 +5875,10 @@ public class CountryData {
                 context.getString(R.string.samoa_fact),
                 "https://www.samoa.travel",
                 new String[]{
-                        context.getString(R.string.samoa_spring_weather),
-                        context.getString(R.string.samoa_summer_weather),
-                        context.getString(R.string.samoa_autumn_weather),
-                        context.getString(R.string.samoa_winter_weather)
+                        context.getString(R.string.samoa_march_may_weather),
+                        context.getString(R.string.samoa_june_august_weather),
+                        context.getString(R.string.samoa_september_november_weather),
+                        context.getString(R.string.samoa_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.samoa_food),
@@ -5914,10 +5914,10 @@ public class CountryData {
                 context.getString(R.string.san_marino_fact),
                 "https://www.visitsanmarino.com",
                 new String[]{
-                        context.getString(R.string.san_marino_spring_weather),
-                        context.getString(R.string.san_marino_summer_weather),
-                        context.getString(R.string.san_marino_autumn_weather),
-                        context.getString(R.string.san_marino_winter_weather)
+                        context.getString(R.string.san_marino_march_may_weather),
+                        context.getString(R.string.san_marino_june_august_weather),
+                        context.getString(R.string.san_marino_september_november_weather),
+                        context.getString(R.string.san_marino_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.san_marino_food),
@@ -5953,10 +5953,10 @@ public class CountryData {
                 context.getString(R.string.sao_tome_and_principe_fact),
                 "https://www.visitsaotomeprincipe.st",
                 new String[]{
-                        context.getString(R.string.sao_tome_and_principe_spring_weather),
-                        context.getString(R.string.sao_tome_and_principe_summer_weather),
-                        context.getString(R.string.sao_tome_and_principe_autumn_weather),
-                        context.getString(R.string.sao_tome_and_principe_winter_weather)
+                        context.getString(R.string.sao_tome_and_principe_march_may_weather),
+                        context.getString(R.string.sao_tome_and_principe_june_august_weather),
+                        context.getString(R.string.sao_tome_and_principe_september_november_weather),
+                        context.getString(R.string.sao_tome_and_principe_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.sao_tome_and_principe_food),
@@ -5992,10 +5992,10 @@ public class CountryData {
                 context.getString(R.string.saudi_arabia_fact),
                 "https://www.visitsaudi.com",
                 new String[]{
-                        context.getString(R.string.saudi_arabia_spring_weather),
-                        context.getString(R.string.saudi_arabia_summer_weather),
-                        context.getString(R.string.saudi_arabia_autumn_weather),
-                        context.getString(R.string.saudi_arabia_winter_weather)
+                        context.getString(R.string.saudi_arabia_march_may_weather),
+                        context.getString(R.string.saudi_arabia_june_august_weather),
+                        context.getString(R.string.saudi_arabia_september_november_weather),
+                        context.getString(R.string.saudi_arabia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.saudi_arabia_food),
@@ -6031,10 +6031,10 @@ public class CountryData {
                 context.getString(R.string.senegal_fact),
                 "https://www.discoversenegal.com",
                 new String[]{
-                        context.getString(R.string.senegal_spring_weather),
-                        context.getString(R.string.senegal_summer_weather),
-                        context.getString(R.string.senegal_autumn_weather),
-                        context.getString(R.string.senegal_winter_weather)
+                        context.getString(R.string.senegal_march_may_weather),
+                        context.getString(R.string.senegal_june_august_weather),
+                        context.getString(R.string.senegal_september_november_weather),
+                        context.getString(R.string.senegal_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.senegal_food),
@@ -6070,10 +6070,10 @@ public class CountryData {
                 context.getString(R.string.serbia_fact),
                 "https://www.serbia.travel",
                 new String[]{
-                        context.getString(R.string.serbia_spring_weather),
-                        context.getString(R.string.serbia_summer_weather),
-                        context.getString(R.string.serbia_autumn_weather),
-                        context.getString(R.string.serbia_winter_weather)
+                        context.getString(R.string.serbia_march_may_weather),
+                        context.getString(R.string.serbia_june_august_weather),
+                        context.getString(R.string.serbia_september_november_weather),
+                        context.getString(R.string.serbia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.serbia_food),
@@ -6109,10 +6109,10 @@ public class CountryData {
                 context.getString(R.string.seychelles_fact),
                 "https://seychelles.com",
                 new String[]{
-                        context.getString(R.string.seychelles_spring_weather),
-                        context.getString(R.string.seychelles_summer_weather),
-                        context.getString(R.string.seychelles_autumn_weather),
-                        context.getString(R.string.seychelles_winter_weather)
+                        context.getString(R.string.seychelles_march_may_weather),
+                        context.getString(R.string.seychelles_june_august_weather),
+                        context.getString(R.string.seychelles_september_november_weather),
+                        context.getString(R.string.seychelles_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.seychelles_food),
@@ -6148,10 +6148,10 @@ public class CountryData {
                 context.getString(R.string.sierra_leone_fact),
                 "https://ntb.gov.sl",
                 new String[]{
-                        context.getString(R.string.sierra_leone_spring_weather),
-                        context.getString(R.string.sierra_leone_summer_weather),
-                        context.getString(R.string.sierra_leone_autumn_weather),
-                        context.getString(R.string.sierra_leone_winter_weather)
+                        context.getString(R.string.sierra_leone_march_may_weather),
+                        context.getString(R.string.sierra_leone_june_august_weather),
+                        context.getString(R.string.sierra_leone_september_november_weather),
+                        context.getString(R.string.sierra_leone_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.sierra_leone_food),
@@ -6187,10 +6187,10 @@ public class CountryData {
                 context.getString(R.string.singapore_fact),
                 "https://www.visitsingapore.com",
                 new String[]{
-                        context.getString(R.string.singapore_spring_weather),
-                        context.getString(R.string.singapore_summer_weather),
-                        context.getString(R.string.singapore_autumn_weather),
-                        context.getString(R.string.singapore_winter_weather)
+                        context.getString(R.string.singapore_march_may_weather),
+                        context.getString(R.string.singapore_june_august_weather),
+                        context.getString(R.string.singapore_september_november_weather),
+                        context.getString(R.string.singapore_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.singapore_food),
@@ -6226,10 +6226,10 @@ public class CountryData {
                 context.getString(R.string.slovakia_fact),
                 "https://slovakia.travel",
                 new String[]{
-                        context.getString(R.string.slovakia_spring_weather),
-                        context.getString(R.string.slovakia_summer_weather),
-                        context.getString(R.string.slovakia_autumn_weather),
-                        context.getString(R.string.slovakia_winter_weather)
+                        context.getString(R.string.slovakia_march_may_weather),
+                        context.getString(R.string.slovakia_june_august_weather),
+                        context.getString(R.string.slovakia_september_november_weather),
+                        context.getString(R.string.slovakia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.slovakia_food),
@@ -6265,10 +6265,10 @@ public class CountryData {
                 context.getString(R.string.slovenia_fact),
                 "https://www.slovenia.info",
                 new String[]{
-                        context.getString(R.string.slovenia_spring_weather),
-                        context.getString(R.string.slovenia_summer_weather),
-                        context.getString(R.string.slovenia_autumn_weather),
-                        context.getString(R.string.slovenia_winter_weather)
+                        context.getString(R.string.slovenia_march_may_weather),
+                        context.getString(R.string.slovenia_june_august_weather),
+                        context.getString(R.string.slovenia_september_november_weather),
+                        context.getString(R.string.slovenia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.slovenia_food),
@@ -6304,10 +6304,10 @@ public class CountryData {
                 context.getString(R.string.solomon_islands_fact),
                 "https://www.visitsolomons.com.sb",
                 new String[]{
-                        context.getString(R.string.solomon_islands_spring_weather),
-                        context.getString(R.string.solomon_islands_summer_weather),
-                        context.getString(R.string.solomon_islands_autumn_weather),
-                        context.getString(R.string.solomon_islands_winter_weather)
+                        context.getString(R.string.solomon_islands_march_may_weather),
+                        context.getString(R.string.solomon_islands_june_august_weather),
+                        context.getString(R.string.solomon_islands_september_november_weather),
+                        context.getString(R.string.solomon_islands_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.solomon_islands_food),
@@ -6343,10 +6343,10 @@ public class CountryData {
                 context.getString(R.string.somalia_fact),
                 "https://tourism.gov.so",
                 new String[]{
-                        context.getString(R.string.somalia_spring_weather),
-                        context.getString(R.string.somalia_summer_weather),
-                        context.getString(R.string.somalia_autumn_weather),
-                        context.getString(R.string.somalia_winter_weather)
+                        context.getString(R.string.somalia_march_may_weather),
+                        context.getString(R.string.somalia_june_august_weather),
+                        context.getString(R.string.somalia_september_november_weather),
+                        context.getString(R.string.somalia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.somalia_food),
@@ -6382,10 +6382,10 @@ public class CountryData {
                 context.getString(R.string.south_africa_fact),
                 "https://www.southafrica.net",
                 new String[]{
-                        context.getString(R.string.south_africa_spring_weather),
-                        context.getString(R.string.south_africa_summer_weather),
-                        context.getString(R.string.south_africa_autumn_weather),
-                        context.getString(R.string.south_africa_winter_weather)
+                        context.getString(R.string.south_africa_march_may_weather),
+                        context.getString(R.string.south_africa_june_august_weather),
+                        context.getString(R.string.south_africa_september_november_weather),
+                        context.getString(R.string.south_africa_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.south_africa_food),
@@ -6421,10 +6421,10 @@ public class CountryData {
                 context.getString(R.string.south_korea_fact),
                 "visitkorea.or.kr",
                 new String[]{
-                        context.getString(R.string.south_korea_spring_weather),
-                        context.getString(R.string.south_korea_summer_weather),
-                        context.getString(R.string.south_korea_autumn_weather),
-                        context.getString(R.string.south_korea_winter_weather)
+                        context.getString(R.string.south_korea_march_may_weather),
+                        context.getString(R.string.south_korea_june_august_weather),
+                        context.getString(R.string.south_korea_september_november_weather),
+                        context.getString(R.string.south_korea_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.south_korea_food),
@@ -6460,10 +6460,10 @@ public class CountryData {
                 context.getString(R.string.south_sudan_fact),
                 "https://mofaic.gov.ss/tourism",
                 new String[]{
-                        context.getString(R.string.south_sudan_spring_weather),
-                        context.getString(R.string.south_sudan_summer_weather),
-                        context.getString(R.string.south_sudan_autumn_weather),
-                        context.getString(R.string.south_sudan_winter_weather)
+                        context.getString(R.string.south_sudan_march_may_weather),
+                        context.getString(R.string.south_sudan_june_august_weather),
+                        context.getString(R.string.south_sudan_september_november_weather),
+                        context.getString(R.string.south_sudan_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.south_sudan_food),
@@ -6499,10 +6499,10 @@ public class CountryData {
                 context.getString(R.string.spain_fact),
                 "https://www.spain.info",
                 new String[]{
-                        context.getString(R.string.spain_spring_weather),
-                        context.getString(R.string.spain_summer_weather),
-                        context.getString(R.string.spain_autumn_weather),
-                        context.getString(R.string.spain_winter_weather)
+                        context.getString(R.string.spain_march_may_weather),
+                        context.getString(R.string.spain_june_august_weather),
+                        context.getString(R.string.spain_september_november_weather),
+                        context.getString(R.string.spain_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.spain_food),
@@ -6538,10 +6538,10 @@ public class CountryData {
                 context.getString(R.string.sri_lanka_fact),
                 "https://www.srilanka.travel",
                 new String[]{
-                        context.getString(R.string.sri_lanka_spring_weather),
-                        context.getString(R.string.sri_lanka_summer_weather),
-                        context.getString(R.string.sri_lanka_autumn_weather),
-                        context.getString(R.string.sri_lanka_winter_weather)
+                        context.getString(R.string.sri_lanka_march_may_weather),
+                        context.getString(R.string.sri_lanka_june_august_weather),
+                        context.getString(R.string.sri_lanka_september_november_weather),
+                        context.getString(R.string.sri_lanka_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.sri_lanka_food),
@@ -6577,10 +6577,10 @@ public class CountryData {
                 context.getString(R.string.sudan_fact),
                 "https://www.realsudan.com",
                 new String[]{
-                        context.getString(R.string.sudan_spring_weather),
-                        context.getString(R.string.sudan_summer_weather),
-                        context.getString(R.string.sudan_autumn_weather),
-                        context.getString(R.string.sudan_winter_weather)
+                        context.getString(R.string.sudan_march_may_weather),
+                        context.getString(R.string.sudan_june_august_weather),
+                        context.getString(R.string.sudan_september_november_weather),
+                        context.getString(R.string.sudan_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.sudan_food),
@@ -6616,10 +6616,10 @@ public class CountryData {
                 context.getString(R.string.suriname_fact),
                 "https://www.surinametourism.sr",
                 new String[]{
-                        context.getString(R.string.suriname_spring_weather),
-                        context.getString(R.string.suriname_summer_weather),
-                        context.getString(R.string.suriname_autumn_weather),
-                        context.getString(R.string.suriname_winter_weather)
+                        context.getString(R.string.suriname_march_may_weather),
+                        context.getString(R.string.suriname_june_august_weather),
+                        context.getString(R.string.suriname_september_november_weather),
+                        context.getString(R.string.suriname_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.suriname_food),
@@ -6655,10 +6655,10 @@ public class CountryData {
                 context.getString(R.string.sweden_fact),
                 "https://visitsweden.com",
                 new String[]{
-                        context.getString(R.string.sweden_spring_weather),
-                        context.getString(R.string.sweden_summer_weather),
-                        context.getString(R.string.sweden_autumn_weather),
-                        context.getString(R.string.sweden_winter_weather)
+                        context.getString(R.string.sweden_march_may_weather),
+                        context.getString(R.string.sweden_june_august_weather),
+                        context.getString(R.string.sweden_september_november_weather),
+                        context.getString(R.string.sweden_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.sweden_food),
@@ -6694,10 +6694,10 @@ public class CountryData {
                 context.getString(R.string.switzerland_fact),
                 "https://www.myswitzerland.com",
                 new String[]{
-                        context.getString(R.string.switzerland_spring_weather),
-                        context.getString(R.string.switzerland_summer_weather),
-                        context.getString(R.string.switzerland_autumn_weather),
-                        context.getString(R.string.switzerland_winter_weather)
+                        context.getString(R.string.switzerland_march_may_weather),
+                        context.getString(R.string.switzerland_june_august_weather),
+                        context.getString(R.string.switzerland_september_november_weather),
+                        context.getString(R.string.switzerland_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.switzerland_food),
@@ -6733,10 +6733,10 @@ public class CountryData {
                 context.getString(R.string.syria_fact),
                 "https://www.cometosyria.com",
                 new String[]{
-                        context.getString(R.string.syria_spring_weather),
-                        context.getString(R.string.syria_summer_weather),
-                        context.getString(R.string.syria_autumn_weather),
-                        context.getString(R.string.syria_winter_weather)
+                        context.getString(R.string.syria_march_may_weather),
+                        context.getString(R.string.syria_june_august_weather),
+                        context.getString(R.string.syria_september_november_weather),
+                        context.getString(R.string.syria_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.syria_food),
@@ -6772,10 +6772,10 @@ public class CountryData {
                 context.getString(R.string.taiwan_fact),
                 "https://eng.taiwan.net.tw",
                 new String[]{
-                        context.getString(R.string.taiwan_spring_weather),
-                        context.getString(R.string.taiwan_summer_weather),
-                        context.getString(R.string.taiwan_autumn_weather),
-                        context.getString(R.string.taiwan_winter_weather)
+                        context.getString(R.string.taiwan_march_may_weather),
+                        context.getString(R.string.taiwan_june_august_weather),
+                        context.getString(R.string.taiwan_september_november_weather),
+                        context.getString(R.string.taiwan_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.taiwan_food),
@@ -6811,10 +6811,10 @@ public class CountryData {
                 context.getString(R.string.tajikistan_fact),
                 "https://traveltajikistan.tj",
                 new String[]{
-                        context.getString(R.string.tajikistan_spring_weather),
-                        context.getString(R.string.tajikistan_summer_weather),
-                        context.getString(R.string.tajikistan_autumn_weather),
-                        context.getString(R.string.tajikistan_winter_weather)
+                        context.getString(R.string.tajikistan_march_may_weather),
+                        context.getString(R.string.tajikistan_june_august_weather),
+                        context.getString(R.string.tajikistan_september_november_weather),
+                        context.getString(R.string.tajikistan_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.tajikistan_food),
@@ -6850,10 +6850,10 @@ public class CountryData {
                 context.getString(R.string.tanzania_fact),
                 "https://www.tanzaniatourism.go.tz",
                 new String[]{
-                        context.getString(R.string.tanzania_spring_weather),
-                        context.getString(R.string.tanzania_summer_weather),
-                        context.getString(R.string.tanzania_autumn_weather),
-                        context.getString(R.string.tanzania_winter_weather)
+                        context.getString(R.string.tanzania_march_may_weather),
+                        context.getString(R.string.tanzania_june_august_weather),
+                        context.getString(R.string.tanzania_september_november_weather),
+                        context.getString(R.string.tanzania_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.tanzania_food),
@@ -6889,10 +6889,10 @@ public class CountryData {
                 context.getString(R.string.thailand_fact),
                 "https://www.tourismthailand.org/home",
                 new String[]{
-                        context.getString(R.string.thailand_spring_weather),
-                        context.getString(R.string.thailand_summer_weather),
-                        context.getString(R.string.thailand_autumn_weather),
-                        context.getString(R.string.thailand_winter_weather)
+                        context.getString(R.string.thailand_march_may_weather),
+                        context.getString(R.string.thailand_june_august_weather),
+                        context.getString(R.string.thailand_september_november_weather),
+                        context.getString(R.string.thailand_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.thailand_food),
@@ -6928,10 +6928,10 @@ public class CountryData {
                 context.getString(R.string.the_gambia_fact),
                 "https://visitthegambia.com",
                 new String[]{
-                        context.getString(R.string.the_gambia_spring_weather),
-                        context.getString(R.string.the_gambia_summer_weather),
-                        context.getString(R.string.the_gambia_autumn_weather),
-                        context.getString(R.string.the_gambia_winter_weather)
+                        context.getString(R.string.the_gambia_march_may_weather),
+                        context.getString(R.string.the_gambia_june_august_weather),
+                        context.getString(R.string.the_gambia_september_november_weather),
+                        context.getString(R.string.the_gambia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.the_gambia_food),
@@ -6967,10 +6967,10 @@ public class CountryData {
                 context.getString(R.string.togo_fact),
                 "https://voyage.gouv.tg",
                 new String[]{
-                        context.getString(R.string.togo_spring_weather),
-                        context.getString(R.string.togo_summer_weather),
-                        context.getString(R.string.togo_autumn_weather),
-                        context.getString(R.string.togo_winter_weather)
+                        context.getString(R.string.togo_march_may_weather),
+                        context.getString(R.string.togo_june_august_weather),
+                        context.getString(R.string.togo_september_november_weather),
+                        context.getString(R.string.togo_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.togo_food),
@@ -7006,10 +7006,10 @@ public class CountryData {
                 context.getString(R.string.tonga_fact),
                 "https://tongatourism.travel",
                 new String[]{
-                        context.getString(R.string.tonga_spring_weather),
-                        context.getString(R.string.tonga_summer_weather),
-                        context.getString(R.string.tonga_autumn_weather),
-                        context.getString(R.string.tonga_winter_weather)
+                        context.getString(R.string.tonga_march_may_weather),
+                        context.getString(R.string.tonga_june_august_weather),
+                        context.getString(R.string.tonga_september_november_weather),
+                        context.getString(R.string.tonga_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.tonga_food),
@@ -7045,10 +7045,10 @@ public class CountryData {
                 context.getString(R.string.trinidad_and_tobago_fact),
                 "https://visittrinidad.tt",
                 new String[]{
-                        context.getString(R.string.trinidad_and_tobago_spring_weather),
-                        context.getString(R.string.trinidad_and_tobago_summer_weather),
-                        context.getString(R.string.trinidad_and_tobago_autumn_weather),
-                        context.getString(R.string.trinidad_and_tobago_winter_weather)
+                        context.getString(R.string.trinidad_and_tobago_march_may_weather),
+                        context.getString(R.string.trinidad_and_tobago_june_august_weather),
+                        context.getString(R.string.trinidad_and_tobago_september_november_weather),
+                        context.getString(R.string.trinidad_and_tobago_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.trinidad_and_tobago_food),
@@ -7084,10 +7084,10 @@ public class CountryData {
                 context.getString(R.string.tunisia_fact),
                 "https://www.discovertunisia.com",
                 new String[]{
-                        context.getString(R.string.tunisia_spring_weather),
-                        context.getString(R.string.tunisia_summer_weather),
-                        context.getString(R.string.tunisia_autumn_weather),
-                        context.getString(R.string.tunisia_winter_weather)
+                        context.getString(R.string.tunisia_march_may_weather),
+                        context.getString(R.string.tunisia_june_august_weather),
+                        context.getString(R.string.tunisia_september_november_weather),
+                        context.getString(R.string.tunisia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.tunisia_food),
@@ -7123,10 +7123,10 @@ public class CountryData {
                 context.getString(R.string.turkey_fact),
                 "https://goturkiye.com",
                 new String[]{
-                        context.getString(R.string.turkey_spring_weather),
-                        context.getString(R.string.turkey_summer_weather),
-                        context.getString(R.string.turkey_autumn_weather),
-                        context.getString(R.string.turkey_winter_weather)
+                        context.getString(R.string.turkey_march_may_weather),
+                        context.getString(R.string.turkey_june_august_weather),
+                        context.getString(R.string.turkey_september_november_weather),
+                        context.getString(R.string.turkey_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.turkey_food),
@@ -7162,10 +7162,10 @@ public class CountryData {
                 context.getString(R.string.turkmenistan_fact),
                 "https://turkmentravels.com",
                 new String[]{
-                        context.getString(R.string.turkmenistan_spring_weather),
-                        context.getString(R.string.turkmenistan_summer_weather),
-                        context.getString(R.string.turkmenistan_autumn_weather),
-                        context.getString(R.string.turkmenistan_winter_weather)
+                        context.getString(R.string.turkmenistan_march_may_weather),
+                        context.getString(R.string.turkmenistan_june_august_weather),
+                        context.getString(R.string.turkmenistan_september_november_weather),
+                        context.getString(R.string.turkmenistan_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.turkmenistan_food),
@@ -7201,10 +7201,10 @@ public class CountryData {
                 context.getString(R.string.tuvalu_fact),
                 "https://www.timelesstuvalu.com",
                 new String[]{
-                        context.getString(R.string.tuvalu_spring_weather),
-                        context.getString(R.string.tuvalu_summer_weather),
-                        context.getString(R.string.tuvalu_autumn_weather),
-                        context.getString(R.string.tuvalu_winter_weather)
+                        context.getString(R.string.tuvalu_march_may_weather),
+                        context.getString(R.string.tuvalu_june_august_weather),
+                        context.getString(R.string.tuvalu_september_november_weather),
+                        context.getString(R.string.tuvalu_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.tuvalu_food),
@@ -7240,10 +7240,10 @@ public class CountryData {
                 context.getString(R.string.uganda_fact),
                 "https://www.exploreuganda.com",
                 new String[]{
-                        context.getString(R.string.uganda_spring_weather),
-                        context.getString(R.string.uganda_summer_weather),
-                        context.getString(R.string.uganda_autumn_weather),
-                        context.getString(R.string.uganda_winter_weather)
+                        context.getString(R.string.uganda_march_may_weather),
+                        context.getString(R.string.uganda_june_august_weather),
+                        context.getString(R.string.uganda_september_november_weather),
+                        context.getString(R.string.uganda_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.uganda_food),
@@ -7279,10 +7279,10 @@ public class CountryData {
                 context.getString(R.string.ukraine_fact),
                 "https://visitukraine.today",
                 new String[]{
-                        context.getString(R.string.ukraine_spring_weather),
-                        context.getString(R.string.ukraine_summer_weather),
-                        context.getString(R.string.ukraine_autumn_weather),
-                        context.getString(R.string.ukraine_winter_weather)
+                        context.getString(R.string.ukraine_march_may_weather),
+                        context.getString(R.string.ukraine_june_august_weather),
+                        context.getString(R.string.ukraine_september_november_weather),
+                        context.getString(R.string.ukraine_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.ukraine_food),
@@ -7318,10 +7318,10 @@ public class CountryData {
                 context.getString(R.string.uae_fact),
                 "https://u.ae/information-and-services/visiting-and-exploring-the-uae",
                 new String[]{
-                        context.getString(R.string.uae_spring_weather),
-                        context.getString(R.string.uae_summer_weather),
-                        context.getString(R.string.uae_autumn_weather),
-                        context.getString(R.string.uae_winter_weather)
+                        context.getString(R.string.uae_march_may_weather),
+                        context.getString(R.string.uae_june_august_weather),
+                        context.getString(R.string.uae_september_november_weather),
+                        context.getString(R.string.uae_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.uae_food),
@@ -7357,10 +7357,10 @@ public class CountryData {
                 context.getString(R.string.uk_fact),
                 "https://www.visitbritain.com",
                 new String[]{
-                        context.getString(R.string.uk_spring_weather),
-                        context.getString(R.string.uk_summer_weather),
-                        context.getString(R.string.uk_autumn_weather),
-                        context.getString(R.string.uk_winter_weather)
+                        context.getString(R.string.uk_march_may_weather),
+                        context.getString(R.string.uk_june_august_weather),
+                        context.getString(R.string.uk_september_november_weather),
+                        context.getString(R.string.uk_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.uk_food),
@@ -7396,10 +7396,10 @@ public class CountryData {
                 context.getString(R.string.us_fact),
                 "https://www.visittheusa.com",
                 new String[]{
-                        context.getString(R.string.us_spring_weather),
-                        context.getString(R.string.us_summer_weather),
-                        context.getString(R.string.us_autumn_weather),
-                        context.getString(R.string.us_winter_weather)
+                        context.getString(R.string.us_march_may_weather),
+                        context.getString(R.string.us_june_august_weather),
+                        context.getString(R.string.us_september_november_weather),
+                        context.getString(R.string.us_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.us_food),
@@ -7435,10 +7435,10 @@ public class CountryData {
                 context.getString(R.string.uruguay_fact),
                 "https://uruguaynatural.com",
                 new String[]{
-                        context.getString(R.string.uruguay_spring_weather),
-                        context.getString(R.string.uruguay_summer_weather),
-                        context.getString(R.string.uruguay_autumn_weather),
-                        context.getString(R.string.uruguay_winter_weather)
+                        context.getString(R.string.uruguay_march_may_weather),
+                        context.getString(R.string.uruguay_june_august_weather),
+                        context.getString(R.string.uruguay_september_november_weather),
+                        context.getString(R.string.uruguay_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.uruguay_food),
@@ -7474,10 +7474,10 @@ public class CountryData {
                 context.getString(R.string.uzbekistan_fact),
                 "https://uzbekistan.travel",
                 new String[]{
-                        context.getString(R.string.uzbekistan_spring_weather),
-                        context.getString(R.string.uzbekistan_summer_weather),
-                        context.getString(R.string.uzbekistan_autumn_weather),
-                        context.getString(R.string.uzbekistan_winter_weather)
+                        context.getString(R.string.uzbekistan_march_may_weather),
+                        context.getString(R.string.uzbekistan_june_august_weather),
+                        context.getString(R.string.uzbekistan_september_november_weather),
+                        context.getString(R.string.uzbekistan_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.uzbekistan_food),
@@ -7513,10 +7513,10 @@ public class CountryData {
                 context.getString(R.string.vanuatu_fact),
                 "https://www.vanuatu.travel",
                 new String[]{
-                        context.getString(R.string.vanuatu_spring_weather),
-                        context.getString(R.string.vanuatu_summer_weather),
-                        context.getString(R.string.vanuatu_autumn_weather),
-                        context.getString(R.string.vanuatu_winter_weather)
+                        context.getString(R.string.vanuatu_march_may_weather),
+                        context.getString(R.string.vanuatu_june_august_weather),
+                        context.getString(R.string.vanuatu_september_november_weather),
+                        context.getString(R.string.vanuatu_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.vanuatu_food),
@@ -7552,10 +7552,10 @@ public class CountryData {
                 context.getString(R.string.vatican_fact),
                 "https://www.museivaticani.va",
                 new String[]{
-                        context.getString(R.string.vatican_spring_weather),
-                        context.getString(R.string.vatican_summer_weather),
-                        context.getString(R.string.vatican_autumn_weather),
-                        context.getString(R.string.vatican_winter_weather)
+                        context.getString(R.string.vatican_march_may_weather),
+                        context.getString(R.string.vatican_june_august_weather),
+                        context.getString(R.string.vatican_september_november_weather),
+                        context.getString(R.string.vatican_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.vatican_food),
@@ -7591,10 +7591,10 @@ public class CountryData {
                 context.getString(R.string.venezuela_fact),
                 "https://venezuelatuya.com",
                 new String[]{
-                        context.getString(R.string.venezuela_spring_weather),
-                        context.getString(R.string.venezuela_summer_weather),
-                        context.getString(R.string.venezuela_autumn_weather),
-                        context.getString(R.string.venezuela_winter_weather)
+                        context.getString(R.string.venezuela_march_may_weather),
+                        context.getString(R.string.venezuela_june_august_weather),
+                        context.getString(R.string.venezuela_september_november_weather),
+                        context.getString(R.string.venezuela_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.venezuela_food),
@@ -7630,10 +7630,10 @@ public class CountryData {
                 context.getString(R.string.vietnam_fact),
                 "https://vietnam.travel",
                 new String[]{
-                        context.getString(R.string.vietnam_spring_weather),
-                        context.getString(R.string.vietnam_summer_weather),
-                        context.getString(R.string.vietnam_autumn_weather),
-                        context.getString(R.string.vietnam_winter_weather)
+                        context.getString(R.string.vietnam_march_may_weather),
+                        context.getString(R.string.vietnam_june_august_weather),
+                        context.getString(R.string.vietnam_september_november_weather),
+                        context.getString(R.string.vietnam_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.vietnam_food),
@@ -7669,10 +7669,10 @@ public class CountryData {
                 context.getString(R.string.yemen_fact),
                 "https://www.yementourism.com",
                 new String[]{
-                        context.getString(R.string.yemen_spring_weather),
-                        context.getString(R.string.yemen_summer_weather),
-                        context.getString(R.string.yemen_autumn_weather),
-                        context.getString(R.string.yemen_winter_weather)
+                        context.getString(R.string.yemen_march_may_weather),
+                        context.getString(R.string.yemen_june_august_weather),
+                        context.getString(R.string.yemen_september_november_weather),
+                        context.getString(R.string.yemen_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.yemen_food),
@@ -7708,10 +7708,10 @@ public class CountryData {
                 context.getString(R.string.zambia_fact),
                 "https://www.zambiatourism.com",
                 new String[]{
-                        context.getString(R.string.zambia_spring_weather),
-                        context.getString(R.string.zambia_summer_weather),
-                        context.getString(R.string.zambia_autumn_weather),
-                        context.getString(R.string.zambia_winter_weather)
+                        context.getString(R.string.zambia_march_may_weather),
+                        context.getString(R.string.zambia_june_august_weather),
+                        context.getString(R.string.zambia_september_november_weather),
+                        context.getString(R.string.zambia_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.zambia_food),
@@ -7747,10 +7747,10 @@ public class CountryData {
                 context.getString(R.string.zimbabwe_fact),
                 "https://zimbabwetourism.net",
                 new String[]{
-                        context.getString(R.string.zimbabwe_spring_weather),
-                        context.getString(R.string.zimbabwe_summer_weather),
-                        context.getString(R.string.zimbabwe_autumn_weather),
-                        context.getString(R.string.zimbabwe_winter_weather)
+                        context.getString(R.string.zimbabwe_march_may_weather),
+                        context.getString(R.string.zimbabwe_june_august_weather),
+                        context.getString(R.string.zimbabwe_september_november_weather),
+                        context.getString(R.string.zimbabwe_december_february_weather)
                 },
                 new String[]{
                         context.getString(R.string.zimbabwe_food),

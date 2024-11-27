@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -43,6 +44,16 @@ public class AttractionsPagerAdapter extends RecyclerView.Adapter<AttractionsPag
         } else {
             holder.swipeHintLeft.setVisibility(View.VISIBLE);  // Show hint to swipe down
             holder.swipeHintRight.setVisibility(View.VISIBLE); // Show hint to swipe up
+        }
+
+        ScrollView scrollView = holder.itemView.findViewById(R.id.scroll_view);
+        if (scrollView != null) {
+            scrollView.post(new Runnable() {
+                @Override
+                public void run() {
+                    scrollView.scrollTo(0, 0);  // Scroll to the top
+                }
+            });
         }
     }
 

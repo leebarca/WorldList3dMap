@@ -189,8 +189,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addFilterButtons(GridLayout gridLayout, String[] values, Set<String> selectedValues) {
-        int columnCount = gridLayout.getColumnCount(); // Get the number of columns
-
         for (String value : values) {
             Button button = new Button(this);
             button.setText(value);

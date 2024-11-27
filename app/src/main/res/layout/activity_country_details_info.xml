@@ -526,14 +526,15 @@
             android:layout_gravity="center"
             android:layout_margin="4dp"
             android:layout_marginTop="4dp"
-            android:columnCount="1"
+            android:columnCount="2"
             android:padding="4dp">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
+                android:layout_columnWeight="1"
                 android:padding="4dp">
 
                 <ImageView
@@ -563,10 +564,11 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
+                android:layout_columnWeight="1"
                 android:padding="4dp">
 
                 <ImageView

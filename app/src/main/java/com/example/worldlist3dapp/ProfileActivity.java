@@ -18,6 +18,8 @@ public class ProfileActivity extends AppCompatActivity {
         countryDetailsIcon.setOnClickListener(v -> {
             Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
             startActivity(intent);
+            finish();
+            overridePendingTransition(0, 0);
         });
 
         // Map Icon (current activity, so no need for action here)
@@ -25,6 +27,8 @@ public class ProfileActivity extends AppCompatActivity {
         mapIcon.setOnClickListener(v -> {
             Intent intent = new Intent(ProfileActivity.this, ProfileActivity.class);
             startActivity(intent);
+            finish();
+            overridePendingTransition(0, 0);
         });
 
         // Settings Icon
@@ -32,6 +36,8 @@ public class ProfileActivity extends AppCompatActivity {
         settingsIcon.setOnClickListener(v -> {
             Intent intent = new Intent(ProfileActivity.this, SettingsActivity.class);
             startActivity(intent);
+            finish();
+            overridePendingTransition(0, 0);
         });
 
         // Profile Icon

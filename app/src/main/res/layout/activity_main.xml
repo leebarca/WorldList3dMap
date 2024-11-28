@@ -5,12 +5,12 @@
     android:background="@color/app_background_color"
     android:padding="16dp">
 
+    <!-- Search Bar -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp">
 
-        <!-- Search EditText -->
         <EditText
             android:id="@+id/search_bar"
             android:layout_width="match_parent"
@@ -24,7 +24,7 @@
             android:drawablePadding="8dp"
             android:inputType="text" />
 
-        <!-- Filter Icon as Separate Element -->
+        <!-- Filter Icon -->
         <ImageView
             android:id="@+id/filter_icon"
             android:layout_width="30dp"
@@ -40,9 +40,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:visibility="gone"
-        android:id="@+id/filter_scroll_container">
+        android:id="@+id/filter_scroll_container"
+        android:visibility="gone">
 
         <LinearLayout
             android:id="@+id/filter_container"
@@ -53,7 +52,7 @@
             android:padding="8dp"
             android:background="@drawable/button_background">
 
-            <!-- Language Filter -->
+            <!-- Filter Sections -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -70,12 +69,8 @@
                 android:layout_height="wrap_content"
                 android:columnCount="3"
                 android:layout_gravity="center"
-                android:layout_weight="1"
-                android:layout_marginBottom="8dp">
-                <!-- Language buttons added dynamically in Java code -->
-            </GridLayout>
+                android:layout_marginBottom="8dp" />
 
-            <!-- Continent Filter -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -91,11 +86,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:columnCount="2"
-                android:layout_marginBottom="8dp">
-                <!-- Continent buttons added dynamically in Java code -->
-            </GridLayout>
+                android:layout_marginBottom="8dp" />
 
-            <!-- Best Months To Visit Filter -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -111,11 +103,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:columnCount="2"
-                android:layout_marginBottom="8dp">
-                <!-- Best Months To Visit buttons added dynamically in Java code -->
-            </GridLayout>
+                android:layout_marginBottom="8dp" />
 
-            <!-- Religion Filter -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -131,9 +120,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:columnCount="2"
-                android:layout_marginBottom="8dp">
-                <!-- Religion buttons added dynamically in Java code -->
-            </GridLayout>
+                android:layout_marginBottom="8dp" />
+
         </LinearLayout>
     </ScrollView>
 
@@ -141,7 +129,7 @@
     <ListView
         android:id="@+id/country_list_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="1dp" />
@@ -150,23 +138,23 @@
     <TextView
         android:id="@+id/no_countries_found"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/open_sans"
         android:layout_gravity="center"
-        android:gravity="center"
         android:text="@string/no_countries_found"
         android:textColor="@color/black"
         android:visibility="gone"
         android:textSize="18sp" />
 
+    <!-- Bottom Icons -->
     <LinearLayout
+        android:id="@+id/icons_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
         android:padding="8dp"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/button_background"
         android:weightSum="4">
 
         <!-- Country Details / Home Icon (Main Activity) -->
@@ -180,14 +168,8 @@
             android:padding="8dp"
             android:clickable="true"
             android:focusable="true"
-            android:layout_marginEnd="8dp" />
-
-        <!-- Vertical Line -->
-        <View
-            android:layout_width="1dp"
-            android:layout_height="40dp"
-            android:background="@android:color/darker_gray"
-            android:layout_marginEnd="8dp"/>
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background" />
 
         <!-- Map Icon -->
         <ImageView
@@ -200,14 +182,8 @@
             android:padding="8dp"
             android:clickable="true"
             android:focusable="true"
-            android:layout_marginEnd="8dp" />
-
-        <!-- Vertical Line -->
-        <View
-            android:layout_width="1dp"
-            android:layout_height="40dp"
-            android:background="@android:color/darker_gray"
-            android:layout_marginEnd="8dp"/>
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background" />
 
         <!-- Settings Icon -->
         <ImageView
@@ -220,14 +196,8 @@
             android:padding="8dp"
             android:clickable="true"
             android:focusable="true"
-            android:layout_marginEnd="8dp" />
-
-        <!-- Vertical Line -->
-        <View
-            android:layout_width="1dp"
-            android:layout_height="40dp"
-            android:background="@android:color/darker_gray"
-            android:layout_marginEnd="8dp"/>
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background" />
 
         <!-- Profile Icon -->
         <ImageView
@@ -237,8 +207,11 @@
             android:layout_weight="1"
             android:src="@drawable/profile"
             android:contentDescription="@string/profile"
+            android:padding="8dp"
             android:clickable="true"
             android:focusable="true"
-            android:padding="8dp" />
+            android:background="@drawable/button_background" />
     </LinearLayout>
+
+
 </LinearLayout>

@@ -32,12 +32,13 @@ public class MainActivity extends AppCompatActivity {
     private EditText searchBar;
     private ImageView filter;
     private ScrollView filterScrollContainer; // Updated to ScrollView
-    private LinearLayout filterContainer;
+    private LinearLayout iconsBottom;
     private Set<String> selectedLanguages = new HashSet<>();
     private Set<String> selectedContinents = new HashSet<>();
     private Set<String> selectedReligions = new HashSet<>();
     private Set<String> selectedMonths = new HashSet<>();
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         searchBar = findViewById(R.id.search_bar);
         filter = findViewById(R.id.filter_icon);
         filterScrollContainer = findViewById(R.id.filter_scroll_container); // Reference to ScrollView
-        filterContainer = findViewById(R.id.filter_container);
+        iconsBottom = findViewById(R.id.icons_bottom);
         ImageView countryDetailsIcon = findViewById(R.id.country_details_icon);
         ImageView mapIcon = findViewById(R.id.map_icon);
         ImageView settingsIcon = findViewById(R.id.settings_icon);
@@ -55,8 +56,7 @@ public class MainActivity extends AppCompatActivity {
         GridLayout languageGrid = findViewById(R.id.language_filter_grid);
         GridLayout continentGrid = findViewById(R.id.continent_filter_grid);
         GridLayout religionGrid = findViewById(R.id.religion_filter_grid);
-        @SuppressLint({"MissingInflatedId",
-                "LocalSuppress"}) GridLayout bestMonthsToVisitGrid = findViewById(R.id.month_filter_grid);
+        GridLayout bestMonthsToVisitGrid = findViewById(R.id.month_filter_grid);
 
         String[] languages = {getString(R.string.english), getString(R.string.spanish), getString(R.string.french), getString(R.string.german), getString(R.string.italian), getString(R.string.portuguese), getString(R.string.dutch), getString(R.string.arabic), getString(R.string.russian), getString(R.string.chinese), getString(R.string.malay), getString(R.string.hindi), getString(R.string.korean)};
         String[] continents = {getString(R.string.north_america), getString(R.string.south_america), getString(R.string.europe), getString(R.string.africa), getString(R.string.asia), getString(R.string.australasia)};
@@ -144,18 +144,24 @@ public class MainActivity extends AppCompatActivity {
         mapIcon.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, MapActivity.class);
             startActivity(intent);
+            finish();
+            overridePendingTransition(0, 0);
         });
 
         // Set click listener for Settings
         settingsIcon.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
             startActivity(intent);
+            finish();
+            overridePendingTransition(0, 0);
         });
 
         // Set click listener for Profile
         profileIcon.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
             startActivity(intent);
+            finish();
+            overridePendingTransition(0, 0);
         });
 
     }
@@ -215,6 +221,8 @@ public class MainActivity extends AppCompatActivity {
             noCountriesFoundTextView.setVisibility(View.GONE);
             countryListView.setVisibility(View.VISIBLE);
         }
+        // Always keep the icons at the bottom visible
+        iconsBottom.setVisibility(View.VISIBLE);
     }
 
     private void addFilterButtons(GridLayout gridLayout, String[] values, Set<String> selectedValues) {

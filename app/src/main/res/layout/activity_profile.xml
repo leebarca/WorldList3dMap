@@ -14,6 +14,15 @@
         android:id="@+id/filter_scroll_container">
     </ScrollView>
 
+    <LinearLayout
+        android:id="@+id/country_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:orientation="horizontal" />
+
     <!-- "No countries found" TextView -->
     <TextView
         android:id="@+id/no_countries_found"
@@ -28,13 +37,13 @@
         android:textSize="18sp" />
 
     <LinearLayout
+        android:id="@+id/icons_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
         android:padding="8dp"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/button_background"
         android:weightSum="4">
 
         <!-- Country Details / Home Icon (Main Activity) -->
@@ -46,14 +55,10 @@
             android:src="@drawable/capital"
             android:contentDescription="@string/country_details"
             android:padding="8dp"
-            android:layout_marginEnd="8dp" />
-
-        <!-- Vertical Line -->
-        <View
-            android:layout_width="1dp"
-            android:layout_height="40dp"
-            android:background="@android:color/darker_gray"
-            android:layout_marginEnd="8dp"/>
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background" />
 
         <!-- Map Icon -->
         <ImageView
@@ -64,14 +69,10 @@
             android:src="@drawable/map"
             android:contentDescription="@string/map"
             android:padding="8dp"
-            android:layout_marginEnd="8dp" />
-
-        <!-- Vertical Line -->
-        <View
-            android:layout_width="1dp"
-            android:layout_height="40dp"
-            android:background="@android:color/darker_gray"
-            android:layout_marginEnd="8dp"/>
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background" />
 
         <!-- Settings Icon -->
         <ImageView
@@ -82,14 +83,10 @@
             android:src="@drawable/settings"
             android:contentDescription="@string/settings"
             android:padding="8dp"
-            android:layout_marginEnd="8dp" />
-
-        <!-- Vertical Line -->
-        <View
-            android:layout_width="1dp"
-            android:layout_height="40dp"
-            android:background="@android:color/darker_gray"
-            android:layout_marginEnd="8dp"/>
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background" />
 
         <!-- Profile Icon -->
         <ImageView
@@ -99,6 +96,9 @@
             android:layout_weight="1"
             android:src="@drawable/profile"
             android:contentDescription="@string/profile"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/button_background" />
     </LinearLayout>
 </LinearLayout>

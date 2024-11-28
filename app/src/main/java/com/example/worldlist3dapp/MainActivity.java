@@ -48,7 +48,10 @@ public class MainActivity extends AppCompatActivity {
         filter = findViewById(R.id.filter_icon);
         filterScrollContainer = findViewById(R.id.filter_scroll_container); // Reference to ScrollView
         filterContainer = findViewById(R.id.filter_container);
-
+        ImageView countryDetailsIcon = findViewById(R.id.country_details_icon);
+        ImageView mapIcon = findViewById(R.id.map_icon);
+        ImageView settingsIcon = findViewById(R.id.settings_icon);
+        ImageView profileIcon = findViewById(R.id.profile_icon);
         GridLayout languageGrid = findViewById(R.id.language_filter_grid);
         GridLayout continentGrid = findViewById(R.id.continent_filter_grid);
         GridLayout religionGrid = findViewById(R.id.religion_filter_grid);
@@ -129,6 +132,32 @@ public class MainActivity extends AppCompatActivity {
 
             startActivity(intent);
         });
+
+        // Set click listener for Country Details
+        countryDetailsIcon.setOnClickListener(v -> {
+            // Open the main country details activity (this might already be active)
+            // Or navigate to a country details activity if necessary
+            // No action, already on the Country Details / Home page
+        });
+
+        // Set click listener for Map Icon
+        mapIcon.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, MapActivity.class);
+            startActivity(intent);
+        });
+
+        // Set click listener for Settings
+        settingsIcon.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            startActivity(intent);
+        });
+
+        // Set click listener for Profile
+        profileIcon.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+            startActivity(intent);
+        });
+
     }
 
     private void filterCountries() {

@@ -5,15 +5,6 @@
     android:background="@color/app_background_color"
     android:padding="16dp">
 
-    <!-- ScrollView for Filter Container -->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:visibility="gone"
-        android:id="@+id/filter_scroll_container">
-    </ScrollView>
-
     <LinearLayout
         android:id="@+id/country_list_view"
         android:layout_width="match_parent"
@@ -21,20 +12,35 @@
         android:layout_weight="1"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="1dp"
-        android:orientation="horizontal" />
+        android:orientation="horizontal"
+        android:background="@drawable/button_background">
 
-    <!-- "No countries found" TextView -->
-    <TextView
-        android:id="@+id/no_countries_found"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:fontFamily="@font/open_sans"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="@string/no_countries_found"
-        android:textColor="@color/black"
-        android:visibility="gone"
-        android:textSize="18sp" />
+        <TextView
+            android:id="@+id/textView_country_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/info_background"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/country_summary"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_country_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/open_sans"
+            android:gravity="center"
+            android:maxLines="4"
+            android:padding="4dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/icons_bottom"
@@ -42,7 +48,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:padding="8dp"
+        android:paddingTop="8dp"
         android:layout_alignParentBottom="true"
         android:weightSum="4">
 
@@ -60,14 +66,14 @@
             android:layout_marginEnd="8dp"
             android:background="@drawable/button_background" />
 
-        <!-- Map Icon -->
+        <!-- Explore Icon -->
         <ImageView
-            android:id="@+id/map_icon"
+            android:id="@+id/explore_icon"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
             android:src="@drawable/map"
-            android:contentDescription="@string/map"
+            android:contentDescription="@string/explore"
             android:padding="8dp"
             android:clickable="true"
             android:focusable="true"

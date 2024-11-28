@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         filterScrollContainer = findViewById(R.id.filter_scroll_container); // Reference to ScrollView
         iconsBottom = findViewById(R.id.icons_bottom);
         ImageView countryDetailsIcon = findViewById(R.id.country_details_icon);
-        ImageView mapIcon = findViewById(R.id.map_icon);
+        ImageView mapIcon = findViewById(R.id.explore_icon);
         ImageView settingsIcon = findViewById(R.id.settings_icon);
         ImageView profileIcon = findViewById(R.id.profile_icon);
         GridLayout languageGrid = findViewById(R.id.language_filter_grid);
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Set click listener for Map Icon
         mapIcon.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, MapActivity.class);
+            Intent intent = new Intent(MainActivity.this, ExploreActivity.class);
             startActivity(intent);
             finish();
             overridePendingTransition(0, 0);

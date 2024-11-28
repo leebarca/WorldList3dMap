@@ -125,26 +125,32 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- List of countries below the filter container -->
-    <ListView
-        android:id="@+id/country_list_view"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:divider="@android:color/darker_gray"
-        android:dividerHeight="1dp" />
+        android:layout_weight="1">
 
-    <!-- "No countries found" TextView -->
-    <TextView
-        android:id="@+id/no_countries_found"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/open_sans"
-        android:layout_gravity="center"
-        android:text="@string/no_countries_found"
-        android:textColor="@color/black"
-        android:visibility="gone"
-        android:textSize="18sp" />
+        <!-- ListView -->
+        <ListView
+            android:id="@+id/country_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp" />
+
+        <!-- "No countries found" TextView -->
+        <TextView
+            android:id="@+id/no_countries_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans"
+            android:layout_gravity="center"
+            android:text="@string/no_countries_found"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:textSize="18sp" />
+
+    </FrameLayout>
 
     <!-- Bottom Icons -->
     <LinearLayout
@@ -153,7 +159,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:padding="8dp"
+        android:paddingTop="8dp"
         android:layout_alignParentBottom="true"
         android:weightSum="4">
 
@@ -171,14 +177,14 @@
             android:layout_marginEnd="8dp"
             android:background="@drawable/button_background" />
 
-        <!-- Map Icon -->
+        <!-- Explore Icon -->
         <ImageView
-            android:id="@+id/map_icon"
+            android:id="@+id/explore_icon"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
             android:src="@drawable/map"
-            android:contentDescription="@string/map"
+            android:contentDescription="@string/explore"
             android:padding="8dp"
             android:clickable="true"
             android:focusable="true"

@@ -14,14 +14,13 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        // Personal Information
         // Profile Picture: An option for users to upload and change their profile picture.
         // Name & Email: Display and allow users to edit their name and email address.
         // Bio: Option for users to add a short bio or description about themselves.
         // Country Preferences: Section where users can define preferred countries or regions (e.g., favorite countries they want to receive updates for).
 
         // Saved Countries or Destinations
-        // Favorites: A list of saved or favorited countries, showing a thumbnail image, name, and brief details (e.g., flag, population).
+        // Favorites: A list of saved or favorites countries, showing a thumbnail image, name, and brief details (e.g., flag, population).
         // Visited Countries: A record of the countries that the user has visited (could be shown with a different icon or color).
         // Wish List: A section where users can mark countries they wish to visit in the future.
 

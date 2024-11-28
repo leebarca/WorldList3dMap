@@ -13,7 +13,6 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        // General Settings
         // Language Selection: Allows users to choose their preferred language for the app (e.g., English, Spanish, French, etc.).
         // Theme: Options for switching between dark mode and light mode (or other themes) to suit the user's preference.
         // Units of Measurement: Users can choose between metric (Celsius, km, kg) or imperial (Fahrenheit, miles, pounds) units for country statistics and weather information.

@@ -54,7 +54,7 @@ public class ExploreActivity extends AppCompatActivity {
         // Profile Icon
         ImageView profileIcon = findViewById(R.id.profile_icon);
         profileIcon.setOnClickListener(v -> {
-            Intent intent = new Intent(ExploreActivity.this, FavouritesActivity.class);
+            Intent intent = new Intent(ExploreActivity.this, TripPlannerActivity.class);
             startActivity(intent);
             finish();
             overridePendingTransition(0, 0);

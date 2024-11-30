@@ -157,7 +157,7 @@ public class LanguageActivity extends AppCompatActivity {
 
         ImageView profileIcon = findViewById(R.id.profile_icon);
         profileIcon.setOnClickListener(v -> {
-            Intent intent = new Intent(LanguageActivity.this, FavouritesActivity.class);
+            Intent intent = new Intent(LanguageActivity.this, TripPlannerActivity.class);
             startActivity(intent);
             finish();
             overridePendingTransition(0, 0);

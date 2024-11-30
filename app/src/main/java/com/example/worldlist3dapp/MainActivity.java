@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Set click listener for Profile
         profileIcon.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, FavouritesActivity.class);
+            Intent intent = new Intent(MainActivity.this, TripPlannerActivity.class);
             startActivity(intent);
             finish();
             overridePendingTransition(0, 0);

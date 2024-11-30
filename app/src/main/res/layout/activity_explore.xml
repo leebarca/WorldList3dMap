@@ -5,66 +5,81 @@
     android:background="@color/app_background_color"
     android:padding="16dp">
 
-    <LinearLayout
-        android:id="@+id/country_list_view"
+    <!-- Title -->
+    <TextView
+        android:id="@+id/explore_title"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:divider="@android:color/darker_gray"
-        android:dividerHeight="1dp"
-        android:orientation="horizontal"
-        android:background="@drawable/button_background">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/explore"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView_country_summary"
+    <!-- Spinner for selecting categories -->
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- Language List -->
+        <ListView
+            android:id="@+id/language_list_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/info_background"
-            android:fontFamily="@font/open_sans"
-            android:gravity="center"
-            android:padding="4dp"
-            android:text="@string/explore"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:background="@drawable/button_background"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp" />
 
-        <TextView
-            android:id="@+id/textView_country_info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:fontFamily="@font/open_sans"
-            android:gravity="center"
-            android:maxLines="4"
-            android:padding="4dp"
-            android:textColor="@android:color/black"
-            android:textSize="16sp" />
-    </LinearLayout>
+    </FrameLayout>
 
+    <TextView
+        android:id="@+id/language_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/compare"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Bottom Icons -->
     <LinearLayout
         android:id="@+id/icons_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
         android:gravity="center"
         android:paddingTop="8dp"
-        android:layout_alignParentBottom="true"
         android:weightSum="4">
 
-        <!-- Country Details / Home Icon (Main Activity) -->
+        <!-- Country Details / Home Icon -->
         <ImageView
             android:id="@+id/country_details_icon"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:src="@drawable/capital"
-            android:contentDescription="@string/country_details"
-            android:padding="8dp"
-            android:clickable="true"
-            android:focusable="true"
             android:layout_marginEnd="8dp"
-            android:background="@drawable/button_background" />
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:contentDescription="@string/country_details"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/capital" />
 
         <!-- Explore Icon -->
         <ImageView
@@ -72,27 +87,27 @@
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:src="@drawable/map"
-            android:contentDescription="@string/explore"
-            android:padding="8dp"
-            android:clickable="true"
-            android:focusable="true"
             android:layout_marginEnd="8dp"
-            android:background="@drawable/button_background" />
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:contentDescription="@string/explore"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/map" />
 
-        <!-- Language Icon -->
+        <!-- Languages Icon -->
         <ImageView
             android:id="@+id/settings_icon"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:src="@drawable/settings"
-            android:contentDescription="@string/language"
-            android:padding="8dp"
-            android:clickable="true"
-            android:focusable="true"
             android:layout_marginEnd="8dp"
-            android:background="@drawable/button_background" />
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:contentDescription="@string/language"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/language" />
 
         <!-- Profile Icon -->
         <ImageView
@@ -100,11 +115,11 @@
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:src="@drawable/profile"
-            android:contentDescription="@string/favourites"
-            android:padding="8dp"
+            android:background="@drawable/button_background"
             android:clickable="true"
+            android:contentDescription="@string/planner"
             android:focusable="true"
-            android:background="@drawable/button_background" />
+            android:padding="8dp"
+            android:src="@drawable/profile" />
     </LinearLayout>
 </LinearLayout>

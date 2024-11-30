@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name" translatable="false">WorldTravel3D</string>
     <string name="country_details">Home</string>
-    <string name="favourites">Favourites</string>
+    <string name="planner">Trip Planner</string>
     <string name="explore">Explore</string>
     <string name="save">Save</string>
+    <string name="compare">Compare Countries</string>
     <string name="language_saved">Language saved: </string>
     <string name="swipe_right_hint">Swipe right hint</string>
     <string name="attraction_image">Attraction Image</string>

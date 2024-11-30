@@ -10,6 +10,14 @@
     <string name="attraction_image">Attraction Image</string>
     <string name="swipe_left_hint">Swipe left hint</string>
     <string name="origin">Origin</string>
+    <string name="biggest_countries">Top 5 Biggest Countries</string>
+    <string name="smallest_countries">Top 5 Smallest Countries</string>
+    <string name="beach_countries">Top 5 Beach Countries</string>
+    <string name="historic_countries">Top 5 Historic Countries</string>
+    <string name="dangerous_countries">Top 5 Dangerous Countries</string>
+    <string name="safest_countries">Top 5 Safest Countries</string>
+    <string name="largest_population_countries">Top 5 Largest Population Countries</string>
+    <string name="smallest_population_countries">Top 5 Smallest Population Countries</string>
     <string name="destination">Destination</string>
     <string name="departure_date">Departure Date</string>
     <string name="return_date">Return Date</string>

@@ -13,17 +13,12 @@ public class ExploreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_explore);
 
-        // Search Function: Allow users to search for countries by name, continent, or even by top attractions or weather conditions.
-        // Filter Options: Include filtering options like country size, population, region, or best time to visit.
-
-        // Featured Countries
-        // Trending Countries: A list of countries that are currently trending (perhaps based on user activity or global events).
-        // Recommended Countries: A section that suggests countries based on the user's preferences or activity.
-
-        // Country Categories
-        // Top Destinations: Show the top destinations or most popular countries in the app.
-        // New Additions: List newly added countries with 3D images and other info.
-        // Regions: Show popular regions (e.g., Europe, Asia, North America) and allow users to browse by region.
+        // Top 5 of each of these
+        // Largest countries.
+        // Countries with the most spoken languages.
+        // Smallest countries by area or population.
+        // Best Beach countries
+        // Best Historic Sights Countries etc.
 
         // Country Comparison
         // Compare Countries: Allow users to compare countries side by side in terms of population, size, best time to visit, languages spoken, etc.
@@ -47,10 +42,10 @@ public class ExploreActivity extends AppCompatActivity {
             // No action, already on the Map page
         });
 
-        // Settings Icon
+        // Languages Icon
         ImageView settingsIcon = findViewById(R.id.settings_icon);
         settingsIcon.setOnClickListener(v -> {
-            Intent intent = new Intent(ExploreActivity.this, SettingsActivity.class);
+            Intent intent = new Intent(ExploreActivity.this, LanguageActivity.class);
             startActivity(intent);
             finish();
             overridePendingTransition(0, 0);
@@ -59,7 +54,7 @@ public class ExploreActivity extends AppCompatActivity {
         // Profile Icon
         ImageView profileIcon = findViewById(R.id.profile_icon);
         profileIcon.setOnClickListener(v -> {
-            Intent intent = new Intent(ExploreActivity.this, ProfileActivity.class);
+            Intent intent = new Intent(ExploreActivity.this, FavouritesActivity.class);
             startActivity(intent);
             finish();
             overridePendingTransition(0, 0);

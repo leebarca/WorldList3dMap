@@ -191,14 +191,14 @@
             android:layout_marginEnd="8dp"
             android:background="@drawable/button_background" />
 
-        <!-- Settings Icon -->
+        <!-- Language Icon -->
         <ImageView
             android:id="@+id/settings_icon"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
             android:src="@drawable/settings"
-            android:contentDescription="@string/settings"
+            android:contentDescription="@string/language"
             android:padding="8dp"
             android:clickable="true"
             android:focusable="true"
@@ -212,7 +212,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:src="@drawable/profile"
-            android:contentDescription="@string/profile"
+            android:contentDescription="@string/favourites"
             android:padding="8dp"
             android:clickable="true"
             android:focusable="true"

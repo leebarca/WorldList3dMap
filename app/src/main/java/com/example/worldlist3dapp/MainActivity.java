@@ -148,9 +148,9 @@ public class MainActivity extends AppCompatActivity {
             overridePendingTransition(0, 0);
         });
 
-        // Set click listener for Settings
+        // Set click listener for Languages
         settingsIcon.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            Intent intent = new Intent(MainActivity.this, LanguageActivity.class);
             startActivity(intent);
             finish();
             overridePendingTransition(0, 0);
@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Set click listener for Profile
         profileIcon.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+            Intent intent = new Intent(MainActivity.this, FavouritesActivity.class);
             startActivity(intent);
             finish();
             overridePendingTransition(0, 0);

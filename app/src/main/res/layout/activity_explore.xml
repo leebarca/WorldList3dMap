@@ -1,7 +1,6 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/app_background_color"
     android:padding="16dp">
 
@@ -10,59 +9,100 @@
         android:id="@+id/explore_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/open_sans"
         android:gravity="center"
         android:padding="8dp"
         android:text="@string/explore"
         android:textColor="@android:color/black"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
-    <!-- Spinner for selecting categories -->
-    <Spinner
-        android:id="@+id/category_spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button_background"
-        android:padding="8dp"
-        android:layout_marginBottom="16dp" />
-
-    <FrameLayout
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scrollable_content"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_below="@id/explore_title"
+        android:layout_above="@+id/icons_bottom"
+        android:fillViewport="true">
 
-        <!-- Language List -->
-        <ListView
-            android:id="@+id/top_countries_list"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_background"
-            android:divider="@android:color/darker_gray"
-            android:dividerHeight="1dp" />
+            android:orientation="vertical">
 
-    </FrameLayout>
+            <!-- Spinner for selecting categories -->
+            <FrameLayout
+                android:id="@+id/spinner_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
 
-    <TextView
-        android:id="@+id/language_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/open_sans"
-        android:gravity="center"
-        android:padding="8dp"
-        android:text="@string/compare"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+                <!-- Spinner -->
+                <Spinner
+                    android:id="@+id/category_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:spinnerMode="dropdown" />
+
+                <!-- Dropdown Icon -->
+                <ImageView
+                    android:id="@+id/dropdown_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/arrowdown"
+                    android:layout_gravity="end|center_vertical"
+                    android:contentDescription="@string/arrow_down" />
+            </FrameLayout>
+
+            <!-- ListView -->
+            <ListView
+                android:id="@+id/top_countries_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_background"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="1dp" />
+
+            <!-- Compare Countries Text -->
+            <TextView
+                android:id="@+id/language_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/recommended"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <!-- ListView -->
+            <ListView
+                android:id="@+id/this_month_countries"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_background"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="1dp" />
+        </LinearLayout>
+    </ScrollView>
 
     <!-- Bottom Icons -->
     <LinearLayout
         android:id="@+id/icons_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
         android:gravity="center"
         android:paddingTop="8dp"
         android:weightSum="4">
@@ -73,13 +113,13 @@
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/button_background"
-            android:clickable="true"
+            android:src="@drawable/capital"
             android:contentDescription="@string/country_details"
-            android:focusable="true"
             android:padding="8dp"
-            android:src="@drawable/capital" />
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background" />
 
         <!-- Explore Icon -->
         <ImageView
@@ -87,13 +127,13 @@
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/button_background"
-            android:clickable="true"
+            android:src="@drawable/map"
             android:contentDescription="@string/explore"
-            android:focusable="true"
             android:padding="8dp"
-            android:src="@drawable/map" />
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background" />
 
         <!-- Languages Icon -->
         <ImageView
@@ -101,25 +141,26 @@
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/button_background"
-            android:clickable="true"
+            android:src="@drawable/language"
             android:contentDescription="@string/language"
-            android:focusable="true"
             android:padding="8dp"
-            android:src="@drawable/language" />
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button_background" />
 
-        <!-- Profile Icon -->
+        <!-- Trip Planner Icon -->
         <ImageView
             android:id="@+id/profile_icon"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:background="@drawable/button_background"
-            android:clickable="true"
+            android:src="@drawable/profile"
             android:contentDescription="@string/planner"
-            android:focusable="true"
             android:padding="8dp"
-            android:src="@drawable/profile" />
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/button_background" />
     </LinearLayout>
-</LinearLayout>
+
+</RelativeLayout>

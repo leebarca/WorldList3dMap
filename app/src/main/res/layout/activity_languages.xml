@@ -16,7 +16,7 @@
         android:padding="8dp"
         android:text="@string/language"
         android:textColor="@android:color/black"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
 
@@ -47,7 +47,7 @@
         android:padding="12dp"
         android:text="@string/save"
         android:textColor="@android:color/black"
-        android:textSize="18sp" />
+        android:textSize="16sp" />
 
     <!-- Bottom Icons -->
     <LinearLayout

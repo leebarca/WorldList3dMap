@@ -3,15 +3,22 @@ package com.example.worldlist3dapp;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class TripPlannerActivity extends AppCompatActivity {
 
+    NonScrollListView trip_list_view;
+    Button add_trip_button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trip_planner);
+
+        trip_list_view = findViewById(R.id.trip_list_view);
+        add_trip_button = findViewById(R.id.add_trip_button);
 
         // A place for users to plan or track their trips.
         // Features:

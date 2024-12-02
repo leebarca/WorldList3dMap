@@ -211,7 +211,7 @@
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:src="@drawable/profile"
+            android:src="@drawable/planvisiticon"
             android:contentDescription="@string/planner"
             android:padding="8dp"
             android:clickable="true"

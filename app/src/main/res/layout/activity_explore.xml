@@ -41,7 +41,6 @@
                 android:gravity="center_vertical"
                 android:padding="8dp">
 
-                <!-- Spinner -->
                 <Spinner
                     android:id="@+id/category_spinner"
                     android:layout_width="match_parent"
@@ -50,7 +49,6 @@
                     android:background="@android:color/transparent"
                     android:spinnerMode="dropdown" />
 
-                <!-- Dropdown Icon -->
                 <ImageView
                     android:id="@+id/dropdown_icon"
                     android:layout_width="24dp"
@@ -61,7 +59,7 @@
             </FrameLayout>
 
             <!-- Top Countries List -->
-            <ListView
+            <com.example.worldlist3dapp.NonScrollListView
                 android:id="@+id/top_countries_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -84,7 +82,7 @@
                 android:textSize="18sp" />
 
             <!-- This Month Countries List -->
-            <ListView
+            <com.example.worldlist3dapp.NonScrollListView
                 android:id="@+id/this_month_countries"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -106,7 +104,6 @@
         android:paddingTop="8dp"
         android:weightSum="4">
 
-        <!-- Country Details / Home Icon -->
         <ImageView
             android:id="@+id/country_details_icon"
             android:layout_width="0dp"
@@ -120,7 +117,6 @@
             android:layout_marginEnd="8dp"
             android:background="@drawable/button_background" />
 
-        <!-- Explore Icon -->
         <ImageView
             android:id="@+id/explore_icon"
             android:layout_width="0dp"
@@ -134,7 +130,6 @@
             android:layout_marginEnd="8dp"
             android:background="@drawable/button_background" />
 
-        <!-- Languages Icon -->
         <ImageView
             android:id="@+id/settings_icon"
             android:layout_width="0dp"
@@ -148,7 +143,6 @@
             android:layout_marginEnd="8dp"
             android:background="@drawable/button_background" />
 
-        <!-- Trip Planner Icon -->
         <ImageView
             android:id="@+id/profile_icon"
             android:layout_width="0dp"

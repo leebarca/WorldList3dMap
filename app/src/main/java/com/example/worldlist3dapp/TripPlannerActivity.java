@@ -21,7 +21,7 @@ public class TripPlannerActivity extends AppCompatActivity {
         // Notes or activities to do in the country.
         // Display a list of upcoming trips.
 
-        // Visited Countries: A record of the countries that the user has visited (could be shown with a different icon or color).
+        // Use AI to generate trip itinerary for user depending on the country they choose and duration
 
         // Country Details Icon
         ImageView countryDetailsIcon = findViewById(R.id.country_details_icon);

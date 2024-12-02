@@ -59,7 +59,7 @@ public class LanguageActivity extends AppCompatActivity {
                 TextView textView = (TextView) view;
                 textView.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
                 textView.setTextColor(getResources().getColor(android.R.color.black));
-                textView.setTextSize(18);
+                textView.setTextSize(16);
 
                 // Highlight the selected item
                 if (position == selectedPosition) {

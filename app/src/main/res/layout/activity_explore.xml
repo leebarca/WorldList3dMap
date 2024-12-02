@@ -9,7 +9,6 @@
         android:id="@+id/explore_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:fontFamily="@font/open_sans"
         android:gravity="center"
         android:padding="8dp"
@@ -22,9 +21,9 @@
     <ScrollView
         android:id="@+id/scrollable_content"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         android:layout_below="@id/explore_title"
-        android:layout_above="@+id/icons_bottom"
+        android:layout_above="@id/icons_bottom"
         android:fillViewport="true">
 
         <LinearLayout
@@ -61,7 +60,7 @@
                     android:contentDescription="@string/arrow_down" />
             </FrameLayout>
 
-            <!-- ListView -->
+            <!-- Top Countries List -->
             <ListView
                 android:id="@+id/top_countries_list"
                 android:layout_width="match_parent"
@@ -71,9 +70,9 @@
                 android:divider="@android:color/darker_gray"
                 android:dividerHeight="1dp" />
 
-            <!-- Compare Countries Text -->
+            <!-- Current Month Title -->
             <TextView
-                android:id="@+id/language_title"
+                android:id="@+id/current_month_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -84,11 +83,11 @@
                 android:textColor="@android:color/black"
                 android:textSize="18sp" />
 
-            <!-- ListView -->
+            <!-- This Month Countries List -->
             <ListView
                 android:id="@+id/this_month_countries"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/button_background"
                 android:divider="@android:color/darker_gray"

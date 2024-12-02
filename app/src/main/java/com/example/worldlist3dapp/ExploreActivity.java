@@ -11,12 +11,13 @@ import android.widget.Spinner;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class ExploreActivity extends AppCompatActivity {
 
-    private OrderedCountriesAdapter adapter;
-    private ListView countryListView;
+    private OrderedCountriesAdapter adapter, monthAdapter;
+    private ListView countryListView, this_month_countries;
     private List<CountryInfo> countries;
 
     @Override
@@ -26,11 +27,28 @@ public class ExploreActivity extends AppCompatActivity {
 
         // Initialize data
 
-        // ListView and Adapter
         countryListView = findViewById(R.id.top_countries_list);
+        this_month_countries = findViewById(R.id.this_month_countries);
+
         countries = CountryData.getCountriesInfo(this);
+
+        // Adapter for top countries
         adapter = new OrderedCountriesAdapter(this, new ArrayList<>());
         countryListView.setAdapter(adapter);
+
+        // Adapter for "this month's countries"
+        monthAdapter = new OrderedCountriesAdapter(this, new ArrayList<>());
+        this_month_countries.setAdapter(monthAdapter);
+
+        // Update the list for the current month
+        updateCurrentMonthListView();
+
+        // Set OnItemClickListener for both ListViews
+        setOnItemClickListener(countryListView);
+        setOnItemClickListener(this_month_countries);
+
+        // Spinner for category selection
+        Spinner categorySpinner = findViewById(R.id.category_spinner);
 
         // Set OnItemClickListener for ListView
         countryListView.setOnItemClickListener((parent, view, position, id) -> {
@@ -66,9 +84,6 @@ public class ExploreActivity extends AppCompatActivity {
 
             startActivity(intent);
         });
-
-        // Spinner for category selection
-        Spinner categorySpinner = findViewById(R.id.category_spinner);
 
         // Categories for Spinner
         String[] categories = {
@@ -148,6 +163,22 @@ public class ExploreActivity extends AppCompatActivity {
         adapter.updateCountries(filteredCountries);
     }
 
+    private void updateCurrentMonthListView() {
+        int currentMonth = Calendar.getInstance().get(Calendar.MONTH); // 0 for January, 11 for December
+        List<CountryInfo> filteredCountries = new ArrayList<>();
+
+        for (CountryInfo country : countries) {
+            if (country.getBestTimeVisit()[currentMonth] == 1) { // 1 means best time to visit
+                filteredCountries.add(country);
+                if (filteredCountries.size() == 5) { // Limit to 5 countries
+                    break;
+                }
+            }
+        }
+
+        monthAdapter.updateCountries(filteredCountries);
+    }
+
     private List<CountryInfo> getOrderedCountries(List<String> orderedNames, List<CountryInfo> allCountries) {
         List<CountryInfo> orderedCountries = new ArrayList<>();
         for (String name : orderedNames) {
@@ -159,6 +190,42 @@ public class ExploreActivity extends AppCompatActivity {
             }
         }
         return orderedCountries;
+    }
+
+    private void setOnItemClickListener(ListView listView) {
+        listView.setOnItemClickListener((parent, view, position, id) -> {
+            CountryInfo selectedCountry = (CountryInfo) parent.getItemAtPosition(position);
+
+            Intent intent = new Intent(ExploreActivity.this, CountryDetailActivity.class);
+            intent.putExtra("countryImageResId", selectedCountry.getImageResId());
+            intent.putExtra("countryName", selectedCountry.getName());
+            intent.putExtra("countryCapital", selectedCountry.getCapital());
+            intent.putExtra("countryPopulation", selectedCountry.getPopulation());
+            intent.putExtra("countryLanguage", selectedCountry.getLanguage());
+            intent.putExtra("countryReligion", selectedCountry.getReligion());
+            intent.putExtra("countryContinent", selectedCountry.getContinent());
+            intent.putExtra("countryArea", selectedCountry.getArea());
+            intent.putExtra("countryFlag", selectedCountry.getFlagResId());
+            intent.putExtra("countryDescription", selectedCountry.getDescription());
+            intent.putExtra("firstAttractionName", selectedCountry.getFirstAttractionName());
+            intent.putExtra("firstAttractionDetails", selectedCountry.getFirstAttractionDetails());
+            intent.putExtra("firstAttractionImage", selectedCountry.getFirstAttractionImage());
+            intent.putExtra("secondAttractionName", selectedCountry.getSecondAttractionName());
+            intent.putExtra("secondAttractionDetails", selectedCountry.getSecondAttractionDetails());
+            intent.putExtra("secondAttractionImage", selectedCountry.getSecondAttractionImage());
+            intent.putExtra("thirdAttractionName", selectedCountry.getThirdAttractionName());
+            intent.putExtra("thirdAttractionDetails", selectedCountry.getThirdAttractionDetails());
+            intent.putExtra("thirdAttractionImage", selectedCountry.getThirdAttractionImage());
+            intent.putExtra("bestTimeVisitArray", selectedCountry.getBestTimeVisit());
+            intent.putExtra("factInfo", selectedCountry.getFact());
+            intent.putExtra("websiteInfo", selectedCountry.getWebsite());
+            intent.putExtra("weatherInfo", selectedCountry.getWeather());
+            intent.putExtra("cuisineArray", selectedCountry.getCuisine());
+            intent.putExtra("safetyArray", selectedCountry.getSafety());
+            intent.putExtra("currency", selectedCountry.getCurrency());
+
+            startActivity(intent);
+        });
     }
 
     private void setupBottomNavigation() {

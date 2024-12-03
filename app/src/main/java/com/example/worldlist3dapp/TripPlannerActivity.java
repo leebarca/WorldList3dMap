@@ -20,6 +20,13 @@ public class TripPlannerActivity extends AppCompatActivity {
         trip_list_view = findViewById(R.id.trip_list_view);
         add_trip_button = findViewById(R.id.add_trip_button);
 
+        add_trip_button.setOnClickListener(v -> {
+            Intent intent = new Intent(TripPlannerActivity.this, AddTrip.class);
+            startActivity(intent);
+            finish();
+            overridePendingTransition(0, 0);
+        });
+
         // A place for users to plan or track their trips.
         // Features:
         // Users can add planned trips with:

@@ -18,7 +18,8 @@
             android:layout_marginBottom="4dp"
             android:text="@string/destination"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans" />
 
         <EditText
             android:id="@+id/destination"
@@ -26,7 +27,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/button_background"
             android:padding="10dp"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans" />
 
         <!-- Departure Date -->
         <TextView
@@ -36,7 +38,8 @@
             android:layout_marginBottom="4dp"
             android:text="@string/departure_date"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans" />
 
         <EditText
             android:id="@+id/edit_departure_date"
@@ -49,7 +52,8 @@
             android:focusable="false"
             android:clickable="true"
             android:inputType="none"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans" />
 
         <!-- Return Date -->
         <TextView
@@ -59,7 +63,8 @@
             android:layout_marginBottom="4dp"
             android:text="@string/return_date"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans" />
 
         <EditText
             android:id="@+id/edit_return_date"
@@ -72,7 +77,8 @@
             android:focusable="false"
             android:clickable="true"
             android:inputType="none"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans" />
 
         <!-- Search Button -->
         <Button
@@ -83,7 +89,8 @@
             android:background="@drawable/button_background"
             android:text="@string/search"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans" />
 
     </LinearLayout>
 </ScrollView>

@@ -63,7 +63,8 @@
                     android:text="@string/flights"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
-                    android:gravity="center" />
+                    android:gravity="center"
+                    android:fontFamily="@font/open_sans" />
             </LinearLayout>
 
             <!-- Clickable Info Icon -->
@@ -93,7 +94,8 @@
                     android:text="@string/hotels"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
-                    android:gravity="center" />
+                    android:gravity="center"
+                    android:fontFamily="@font/open_sans" />
             </LinearLayout>
 
             <!-- Clickable Attractions Icon -->
@@ -123,7 +125,8 @@
                     android:text="@string/packages"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
-                    android:gravity="center" />
+                    android:gravity="center"
+                    android:fontFamily="@font/open_sans" />
             </LinearLayout>
 
             <!-- Clickable Offers Icon -->
@@ -153,7 +156,8 @@
                     android:text="@string/activities"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
-                    android:gravity="center" />
+                    android:gravity="center"
+                    android:fontFamily="@font/open_sans" />
             </LinearLayout>
         </GridLayout>
         <FrameLayout

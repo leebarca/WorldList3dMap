@@ -17,7 +17,8 @@
             android:layout_marginBottom="4dp"
             android:text="@string/origin"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans" />
 
         <EditText
             android:id="@+id/origin"
@@ -26,7 +27,8 @@
             android:background="@drawable/button_background"
             android:padding="10dp"
             android:textColorHint="@color/black"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans" />
 
         <!-- Destination Spinner -->
         <TextView
@@ -36,7 +38,8 @@
             android:layout_marginBottom="4dp"
             android:text="@string/destination"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans" />
 
         <EditText
             android:id="@+id/destination"
@@ -44,7 +47,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/button_background"
             android:padding="10dp"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans" />
 
         <!-- Departure Date -->
         <TextView
@@ -54,7 +58,8 @@
             android:layout_marginBottom="4dp"
             android:text="@string/departure_date"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans" />
 
         <EditText
             android:id="@+id/edit_departure_date"
@@ -67,7 +72,8 @@
             android:focusable="false"
             android:clickable="true"
             android:inputType="none"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans" />
 
         <!-- Return Date -->
         <TextView
@@ -77,7 +83,8 @@
             android:layout_marginBottom="4dp"
             android:text="@string/return_date"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans" />
 
         <EditText
             android:id="@+id/edit_return_date"
@@ -90,7 +97,8 @@
             android:focusable="false"
             android:clickable="true"
             android:inputType="none"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans" />
 
         <!-- Passengers Section -->
         <LinearLayout
@@ -113,7 +121,8 @@
                     android:layout_weight="1"
                     android:text="@string/people"
                     android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:fontFamily="@font/open_sans" />
 
                 <Button
                     android:id="@+id/button_adults_minus"
@@ -121,7 +130,8 @@
                     android:layout_height="48dp"
                     android:background="@drawable/button_background"
                     android:text="-"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/open_sans" />
 
                 <TextView
                     android:id="@+id/text_adults_count"
@@ -130,7 +140,8 @@
                     android:gravity="center"
                     android:text="1"
                     android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:fontFamily="@font/open_sans" />
 
                 <Button
                     android:id="@+id/button_adults_plus"
@@ -138,7 +149,8 @@
                     android:layout_height="48dp"
                     android:background="@drawable/button_background"
                     android:text="+"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/open_sans" />
             </LinearLayout>
         </LinearLayout>
 
@@ -151,7 +163,8 @@
             android:background="@drawable/button_background"
             android:text="@string/search"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:fontFamily="@font/open_sans" />
 
     </LinearLayout>
 </ScrollView>

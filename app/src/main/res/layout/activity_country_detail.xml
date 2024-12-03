@@ -67,7 +67,8 @@
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
-                    android:gravity="center" />
+                    android:gravity="center"
+                    android:fontFamily="@font/open_sans" />
             </LinearLayout>
 
             <!-- Population -->
@@ -90,7 +91,8 @@
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
-                    android:gravity="center" />
+                    android:gravity="center"
+                    android:fontFamily="@font/open_sans" />
             </LinearLayout>
 
             <!-- Languages -->
@@ -113,7 +115,8 @@
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
-                    android:gravity="center" />
+                    android:gravity="center"
+                    android:fontFamily="@font/open_sans" />
             </LinearLayout>
 
             <!-- Religion -->
@@ -136,7 +139,8 @@
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
-                    android:gravity="center" />
+                    android:gravity="center"
+                    android:fontFamily="@font/open_sans" />
             </LinearLayout>
 
             <!-- Continent -->
@@ -159,7 +163,8 @@
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
-                    android:gravity="center" />
+                    android:gravity="center"
+                    android:fontFamily="@font/open_sans" />
             </LinearLayout>
 
             <!-- Area -->
@@ -182,7 +187,8 @@
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
-                    android:gravity="center" />
+                    android:gravity="center"
+                    android:fontFamily="@font/open_sans" />
             </LinearLayout>
         </GridLayout>
 
@@ -219,7 +225,8 @@
                 android:text="@string/info"
                 android:textSize="14sp"
                 android:textColor="@android:color/black"
-                android:gravity="center" />
+                android:gravity="center"
+                android:fontFamily="@font/open_sans" />
         </LinearLayout>
 
         <!-- Clickable Attractions Icon -->
@@ -249,7 +256,8 @@
                 android:text="@string/attractions"
                 android:textSize="14sp"
                 android:textColor="@android:color/black"
-                android:gravity="center" />
+                android:gravity="center"
+                android:fontFamily="@font/open_sans" />
         </LinearLayout>
 
         <!-- Clickable Offers Icon -->
@@ -279,7 +287,8 @@
                 android:text="@string/plan_your_trip"
                 android:textSize="14sp"
                 android:textColor="@android:color/black"
-                android:gravity="center" />
+                android:gravity="center"
+                android:fontFamily="@font/open_sans" />
         </LinearLayout>
         </GridLayout>
     </LinearLayout>

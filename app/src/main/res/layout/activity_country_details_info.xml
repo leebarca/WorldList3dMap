@@ -59,7 +59,8 @@
                 android:gravity="center"
                 android:text="@string/read_more"
                 android:textColor="@android:color/black"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:fontFamily="@font/open_sans" />
         </LinearLayout>
 
         <View
@@ -120,7 +121,8 @@
                         android:text="@string/jan"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
-                        android:layout_margin="4dp" />
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/open_sans" />
 
                     <TextView
                         android:id="@+id/feb"
@@ -131,7 +133,8 @@
                         android:text="@string/feb"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
-                        android:layout_margin="4dp" />
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/open_sans" />
 
                     <TextView
                         android:id="@+id/mar"
@@ -142,7 +145,8 @@
                         android:text="@string/mar"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
-                        android:layout_margin="4dp" />
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/open_sans" />
 
                     <TextView
                         android:id="@+id/apr"
@@ -153,7 +157,8 @@
                         android:text="@string/apr"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
-                        android:layout_margin="4dp" />
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/open_sans" />
 
                     <TextView
                         android:id="@+id/may"
@@ -164,7 +169,8 @@
                         android:text="@string/may"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
-                        android:layout_margin="4dp" />
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/open_sans" />
 
                     <TextView
                         android:id="@+id/jun"
@@ -175,7 +181,8 @@
                         android:text="@string/jun"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
-                        android:layout_margin="4dp" />
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/open_sans" />
 
                     <TextView
                         android:id="@+id/jul"
@@ -186,7 +193,8 @@
                         android:text="@string/jul"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
-                        android:layout_margin="4dp" />
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/open_sans" />
 
                     <TextView
                         android:id="@+id/aug"
@@ -197,7 +205,8 @@
                         android:text="@string/aug"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
-                        android:layout_margin="4dp" />
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/open_sans" />
 
                     <TextView
                         android:id="@+id/sep"
@@ -208,7 +217,8 @@
                         android:text="@string/sep"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
-                        android:layout_margin="4dp" />
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/open_sans" />
 
                     <TextView
                         android:id="@+id/oct"
@@ -219,7 +229,8 @@
                         android:text="@string/oct"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
-                        android:layout_margin="4dp" />
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/open_sans" />
 
                     <TextView
                         android:id="@+id/nov"
@@ -230,7 +241,8 @@
                         android:text="@string/nov"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
-                        android:layout_margin="4dp" />
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/open_sans" />
 
                     <TextView
                         android:id="@+id/dec"
@@ -241,7 +253,8 @@
                         android:text="@string/dec"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"
-                        android:layout_margin="4dp" />
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/open_sans" />
 
                 </GridLayout>
             </FrameLayout>

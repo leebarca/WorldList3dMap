@@ -1,14 +1,29 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="8dp"
+    android:background="@color/app_background_color"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
         android:orientation="vertical"
-        android:padding="16dp"
-        android:background="@color/app_background_color">
+        android:padding="8dp">
+
+        <!-- Destination Spinner -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/destination"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/open_sans" />
 
         <!-- Destination Spinner -->
         <TextView
@@ -79,60 +94,6 @@
             android:inputType="none"
             android:textColor="@color/black"
             android:fontFamily="@font/open_sans" />
-
-        <!-- Passengers Section -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:orientation="vertical">
-
-            <!-- Adults -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:layout_marginBottom="8dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/people"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:fontFamily="@font/open_sans" />
-
-                <Button
-                    android:id="@+id/button_adults_minus"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:background="@drawable/button_background"
-                    android:text="-"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/open_sans" />
-
-                <TextView
-                    android:id="@+id/text_adults_count"
-                    android:layout_width="48dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="1"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    android:fontFamily="@font/open_sans" />
-
-                <Button
-                    android:id="@+id/button_adults_plus"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:background="@drawable/button_background"
-                    android:text="+"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/open_sans" />
-            </LinearLayout>
-        </LinearLayout>
 
         <!-- Search Button -->
         <Button

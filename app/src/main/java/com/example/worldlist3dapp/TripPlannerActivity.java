@@ -3,39 +3,47 @@ package com.example.worldlist3dapp;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class TripPlannerActivity extends AppCompatActivity {
 
-    NonScrollListView trip_list_view;
-    Button add_trip_button;
+    private NonScrollListView tripListView;
+    private Button addTripButton;
+    private TextView empty_trip_text;
 
+    private TripAdapter tripAdapter;
+    private TripDatabaseHelper dbHelper;
+
+    private static final int ADD_TRIP_REQUEST_CODE = 1;
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trip_planner);
 
-        trip_list_view = findViewById(R.id.trip_list_view);
-        add_trip_button = findViewById(R.id.add_trip_button);
+        tripListView = findViewById(R.id.trip_list_view);
+        addTripButton = findViewById(R.id.add_trip_button);
+        empty_trip_text = findViewById(R.id.empty_trip_text);
 
-        add_trip_button.setOnClickListener(v -> {
+        dbHelper = new TripDatabaseHelper(this);
+
+        loadTrips();
+
+        // Add Trip button
+        addTripButton.setOnClickListener(v -> {
             Intent intent = new Intent(TripPlannerActivity.this, AddTrip.class);
-            startActivity(intent);
-            finish();
-            overridePendingTransition(0, 0);
+            startActivityForResult(intent, ADD_TRIP_REQUEST_CODE);
         });
-
-        // A place for users to plan or track their trips.
-        // Features:
-        // Users can add planned trips with:
-        // Country name.
-        // Travel dates.
-        // Notes or activities to do in the country.
-        // Display a list of upcoming trips.
-
-        // Use AI to generate trip itinerary for user depending on the country they choose and duration
 
         // Country Details Icon
         ImageView countryDetailsIcon = findViewById(R.id.country_details_icon);
@@ -46,7 +54,7 @@ public class TripPlannerActivity extends AppCompatActivity {
             overridePendingTransition(0, 0);
         });
 
-        // Map Icon (current activity, so no need for action here)
+        // Home page
         @SuppressLint({"MissingInflatedId",
                 "LocalSuppress"}) ImageView mapIcon = findViewById(R.id.explore_icon);
         mapIcon.setOnClickListener(v -> {
@@ -70,5 +78,35 @@ public class TripPlannerActivity extends AppCompatActivity {
         profileIcon.setOnClickListener(v -> {
             // No action, already on the Map page
         });
+    }
+
+    private void loadTrips() {
+        // Fetch trips and their IDs from the database
+        List<Long> tripIds = dbHelper.getAllTripIds();
+        List<String> tripDetails = dbHelper.getAllTrips();
+
+        if (tripDetails.isEmpty()) {
+            // Show empty message and hide the list
+            empty_trip_text.setVisibility(View.VISIBLE);
+            tripListView.setVisibility(View.GONE);
+        } else {
+            // Hide empty message and show the list
+            empty_trip_text.setVisibility(View.GONE);
+            tripListView.setVisibility(View.VISIBLE);
+
+            // Set up the adapter with trip details and IDs
+            tripAdapter = new TripAdapter(this, tripIds, tripDetails, this::loadTrips);
+            tripListView.setAdapter(tripAdapter);
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == ADD_TRIP_REQUEST_CODE && resultCode == RESULT_OK) {
+            loadTrips();
+            Toast.makeText(this, R.string.trip_successful, Toast.LENGTH_SHORT).show();
+        }
     }
 }

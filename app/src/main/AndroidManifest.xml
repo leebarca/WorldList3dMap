@@ -32,6 +32,7 @@
         <activity android:name=".ExploreActivity" />
         <activity android:name=".LanguageActivity" />
         <activity android:name=".TripPlannerActivity" />
+        <activity android:name=".AddTrip" />
 
         <meta-data
             android:name="preloaded_fonts"

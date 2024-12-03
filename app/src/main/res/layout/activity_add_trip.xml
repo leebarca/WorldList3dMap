@@ -19,7 +19,7 @@
             android:gravity="center"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="4dp"
-            android:text="@string/destination"
+            android:text="@string/add_trip"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -31,19 +31,37 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="4dp"
-            android:text="@string/destination"
+            android:text="@string/country"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:fontFamily="@font/open_sans" />
 
-        <EditText
-            android:id="@+id/destination"
+        <!-- Spinner for selecting categories -->
+        <FrameLayout
+            android:id="@+id/spinner_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/button_background"
-            android:padding="10dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/open_sans" />
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <Spinner
+                android:id="@+id/category_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:id="@+id/dropdown_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/arrowdown"
+                android:layout_gravity="end|center_vertical"
+                android:contentDescription="@string/arrow_down" />
+        </FrameLayout>
 
         <!-- Departure Date -->
         <TextView
@@ -95,6 +113,29 @@
             android:textColor="@color/black"
             android:fontFamily="@font/open_sans" />
 
+        <CheckBox
+            android:id="@+id/checkbox_ai_itinerary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="8dp"
+            android:text="@string/ai_generate_itinerary"
+            android:checked="true"
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans"
+            android:background="@drawable/button_background"
+            android:textSize="16sp"
+            android:buttonTint="@color/button_border_colour" />
+
+        <!-- Days Grid -->
+        <LinearLayout
+            android:id="@+id/grid_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="@drawable/button_background" />
+
         <!-- Search Button -->
         <Button
             android:id="@+id/button_search"
@@ -102,7 +143,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:background="@drawable/button_background"
-            android:text="@string/search"
+            android:text="@string/create"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:fontFamily="@font/open_sans" />

@@ -299,7 +299,7 @@ public class AddTrip extends AppCompatActivity {
                         TextView dayLabel = (TextView) row.getChildAt(0); // First child in the row
                         EditText dayInput = (EditText) row.getChildAt(1); // Second child in the row
 
-                        dbHelper.addTrip(String.valueOf(tripId), dayLabel.getText().toString(), dayInput.getText().toString());
+                        dbHelper.addDayTrip(tripId, dayLabel.getText().toString(), dayInput.getText().toString());
                     }
                 }
 

@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.List;
 
@@ -15,7 +14,7 @@ public class TripAdapter extends BaseAdapter {
 
     private Context context;
     private List<Long> tripIds;
-    private List<String> tripDetails;
+    private List<String> tripDetails; // Full trip details (e.g., "Country (start - end)")
     private TripDatabaseHelper dbHelper;
     private Runnable refreshCallback;
 
@@ -49,19 +48,27 @@ public class TripAdapter extends BaseAdapter {
         }
 
         TextView tripLabel = convertView.findViewById(R.id.trip_label);
+        TextView tripDates = convertView.findViewById(R.id.trip_dates);
         Button deleteButton = convertView.findViewById(R.id.delete_button);
 
-        tripLabel.setText(tripDetails.get(position));
+        // Split the trip details into country and dates
+        String fullDetails = tripDetails.get(position);
+        String[] parts = fullDetails.split("\\(", 2); // Split at the first '('
+        String country = parts[0].trim();
+        String dates = parts.length > 1 ? parts[1].replace(")", "").trim() : "";
 
+        // Set the country name and dates
+        tripLabel.setText(country);
+        tripDates.setText(dates);
+
+        // Delete button functionality
         deleteButton.setOnClickListener(v -> {
             long tripId = tripIds.get(position);
             dbHelper.deleteTrip(tripId);
 
-            // Update lists
             tripDetails.remove(position);
             tripIds.remove(position);
 
-            // Notify adapter and refresh view
             notifyDataSetChanged();
             refreshCallback.run();
         });

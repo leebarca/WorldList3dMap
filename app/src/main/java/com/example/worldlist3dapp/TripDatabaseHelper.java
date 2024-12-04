@@ -1,6 +1,5 @@
 package com.example.worldlist3dapp;
 
-import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -15,12 +14,16 @@ public class TripDatabaseHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "trips.db";
     private static final int DATABASE_VERSION = 2;
 
-    // Table and column names
     private static final String TABLE_TRIPS = "trips";
     private static final String COLUMN_ID = "id";
     private static final String COLUMN_COUNTRY = "country";
     private static final String COLUMN_DEPARTURE_DATE = "departure_date";
     private static final String COLUMN_RETURN_DATE = "return_date";
+
+    private static final String TABLE_DAY_TRIPS = "day_trips";
+    private static final String COLUMN_TRIP_ID = "trip_id";
+    private static final String COLUMN_DAY = "day";
+    private static final String COLUMN_DETAILS = "details";
 
     public TripDatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -34,11 +37,19 @@ public class TripDatabaseHelper extends SQLiteOpenHelper {
                 + COLUMN_DEPARTURE_DATE + " TEXT,"
                 + COLUMN_RETURN_DATE + " TEXT)";
         db.execSQL(CREATE_TRIPS_TABLE);
+
+        String CREATE_DAY_TRIPS_TABLE = "CREATE TABLE " + TABLE_DAY_TRIPS + "("
+                + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + COLUMN_TRIP_ID + " INTEGER,"
+                + COLUMN_DAY + " TEXT,"
+                + COLUMN_DETAILS + " TEXT)";
+        db.execSQL(CREATE_DAY_TRIPS_TABLE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_TRIPS);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_DAY_TRIPS);
         onCreate(db);
     }
 
@@ -53,16 +64,24 @@ public class TripDatabaseHelper extends SQLiteOpenHelper {
         return tripId;
     }
 
-    @SuppressLint("Range")
+    public void addDayTrip(long tripId, String day, String details) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_TRIP_ID, tripId);
+        values.put(COLUMN_DAY, day);
+        values.put(COLUMN_DETAILS, details);
+        db.insert(TABLE_DAY_TRIPS, null, values);
+        db.close();
+    }
+
     public List<Long> getAllTripIds() {
         List<Long> tripIds = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
-        // Fetch only trip IDs from the main trips table
         Cursor cursor = db.rawQuery("SELECT " + COLUMN_ID + " FROM " + TABLE_TRIPS, null);
 
         if (cursor.moveToFirst()) {
             do {
-                tripIds.add(cursor.getLong(cursor.getColumnIndex(COLUMN_ID)));
+                tripIds.add(cursor.getLong(0));
             } while (cursor.moveToNext());
         }
 
@@ -74,7 +93,6 @@ public class TripDatabaseHelper extends SQLiteOpenHelper {
     public List<String> getAllTrips() {
         List<String> trips = new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
-        // Fetch only trips from the main trips table
         Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_TRIPS, null);
 
         if (cursor.moveToFirst()) {
@@ -93,6 +111,7 @@ public class TripDatabaseHelper extends SQLiteOpenHelper {
 
     public void deleteTrip(long tripId) {
         SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(TABLE_DAY_TRIPS, COLUMN_TRIP_ID + " = ?", new String[]{String.valueOf(tripId)});
         db.delete(TABLE_TRIPS, COLUMN_ID + " = ?", new String[]{String.valueOf(tripId)});
         db.close();
     }

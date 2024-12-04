@@ -81,20 +81,15 @@ public class TripPlannerActivity extends AppCompatActivity {
     }
 
     private void loadTrips() {
-        // Fetch trips and their IDs from the database
         List<Long> tripIds = dbHelper.getAllTripIds();
         List<String> tripDetails = dbHelper.getAllTrips();
 
         if (tripDetails.isEmpty()) {
-            // Show empty message and hide the list
             empty_trip_text.setVisibility(View.VISIBLE);
             tripListView.setVisibility(View.GONE);
         } else {
-            // Hide empty message and show the list
             empty_trip_text.setVisibility(View.GONE);
             tripListView.setVisibility(View.VISIBLE);
-
-            // Set up the adapter with trip details and IDs
             tripAdapter = new TripAdapter(this, tripIds, tripDetails, this::loadTrips);
             tripListView.setAdapter(tripAdapter);
         }
@@ -106,7 +101,6 @@ public class TripPlannerActivity extends AppCompatActivity {
 
         if (requestCode == ADD_TRIP_REQUEST_CODE && resultCode == RESULT_OK) {
             loadTrips();
-            Toast.makeText(this, R.string.trip_successful, Toast.LENGTH_SHORT).show();
         }
     }
 }

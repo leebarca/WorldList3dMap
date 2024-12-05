@@ -2,18 +2,8 @@ package com.example.worldlist3dapp;
 
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
-import android.graphics.Typeface;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.EditText;
-import android.widget.GridLayout;
-import android.widget.LinearLayout;
-import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.Toast;
-
+import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
@@ -244,156 +234,163 @@ public class AddTrip extends AppCompatActivity {
                 getString(R.string.zimbabwe)
         };
 
-        // Set up spinner adapter
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner_dropdown_item, countriesList);
-        adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
         countrySpinner.setAdapter(adapter);
 
-        // Set up date pickers
+        // Date pickers
         setupDatePicker(editDepartureDate);
         setupDatePicker(editReturnDate);
 
-        // Set checkbox default to checked
+        // Default behavior: AI Itinerary checked
         checkboxAIItinerary.setChecked(true);
-        gridDays.setVisibility(GridLayout.GONE);
+        gridDays.setVisibility(LinearLayout.GONE);
 
         checkboxAIItinerary.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
+                gridDays.setVisibility(LinearLayout.GONE);
                 gridDays.removeAllViews();
-                gridDays.setVisibility(GridLayout.GONE);
             } else {
-                populateDaysGrid();
-                gridDays.setVisibility(GridLayout.VISIBLE);
+                if (validateAndPopulateDays()) {
+                    gridDays.setVisibility(LinearLayout.VISIBLE);
+                }
             }
         });
 
         // Create trip button
-        buttonCreateTrip.setOnClickListener(v -> {
-            String selectedCountry = countrySpinner.getSelectedItem().toString();
-            String departureDate = editDepartureDate.getText().toString();
-            String returnDate = editReturnDate.getText().toString();
-
-            if (!departureDate.isEmpty() && !returnDate.isEmpty()) {
-                if (!checkboxAIItinerary.isChecked()) {
-                    // Validation: Check all EditTexts for empty input
-                    for (int i = 0; i < gridDays.getChildCount(); i++) {
-                        LinearLayout row = (LinearLayout) gridDays.getChildAt(i);
-                        EditText dayInput = (EditText) row.getChildAt(1); // Second child in the row
-
-                        if (dayInput.getText().toString().isEmpty()) {
-                            dayInput.setError(getString(R.string.trip_error));
-                            dayInput.requestFocus();
-                            return;
-                        }
-                    }
-                }
-
-                // Save the trip and day details
-                TripDatabaseHelper dbHelper = new TripDatabaseHelper(this);
-                long tripId = dbHelper.addTrip(selectedCountry, departureDate, returnDate);
-
-                if (!checkboxAIItinerary.isChecked()) {
-                    // Save day-specific trip details
-                    for (int i = 0; i < gridDays.getChildCount(); i++) {
-                        LinearLayout row = (LinearLayout) gridDays.getChildAt(i);
-                        TextView dayLabel = (TextView) row.getChildAt(0); // First child in the row
-                        EditText dayInput = (EditText) row.getChildAt(1); // Second child in the row
-
-                        dbHelper.addDayTrip(tripId, dayLabel.getText().toString(), dayInput.getText().toString());
-                    }
-                }
-
-                Toast.makeText(this, R.string.trip_successful, Toast.LENGTH_SHORT).show();
-                setResult(RESULT_OK);
-                finish();
-            } else {
-                Toast.makeText(this, R.string.trip_error, Toast.LENGTH_SHORT).show();
-            }
-        });
+        buttonCreateTrip.setOnClickListener(v -> handleCreateTrip());
     }
 
     private void setupDatePicker(EditText editText) {
         editText.setOnClickListener(v -> {
-            DatePickerDialog datePickerDialog = new DatePickerDialog(AddTrip.this,
-                                                                     (view, year, month, dayOfMonth) -> {
-                                                                         calendar.set(year, month, dayOfMonth);
-                                                                         editText.setText(dateFormat.format(calendar.getTime()));
-                                                                         if (!editDepartureDate.getText().toString().isEmpty() &&
-                                                                                 !editReturnDate.getText().toString().isEmpty() &&
-                                                                                 !checkboxAIItinerary.isChecked()) {
-                                                                             populateDaysGrid();
-                                                                         }
-                                                                     },
-                                                                     calendar.get(Calendar.YEAR),
-                                                                     calendar.get(Calendar.MONTH),
-                                                                     calendar.get(Calendar.DAY_OF_MONTH));
+            DatePickerDialog datePickerDialog = new DatePickerDialog(
+                    AddTrip.this,
+                    (view, year, month, dayOfMonth) -> {
+                        calendar.set(year, month, dayOfMonth);
+                        editText.setText(dateFormat.format(calendar.getTime()));
+                        validateAndPopulateDays(); // Update days grid on date selection
+                    },
+                    calendar.get(Calendar.YEAR),
+                    calendar.get(Calendar.MONTH),
+                    calendar.get(Calendar.DAY_OF_MONTH)
+            );
             datePickerDialog.show();
         });
     }
 
-    @SuppressLint({"SetTextI18n", "ResourceAsColor"})
-    private void populateDaysGrid() {
-        gridDays.removeAllViews(); // Clear previous views
-
+    private boolean validateAndPopulateDays() {
         String departureDateStr = editDepartureDate.getText().toString();
         String returnDateStr = editReturnDate.getText().toString();
 
-        if (!departureDateStr.isEmpty() && !returnDateStr.isEmpty()) {
-            try {
-                Calendar depCalendar = Calendar.getInstance();
-                Calendar retCalendar = Calendar.getInstance();
+        if (departureDateStr.isEmpty() || returnDateStr.isEmpty()) {
+            return false;
+        }
 
-                depCalendar.setTime(dateFormat.parse(departureDateStr));
-                retCalendar.setTime(dateFormat.parse(returnDateStr));
+        try {
+            Calendar depCalendar = Calendar.getInstance();
+            Calendar retCalendar = Calendar.getInstance();
 
-                int days = (int) ((retCalendar.getTimeInMillis() - depCalendar.getTimeInMillis()) / (1000 * 60 * 60 * 24)) + 1;
+            depCalendar.setTime(dateFormat.parse(departureDateStr));
+            retCalendar.setTime(dateFormat.parse(returnDateStr));
 
-                for (int i = 1; i <= days; i++) {
-                    // Create a vertical LinearLayout for each day
-                    LinearLayout dayLayout = new LinearLayout(this);
-                    dayLayout.setOrientation(LinearLayout.VERTICAL);
-                    dayLayout.setPadding(16, 16, 16, 16);
-                    dayLayout.setLayoutParams(new LinearLayout.LayoutParams(
-                            LinearLayout.LayoutParams.MATCH_PARENT,
-                            LinearLayout.LayoutParams.WRAP_CONTENT));
-
-                    // Day label (TextView)
-                    TextView dayLabel = new TextView(this);
-                    dayLabel.setText(getString(R.string.day) + " " + i);
-                    dayLabel.setPadding(8, 8, 8, 8);
-                    dayLabel.setTextColor(getResources().getColor(R.color.black));
-                    dayLabel.setLayoutParams(new LinearLayout.LayoutParams(
-                            LinearLayout.LayoutParams.MATCH_PARENT,
-                            LinearLayout.LayoutParams.WRAP_CONTENT));
-
-                    // Day input (EditText)
-                    EditText dayInput = new EditText(this);
-                    dayInput.setPadding(8, 8, 8, 8);
-                    dayInput.setTextColor(getResources().getColor(R.color.black));
-                    dayInput.setBackgroundResource(R.drawable.button_background);
-                    dayInput.setLayoutParams(new LinearLayout.LayoutParams(
-                            LinearLayout.LayoutParams.MATCH_PARENT,
-                            LinearLayout.LayoutParams.WRAP_CONTENT));
-
-                    // Set font
-                    Typeface typeface = ResourcesCompat.getFont(this, R.font.open_sans);
-                    dayLabel.setTypeface(typeface);
-                    dayInput.setTypeface(typeface);
-
-                    // Add views to the layout
-                    dayLayout.addView(dayLabel);
-                    dayLayout.addView(dayInput);
-
-                    // Add the dayLayout to the gridDays
-                    gridDays.addView(dayLayout);
-                }
-
-                // Make gridDays visible
-                gridDays.setVisibility(LinearLayout.VISIBLE);
-
-            } catch (ParseException e) {
-                e.printStackTrace();
+            if (retCalendar.before(depCalendar)) {
+                editReturnDate.setError(getString(R.string.trip_error));
+                return false;
             }
+
+            int days = (int) ((retCalendar.getTimeInMillis() - depCalendar.getTimeInMillis()) / (1000 * 60 * 60 * 24)) + 1;
+
+            if (!checkboxAIItinerary.isChecked()) {
+                populateDaysGrid(days);
+            }
+
+            return true;
+
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    @SuppressLint("SetTextI18n")
+    private void populateDaysGrid(int days) {
+        gridDays.removeAllViews();
+
+        for (int i = 1; i <= days; i++) {
+            LinearLayout dayLayout = new LinearLayout(this);
+            dayLayout.setOrientation(LinearLayout.VERTICAL);
+            dayLayout.setPadding(16, 16, 16, 16);
+            dayLayout.setLayoutParams(new LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT));
+
+            TextView dayLabel = new TextView(this);
+            dayLabel.setText(getString(R.string.day) + " " + i);
+            dayLabel.setPadding(8, 8, 8, 8);
+            dayLabel.setTextColor(getResources().getColor(R.color.black));
+            dayLabel.setTypeface(ResourcesCompat.getFont(this, R.font.open_sans));
+
+            EditText dayInput = new EditText(this);
+            dayInput.setPadding(8, 8, 8, 8);
+            dayInput.setTextColor(getResources().getColor(R.color.black));
+            dayInput.setBackgroundResource(R.drawable.button_background);
+            dayInput.setTypeface(ResourcesCompat.getFont(this, R.font.open_sans));
+
+            dayLayout.addView(dayLabel);
+            dayLayout.addView(dayInput);
+
+            gridDays.addView(dayLayout);
+        }
+    }
+
+    private void handleCreateTrip() {
+        String country = countrySpinner.getSelectedItem().toString();
+        String departureDate = editDepartureDate.getText().toString();
+        String returnDate = editReturnDate.getText().toString();
+
+        if (departureDate.isEmpty() || returnDate.isEmpty()) {
+            Toast.makeText(this, R.string.trip_error, Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (!checkboxAIItinerary.isChecked() && !validateDayInputs()) {
+            return;
+        }
+
+        TripDatabaseHelper dbHelper = new TripDatabaseHelper(this);
+        long tripId = dbHelper.addTrip(country, departureDate, returnDate);
+
+        if (!checkboxAIItinerary.isChecked()) {
+            saveManualItinerary(tripId);
+        }
+
+        Toast.makeText(this, R.string.trip_successful, Toast.LENGTH_SHORT).show();
+        setResult(RESULT_OK);
+        finish();
+    }
+
+    private boolean validateDayInputs() {
+        for (int i = 0; i < gridDays.getChildCount(); i++) {
+            LinearLayout row = (LinearLayout) gridDays.getChildAt(i);
+            EditText dayInput = (EditText) row.getChildAt(1);
+
+            if (dayInput.getText().toString().isEmpty()) {
+                dayInput.setError(getString(R.string.trip_error));
+                dayInput.requestFocus();
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private void saveManualItinerary(long tripId) {
+        TripDatabaseHelper dbHelper = new TripDatabaseHelper(this);
+
+        for (int i = 0; i < gridDays.getChildCount(); i++) {
+            LinearLayout row = (LinearLayout) gridDays.getChildAt(i);
+            TextView dayLabel = (TextView) row.getChildAt(0);
+            EditText dayInput = (EditText) row.getChildAt(1);
+
+            dbHelper.addDayTrip(tripId, dayLabel.getText().toString(), dayInput.getText().toString());
         }
     }
 }

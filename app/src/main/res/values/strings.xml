@@ -7,6 +7,8 @@
     <string name="recommended">Recommended Countries This Month</string>
     <string name="add_trip">Add Trip</string>
     <string name="trip_empty">You have no saved trips, add one!</string>
+    <string name="edit">Edit</string>
+    <string name="view_trip">View Trip</string>
     <string name="delete_trip">Delete</string>
     <string name="arrow_down">Down Arrow</string>
     <string name="language_saved">Language saved: </string>

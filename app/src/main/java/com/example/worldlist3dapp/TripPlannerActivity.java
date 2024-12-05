@@ -45,6 +45,13 @@ public class TripPlannerActivity extends AppCompatActivity {
             startActivityForResult(intent, ADD_TRIP_REQUEST_CODE);
         });
 
+        tripListView.setOnItemClickListener((parent, view, position, id) -> {
+            Intent intent = new Intent(TripPlannerActivity.this, ViewEditTripActivity.class);
+            long tripId = dbHelper.getAllTripIds().get(position);
+            intent.putExtra("trip_id", tripId);
+            startActivity(intent);
+        });
+
         // Country Details Icon
         ImageView countryDetailsIcon = findViewById(R.id.country_details_icon);
         countryDetailsIcon.setOnClickListener(v -> {

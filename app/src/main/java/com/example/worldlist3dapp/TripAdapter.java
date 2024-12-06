@@ -1,6 +1,7 @@
 package com.example.worldlist3dapp;
 
 import android.content.Context;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,8 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 import android.content.Intent;
+
+import androidx.core.content.res.ResourcesCompat;
 
 import java.util.List;
 

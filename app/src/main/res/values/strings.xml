@@ -9,6 +9,7 @@
     <string name="trip_empty">You have no saved trips, add one!</string>
     <string name="edit">Edit</string>
     <string name="view_trip">View Trip</string>
+    <string name="itinerary">Itinerary</string>
     <string name="delete_trip">Delete</string>
     <string name="arrow_down">Down Arrow</string>
     <string name="language_saved">Language saved: </string>

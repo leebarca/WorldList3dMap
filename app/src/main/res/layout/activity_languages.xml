@@ -41,8 +41,8 @@
         android:id="@+id/save_language_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
         android:background="@drawable/button_background"
         android:padding="12dp"
         android:text="@string/save"
@@ -61,59 +61,120 @@
         android:layout_alignParentBottom="true"
         android:weightSum="4">
 
-        <!-- Country Details / Home Icon (Main Activity) -->
-        <ImageView
-            android:id="@+id/country_details_icon"
+        <!-- Country Details / Home Icon -->
+        <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/capital"
-            android:contentDescription="@string/country_details"
-            android:padding="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/button_background" />
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="2dp"
+            android:background="@drawable/button_background">
+
+            <ImageView
+                android:id="@+id/country_details_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/capital"
+                android:contentDescription="@string/country_details"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/country_details"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:gravity="center" />
+        </LinearLayout>
 
         <!-- Explore Icon -->
-        <ImageView
-            android:id="@+id/explore_icon"
+        <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/map"
-            android:contentDescription="@string/explore"
-            android:padding="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/button_background" />
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="2dp"
+            android:background="@drawable/button_background">
 
-        <!-- Language Icon -->
-        <ImageView
-            android:id="@+id/settings_icon"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:src="@drawable/language"
-            android:contentDescription="@string/language"
-            android:padding="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/button_background" />
+            <ImageView
+                android:id="@+id/explore_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/map"
+                android:contentDescription="@string/explore"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/explore"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:gravity="center" />
+        </LinearLayout>
 
         <!-- Profile Icon -->
-        <ImageView
-            android:id="@+id/profile_icon"
+        <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/planvisiticon"
-            android:contentDescription="@string/planner"
-            android:padding="8dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:background="@drawable/button_background" />
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="2dp"
+            android:background="@drawable/button_background">
+
+            <ImageView
+                android:id="@+id/profile_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/planvisiticon"
+                android:contentDescription="@string/planner"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/planner"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Settings Icon -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="2dp"
+            android:background="@drawable/button_background">
+
+            <ImageView
+                android:id="@+id/settings_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/language"
+                android:contentDescription="@string/language"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/language"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:gravity="center" />
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

@@ -1,98 +1,147 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/app_background_color"
+    android:fillViewport="true">
 
-    <!-- Trip Details -->
-    <TextView
-        android:id="@+id/view_trip"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:text="@string/view_trip"
-        android:fontFamily="@font/open_sans"
-        android:textColor="@color/black"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textStyle="bold" />
-
-    <!-- Edit Icon -->
-    <ImageView
-        android:id="@+id/edit_icon"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="8dp"
-        android:layout_alignParentTop="true"
-        android:src="@drawable/edit_icon"
-        android:contentDescription="@string/edit"
-        android:clickable="true"
-        android:focusable="true" />
-
-    <!-- Trip Details -->
     <LinearLayout
-        android:id="@+id/trip_details_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edit_icon"
-        android:orientation="vertical"
-        android:paddingTop="16dp">
+        android:orientation="vertical">
+
+        <!-- Trip Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/view_trip_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_trip"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/open_sans"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/edit_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/edit_icon"
+                android:contentDescription="@string/edit"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- Country -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/country"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans" />
 
         <TextView
             android:id="@+id/view_trip_country"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="16sp"
-            android:fontFamily="@font/open_sans"
             android:textColor="@color/black"
-            android:textStyle="bold" />
+            android:fontFamily="@font/open_sans"
+            android:background="@drawable/button_background"
+            android:padding="10dp" />
+
+        <!-- Dates -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/departure_date"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginTop="16dp" />
 
         <EditText
             android:id="@+id/edit_trip_departure_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/departure_date"
-            android:textSize="16sp"
-            android:fontFamily="@font/open_sans"
+            android:background="@drawable/button_background"
+            android:hint="DD/MM/YYYY"
+            android:textColorHint="@color/black"
             android:textColor="@color/black"
-            android:enabled="false" />
+            android:padding="10dp"
+            android:enabled="false"
+            android:fontFamily="@font/open_sans"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/return_date"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginTop="16dp" />
 
         <EditText
             android:id="@+id/edit_trip_return_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:hint="DD/MM/YYYY"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:enabled="false"
+            android:fontFamily="@font/open_sans"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <!-- Itinerary Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/itinerary"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/open_sans"
+            android:layout_marginTop="16dp" />
+
+        <ScrollView
+            android:id="@+id/itinerary_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/itinerary_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/save_trip_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:visibility="gone"
+            android:text="@string/save"
             android:textSize="16sp"
             android:fontFamily="@font/open_sans"
             android:textColor="@color/black"
-            android:hint="@string/return_date"
-            android:enabled="false" />
+            android:background="@drawable/button_background" />
     </LinearLayout>
-
-    <!-- Itinerary Section -->
-    <ScrollView
-        android:id="@+id/itinerary_scrollview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/trip_details_container"
-        android:layout_marginTop="16dp">
-
-        <LinearLayout
-            android:id="@+id/itinerary_container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
-
-    <!-- Save Button -->
-    <Button
-        android:id="@+id/save_trip_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:visibility="gone"
-        android:text="@string/save"
-        android:fontFamily="@font/open_sans"
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        android:background="@drawable/button_background" />
-</RelativeLayout>
+</ScrollView>

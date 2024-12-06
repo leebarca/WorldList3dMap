@@ -8,6 +8,11 @@ import android.view.View;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
+import android.app.DatePickerDialog;
+import android.widget.EditText;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class ViewEditTripActivity extends AppCompatActivity {
 
@@ -86,52 +91,106 @@ public class ViewEditTripActivity extends AppCompatActivity {
 
     private void addDayItineraryView(String dayLabel, String content, boolean editable) {
         LinearLayout dayLayout = new LinearLayout(this);
-        dayLayout.setOrientation(LinearLayout.VERTICAL);
+        dayLayout.setOrientation(LinearLayout.HORIZONTAL);
         dayLayout.setPadding(16, 16, 16, 16);
         dayLayout.setLayoutParams(new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT));
 
+        // Label (Day 1, Day 2, etc.) on the left
         TextView dayLabelView = new TextView(this);
         dayLabelView.setText(dayLabel);
         dayLabelView.setTextSize(16);
         dayLabelView.setTextColor(getResources().getColor(R.color.black));
         dayLabelView.setTypeface(ResourcesCompat.getFont(this, R.font.open_sans));
+        dayLabelView.setPadding(8, 8, 8, 8);
+        dayLabelView.setLayoutParams(new LinearLayout.LayoutParams(
+                0,
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                1f // Weight to occupy one-third of the row width
+        ));
 
+        // Content (Editable or non-editable) on the right
         View inputView;
         if (editable) {
             EditText dayInput = new EditText(this);
             dayInput.setText(content);
             dayInput.setTextSize(16);
             dayInput.setTextColor(getResources().getColor(R.color.black));
+            dayInput.setBackgroundResource(R.drawable.button_background); // Button-like background
             dayInput.setTypeface(ResourcesCompat.getFont(this, R.font.open_sans));
+            dayInput.setPadding(8, 8, 8, 8);
+            dayInput.setLayoutParams(new LinearLayout.LayoutParams(
+                    0,
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    2f // Weight to occupy two-thirds of the row width
+            ));
             inputView = dayInput;
         } else {
             TextView dayContent = new TextView(this);
             dayContent.setText(content);
             dayContent.setTextSize(16);
             dayContent.setTextColor(getResources().getColor(R.color.black));
+            dayContent.setBackgroundResource(R.drawable.button_background); // Button-like background
             dayContent.setTypeface(ResourcesCompat.getFont(this, R.font.open_sans));
+            dayContent.setPadding(8, 8, 8, 8);
+            dayContent.setLayoutParams(new LinearLayout.LayoutParams(
+                    0,
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    2f // Weight to occupy two-thirds of the row width
+            ));
             inputView = dayContent;
         }
 
+        // Add views to the day layout
         dayLayout.addView(dayLabelView);
         dayLayout.addView(inputView);
+
+        // Add the row to the container
         itineraryContainer.addView(dayLayout);
+    }
+
+    private void setupDatePicker(EditText editText) {
+        // Disable keyboard input
+        editText.setFocusable(false);
+        editText.setClickable(true);
+        editText.setOnClickListener(v -> {
+            Calendar calendar = Calendar.getInstance();
+            DatePickerDialog datePickerDialog = new DatePickerDialog(
+                    this,
+                    (view, year, month, dayOfMonth) -> {
+                        calendar.set(year, month, dayOfMonth);
+                        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
+                        editText.setText(dateFormat.format(calendar.getTime()));
+                    },
+                    calendar.get(Calendar.YEAR),
+                    calendar.get(Calendar.MONTH),
+                    calendar.get(Calendar.DAY_OF_MONTH)
+            );
+            datePickerDialog.show();
+        });
     }
 
     private void setEditable(boolean editable) {
         editDepartureDate.setEnabled(editable);
         editReturnDate.setEnabled(editable);
+
+        if (editable) {
+            // Attach date pickers
+            setupDatePicker(editDepartureDate);
+            setupDatePicker(editReturnDate);
+        } else {
+            // Remove focusability
+            editDepartureDate.setOnClickListener(null);
+            editReturnDate.setOnClickListener(null);
+        }
+
         saveButton.setVisibility(editable ? View.VISIBLE : View.GONE);
 
         for (int i = 0; i < itineraryContainer.getChildCount(); i++) {
             LinearLayout dayLayout = (LinearLayout) itineraryContainer.getChildAt(i);
-            TextView dayLabel = (TextView) dayLayout.getChildAt(0);
-            dayLabel.setTextSize(16);
-            dayLabel.setTextColor(getResources().getColor(R.color.black));
-            dayLabel.setTypeface(ResourcesCompat.getFont(this, R.font.open_sans));
-            View inputView = dayLayout.getChildAt(1);
+            TextView dayLabel = (TextView) dayLayout.getChildAt(0); // Day label on the left
+            View inputView = dayLayout.getChildAt(1); // Input field on the right
 
             if (editable && inputView instanceof TextView) {
                 String content = ((TextView) inputView).getText().toString();
@@ -142,6 +201,13 @@ public class ViewEditTripActivity extends AppCompatActivity {
                 dayInput.setTextSize(16);
                 dayInput.setTextColor(getResources().getColor(R.color.black));
                 dayInput.setTypeface(ResourcesCompat.getFont(this, R.font.open_sans));
+                dayInput.setBackgroundResource(R.drawable.button_background);
+                dayInput.setPadding(8, 8, 8, 8);
+                dayInput.setLayoutParams(new LinearLayout.LayoutParams(
+                        0,
+                        LinearLayout.LayoutParams.WRAP_CONTENT,
+                        2f
+                ));
                 dayLayout.addView(dayInput);
             } else if (!editable && inputView instanceof EditText) {
                 String content = ((EditText) inputView).getText().toString();
@@ -152,8 +218,14 @@ public class ViewEditTripActivity extends AppCompatActivity {
                 dayContent.setTextSize(16);
                 dayContent.setTextColor(getResources().getColor(R.color.black));
                 dayContent.setTypeface(ResourcesCompat.getFont(this, R.font.open_sans));
+                dayContent.setBackgroundResource(R.drawable.button_background);
+                dayContent.setPadding(8, 8, 8, 8);
+                dayContent.setLayoutParams(new LinearLayout.LayoutParams(
+                        0,
+                        LinearLayout.LayoutParams.WRAP_CONTENT,
+                        2f
+                ));
                 dayLayout.addView(dayContent);
-
             }
         }
     }

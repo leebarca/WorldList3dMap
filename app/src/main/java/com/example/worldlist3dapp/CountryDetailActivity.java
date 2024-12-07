@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-public class CountryDetailActivity extends AppCompatActivity {
+public class CountryDetailActivity extends BaseActivity {
 
     private LinearLayout infoIcon;
     private LinearLayout attractionsIcon;

@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TripPlannerActivity extends AppCompatActivity {
+public class TripPlannerActivity extends BaseActivity {
 
     private NonScrollListView tripListView;
     private Button addTripButton;

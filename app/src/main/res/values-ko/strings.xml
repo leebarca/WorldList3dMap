@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name" translatable="false">WorldTravel3D</string>
     <string name="country_details">홈</string>
-    <string name="planner">여행 계획기</string>
+    <string name="planner">입안자</string>
     <string name="explore">탐험하기</string>
     <string name="save">저장</string>
     <string name="recommended">이번 달 추천 국가</string>

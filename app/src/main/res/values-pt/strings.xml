@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name" translatable="false">WorldTravel3D</string>
     <string name="country_details">Início</string>
-    <string name="planner">Planejador de Viagens</string>
+    <string name="planner">Planejador</string>
     <string name="explore">Explorar</string>
     <string name="save">Salvar</string>
     <string name="recommended">Países Recomendados Este Mês</string>

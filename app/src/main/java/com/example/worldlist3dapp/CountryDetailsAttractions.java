@@ -4,7 +4,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
-public class CountryDetailsAttractions extends AppCompatActivity {
+public class CountryDetailsAttractions extends BaseActivity {
 
     private ViewPager2 attractionsViewPager;
 

@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name" translatable="false">WorldTravel3D</string>
     <string name="country_details">मुख्य पृष्ठ</string>
-    <string name="planner">यात्रा योजना</string>
+    <string name="planner">योजना</string>
     <string name="explore">अन्वेषण करें</string>
     <string name="save">सहेजें</string>
     <string name="recommended">इस महीने के लिए अनुशंसित देश</string>

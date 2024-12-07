@@ -18,7 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
 
-public class LanguageActivity extends AppCompatActivity {
+public class LanguageActivity extends BaseActivity {
 
     private static final String PREFERENCES_NAME = "AppPreferences";
     private static final String LANGUAGE_KEY = "SelectedLanguage";
@@ -123,10 +123,14 @@ public class LanguageActivity extends AppCompatActivity {
         Locale locale = new Locale(languageCode);
         Locale.setDefault(locale);
 
-        Configuration config = new Configuration();
+        Configuration config = getResources().getConfiguration();
         config.setLocale(locale);
 
-        getApplicationContext().createConfigurationContext(config);
+        // Update configuration for application context
+        getResources().updateConfiguration(config, getResources().getDisplayMetrics());
+
+        // Update configuration for the current activity
+        getApplicationContext().getResources().updateConfiguration(config, getResources().getDisplayMetrics());
     }
 
     private int getLanguagePosition(String[] languageCodes, String languageCode) {

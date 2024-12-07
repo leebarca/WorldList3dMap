@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name" translatable="false">WorldTravel3D</string>
     <string name="country_details">Inicio</string>
-    <string name="planner">Planificador de Viajes</string>
+    <string name="planner">Planificador</string>
     <string name="explore">Explorar</string>
     <string name="save">Guardar</string>
     <string name="recommended">Países Recomendados Este Mes</string>
@@ -56,7 +56,7 @@
     <string name="packages_icon">Icono de paquetes</string>
     <string name="packages">Paquetes</string>
     <string name="activities_icon">Icono de</string>
-    <string name="activities">Actividades</string>
+    <string name="activities">Actividad</string>
     <string name="country_summary">Resumen del País</string>
     <string name="read_more">Leer Más</string>
     <string name="best_time_to_visit">Mejor Época para Visitar</string>

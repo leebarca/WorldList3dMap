@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ExploreActivity extends AppCompatActivity {
+public class ExploreActivity extends BaseActivity {
 
     private OrderedCountriesAdapter adapter, monthAdapter;
     private NonScrollListView countryListView, this_month_countries;

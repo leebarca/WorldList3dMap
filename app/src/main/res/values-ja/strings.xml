@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name" translatable="false">WorldTravel3D</string>
     <string name="country_details">ホーム</string>
-    <string name="planner">旅行プランナー</string>
+    <string name="planner">プランナー</string>
     <string name="explore">探検する</string>
     <string name="save">保存する</string>
     <string name="recommended">今月のおすすめ国</string>
@@ -54,9 +54,9 @@
     <string name="hotels_icon">ホテルアイコン</string>
     <string name="hotels">ホテル</string>
     <string name="packages_icon">パッケージアイコン</string>
-    <string name="packages">パッケージ</string>
+    <string name="packages">パケ</string>
     <string name="activities_icon">アクティビティアイコン</string>
-    <string name="activities">アクティビティ</string>
+    <string name="activities">アクティ</string>
     <string name="country_summary">国の概要</string>
     <string name="read_more">もっと読む</string>
     <string name="best_time_to_visit">訪れるのに最適な時期</string>

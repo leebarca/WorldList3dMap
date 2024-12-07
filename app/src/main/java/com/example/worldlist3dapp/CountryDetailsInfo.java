@@ -11,7 +11,7 @@ import androidx.core.content.ContextCompat;
 
 import java.util.Objects;
 
-public class CountryDetailsInfo extends AppCompatActivity {
+public class CountryDetailsInfo extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

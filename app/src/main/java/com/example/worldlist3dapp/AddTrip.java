@@ -12,7 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class AddTrip extends AppCompatActivity {
+public class AddTrip extends BaseActivity {
 
     private Spinner countrySpinner;
     private EditText editDepartureDate, editReturnDate;
@@ -342,6 +342,25 @@ public class AddTrip extends AppCompatActivity {
         }
     }
 
+    private void generateAIItinerary(long tripId, int days) {
+        String[] aiGeneratedContent = getAIGeneratedContent(days); // Mock method or API call
+        TripDatabaseHelper dbHelper = new TripDatabaseHelper(this);
+
+        for (int i = 0; i < aiGeneratedContent.length; i++) {
+            String rawContent = aiGeneratedContent[i];
+            String strippedContent = rawContent.replaceFirst("(?i)^" + getString(R.string.day) + " \\d+:?\\s*", ""); // Remove "Day X:" prefix
+            dbHelper.addDayTrip(tripId, getString(R.string.day) + " " + (i + 1), strippedContent);
+        }
+    }
+
+    private String[] getAIGeneratedContent(int days) {
+        String[] generatedContent = new String[days];
+        for (int i = 0; i < days; i++) {
+            generatedContent[i] = getString(R.string.day) + " " + (i + 1) + ": ";
+        }
+        return generatedContent;
+    }
+
     private void handleCreateTrip() {
         String country = countrySpinner.getSelectedItem().toString();
         String departureDate = editDepartureDate.getText().toString();
@@ -359,13 +378,39 @@ public class AddTrip extends AppCompatActivity {
         TripDatabaseHelper dbHelper = new TripDatabaseHelper(this);
         long tripId = dbHelper.addTrip(country, departureDate, returnDate);
 
-        if (!checkboxAIItinerary.isChecked()) {
+        // Generate AI itinerary or save manual input
+        if (checkboxAIItinerary.isChecked()) {
+            int days = calculateTripDays(departureDate, returnDate);
+            if (days > 0) {
+                generateAIItinerary(tripId, days);
+            } else {
+                Toast.makeText(this, R.string.trip_error, Toast.LENGTH_SHORT).show();
+                return;
+            }
+        } else {
             saveManualItinerary(tripId);
         }
 
         Toast.makeText(this, R.string.trip_successful, Toast.LENGTH_SHORT).show();
         setResult(RESULT_OK);
         finish();
+    }
+
+    private int calculateTripDays(String departureDate, String returnDate) {
+        try {
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
+            Calendar depCalendar = Calendar.getInstance();
+            Calendar retCalendar = Calendar.getInstance();
+
+            depCalendar.setTime(dateFormat.parse(departureDate));
+            retCalendar.setTime(dateFormat.parse(returnDate));
+
+            long diffInMillis = retCalendar.getTimeInMillis() - depCalendar.getTimeInMillis();
+            return (int) (diffInMillis / (1000 * 60 * 60 * 24)) + 1;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return -1; // Invalid date range
+        }
     }
 
     private boolean validateDayInputs() {

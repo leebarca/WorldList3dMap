@@ -14,7 +14,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class ViewEditTripActivity extends AppCompatActivity {
+public class ViewEditTripActivity extends BaseActivity {
 
     private EditText editDepartureDate, editReturnDate;
     private TextView tripCountry;

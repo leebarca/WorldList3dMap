@@ -2,8 +2,8 @@
 <resources>
     <string name="app_name" translatable="false">WorldTravel3D</string>
     <string name="country_details">Главная</string>
-    <string name="planner">Планировщик поездок</string>
-    <string name="explore">Исследовать</string>
+    <string name="planner">Планер</string>
+    <string name="explore">Изучить</string>
     <string name="save">Сохранить</string>
     <string name="recommended">Рекомендуемые страны в этом месяце</string>
     <string name="add_trip">Добавить поездку</string>
@@ -56,7 +56,7 @@
     <string name="packages_icon">Иконка пакетов</string>
     <string name="packages">Пакеты</string>
     <string name="activities_icon">Иконка активностей</string>
-    <string name="activities">Активности</string>
+    <string name="activities">Актив</string>
     <string name="country_summary">Обзор страны</string>
     <string name="read_more">Читать далее</string>
     <string name="best_time_to_visit">Лучшее время для посещения</string>
@@ -87,7 +87,7 @@
     <string name="food_icon">Иконка еды</string>
     <string name="popular_food">Популярная еда</string>
     <string name="drink_icon">Иконка напитка</string>
-    <string name="popular_drink">Популярный напиток</string>
+    <string name="popular_drink">Поп-напиток</string>
     <string name="currency">Валюта</string>
     <string name="currency_icon">Иконка валюты</string>
     <string name="interesting_fact">Интересный факт</string>
@@ -96,7 +96,7 @@
     <string name="website_icon">Иконка сайта</string>
     <string name="plan_your_trip">Планируйте свою поездку</string>
     <string name="offers_icon">Иконка предложений</string>
-    <string name="attractions">Достопримечательности</string>
+    <string name="attractions">Достопримы</string>
     <string name="attractions_icon">Иконка достопримечательностей</string>
     <string name="info">Информация</string>
     <string name="info_icon">Иконка информации</string>
@@ -123,7 +123,7 @@
     <string name="chinese">Китайский</string>
     <string name="russian">Русский</string>
     <string name="arabic">Арабский</string>
-    <string name="dutch">Нидерландский</string>
+    <string name="dutch">Голландский</string>
     <string name="bengali">Бенгальский</string>
     <string name="portuguese">Португальский</string>
     <string name="north_america">Северная Америка</string>
@@ -812,7 +812,7 @@
     <string name="canada_maple_syrup">Кленовый сироп</string>
     <string name="canada_safety_info">Канада очень безопасна для туристов, хотя посетителям следует соблюдать регулярные меры предосторожности в многолюдных городских районах.</string>
     <string name="canadian_dollar">Канадский доллар</string>
-    <string name="central_african_republic">Центральноафриканская Республика</string>
+    <string name="central_african_republic">ЦАР</string>
     <string name="bangui">Банги</string>
     <string name="central_african_republic_population">5 миллионов</string>
     <string name="central_african_republic_languages">Французский, Сангой</string>
@@ -3441,7 +3441,7 @@
     <string name="somalia_drink">Шаах (пряный чай)</string>
     <string name="somalia_safety_info">Сомали считается крайне опасным из-за продолжающегося вооруженного конфликта, политической нестабильности и угрозы терроризма. Путешествия не рекомендуются в большинстве регионов, так как риски безопасности значительны. Медицинское обслуживание и инфраструктура крайне ограничены.</string>
     <string name="somali_shilling">Сомалийский шиллинг</string>
-    <string name="south_africa">Южноафриканская Республика</string>
+    <string name="south_africa">ЮАР</string>
     <string name="south_africa_capital">Претория, Блумфонтейн, Кейптаун</string>
     <string name="south_africa_population">60 миллионов</string>
     <string name="south_africa_languages">английский, африкаанс, зулу, коса</string>
@@ -3943,7 +3943,7 @@
     <string name="ukraine_drink">Горилка (водка)</string>
     <string name="ukraine_safety_info">Из-за продолжающегося конфликта на востоке Украины и политической напряженности некоторые регионы считаются небезопасными, особенно Донецкая и Луганская области. Хотя Западная Украина остается относительно безопасной, путешественникам следует быть в курсе текущих событий и избегать массовых собраний. Мелкие преступления являются проблемой в крупных городах, поэтому будьте осторожны</string>
     <string name="ukrainian_hryvnia">Украинская гривна</string>
-    <string name="united_arab_emirates">Объединенные Арабские Эмираты</string>
+    <string name="united_arab_emirates">ОАЭ</string>
     <string name="uae_capital">Абу-Даби</string>
     <string name="uae_population">10 миллионов</string>
     <string name="uae_area">83,600 км</string>

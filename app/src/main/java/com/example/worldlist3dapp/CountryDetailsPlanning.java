@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-public class CountryDetailsPlanning extends AppCompatActivity {
+public class CountryDetailsPlanning extends BaseActivity {
 
     private View flightsButton;
     private View hotelsButton;

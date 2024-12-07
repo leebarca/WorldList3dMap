@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name" translatable="false">WorldTravel3D</string>
     <string name="country_details">الرئيسية</string>
-    <string name="planner">مخطط الرحلة</string>
+    <string name="planner">مخطط</string>
     <string name="explore">استكشاف</string>
     <string name="save">حفظ</string>
     <string name="recommended">الدول الموصى بها هذا الشهر</string>

@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name" translatable="false">WorldTravel3D</string>
     <string name="country_details">首页</string>
-    <string name="planner">行程规划</string>
+    <string name="planner">规划师</string>
     <string name="explore">探索</string>
     <string name="save">保存</string>
     <string name="recommended">本月推荐国家</string>

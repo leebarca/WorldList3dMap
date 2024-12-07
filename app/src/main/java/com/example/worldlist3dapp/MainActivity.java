@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     private ListView countryListView;
     private List<CountryInfo> countries;
@@ -231,6 +231,7 @@ public class MainActivity extends AppCompatActivity {
             button.setText(value);
             button.setBackgroundResource(R.drawable.button_background);
             button.setTextColor(getResources().getColor(R.color.black));
+            button.setTextSize(10);
             button.setPadding(8, 8, 8, 8);
 
             // Set button style and size

@@ -113,20 +113,6 @@
             android:textColor="@color/black"
             android:fontFamily="@font/open_sans" />
 
-        <CheckBox
-            android:id="@+id/checkbox_ai_itinerary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:padding="8dp"
-            android:text="@string/ai_generate_itinerary"
-            android:checked="true"
-            android:textColor="@color/black"
-            android:fontFamily="@font/open_sans"
-            android:background="@drawable/button_background"
-            android:textSize="16sp"
-            android:buttonTint="@color/button_border_colour" />
-
         <!-- Days Grid -->
         <LinearLayout
             android:id="@+id/grid_days"

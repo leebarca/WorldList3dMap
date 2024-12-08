@@ -30,7 +30,7 @@ public class MainActivity extends BaseActivity {
     private EditText searchBar;
     private ImageView filter;
     private ScrollView filterScrollContainer; // Updated to ScrollView
-    private LinearLayout iconsBottom;
+    private LinearLayout iconsBottom, home_layout_button, explore_layout_button, planner_layout_button, language_layout_button;
     private Set<String> selectedLanguages = new HashSet<>();
     private Set<String> selectedContinents = new HashSet<>();
     private Set<String> selectedReligions = new HashSet<>();
@@ -47,10 +47,10 @@ public class MainActivity extends BaseActivity {
         filter = findViewById(R.id.filter_icon);
         filterScrollContainer = findViewById(R.id.filter_scroll_container); // Reference to ScrollView
         iconsBottom = findViewById(R.id.icons_bottom);
-        ImageView countryDetailsIcon = findViewById(R.id.country_details_icon);
-        ImageView mapIcon = findViewById(R.id.explore_icon);
-        ImageView settingsIcon = findViewById(R.id.settings_icon);
-        ImageView profileIcon = findViewById(R.id.profile_icon);
+        home_layout_button = findViewById(R.id.home_layout_button);
+        explore_layout_button = findViewById(R.id.explore_layout_button);
+        planner_layout_button = findViewById(R.id.planner_layout_button);
+        language_layout_button = findViewById(R.id.language_layout_button);
         GridLayout languageGrid = findViewById(R.id.language_filter_grid);
         GridLayout continentGrid = findViewById(R.id.continent_filter_grid);
         GridLayout religionGrid = findViewById(R.id.religion_filter_grid);
@@ -132,14 +132,14 @@ public class MainActivity extends BaseActivity {
         });
 
         // Set click listener for Country Details
-        countryDetailsIcon.setOnClickListener(v -> {
+        home_layout_button.setOnClickListener(v -> {
             // Open the main country details activity (this might already be active)
             // Or navigate to a country details activity if necessary
             // No action, already on the Country Details / Home page
         });
 
         // Set click listener for Map Icon
-        mapIcon.setOnClickListener(v -> {
+        explore_layout_button.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ExploreActivity.class);
             startActivity(intent);
             finish();
@@ -147,7 +147,7 @@ public class MainActivity extends BaseActivity {
         });
 
         // Set click listener for Languages
-        settingsIcon.setOnClickListener(v -> {
+        language_layout_button.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, LanguageActivity.class);
             startActivity(intent);
             finish();
@@ -155,7 +155,7 @@ public class MainActivity extends BaseActivity {
         });
 
         // Set click listener for Profile
-        profileIcon.setOnClickListener(v -> {
+        planner_layout_button.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, TripPlannerActivity.class);
             startActivity(intent);
             finish();
@@ -184,9 +184,12 @@ public class MainActivity extends BaseActivity {
 
         for (CountryInfo country : countries) {
             boolean matchesSearch = query.isEmpty() || country.getName().toLowerCase().contains(query);
-            boolean matchesLanguage = selectedLanguages.isEmpty() ||
-                    selectedLanguages.stream().anyMatch(language ->
-                            country.getLanguage().toLowerCase().contains(language.toLowerCase()));
+            boolean matchesLanguage = false;
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+                matchesLanguage = selectedLanguages.isEmpty() ||
+                        selectedLanguages.stream().anyMatch(language ->
+                                country.getLanguage().toLowerCase().contains(language.toLowerCase()));
+            }
             boolean matchesContinent = selectedContinents.isEmpty() || selectedContinents.contains(country.getContinent());
             boolean matchesReligion = selectedReligions.isEmpty() || selectedReligions.contains(country.getReligion());
             boolean matchesMonth = true;

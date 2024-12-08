@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    namespace 'com.example.worldlist3dapp'
+    namespace 'com.leebarcaglobal.worldtravel3d'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.worldlist3dapp"
-        minSdk 24
+        applicationId "com.leebarcaglobal.worldtravel3d"
+        minSdk 21
         targetSdk 34
         versionCode 1
         versionName "1.0"

@@ -62,7 +62,7 @@
             android:orientation="vertical">
 
             <!-- Trip List -->
-            <com.example.worldlist3dapp.NonScrollListView
+            <com.leebarcaglobal.worldtravel3d.NonScrollListView
                 android:id="@+id/trip_list_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

@@ -59,7 +59,7 @@
             </FrameLayout>
 
             <!-- Top Countries List -->
-            <com.example.worldlist3dapp.NonScrollListView
+            <com.leebarcaglobal.worldtravel3d.NonScrollListView
                 android:id="@+id/top_countries_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                 android:textSize="16sp" />
 
             <!-- This Month Countries List -->
-            <com.example.worldlist3dapp.NonScrollListView
+            <com.leebarcaglobal.worldtravel3d.NonScrollListView
                 android:id="@+id/this_month_countries"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

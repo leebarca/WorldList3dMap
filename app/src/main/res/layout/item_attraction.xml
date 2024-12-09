@@ -8,11 +8,12 @@
     <!-- Left Swipe Hint Icon -->
     <ImageView
         android:id="@+id/swipe_hint_left"
-        android:layout_width="10dp"
+        android:layout_width="20dp"
         android:layout_height="100dp"
         android:layout_gravity="center_vertical"
         android:contentDescription="@string/swipe_left_hint"
-        android:src="@drawable/arrow_left" />
+        android:src="@drawable/arrow_left"
+        android:background="@drawable/button_background" />
 
     <!-- Scrollable Content Container with Border -->
     <ScrollView
@@ -71,10 +72,11 @@
     <!-- Right Swipe Hint Icon -->
     <ImageView
         android:id="@+id/swipe_hint_right"
-        android:layout_width="10dp"
+        android:layout_width="20dp"
         android:layout_height="100dp"
         android:layout_gravity="center_vertical"
         android:contentDescription="@string/swipe_right_hint"
-        android:src="@drawable/arrow_right" />
+        android:src="@drawable/arrow_right"
+        android:background="@drawable/button_background" />
 
 </LinearLayout>

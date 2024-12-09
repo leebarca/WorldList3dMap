@@ -95,17 +95,21 @@ public class LanguageActivity extends BaseActivity {
 
         // Save button logic
         saveLanguageButton.setOnClickListener(v -> {
-                // Save the selected language to SharedPreferences
-                SharedPreferences.Editor editor = preferences.edit();
-                editor.putString(LANGUAGE_KEY, selectedLanguage);
-                editor.apply();
+            if (selectedLanguage == null || selectedLanguage.isEmpty()) {
+                selectedLanguage = "en"; // Default to English if nothing is selected
+            }
 
-                // Apply the new language
-                applyLocale(selectedLanguage);
+            // Save the selected language to SharedPreferences
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putString(LANGUAGE_KEY, selectedLanguage);
+            editor.apply();
 
-                Toast.makeText(this, getString(R.string.language_saved)
-                        + " " + languages[selectedPosition], Toast.LENGTH_SHORT).show();
-                recreate();
+            // Apply the new language
+            applyLocale(selectedLanguage);
+
+            Toast.makeText(this, getString(R.string.language_saved)
+                    + " " + languages[selectedPosition], Toast.LENGTH_SHORT).show();
+            recreate();
         });
 
         // Bottom navigation setup
@@ -115,10 +119,19 @@ public class LanguageActivity extends BaseActivity {
     private void applySavedLanguage() {
         SharedPreferences preferences = getSharedPreferences(PREFERENCES_NAME, MODE_PRIVATE);
         String savedLanguage = preferences.getString(LANGUAGE_KEY, "en"); // Default to English
+        if (savedLanguage == null || savedLanguage.isEmpty()) {
+            savedLanguage = "en"; // Fallback to English
+        }
         applyLocale(savedLanguage);
     }
 
+
     private void applyLocale(String languageCode) {
+        // Fallback to English if the provided language code is null or unsupported
+        if (languageCode == null || languageCode.isEmpty()) {
+            languageCode = "en"; // Default to English
+        }
+
         Locale locale = new Locale(languageCode);
         Locale.setDefault(locale);
 

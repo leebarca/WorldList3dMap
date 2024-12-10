@@ -25,16 +25,16 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".CountryDetailActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".CountryDetailsAttractions" />
-        <activity android:name=".CountryDetailsInfo" />
-        <activity android:name=".CountryDetailsPlanning" />
-        <activity android:name=".ExploreActivity" />
-        <activity android:name=".LanguageActivity" />
-        <activity android:name=".TripPlannerActivity" />
-        <activity android:name=".AddTrip" />
-        <activity android:name=".ViewEditTripActivity" />
+        <activity android:name=".CountryDetailActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".MainActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".CountryDetailsAttractions" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".CountryDetailsInfo" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".CountryDetailsPlanning" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".ExploreActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".LanguageActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".TripPlannerActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".AddTrip" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".ViewEditTripActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>
 
         <meta-data
             android:name="preloaded_fonts"

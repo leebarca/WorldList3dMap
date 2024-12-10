@@ -10,7 +10,7 @@
         android:id="@+id/trip_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
+        android:textSize="16dp"
         android:textColor="@android:color/black" />
 
     <!-- Dates -->
@@ -18,7 +18,7 @@
         android:id="@+id/trip_dates"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
+        android:textSize="16dp"
         android:textColor="@android:color/black"
         android:fontFamily="@font/open_sans"
         android:layout_marginTop="6dp" />
@@ -32,5 +32,5 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/button_background"
         android:textColor="@color/black"
-        android:textSize="16sp"/>
+        android:textSize="16dp"/>
 </LinearLayout>

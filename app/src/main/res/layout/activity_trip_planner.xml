@@ -31,7 +31,7 @@
         android:text="@string/add_trip"
         android:textColor="@android:color/black"
         android:textStyle="bold"
-        android:textSize="16sp" />
+        android:textSize="16dp" />
 
     <!-- Empty Trip Text -->
     <TextView
@@ -43,7 +43,7 @@
         android:visibility="gone"
         android:text="@string/trip_empty"
         android:gravity="center"
-        android:textSize="16sp"
+        android:textSize="16dp"
         android:textColor="@color/black"
         android:fontFamily="@font/open_sans" />
 

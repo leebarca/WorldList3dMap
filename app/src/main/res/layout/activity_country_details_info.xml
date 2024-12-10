@@ -36,7 +36,7 @@
             android:maxLines="4"
             android:padding="4dp"
             android:textColor="@android:color/black"
-            android:textSize="16sp" />
+            android:textSize="16dp" />
 
         <LinearLayout
             android:id="@+id/summary_expand_layout"
@@ -50,7 +50,7 @@
             android:gravity="center"
             android:padding="4dp"
             android:textColor="@android:color/black"
-            android:textSize="16sp">
+            android:textSize="16dp">
 
             <TextView
                 android:id="@+id/button_expand_summary"
@@ -120,7 +120,7 @@
                         android:layout_height="40dp"
                         android:text="@string/jan"
                         android:textColor="@android:color/white"
-                        android:textSize="16sp"
+                        android:textSize="16dp"
                         android:layout_margin="4dp"
                         android:fontFamily="@font/open_sans" />
 
@@ -132,7 +132,7 @@
                         android:layout_height="40dp"
                         android:text="@string/feb"
                         android:textColor="@android:color/white"
-                        android:textSize="16sp"
+                        android:textSize="16dp"
                         android:layout_margin="4dp"
                         android:fontFamily="@font/open_sans" />
 
@@ -144,7 +144,7 @@
                         android:layout_height="40dp"
                         android:text="@string/mar"
                         android:textColor="@android:color/white"
-                        android:textSize="16sp"
+                        android:textSize="16dp"
                         android:layout_margin="4dp"
                         android:fontFamily="@font/open_sans" />
 
@@ -156,7 +156,7 @@
                         android:layout_height="40dp"
                         android:text="@string/apr"
                         android:textColor="@android:color/white"
-                        android:textSize="16sp"
+                        android:textSize="16dp"
                         android:layout_margin="4dp"
                         android:fontFamily="@font/open_sans" />
 
@@ -168,7 +168,7 @@
                         android:layout_height="40dp"
                         android:text="@string/may"
                         android:textColor="@android:color/white"
-                        android:textSize="16sp"
+                        android:textSize="16dp"
                         android:layout_margin="4dp"
                         android:fontFamily="@font/open_sans" />
 
@@ -180,7 +180,7 @@
                         android:layout_height="40dp"
                         android:text="@string/jun"
                         android:textColor="@android:color/white"
-                        android:textSize="16sp"
+                        android:textSize="16dp"
                         android:layout_margin="4dp"
                         android:fontFamily="@font/open_sans" />
 
@@ -192,7 +192,7 @@
                         android:layout_height="40dp"
                         android:text="@string/jul"
                         android:textColor="@android:color/white"
-                        android:textSize="16sp"
+                        android:textSize="16dp"
                         android:layout_margin="4dp"
                         android:fontFamily="@font/open_sans" />
 
@@ -204,7 +204,7 @@
                         android:layout_height="40dp"
                         android:text="@string/aug"
                         android:textColor="@android:color/white"
-                        android:textSize="16sp"
+                        android:textSize="16dp"
                         android:layout_margin="4dp"
                         android:fontFamily="@font/open_sans" />
 
@@ -216,7 +216,7 @@
                         android:layout_height="40dp"
                         android:text="@string/sep"
                         android:textColor="@android:color/white"
-                        android:textSize="16sp"
+                        android:textSize="16dp"
                         android:layout_margin="4dp"
                         android:fontFamily="@font/open_sans" />
 
@@ -228,7 +228,7 @@
                         android:layout_height="40dp"
                         android:text="@string/oct"
                         android:textColor="@android:color/white"
-                        android:textSize="16sp"
+                        android:textSize="16dp"
                         android:layout_margin="4dp"
                         android:fontFamily="@font/open_sans" />
 
@@ -240,7 +240,7 @@
                         android:layout_height="40dp"
                         android:text="@string/nov"
                         android:textColor="@android:color/white"
-                        android:textSize="16sp"
+                        android:textSize="16dp"
                         android:layout_margin="4dp"
                         android:fontFamily="@font/open_sans" />
 
@@ -252,7 +252,7 @@
                         android:layout_height="40dp"
                         android:text="@string/dec"
                         android:textColor="@android:color/white"
-                        android:textSize="16sp"
+                        android:textSize="16dp"
                         android:layout_margin="4dp"
                         android:fontFamily="@font/open_sans" />
 
@@ -303,7 +303,7 @@
                 android:fontFamily="@font/open_sans"
                 android:gravity="center"
                 android:textColor="@android:color/black"
-                android:textSize="16sp" />
+                android:textSize="16dp" />
         </LinearLayout>
 
         <View
@@ -366,7 +366,7 @@
                         android:fontFamily="@font/open_sans"
                         android:text="@string/spring_march_may"
                         android:textColor="@android:color/black"
-                        android:textSize="16sp"
+                        android:textSize="16dp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -410,7 +410,7 @@
                         android:fontFamily="@font/open_sans"
                         android:text="@string/summer_june_august"
                         android:textColor="@android:color/black"
-                        android:textSize="16sp"
+                        android:textSize="16dp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -454,7 +454,7 @@
                         android:fontFamily="@font/open_sans"
                         android:text="@string/autumn_september_november"
                         android:textColor="@android:color/black"
-                        android:textSize="16sp"
+                        android:textSize="16dp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -497,7 +497,7 @@
                         android:fontFamily="@font/open_sans"
                         android:text="@string/winter_december_february"
                         android:textColor="@android:color/black"
-                        android:textSize="16sp"
+                        android:textSize="16dp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -564,7 +564,7 @@
                     android:fontFamily="@font/open_sans"
                     android:text="@string/popular_food"
                     android:textColor="@android:color/black"
-                    android:textSize="16sp"
+                    android:textSize="16dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -597,7 +597,7 @@
                     android:fontFamily="@font/open_sans"
                     android:text="@string/popular_drink"
                     android:textColor="@android:color/black"
-                    android:textSize="16sp"
+                    android:textSize="16dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -652,7 +652,7 @@
                 android:gravity="center"
                 android:padding="4dp"
                 android:textColor="@android:color/black"
-                android:textSize="16sp" />
+                android:textSize="16dp" />
         </LinearLayout>
 
         <View
@@ -697,7 +697,7 @@
                 android:gravity="center"
                 android:padding="4dp"
                 android:textColor="@android:color/black"
-                android:textSize="16sp" />
+                android:textSize="16dp" />
         </LinearLayout>
 
         <View
@@ -745,7 +745,7 @@
                 android:padding="4dp"
                 android:textColor="@android:color/black"
                 android:textColorLink="@android:color/holo_blue_dark"
-                android:textSize="16sp" />
+                android:textSize="16dp" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

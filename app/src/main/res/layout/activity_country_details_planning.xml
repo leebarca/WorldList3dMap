@@ -1,15 +1,38 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
-    android:background="@color/app_background_color"
-    android:fillViewport="true">
+    android:background="@color/app_background_color">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:background="@drawable/button_background"
-        android:orientation="vertical">
+        android:src="@drawable/return_button"
+        android:contentDescription="@string/country_details"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="centerInside" />
+
+    <!-- Main Content -->
+    <ScrollView
+        android:id="@+id/main_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/back_button"
+        android:fillViewport="true"
+        android:padding="8dp"
+        android:background="@color/app_background_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:orientation="vertical">
 
         <!-- Country Summary Section -->
         <TextView
@@ -168,3 +191,4 @@
          </FrameLayout>
         </LinearLayout>
 </ScrollView>
+</RelativeLayout>

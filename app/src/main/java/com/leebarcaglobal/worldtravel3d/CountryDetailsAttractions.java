@@ -1,7 +1,6 @@
 package com.leebarcaglobal.worldtravel3d;
 
 import android.os.Bundle;
-
 import androidx.viewpager2.widget.ViewPager2;
 
 public class CountryDetailsAttractions extends BaseActivity {
@@ -32,8 +31,14 @@ public class CountryDetailsAttractions extends BaseActivity {
                 getIntent().getIntExtra("thirdAttractionImage", 0)
         };
 
-        // Set up the adapter for the ViewPager
-        AttractionsPagerAdapter adapter = new AttractionsPagerAdapter(attractionNames, attractionDetails, attractionImages);
+        // Set up the adapter with a back button listener
+        AttractionsPagerAdapter adapter = new AttractionsPagerAdapter(
+                attractionNames,
+                attractionDetails,
+                attractionImages,
+                () -> finish() // Close the activity when back button is clicked
+        );
+
         attractionsViewPager.setAdapter(adapter);
         attractionsViewPager.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
     }

@@ -2,6 +2,7 @@ package com.leebarcaglobal.worldtravel3d;
 
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -22,6 +23,7 @@ public class AddTrip extends BaseActivity {
     private EditText editDepartureDate, editReturnDate;
     private LinearLayout gridDays;
     private Button buttonCreateTrip;
+    private ImageButton back_button;
 
     private final Calendar calendar = Calendar.getInstance();
     private final SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
@@ -37,6 +39,7 @@ public class AddTrip extends BaseActivity {
         editReturnDate = findViewById(R.id.edit_return_date);
         gridDays = findViewById(R.id.grid_days);
         buttonCreateTrip = findViewById(R.id.button_search);
+        back_button = findViewById(R.id.back_button);
 
         // Set gridDays visibility to GONE initially
         gridDays.setVisibility(View.GONE);
@@ -251,6 +254,11 @@ public class AddTrip extends BaseActivity {
 
         // Create trip button
         buttonCreateTrip.setOnClickListener(v -> handleCreateTrip());
+
+        back_button.setOnClickListener(v -> {
+            // Handle click event
+            finish();
+        });
     }
 
     private void setupDatePicker(EditText editText) {

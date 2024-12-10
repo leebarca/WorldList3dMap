@@ -3,6 +3,7 @@ package com.leebarcaglobal.worldtravel3d;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
@@ -15,6 +16,7 @@ public class CountryDetailsPlanning extends BaseActivity {
     private View hotelsButton;
     private View packagesButton;
     private View activitiesButton;
+    private ImageButton back_button;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -27,6 +29,7 @@ public class CountryDetailsPlanning extends BaseActivity {
         hotelsButton = findViewById(R.id.hotels_element);
         packagesButton = findViewById(R.id.packages_element);
         activitiesButton = findViewById(R.id.activities_element);
+        back_button = findViewById(R.id.back_button);
 
         flightsButton.setBackground(ContextCompat.getDrawable(this, R.drawable.button_background));
         hotelsButton.setBackground(ContextCompat.getDrawable(this, R.drawable.button_background));
@@ -45,6 +48,11 @@ public class CountryDetailsPlanning extends BaseActivity {
         findViewById(R.id.hotels_element).setOnClickListener(v -> replaceFragment(new HotelsFragment(), hotelsButton, country_name));
         findViewById(R.id.packages_element).setOnClickListener(v -> replaceFragment(new PackagesFragment(), packagesButton, country_name));
         findViewById(R.id.activities_element).setOnClickListener(v -> replaceFragment(new ActivitiesFragment(), activitiesButton, country_name));
+
+        back_button.setOnClickListener(v -> {
+            // Handle click event
+            finish();
+        });
     }
 
     private void replaceFragment(Fragment fragment, View activeButton, String country) {

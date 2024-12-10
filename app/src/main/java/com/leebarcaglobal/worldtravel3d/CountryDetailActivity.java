@@ -3,6 +3,7 @@ package com.leebarcaglobal.worldtravel3d;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -31,6 +32,7 @@ public class CountryDetailActivity extends BaseActivity {
         infoIcon = findViewById(R.id.open_info_element);
         attractionsIcon = findViewById(R.id.open_attractions_element);
         planningIcon = findViewById(R.id.open_offers_element);
+        ImageButton back_button = findViewById(R.id.back_button);
 
         // Retrieve values from Intent
         countryImage.setImageResource(getIntent().getIntExtra("countryImageResId", 0));
@@ -97,6 +99,11 @@ public class CountryDetailActivity extends BaseActivity {
             Intent intent = new Intent(CountryDetailActivity.this, CountryDetailsPlanning.class);
             intent.putExtra("country_name", country_name);
             startActivity(intent);
+        });
+
+        back_button.setOnClickListener(v -> {
+            // Handle click event
+            finish();
         });
     }
 }

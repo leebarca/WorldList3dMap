@@ -21,6 +21,7 @@ public class ViewEditTripActivity extends BaseActivity {
     private Button saveButton;
     private ImageView editIcon;
     private LinearLayout itineraryContainer;
+    private ImageButton back_button;
 
     private TripDatabaseHelper dbHelper;
     private long tripId;
@@ -38,6 +39,7 @@ public class ViewEditTripActivity extends BaseActivity {
         itineraryContainer = findViewById(R.id.itinerary_container);
         saveButton = findViewById(R.id.save_trip_button);
         editIcon = findViewById(R.id.edit_icon);
+        back_button = findViewById(R.id.back_button);
 
         dbHelper = new TripDatabaseHelper(this);
 
@@ -60,6 +62,11 @@ public class ViewEditTripActivity extends BaseActivity {
             } else {
                 Toast.makeText(this, R.string.trip_error, Toast.LENGTH_SHORT).show();
             }
+        });
+
+        back_button.setOnClickListener(v -> {
+            // Handle click event
+            finish();
         });
     }
 

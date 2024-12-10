@@ -3,6 +3,7 @@ package com.leebarcaglobal.worldtravel3d;
 import android.annotation.SuppressLint;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -45,6 +46,7 @@ public class CountryDetailsInfo extends BaseActivity {
         TextView summary_expand = findViewById(R.id.button_expand_summary);
         LinearLayout summary_expand_layout = findViewById(R.id.summary_expand_layout);
         TextView currency_value = findViewById(R.id.textView_currency_content);
+        ImageButton back_button = findViewById(R.id.back_button);
 
         int[] bestTimesToVisit = getIntent().getIntArrayExtra("bestTimesToVisit");
         String fact_info = getIntent().getStringExtra("fact_info");
@@ -138,5 +140,9 @@ public class CountryDetailsInfo extends BaseActivity {
         facts.setText(fact_info);
         website.setText(website_info);
         currency_value.setText(currencyInfo);
+
+        back_button.setOnClickListener(v -> {
+            finish();
+        });
     }
 }

@@ -1,22 +1,44 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
     android:background="@color/app_background_color">
 
-    <LinearLayout
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/button_background"
+        android:src="@drawable/return_button"
+        android:contentDescription="@string/country_details"
+        android:scaleType="centerInside"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Main Content -->
+    <ScrollView
+        android:id="@+id/main_scroll_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/app_background_color"
-        android:orientation="vertical"
-        android:paddingBottom="16dp"
-        android:gravity="center_horizontal">
+        android:layout_height="match_parent"
+        android:layout_below="@id/back_button"
+        android:padding="8dp"
+        android:background="@color/app_background_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:gravity="center_horizontal">
 
         <!-- Country Image -->
         <ImageView
             android:id="@+id/map_container"
             android:layout_width="match_parent"
-            android:layout_height="340dp"
+            android:layout_height="300dp"
             android:layout_marginBottom="16dp"
             android:contentDescription="@string/country_3d_image"
             android:scaleType="centerCrop" />
@@ -293,3 +315,4 @@
         </GridLayout>
     </LinearLayout>
 </ScrollView>
+</RelativeLayout>

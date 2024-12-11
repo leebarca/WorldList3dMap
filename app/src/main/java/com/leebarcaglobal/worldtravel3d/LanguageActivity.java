@@ -95,7 +95,7 @@ public class LanguageActivity extends BaseActivity {
 
         // Save button logic
         saveLanguageButton.setOnClickListener(v -> {
-            if (selectedLanguage == null || selectedLanguage.isEmpty()) {
+            if (selectedLanguage == null || selectedLanguage.isEmpty() || selectedPosition == -1) {
                 selectedLanguage = "en"; // Default to English if nothing is selected
             }
 

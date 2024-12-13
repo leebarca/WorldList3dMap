@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,7 +25,9 @@ public class LanguageActivity extends BaseActivity {
 
     private String selectedLanguage;
     private int selectedPosition = -1;
+    private LinearLayout iconsBottom, home_layout_button, explore_layout_button, planner_layout_button, language_layout_button;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +36,12 @@ public class LanguageActivity extends BaseActivity {
         applySavedLanguage();
 
         setContentView(R.layout.activity_languages);
+
+        iconsBottom = findViewById(R.id.icons_bottom);
+        home_layout_button = findViewById(R.id.home_layout_button);
+        explore_layout_button = findViewById(R.id.explore_layout_button);
+        planner_layout_button = findViewById(R.id.planner_layout_button);
+        language_layout_button = findViewById(R.id.language_layout_button);
 
         // Language list and adapter
         @SuppressLint({"MissingInflatedId",
@@ -81,6 +90,8 @@ public class LanguageActivity extends BaseActivity {
         if (savedLanguage != null) {
             selectedLanguage = savedLanguage;
             selectedPosition = getLanguagePosition(languageCodes, savedLanguage);
+
+            adapter.notifyDataSetChanged();
         }
 
         // Handle language selection
@@ -95,8 +106,12 @@ public class LanguageActivity extends BaseActivity {
 
         // Save button logic
         saveLanguageButton.setOnClickListener(v -> {
-            if (selectedLanguage == null || selectedLanguage.isEmpty() || selectedPosition == -1) {
-                selectedLanguage = "en"; // Default to English if nothing is selected
+            // Fallback to default language if nothing is selected
+            if (selectedPosition == -1) {
+                selectedLanguage = "en"; // Default to English
+                selectedPosition = 0; // Default to the first language in the list
+
+                adapter.notifyDataSetChanged();
             }
 
             // Save the selected language to SharedPreferences
@@ -107,9 +122,12 @@ public class LanguageActivity extends BaseActivity {
             // Apply the new language
             applyLocale(selectedLanguage);
 
-            Toast.makeText(this, getString(R.string.language_saved)
-                    + " " + languages[selectedPosition], Toast.LENGTH_SHORT).show();
+            // Display a confirmation message
+            Toast.makeText(this, getString(R.string.language_saved) + " " + languages[selectedPosition], Toast.LENGTH_SHORT).show();
+
+            // Recreate the activity to apply the language change
             recreate();
+
         });
 
         // Bottom navigation setup
@@ -155,24 +173,21 @@ public class LanguageActivity extends BaseActivity {
     }
 
     private void setupBottomNavigation() {
-        ImageView countryDetailsIcon = findViewById(R.id.country_details_icon);
-        countryDetailsIcon.setOnClickListener(v -> {
+        home_layout_button.setOnClickListener(v -> {
             Intent intent = new Intent(LanguageActivity.this, MainActivity.class);
             startActivity(intent);
             finish();
             overridePendingTransition(0, 0);
         });
 
-        ImageView exploreIcon = findViewById(R.id.explore_icon);
-        exploreIcon.setOnClickListener(v -> {
+        explore_layout_button.setOnClickListener(v -> {
             Intent intent = new Intent(LanguageActivity.this, ExploreActivity.class);
             startActivity(intent);
             finish();
             overridePendingTransition(0, 0);
         });
 
-        ImageView profileIcon = findViewById(R.id.profile_icon);
-        profileIcon.setOnClickListener(v -> {
+        planner_layout_button.setOnClickListener(v -> {
             Intent intent = new Intent(LanguageActivity.this, TripPlannerActivity.class);
             startActivity(intent);
             finish();

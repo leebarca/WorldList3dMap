@@ -39,7 +39,7 @@
                 android:background="@drawable/button_background"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:padding="8dp">
+                android:padding="2dp">
 
                 <Spinner
                     android:id="@+id/category_spinner"
@@ -63,7 +63,7 @@
                 android:id="@+id/top_countries_list"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="2dp"
                 android:background="@drawable/button_background"
                 android:divider="@android:color/darker_gray"
                 android:dividerHeight="1dp" />
@@ -73,20 +73,46 @@
                 android:id="@+id/current_month_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="2dp"
                 android:fontFamily="@font/open_sans"
                 android:gravity="center"
-                android:padding="8dp"
+                android:padding="2dp"
                 android:text="@string/recommended"
                 android:textColor="@android:color/black"
                 android:textSize="16dp" />
+
+            <FrameLayout
+                android:id="@+id/current_month_spinner_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="2dp">
+
+                <Spinner
+                    android:id="@+id/current_month_category_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:id="@+id/current_month_dropdown_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/arrowdown"
+                    android:layout_gravity="end|center_vertical"
+                    android:contentDescription="@string/arrow_down" />
+            </FrameLayout>
 
             <!-- This Month Countries List -->
             <com.leebarcaglobal.worldtravel3d.NonScrollListView
                 android:id="@+id/this_month_countries"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="2dp"
                 android:background="@drawable/button_background"
                 android:divider="@android:color/darker_gray"
                 android:dividerHeight="1dp" />
@@ -101,27 +127,28 @@
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
         android:gravity="center"
-        android:paddingTop="8dp"
+        android:paddingTop="2dp"
         android:weightSum="4">
 
         <!-- Country Details / Home Icon -->
         <LinearLayout
+            android:id="@+id/home_layout_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center"
             android:padding="2dp"
-            android:background="@drawable/button_background">
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
                 android:id="@+id/country_details_icon"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/capital"
-                android:contentDescription="@string/country_details"
-                android:clickable="true"
-                android:focusable="true" />
+                android:contentDescription="@string/country_details" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -135,22 +162,23 @@
 
         <!-- Explore Icon -->
         <LinearLayout
+            android:id="@+id/explore_layout_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center"
             android:padding="2dp"
-            android:background="@drawable/button_background">
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
                 android:id="@+id/explore_icon"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/map"
-                android:contentDescription="@string/explore"
-                android:clickable="true"
-                android:focusable="true" />
+                android:contentDescription="@string/explore" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -164,22 +192,23 @@
 
         <!-- Profile Icon -->
         <LinearLayout
+            android:id="@+id/planner_layout_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center"
             android:padding="2dp"
-            android:background="@drawable/button_background">
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
                 android:id="@+id/profile_icon"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/planvisiticon"
-                android:contentDescription="@string/planner"
-                android:clickable="true"
-                android:focusable="true" />
+                android:contentDescription="@string/planner" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -193,22 +222,23 @@
 
         <!-- Settings Icon -->
         <LinearLayout
+            android:id="@+id/language_layout_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center"
             android:padding="2dp"
-            android:background="@drawable/button_background">
+            android:background="@drawable/button_background"
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
                 android:id="@+id/settings_icon"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/language"
-                android:contentDescription="@string/language"
-                android:clickable="true"
-                android:focusable="true" />
+                android:contentDescription="@string/language" />
 
             <TextView
                 android:layout_width="wrap_content"

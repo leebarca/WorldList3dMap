@@ -19,6 +19,8 @@
     <string name="country">البلد</string>
     <string name="create">إنشاء</string>
     <string name="day">يوم</string>
+    <string name="summer_escapes">الهروب الصيفي</string>
+    <string name="winter_escapes">الهروب الشتوي</string>
     <string name="day_hint">أدخل التفاصيل لليوم</string>
     <string name="trip_successful">تم إنشاء الرحلة بنجاح!</string>
     <string name="trip_deleted">تم حذف الرحلة!</string>
@@ -273,7 +275,7 @@
     <string name="antigua_june_august_weather">27°C - 31°C، حار ورطب، مع عواصف رعدية متكررة.</string>
     <string name="antigua_september_november_weather">27°C - 30°C، دافئ، رطوبة عالية، مع احتمال حدوث أعاصير.</string>
     <string name="antigua_december_february_weather">24°C - 28°C، معتدل، مع أمطار خفيفة عرضية.</string>
-    <string name="antigua_fungi_and_pepperpot">الفطائر وبيبر بوت</string>
+    <string name="antigua_fungi_and_pepperpot">الفطريات والفلفل</string>
     <string name="antigua_rum_punch">روم بانش</string>
     <string name="antigua_safety_info">تعتبر أنتيغوا وباربودا عمومًا آمنة جدًا للسياح، مع معدلات جريمة منخفضة. يجب على الزوار اتخاذ الاحتياطات العادية وأن يكونوا على دراية بالعادات المحلية</string>
     <string name="eastern_caribbean_dollar">دولار الكاريبي الشرقي</string>

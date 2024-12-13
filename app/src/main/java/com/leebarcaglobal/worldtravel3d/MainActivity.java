@@ -131,13 +131,6 @@ public class MainActivity extends BaseActivity {
             startActivity(intent);
         });
 
-        // Set click listener for Country Details
-        home_layout_button.setOnClickListener(v -> {
-            // Open the main country details activity (this might already be active)
-            // Or navigate to a country details activity if necessary
-            // No action, already on the Country Details / Home page
-        });
-
         // Set click listener for Map Icon
         explore_layout_button.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ExploreActivity.class);

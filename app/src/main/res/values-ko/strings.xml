@@ -19,6 +19,8 @@
     <string name="country">국가</string>
     <string name="create">생성</string>
     <string name="day">날</string>
+    <string name="summer_escapes">여름 휴가</string>
+    <string name="winter_escapes">겨울 휴가</string>
     <string name="day_hint">날에 대한 세부정보 입력</string>
     <string name="trip_successful">여행이 성공적으로 생성되었습니다!</string>
     <string name="trip_deleted">여행이 삭제되었습니다!</string>
@@ -273,7 +275,7 @@
     <string name="antigua_june_august_weather">27°C - 31°C, 덥고 습하며, 잦은 천둥번개가 있습니다.</string>
     <string name="antigua_september_november_weather">27°C - 30°C, 따뜻하고, 높은 습도, 잠재적인 허리케인이 있습니다.</string>
     <string name="antigua_december_february_weather">24°C - 28°C, 온화하고, 가끔 가벼운 비가 내립니다.</string>
-    <string name="antigua_fungi_and_pepperpot">펑기와 페퍼팟</string>
+    <string name="antigua_fungi_and_pepperpot">곰팡이와 후추통</string>
     <string name="antigua_rum_punch">럼 펀치</string>
     <string name="antigua_safety_info">앤티가와 바부다는 일반적으로 관광객에게 매우 안전하며, 범죄율이 낮습니다.방문객들은 일반적인 안전 수칙을 준수하고 지역 관습을 인식해야 합니다.</string>
     <string name="eastern_caribbean_dollar">동부 카리브해 달러</string>

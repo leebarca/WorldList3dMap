@@ -19,6 +19,8 @@
     <string name="country">Страна</string>
     <string name="create">Создать</string>
     <string name="day">День</string>
+    <string name="summer_escapes">Летние побеги</string>
+    <string name="winter_escapes">Зимние побеги</string>
     <string name="day_hint">Введите детали для Дня</string>
     <string name="trip_successful">Поездка успешно создана!</string>
     <string name="trip_deleted">Поездка удалена!</string>
@@ -273,7 +275,7 @@
     <string name="antigua_june_august_weather">27°C - 31°C, жарко и влажно, частые грозы.</string>
     <string name="antigua_september_november_weather">27°C - 30°C, тепло, высокая влажность, потенциальные ураганы.</string>
     <string name="antigua_december_february_weather">24°C - 28°C, умеренно, периодические легкие дожди.</string>
-    <string name="antigua_fungi_and_pepperpot">Грибы и перцовый суп</string>
+    <string name="antigua_fungi_and_pepperpot">грибок и перцовый суп</string>
     <string name="antigua_rum_punch">Ром-панч</string>
     <string name="antigua_safety_info">Антигуа и Барбуда в целом очень безопасны для туристов, с низким уровнем преступности. Посетителям следует соблюдать обычные меры предосторожности и быть в курсе местных обычаев.</string>
     <string name="eastern_caribbean_dollar">Восточно-карибский доллар</string>

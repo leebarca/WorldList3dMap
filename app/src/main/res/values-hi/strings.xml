@@ -19,6 +19,8 @@
     <string name="country">देश</string>
     <string name="create">बनाएं</string>
     <string name="day">दिन</string>
+    <string name="summer_escapes">ग्रीष्मकालीन पलायन</string>
+    <string name="winter_escapes">शीतकालीन पलायन</string>
     <string name="day_hint">दिन के लिए विवरण दर्ज करें</string>
     <string name="trip_successful">यात्रा सफलतापूर्वक बनाई गई!</string>
     <string name="trip_deleted">यात्रा हटा दी गई!</string>
@@ -273,7 +275,7 @@
     <string name="antigua_june_august_weather">27°C - 31°C, गर्म और आर्द्र, बार-बार गरज।</string>
     <string name="antigua_september_november_weather">27°C - 30°C, गर्म, उच्च आर्द्रता, संभावित तूफान।</string>
     <string name="antigua_december_february_weather">24°C - 28°C, हल्का, कभी-कभी हल्की बारिश।</string>
-    <string name="antigua_fungi_and_pepperpot">फंगी और पेपरपॉट</string>
+    <string name="antigua_fungi_and_pepperpot">कवक और कालीमिर्च</string>
     <string name="antigua_rum_punch">रम पंच</string>
     <string name="antigua_safety_info">एंटीगुआ और बारबुडा आमतौर पर पर्यटकों के लिए बहुत सुरक्षित हैं, जिनमें अपराध दरें कम हैं। यात्रियों को सामान्य सुरक्षा उपायों का पालन करना चाहिए और स्थानीय रीति-रिवाजों के प्रति जागरूक रहना चाहिए</string>
     <string name="eastern_caribbean_dollar">पूर्वी कैरेबियन डॉलर</string>

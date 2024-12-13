@@ -19,6 +19,8 @@
     <string name="country">País</string>
     <string name="create">Criar</string>
     <string name="day">Dia</string>
+    <string name="summer_escapes">Escapadas de Verão</string>
+    <string name="winter_escapes">Escapadas de Inverno</string>
     <string name="day_hint">Insira os detalhes para o Dia</string>
     <string name="trip_successful">Viagem criada com sucesso!</string>
     <string name="trip_deleted">Viagem excluída!</string>
@@ -273,7 +275,7 @@
     <string name="antigua_june_august_weather">27°C - 31°C, quente e húmido, tempestades frequentes.</string>
     <string name="antigua_september_november_weather">27°C - 30°C, quente, alta humidade, potenciais furacões.</string>
     <string name="antigua_december_february_weather">24°C - 28°C, ameno, chuvas leves ocasionais.</string>
-    <string name="antigua_fungi_and_pepperpot">Fungi e Pepperpot</string>
+    <string name="antigua_fungi_and_pepperpot">Fungee e Pepperpot</string>
     <string name="antigua_rum_punch">Rum Punch</string>
     <string name="antigua_safety_info">Antígua e Barbuda são geralmente muito seguras para turistas, com baixas taxas de criminalidade. Os visitantes devem exercer precauções normais e estar cientes dos costumes locais</string>
     <string name="eastern_caribbean_dollar">Dólar do Caribe Oriental</string>

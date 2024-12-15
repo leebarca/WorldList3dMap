@@ -33,7 +33,6 @@ public class MainActivity extends BaseActivity {
     private LinearLayout iconsBottom, home_layout_button, explore_layout_button, planner_layout_button, language_layout_button;
     private Set<String> selectedLanguages = new HashSet<>();
     private Set<String> selectedContinents = new HashSet<>();
-    private Set<String> selectedReligions = new HashSet<>();
     private Set<String> selectedMonths = new HashSet<>();
 
     @SuppressLint("MissingInflatedId")
@@ -53,17 +52,14 @@ public class MainActivity extends BaseActivity {
         language_layout_button = findViewById(R.id.language_layout_button);
         GridLayout languageGrid = findViewById(R.id.language_filter_grid);
         GridLayout continentGrid = findViewById(R.id.continent_filter_grid);
-        GridLayout religionGrid = findViewById(R.id.religion_filter_grid);
         GridLayout bestMonthsToVisitGrid = findViewById(R.id.month_filter_grid);
 
         String[] languages = {getString(R.string.english), getString(R.string.spanish), getString(R.string.french), getString(R.string.german), getString(R.string.italian), getString(R.string.portuguese), getString(R.string.dutch), getString(R.string.arabic), getString(R.string.russian), getString(R.string.chinese), getString(R.string.malay), getString(R.string.hindi), getString(R.string.korean)};
         String[] continents = {getString(R.string.north_america), getString(R.string.south_america), getString(R.string.europe), getString(R.string.africa), getString(R.string.asia), getString(R.string.australasia)};
-        String[] religions = {getString(R.string.christianity), getString(R.string.islam), getString(R.string.buddhism), getString(R.string.hinduism), getString(R.string.judaism)};
         String[] months = {getString(R.string.january), getString(R.string.february), getString(R.string.march), getString(R.string.april), getString(R.string.may), getString(R.string.june), getString(R.string.july), getString(R.string.august), getString(R.string.september), getString(R.string.october), getString(R.string.november), getString(R.string.december)};
 
         addFilterButtons(languageGrid, languages, selectedLanguages);
         addFilterButtons(continentGrid, continents, selectedContinents);
-        addFilterButtons(religionGrid, religions, selectedReligions);
         addFilterButtons(bestMonthsToVisitGrid, months, selectedMonths);
 
         countries = CountryData.getCountriesInfo(this);
@@ -106,7 +102,6 @@ public class MainActivity extends BaseActivity {
             intent.putExtra("countryCapital", selectedCountry.getCapital());
             intent.putExtra("countryPopulation", selectedCountry.getPopulation());
             intent.putExtra("countryLanguage", selectedCountry.getLanguage());
-            intent.putExtra("countryReligion", selectedCountry.getReligion());
             intent.putExtra("countryContinent", selectedCountry.getContinent());
             intent.putExtra("countryArea", selectedCountry.getArea());
             intent.putExtra("countryFlag", selectedCountry.getFlagResId());
@@ -184,7 +179,6 @@ public class MainActivity extends BaseActivity {
                                 country.getLanguage().toLowerCase().contains(language.toLowerCase()));
             }
             boolean matchesContinent = selectedContinents.isEmpty() || selectedContinents.contains(country.getContinent());
-            boolean matchesReligion = selectedReligions.isEmpty() || selectedReligions.contains(country.getReligion());
             boolean matchesMonth = true;
             if (!selectedMonths.isEmpty()) {
                 matchesMonth = false; // Initialize to false, will set to true if we find a match
@@ -200,7 +194,7 @@ public class MainActivity extends BaseActivity {
                 }
             }
 
-            if (matchesSearch && matchesLanguage && matchesContinent && matchesReligion && matchesMonth) {
+            if (matchesSearch && matchesLanguage && matchesContinent && matchesMonth) {
                 filteredCountries.add(country);
             }
         }

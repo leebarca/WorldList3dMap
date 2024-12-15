@@ -48,7 +48,6 @@
     <string name="language">Язык</string>
     <string name="continent">Континент</string>
     <string name="best_months_to_visit">Лучшие месяцы для посещения</string>
-    <string name="religion">Религия</string>
     <string name="no_countries_found">Страны не найдены</string>
     <string name="planning_your_trip">Планирование вашей поездки</string>
     <string name="flights_icon">Иконка рейсов</string>
@@ -104,7 +103,6 @@
     <string name="info_icon">Иконка информации</string>
     <string name="area_icon">Иконка района</string>
     <string name="continent_icon">Иконка континента</string>
-    <string name="religion_icon">Иконка религии</string>
     <string name="language_icon">Иконка языка</string>
     <string name="population_icon">Иконка населения</string>
     <string name="capital_icon">Иконка столицы</string>
@@ -134,11 +132,6 @@
     <string name="asia">Азия</string>
     <string name="africa">Африка</string>
     <string name="europe">Европа</string>
-    <string name="judaism">Иудаизм</string>
-    <string name="hinduism">Индуизм</string>
-    <string name="buddhism">Буддизм</string>
-    <string name="islam">Ислам</string>
-    <string name="christianity">Христианство</string>
     <string name="january">Январь</string>
     <string name="february">Февраль</string>
     <string name="march">Март</string>

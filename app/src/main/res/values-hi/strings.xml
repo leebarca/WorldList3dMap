@@ -48,7 +48,6 @@
     <string name="language">भाषा</string>
     <string name="continent">महाद्वीप</string>
     <string name="best_months_to_visit">यात्रा के लिए सबसे अच्छे महीने</string>
-    <string name="religion">धर्म</string>
     <string name="no_countries_found">कोई देश नहीं मिला</string>
     <string name="planning_your_trip">आपकी यात्रा की योजना बनाना</string>
     <string name="flights_icon">उड़ानों का आइकन</string>
@@ -104,7 +103,6 @@
     <string name="info_icon">जानकारी आइकन</string>
     <string name="area_icon">क्षेत्र आइकन</string>
     <string name="continent_icon">महाद्वीप आइकन</string>
-    <string name="religion_icon">धर्म आइकन</string>
     <string name="language_icon">भाषा आइकन</string>
     <string name="population_icon">जनसंख्या आइकन</string>
     <string name="capital_icon">राजधानी आइकन</string>
@@ -134,11 +132,6 @@
     <string name="asia">एशिया</string>
     <string name="africa">अफ्रीका</string>
     <string name="europe">यूरोप</string>
-    <string name="judaism">यहूदी धर्म</string>
-    <string name="hinduism">हिंदू धर्म</string>
-    <string name="buddhism">बौद्ध धर्म</string>
-    <string name="islam">इस्लाम</string>
-    <string name="christianity">ईसाई धर्म</string>
     <string name="january">जनवरी</string>
     <string name="february">फरवरी</string>
     <string name="march">मार्च</string>

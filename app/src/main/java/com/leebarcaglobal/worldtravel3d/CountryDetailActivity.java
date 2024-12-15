@@ -26,7 +26,7 @@ public class CountryDetailActivity extends BaseActivity {
         TextView countryCapital = findViewById(R.id.textView_capital);
         TextView countryPopulation = findViewById(R.id.textView_population);
         TextView countryLanguage = findViewById(R.id.textView_languages);
-        TextView countryReligion = findViewById(R.id.textView_religion);
+        TextView countryCurrency = findViewById(R.id.textView_currency);
         TextView countryContinent = findViewById(R.id.textView_continent);
         TextView countryArea = findViewById(R.id.textView_area);
         infoIcon = findViewById(R.id.open_info_element);
@@ -41,7 +41,7 @@ public class CountryDetailActivity extends BaseActivity {
         countryCapital.setText(getIntent().getStringExtra("countryCapital"));
         countryPopulation.setText(getIntent().getStringExtra("countryPopulation"));
         countryLanguage.setText(getIntent().getStringExtra("countryLanguage"));
-        countryReligion.setText(getIntent().getStringExtra("countryReligion"));
+        countryCurrency.setText(getIntent().getStringExtra("currency"));
         countryContinent.setText(getIntent().getStringExtra("countryContinent"));
         countryArea.setText(getIntent().getStringExtra("countryArea"));
 
@@ -62,7 +62,6 @@ public class CountryDetailActivity extends BaseActivity {
         String[] weather = getIntent().getStringArrayExtra("weatherInfo");
         String[] cuisine = getIntent().getStringArrayExtra("cuisineArray");
         String[] safety = getIntent().getStringArrayExtra("safetyArray");
-        String currency = getIntent().getStringExtra("currency");
         String country_name = getIntent().getStringExtra("countryName");
 
         infoIcon.setOnClickListener(v -> {
@@ -75,7 +74,6 @@ public class CountryDetailActivity extends BaseActivity {
             intent.putExtra("weather_info", weather);
             intent.putExtra("cuisine_info", cuisine);
             intent.putExtra("safety_info", safety);
-            intent.putExtra("currency", currency);
             startActivity(intent);
         });
 

@@ -47,9 +47,7 @@
     <string name="filter_button">フィルターボタン</string>
     <string name="language">言語</string>
     <string name="continent">大陸</string>
-    <string name="best_months_to_visit">訪れるのに最適な月</string>
-    <string name="religion">宗教</string>
-    <string name="no_countries_found">国が見つかりません</string>
+    <string name="best_months_to_visit">訪れるのに最適な月</string><string name="no_countries_found">国が見つかりません</string>
     <string name="planning_your_trip">旅行の計画</string>
     <string name="flights_icon">フライトアイコン</string>
     <string name="flights">フライト</string>
@@ -104,7 +102,6 @@
     <string name="info_icon">情報のアイコン</string>
     <string name="area_icon">地域のアイコン</string>
     <string name="continent_icon">大陸のアイコン</string>
-    <string name="religion_icon">宗教のアイコン</string>
     <string name="language_icon">言語のアイコン</string>
     <string name="population_icon">人口のアイコン</string>
     <string name="capital_icon">首都のアイコン</string>
@@ -134,11 +131,6 @@
     <string name="asia">アジア</string>
     <string name="africa">アフリカ</string>
     <string name="europe">ヨーロッパ</string>
-    <string name="judaism">ユダヤ教</string>
-    <string name="hinduism">ヒンドゥー教</string>
-    <string name="buddhism">仏教</string>
-    <string name="islam">イスラム教</string>
-    <string name="christianity">キリスト教</string>
     <string name="january">1月</string>
     <string name="february">2月</string>
     <string name="march">3月</string>

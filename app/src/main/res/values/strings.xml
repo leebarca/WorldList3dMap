@@ -47,7 +47,6 @@
     <string name="language">Language</string>
     <string name="continent">Continent</string>
     <string name="best_months_to_visit">Best Months To Visit</string>
-    <string name="religion">Religion</string>
     <string name="no_countries_found">No countries found</string>
     <string name="planning_your_trip">Planning Your Trip</string>
     <string name="flights_icon">Flights Icon</string>
@@ -103,7 +102,6 @@
     <string name="info_icon">Info Icon</string>
     <string name="area_icon">Area Icon</string>
     <string name="continent_icon">Continent Icon</string>
-    <string name="religion_icon">Religion Icon</string>
     <string name="language_icon">Language Icon</string>
     <string name="population_icon">Population Icon</string>
     <string name="capital_icon">Capital Icon</string>
@@ -133,11 +131,6 @@
     <string name="asia">Asia</string>
     <string name="africa">Africa</string>
     <string name="europe">Europe</string>
-    <string name="judaism">Judaism</string>
-    <string name="hinduism">Hinduism</string>
-    <string name="buddhism">Buddhism</string>
-    <string name="islam">Islam</string>
-    <string name="christianity">Christianity</string>
     <string name="january">January</string>
     <string name="february">February</string>
     <string name="march">March</string>

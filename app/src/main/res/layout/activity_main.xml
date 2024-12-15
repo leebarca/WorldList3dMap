@@ -108,23 +108,6 @@
                 android:columnCount="2"
                 android:layout_marginBottom="8dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/religion"
-                android:textSize="16dp"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:fontFamily="@font/open_sans"
-                android:layout_marginTop="8dp" />
-
-            <GridLayout
-                android:id="@+id/religion_filter_grid"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:columnCount="2"
-                android:layout_marginBottom="8dp" />
-
         </LinearLayout>
     </ScrollView>
 

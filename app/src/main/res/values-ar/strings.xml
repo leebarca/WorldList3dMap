@@ -48,7 +48,6 @@
     <string name="language">اللغة</string>
     <string name="continent">القارة</string>
     <string name="best_months_to_visit">أفضل الأشهر للزيارة</string>
-    <string name="religion">الدين</string>
     <string name="no_countries_found">لم يتم العثور على دول</string>
     <string name="planning_your_trip">تخطيط رحلتك</string>
     <string name="flights_icon">أيقونة</string>
@@ -104,7 +103,6 @@
     <string name="info_icon">رمز المعلومات</string>
     <string name="area_icon">رمز المنطقة</string>
     <string name="continent_icon">رمز القارة</string>
-    <string name="religion_icon">رمز الدين</string>
     <string name="language_icon">رمز اللغة</string>
     <string name="population_icon">رمز السكان</string>
     <string name="capital_icon">رمز العاصمة</string>
@@ -134,11 +132,6 @@
     <string name="asia">آسيا</string>
     <string name="africa">أفريقيا</string>
     <string name="europe">أوروبا</string>
-    <string name="judaism">اليهودية</string>
-    <string name="hinduism">الهندوسية</string>
-    <string name="buddhism">البوذية</string>
-    <string name="islam">الإسلام</string>
-    <string name="christianity">المسيحية</string>
     <string name="january">يناير</string>
     <string name="february">فبراير</string>
     <string name="march">مارس</string>

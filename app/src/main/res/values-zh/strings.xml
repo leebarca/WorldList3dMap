@@ -48,7 +48,6 @@
     <string name="language">语言</string>
     <string name="continent">大陆</string>
     <string name="best_months_to_visit">最佳访问月份</string>
-    <string name="religion">宗教</string>
     <string name="no_countries_found">未找到国家</string>
     <string name="planning_your_trip">规划您的旅行</string>
     <string name="flights_icon">航班图标</string>
@@ -104,7 +103,6 @@
     <string name="info_icon">信息图标</string>
     <string name="area_icon">区域图标</string>
     <string name="continent_icon">大陆图标</string>
-    <string name="religion_icon">宗教图标</string>
     <string name="language_icon">语言图标</string>
     <string name="population_icon">人口图标</string>
     <string name="capital_icon">首都图标</string>
@@ -134,11 +132,6 @@
     <string name="asia">亚洲</string>
     <string name="africa">非洲</string>
     <string name="europe">欧洲</string>
-    <string name="judaism">犹太教</string>
-    <string name="hinduism">印度教</string>
-    <string name="buddhism">佛教</string>
-    <string name="islam">伊斯兰教</string>
-    <string name="christianity">基督教</string>
     <string name="january">一月</string>
     <string name="february">二月</string>
     <string name="march">三月</string>

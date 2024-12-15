@@ -45,7 +45,6 @@ public class CountryDetailsInfo extends BaseActivity {
         TextView safety_text = findViewById(R.id.safety_and_security);
         TextView summary_expand = findViewById(R.id.button_expand_summary);
         LinearLayout summary_expand_layout = findViewById(R.id.summary_expand_layout);
-        TextView currency_value = findViewById(R.id.textView_currency_content);
         ImageButton back_button = findViewById(R.id.back_button);
 
         int[] bestTimesToVisit = getIntent().getIntArrayExtra("bestTimesToVisit");
@@ -55,7 +54,6 @@ public class CountryDetailsInfo extends BaseActivity {
         String[] weather = getIntent().getStringArrayExtra("weather_info");
         String[] cuisine = getIntent().getStringArrayExtra("cuisine_info");
         String[] safety = getIntent().getStringArrayExtra("safety_info");
-        String currencyInfo = getIntent().getStringExtra("currency");
 
         // Define your TextView references
         TextView[] monthTextViews = {jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec};
@@ -139,7 +137,6 @@ public class CountryDetailsInfo extends BaseActivity {
         countryInfoTextView.setText(countryInfo);
         facts.setText(fact_info);
         website.setText(website_info);
-        currency_value.setText(currencyInfo);
 
         back_button.setOnClickListener(v -> {
             finish();

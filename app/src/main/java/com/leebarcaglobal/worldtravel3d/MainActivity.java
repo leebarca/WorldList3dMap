@@ -14,6 +14,7 @@ import android.widget.ListView;
 import android.widget.EditText;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import androidx.core.splashscreen.SplashScreen;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -38,6 +39,8 @@ public class MainActivity extends BaseActivity {
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

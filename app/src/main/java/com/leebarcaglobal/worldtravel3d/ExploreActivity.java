@@ -195,18 +195,18 @@ public class ExploreActivity extends BaseActivity {
         warmGetawayMap.put(10, List.of(getString(R.string.thailand), getString(R.string.mexico), getString(R.string.vietnam), getString(R.string.cambodia), getString(R.string.south_africa)));
         warmGetawayMap.put(11, List.of(getString(R.string.australia), getString(R.string.new_zealand), getString(R.string.fiji), getString(R.string.brazil), getString(R.string.sri_lanka)));
 
-        coolGetawayMap.put(0, List.of(getString(R.string.thailand), getString(R.string.australia), getString(R.string.switzerland), getString(R.string.south_africa), getString(R.string.costa_rica)));
-        coolGetawayMap.put(1, List.of(getString(R.string.brazil), getString(R.string.new_zealand), getString(R.string.japan), getString(R.string.maldives), getString(R.string.vietnam)));
-        coolGetawayMap.put(2, List.of(getString(R.string.morocco), getString(R.string.argentina), getString(R.string.ireland), getString(R.string.india), getString(R.string.peru)));
-        coolGetawayMap.put(3, List.of(getString(R.string.netherlands), getString(R.string.japan), getString(R.string.greece), getString(R.string.south_korea), getString(R.string.jordan)));
-        coolGetawayMap.put(4, List.of(getString(R.string.italy), getString(R.string.canada), getString(R.string.united_kingdom), getString(R.string.nepal), getString(R.string.botswana)));
-        coolGetawayMap.put(5, List.of(getString(R.string.iceland), getString(R.string.france), getString(R.string.kenya), getString(R.string.portugal), getString(R.string.indonesia)));
-        coolGetawayMap.put(6, List.of(getString(R.string.united_states), getString(R.string.tanzania), getString(R.string.norway), getString(R.string.peru), getString(R.string.canada)));
-        coolGetawayMap.put(7, List.of(getString(R.string.norway), getString(R.string.ecuador), getString(R.string.south_africa), getString(R.string.croatia), getString(R.string.japan)));
-        coolGetawayMap.put(8, List.of(getString(R.string.italy), getString(R.string.turkey), getString(R.string.south_africa), getString(R.string.canada), getString(R.string.china)));
-        coolGetawayMap.put(9, List.of(getString(R.string.japan), getString(R.string.greece), getString(R.string.united_states), getString(R.string.bhutan), getString(R.string.morocco)));
-        coolGetawayMap.put(10, List.of(getString(R.string.thailand), getString(R.string.mexico), getString(R.string.vietnam), getString(R.string.egypt), getString(R.string.argentina)));
-        coolGetawayMap.put(11, List.of(getString(R.string.finland), getString(R.string.australia), getString(R.string.mexico), getString(R.string.austria), getString(R.string.south_africa)));
+        coolGetawayMap.put(0, List.of(getString(R.string.united_states), getString(R.string.italy), getString(R.string.sweden), getString(R.string.andorra), getString(R.string.germany)));
+        coolGetawayMap.put(1, List.of(getString(R.string.norway), getString(R.string.finland), getString(R.string.new_zealand), getString(R.string.slovenia), getString(R.string.spain)));
+        coolGetawayMap.put(2, List.of(getString(R.string.iceland), getString(R.string.bulgaria), getString(R.string.france), getString(R.string.switzerland), getString(R.string.united_states)));
+        coolGetawayMap.put(3, List.of(getString(R.string.canada), getString(R.string.austria), getString(R.string.italy), getString(R.string.japan), getString(R.string.united_kingdom)));
+        coolGetawayMap.put(4, List.of(getString(R.string.chile), getString(R.string.argentina), getString(R.string.switzerland), getString(R.string.austria), getString(R.string.new_zealand)));
+        coolGetawayMap.put(5, List.of(getString(R.string.new_zealand), getString(R.string.australia), getString(R.string.argentina), getString(R.string.chile), getString(R.string.france)));
+        coolGetawayMap.put(6, List.of(getString(R.string.new_zealand), getString(R.string.australia), getString(R.string.chile), getString(R.string.argentina), getString(R.string.switzerland)));
+        coolGetawayMap.put(7, List.of(getString(R.string.argentina), getString(R.string.chile), getString(R.string.new_zealand), getString(R.string.australia), getString(R.string.south_africa)));
+        coolGetawayMap.put(8, List.of(getString(R.string.chile), getString(R.string.argentina), getString(R.string.switzerland), getString(R.string.austria), getString(R.string.italy)));
+        coolGetawayMap.put(9, List.of(getString(R.string.austria), getString(R.string.switzerland), getString(R.string.norway), getString(R.string.canada), getString(R.string.united_states)));
+        coolGetawayMap.put(10, List.of(getString(R.string.canada), getString(R.string.united_states), getString(R.string.austria), getString(R.string.switzerland), getString(R.string.france)));
+        coolGetawayMap.put(11, List.of(getString(R.string.switzerland), getString(R.string.austria), getString(R.string.japan), getString(R.string.canada), getString(R.string.france)));
 
         List<String> currentMonthCountries;
         if (selectedOption.equals(getString(R.string.winter_escapes))) {

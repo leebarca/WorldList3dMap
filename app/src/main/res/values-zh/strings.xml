@@ -38,6 +38,9 @@
     <string name="smallest_population_countries">前五小人口</string>
     <string name="most_visited_countries">前五最受欢迎</string>
     <string name="least_visited_countries">前五最少访问</string>
+    <string name="maps">地图</string>
+    <string name="maps_error">没有网络连接，无法加载 Google 地图</string>
+    <string name="view_maps">在谷歌地图中查看</string>
     <string name="destination">目的地</string>
     <string name="departure_date">出发日期</string>
     <string name="return_date">返回日期</string>

@@ -1,20 +1,32 @@
 package com.leebarcaglobal.worldtravel3d;
 
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 public class CountryDetailActivity extends BaseActivity {
 
     private LinearLayout infoIcon;
     private LinearLayout attractionsIcon;
     private LinearLayout planningIcon;
+    private LinearLayout mapIcon;
 
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint({"MissingInflatedId",
+            "SetJavaScriptEnabled",
+            "ClickableViewAccessibility"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +44,7 @@ public class CountryDetailActivity extends BaseActivity {
         infoIcon = findViewById(R.id.open_info_element);
         attractionsIcon = findViewById(R.id.open_attractions_element);
         planningIcon = findViewById(R.id.open_offers_element);
+        mapIcon = findViewById(R.id.button_expand_map);
         ImageButton back_button = findViewById(R.id.back_button);
 
         // Retrieve values from Intent
@@ -95,6 +108,13 @@ public class CountryDetailActivity extends BaseActivity {
         planningIcon.setOnClickListener(v -> {
             // Handle click event
             Intent intent = new Intent(CountryDetailActivity.this, CountryDetailsPlanning.class);
+            intent.putExtra("country_name", country_name);
+            startActivity(intent);
+        });
+
+        mapIcon.setOnClickListener(v -> {
+            // Handle click event
+            Intent intent = new Intent(CountryDetailActivity.this, CountryDetailsMap.class);
             intent.putExtra("country_name", country_name);
             startActivity(intent);
         });

@@ -38,6 +38,9 @@
     <string name="smallest_population_countries">가장 인구가 적은 5개</string>
     <string name="most_visited_countries">가장 많이 방문한 5개</string>
     <string name="least_visited_countries">가장 적게 방문한 5개</string>
+    <string name="maps">지도</string>
+    <string name="maps_error">인터넷 연결 없음, Google Maps를 로드할 수 없습니다</string>
+    <string name="view_maps">Google 지도에서 보기</string>
     <string name="destination">목적지</string>
     <string name="departure_date">출발 날짜</string>
     <string name="return_date">귀국 날짜</string>

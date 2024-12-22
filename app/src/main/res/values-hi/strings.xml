@@ -38,6 +38,9 @@
     <string name="smallest_population_countries">शीर्ष 5 सबसे छोटी जनसंख्या</string>
     <string name="most_visited_countries">शीर्ष 5 सबसे अधिक देखे जाने वाले</string>
     <string name="least_visited_countries">शीर्ष 5 सबसे कम देखे जाने वाले</string>
+    <string name="maps">नक्शा</string>
+    <string name="maps_error">इंटरनेट कनेक्शन नहीं है, Google Maps लोड नहीं हो सकता</string>
+    <string name="view_maps">गूगल मैप्स में देखें</string>
     <string name="destination">गंतव्य</string>
     <string name="departure_date">प्रस्थान तिथि</string>
     <string name="return_date">वापसी तिथि</string>

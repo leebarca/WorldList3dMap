@@ -38,6 +38,9 @@
     <string name="smallest_population_countries">أصغر 5 سكان</string>
     <string name="most_visited_countries">أكثر 5 زيارة</string>
     <string name="least_visited_countries">أقل 5 زيارة</string>
+    <string name="maps">خريطة</string>
+    <string name="maps_error">لا يوجد اتصال بالإنترنت، لا يمكن تحميل خرائط Google</string>
+    <string name="view_maps">عرض في خرائط جوجل</string>
     <string name="destination">وجهة</string>
     <string name="departure_date">تاريخ المغادرة</string>
     <string name="return_date">تاريخ العودة</string>

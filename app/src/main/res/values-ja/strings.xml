@@ -38,6 +38,9 @@
     <string name="smallest_population_countries">人口が最も少ないトップ5</string>
     <string name="most_visited_countries">最も訪問されたトップ5</string>
     <string name="least_visited_countries">最も訪問されていないトップ5</string>
+    <string name="maps">地図</string>
+    <string name="maps_error">インターネット接続がありません。Google マップを読み込めません</string>
+    <string name="view_maps">Google マップで表示</string>
     <string name="destination">目的地</string>
     <string name="departure_date">出発日</string>
     <string name="return_date">帰国日</string>

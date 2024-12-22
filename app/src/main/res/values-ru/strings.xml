@@ -38,6 +38,9 @@
     <string name="smallest_population_countries">Топ 5 самых маленьких по населению</string>
     <string name="most_visited_countries">Топ 5 самых посещаемых</string>
     <string name="least_visited_countries">Топ 5 наименее посещаемых</string>
+    <string name="maps">Карта</string>
+    <string name="maps_error">Нет подключения к интернету, невозможно загрузить Google Maps</string>
+    <string name="view_maps">Посмотреть в Google Картах</string>
     <string name="destination">Направление</string>
     <string name="departure_date">Дата вылета</string>
     <string name="return_date">Дата возвращения</string>
@@ -97,9 +100,9 @@
     <string name="website_icon">Иконка сайта</string>
     <string name="plan_your_trip">Планируйте свою поездку</string>
     <string name="offers_icon">Иконка предложений</string>
-    <string name="attractions">Достопримы</string>
+    <string name="attractions">Досты</string>
     <string name="attractions_icon">Иконка достопримечательностей</string>
-    <string name="info">Информация</string>
+    <string name="info">Инфо</string>
     <string name="info_icon">Иконка информации</string>
     <string name="area_icon">Иконка района</string>
     <string name="continent_icon">Иконка континента</string>

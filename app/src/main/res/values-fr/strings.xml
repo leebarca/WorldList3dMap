@@ -38,6 +38,9 @@
     <string name="smallest_population_countries">Top 5 des plus petites populations</string>
     <string name="most_visited_countries">Top 5 des destinations les plus visitées</string>
     <string name="least_visited_countries">Top 5 des destinations les moins visitées</string>
+    <string name="maps">Carte</string>
+    <string name="maps_error">Pas de connexion Internet, impossible de charger Google Maps</string>
+    <string name="view_maps">Voir dans Google Maps</string>
     <string name="destination">Destination</string>
     <string name="departure_date">Date de départ</string>
     <string name="return_date">Date de retour</string>

@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/app_background_color">
@@ -8,15 +9,15 @@
         android:id="@+id/back_button"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:layout_margin="8dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
         android:background="@drawable/button_background"
-        android:src="@drawable/return_button"
-        android:contentDescription="@string/country_details"
-        android:scaleType="centerInside"
         android:clickable="true"
-        android:focusable="true" />
+        android:contentDescription="@string/country_details"
+        android:focusable="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/return_button" />
 
     <!-- Main Content -->
     <ScrollView
@@ -24,295 +25,332 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/back_button"
-        android:padding="8dp"
-        android:background="@color/app_background_color">
+        android:background="@color/app_background_color"
+        android:padding="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:orientation="vertical"
-            android:paddingBottom="16dp"
-            android:gravity="center_horizontal">
+            android:paddingBottom="16dp">
 
-        <!-- Country Image -->
-        <ImageView
-            android:id="@+id/map_container"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_marginBottom="16dp"
-            android:contentDescription="@string/country_3d_image"
-            android:scaleType="centerCrop" />
-
-        <!-- Country Name -->
-        <TextView
-            android:id="@+id/countryName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/open_sans"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"
-            android:gravity="center" />
-
-        <!-- Country Flag -->
-        <ImageView
-            android:id="@+id/country_flag"
-            android:layout_width="120dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="@string/country_flag"
-            android:layout_gravity="center_horizontal" />
-
-        <!-- Details Grid -->
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnCount="3"
-            android:layout_marginTop="16dp">
-
-            <!-- Capital -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_columnWeight="1"
-                android:padding="8dp">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:contentDescription="@string/capital_icon"
-                    android:src="@drawable/capital" />
-                <TextView
-                    android:id="@+id/textView_capital"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black"
-                    android:gravity="center"
-                    android:fontFamily="@font/open_sans" />
-            </LinearLayout>
-
-            <!-- Population -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_columnWeight="1"
-                android:padding="8dp">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:contentDescription="@string/population_icon"
-                    android:src="@drawable/population" />
-                <TextView
-                    android:id="@+id/textView_population"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black"
-                    android:gravity="center"
-                    android:fontFamily="@font/open_sans" />
-            </LinearLayout>
-
-            <!-- Languages -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_columnWeight="1"
-                android:padding="8dp">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:contentDescription="@string/language_icon"
-                    android:src="@drawable/languages" />
-                <TextView
-                    android:id="@+id/textView_languages"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black"
-                    android:gravity="center"
-                    android:fontFamily="@font/open_sans" />
-            </LinearLayout>
-
-            <!-- Religion -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_columnWeight="1"
-                android:padding="8dp">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:contentDescription="@string/currency_icon"
-                    android:src="@drawable/currency" />
-                <TextView
-                    android:id="@+id/textView_currency"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black"
-                    android:gravity="center"
-                    android:fontFamily="@font/open_sans" />
-            </LinearLayout>
-
-            <!-- Continent -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_columnWeight="1"
-                android:padding="8dp">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:contentDescription="@string/continent_icon"
-                    android:src="@drawable/continent" />
-                <TextView
-                    android:id="@+id/textView_continent"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black"
-                    android:gravity="center"
-                    android:fontFamily="@font/open_sans" />
-            </LinearLayout>
-
-            <!-- Area -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_columnWeight="1"
-                android:padding="8dp">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:contentDescription="@string/area_icon"
-                    android:src="@drawable/area" />
-                <TextView
-                    android:id="@+id/textView_area"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black"
-                    android:gravity="center"
-                    android:fontFamily="@font/open_sans" />
-            </LinearLayout>
-        </GridLayout>
-
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnCount="3"
-            android:layout_marginTop="10dp">
-
-        <!-- Clickable Info Icon -->
-        <LinearLayout
-            android:id="@+id/open_info_element"
-            android:clickable="true"
-            android:focusable="true"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_columnWeight="1"
-            android:padding="8dp"
-            android:background="@drawable/button_background"
-            android:backgroundTintMode="src_over"
-            android:elevation="4dp">
-
+            <!-- Country Image -->
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:contentDescription="@string/info_icon"
-                android:src="@drawable/info" />
+                android:id="@+id/map_container"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="@string/country_3d_image"
+                android:scaleType="centerCrop" />
 
+            <!-- Country Name -->
             <TextView
+                android:id="@+id/countryName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/info"
-                android:textSize="14sp"
-                android:textColor="@android:color/black"
+                android:fontFamily="@font/open_sans"
                 android:gravity="center"
-                android:fontFamily="@font/open_sans" />
-        </LinearLayout>
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
 
-        <!-- Clickable Attractions Icon -->
-        <LinearLayout
-            android:id="@+id/open_attractions_element"
-            android:clickable="true"
-            android:focusable="true"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_columnWeight="1"
-            android:padding="8dp"
-            android:background="@drawable/button_background"
-            android:backgroundTintMode="src_over"
-            android:elevation="4dp">
-
+            <!-- Country Flag -->
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:contentDescription="@string/attractions_icon"
-                android:src="@drawable/attractions" />
+                android:id="@+id/country_flag"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@string/country_flag" />
 
-            <TextView
-                android:layout_width="wrap_content"
+            <!-- Details Grid -->
+            <GridLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/attractions"
-                android:textSize="14sp"
-                android:textColor="@android:color/black"
-                android:gravity="center"
-                android:fontFamily="@font/open_sans" />
-        </LinearLayout>
+                android:layout_marginTop="2dp"
+                android:columnCount="3">
 
-        <!-- Clickable Offers Icon -->
-        <LinearLayout
-            android:id="@+id/open_offers_element"
-            android:clickable="true"
-            android:focusable="true"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:layout_columnWeight="1"
-            android:padding="8dp"
-            android:background="@drawable/button_background"
-            android:backgroundTintMode="src_over"
-            android:elevation="4dp">
+                <!-- Capital -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:contentDescription="@string/offers_icon"
-                android:src="@drawable/offers" />
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/capital_icon"
+                        android:src="@drawable/capital" />
 
-            <TextView
-                android:layout_width="wrap_content"
+                    <TextView
+                        android:id="@+id/textView_capital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Population -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/population_icon"
+                        android:src="@drawable/population" />
+
+                    <TextView
+                        android:id="@+id/textView_population"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Languages -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/language_icon"
+                        android:src="@drawable/languages" />
+
+                    <TextView
+                        android:id="@+id/textView_languages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Religion -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/currency_icon"
+                        android:src="@drawable/currency" />
+
+                    <TextView
+                        android:id="@+id/textView_currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Continent -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/continent_icon"
+                        android:src="@drawable/continent" />
+
+                    <TextView
+                        android:id="@+id/textView_continent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Area -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/area_icon"
+                        android:src="@drawable/area" />
+
+                    <TextView
+                        android:id="@+id/textView_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/planner"
-                android:textSize="14sp"
-                android:textColor="@android:color/black"
-                android:gravity="center"
-                android:fontFamily="@font/open_sans" />
+                android:layout_marginTop="10dp"
+                android:columnCount="4">
+
+                <!-- Clickable Info Icon -->
+                <LinearLayout
+                    android:id="@+id/open_info_element"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/button_background"
+                    android:backgroundTintMode="src_over"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/info_icon"
+                        android:src="@drawable/info" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center"
+                        android:text="@string/info"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Clickable Attractions Icon -->
+                <LinearLayout
+                    android:id="@+id/open_attractions_element"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/button_background"
+                    android:backgroundTintMode="src_over"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/attractions_icon"
+                        android:src="@drawable/attractions" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center"
+                        android:text="@string/attractions"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Clickable Offers Icon -->
+                <LinearLayout
+                    android:id="@+id/open_offers_element"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/button_background"
+                    android:backgroundTintMode="src_over"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/offers_icon"
+                        android:src="@drawable/offers" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center"
+                        android:text="@string/planner"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Clickable Info Icon -->
+                <LinearLayout
+                    android:id="@+id/button_expand_map"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/button_background"
+                    android:backgroundTintMode="src_over"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/maps"
+                        android:src="@drawable/map_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center"
+                        android:text="@string/maps"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </GridLayout>
         </LinearLayout>
-        </GridLayout>
-    </LinearLayout>
-</ScrollView>
+    </ScrollView>
 </RelativeLayout>

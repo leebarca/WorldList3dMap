@@ -38,7 +38,7 @@
     <string name="most_visited_countries">Top 5 Most Visited</string>
     <string name="least_visited_countries">Top 5 Least Visited</string>
     <string name="maps">Map</string>
-    <string name="maps_error">No internet connection, can't load Google Maps</string>
+    <string name="maps_error">No internet connection, cant load Google Maps</string>
     <string name="view_maps">View in Google Maps</string>
     <string name="destination">Destination</string>
     <string name="departure_date">Departure Date</string>

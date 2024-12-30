@@ -193,7 +193,16 @@ public class PackagesFragment extends Fragment {
 
     private void openUrl(String url) {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-        startActivity(intent);
+        intent.setPackage("com.expedia.bookings");
+
+        try {
+            // Attempt to open the URL using the Expedia app
+            startActivity(intent);
+        } catch (Exception e) {
+            // If the Expedia app is not installed, open the URL in a web browser
+            intent.setPackage(null);
+            startActivity(intent);
+        }
     }
 
     // Callback interface for date selection

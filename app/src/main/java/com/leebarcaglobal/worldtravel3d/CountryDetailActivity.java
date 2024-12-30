@@ -1,21 +1,16 @@
 package com.leebarcaglobal.worldtravel3d;
 
 import android.annotation.SuppressLint;
-import android.app.Dialog;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
-import android.view.Window;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import android.util.Log;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 public class CountryDetailActivity extends BaseActivity {
 
@@ -113,10 +108,28 @@ public class CountryDetailActivity extends BaseActivity {
         });
 
         mapIcon.setOnClickListener(v -> {
-            // Handle click event
-            Intent intent = new Intent(CountryDetailActivity.this, CountryDetailsMap.class);
-            intent.putExtra("country_name", country_name);
-            startActivity(intent);
+            // Replace "CountryName" with the name of the country you want to show
+            Uri gmmIntentUri = Uri.parse("https://www.google.com/maps/search/?api=1&query=" + Uri.encode(country_name) + "&basemap=satellite");
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+
+            // Attempt to directly open Google Maps
+            mapIntent.setPackage("com.google.android.apps.maps");
+
+            try {
+                startActivity(mapIntent);
+            } catch (ActivityNotFoundException e) {
+                // Redirect user to Google Play Store to install or update Google Maps
+                try {
+                    Uri playStoreUri = Uri.parse("market://details?id=com.google.android.apps.maps");
+                    Intent playStoreIntent = new Intent(Intent.ACTION_VIEW, playStoreUri);
+                    startActivity(playStoreIntent);
+                } catch (ActivityNotFoundException e2) {
+                    // If Play Store is not available, open in a browser
+                    Uri browserUri = Uri.parse("https://play.google.com/store/apps/details?id=com.google.android.apps.maps");
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, browserUri);
+                    startActivity(browserIntent);
+                }
+            }
         });
 
         back_button.setOnClickListener(v -> {

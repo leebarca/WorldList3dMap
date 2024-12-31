@@ -106,12 +106,6 @@ public class FlightFragment extends Fragment {
             }
         });
 
-        Bundle args = getArguments();
-        if (args != null) {
-            String country = args.getString("country");
-            destination_string.setText(country);
-        }
-
         return view;
     }
 

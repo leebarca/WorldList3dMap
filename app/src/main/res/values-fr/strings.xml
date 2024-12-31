@@ -6,7 +6,8 @@
     <string name="explore">Explore</string>
     <string name="save">Sauvegarder</string>
     <string name="recommended">Pays Recommandés Ce Mois-ci</string>
-    <string name="add_trip">Ajouter un Voyage</string>
+    <string name="add_trip">Ajouter un voyage manuellement</string>
+    <string name="expedia_search">Rechercher ou réserver via Expedia</string>
     <string name="trip_empty">Vous n avez aucun voyage enregistré, ajoutez-en un !</string>
     <string name="edit">Modifier</string>
     <string name="view_trip">Voir le Voyage</string>

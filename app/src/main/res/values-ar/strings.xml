@@ -6,7 +6,8 @@
     <string name="explore">استكشاف</string>
     <string name="save">حفظ</string>
     <string name="recommended">الدول الموصى بها هذا الشهر</string>
-    <string name="add_trip">أضف رحلة</string>
+    <string name="add_trip">إضافة رحلة يدويًا</string>
+    <string name="expedia_search">البحث أو الحجز عبر Expedia</string>
     <string name="trip_empty">ليس لديك رحلات محفوظة، أضف واحدة!</string>
     <string name="edit">تعديل</string>
     <string name="view_trip">عرض الرحلة</string>

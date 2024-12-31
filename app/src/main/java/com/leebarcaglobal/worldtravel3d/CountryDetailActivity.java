@@ -16,7 +16,6 @@ public class CountryDetailActivity extends BaseActivity {
 
     private LinearLayout infoIcon;
     private LinearLayout attractionsIcon;
-    private LinearLayout planningIcon;
     private LinearLayout mapIcon;
 
     @SuppressLint({"MissingInflatedId",
@@ -38,7 +37,6 @@ public class CountryDetailActivity extends BaseActivity {
         TextView countryArea = findViewById(R.id.textView_area);
         infoIcon = findViewById(R.id.open_info_element);
         attractionsIcon = findViewById(R.id.open_attractions_element);
-        planningIcon = findViewById(R.id.open_offers_element);
         mapIcon = findViewById(R.id.button_expand_map);
         ImageButton back_button = findViewById(R.id.back_button);
 
@@ -97,13 +95,6 @@ public class CountryDetailActivity extends BaseActivity {
             intent.putExtra("firstAttractionImage", firstAttractionImage);
             intent.putExtra("secondAttractionImage", secondAttractionImage);
             intent.putExtra("thirdAttractionImage", thirdAttractionImage);
-            startActivity(intent);
-        });
-
-        planningIcon.setOnClickListener(v -> {
-            // Handle click event
-            Intent intent = new Intent(CountryDetailActivity.this, CountryDetailsPlanning.class);
-            intent.putExtra("country_name", country_name);
             startActivity(intent);
         });
 

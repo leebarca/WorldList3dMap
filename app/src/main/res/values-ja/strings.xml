@@ -6,7 +6,8 @@
     <string name="explore">探検する</string>
     <string name="save">保存する</string>
     <string name="recommended">今月のおすすめ国</string>
-    <string name="add_trip">旅行を追加</string>
+    <string name="add_trip">手動で旅行を追加</string>
+    <string name="expedia_search">Expediaで検索または予約</string>
     <string name="trip_empty">保存された旅行はありません。1つ追加してください！</string>
     <string name="edit">編集</string>
     <string name="view_trip">旅行を見る</string>

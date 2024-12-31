@@ -82,12 +82,6 @@ public class ActivitiesFragment extends Fragment {
             }
         });
 
-        Bundle args = getArguments();
-        if (args != null) {
-            String country = args.getString("country");
-            destination_string.setText(country);
-        }
-
         return view;
     }
 
@@ -148,12 +142,22 @@ public class ActivitiesFragment extends Fragment {
     }
 
     private String constructUrl(String destination, String departureDate, String returnDate, int session) {
-        return
-                "https://www.expedia.com/things-to-do/search" +
-                        "?location=" + destination +
-                        "&d1=" + departureDate +
-                        "&d2=" + returnDate +
-                        "&sort=RECOMMENDED&swp=on&session=" + session;
+        try {
+            // Encode the dates to match the required format
+            String encodedStartDate = Uri.encode(departureDate);
+            String encodedEndDate = Uri.encode(returnDate);
+
+            // Construct the URL with encoded dates
+            return "https://www.expedia.com/things-to-do/search" +
+                    "?location=" + destination +
+                    "&startDate=" + encodedStartDate +
+                    "&endDate=" + encodedEndDate +
+                    "&sort=RECOMMENDED&swp=on&session=" + session;
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
     private void openUrl(String url) {

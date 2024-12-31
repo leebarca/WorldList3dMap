@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-public class CountryDetailsPlanning extends BaseActivity {
+public class ExpediaSearch extends BaseActivity {
 
     private View flightsButton;
     private View hotelsButton;
@@ -38,16 +38,14 @@ public class CountryDetailsPlanning extends BaseActivity {
 
         highlightActiveButton(flightsButton);
 
-        String country_name = getIntent().getStringExtra("country_name");
-
         // Load the Flights fragment by default
-        replaceFragment(new FlightFragment(), flightsButton, country_name);
+        replaceFragment(new FlightFragment(), flightsButton);
 
         // Set up button click listeners for GridLayout buttons
-        findViewById(R.id.flights_element).setOnClickListener(v -> replaceFragment(new FlightFragment(), flightsButton, country_name));
-        findViewById(R.id.hotels_element).setOnClickListener(v -> replaceFragment(new HotelsFragment(), hotelsButton, country_name));
-        findViewById(R.id.packages_element).setOnClickListener(v -> replaceFragment(new PackagesFragment(), packagesButton, country_name));
-        findViewById(R.id.activities_element).setOnClickListener(v -> replaceFragment(new ActivitiesFragment(), activitiesButton, country_name));
+        findViewById(R.id.flights_element).setOnClickListener(v -> replaceFragment(new FlightFragment(), flightsButton));
+        findViewById(R.id.hotels_element).setOnClickListener(v -> replaceFragment(new HotelsFragment(), hotelsButton));
+        findViewById(R.id.packages_element).setOnClickListener(v -> replaceFragment(new PackagesFragment(), packagesButton));
+        findViewById(R.id.activities_element).setOnClickListener(v -> replaceFragment(new ActivitiesFragment(), activitiesButton));
 
         back_button.setOnClickListener(v -> {
             // Handle click event
@@ -55,13 +53,7 @@ public class CountryDetailsPlanning extends BaseActivity {
         });
     }
 
-    private void replaceFragment(Fragment fragment, View activeButton, String country) {
-        // Create a Bundle to pass the data
-        Bundle args = new Bundle();
-        args.putString("country", country);
-
-        // Set the arguments to the fragment
-        fragment.setArguments(args);
+    private void replaceFragment(Fragment fragment, View activeButton) {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();

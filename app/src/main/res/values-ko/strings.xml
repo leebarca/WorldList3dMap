@@ -6,7 +6,8 @@
     <string name="explore">탐험하기</string>
     <string name="save">저장</string>
     <string name="recommended">이번 달 추천 국가</string>
-    <string name="add_trip">여행 추가</string>
+    <string name="add_trip">수동으로 여행 추가</string>
+    <string name="expedia_search">Expedia에서 검색 또는 예약</string>
     <string name="trip_empty">저장된 여행이 없습니다. 하나 추가하세요!</string>
     <string name="edit">편집</string>
     <string name="view_trip">여행 보기</string>

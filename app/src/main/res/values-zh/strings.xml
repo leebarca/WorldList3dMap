@@ -6,7 +6,8 @@
     <string name="explore">探索</string>
     <string name="save">保存</string>
     <string name="recommended">本月推荐国家</string>
-    <string name="add_trip">添加行程</string>
+    <string name="add_trip">手动添加行程</string>
+    <string name="expedia_search">通过Expedia搜索或预订</string>
     <string name="trip_empty">您没有保存的行程，请添加一个！</string>
     <string name="edit">编辑</string>
     <string name="view_trip">查看行程</string>

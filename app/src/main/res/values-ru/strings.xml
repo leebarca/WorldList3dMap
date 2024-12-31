@@ -6,7 +6,8 @@
     <string name="explore">Изучить</string>
     <string name="save">Сохранить</string>
     <string name="recommended">Рекомендуемые страны в этом месяце</string>
-    <string name="add_trip">Добавить поездку</string>
+    <string name="add_trip">Добавить поездку вручную</string>
+    <string name="expedia_search">Поиск или бронирование через Expedia</string>
     <string name="trip_empty">У вас нет сохраненных поездок, добавьте одну!</string>
     <string name="edit">Редактировать</string>
     <string name="view_trip">Просмотреть поездку</string>

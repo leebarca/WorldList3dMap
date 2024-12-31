@@ -6,7 +6,8 @@
     <string name="explore">अन्वेषण करें</string>
     <string name="save">सहेजें</string>
     <string name="recommended">इस महीने के लिए अनुशंसित देश</string>
-    <string name="add_trip">यात्रा जोड़ें</string>
+    <string name="add_trip">हाथ से यात्रा जोड़ें</string>
+    <string name="expedia_search">Expedia के माध्यम से खोजें या बुक करें</string>
     <string name="trip_empty">आपके पास कोई सहेजी गई यात्रा नहीं है, एक जोड़ें!</string>
     <string name="edit">संपादित करें</string>
     <string name="view_trip">यात्रा देखें</string>

@@ -32,7 +32,7 @@
         <activity android:name=".CountryDetailActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>
         <activity android:name=".CountryDetailsAttractions" android:windowSoftInputMode="stateHidden|adjustResize"/>
         <activity android:name=".CountryDetailsInfo" android:windowSoftInputMode="stateHidden|adjustResize"/>
-        <activity android:name=".CountryDetailsPlanning" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".ExpediaSearch" android:windowSoftInputMode="stateHidden|adjustResize"/>
         <activity android:name=".ExploreActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>
         <activity android:name=".LanguageActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>
         <activity android:name=".TripPlannerActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>

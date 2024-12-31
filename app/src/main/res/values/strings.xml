@@ -5,7 +5,8 @@
     <string name="explore">Explore</string>
     <string name="save">Save</string>
     <string name="recommended">Recommended Countries This Month</string>
-    <string name="add_trip">Add Trip</string>
+    <string name="add_trip">Add Trip Manually</string>
+    <string name="expedia_search">Search or Book via Expedia</string>
     <string name="trip_empty">You have no saved trips, add one!</string>
     <string name="edit">Edit</string>
     <string name="view_trip">View Trip</string>

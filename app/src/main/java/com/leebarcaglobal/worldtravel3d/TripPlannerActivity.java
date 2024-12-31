@@ -14,7 +14,7 @@ import java.util.List;
 public class TripPlannerActivity extends BaseActivity {
 
     private NonScrollListView tripListView;
-    private Button addTripButton;
+    private Button addTripButton, expediaSearchButton;
     private TextView empty_trip_text;
     private LinearLayout iconsBottom, home_layout_button, explore_layout_button, planner_layout_button, language_layout_button;
 
@@ -31,6 +31,7 @@ public class TripPlannerActivity extends BaseActivity {
 
         tripListView = findViewById(R.id.trip_list_view);
         addTripButton = findViewById(R.id.add_trip_button);
+        expediaSearchButton = findViewById(R.id.expedia_search);
         empty_trip_text = findViewById(R.id.empty_trip_text);
         iconsBottom = findViewById(R.id.icons_bottom);
         home_layout_button = findViewById(R.id.home_layout_button);
@@ -46,6 +47,11 @@ public class TripPlannerActivity extends BaseActivity {
         addTripButton.setOnClickListener(v -> {
             Intent intent = new Intent(TripPlannerActivity.this, AddTrip.class);
             startActivityForResult(intent, ADD_TRIP_REQUEST_CODE);
+        });
+
+        expediaSearchButton.setOnClickListener(v -> {
+            Intent intent = new Intent(TripPlannerActivity.this, ExpediaSearch.class);
+            startActivity(intent);
         });
 
         tripListView.setOnItemClickListener((parent, view, position, id) -> {

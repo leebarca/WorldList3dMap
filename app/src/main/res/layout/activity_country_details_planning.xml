@@ -121,37 +121,6 @@
                     android:fontFamily="@font/open_sans" />
             </LinearLayout>
 
-            <!-- Clickable Attractions Icon -->
-            <LinearLayout
-                android:id="@+id/packages_element"
-                android:clickable="true"
-                android:focusable="true"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_columnWeight="1"
-                android:padding="8dp"
-                android:background="@drawable/button_background"
-                android:backgroundTintMode="src_over"
-                android:elevation="4dp">
-
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:contentDescription="@string/packages_icon"
-                    android:src="@drawable/packages" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/packages"
-                    android:textSize="14sp"
-                    android:textColor="@android:color/black"
-                    android:gravity="center"
-                    android:fontFamily="@font/open_sans" />
-            </LinearLayout>
-
             <!-- Clickable Offers Icon -->
             <LinearLayout
                 android:id="@+id/activities_element"

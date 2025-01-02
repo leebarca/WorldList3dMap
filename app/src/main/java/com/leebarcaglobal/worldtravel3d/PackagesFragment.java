@@ -137,7 +137,7 @@ public class PackagesFragment extends Fragment {
 
     private boolean validateFields(EditText departureField, EditText destinationField, EditText departureDateField, EditText returnDateField) throws ParseException {
         boolean isValid = true;
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd", Locale.getDefault());
 
         if (departureField.getText().toString().trim().isEmpty()) {
             departureField.setError(getString(R.string.please_enter_the_origin));

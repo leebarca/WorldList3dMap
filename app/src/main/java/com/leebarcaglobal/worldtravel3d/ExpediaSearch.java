@@ -14,7 +14,6 @@ public class ExpediaSearch extends BaseActivity {
 
     private View flightsButton;
     private View hotelsButton;
-    private View packagesButton;
     private View activitiesButton;
     private ImageButton back_button;
 
@@ -27,13 +26,11 @@ public class ExpediaSearch extends BaseActivity {
         // Initialize button references
         flightsButton = findViewById(R.id.flights_element);
         hotelsButton = findViewById(R.id.hotels_element);
-        packagesButton = findViewById(R.id.packages_element);
         activitiesButton = findViewById(R.id.activities_element);
         back_button = findViewById(R.id.back_button);
 
         flightsButton.setBackground(ContextCompat.getDrawable(this, R.drawable.button_background));
         hotelsButton.setBackground(ContextCompat.getDrawable(this, R.drawable.button_background));
-        packagesButton.setBackground(ContextCompat.getDrawable(this, R.drawable.button_background));
         activitiesButton.setBackground(ContextCompat.getDrawable(this, R.drawable.button_background));
 
         highlightActiveButton(flightsButton);
@@ -44,7 +41,6 @@ public class ExpediaSearch extends BaseActivity {
         // Set up button click listeners for GridLayout buttons
         findViewById(R.id.flights_element).setOnClickListener(v -> replaceFragment(new FlightFragment(), flightsButton));
         findViewById(R.id.hotels_element).setOnClickListener(v -> replaceFragment(new HotelsFragment(), hotelsButton));
-        findViewById(R.id.packages_element).setOnClickListener(v -> replaceFragment(new PackagesFragment(), packagesButton));
         findViewById(R.id.activities_element).setOnClickListener(v -> replaceFragment(new ActivitiesFragment(), activitiesButton));
 
         back_button.setOnClickListener(v -> {
@@ -70,7 +66,6 @@ public class ExpediaSearch extends BaseActivity {
         // Reset all buttons to default background color
         flightsButton.setSelected(false);
         hotelsButton.setSelected(false);
-        packagesButton.setSelected(false);
         activitiesButton.setSelected(false);
     }
 

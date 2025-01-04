@@ -54,7 +54,7 @@
                 android:layout_marginBottom="4dp"
                 android:text="@string/country"
                 android:textColor="@color/black"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 android:fontFamily="@font/open_sans" />
 
             <!-- Spinner for selecting categories -->
@@ -92,7 +92,7 @@
                 android:layout_marginBottom="4dp"
                 android:text="@string/departure_date"
                 android:textColor="@color/black"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 android:fontFamily="@font/open_sans" />
 
             <EditText
@@ -117,7 +117,7 @@
                 android:layout_marginBottom="4dp"
                 android:text="@string/return_date"
                 android:textColor="@color/black"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 android:fontFamily="@font/open_sans" />
 
             <EditText
@@ -152,7 +152,7 @@
                 android:background="@drawable/button_background"
                 android:text="@string/create"
                 android:textColor="@color/black"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 android:fontFamily="@font/open_sans" />
         </LinearLayout>
     </ScrollView>

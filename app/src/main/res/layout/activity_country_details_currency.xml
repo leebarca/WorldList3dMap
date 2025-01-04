@@ -1,0 +1,251 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/button_background"
+        android:src="@drawable/return_button"
+        android:contentDescription="@string/country_details"
+        android:scaleType="centerInside"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Main Content -->
+    <ScrollView
+        android:id="@+id/main_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/back_button"
+        android:padding="8dp"
+        android:background="@color/app_background_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/button_background"
+            android:paddingBottom="16dp"
+            android:gravity="center_horizontal">
+
+            <!-- Currency Section -->
+            <TextView
+                android:id="@+id/textView_currency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/info_background"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Currency Conversion"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <GridLayout
+                android:id="@+id/cuisine_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:columnCount="2"
+                android:padding="4dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_columnWeight="1"
+                    android:padding="4dp">
+
+                    <!-- Spinner for selecting categories -->
+                    <FrameLayout
+                        android:id="@+id/spinner_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_background"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="8dp">
+
+                        <Spinner
+                            android:id="@+id/from_currency_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:background="@android:color/transparent"
+                            android:spinnerMode="dropdown" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/arrowdown"
+                            android:layout_gravity="end|center_vertical"
+                            android:contentDescription="@string/arrow_down" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/from_currency_symbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="@android:color/black"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/from_currency_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:fontFamily="@font/open_sans"
+                        android:background="@drawable/button_background"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_columnWeight="1"
+                    android:padding="4dp">
+
+                    <!-- Spinner for selecting categories -->
+                    <FrameLayout
+                        android:id="@+id/to_currency"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_background"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:padding="8dp">
+
+                        <Spinner
+                            android:id="@+id/to_currency_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:background="@android:color/transparent"
+                            android:spinnerMode="dropdown" />
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/arrowdown"
+                            android:layout_gravity="end|center_vertical"
+                            android:contentDescription="@string/arrow_down" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/to_currency_symbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="@android:color/black"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/to_currency_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:fontFamily="@font/open_sans"
+                        android:background="@drawable/button_background"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </GridLayout>
+
+            <!-- Compare Travel Cost Section -->
+            <TextView
+                android:id="@+id/textView_compare_travel_costs_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Compare Travel Costs"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/average_hotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Average Hotel"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <GridLayout
+                android:id="@+id/hotel_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:layout_marginTop="4dp"
+                android:columnCount="2"
+                android:padding="4dp">
+
+                <EditText
+                    android:id="@+id/from_hotel_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:fontFamily="@font/open_sans"
+                    android:background="@drawable/button_background"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/to_hotel_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:fontFamily="@font/open_sans"
+                    android:background="@drawable/button_background"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

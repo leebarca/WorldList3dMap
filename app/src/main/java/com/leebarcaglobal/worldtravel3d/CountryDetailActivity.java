@@ -17,6 +17,9 @@ public class CountryDetailActivity extends BaseActivity {
     private LinearLayout infoIcon;
     private LinearLayout attractionsIcon;
     private LinearLayout mapIcon;
+    private LinearLayout languagesIcon;
+    private LinearLayout currencyIcon;
+    private LinearLayout capitalIcon;
 
     @SuppressLint({"MissingInflatedId",
             "SetJavaScriptEnabled",
@@ -38,6 +41,9 @@ public class CountryDetailActivity extends BaseActivity {
         infoIcon = findViewById(R.id.open_info_element);
         attractionsIcon = findViewById(R.id.open_attractions_element);
         mapIcon = findViewById(R.id.button_expand_map);
+        languagesIcon = findViewById(R.id.open_languages_element);
+        currencyIcon = findViewById(R.id.open_currency_element);
+        capitalIcon = findViewById(R.id.open_capital_element);
         ImageButton back_button = findViewById(R.id.back_button);
 
         // Retrieve values from Intent
@@ -69,6 +75,9 @@ public class CountryDetailActivity extends BaseActivity {
         String[] cuisine = getIntent().getStringArrayExtra("cuisineArray");
         String[] safety = getIntent().getStringArrayExtra("safetyArray");
         String country_name = getIntent().getStringExtra("countryName");
+        String capital = getIntent().getStringExtra("countryCapital");
+        String languages = getIntent().getStringExtra("countryLanguage");
+        String currency = getIntent().getStringExtra("currency");
 
         infoIcon.setOnClickListener(v -> {
             // Handle click event
@@ -101,6 +110,47 @@ public class CountryDetailActivity extends BaseActivity {
         mapIcon.setOnClickListener(v -> {
             // Replace "CountryName" with the name of the country you want to show
             Uri gmmIntentUri = Uri.parse("https://www.google.com/maps/search/?api=1&query=" + Uri.encode(country_name) + "&basemap=satellite");
+            Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+
+            // Attempt to directly open Google Maps
+            mapIntent.setPackage("com.google.android.apps.maps");
+
+            try {
+                startActivity(mapIntent);
+            } catch (ActivityNotFoundException e) {
+                // Redirect user to Google Play Store to install or update Google Maps
+                try {
+                    Uri playStoreUri = Uri.parse("market://details?id=com.google.android.apps.maps");
+                    Intent playStoreIntent = new Intent(Intent.ACTION_VIEW, playStoreUri);
+                    startActivity(playStoreIntent);
+                } catch (ActivityNotFoundException e2) {
+                    // If Play Store is not available, open in a browser
+                    Uri browserUri = Uri.parse("https://play.google.com/store/apps/details?id=com.google.android.apps.maps");
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, browserUri);
+                    startActivity(browserIntent);
+                }
+            }
+        });
+
+        languagesIcon.setOnClickListener(v -> {
+            // Handle click event
+            Intent intent = new Intent(CountryDetailActivity.this, CountryDetailsLanguages.class);
+            intent.putExtra("countryName", country_name);
+            intent.putExtra("languages", languages);
+            startActivity(intent);
+        });
+
+        currencyIcon.setOnClickListener(v -> {
+            // Handle click event
+            Intent intent = new Intent(CountryDetailActivity.this, CountryDetailsCurrency.class);
+            intent.putExtra("countryName", country_name);
+            intent.putExtra("currency", currency);
+            startActivity(intent);
+        });
+
+        capitalIcon.setOnClickListener(v -> {
+            // Replace "CountryName" with the name of the country you want to show
+            Uri gmmIntentUri = Uri.parse("https://www.google.com/maps/search/?api=1&query=" + Uri.encode(capital) + "&basemap=satellite");
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
 
             // Attempt to directly open Google Maps

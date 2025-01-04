@@ -60,7 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/language"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 android:gravity="center"
                 android:textColor="@color/black"
                 android:fontFamily="@font/open_sans"
@@ -78,7 +78,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/continent"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 android:gravity="center"
                 android:textColor="@color/black"
                 android:fontFamily="@font/open_sans"
@@ -95,7 +95,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/best_months_to_visit"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 android:gravity="center"
                 android:textColor="@color/black"
                 android:fontFamily="@font/open_sans"
@@ -134,7 +134,7 @@
             android:text="@string/no_countries_found"
             android:textColor="@color/black"
             android:visibility="gone"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
     </FrameLayout>
 

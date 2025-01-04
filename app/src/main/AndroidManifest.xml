@@ -35,6 +35,8 @@
         <activity android:name=".ExpediaSearch" android:windowSoftInputMode="stateHidden|adjustResize"/>
         <activity android:name=".ExploreActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>
         <activity android:name=".LanguageActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".CountryDetailsCurrency" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".CountryDetailsLanguages" android:windowSoftInputMode="stateHidden|adjustResize"/>
         <activity android:name=".TripPlannerActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>
         <activity android:name=".AddTrip" android:windowSoftInputMode="stateHidden|adjustResize"/>
         <activity android:name=".ViewEditTripActivity" android:windowSoftInputMode="stateHidden|adjustResize"/>

@@ -18,7 +18,7 @@
             android:layout_marginBottom="4dp"
             android:text="@string/destination"
             android:textColor="@color/black"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:fontFamily="@font/open_sans" />
 
         <EditText
@@ -39,7 +39,7 @@
             android:background="@drawable/button_background"
             android:text="@string/search"
             android:textColor="@color/black"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:fontFamily="@font/open_sans" />
 
     </LinearLayout>

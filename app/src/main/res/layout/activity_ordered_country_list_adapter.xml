@@ -13,7 +13,7 @@
         android:gravity="center"
         android:textColor="@android:color/black"
         android:paddingRight="20dp"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:fontFamily="@font/open_sans" />
 
     <!-- Country Flag -->
@@ -33,6 +33,6 @@
         android:gravity="center"
         android:paddingLeft="20dp"
         android:textColor="@android:color/black"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:fontFamily="@font/open_sans" />
 </LinearLayout>

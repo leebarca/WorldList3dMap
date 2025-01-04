@@ -17,7 +17,7 @@
             android:layout_marginBottom="4dp"
             android:text="@string/origin"
             android:textColor="@color/black"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:fontFamily="@font/open_sans" />
 
         <EditText
@@ -38,7 +38,7 @@
             android:layout_marginBottom="4dp"
             android:text="@string/destination"
             android:textColor="@color/black"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:fontFamily="@font/open_sans" />
 
         <EditText
@@ -58,7 +58,7 @@
             android:layout_marginBottom="4dp"
             android:text="@string/departure_date"
             android:textColor="@color/black"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:fontFamily="@font/open_sans" />
 
         <EditText
@@ -83,7 +83,7 @@
             android:layout_marginBottom="4dp"
             android:text="@string/return_date"
             android:textColor="@color/black"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:fontFamily="@font/open_sans" />
 
         <EditText
@@ -121,7 +121,7 @@
                     android:layout_weight="1"
                     android:text="@string/people"
                     android:textColor="@color/black"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:fontFamily="@font/open_sans" />
 
                 <Button
@@ -140,7 +140,7 @@
                     android:gravity="center"
                     android:text="1"
                     android:textColor="@color/black"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:fontFamily="@font/open_sans" />
 
                 <Button
@@ -163,7 +163,7 @@
             android:background="@drawable/button_background"
             android:text="@string/search"
             android:textColor="@color/black"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:fontFamily="@font/open_sans" />
 
     </LinearLayout>

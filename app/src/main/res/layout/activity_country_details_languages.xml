@@ -45,7 +45,7 @@
                 android:fontFamily="@font/open_sans"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="Useful Phrases"
+                android:text="@string/usefulphrases"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -77,8 +77,7 @@
             </FrameLayout>
 
             <LinearLayout
-                android:id="@+id/summary_expand_layout"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:clickable="true"
@@ -91,17 +90,40 @@
                 android:textSize="16sp">
 
                 <TextView
-                    android:id="@+id/hello"
+                    android:id="@+id/hellogoodbye"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Hello"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/hellogoodbye"
+                    android:textStyle="bold"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:fontFamily="@font/open_sans" />
 
                 <TextView
-                    android:id="@+id/hello_translation"
+                    android:id="@+id/hellogoodbye_translation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/pleasethankyou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/pleasethankyou"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/open_sans" />
+
+                <TextView
+                    android:id="@+id/pleasethankyou_translation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -110,17 +132,124 @@
                     android:fontFamily="@font/open_sans" />
 
                 <TextView
-                    android:id="@+id/goodbye"
+                    android:id="@+id/doyouspeak"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Goodbye"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/doyouspeak"
+                    android:textStyle="bold"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:fontFamily="@font/open_sans" />
 
                 <TextView
-                    android:id="@+id/goodbye_translation"
+                    android:id="@+id/doyouspeak_translation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/open_sans" />
+
+                <TextView
+                    android:id="@+id/whereis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/whereis"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/open_sans" />
+
+                <TextView
+                    android:id="@+id/whereis_translation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/open_sans" />
+
+                <TextView
+                    android:id="@+id/yesno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/yesno"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/open_sans" />
+
+                <TextView
+                    android:id="@+id/yesno_translation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/open_sans" />
+
+                <TextView
+                    android:id="@+id/excuseme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/excusemesorry"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/open_sans" />
+
+                <TextView
+                    android:id="@+id/excuseme_translation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/open_sans" />
+
+                <TextView
+                    android:id="@+id/ineedhelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/ineedhelp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/open_sans" />
+
+                <TextView
+                    android:id="@+id/ineedhelp_translation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/open_sans" />
+
+                <TextView
+                    android:id="@+id/directions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/directioninfo"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/open_sans" />
+
+                <TextView
+                    android:id="@+id/directions_translation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"

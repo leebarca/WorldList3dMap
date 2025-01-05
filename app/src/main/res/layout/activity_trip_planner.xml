@@ -93,6 +93,7 @@
         android:id="@+id/icons_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="fill"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
         android:gravity="center"
@@ -103,7 +104,7 @@
         <LinearLayout
             android:id="@+id/home_layout_button"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center"
@@ -133,7 +134,7 @@
         <LinearLayout
             android:id="@+id/explore_layout_button"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center"
@@ -163,7 +164,7 @@
         <LinearLayout
             android:id="@+id/planner_layout_button"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center"
@@ -193,7 +194,7 @@
         <LinearLayout
             android:id="@+id/language_layout_button"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
             android:gravity="center"

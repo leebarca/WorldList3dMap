@@ -3060,7 +3060,7 @@ public class CountryData {
                 R.drawable.israel,
                 context.getString(R.string.jerusalem),
                 context.getString(R.string.israel_population),
-                context.getString(R.string.hindi_english),
+                context.getString(R.string.hebrew),
                 context.getString(R.string.asia),
                 context.getString(R.string.israel_area),
                 context.getString(R.string.israel_description),

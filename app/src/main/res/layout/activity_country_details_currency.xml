@@ -45,7 +45,7 @@
                 android:fontFamily="@font/open_sans"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="Currency Conversion"
+                android:text="@string/currencyconversion"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -186,7 +186,7 @@
                 android:fontFamily="@font/open_sans"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="Compare Travel Costs"
+                android:text="@string/comparetravelcosts"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -199,7 +199,7 @@
                 android:fontFamily="@font/open_sans"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="Average Hotel"
+                android:text="@string/averagehotel"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />

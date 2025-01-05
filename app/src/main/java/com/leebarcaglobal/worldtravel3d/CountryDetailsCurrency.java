@@ -29,6 +29,8 @@ public class CountryDetailsCurrency extends BaseActivity {
                 "LocalSuppress"}) EditText from_currency_value = findViewById(R.id.from_currency_value);
         @SuppressLint({"MissingInflatedId",
                 "LocalSuppress"}) EditText to_currency_value = findViewById(R.id.to_currency_value);
+        TextView from_currency_symbol = findViewById(R.id.from_currency_symbol);
+        TextView to_currency_symbol = findViewById(R.id.to_currency_symbol);
 
         String country_name = getIntent().getStringExtra("countryName");
         String currency = getIntent().getStringExtra("currency");

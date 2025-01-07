@@ -734,7 +734,7 @@ public class CountryData {
                         context.getString(R.string.ok),
                         context.getString(R.string.benin_safety_info)
                 },
-                context.getString(R.string.cfa_franc)
+                context.getString(R.string.westafricancfafranc)
         ));
         countries.add(new CountryInfo(
                 context.getString(R.string.bhutan),
@@ -1038,7 +1038,7 @@ public class CountryData {
                         context.getString(R.string.dangerous),
                         context.getString(R.string.burkina_faso_safety_info)
                 },
-                context.getString(R.string.burkina_faso_cfa_franc)
+                context.getString(R.string.westafricancfafranc)
         ));
         countries.add(new CountryInfo(
                 context.getString(R.string.burundi),
@@ -1190,7 +1190,7 @@ public class CountryData {
                         context.getString(R.string.ok),
                         context.getString(R.string.cameroon_safety_info)
                 },
-                context.getString(R.string.cameroon_currency)
+                context.getString(R.string.central_african_cfa_franc)
         ));
         countries.add(new CountryInfo(
                 context.getString(R.string.canada),
@@ -1912,7 +1912,7 @@ public class CountryData {
                         context.getString(R.string.ok),
                         context.getString(R.string.east_timor_safety_info)
                 },
-                context.getString(R.string.united_states_dollar)
+                context.getString(R.string.usd)
         ));
         countries.add(new CountryInfo(
                 context.getString(R.string.ecuador),
@@ -1950,7 +1950,7 @@ public class CountryData {
                         context.getString(R.string.ok),
                         context.getString(R.string.ecuador_safety_info)
                 },
-                context.getString(R.string.united_states_dollar)
+                context.getString(R.string.usd)
         ));
         countries.add(new CountryInfo(
                 context.getString(R.string.egypt),
@@ -2026,7 +2026,7 @@ public class CountryData {
                         context.getString(R.string.ok),
                         context.getString(R.string.el_salvador_safety_info)
                 },
-                context.getString(R.string.united_states_dollar)
+                context.getString(R.string.usd)
         ));
         countries.add(new CountryInfo(
                 context.getString(R.string.equatorial_guinea),
@@ -2558,7 +2558,7 @@ public class CountryData {
                         context.getString(R.string.safe),
                         context.getString(R.string.grenada_safety_info)
                 },
-                context.getString(R.string.eastern_carribean_dollar)
+                context.getString(R.string.eastern_caribbean_dollar)
         ));
         countries.add(new CountryInfo(
                 context.getString(R.string.guatemala),
@@ -3173,7 +3173,7 @@ public class CountryData {
                                               context.getString(R.string.ivory_coast_bissap)},
                                       new String[]{context.getString(R.string.ok),
                                               context.getString(R.string.ivory_coast_safety_info)},
-                                      context.getString(R.string.west_african_cfa_franc)));
+                                      context.getString(R.string.westafricancfafranc)));
         countries.add(new CountryInfo(context.getString(R.string.jamaica),
                                       R.drawable.flagjamaica,
                                       R.drawable.jamaica,
@@ -4105,7 +4105,7 @@ public class CountryData {
                                               context.getString(R.string.mali_drink)},
                                       new String[]{context.getString(R.string.dangerous),
                                               context.getString(R.string.mali_safety_info)},
-                                      context.getString(R.string.mali_cfa_franc)));
+                                      context.getString(R.string.westafricancfafranc)));
         countries.add(new CountryInfo(context.getString(R.string.malta),
                                       R.drawable.flagmalta,
                                       R.drawable.malta,
@@ -4187,7 +4187,7 @@ public class CountryData {
                                               context.getString(R.string.marshallislands_drink)},
                                       new String[]{context.getString(R.string.safe),
                                               context.getString(R.string.marshallislands_safety_info)},
-                                      context.getString(R.string.marshallislands_usd)));
+                                      context.getString(R.string.usd)));
         countries.add(new CountryInfo(context.getString(R.string.mauritania),
                                       R.drawable.flagmauritania,
                                       R.drawable.mauritania,
@@ -4351,7 +4351,7 @@ public class CountryData {
                                               context.getString(R.string.micronesia_drink)},
                                       new String[]{context.getString(R.string.ok),
                                               context.getString(R.string.micronesia_safety_info)},
-                                      context.getString(R.string.micronesia_dollar)));
+                                      context.getString(R.string.usd)));
         countries.add(new CountryInfo(context.getString(R.string.moldova),
                                       R.drawable.flagmoldova,
                                       R.drawable.moldova,
@@ -4715,7 +4715,7 @@ public class CountryData {
                                               context.getString(R.string.safe),
                                               context.getString(R.string.nauru_safety_info)
                                       },
-                                      context.getString(R.string.nauru_currency)));
+                                      context.getString(R.string.australian_dollar)));
         countries.add(new CountryInfo(
                 context.getString(R.string.nepal),
                 R.drawable.flagnepal,
@@ -4904,7 +4904,7 @@ public class CountryData {
                         context.getString(R.string.ok),
                         context.getString(R.string.niger_safety_info)
                 },
-                context.getString(R.string.west_african_cfa_franc)
+                context.getString(R.string.westafricancfafranc)
         ));
         countries.add(new CountryInfo(
                 context.getString(R.string.nigeria),
@@ -5170,7 +5170,7 @@ public class CountryData {
                         context.getString(R.string.safe),
                         context.getString(R.string.palau_safety_info)
                 },
-                context.getString(R.string.palau_currency)
+                context.getString(R.string.usd)
         ));
         countries.add(new CountryInfo(
                 context.getString(R.string.panama),
@@ -5892,7 +5892,7 @@ public class CountryData {
                         context.getString(R.string.safe),
                         context.getString(R.string.senegal_safety_info)
                 },
-                context.getString(R.string.west_african_cfa_franc)
+                context.getString(R.string.westafricancfafranc)
         ));
         countries.add(new CountryInfo(
                 context.getString(R.string.serbia),
@@ -6804,7 +6804,7 @@ public class CountryData {
                         context.getString(R.string.ok),
                         context.getString(R.string.togo_safety_info)
                 },
-                context.getString(R.string.west_african_cfa_franc)
+                context.getString(R.string.westafricancfafranc)
         ));
         countries.add(new CountryInfo(
                 context.getString(R.string.tonga),

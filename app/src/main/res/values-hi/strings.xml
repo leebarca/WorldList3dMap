@@ -539,7 +539,6 @@
     <string name="benin_amiwo">अमिवो (मक्का आधारित व्यंजन)</string>
     <string name="benin_sodabi">सोदाबी (ताड़ का शराब)</string>
     <string name="benin_safety_info">बेनिन अपेक्षाकृत सुरक्षित है, हालांकि यह सिफारिश की जाती है कि विशेष रूप से उत्तरी क्षेत्रों में सतर्क रहना चाहिए, जहां सुरक्षा घटनाएँ हो सकती हैं।</string>
-    <string name="cfa_franc">पश्चिम अफ्रीकी सीएफए फ्रैंक</string>
     <string name="bhutan">भूटान</string>
     <string name="thimphu">थिम्पू</string>
     <string name="bhutan_population">0.78 मिलियन</string>
@@ -706,7 +705,6 @@
     <string name="burkina_faso_to">टो (बाजरा का व्यंजन)</string>
     <string name="burkina_faso_dolo">डोलो (सोरघम बीयर)</string>
     <string name="burkina_faso_safety_info">बुर्किना फासो की यात्रा की सलाह नहीं दी जाती है क्योंकि उत्तरी और पूर्वी क्षेत्रों में आतंकवाद और सशस्त्र संघर्ष के उच्च स्तर हैं।</string>
-    <string name="burkina_faso_cfa_franc">पश्चिम अफ्रीकी सीएफए फ्रैंक</string>
     <string name="burundi">बुरुंडी</string>
     <string name="gitega">गितेगा</string>
     <string name="burundi_population">13 मिलियन</string>
@@ -789,7 +787,6 @@
     <string name="cameroon_ndole">Ndolé (कड़वी पत्तियों का स्टू)</string>
     <string name="cameroon_palm_wine">पाम वाइन</string>
     <string name="cameroon_safety_info">कैमरून सामान्यतः सुरक्षित है, लेकिन यात्रियों को सुरक्षा मुद्दों के कारण दूर उत्तर और दक्षिण-पश्चिमी क्षेत्रों से बचना चाहिए।</string>
-    <string name="cameroon_currency">केंद्रीय अफ्रीकी CFA फ्रैंक</string>
     <string name="canada">कनाडा</string>
     <string name="ottawa">ओटावा</string>
     <string name="canada_population">40 मिलियन</string>
@@ -1173,7 +1170,6 @@
     <string name="east_timor_ikan_pepes">इकन पेपेस (ग्रिल्ड फिश)</string>
     <string name="east_timor_coffee">कॉफी</string>
     <string name="east_timor_safety_info">पूर्वी तिमोर आमतौर पर पर्यटकों के लिए सुरक्षित है, हालांकि आगंतुकों को ग्रामीण क्षेत्रों में सतर्क रहना चाहिए और रात में एकाकी क्षेत्रों से बचना चाहिए। राजनीतिक स्थिति स्थिर है, लेकिन डिली में कभी-कभी प्रदर्शन हो सकते हैं। देश की बुनियादी ढांचा अभी भी विकसित हो रहा है, इसलिए यात्रियों को दूरदराज के क्षेत्रों में सीमित सुविधाओं के लिए तैयार रहना चाहिए।</string>
-    <string name="united_states_dollar">संयुक्त राज्य डॉलर</string>
     <string name="ecuador">इक्वाडोर</string>
     <string name="quito">क्विटो</string>
     <string name="ecuador_population">18 मिलियन</string>
@@ -1513,7 +1509,6 @@
     <string name="grenada_oil_down">ऑयल डाउन</string>
     <string name="grenada_rum_punch">रम पंच</string>
     <string name="grenada_safety_info">ग्रेनेडा एक सुरक्षित गंतव्य है, हालांकि यात्रियों को रात में सुनसान क्षेत्रों से बचना चाहिए</string>
-    <string name="eastern_carribean_dollar">पूर्वी कैरेबियन डॉलर</string>
     <string name="guatemala">ग्वाटेमाला</string>
     <string name="guatemala_city">ग्वाटेमाला सिटी</string>
     <string name="guatemala_population">19 मिलियन</string>
@@ -1840,7 +1835,6 @@
     <string name="ivory_coast_attieke">अत्तियेक (कसावा का कुस्कुस)</string>
     <string name="ivory_coast_bissap">बिस्साप (हिबिस्कस पेय)</string>
     <string name="ivory_coast_safety_info">हिरण का तट ने पिछले राजनीतिक तनावों के बाद काफी स्थिरता प्राप्त कर ली है, लेकिन आगंतुकों को कुछ क्षेत्रों में, विशेष रूप से सीमाओं के निकट, सावधानी बरतनी चाहिए। शहरी क्षेत्रों में छोटे अपराध एक समस्या हो सकते हैं, इसलिए सतर्क रहना सलाहकार है। प्राकृतिक खतरों में बारिश के मौसम के दौरान कभी-कभी बाढ़ शामिल है।</string>
-    <string name="west_african_cfa_franc">पश्चिम अफ्रीकी सीएफए फ्रैंक</string>
     <string name="jamaica">जमैका</string>
     <string name="kingston">किंग्स्टन</string>
     <string name="jamaica_population">3 मिलियन</string>
@@ -2317,7 +2311,6 @@
     <string name="mali_food">टिगुएडेगे ना (मूंगफली का मक्खन स्टू)</string>
     <string name="mali_drink">अदरक का रस</string>
     <string name="mali_safety_info">माली को महत्वपूर्ण सुरक्षा चुनौतियों का सामना करना पड़ता है, विशेष रूप से उत्तरी और केंद्रीय क्षेत्रों में आतंकवादी गतिविधियों और सशस्त्र संघर्ष के कारण। यात्रियों को इन क्षेत्रों से बचने और पूरे देश में सावधानी बरतने की सलाह दी जाती है। इसके अतिरिक्त, सीमित चिकित्सा सुविधाएं यात्रा बीमा और निवारक स्वास्थ्य उपायों को अनिवार्य बनाती हैं।</string>
-    <string name="mali_cfa_franc">पश्चिम अफ्रीकी सीएफए फ्रैंक</string>
     <string name="malta">माल्टा</string>
     <string name="valletta">वालेटा</string>
     <string name="malta_population">0.52 मिलियन</string>
@@ -2358,7 +2351,6 @@
     <string name="marshallislands_food">पेले (नारियल दूध में तरो के पत्ते)</string>
     <string name="marshallislands_drink">हरी नारियल पानी</string>
     <string name="marshallislands_safety_info">हालांकि आमतौर पर सुरक्षित, मार्शल द्वीप प्राकृतिक खतरों का सामना करते हैं जैसे कि तूफान और उठते समुद्र स्तर। स्वास्थ्य देखभाल सुविधाएँ सीमित हैं, विशेष रूप से राजधानी के बाहर, इसलिए आगंतुकों को व्यापक स्वास्थ्य बीमा कराने की सलाह दी जाती है। स्थानीय संस्कृति स्वागत करने वाली है, लेकिन आगंतुकों को पारंपरिक रीति-रिवाजों का ध्यान रखना चाहिए।</string>
-    <string name="marshallislands_usd">संयुक्त राज्य डॉलर</string>
     <string name="mauritania">मॉरिटानिया</string>
     <string name="nouakchott">नौआकचोट</string>
     <string name="mauritania_population">4.9 मिलियन</string>
@@ -2442,7 +2434,6 @@
     <string name="micronesia_food">तारो और नारियल के व्यंजन</string>
     <string name="micronesia_drink">नारियल पानी</string>
     <string name="micronesia_safety_info">माइक्रोनेशिया अपेक्षाकृत सुरक्षित है लेकिन इसे तूफानों जैसे प्राकृतिक खतरों का सामना करना पड़ता है। यात्रियों को सीमित चिकित्सा सुविधाओं के बारे में जागरूक रहना चाहिए, विशेष रूप से छोटे द्वीपों पर। स्थानीय रीति-रिवाज रूढ़िवादी हैं, इसलिए सम्मान महत्वपूर्ण है। अपराध दर कम है, लेकिन मानक यात्रा सुरक्षा उपायों की सलाह दी जाती है।</string>
-    <string name="micronesia_dollar">संयुक्त राज्य डॉलर</string>
     <string name="moldova">मोल्दोवा</string>
     <string name="chisinau">चीशिनाऊ</string>
     <string name="moldova_population">25 लाख</string>
@@ -2630,7 +2621,6 @@
     <string name="nauru_food">नारियल मछली</string>
     <string name="nauru_drink">नारियल पानी</string>
     <string name="nauru_safety_info">नौरू यात्रियों के लिए सुरक्षित है, हालांकि स्वास्थ्य देखभाल सुविधाएँ सीमित हैं। बुनियादी यात्रा सुरक्षा उपायों की सलाह दी जाती है, क्योंकि प्राकृतिक खतरों जैसे सूखे का द्वीप पर प्रभाव पड़ सकता है। स्थानीय रीति-रिवाजों का सम्मान करने के लिए प्रोत्साहित किया जाता है, और आगंतुकों को सीमित पर्यटन अवसंरचना के लिए योजना बनानी चाहिए।</string>
-    <string name="nauru_currency">ऑस्ट्रेलियाई डॉलर</string>
     <string name="nepal">नेपाल</string>
     <string name="nepal_capital">काठमांडू</string>
     <string name="nepal_population">30 मिलियन</string>
@@ -2880,7 +2870,6 @@
     <string name="palau_food">तारो</string>
     <string name="palau_drink">नारियल का दूध</string>
     <string name="palau_safety_info">पलाऊ पर्यटकों के लिए बहुत सुरक्षित है, यहाँ अपराध दर कम है और वातावरण मित्रवत है। एक द्वीप राष्ट्र के रूप में, प्राकृतिक खतरों जैसे उष्णकटिबंधीय तूफान कभी-कभी हो सकते हैं। स्वास्थ्य देखभाल सुविधाएँ सीमित हैं, इसलिए यात्रा बीमा की सिफारिश की जाती है। कस्टम और स्थानीय कानून ढीले हैं लेकिन परंपराओं का सम्मान करते हैं।</string>
-    <string name="palau_currency">संयुक्त राज्य डॉलर</string>
     <string name="panama">पनामा</string>
     <string name="panama_capital">पनामा सिटी</string>
     <string name="panama_population">4.5 मिलियन</string>
@@ -4249,4 +4238,5 @@
     <string name="currencyconversion">मुद्रा परिवर्तक</string>
     <string name="comparetravelcosts">यात्रा लागत तुलना</string>
     <string name="averagehotel">औसत होटल</string>
+    <string name="swap_currencies">मुद्राएँ बदलें</string>
 </resources>

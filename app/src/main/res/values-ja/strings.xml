@@ -538,7 +538,6 @@
     <string name="benin_amiwo">アミウォ（トウモロコシを使った料理）</string>
     <string name="benin_sodabi">ソダビ（パームワイン）</string>
     <string name="benin_safety_info">ベナンは比較的安全ですが、特に北部地域では治安の事件が発生する可能性があるため、警戒を怠らないことをお勧めします。</string>
-    <string name="cfa_franc">西アフリカCFAフラン</string>
     <string name="bhutan">ブータン</string>
     <string name="thimphu">ティンプー</string>
     <string name="bhutan_population">78万人</string>
@@ -705,7 +704,6 @@
     <string name="burkina_faso_to">トー（ミレット料理）</string>
     <string name="burkina_faso_dolo">ドロ（ソルガムビール）</string>
     <string name="burkina_faso_safety_info">ブルキナファソへの旅行は、特に北部および東部地域における高いテロリズムと武力衝突のため、推奨されません。</string>
-    <string name="burkina_faso_cfa_franc">西アフリカCFAフラン</string>
     <string name="burundi">ブルンジ</string>
     <string name="gitega">ギテガ</string>
     <string name="burundi_population">1300万人</string>
@@ -788,7 +786,6 @@
     <string name="cameroon_ndole">ンドレ（ビタリーフシチュー）</string>
     <string name="cameroon_palm_wine">パームワイン</string>
     <string name="cameroon_safety_info">カメルーンは一般的に安全ですが、旅行者は安全上の問題から北部遠方と南西部の地域を避けるべきです</string>
-    <string name="cameroon_currency">中央アフリカCFAフラン</string>
     <string name="canada">カナダ</string>
     <string name="ottawa">オタワ</string>
     <string name="canada_population">4000万人</string>
@@ -1172,7 +1169,6 @@
     <string name="east_timor_ikan_pepes">イカン・ペペス（グリル魚）</string>
     <string name="east_timor_coffee">コーヒー</string>
     <string name="east_timor_safety_info">東ティモールは一般的に観光客にとって安全ですが、訪問者は田舎の地域で注意し、夜間は孤立した地域を避けるべきです。政治状況は安定していますが、ディリでは時折デモが発生することがあります。国のインフラはまだ発展途上であるため、旅行者は遠隔地での限られた施設に備える必要があります。</string>
-    <string name="united_states_dollar">アメリカドル</string>
     <string name="ecuador">エクアドル</string>
     <string name="quito">キト</string>
     <string name="ecuador_population">1800万人</string>
@@ -1512,7 +1508,6 @@
     <string name="grenada_oil_down">オイルダウン</string>
     <string name="grenada_rum_punch">ラムパンチ</string>
     <string name="grenada_safety_info">グレナダは安全な旅行先ですが、旅行者は夜間に人の少ない場所を避けるべきです</string>
-    <string name="eastern_carribean_dollar">東カリブドル</string>
     <string name="guatemala">グアテマラ</string>
     <string name="guatemala_city">グアテマラシティ</string>
     <string name="guatemala_population">1900万人</string>
@@ -1839,7 +1834,6 @@
     <string name="ivory_coast_attieke">アティエケ（キャッサバのクスクス）</string>
     <string name="ivory_coast_bissap">ビサップ（ハイビスカス飲料）</string>
     <string name="ivory_coast_safety_info">コートジボワールは過去の政治的緊張の後に大きく安定しましたが、特に国境近くの特定の地域では訪問者は注意が必要です。都市部では軽犯罪が問題になることがあるため、警戒を怠らないことが推奨されます。自然災害には雨季中の時折の洪水が含まれます。</string>
-    <string name="west_african_cfa_franc">西アフリカCFAフラン</string>
     <string name="jamaica">ジャマイカ</string>
     <string name="kingston">キングストン</string>
     <string name="jamaica_population">300万人</string>
@@ -2316,7 +2310,6 @@
     <string name="mali_food">ティグアデゲ・ナ（ピーナッツバタースチュー）</string>
     <string name="mali_drink">ジンジャージュース</string>
     <string name="mali_safety_info">マリは、特に北部および中央地域でのテロ活動や武力衝突のために、重大な安全保障上の課題に直面しています。旅行者はこれらの地域を避け、国内全体で注意を払うことが推奨されます。さらに、限られた医療施設のため、旅行保険と予防的健康対策が不可欠です。</string>
-    <string name="mali_cfa_franc">西アフリカCFAフラン</string>
     <string name="malta">マルタ</string>
     <string name="valletta">バレッタ</string>
     <string name="malta_population">52万人</string>
@@ -2357,7 +2350,6 @@
     <string name="marshallislands_food">ペレ（ココナッツミルクのタロイモの葉）</string>
     <string name="marshallislands_drink">グリーンココナッツウォーター</string>
     <string name="marshallislands_safety_info">一般的には安全ですが、マーシャル諸島は台風や海面上昇などの自然災害に直面しています。医療施設は限られており、特に首都の外では、訪問者は包括的な健康保険を持つことをお勧めします。地元の文化は歓迎的ですが、訪問者は伝統的な習慣に留意するべきです。</string>
-    <string name="marshallislands_usd">アメリカドル</string>
     <string name="mauritania">モーリタニア</string>
     <string name="nouakchott">ヌアクショット</string>
     <string name="mauritania_population">490万人</string>
@@ -2441,7 +2433,6 @@
     <string name="micronesia_food">タロイモとココナッツ料理</string>
     <string name="micronesia_drink">ココナッツウォーター</string>
     <string name="micronesia_safety_info">ミクロネシアは比較的安全ですが、台風などの自然災害に直面しています。旅行者は、特に小さな島々では医療施設が限られていることに注意する必要があります。地元の習慣は保守的であるため、敬意を払うことが重要です。犯罪率は低いですが、標準的な旅行の安全対策が推奨されます。</string>
-    <string name="micronesia_dollar">アメリカドル</string>
     <string name="moldova">モルドバ</string>
     <string name="chisinau">キシナウ</string>
     <string name="moldova_population">250万人</string>
@@ -2629,7 +2620,6 @@
     <string name="nauru_food">ココナッツフィッシュ</string>
     <string name="nauru_drink">ココナッツウォーター</string>
     <string name="nauru_safety_info">ナウルは旅行者にとって安全ですが、医療施設は限られています。基本的な旅行の安全対策が推奨されており、干ばつなどの自然災害が島に影響を与える可能性があります。地元の習慣への敬意が奨励されており、訪問者は限られた観光インフラを考慮する必要があります。</string>
-    <string name="nauru_currency">オーストラリアドル</string>
     <string name="nepal">ネパール</string>
     <string name="nepal_capital">カトマンズ</string>
     <string name="nepal_population">3000万人</string>
@@ -2879,7 +2869,6 @@
     <string name="palau_food">タロ</string>
     <string name="palau_drink">ココナッツミルク</string>
     <string name="palau_safety_info">パラオは訪問者にとって非常に安全で、犯罪率が低く、友好的な環境です。島国として、熱帯嵐のような自然災害が時折発生することがあります。医療施設は限られているため、旅行保険を推奨します。習慣や地元の法律は緩やかですが、伝統を尊重しています</string>
-    <string name="palau_currency">アメリカドル</string>
     <string name="panama">パナマ</string>
     <string name="panama_capital">パナマシティ</string>
     <string name="panama_population">450万人</string>
@@ -4248,4 +4237,5 @@
     <string name="currencyconversion">通貨換算</string>
     <string name="comparetravelcosts">旅行費用の比較</string>
     <string name="averagehotel">平均的なホテル</string>
+    <string name="swap_currencies">通貨を交換</string>
 </resources>

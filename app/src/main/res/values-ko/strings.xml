@@ -539,7 +539,6 @@
     <string name="benin_amiwo">아미워 (옥수수 기반 요리)</string>
     <string name="benin_sodabi">소다비 (야자수 와인)</string>
     <string name="benin_safety_info">베네인은 비교적 안전하지만, 특히 보안 사건이 발생할 수 있는 북부 지역에서는 경계를 유지하는 것이 권장됩니다</string>
-    <string name="cfa_franc">서아프리카 CFA 프랑</string>
     <string name="bhutan">부탄</string>
     <string name="thimphu">팀부</string>
     <string name="bhutan_population">78만</string>
@@ -706,7 +705,6 @@
     <string name="burkina_faso_to">토 (밀 요리)</string>
     <string name="burkina_faso_dolo">돌로 (수수 맥주)</string>
     <string name="burkina_faso_safety_info">부르키나파소로의 여행은 특히 북부 및 동부 지역에서 높은 수준의 테러리즘과 무장 충돌로 인해 권장되지 않습니다</string>
-    <string name="burkina_faso_cfa_franc">서아프리카 CFA 프랑</string>
     <string name="burundi">부룬디</string>
     <string name="gitega">기테가</string>
     <string name="burundi_population">1300만</string>
@@ -789,7 +787,6 @@
     <string name="cameroon_ndole">응돌레 (쓴잎 스튜)</string>
     <string name="cameroon_palm_wine">팜 와인</string>
     <string name="cameroon_safety_info">카메룬은 일반적으로 안전하지만, 여행자는 보안 문제로 인해 북부와 남서부 지역을 피해야 합니다</string>
-    <string name="cameroon_currency">중앙 아프리카 CFA 프랑</string>
     <string name="canada">캐나다</string>
     <string name="ottawa">오타와</string>
     <string name="canada_population">4천만</string>
@@ -1173,7 +1170,6 @@
     <string name="east_timor_ikan_pepes">이칸 페페스 (구운 생선)</string>
     <string name="east_timor_coffee">커피</string>
     <string name="east_timor_safety_info">동티모르는 일반적으로 관광객에게 안전하지만, 방문객들은 농촌 지역에서 주의해야 하며 밤에는 외딴 지역을 피해야 합니다.정치 상황은 안정적이지만, 딜리에서는 가끔 시위가 발생할 수 있습니다. 이 나라의 인프라는 아직 개발 중이므로, 여행자들은 외딴 지역에서 제한된 시설에 대비해야 합니다</string>
-    <string name="united_states_dollar">미국 달러</string>
     <string name="ecuador">에콰도르</string>
     <string name="quito">키토</string>
     <string name="ecuador_population">1800만</string>
@@ -1513,7 +1509,6 @@
     <string name="grenada_oil_down">오일 다운</string>
     <string name="grenada_rum_punch">럼 펀치</string>
     <string name="grenada_safety_info">그레나다는 안전한 여행지이지만, 여행객들은 밤에 인적이 드문 지역을 피해야 합니다</string>
-    <string name="eastern_carribean_dollar">동부 카리브해 달러</string>
     <string name="guatemala">과테말라</string>
     <string name="guatemala_city">과테말라 시티</string>
     <string name="guatemala_population">1900만</string>
@@ -1840,7 +1835,6 @@
     <string name="ivory_coast_attieke">아띠에케 (카사바 쿠스쿠스)</string>
     <string name="ivory_coast_bissap">비스압 (히비스커스 음료)</string>
     <string name="ivory_coast_safety_info">코트디부아르는 과거의 정치적 긴장 이후 대체로 안정되었지만, 방문객들은 특히 국경 근처의 특정 지역에서 주의해야 합니다.도시 지역에서는 경미한 범죄가 문제될 수 있으므로 경계를 유지하는 것이 좋습니다.자연 재해에는 우기 동안의 간헐적인 홍수가 포함됩니다</string>
-    <string name="west_african_cfa_franc">서아프리카 CFA 프랑</string>
     <string name="jamaica">자메이카</string>
     <string name="kingston">킹스턴</string>
     <string name="jamaica_population">300만</string>
@@ -2317,7 +2311,6 @@
     <string name="mali_food">티구아데게 나 (땅콩버터 스튜)</string>
     <string name="mali_drink">생강 주스</string>
     <string name="mali_safety_info">말리는 특히 북부 및 중앙 지역에서 테러 활동과 무장 충돌로 인해 상당한 안전 문제에 직면해 있습니다.여행자들은 이러한 지역을 피하고 전국적으로 주의할 것을 권장합니다.또한, 제한된 의료 시설로 인해 여행 보험과 예방 건강 조치가 필수적입니다</string>
-    <string name="mali_cfa_franc">서아프리카 CFA 프랑</string>
     <string name="malta">몰타</string>
     <string name="valletta">발레타</string>
     <string name="malta_population">52만</string>
@@ -2358,7 +2351,6 @@
     <string name="marshallislands_food">펠레 (코코넛 밀크에 담긴 타로 잎)</string>
     <string name="marshallislands_drink">신선한 코코넛 물</string>
     <string name="marshallislands_safety_info">일반적으로 안전하지만, 마샬 제도는 태풍과 해수면 상승과 같은 자연 재해에 직면해 있습니다.의료 시설은 제한적이며, 특히 수도 외곽에서는 방문객들이 포괄적인 건강 보험을 갖추는 것이 좋습니다.현지 문화는 환영하지만, 방문객들은 전통 관습을 염두에 두어야 합니다</string>
-    <string name="marshallislands_usd">미국 달러</string>
     <string name="mauritania">모리타니</string>
     <string name="nouakchott">누악쇼트</string>
     <string name="mauritania_population">490만</string>
@@ -2442,7 +2434,6 @@
     <string name="micronesia_food">타로와 코코넛 요리</string>
     <string name="micronesia_drink">코코넛 물</string>
     <string name="micronesia_safety_info">미크로네시아는 상대적으로 안전하지만 태풍과 같은 자연 재해에 직면해 있습니다.여행자는 특히 작은 섬에서는 의료 시설이 제한적임을 인식해야 합니다.지역 관습은 보수적이므로 존중이 중요합니다.범죄율은 낮지만 표준 여행 안전 수칙을 권장합니다</string>
-    <string name="micronesia_dollar">미국 달러</string>
     <string name="moldova">몰도바</string>
     <string name="chisinau">치시나우</string>
     <string name="moldova_population">250만</string>
@@ -2630,7 +2621,6 @@
     <string name="nauru_food">코코넛 생선</string>
     <string name="nauru_drink">코코넛 물</string>
     <string name="nauru_safety_info">나우루는 여행자에게 안전하지만 의료 시설은 제한적입니다.자연 재해인 가뭄이 섬에 영향을 미칠 수 있으므로 기본 여행 안전 수칙이 권장됩니다.현지 관습에 대한 존중이 권장되며, 방문객들은 제한된 관광 인프라를 고려해야 합니다</string>
-    <string name="nauru_currency">호주 달러</string>
     <string name="nepal">네팔</string>
     <string name="nepal_capital">카트만두</string>
     <string name="nepal_population">3000만</string>
@@ -2880,7 +2870,6 @@
     <string name="palau_food">타로</string>
     <string name="palau_drink">코코넛 밀크</string>
     <string name="palau_safety_info">팔라우는 방문객들에게 매우 안전하며, 범죄율이 낮고 친근한 환경입니다.섬나라로서 열대 폭풍과 같은 자연 재해가 가끔 발생할 수 있습니다.의료 시설이 제한적이므로 여행 보험이 권장됩니다.관습과 지역 법률은 느슨하지만 전통을 존중합니다</string>
-    <string name="palau_currency">미국 달러</string>
     <string name="panama">파나마</string>
     <string name="panama_capital">파나마 시티</string>
     <string name="panama_population">450만</string>
@@ -4249,4 +4238,5 @@
     <string name="currencyconversion">환율 변환</string>
     <string name="comparetravelcosts">여행 비용 비교</string>
     <string name="averagehotel">평균적인 호텔</string>
+    <string name="swap_currencies">통화 교환</string>
 </resources>

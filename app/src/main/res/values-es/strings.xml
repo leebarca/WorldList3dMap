@@ -539,7 +539,6 @@
     <string name="benin_amiwo">Amiwo (plato a base de maíz)</string>
     <string name="benin_sodabi">Sodabi (vino de palma)</string>
     <string name="benin_safety_info">Benín es relativamente seguro, aunque se recomienda mantenerse alerta, especialmente en las regiones del norte donde pueden ocurrir incidentes de seguridad</string>
-    <string name="cfa_franc">Franco CFA de África Occidental</string>
     <string name="bhutan">Bután</string>
     <string name="thimphu">Thimphu</string>
     <string name="bhutan_population">0.78 millones</string>
@@ -706,7 +705,6 @@
     <string name="burkina_faso_to">Tô (plato de mijo)</string>
     <string name="burkina_faso_dolo">Dolo (cerveza de sorgo)</string>
     <string name="burkina_faso_safety_info">No se recomienda viajar a Burkina Faso debido a los altos niveles de terrorismo y conflicto armado, especialmente en las regiones norte y este</string>
-    <string name="burkina_faso_cfa_franc">Franco CFA de África Occidental</string>
     <string name="burundi">Burundi</string>
     <string name="gitega">Gitega</string>
     <string name="burundi_population">13 millones</string>
@@ -789,7 +787,6 @@
     <string name="cameroon_ndole">Ndolé (estofado de hojas amargas)</string>
     <string name="cameroon_palm_wine">Vino de palma</string>
     <string name="cameroon_safety_info">Camerún es generalmente seguro, pero los viajeros deben evitar el extremo norte y las regiones suroeste debido a problemas de seguridad</string>
-    <string name="cameroon_currency">Franco CFA de África Central</string>
     <string name="canada">Canadá</string>
     <string name="ottawa">Ottawa</string>
     <string name="canada_population">40 millones</string>
@@ -1173,7 +1170,6 @@
     <string name="east_timor_ikan_pepes">Ikan Pepes (pescado a la parrilla)</string>
     <string name="east_timor_coffee">Café</string>
     <string name="east_timor_safety_info">Timor Oriental es generalmente seguro para los turistas, aunque los visitantes deben tener precaución en las áreas rurales y evitar regiones aisladas por la noche. La situación política es estable, pero pueden ocurrir manifestaciones ocasionales en Dili. La infraestructura del país aún se está desarrollando, por lo que los viajeros deben prepararse para instalaciones limitadas en áreas remotas</string>
-    <string name="united_states_dollar">Dólar estadounidense</string>
     <string name="ecuador">Ecuador</string>
     <string name="quito">Quito</string>
     <string name="ecuador_population">18 millones</string>
@@ -1513,7 +1509,6 @@
     <string name="grenada_oil_down">Oil Down</string>
     <string name="grenada_rum_punch">Rum Punch</string>
     <string name="grenada_safety_info">Granada es un destino seguro, aunque los viajeros deben evitar las áreas desiertas por la noche</string>
-    <string name="eastern_carribean_dollar">Dólar del Caribe Oriental</string>
     <string name="guatemala">Guatemala</string>
     <string name="guatemala_city">Ciudad de Guatemala</string>
     <string name="guatemala_population">19 millones</string>
@@ -1840,7 +1835,6 @@
     <string name="ivory_coast_attieke">Attiéké (cuscús de yuca)</string>
     <string name="ivory_coast_bissap">Bissap (bebida de hibisco)</string>
     <string name="ivory_coast_safety_info">Costa de Marfil se ha estabilizado en gran medida después de tensiones políticas pasadas, pero los visitantes deben tener cuidado en ciertas áreas, particularmente cerca de las fronteras. El crimen menor puede ser un problema en áreas urbanas, por lo que es aconsejable mantenerse alerta. Los peligros naturales incluyen inundaciones ocasionales durante la temporada de lluvias</string>
-    <string name="west_african_cfa_franc">Franco CFA de África Occidental</string>
     <string name="jamaica">Jamaica</string>
     <string name="kingston">Kingston</string>
     <string name="jamaica_population">3 millones</string>
@@ -2317,7 +2311,6 @@
     <string name="mali_food">Tiguadege Na (estofado de mantequilla de maní)</string>
     <string name="mali_drink">Jugo de jengibre</string>
     <string name="mali_safety_info">Mali enfrenta desafíos de seguridad significativos, particularmente en las regiones norte y central debido a la actividad terrorista y el conflicto armado. Se aconseja a los viajeros evitar estas áreas y tener cuidado en todo el país. Además, las instalaciones médicas limitadas hacen que el seguro de viaje y las medidas de salud preventivas sean esenciales</string>
-    <string name="mali_cfa_franc">Franco CFA de África Occidental</string>
     <string name="malta">Malta</string>
     <string name="valletta">Valletta</string>
     <string name="malta_population">0.52 millones</string>
@@ -2358,7 +2351,6 @@
     <string name="marshallislands_food">Pele (hojas de taro en leche de coco)</string>
     <string name="marshallislands_drink">Agua de coco verde</string>
     <string name="marshallislands_safety_info">Si bien generalmente es seguro, las Islas Marshall enfrentan peligros naturales como tifones y aumento del nivel del mar. Las instalaciones de salud son limitadas, especialmente fuera de la capital, por lo que se aconseja a los visitantes tener un seguro de salud integral. La cultura local es acogedora, pero los visitantes deben ser conscientes de las costumbres tradicionales</string>
-    <string name="marshallislands_usd">Dólar estadounidense</string>
     <string name="mauritania">Mauritania</string>
     <string name="nouakchott">Nuakchot</string>
     <string name="mauritania_population">4.9 millones</string>
@@ -2442,7 +2434,6 @@
     <string name="micronesia_food">Platos de Taro y Coco</string>
     <string name="micronesia_drink">Agua de Coco</string>
     <string name="micronesia_safety_info">Micronesia es relativamente segura, pero enfrenta peligros naturales como tifones. Los viajeros deben ser conscientes de las instalaciones médicas limitadas, especialmente en islas más pequeñas. Las costumbres locales son conservadoras, por lo que el respeto es importante. Las tasas de criminalidad son bajas, pero se aconsejan las medidas de seguridad estándar al viajar</string>
-    <string name="micronesia_dollar">Dólar estadounidense</string>
     <string name="moldova">Moldavia</string>
     <string name="chisinau">Chișinǎu</string>
     <string name="moldova_population">2.5 millones</string>
@@ -2630,7 +2621,6 @@
     <string name="nauru_food">Pescado de coco</string>
     <string name="nauru_drink">Agua de Coco</string>
     <string name="nauru_safety_info">Nauru es seguro para los viajeros, aunque las instalaciones de salud son limitadas. Se aconsejan medidas básicas de seguridad en los viajes, ya que los peligros naturales como las sequías pueden afectar la isla. Se fomenta el respeto por las costumbres locales, y los visitantes deben planificar para una infraestructura turística limitada</string>
-    <string name="nauru_currency">Dólar australiano</string>
     <string name="nepal">Nepal</string>
     <string name="nepal_capital">Katmandú</string>
     <string name="nepal_population">30 millones</string>
@@ -2880,7 +2870,6 @@
     <string name="palau_food">Taro</string>
     <string name="palau_drink">Leche de Coco</string>
     <string name="palau_safety_info">Palaú es muy seguro para los visitantes, con bajas tasas de criminalidad y un ambiente amigable. Como nación insular, los peligros naturales como las tormentas tropicales pueden ocurrir ocasionalmente. Las instalaciones de salud son limitadas, por lo que se recomienda un seguro de viaje. Las costumbres y leyes locales son relajadas pero respetuosas de las tradiciones</string>
-    <string name="palau_currency">Dólar estadounidense</string>
     <string name="panama">Panamá</string>
     <string name="panama_capital">Ciudad de Panamá</string>
     <string name="panama_population">4.5 millones</string>

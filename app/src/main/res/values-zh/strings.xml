@@ -539,7 +539,6 @@
     <string name="benin_amiwo">阿米沃（玉米制成的菜肴）</string>
     <string name="benin_sodabi">索达比（棕榈酒）</string>
     <string name="benin_safety_info">贝宁相对安全，但建议保持警惕，尤其是在北部地区，那里可能发生安全事件。</string>
-    <string name="cfa_franc">西非法郎</string>
     <string name="bhutan">不丹</string>
     <string name="thimphu">廷布</string>
     <string name="bhutan_population">78万人</string>
@@ -706,7 +705,6 @@
     <string name="burkina_faso_to">托（小米菜肴）</string>
     <string name="burkina_faso_dolo">多洛（高粱啤酒）</string>
     <string name="burkina_faso_safety_info">由于恐怖主义和武装冲突的高发，尤其是在北部和东部地区，不建议前往布基纳法索。</string>
-    <string name="burkina_faso_cfa_franc">西非法郎</string>
     <string name="burundi">布隆迪</string>
     <string name="gitega">基特加</string>
     <string name="burundi_population">1300万</string>
@@ -789,7 +787,6 @@
     <string name="cameroon_ndole">Ndolé（苦叶炖菜）</string>
     <string name="cameroon_palm_wine">棕榈酒</string>
     <string name="cameroon_safety_info">喀麦隆总体上是安全的，但旅行者应避免前往远北和西南地区，因为那里存在安全问题</string>
-    <string name="cameroon_currency">中非法郎</string>
     <string name="canada">加拿大</string>
     <string name="ottawa">渥太华</string>
     <string name="canada_population">4000万</string>
@@ -1173,7 +1170,6 @@
     <string name="east_timor_ikan_pepes">烤鱼（Ikan Pepes）</string>
     <string name="east_timor_coffee">咖啡</string>
     <string name="east_timor_safety_info">东帝汶对游客通常是安全的，但在农村地区游客应保持谨慎，并避免在夜间前往偏远地区。政治局势稳定，但在帝力偶尔会发生示威。该国的基础设施仍在发展中，因此旅行者应为偏远地区设施有限做好准备。</string>
-    <string name="united_states_dollar">美元</string>
     <string name="ecuador">厄瓜多尔</string>
     <string name="quito">基多</string>
     <string name="ecuador_population">1800万</string>
@@ -1513,7 +1509,6 @@
     <string name="grenada_oil_down">油煮菜</string>
     <string name="grenada_rum_punch">朗姆酒冲击</string>
     <string name="grenada_safety_info">格林纳达是一个安全的旅游目的地，但旅行者应避免在夜间前往偏僻地区</string>
-    <string name="eastern_carribean_dollar">东加勒比元</string>
     <string name="guatemala">危地马拉</string>
     <string name="guatemala_city">危地马拉城</string>
     <string name="guatemala_population">1900万</string>
@@ -1840,7 +1835,6 @@
     <string name="ivory_coast_attieke">阿提耶克（木薯粗粮）</string>
     <string name="ivory_coast_bissap">比萨普（芙蓉花饮料）</string>
     <string name="ivory_coast_safety_info">象牙海岸在经历了过去的政治紧张局势后已基本稳定，但游客在某些地区，特别是靠近边界的地方，应保持谨慎。城市地区的小偷小摸可能是一个问题，因此建议保持警惕。自然灾害包括雨季期间偶尔发生的洪水。</string>
-    <string name="west_african_cfa_franc">西非法郎</string>
     <string name="jamaica">牙买加</string>
     <string name="kingston">金斯顿</string>
     <string name="jamaica_population">300万</string>
@@ -2317,7 +2311,6 @@
     <string name="mali_food">提瓜德根纳（花生酱炖菜）</string>
     <string name="mali_drink">姜汁</string>
     <string name="mali_safety_info">马里面临重大安全挑战，特别是在北部和中部地区，由于恐怖活动和武装冲突。建议旅行者避免这些地区，并在全国范围内保持警惕。此外，有限的医疗设施使得旅行保险和预防健康措施变得至关重要。</string>
-    <string name="mali_cfa_franc">西非法郎</string>
     <string name="malta">马耳他</string>
     <string name="valletta">瓦莱塔</string>
     <string name="malta_population">52万人</string>
@@ -2358,7 +2351,6 @@
     <string name="marshallislands_food">佩雷（椰奶中的芋头叶）</string>
     <string name="marshallislands_drink">绿椰子水</string>
     <string name="marshallislands_safety_info">虽然总体上是安全的，但马绍尔群岛面临自然灾害，如台风和海平面上升。医疗设施有限，尤其是在首都以外，因此建议游客购买全面的健康保险。当地文化热情好客，但游客应注意传统习俗。</string>
-    <string name="marshallislands_usd">美元</string>
     <string name="mauritania">毛里塔尼亚</string>
     <string name="nouakchott">努瓦克肖特</string>
     <string name="mauritania_population">490 万</string>
@@ -2442,7 +2434,6 @@
     <string name="micronesia_food">芋头和椰子菜肴</string>
     <string name="micronesia_drink">椰子水</string>
     <string name="micronesia_safety_info">密克罗尼西亚相对安全，但面临台风等自然灾害。旅行者应注意医疗设施有限，尤其是在较小的岛屿上。当地习俗较为保守，因此尊重非常重要。犯罪率较低，但建议采取标准旅行安全措施。</string>
-    <string name="micronesia_dollar">美元</string>
     <string name="moldova">摩尔多瓦</string>
     <string name="chisinau">基希讷乌</string>
     <string name="moldova_population">250万人</string>
@@ -2630,7 +2621,6 @@
     <string name="nauru_food">椰子鱼</string>
     <string name="nauru_drink">椰子水</string>
     <string name="nauru_safety_info">瑙鲁对旅行者是安全的，但医疗设施有限。建议采取基本旅行安全措施，因为自然灾害如干旱可能会影响该岛。鼓励尊重当地习俗，游客应为有限的旅游基础设施做好计划。</string>
-    <string name="nauru_currency">澳大利亚元</string>
     <string name="nepal">尼泊尔</string>
     <string name="nepal_capital">加德满都</string>
     <string name="nepal_population">3000万</string>
@@ -2880,7 +2870,6 @@
     <string name="palau_food">芋头</string>
     <string name="palau_drink">椰奶</string>
     <string name="palau_safety_info">帕劳对游客非常安全，犯罪率低，环境友好。作为一个岛国，自然灾害如热带风暴偶尔会发生。医疗设施有限，因此建议购买旅行保险。海关和当地法律相对宽松，但要尊重传统。</string>
-    <string name="palau_currency">美元</string>
     <string name="panama">巴拿马</string>
     <string name="panama_capital">巴拿马城</string>
     <string name="panama_population">450万人</string>
@@ -4249,4 +4238,5 @@
     <string name="currencyconversion">货币兑换</string>
     <string name="comparetravelcosts">比较旅行费用</string>
     <string name="averagehotel">普通酒店</string>
+    <string name="swap_currencies">交换货币</string>
 </resources>

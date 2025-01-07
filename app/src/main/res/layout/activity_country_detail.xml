@@ -249,7 +249,7 @@
                 <LinearLayout
                     android:id="@+id/open_info_element"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_columnWeight="1"
                     android:background="@drawable/button_background"
                     android:backgroundTintMode="src_over"
@@ -280,7 +280,7 @@
                 <LinearLayout
                     android:id="@+id/open_attractions_element"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_columnWeight="1"
                     android:background="@drawable/button_background"
                     android:backgroundTintMode="src_over"
@@ -311,7 +311,7 @@
                 <LinearLayout
                     android:id="@+id/button_expand_map"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_columnWeight="1"
                     android:background="@drawable/button_background"
                     android:backgroundTintMode="src_over"

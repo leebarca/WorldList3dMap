@@ -539,7 +539,6 @@
     <string name="benin_amiwo">Амиво (блюдо на основе кукурузы)</string>
     <string name="benin_sodabi">Содаби (пальмовое вино)</string>
     <string name="benin_safety_info">Бенин относительно безопасен, хотя рекомендуется быть бдительным, особенно в северных регионах, где могут происходить инциденты с безопасностью</string>
-    <string name="cfa_franc">Западноафриканский франк КФА</string>
     <string name="bhutan">Бутан</string>
     <string name="thimphu">Тхимпху</string>
     <string name="bhutan_population">0,78 миллиона</string>
@@ -706,7 +705,6 @@
     <string name="burkina_faso_to">Тô (блюдо из проса)</string>
     <string name="burkina_faso_dolo">Доло (пиво из сорго)</string>
     <string name="burkina_faso_safety_info">Путешествие в Буркина-Фасо не рекомендуется из-за высокого уровня терроризма и вооруженных конфликтов, особенно на севере и востоке страны</string>
-    <string name="burkina_faso_cfa_franc">Западноафриканский франк КФА</string>
     <string name="burundi">Бурунди</string>
     <string name="gitega">Гитега</string>
     <string name="burundi_population">13 миллионов</string>
@@ -789,7 +787,6 @@
     <string name="cameroon_ndole">Ндоле (рагу из горьких листьев)</string>
     <string name="cameroon_palm_wine">Пальмовое вино</string>
     <string name="cameroon_safety_info">Камерун в целом безопасен, но путешественникам следует избегать крайнего севера и юго-западных регионов из-за проблем с безопасностью</string>
-    <string name="cameroon_currency">Центральноафриканский франк</string>
     <string name="canada">Канада</string>
     <string name="ottawa">Оттава</string>
     <string name="canada_population">40 миллионов</string>
@@ -1173,7 +1170,6 @@
     <string name="east_timor_ikan_pepes">Икан Пепес (гриль-рыба)</string>
     <string name="east_timor_coffee">Кофе</string>
     <string name="east_timor_safety_info">Восточный Тимор в целом безопасен для туристов, хотя посетителям следует быть осторожными в сельских районах и избегать изолированных мест ночью. Политическая ситуация стабильна, но в Дили могутOccasionally происходить демонстрации. Инфраструктура страны все еще развивается, поэтому путешественникам следует подготовиться к ограниченным условиям в удаленных районах</string>
-    <string name="united_states_dollar">Доллар США</string>
     <string name="ecuador">Эквадор</string>
     <string name="quito">Кито</string>
     <string name="ecuador_population">18 миллионов</string>
@@ -1513,7 +1509,6 @@
     <string name="grenada_oil_down">Нефть Даун</string>
     <string name="grenada_rum_punch">Ром-панч</string>
     <string name="grenada_safety_info">Гренада является безопасным направлением, хотя путешественникам следует избегать пустынных районов ночью</string>
-    <string name="eastern_carribean_dollar">Восточно-карибский доллар</string>
     <string name="guatemala">Гватемала</string>
     <string name="guatemala_city">Гватемала Сити</string>
     <string name="guatemala_population">19 миллионов</string>
@@ -1840,7 +1835,6 @@
     <string name="ivory_coast_attieke">Аттиеке (кассава кускус)</string>
     <string name="ivory_coast_bissap">Бисап (напиток из гибискуса)</string>
     <string name="ivory_coast_safety_info">Берег Слоновой Кости в значительной степени стабилизировался после прошлых политических напряжений, но посетителям следует быть осторожными в определенных районах, особенно вблизи границ. Мелкие преступления могут быть проблемой в городских районах, поэтому рекомендуется оставаться бдительными. Природные опасности включают случайные наводнения в сезон дождей</string>
-    <string name="west_african_cfa_franc">Западноафриканский франк КФА</string>
     <string name="jamaica">Ямайка</string>
     <string name="kingston">Кингстон</string>
     <string name="jamaica_population">3 миллиона</string>
@@ -2317,7 +2311,6 @@
     <string name="mali_food">Тигуадеж На (рагу из арахиса)</string>
     <string name="mali_drink">Имбирный сок</string>
     <string name="mali_safety_info">Мали сталкивается с серьезными проблемами безопасности, особенно в северных и центральных регионах из-за террористической активности и вооруженного конфликта. Путешественникам рекомендуется избегать этих районов и быть осторожными по всей стране. Кроме того, ограниченные медицинские учреждения делают медицинскую страховку и профилактические меры здоровья необходимыми</string>
-    <string name="mali_cfa_franc">Западноафриканский франк КФА</string>
     <string name="malta">Мальта</string>
     <string name="valletta">Валлетта</string>
     <string name="malta_population">0.52 миллиона</string>
@@ -2358,7 +2351,6 @@
     <string name="marshallislands_food">Пеле (таро листья в кокосовом молоке)</string>
     <string name="marshallislands_drink">Кокосовая вода</string>
     <string name="marshallislands_safety_info">Хотя в целом безопасно, Маршалловы Острова сталкиваются с природными опасностями, такими как тайфуны и повышение уровня моря. Медицинские учреждения ограничены, особенно за пределами столицы, поэтому посетителям рекомендуется иметь полное медицинское страхование. Местная культура гостеприимна, но посетителям следует учитывать традиционные обычаи</string>
-    <string name="marshallislands_usd">Доллар США</string>
     <string name="mauritania">Мавритания</string>
     <string name="nouakchott">Нуакшотт</string>
     <string name="mauritania_population">4,9 миллиона</string>
@@ -2442,7 +2434,6 @@
     <string name="micronesia_food">Блюда из таро и кокоса</string>
     <string name="micronesia_drink">Кокосовая вода</string>
     <string name="micronesia_safety_info">Микронезия относительно безопасна, но сталкивается с природными опасностями, такими как тайфуны. Путешественники должны быть осведомлены о ограниченных медицинских учреждениях, особенно на меньших островах. Местные обычаи консервативны, поэтому уважение важно. Уровень преступности низок, но стандартные меры предосторожности при путешествиях рекомендуются</string>
-    <string name="micronesia_dollar">Доллар США</string>
     <string name="moldova">Молдова</string>
     <string name="chisinau">Кишинев</string>
     <string name="moldova_population">2,5 миллиона</string>
@@ -2630,7 +2621,6 @@
     <string name="nauru_food">Кокосовая рыба</string>
     <string name="nauru_drink">Кокосовая вода</string>
     <string name="nauru_safety_info">Науру безопасен для путешественников, хотя медицинские учреждения ограничены. Рекомендуется соблюдать основные меры предосторожности, так как природные опасности, такие как засухи, могут повлиять на остров. Уважение к местным обычаям приветствуется, и посетителям следует планировать ограниченную туристическую инфраструктуру</string>
-    <string name="nauru_currency">Австралийский доллар</string>
     <string name="nepal">Непал</string>
     <string name="nepal_capital">Катманду</string>
     <string name="nepal_population">30 миллионов</string>
@@ -2880,7 +2870,6 @@
     <string name="palau_food">Таро</string>
     <string name="palau_drink">Кокосовое молоко</string>
     <string name="palau_safety_info">Палау очень безопасен для посетителей, с низким уровнем преступности и дружелюбной атмосферой. Как островное государство, природные опасности, такие как тропические штормы, могут иногда происходить. Медицинские учреждения ограничены, поэтому рекомендуется страхование путешествий. Таможенные и местные законы расслаблены, но уважительно относятся к традициям</string>
-    <string name="palau_currency">Доллар США</string>
     <string name="panama">Панама</string>
     <string name="panama_capital">Город Панама</string>
     <string name="panama_population">4,5 миллиона</string>
@@ -4249,4 +4238,5 @@
     <string name="currencyconversion">Конвертация валют</string>
     <string name="comparetravelcosts">Сравнить затраты на поездку</string>
     <string name="averagehotel">Средний отель</string>
+    <string name="swap_currencies">Обмен валют</string>
 </resources>

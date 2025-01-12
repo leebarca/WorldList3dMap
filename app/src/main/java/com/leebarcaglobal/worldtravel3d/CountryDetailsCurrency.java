@@ -1,5 +1,6 @@
 package com.leebarcaglobal.worldtravel3d;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -7,12 +8,15 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
@@ -100,7 +104,7 @@ public class CountryDetailsCurrency extends BaseActivity {
         currency_types.put(getString(R.string.jordanian_dinar), Arrays.asList("JOD", "د.ا"));
         currency_types.put(getString(R.string.kazakhstani_tenge), Arrays.asList("KZT", "₸"));
         currency_types.put(getString(R.string.kenyan_shilling), Arrays.asList("KES", "KSh"));
-        currency_types.put(getString(R.string.kiribati_dollar), Arrays.asList("KID", "$"));
+        currency_types.put(getString(R.string.kiribati_dollar), Arrays.asList("AUD", "$"));
         currency_types.put(getString(R.string.kuwait_dinar), Arrays.asList("KWD", "د.ك"));
         currency_types.put(getString(R.string.kyrgyz_som), Arrays.asList("KGS", "с"));
         currency_types.put(getString(R.string.lao_kip), Arrays.asList("LAK", "₭"));
@@ -168,7 +172,7 @@ public class CountryDetailsCurrency extends BaseActivity {
         currency_types.put(getString(R.string.tunisian_dinar), Arrays.asList("TND", "د.ت"));
         currency_types.put(getString(R.string.turkish_lira), Arrays.asList("TRY", "₺"));
         currency_types.put(getString(R.string.turkmenistani_mana), Arrays.asList("TMT", "m"));
-        currency_types.put(getString(R.string.tuvaluan_dollar), Arrays.asList("TVD", "$"));
+        currency_types.put(getString(R.string.tuvaluan_dollar), Arrays.asList("AUD", "$"));
         currency_types.put(getString(R.string.ugandan_shilling), Arrays.asList("UGX", "Sh"));
         currency_types.put(getString(R.string.ukrainian_hryvnia), Arrays.asList("UAH", "₴"));
         currency_types.put(getString(R.string.uae_currency), Arrays.asList("AED", "د.إ"));
@@ -184,16 +188,18 @@ public class CountryDetailsCurrency extends BaseActivity {
 
         ArrayList<String> currencyNames = new ArrayList<>(currency_types.keySet());
 
-        if (currency != null && currencyNames.contains(currency)) {
-            int toDefaultPosition = currencyNames.indexOf(currency);
-            int fromDefaultPosition = currencyNames.indexOf(getString(R.string.sterling));
-            from_country_spinner.setSelection(fromDefaultPosition);
-            to_country_spinner.setSelection(toDefaultPosition);
-        }
+        Collections.sort(currencyNames);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner_dropdown_item, currencyNames);
         from_country_spinner.setAdapter(adapter);
         to_country_spinner.setAdapter(adapter);
+
+        if (currency != null && currencyNames.contains(currency)) {
+            int toDefaultPosition = currencyNames.indexOf(currency);
+            int fromDefaultPosition = currencyNames.indexOf(getString(R.string.sterling));
+            from_country_spinner.post(() -> from_country_spinner.setSelection(fromDefaultPosition));
+            to_country_spinner.post(() -> to_country_spinner.setSelection(toDefaultPosition));
+        }
 
         from_currency_value.setText("1");
         from_currency_value.addTextChangedListener(new TextWatcher() {
@@ -218,6 +224,21 @@ public class CountryDetailsCurrency extends BaseActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) { }
+        });
+
+        from_country_spinner.getViewTreeObserver().addOnGlobalLayoutListener(() -> {
+            // Get the heights of both spinners
+            int fromHeight = from_country_spinner.getHeight();
+            int toHeight = to_country_spinner.getHeight();
+
+            // Determine the maximum height
+            int maxHeight = Math.max(fromHeight, toHeight);
+
+            // Update both spinners to have the same height
+            from_country_spinner.setLayoutParams(new FrameLayout.LayoutParams(
+                    FrameLayout.LayoutParams.MATCH_PARENT, maxHeight));
+            to_country_spinner.setLayoutParams(new FrameLayout.LayoutParams(
+                    FrameLayout.LayoutParams.MATCH_PARENT, maxHeight));
         });
 
         to_country_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -276,12 +297,13 @@ public class CountryDetailsCurrency extends BaseActivity {
         }
     }
 
+    @SuppressLint("DefaultLocale")
     private void fetchExchangeRate(String fromCurrency, String toCurrency, double amount, TextView toValue) {
         new Thread(() -> {
             double exchangeRate = ExConvertAPI.convertCurrency(fromCurrency, toCurrency, amount);
             runOnUiThread(() -> {
                 if (exchangeRate >= 0) {
-                    toValue.setText(String.format("%.2f", exchangeRate * amount));
+                    toValue.setText(String.format(String.valueOf(exchangeRate)));
                 } else {
                     toValue.setText("N/A");
                 }

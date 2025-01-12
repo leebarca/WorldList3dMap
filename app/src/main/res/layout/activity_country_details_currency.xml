@@ -79,6 +79,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center_vertical"
+                            android:dropDownHeight="wrap_content"
                             android:background="@android:color/transparent"
                             android:spinnerMode="dropdown" />
 
@@ -148,6 +149,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center_vertical"
+                            android:dropDownHeight="wrap_content"
                             android:background="@android:color/transparent"
                             android:spinnerMode="dropdown" />
 

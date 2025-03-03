@@ -2,9 +2,18 @@
 <resources>
     <string name="app_name" translatable="false">WorldTravel3D</string>
     <string name="country_details">Início</string>
+    <string name="home">Início</string>
+    <string name="trip_planner">Planejador de Viagem</string>
+    <string name="go_back">Voltar</string>
+    <string name="country_info">Informações do País</string>
+    <string name="ad_free_msg">Desfrute de uma experiência fluida e sem anúncios para sempre! Pague apenas £2 para remover todos os anúncios para sempre.</string>
+    <string name="cancel">Cancelar</string>
+    <string name="buy_now">Comprar agora (£2)</string>
     <string name="planner">Planejador</string>
     <string name="explore">Explorar</string>
     <string name="save">Salvar</string>
+    <string name="settings">Configurações</string>
+    <string name="remove_ads">Remover anúncios para sempre!</string>
     <string name="recommended">Países Recomendados Este Mês</string>
     <string name="add_trip">Adicionar viagem manualmente</string>
     <string name="expedia_search">Pesquisar ou reservar via Expedia</string>

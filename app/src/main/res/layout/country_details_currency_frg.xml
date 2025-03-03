@@ -1,0 +1,245 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color">
+
+    <!-- Back Button -->
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/back_button"-->
+    <!--        android:layout_width="30dp"-->
+    <!--        android:layout_height="30dp"-->
+    <!--        android:layout_margin="8dp"-->
+    <!--        android:layout_alignParentStart="true"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:background="@drawable/button_background"-->
+    <!--        android:src="@drawable/return_button"-->
+    <!--        android:contentDescription="@string/country_details"-->
+    <!--        android:scaleType="centerInside"-->
+    <!--        android:clickable="true"-->
+    <!--        android:focusable="true" />-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/theme_sel_col"
+        android:elevation="4dp"
+        android:padding="8dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@android:color/black">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/go_back"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <!-- Title in the Center -->
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/country_details"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/app_background_color"
+        app:cardCornerRadius="12dp"
+        android:layout_below="@id/toolbar"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="15dp">
+
+
+            <!-- Main Content -->
+            <ScrollView
+                android:id="@+id/main_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@color/app_background_color"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    >
+
+                    <!-- Currency Section -->
+                    <TextView
+                        android:id="@+id/textView_currency"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/info_background"
+                        android:fontFamily="@font/open_sans"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="@string/currencyconversion"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <!-- From Currency Section -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="4dp">
+
+                            <FrameLayout
+                                android:id="@+id/spinner_container"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_background"
+                                android:gravity="center_vertical"
+                                android:padding="8dp">
+
+                                <Spinner
+                                    android:id="@+id/from_currency_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:dropDownHeight="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:spinnerMode="dropdown" />
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:contentDescription="@string/arrow_down"
+                                    android:src="@drawable/arrowdown" />
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/from_currency_symbol"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/open_sans"
+                                android:textColor="@android:color/black"
+                                android:textSize="40sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/from_currency_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/button_background"
+                                android:fontFamily="@font/open_sans"
+                                android:gravity="center"
+                                android:inputType="numberDecimal"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <!-- Swap Button -->
+                        <ImageButton
+                            android:id="@+id/swap_button"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="40dp"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/button_background"
+                            android:clickable="true"
+                            android:contentDescription="@string/swap_currencies"
+                            android:focusable="true"
+                            android:src="@drawable/swapicon" />
+
+                        <!-- To Currency Section -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="4dp">
+
+                            <FrameLayout
+                                android:id="@+id/to_currency"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_background"
+                                android:gravity="center_vertical"
+                                android:padding="8dp">
+
+                                <Spinner
+                                    android:id="@+id/to_currency_spinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:dropDownHeight="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:spinnerMode="dropdown" />
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="end|center_vertical"
+                                    android:contentDescription="@string/arrow_down"
+                                    android:src="@drawable/arrowdown" />
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/to_currency_symbol"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/open_sans"
+                                android:textColor="@android:color/black"
+                                android:textSize="40sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/to_currency_value"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/button_background"
+                                android:fontFamily="@font/open_sans"
+                                android:gravity="center"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:textColor="@android:color/black"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

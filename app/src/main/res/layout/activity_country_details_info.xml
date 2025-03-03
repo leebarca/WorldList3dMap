@@ -135,6 +135,7 @@
                     android:padding="4dp"
                     android:rowCount="3">
 
+
                     <!-- Placeholder months for Best Time to Visit -->
                     <TextView
                         android:id="@+id/jan"

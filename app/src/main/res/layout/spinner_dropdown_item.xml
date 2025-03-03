@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center"
-    android:padding="8dp"
     android:textColor="@color/black"
     android:textSize="16sp"
     android:fontFamily="@font/open_sans"
-    android:background="@color/app_background_color" />
+
+
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:singleLine="true"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:ellipsize="marquee"
+    />
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<TextView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:gravity="center"-->
+<!--    android:padding="8dp"-->
+<!--    android:textColor="@color/black"-->
+<!--    android:textSize="16sp"-->
+<!--    android:fontFamily="@font/open_sans"-->
+<!--    android:background="@color/app_background_color" />-->

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:contentDescription="No Ads Icon"
+        android:src="@drawable/no_ads" />
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="Remove Ads Forever!"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="@string/ad_free_msg"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.8"
+            android:backgroundTint="@color/button_border_colour"
+            android:text="@string/cancel"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnBuyNow"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1.2"
+            android:backgroundTint="@color/button_border_colour"
+            android:text="@string/buy_now"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <!--        <Button-->
+        <!--            android:id="@+id/btnCancel"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="@string/cancel"-->
+        <!--            android:backgroundTint="@color/button_border_colour"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:padding="15dp"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:layout_marginEnd="10dp"/>-->
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btnBuyNow"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="@string/buy_now"-->
+        <!--            android:backgroundTint="@color/button_border_colour"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:padding="15dp"/>-->
+    </LinearLayout>
+
+
+</LinearLayout>

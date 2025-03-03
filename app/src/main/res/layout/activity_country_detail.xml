@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/app_background_color">
 
+
     <!-- Back Button -->
     <ImageButton
         android:id="@+id/back_button"

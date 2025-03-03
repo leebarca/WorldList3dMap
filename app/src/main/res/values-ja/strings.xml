@@ -2,6 +2,15 @@
 <resources>
     <string name="app_name" translatable="false">WorldTravel3D</string>
     <string name="country_details">ホーム</string>
+    <string name="home">ホーム</string>
+    <string name="trip_planner">旅行プランナー</string>
+    <string name="go_back">戻る</string>
+    <string name="country_info">国の情報</string>
+    <string name="ad_free_msg">シームレスで広告なしの体験を一生楽しめます！たった£2で広告を永久に削除できます。</string>
+    <string name="cancel">キャンセル</string>
+    <string name="buy_now">今すぐ購入 (£2)</string>
+    <string name="settings">設定</string>
+    <string name="remove_ads">広告を永久に削除！</string>
     <string name="planner">プランナー</string>
     <string name="explore">探検する</string>
     <string name="save">保存する</string>

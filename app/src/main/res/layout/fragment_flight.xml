@@ -1,13 +1,13 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp"
+        android:padding="10dp"
         android:background="@color/app_background_color">
 
         <!-- Origin Spinner -->
@@ -124,11 +124,11 @@
                     android:textSize="16sp"
                     android:fontFamily="@font/open_sans" />
 
-                <Button
+                <ImageButton
                     android:id="@+id/button_adults_minus"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:background="@drawable/button_background"
+                    android:background="@drawable/ic_remove"
                     android:text="-"
                     android:textColor="@color/black"
                     android:fontFamily="@font/open_sans" />
@@ -139,15 +139,15 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="1"
+                    android:textStyle="bold"
                     android:textColor="@color/black"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     android:fontFamily="@font/open_sans" />
-
-                <Button
+                <ImageButton
                     android:id="@+id/button_adults_plus"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:background="@drawable/button_background"
+                    android:background="@drawable/ic_add"
                     android:text="+"
                     android:textColor="@color/black"
                     android:fontFamily="@font/open_sans" />
@@ -160,11 +160,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:background="@drawable/button_background"
+            android:backgroundTint="@color/button_border_colour"
             android:text="@string/search"
             android:textColor="@color/black"
             android:textSize="16sp"
+            android:textStyle="bold"
             android:fontFamily="@font/open_sans" />
+
+
 
     </LinearLayout>
 </ScrollView>

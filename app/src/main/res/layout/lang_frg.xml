@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/language_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/language"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save_language_button"
+        android:layout_below="@id/language_title"
+        app:cardBackgroundColor="@color/app_background_color"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+
+        <!-- Language List -->
+        <ListView
+            android:id="@+id/language_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/save_language_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:backgroundTint="@color/button_border_colour"
+        android:fontFamily="@font/open_sans"
+        android:padding="12dp"
+        android:text="@string/save"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

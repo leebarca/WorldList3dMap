@@ -2,6 +2,15 @@
 <resources>
     <string name="app_name" translatable="false">WorldTravel3D</string>
     <string name="country_details">الرئيسية</string>
+    <string name="home">الرئيسية</string>
+    <string name="trip_planner">مخطط الرحلات</string>
+    <string name="go_back">رجوع</string>
+    <string name="country_info">معلومات الدولة</string>
+    <string name="remove_ads">إزالة الإعلانات إلى الأبد!</string>
+    <string name="ad_free_msg">استمتع بتجربة سلسة وخالية من الإعلانات مدى الحياة! ادفع فقط £2 لإزالة جميع الإعلانات للأبد.</string>
+    <string name="cancel">إلغاء</string>
+    <string name="buy_now">اشترِ الآن (£2)</string>
+    <string name="settings">الإعدادات</string>
     <string name="planner">مخطط</string>
     <string name="explore">استكشاف</string>
     <string name="save">حفظ</string>
@@ -539,7 +548,7 @@
     <string name="benin_amiwo">أميوا (طبق مصنوع من الذرة)</string>
     <string name="benin_sodabi">سودابي (نبيذ النخيل)</string>
     <string name="benin_safety_info">بنين آمنة نسبيًا، على الرغم من أنه يُوصى بالبقاء يقظًا، خاصة في المناطق الشمالية حيث قد تحدث حوادث أمنية.</string>
-    <string name="cfa_franc">فرنك غرب أفريقيا CFA</string>
+<!--    <string name="cfa_franc">فرنك غرب أفريقيا CFA</string>-->
     <string name="bhutan">بوتان</string>
     <string name="thimphu">تيمفو</string>
     <string name="bhutan_population">0.78 مليون</string>
@@ -706,7 +715,7 @@
     <string name="burkina_faso_to">تُو (طبق من الدخن)</string>
     <string name="burkina_faso_dolo">دولو (بيرة من الدخن)</string>
     <string name="burkina_faso_safety_info">لا يُنصح بالسفر إلى بوركينا فاسو بسبب مستويات عالية من الإرهاب والصراع المسلح، خاصة في المناطق الشمالية والشرقية.</string>
-    <string name="burkina_faso_cfa_franc">فرنك غرب أفريقيا CFA</string>
+<!--    <string name="burkina_faso_cfa_franc">فرنك غرب أفريقيا CFA</string>-->
     <string name="burundi">بوروندي</string>
     <string name="gitega">غيتغا</string>
     <string name="burundi_population">13 مليون</string>
@@ -1172,7 +1181,7 @@
     <string name="east_timor_ikan_pepes">إيكان بيبيس (سمك مشوي)</string>
     <string name="east_timor_coffee">قهوة</string>
     <string name="east_timor_safety_info">تيمور الشرقية عمومًا آمنة للسياح، على الرغم من أنه يجب على الزوار توخي الحذر في المناطق الريفية وتجنب المناطق المعزولة في الليل. الوضع السياسي مستقر، لكن قد تحدث مظاهرات عرضية في ديلي. لا تزال بنية البلاد التحتية في طور التطوير، لذا يجب على المسافرين الاستعداد لمرافق محدودة في المناطق النائية.</string>
-    <string name="united_states_dollar">دولار الولايات المتحدة</string>
+<!--    <string name="united_states_dollar">دولار الولايات المتحدة</string>-->
     <string name="ecuador">الإكوادور</string>
     <string name="quito">كيتو</string>
     <string name="ecuador_population">18 مليون</string>
@@ -1512,7 +1521,7 @@
     <string name="grenada_oil_down">زيت داون</string>
     <string name="grenada_rum_punch">روم بانش</string>
     <string name="grenada_safety_info">غرينادا وجهة آمنة، على الرغم من أنه يجب على المسافرين تجنب المناطق المهجورة في الليل</string>
-    <string name="eastern_carribean_dollar">دولار الكاريبي الشرقي</string>
+<!--    <string name="eastern_carribean_dollar">دولار الكاريبي الشرقي</string>-->
     <string name="guatemala">غواتيمالا</string>
     <string name="guatemala_city">مدينة غواتيمالا</string>
     <string name="guatemala_population">19 مليون</string>
@@ -1839,7 +1848,7 @@
     <string name="ivory_coast_attieke">أتيك (كسكس الكسافا)</string>
     <string name="ivory_coast_bissap">بيساب (مشروب الكركديه)</string>
     <string name="ivory_coast_safety_info">لقد استقر ساحل العاج إلى حد كبير بعد التوترات السياسية السابقة، ولكن يجب على الزوار توخي الحذر في بعض المناطق، خاصة بالقرب من الحدود. يمكن أن تكون الجرائم الصغيرة مشكلة في المناطق الحضرية، لذا من المستحسن البقاء يقظًا. تشمل المخاطر الطبيعية الفيضانات العرضية خلال موسم الأمطار.</string>
-    <string name="west_african_cfa_franc">فرنك غرب أفريقيا CFA</string>
+<!--    <string name="west_african_cfa_franc">فرنك غرب أفريقيا CFA</string>-->
     <string name="jamaica">جامايكا</string>
     <string name="kingston">كينغستون</string>
     <string name="jamaica_population">3 مليون</string>
@@ -2316,7 +2325,7 @@
     <string name="mali_food">تيغوادج نا (حساء زبدة الفول السوداني)</string>
     <string name="mali_drink">عصير الزنجبيل</string>
     <string name="mali_safety_info">تواجه مالي تحديات أمنية كبيرة، خاصة في المناطق الشمالية والوسطى بسبب النشاط الإرهابي والصراع المسلح. يُنصح المسافرون بتجنب هذه المناطق واتخاذ الحيطة في جميع أنحاء البلاد. بالإضافة إلى ذلك، فإن المرافق الطبية المحدودة تجعل تأمين السفر وتدابير الصحة الوقائية أمرًا ضروريًا.</string>
-    <string name="mali_cfa_franc">فرنك غرب أفريقيا CFA</string>
+<!--    <string name="mali_cfa_franc">فرنك غرب أفريقيا CFA</string>-->
     <string name="malta">مالطا</string>
     <string name="valletta">فاليتا</string>
     <string name="malta_population">0.52 مليون</string>
@@ -2357,7 +2366,7 @@
     <string name="marshallislands_food">بيلي (أوراق القلقاس في حليب جوز الهند)</string>
     <string name="marshallislands_drink">ماء جوز الهند الأخضر</string>
     <string name="marshallislands_safety_info">بينما تعتبر جزر مارشال عمومًا آمنة، تواجه مخاطر طبيعية مثل الأعاصير وارتفاع مستويات البحر. المرافق الصحية محدودة، خاصة خارج العاصمة، لذا يُنصح الزوار بالحصول على تأمين صحي شامل. الثقافة المحلية مرحبة، لكن يجب على الزوار أن يكونوا واعين للعادات التقليدية.</string>
-    <string name="marshallislands_usd">دولار الولايات المتحدة</string>
+<!--    <string name="marshallislands_usd">دولار الولايات المتحدة</string>-->
     <string name="mauritania">موريتانيا</string>
     <string name="nouakchott">نواكشوط</string>
     <string name="mauritania_population">4.9 مليون</string>
@@ -2441,7 +2450,7 @@
     <string name="micronesia_food">أطباق التارو وجوز الهند</string>
     <string name="micronesia_drink">ماء جوز الهند</string>
     <string name="micronesia_safety_info">ميكرونيزيا آمنة نسبيًا ولكنها تواجه مخاطر طبيعية مثل الأعاصير. يجب على المسافرين أن يكونوا على دراية بالمرافق الطبية المحدودة، خاصة في الجزر الصغيرة. العادات المحلية محافظة، لذا فإن الاحترام مهم. معدلات الجريمة منخفضة، ولكن يُنصح باتخاذ احتياطات السفر القياسية.</string>
-    <string name="micronesia_dollar">دولار الولايات المتحدة</string>
+<!--    <string name="micronesia_dollar">دولار الولايات المتحدة</string>-->
     <string name="moldova">مولدوفا</string>
     <string name="chisinau">كيشيناو</string>
     <string name="moldova_population">2.5 مليون</string>
@@ -2629,7 +2638,7 @@
     <string name="nauru_food">سمك جوز الهند</string>
     <string name="nauru_drink">ماء جوز الهند</string>
     <string name="nauru_safety_info">ناورو آمنة للمسافرين، على الرغم من أن مرافق الرعاية الصحية محدودة. يُنصح باتخاذ احتياطات السفر الأساسية، حيث يمكن أن تؤثر المخاطر الطبيعية مثل الجفاف على الجزيرة. يُشجع على احترام العادات المحلية، وينبغي للزوار التخطيط للبنية التحتية السياحية المحدودة.</string>
-    <string name="nauru_currency">الدولار الأسترالي</string>
+<!--    <string name="nauru_currency">الدولار الأسترالي</string>-->
     <string name="nepal">نيبال</string>
     <string name="nepal_capital">كاتماندو</string>
     <string name="nepal_population">30 مليون</string>
@@ -2879,7 +2888,7 @@
     <string name="palau_food">تارو</string>
     <string name="palau_drink">حليب جوز الهند</string>
     <string name="palau_safety_info">بالاو آمنة جدًا للزوار، مع معدلات جريمة منخفضة وبيئة ودية. كونها دولة جزرية، يمكن أن تحدث مخاطر طبيعية مثل العواصف الاستوائية بين الحين والآخر. المرافق الصحية محدودة، لذا يُوصى بالتأمين على السفر. العادات والقوانين المحلية مريحة ولكن تحترم التقاليد</string>
-    <string name="palau_currency">دولار الولايات المتحدة</string>
+<!--    <string name="palau_currency">دولار الولايات المتحدة</string>-->
     <string name="panama">بنما</string>
     <string name="panama_capital">مدينة بنما</string>
     <string name="panama_population">4.5 مليون</string>

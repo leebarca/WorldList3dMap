@@ -1,251 +1,374 @@
 package com.leebarcaglobal.worldtravel3d;
 
-import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
+import android.provider.Settings;
+import android.util.Log;
+import android.app.Dialog;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
-import android.widget.GridLayout;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.EditText;
-import android.widget.ScrollView;
 import android.widget.TextView;
-import androidx.core.splashscreen.SplashScreen;
+import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
+import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.lifecycle.MutableLiveData;
+
+
+import com.google.android.gms.ads.AdError;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.FullScreenContentCallback;
+import com.google.android.gms.ads.LoadAdError;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
+import com.leebarcaglobal.worldtravel3d.fragments.ExploreFragment;
+import com.leebarcaglobal.worldtravel3d.fragments.HomeFragment;
+import com.leebarcaglobal.worldtravel3d.fragments.LanguageFragment;
+import com.leebarcaglobal.worldtravel3d.fragments.MainFragment;
+import com.leebarcaglobal.worldtravel3d.fragments.PlannerFragment;
+import com.leebarcaglobal.worldtravel3d.utils.FragmentTags;
+import com.leebarcaglobal.worldtravel3d.utils.UtilClass;
+import com.limurse.iap.DataWrappers;
+import com.limurse.iap.IapConnector;
+import com.limurse.iap.PurchaseServiceListener;
+
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
-import java.util.Set;
+import java.util.Objects;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends AppCompatActivity {
+//
+//    App ID is ca-app-pub-7434808266785754~3182088768
+//    Reward Interstitial ID is ca-app-pub-7434808266785754/8242187219
+//    Regular Interstitial ID is ca-app-pub-7434808266785754/9068447051
+//    Banner ID is ca-app-pub-7434808266785754/5710827998
 
-    private ListView countryListView;
-    private List<CountryInfo> countries;
-    private CountryAdapter adapter;
-    private EditText searchBar;
-    private ImageView filter;
-    private ScrollView filterScrollContainer; // Updated to ScrollView
-    private LinearLayout iconsBottom, home_layout_button, explore_layout_button, planner_layout_button, language_layout_button;
-    private Set<String> selectedLanguages = new HashSet<>();
-    private Set<String> selectedContinents = new HashSet<>();
-    private Set<String> selectedMonths = new HashSet<>();
+    private AdView bannerAd;
+    private InterstitialAd mInterstitialAd;
 
-    @SuppressLint("MissingInflatedId")
+    public static int adClickCounter = 0;
+
+    private static final String PREFERENCES_NAME = "AppPreferences";
+    private static final String LANGUAGE_KEY = "SelectedLanguage";
+
+
+    IapConnector iapConnector;
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(updateLanguageContext(newBase));
+    }
+
+    private Context updateLanguageContext(Context context) {
+        SharedPreferences preferences = context.getSharedPreferences(PREFERENCES_NAME, MODE_PRIVATE);
+        String savedLanguage = preferences.getString(LANGUAGE_KEY, "en"); // Default to English
+        Locale locale = new Locale(savedLanguage);
+        Locale.setDefault(locale);
+
+        Configuration config = new Configuration();
+        config.setLocale(locale);
+
+        return context.createConfigurationContext(config);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
-
         super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
 
-        countryListView = findViewById(R.id.country_list_view);
-        searchBar = findViewById(R.id.search_bar);
-        filter = findViewById(R.id.filter_icon);
-        filterScrollContainer = findViewById(R.id.filter_scroll_container); // Reference to ScrollView
-        iconsBottom = findViewById(R.id.icons_bottom);
-        home_layout_button = findViewById(R.id.home_layout_button);
-        explore_layout_button = findViewById(R.id.explore_layout_button);
-        planner_layout_button = findViewById(R.id.planner_layout_button);
-        language_layout_button = findViewById(R.id.language_layout_button);
-        GridLayout languageGrid = findViewById(R.id.language_filter_grid);
-        GridLayout continentGrid = findViewById(R.id.continent_filter_grid);
-        GridLayout bestMonthsToVisitGrid = findViewById(R.id.month_filter_grid);
+        View decorView = getWindow().getDecorView();
+        decorView.setOnApplyWindowInsetsListener((v, insets) -> {
+            v.setPadding(0, 0, 0, insets.getSystemWindowInsetBottom());
+            return insets.consumeSystemWindowInsets();
+        });
 
-        String[] languages = {getString(R.string.english), getString(R.string.spanish), getString(R.string.french), getString(R.string.german), getString(R.string.italian), getString(R.string.portuguese), getString(R.string.dutch), getString(R.string.arabic), getString(R.string.russian), getString(R.string.chinese), getString(R.string.malay), getString(R.string.hindi), getString(R.string.korean)};
-        String[] continents = {getString(R.string.north_america), getString(R.string.south_america), getString(R.string.europe), getString(R.string.africa), getString(R.string.asia), getString(R.string.australasia)};
-        String[] months = {getString(R.string.january), getString(R.string.february), getString(R.string.march), getString(R.string.april), getString(R.string.may), getString(R.string.june), getString(R.string.july), getString(R.string.august), getString(R.string.september), getString(R.string.october), getString(R.string.november), getString(R.string.december)};
+        getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.theme_sel_col));
 
-        addFilterButtons(languageGrid, languages, selectedLanguages);
-        addFilterButtons(continentGrid, continents, selectedContinents);
-        addFilterButtons(bestMonthsToVisitGrid, months, selectedMonths);
-
-        countries = CountryData.getCountriesInfo(this);
-        adapter = new CountryAdapter(this, countries);
-        countryListView.setAdapter(adapter);
-
-        // Search bar filtering
-        searchBar.addTextChangedListener(new TextWatcher() {
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int start, int count, int after) {}
+            public void onInitializationComplete(InitializationStatus initializationStatus) {
 
-            @Override
-            public void onTextChanged(CharSequence charSequence, int start, int before, int count) {
-                filterCountries();
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {}
-        });
-
-        // Toggle filter ScrollView visibility
-        filter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (filterScrollContainer.getVisibility() == View.GONE) {
-                    filterScrollContainer.setVisibility(View.VISIBLE);
-                } else {
-                    filterScrollContainer.setVisibility(View.GONE);
-                }
             }
         });
+        bannerAd = findViewById(R.id.adView);
 
-        // Set up item click listener to open CountryDetailActivity
-        countryListView.setOnItemClickListener((parent, view, position, id) -> {
-            CountryInfo selectedCountry = adapter.getItem(position);
 
-            Intent intent = new Intent(MainActivity.this, CountryDetailActivity.class);
-            intent.putExtra("countryImageResId", selectedCountry.getImageResId());
-            intent.putExtra("countryName", selectedCountry.getName());
-            intent.putExtra("countryCapital", selectedCountry.getCapital());
-            intent.putExtra("countryPopulation", selectedCountry.getPopulation());
-            intent.putExtra("countryLanguage", selectedCountry.getLanguage());
-            intent.putExtra("countryContinent", selectedCountry.getContinent());
-            intent.putExtra("countryArea", selectedCountry.getArea());
-            intent.putExtra("countryFlag", selectedCountry.getFlagResId());
-            intent.putExtra("countryDescription", selectedCountry.getDescription());
-            intent.putExtra("firstAttractionName", selectedCountry.getFirstAttractionName());
-            intent.putExtra("firstAttractionDetails", selectedCountry.getFirstAttractionDetails());
-            intent.putExtra("firstAttractionImage", selectedCountry.getFirstAttractionImage());
-            intent.putExtra("secondAttractionName", selectedCountry.getSecondAttractionName());
-            intent.putExtra("secondAttractionDetails", selectedCountry.getSecondAttractionDetails());
-            intent.putExtra("secondAttractionImage", selectedCountry.getSecondAttractionImage());
-            intent.putExtra("thirdAttractionName", selectedCountry.getThirdAttractionName());
-            intent.putExtra("thirdAttractionDetails", selectedCountry.getThirdAttractionDetails());
-            intent.putExtra("thirdAttractionImage", selectedCountry.getThirdAttractionImage());
-            intent.putExtra("bestTimeVisitArray", selectedCountry.getBestTimeVisit());
-            intent.putExtra("factInfo", selectedCountry.getFact());
-            intent.putExtra("websiteInfo", selectedCountry.getWebsite());
-            intent.putExtra("weatherInfo", selectedCountry.getWeather());
-            intent.putExtra("cuisineArray", selectedCountry.getCuisine());
-            intent.putExtra("safetyArray", selectedCountry.getSafety());
-            intent.putExtra("currency", selectedCountry.getCurrency());
-
-            startActivity(intent);
-        });
-
-        // Set click listener for Map Icon
-        explore_layout_button.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, ExploreActivity.class);
-            startActivity(intent);
-            finish();
-            overridePendingTransition(0, 0);
-        });
-
-        // Set click listener for Languages
-        language_layout_button.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, LanguageActivity.class);
-            startActivity(intent);
-            finish();
-            overridePendingTransition(0, 0);
-        });
-
-        // Set click listener for Profile
-        planner_layout_button.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, TripPlannerActivity.class);
-            startActivity(intent);
-            finish();
-            overridePendingTransition(0, 0);
-        });
-
-    }
-
-    private void filterCountries() {
-        String query = searchBar.getText().toString().toLowerCase();
-        List<CountryInfo> filteredCountries = new ArrayList<>();
-
-        Map<String, Integer> monthToIndexMap = new HashMap<>();
-        monthToIndexMap.put(getString(R.string.january), 0);
-        monthToIndexMap.put(getString(R.string.february), 1);
-        monthToIndexMap.put(getString(R.string.march), 2);
-        monthToIndexMap.put(getString(R.string.april), 3);
-        monthToIndexMap.put(getString(R.string.may), 4);
-        monthToIndexMap.put(getString(R.string.june), 5);
-        monthToIndexMap.put(getString(R.string.july), 6);
-        monthToIndexMap.put(getString(R.string.august), 7);
-        monthToIndexMap.put(getString(R.string.september), 8);
-        monthToIndexMap.put(getString(R.string.october), 9);
-        monthToIndexMap.put(getString(R.string.november), 10);
-        monthToIndexMap.put(getString(R.string.december), 11);
-
-        for (CountryInfo country : countries) {
-            boolean matchesSearch = query.isEmpty() || country.getName().toLowerCase().contains(query);
-            boolean matchesLanguage = false;
-            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
-                matchesLanguage = selectedLanguages.isEmpty() ||
-                        selectedLanguages.stream().anyMatch(language ->
-                                country.getLanguage().toLowerCase().contains(language.toLowerCase()));
-            }
-            boolean matchesContinent = selectedContinents.isEmpty() || selectedContinents.contains(country.getContinent());
-            boolean matchesMonth = true;
-            if (!selectedMonths.isEmpty()) {
-                matchesMonth = false; // Initialize to false, will set to true if we find a match
-
-                for (String month : selectedMonths) {
-                    int monthIndex = monthToIndexMap.get(month);
-
-                    // Check if the best time to visit this month is marked as "1" (ideal)
-                    if (country.getBestTimeVisit()[monthIndex] == 1) {
-                        matchesMonth = true;
-                        break;
-                    }
-                }
-            }
-
-            if (matchesSearch && matchesLanguage && matchesContinent && matchesMonth) {
-                filteredCountries.add(country);
-            }
-        }
-
-        adapter.updateCountries(filteredCountries);
-
-        TextView noCountriesFoundTextView = findViewById(R.id.no_countries_found);
-        if (filteredCountries.isEmpty()) {
-            noCountriesFoundTextView.setVisibility(View.VISIBLE);
-            countryListView.setVisibility(View.GONE);
+        if (!UtilClass.isAdRemovalPurchased(MainActivity.this)) {
+            //not Purchased Show Ads
+            Log.d("AdddddddDebug", "Ads are enabled. Loading ads...");
+            canLoadAds(true);
         } else {
-            noCountriesFoundTextView.setVisibility(View.GONE);
-            countryListView.setVisibility(View.VISIBLE);
+            //Purchased DONT SHOW ADS
+            Log.d("AdddddddDebug", "Ads are disabled. Skipping ad load.");
+            bannerAd.setVisibility(View.GONE);
         }
-        // Always keep the icons at the bottom visible
-        iconsBottom.setVisibility(View.VISIBLE);
+
+
+
+
+
+
+        MutableLiveData<Boolean> isBillingClientConnected = new MutableLiveData<>();
+        isBillingClientConnected.setValue(false);
+
+        List<String> nonConsumablesList = Collections.singletonList("lifetime");
+        List<String> consumablesList = Arrays.asList("1dollar",
+                "2dollar",
+                "3dollar");
+        List<String> subsList = Collections.singletonList("subscription");
+
+        iapConnector = new IapConnector(
+                MainActivity.this,
+                nonConsumablesList, consumablesList, subsList,
+                "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvhhx4iT3KD79cwtCLEULuvl0tnM6SzNgvEMmy1dktbGfFLgKMJ2RD1I/gR3I47UCDJY5I7gq6/1a45NoY7GBkSZy3tw5cpRGqSJusrGsVDy2pnkl75vWqL93xJMz2g00PKkc/kbrO569sliIdOow/luy3SNiEBX96ryh82xDK6evZDiS3NGAUAU6YKtOMXQnwWTphZBCkmy5NoOzllPlmofd9iEAV3E0aAMlfuOIftm5QO0IeMJ29In2OJilGkwGZ//ukp2sb1nbFDW+2NWFCds2Rl8g/r0tD/R1pmI3CzIxjPFIKZVS0tv++hCVxNlND6IoT+Zi8ZTc6gEmn86xnwIDAQAB", true);
+
+
+        iapConnector.addBillingClientConnectionListener((status, billingResponseCode) -> {
+            Log.d("KSA_BILLING", "This is the status: " + status + " and response code is: " + billingResponseCode);
+            isBillingClientConnected.setValue(status);
+
+        });
+
+        iapConnector.addPurchaseListener(new PurchaseServiceListener() {
+            @Override
+            public void onPricesUpdated(@NonNull Map<String, DataWrappers.ProductDetails> map) {
+
+            }
+
+            @Override
+            public void onProductPurchased(@NonNull DataWrappers.PurchaseInfo purchaseInfo) {
+                if (purchaseInfo.getSku().equals("lifetime")) {
+
+                    UtilClass.setAdRemovalPurchased(MainActivity.this,true);
+                    Toast.makeText(MainActivity.this, "Thanks for purchasing ad removal!", Toast.LENGTH_SHORT).show();
+
+                    canLoadAds(false);
+                }
+
+            }
+
+            @Override
+            public void onProductRestored(@NonNull DataWrappers.PurchaseInfo purchaseInfo) {
+                if (purchaseInfo.getSku().equals("lifetime")) {
+                    UtilClass.setAdRemovalPurchased(MainActivity.this,true);
+                    canLoadAds(false);
+                }
+            }
+
+            @Override
+            public void onPurchaseFailed(@Nullable DataWrappers.PurchaseInfo purchaseInfo, @Nullable Integer integer) {
+
+            }
+        });
+
+
+
+
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager
+                .beginTransaction()
+                .replace(R.id.container, new MainFragment(), FragmentTags.MAIN_FRAGMENT_TAG)
+                .commit();
+
+
+//        if (UtilClass.isAdRemovalPurchased(MainActivity.this)) { // Can Load and show ads
+//            admobAdsConfigs();
+//        }
+
+
+
+
+
     }
 
-    private void addFilterButtons(GridLayout gridLayout, String[] values, Set<String> selectedValues) {
-        for (String value : values) {
-            Button button = new Button(this);
-            button.setText(value);
-            button.setBackgroundResource(R.drawable.button_background);
-            button.setTextColor(getResources().getColor(R.color.black));
-            button.setTextSize(10);
-            button.setPadding(8, 8, 8, 8);
 
-            // Set button style and size
-            GridLayout.LayoutParams params = new GridLayout.LayoutParams();
-            params.width = 0; // Width of 0dp to enable column weight
-            params.height = GridLayout.LayoutParams.WRAP_CONTENT;
-            params.columnSpec = GridLayout.spec(GridLayout.UNDEFINED, 1f); // Set equal weight for each button
-            params.setMargins(8, 8, 8, 8);
-            button.setLayoutParams(params);
+//    public void canLoadAds(){
+//        if (!UtilClass.isAdRemovalPurchased(MainActivity.this)) {
+//            // Load and show ads
+//            admobAdsConfigs();
+//        } else {
+//            // Hide ads
+//            bannerAd.setVisibility(View.GONE);
+//        }
+//
+//    }
 
-            button.setOnClickListener(v -> {
-                if (selectedValues.contains(value)) {
-                    selectedValues.remove(value);
-                    button.setBackgroundResource(R.drawable.button_background); // Unselected color
-                } else {
-                    selectedValues.add(value);
-                    button.setBackgroundResource(R.drawable.button_background_unselected); // Selected color
-                }
-                filterCountries(); // Update the country list based on selected filters
-            });
+    private void canLoadAds(boolean loadAds){
+        if(loadAds){
+            bannerAd.setVisibility(View.VISIBLE);
+            AdRequest adRequest = new AdRequest.Builder().build();
+            bannerAd.loadAd(adRequest);
 
-            gridLayout.addView(button);
+
+            loadInterstitialAd();
+        }else{
+            bannerAd.setVisibility(View.GONE);
         }
+
+
+    }
+
+
+
+
+    public void purchaseAdRemoval(){
+        iapConnector.purchase(MainActivity.this,"lifetime","","");
+    }
+
+
+
+
+
+    @Override
+    public void onBackPressed() {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+
+
+        Fragment mainFragment = fragmentManager.findFragmentById(R.id.container); // Use the correct container ID for MainFragment
+        if (mainFragment instanceof MainFragment) {
+
+            FragmentManager childFragmentManager = ((MainFragment) mainFragment).getChildFragmentManager();
+
+
+            Fragment childFragment = childFragmentManager.findFragmentById(R.id.fragment_container);
+
+
+            if (childFragment instanceof HomeFragment) {
+                ((MainFragment) mainFragment).updateBottomNavigationView(R.id.nav_home);
+            } else if (childFragment instanceof ExploreFragment) {
+                ((MainFragment) mainFragment).updateBottomNavigationView(R.id.nav_explore);
+            } else if (childFragment instanceof PlannerFragment) {
+                ((MainFragment) mainFragment).updateBottomNavigationView(R.id.nav_planner);
+            } else if (childFragment instanceof LanguageFragment) {
+                ((MainFragment) mainFragment).updateBottomNavigationView(R.id.nav_language);
+            }
+
+
+            if (childFragmentManager.getBackStackEntryCount() > 0) {
+                childFragmentManager.popBackStack();
+                return;
+            }
+        }
+
+
+        if (fragmentManager.getBackStackEntryCount() > 0) {
+            fragmentManager.popBackStack();
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+    public void showAdmobAd(){
+        if (mInterstitialAd != null) {
+            mInterstitialAd.show(MainActivity.this);
+            mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback(){
+                @Override
+                public void onAdClicked() {
+                    Log.d("AdddddMob", "Ad was clicked.");
+                }
+
+                @Override
+                public void onAdDismissedFullScreenContent() {
+
+                    Log.d("AdddddMob", "Ad dismissed fullscreen content.");
+
+                    loadInterstitialAd();
+                }
+
+                @Override
+                public void onAdFailedToShowFullScreenContent(AdError adError) {
+
+                    Log.e("AdddddMob", "Ad failed to show fullscreen content.");
+
+                    loadInterstitialAd();
+                }
+
+                @Override
+                public void onAdImpression() {
+
+                    Log.d("AdddddMob", "Ad recorded an impression.");
+                }
+
+                @Override
+                public void onAdShowedFullScreenContent() {
+
+                    Log.d("AdddddMob", "Ad showed fullscreen content.");
+                }
+            });
+        } else {
+            Log.d("AdddddMob", "The interstitial ad wasn't ready yet.");
+            loadInterstitialAd();
+        }
+
+
+    }
+
+    public void loadInterstitialAd() {
+
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+
+        InterstitialAd.load(this,"ca-app-pub-3940256099942544/1033173712", adRequest,
+                new InterstitialAdLoadCallback() {
+                    @Override
+                    public void onAdLoaded(InterstitialAd interstitialAd) {
+                        // The mInterstitialAd reference will be null until
+                        // an ad is loaded.
+                        mInterstitialAd = interstitialAd;
+                        Log.e("AdddddMob", "onAdLoaded");
+
+                    }
+
+                    @Override
+                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                        // Handle the error
+                        Log.d("AdddddMob", loadAdError.toString());
+
+                    }
+                });
+
+
+//        AdRequest adRequest = new AdRequest.Builder().build();
+//
+//        InterstitialAd.load(this, "ca-app-pub-3940256099942544/1033173712", adRequest, new InterstitialAdLoadCallback() {
+//            @Override
+//            public void onAdLoaded(InterstitialAd ad) {
+//                interstitialAd = ad;
+//            }
+//
+//            @Override
+//            public void onAdFailedToLoad(LoadAdError adError) {
+//                interstitialAd = null;
+//            }
+//        });
     }
 
 }

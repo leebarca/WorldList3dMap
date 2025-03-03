@@ -1,6 +1,19 @@
 <resources>
     <string name="app_name" translatable="false">WorldTravel3D</string>
-    <string name="country_details">Home</string>
+    <string name="country_details">Country Details</string>
+    <string name="home">Home</string>
+
+
+    <string name="ad_free_msg">Enjoy a seamless, ad-free experience for life! Pay just £2 to remove all ads forever.</string>
+    <string name="cancel">Cancel</string>
+    <string name="buy_now">Buy Now (£2)</string>
+
+
+    <string name="remove_ads">Remove Ads Forever!</string>
+
+    <string name="trip_planner">Trip Planner</string>
+    <string name="go_back">Back</string>
+    <string name="country_info">Country Info</string>
     <string name="planner">Planner</string>
     <string name="explore">Explore</string>
     <string name="save">Save</string>
@@ -49,6 +62,7 @@
     <string name="country_flag">Country Flag</string>
     <string name="filter_button">Filter Button</string>
     <string name="language">Language</string>
+    <string name="settings">Settings</string>
     <string name="continent">Continent</string>
     <string name="best_months_to_visit">Best Months To Visit</string>
     <string name="no_countries_found">No countries found</string>

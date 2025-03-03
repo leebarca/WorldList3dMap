@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.WorldList3dApp" parent="Theme.AppCompat.NoActionBar">
+    <style name="Theme.WorldList3dApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary brand color -->
         <item name="colorPrimary">@color/app_background_color</item>
         <item name="colorPrimaryVariant">@color/app_background_color</item>
@@ -14,11 +14,40 @@
         <!-- Status bar color -->
         <item name="android:statusBarColor">@color/app_background_color</item>
         <item name="android:windowBackground">@color/app_background_color</item>
-        <item name="android:windowLightStatusBar">true</item>
+<!--        <item name="android:windowLightStatusBar">true</item>-->
     </style>
 
     <style name="Theme.WorldList3dApp.Launch" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Set the background color to list_background_colour or use a drawable with the logo -->
         <item name="android:windowBackground">@drawable/launch_screen_background</item>
     </style>
+
+    <style name="Theme.NewWorldList3dApp" parent="Theme.WorldList3dApp" />
+
+<!--    <style name="SpinnerPopupTheme" parent="Theme.MaterialComponents.Light">-->
+<!--        <item name="android:background">#FFFFFF</item> &lt;!&ndash; Change as needed &ndash;&gt;-->
+<!--    </style>-->
+
+    <style name="CustomDialogTheme" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="CustomDatePickerDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <!-- Button text color -->
+        <item name="colorPrimary">@color/theme_sel_col</item>
+        <item name="colorOnPrimary">@color/theme_sel_col</item>
+
+        <!-- Selected date text color -->
+        <item name="colorAccent">@color/theme_sel_col</item>
+
+        <!-- Background color -->
+<!--        <item name="android:background">@color/button_border_colour</item>-->
+
+    </style>
+
 </resources>
+

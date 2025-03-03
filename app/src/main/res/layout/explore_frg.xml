@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/explore_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/explore"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scrollable_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@id/explore_title"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- Spinner for selecting categories -->
+            <!--            <FrameLayout-->
+            <!--                android:id="@+id/spinner_container"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:background="@drawable/button_background"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:gravity="center_vertical"-->
+            <!--                android:padding="2dp">-->
+
+            <!--                <Spinner-->
+            <!--                    android:id="@+id/category_spinner"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:gravity="center_vertical"-->
+            <!--                    android:background="@android:color/transparent"-->
+            <!--                    android:spinnerMode="dropdown" />-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/dropdown_icon"-->
+            <!--                    android:layout_width="24dp"-->
+            <!--                    android:layout_height="24dp"-->
+            <!--                    android:src="@drawable/arrowdown"-->
+            <!--                    android:layout_gravity="end|center_vertical"-->
+            <!--                    android:contentDescription="@string/arrow_down" />-->
+            <!--            </FrameLayout>-->
+
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:cardBackgroundColor="@color/app_background_color"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/category_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:spinnerMode="dropdown"
+                        android:background="@drawable/spinner_background"
+                        android:popupBackground="@color/white"
+                         />
+                    <!-- Top Countries List -->
+                    <com.leebarcaglobal.worldtravel3d.customViews.NonScrollListView
+                        android:id="@+id/top_countries_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:divider="@android:color/darker_gray"
+                        android:dividerHeight="1dp" />
+
+                    >
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- Current Month Title -->
+            <TextView
+                android:id="@+id/current_month_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/open_sans"
+                android:gravity="center"
+
+                android:padding="8dp"
+                android:text="@string/recommended"
+
+
+                android:textColor="@android:color/black"
+
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                />
+
+
+<!--            <Spinner-->
+<!--                android:id="@+id/current_month_category_spinner"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:background="@drawable/spinner_background"-->
+<!--                android:popupBackground="@color/white"-->
+<!--                android:popupTheme="@style/SpinnerPopupTheme" />-->
+
+            <!--            <FrameLayout-->
+            <!--                android:id="@+id/current_month_spinner_container"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:background="@drawable/button_background"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:gravity="center_vertical"-->
+            <!--                android:padding="2dp">-->
+
+            <!--                <Spinner-->
+            <!--                    android:id="@+id/current_month_category_spinner"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:gravity="center_vertical"-->
+            <!--                    android:background="@android:color/transparent"-->
+            <!--                    android:spinnerMode="dropdown" />-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/current_month_dropdown_icon"-->
+            <!--                    android:layout_width="24dp"-->
+            <!--                    android:layout_height="24dp"-->
+            <!--                    android:src="@drawable/arrowdown"-->
+            <!--                    android:layout_gravity="end|center_vertical"-->
+            <!--                    android:contentDescription="@string/arrow_down" />-->
+            <!--            </FrameLayout>-->
+
+            <!-- This Month Countries List -->
+
+
+
+
+            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/app_background_color"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/current_month_category_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/spinner_background"
+                        android:popupBackground="@color/white"
+                        android:popupTheme="@style/SpinnerPopupTheme" />
+
+
+                    <!-- Top Countries List -->
+
+
+                    <!-- Top Countries List -->
+                    <com.leebarcaglobal.worldtravel3d.customViews.NonScrollListView
+                        android:id="@+id/this_month_countries"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+
+                        android:divider="@android:color/darker_gray"
+                        android:dividerHeight="1dp" />
+
+
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

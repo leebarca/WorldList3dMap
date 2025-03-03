@@ -3,50 +3,37 @@
     android:layout_height="match_parent"
     android:background="@color/app_background_color">
 
-    <!-- Back Button -->
-    <ImageButton
-        android:id="@+id/back_button"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_margin="8dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/button_background"
-        android:src="@drawable/return_button"
-        android:contentDescription="@string/country_details"
-        android:clickable="true"
-        android:focusable="true"
-        android:scaleType="centerInside" />
 
     <!-- Main Content -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/back_button"
+
         android:background="@color/app_background_color"
-        android:orientation="horizontal"
-        android:padding="2dp">
+        android:orientation="horizontal">
 
         <!-- Left Swipe Hint Icon -->
-        <ImageView
-            android:id="@+id/swipe_hint_left"
-            android:layout_width="20dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_vertical"
-            android:contentDescription="@string/swipe_left_hint"
-            android:src="@drawable/arrow_left"
-            android:background="@drawable/button_background" />
+        <!--        <ImageView-->
+        <!--            android:id="@+id/swipe_hint_left"-->
+        <!--            android:layout_width="20dp"-->
+        <!--            android:layout_height="100dp"-->
+        <!--            android:layout_gravity="center_vertical"-->
+        <!--            android:contentDescription="@string/swipe_left_hint"-->
+        <!--            android:src="@drawable/arrow_left"-->
+        <!--            android:visibility="gone"-->
+        <!--            android:background="@drawable/button_background" />-->
 
         <!-- Scrollable Content Container with Border -->
         <ScrollView
             android:id="@+id/scroll_view"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
+            android:scrollbars="none"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
+            android:layout_weight="1"
             android:fillViewport="true">
 
             <LinearLayout
@@ -54,26 +41,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="@drawable/button_background"
                 android:padding="16dp">
 
-                <!-- Attraction Image -->
-                <ImageView
-                    android:id="@+id/attraction_image"
+                <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
                     android:layout_width="match_parent"
-                    android:layout_height="340dp"
-                    android:contentDescription="@string/attraction_image"
-                    android:scaleType="centerCrop" />
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/app_background_color"
+                    app:cardCornerRadius="12dp"
 
+                    app:cardUseCompatPadding="true">
+
+
+                    <!-- Attraction Image -->
+                    <ImageView
+                        android:id="@+id/attraction_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="340dp"
+                        android:contentDescription="@string/attraction_image"
+                        android:scaleType="centerCrop" />
+
+                </androidx.cardview.widget.CardView>
                 <!-- Attraction Name -->
                 <TextView
                     android:id="@+id/attraction_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/open_sans"
                     android:paddingBottom="8dp"
                     android:textAlignment="center"
-                    android:fontFamily="@font/open_sans"
                     android:textColor="@android:color/black"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -84,21 +81,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans"
-                    android:paddingTop="8dp"
                     android:gravity="center"
+                    android:paddingTop="8dp"
                     android:textColor="@android:color/black"
                     android:textSize="16sp" />
             </LinearLayout>
         </ScrollView>
 
         <!-- Right Swipe Hint Icon -->
-        <ImageView
-            android:id="@+id/swipe_hint_right"
-            android:layout_width="20dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_vertical"
-            android:contentDescription="@string/swipe_right_hint"
-            android:src="@drawable/arrow_right"
-            android:background="@drawable/button_background" />
+        <!--        <ImageView-->
+        <!--            android:id="@+id/swipe_hint_right"-->
+        <!--            android:layout_width="20dp"-->
+        <!--            android:layout_height="100dp"-->
+        <!--            android:layout_gravity="center_vertical"-->
+        <!--            android:contentDescription="@string/swipe_right_hint"-->
+        <!--            android:visibility="gone"-->
+        <!--            android:src="@drawable/arrow_right"-->
+        <!--            android:background="@drawable/button_background" />-->
     </LinearLayout>
 </RelativeLayout>

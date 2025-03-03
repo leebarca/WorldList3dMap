@@ -2,6 +2,15 @@
 <resources>
     <string name="app_name" translatable="false">WorldTravel3D</string>
     <string name="country_details">Inicio</string>
+    <string name="home">Inicio</string>
+    <string name="remove_ads">¡Eliminar anuncios para siempre!</string>
+    <string name="trip_planner">Planificador de Viajes</string>
+    <string name="go_back">Atrás</string>
+    <string name="country_info">Información del País</string>
+    <string name="ad_free_msg">¡Disfruta de una experiencia fluida y sin anuncios de por vida! Paga solo £2 para eliminar todos los anuncios para siempre.</string>
+    <string name="cancel">Cancelar</string>
+    <string name="buy_now">Comprar ahora (£2)</string>
+    <string name="settings">Configuración</string>
     <string name="planner">Planificador</string>
     <string name="explore">Explorar</string>
     <string name="save">Guardar</string>

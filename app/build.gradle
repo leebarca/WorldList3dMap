@@ -6,22 +6,49 @@ android {
     namespace 'com.leebarcaglobal.worldtravel3d'
     compileSdk 34
 
+    bundle {
+        language {
+            enableSplit = false  // Prevents language stripping in AAB builds
+        }
+    }
+
     defaultConfig {
         applicationId "com.leebarcaglobal.worldtravel3d"
         minSdk 21
         targetSdk 34
-        versionCode 12
-        versionName "12"
+        //versionCode 12
+        versionCode 27//22//20//19//18//17//15
+        versionName "1.0.27"//"1.0.20"//"1.0.19"//"1.0.18"//"1.0.17"//"1.0.15"
+        //versionName "12"
+
+        resConfigs "en", "fr", "es","hi","ja","ko","pt","ru", "zh","ar"  // Example languages
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+
+    signingConfigs {
+        release {
+            //storeFile file("AppKey")   // Path to your keystore file
+            storeFile file("${rootDir}/app/AppKey")
+            storePassword "!glYuFg6!2Gs*"
+            keyAlias "keylee"
+            keyPassword "!glYuFg6!2Gs*"
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
+            shrinkResources false
+            debuggable false
+
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
+
+
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -38,7 +65,10 @@ dependencies {
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
     implementation libs.core.splashscreen
-    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
-    implementation 'com.google.code.gson:gson:2.10.1'
-    implementation 'org.jsoup:jsoup:1.15.3'
+    implementation libs.okhttp
+    implementation libs.gson
+    implementation libs.jsoup
+    implementation libs.play.services.ads
+    implementation libs.google.iap
+    implementation libs.firebase.analytics
 }

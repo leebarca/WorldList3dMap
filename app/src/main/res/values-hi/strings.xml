@@ -2,17 +2,27 @@
 <resources>
     <string name="app_name" translatable="false">WorldTravel3D</string>
     <string name="country_details">मुख्य पृष्ठ</string>
+    <string name="home">होम</string>
+    <string name="trip_planner">यात्रा योजनाकार</string>
+    <string name="go_back">वापस</string>
+    <string name="country_info">देश की जानकारी</string>
+    <string name="ad_free_msg">जीवनभर निर्बाध, विज्ञापन-मुक्त अनुभव का आनंद लें! केवल £2 देकर सभी विज्ञापनों को हमेशा के लिए हटाएँ।</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="buy_now">अभी खरीदें (£2)</string>
     <string name="planner">योजना</string>
     <string name="explore">अन्वेषण करें</string>
     <string name="save">सहेजें</string>
     <string name="recommended">इस महीने के लिए अनुशंसित देश</string>
     <string name="add_trip">हाथ से यात्रा जोड़ें</string>
+    <string name="remove_ads">विज्ञापन हमेशा के लिए हटाएँ!</string>
     <string name="expedia_search">Expedia के माध्यम से खोजें या बुक करें</string>
     <string name="trip_empty">आपके पास कोई सहेजी गई यात्रा नहीं है, एक जोड़ें!</string>
     <string name="edit">संपादित करें</string>
     <string name="view_trip">यात्रा देखें</string>
     <string name="itinerary">यात्रा कार्यक्रम</string>
     <string name="delete_trip">हटाएं</string>
+    <string name="settings">सेटिंग्स</string>
+
     <string name="arrow_down">नीचे की ओर तीर</string>
     <string name="language_saved">भाषा सहेजी गई:</string>
     <string name="swipe_right_hint">दाएं स्वाइप करने का संकेत</string>

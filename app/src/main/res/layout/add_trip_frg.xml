@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_background_color">
+
+<!--    &lt;!&ndash; Back Button &ndash;&gt;-->
+<!--    <ImageButton-->
+<!--        android:id="@+id/back_button"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_margin="8dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:background="@drawable/button_background"-->
+<!--        android:src="@drawable/return_button"-->
+<!--        android:contentDescription="@string/country_details"-->
+<!--        android:scaleType="centerInside"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="true" />-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_sel_col"
+        android:elevation="4dp"
+        android:padding="8dp"
+        app:titleTextColor="@android:color/black"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:contentDescription="@string/go_back"
+            />
+
+        <!-- Title in the Center -->
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/trip_planner"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/app_background_color"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        android:layout_below="@id/toolbar"
+        app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+    <!-- Main Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:padding="8dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Destination Spinner -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:text="@string/add_trip"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/open_sans" />
+
+            <!-- Destination Spinner -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:text="@string/country"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/open_sans" />
+
+            <!-- Spinner for selecting categories -->
+            <FrameLayout
+                android:id="@+id/spinner_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <Spinner
+                    android:id="@+id/category_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:id="@+id/dropdown_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/arrowdown"
+                    android:layout_gravity="end|center_vertical"
+                    android:contentDescription="@string/arrow_down" />
+            </FrameLayout>
+
+            <!-- Departure Date -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:text="@string/departure_date"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/open_sans" />
+
+            <EditText
+                android:id="@+id/edit_departure_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:hint="DD/MM/YYYY"
+                android:textColorHint="@color/black"
+                android:padding="10dp"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="none"
+                android:textColor="@color/black"
+                android:fontFamily="@font/open_sans" />
+
+            <!-- Return Date -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:text="@string/return_date"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/open_sans" />
+
+            <EditText
+                android:id="@+id/edit_return_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:hint="DD/MM/YYYY"
+                android:textColorHint="@color/black"
+                android:padding="10dp"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="none"
+                android:textColor="@color/black"
+                android:fontFamily="@font/open_sans" />
+
+            <!-- Days Grid -->
+            <LinearLayout
+                android:id="@+id/grid_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:padding="8dp"
+                android:background="@drawable/button_background" />
+
+            <!-- Search Button -->
+            <Button
+                android:id="@+id/button_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/create"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:backgroundTint="@color/button_border_colour"
+                android:padding="12dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/open_sans" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

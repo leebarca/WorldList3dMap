@@ -2,6 +2,13 @@
 <resources>
     <string name="app_name" translatable="false">WorldTravel3D</string>
     <string name="country_details">首页</string>
+    <string name="trip_planner">旅行规划</string>
+    <string name="home">首页</string>
+    <string name="go_back">返回</string>
+    <string name="country_info">国家信息</string>
+    <string name="ad_free_msg">享受无广告的流畅体验，一次付费终身去广告！仅需£2，永久移除所有广告。</string>
+    <string name="cancel">取消</string>
+    <string name="buy_now">立即购买 (£2)</string>
     <string name="planner">规划师</string>
     <string name="explore">探索</string>
     <string name="save">保存</string>
@@ -14,6 +21,8 @@
     <string name="itinerary">行程安排</string>
     <string name="delete_trip">删除</string>
     <string name="arrow_down">向下箭头</string>
+    <string name="settings">设置</string>
+    <string name="remove_ads">永久移除广告！</string>
     <string name="language_saved">语言已保存：</string>
     <string name="swipe_right_hint">向右滑动提示</string>
     <string name="ai_generate_itinerary">生成AI行程</string>

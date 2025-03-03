@@ -2,6 +2,15 @@
 <resources>
     <string name="app_name" translatable="false">WorldTravel3D</string>
     <string name="country_details">Главная</string>
+
+    <string name="home">Главная</string>
+
+    <string name="trip_planner">Планировщик путешествий</string>
+    <string name="go_back">Назад</string>
+    <string name="country_info">Информация о стране</string>
+    <string name="ad_free_msg">Наслаждайтесь плавным просмотром без рекламы на всю жизнь! Заплатите всего £2, чтобы удалить все объявления навсегда.</string>
+    <string name="cancel">Отмена</string>
+    <string name="buy_now">Купить сейчас (£2)</string>
     <string name="planner">Планер</string>
     <string name="explore">Изучить</string>
     <string name="save">Сохранить</string>
@@ -12,6 +21,8 @@
     <string name="edit">Редактировать</string>
     <string name="view_trip">Просмотреть поездку</string>
     <string name="itinerary">Маршрут</string>
+    <string name="remove_ads">Удалить рекламу навсегда!</string>
+    <string name="settings">Настройки</string>
     <string name="delete_trip">Удалить</string>
     <string name="arrow_down">Стрелка вниз</string>
     <string name="language_saved">Язык сохранен:</string>

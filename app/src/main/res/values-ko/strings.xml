@@ -2,17 +2,26 @@
 <resources>
     <string name="app_name" translatable="false">WorldTravel3D</string>
     <string name="country_details">홈</string>
+    <string name="home">홈</string>
+    <string name="trip_planner">여행 계획</string>
+    <string name="go_back">뒤로</string>
+    <string name="country_info">국가 정보</string>
+    <string name="ad_free_msg">광고 없는 원활한 경험을 평생 즐기세요! 단 £2만 내면 모든 광고가 영구적으로 제거됩니다.</string>
+    <string name="cancel">취소</string>
+    <string name="buy_now">지금 구매 (£2)</string>
     <string name="planner">입안자</string>
     <string name="explore">탐험하기</string>
     <string name="save">저장</string>
     <string name="recommended">이번 달 추천 국가</string>
     <string name="add_trip">수동으로 여행 추가</string>
+    <string name="remove_ads">광고 영구 제거!</string>
     <string name="expedia_search">Expedia에서 검색 또는 예약</string>
     <string name="trip_empty">저장된 여행이 없습니다. 하나 추가하세요!</string>
     <string name="edit">편집</string>
     <string name="view_trip">여행 보기</string>
     <string name="itinerary">여행 일정</string>
     <string name="delete_trip">삭제</string>
+    <string name="settings">설정</string>
     <string name="arrow_down">아래 화살표</string>
     <string name="language_saved">저장된 언어:</string>
     <string name="swipe_right_hint">오른쪽으로 스와이프 힌트</string>

@@ -29,10 +29,10 @@ public class MainFragment extends Fragment {
 
 
     BottomNavigationView bottomNavigationView;
-
+    Dialog dialog;
 
     public void showRemoveAdsDialog(Context context) {
-        Dialog dialog = new Dialog(context);
+
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.remove_ads_dialog);
         Objects.requireNonNull(dialog.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
@@ -50,8 +50,8 @@ public class MainFragment extends Fragment {
 
 
             requireActivity().getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, new SettingsFragment())
-                    .commit();
+                             .replace(R.id.fragment_container, new SettingsFragment())
+                             .commit();
 
             bottomNavigationView.setSelectedItemId(R.id.nav_setting);
 
@@ -64,6 +64,15 @@ public class MainFragment extends Fragment {
     }
 
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if(dialog!=null){
+            dialog.dismiss();
+            dialog.cancel();
+            dialog  = null;
+        }
+    }
 
     @Nullable
     @Override
@@ -71,7 +80,7 @@ public class MainFragment extends Fragment {
         View frgView = inflater.inflate(R.layout.main_frg,container,false);
 
         bottomNavigationView = frgView.findViewById(R.id.bottom_navigation);
-
+        dialog = new Dialog(requireActivity());
 
         if (!UtilClass.isAdRemovalPurchased(requireActivity())) {
             //not Purchased Show Ads
@@ -80,8 +89,8 @@ public class MainFragment extends Fragment {
 
         if (savedInstanceState == null) {
             requireActivity().getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, new HomeFragment())
-                    .commit();
+                             .replace(R.id.fragment_container, new HomeFragment())
+                             .commit();
 
             bottomNavigationView.setSelectedItemId(R.id.nav_home);
         }
@@ -105,9 +114,9 @@ public class MainFragment extends Fragment {
 
             if (selectedFragment != null) {
                 requireActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container, selectedFragment)
-                        .addToBackStack(null)
-                        .commit();
+                                 .replace(R.id.fragment_container, selectedFragment)
+                                 .addToBackStack(null)
+                                 .commit();
 
 
             }

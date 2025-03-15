@@ -17,8 +17,8 @@ android {
         minSdk 23
         targetSdk 34
         //versionCode 12
-        versionCode 29//22//20//19//18//17//15
-        versionName "1.0.29"//"1.0.20"//"1.0.19"//"1.0.18"//"1.0.17"//"1.0.15"
+        versionCode 30//22//20//19//18//17//15
+        versionName "2.0.00"//"1.0.20"//"1.0.19"//"1.0.18"//"1.0.17"//"1.0.15"
         //versionName "12"
 
         resConfigs "en", "fr", "es","hi","ja","ko","pt","ru", "zh","ar"  // Example languages
